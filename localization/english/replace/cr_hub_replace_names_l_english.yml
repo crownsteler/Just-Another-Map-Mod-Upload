@@ -365,6 +365,47 @@
  
  HUB_NAME_STATE_SYRIA_mine:0 "Daraa"
  
+ #Persia
+ HUB_NAME_STATE_TABRIZ_mine:0 "Zanjan"
+ 
+ HUB_NAME_STATE_MAZANDARAN_farm:0 "Rasht"
+ HUB_NAME_STATE_MAZANDARAN_wood:0 "Astarabad"
+ HUB_NAME_STATE_MAZANDARAN_mine:0 "Sari"
+ 
+ HUB_NAME_STATE_IRAKAJEMI_mine:0 "Damghan"
+ HUB_NAME_STATE_IRAKAJEMI_wood:0 "Damavand"
+ 
+ HUB_NAME_STATE_KHORASAN_mine:0 "Birjand"
+ 
+ HUB_NAME_STATE_LARISTAN_city:0 "Kerman"
+ HUB_NAME_STATE_LARISTAN_farm:0 "Yazd"
+ HUB_NAME_STATE_LARISTAN_wood:0 "Mahan"
+ HUB_NAME_STATE_LARISTAN_mine:0 "Saidabad"
+ 
+ HUB_NAME_STATE_SISTAN_city:0 "Bampur"
+ HUB_NAME_STATE_SISTAN_farm:0 "Sistan"
+ HUB_NAME_STATE_SISTAN_wood:0 "Dozdab"
+ HUB_NAME_STATE_SISTAN_mine:0 "Khash"
+ 
+ HUB_NAME_STATE_FARS_city:0 "Shiraz"
+ HUB_NAME_STATE_FARS_port:0 "Bandar Abbas"
+ HUB_NAME_STATE_FARS_farm:0 "Jahrom"
+ HUB_NAME_STATE_FARS_wood:0 "Ardakan"
+ HUB_NAME_STATE_FARS_mine:0 "Bushehr"
+ 
+ HUB_NAME_STATE_KHUZESTAN_city:0 "Shushtar"
+ HUB_NAME_STATE_KHUZESTAN_port:0 "Bandar Mahshar"
+ HUB_NAME_STATE_KHUZESTAN_farm:0 "Dezful"
+ HUB_NAME_STATE_KHUZESTAN_wood:0 "Malamir"
+ HUB_NAME_STATE_KHUZESTAN_mine:0 "Muhammara"
+ 
+ HUB_NAME_STATE_LURISTAN_farm:0 "Kirmanshah"
+ HUB_NAME_STATE_LURISTAN_wood:0 "Dihbala"
+ 
+ HUB_NAME_STATE_ISFAHAN_farm:0 "Qom"
+ HUB_NAME_STATE_ISFAHAN_wood:0 "Dih Kurd"
+ HUB_NAME_STATE_ISFAHAN_mine:0 "Kashan"
+ 
  #Algeria
  HUB_NAME_STATE_ALGIERS_city:0 "Algiers"
  HUB_NAME_STATE_ALGIERS_port:0 "al-Jaza'ir"

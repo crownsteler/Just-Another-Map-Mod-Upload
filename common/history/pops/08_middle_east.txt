@@ -1071,74 +1071,6 @@
 				pop_type = slaves
 			}
 		}
-		#region_state:KGN = {
-		#	create_pop = {
-		#		culture = bedouin
-		#		size = 0
-		#	}
-		#}
-		region_state:MZK = {
-			create_pop = {
-				culture = bedouin
-				religion = shiite
-				size = 46269
-			}
-			create_pop = {
-				culture = bedouin
-				size = 7016
-			}
-			create_pop = {
-				culture = sephardic
-				size = 320
-			}
-			create_pop = {
-				culture = somali
-				size = 320
-				pop_type = slaves
-			}
-		}
-	}
-	s:STATE_LARISTAN = {
-		region_state:PER = {
-			create_pop = {
-				culture = persian
-				size = 194961
-			}
-			create_pop = {
-				culture = bedouin
-				size = 30696
-			}
-			create_pop = {
-				culture = somali
-				size = 8920
-				pop_type = slaves
-			}
-			create_pop = {
-				culture = bambara
-				size = 8720
-				pop_type = slaves
-			}
-		}
-		region_state:KHS = {
-			create_pop = {
-				culture = persian
-				size = 5161
-			}
-			create_pop = {
-				culture = baluchi
-				size = 28637
-			}
-			create_pop = {
-				culture = somali
-				size = 2131
-				pop_type = slaves
-			}
-			create_pop = {
-				culture = bambara
-				size = 3100
-				pop_type = slaves
-			}
-		}
 		region_state:OMA = {
 			create_pop = {
 				culture = persian
@@ -1167,6 +1099,94 @@
 			create_pop = {
 				culture = somali
 				size = 316
+				pop_type = slaves
+			}
+		}
+		#region_state:KGN = {
+		#	create_pop = {
+		#		culture = bedouin
+		#		size = 0
+		#	}
+		#}
+		region_state:MZK = {
+			create_pop = {
+				culture = bedouin
+				religion = shiite
+				size = 46269
+			}
+			create_pop = {
+				culture = bedouin
+				size = 7016
+			}
+			create_pop = {
+				culture = sephardic
+				size = 320
+			}
+			create_pop = {
+				culture = somali
+				size = 320
+				pop_type = slaves
+			}
+		}
+		region_state:KHS = {
+			create_pop = {
+				culture = persian
+				size = 2161
+			}
+			create_pop = {
+				culture = baluchi
+				size = 6637
+			}
+			create_pop = {
+				culture = somali
+				size = 1131
+				pop_type = slaves
+			}
+			create_pop = {
+				culture = bambara
+				size = 1300
+				pop_type = slaves
+			}
+		}
+	}
+	s:STATE_LARISTAN = {
+		region_state:PER = {
+			create_pop = {
+				culture = persian
+				size = 194961
+			}
+			create_pop = {
+				culture = bedouin
+				size = 30696
+			}
+			create_pop = {
+				culture = somali
+				size = 8920
+				pop_type = slaves
+			}
+			create_pop = {
+				culture = bambara
+				size = 8720
+				pop_type = slaves
+			}
+		}
+		region_state:KHS = {
+			create_pop = {
+				culture = persian
+				size = 1161
+			}
+			create_pop = {
+				culture = baluchi
+				size = 21637
+			}
+			create_pop = {
+				culture = somali
+				size = 1131
+				pop_type = slaves
+			}
+			create_pop = {
+				culture = bambara
+				size = 1700
 				pop_type = slaves
 			}
 		}
@@ -1240,7 +1260,7 @@
 		region_state:PER = {
 			create_pop = {
 				culture = persian
-				size = 298822
+				size = 131822
 			}
 			create_pop = {
 				culture = sephardic
@@ -1248,6 +1268,7 @@
 			}
 			create_pop = {
 				culture = turkmen
+				religion = shiite
 				size = 75371
 			}
 			create_pop = {
@@ -1255,17 +1276,27 @@
 				size = 22444
 				pop_type = slaves
 			}
-		}
-		region_state:DSK = {
 			create_pop = {
 				culture = kurdish
-				size = 64621
+				religion = shiite
+				size = 80615
+			}
+		}
+		region_state:SDK = {
+			create_pop = {
+				culture = kurdish
+				religion = shiite
+				size = 121615
 			}
 		}
 		region_state:KZE = {
 			create_pop = {
 				culture = persian
-				size = 84621
+				size = 44621
+			}
+			create_pop = {
+				culture = mashriqi
+				size = 40621
 			}
 		}
 		region_state:TBJ = {
@@ -1285,7 +1316,7 @@
 		region_state:PER = {
 			create_pop = {
 				culture = persian
-				size = 183996
+				size = 25996
 			}
 			create_pop = {
 				culture = sephardic
@@ -1298,7 +1329,7 @@
 			}
 			create_pop = {
 				culture = sephardic
-				size = 10185
+				size = 1185
 				pop_type = slaves
 			}
 		}
@@ -1306,7 +1337,7 @@
 			create_pop = {
 				culture = mashriqi
 				religion = shiite
-				size = 85309
+				size = 185309
 			}
 			create_pop = {
 				culture = sephardic
@@ -1318,7 +1349,7 @@
 			}
 			create_pop = {
 				culture = sephardic
-				size = 10215
+				size = 16215
 				pop_type = slaves
 			}
 		}

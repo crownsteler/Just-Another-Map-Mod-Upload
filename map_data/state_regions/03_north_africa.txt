@@ -38,7 +38,7 @@ STATE_MIDDLE_EGYPT = {
     provinces = { "x08B43B" "x0EBC9F" "x11D0E0" "x5050E0" "x50D060" "x78104A" "xA050A0" "xC35ABD" "xC7858D" }
     traits = { "state_trait_nile_river" }
     city = "x08B43B"
-    
+
     farm = "x50D060"
     mine = "x0EBC9F"
     wood = "xC7858D"
@@ -71,7 +71,8 @@ STATE_RED_SEA_COAST = {
 
 
 
-    
+
+
     #bg_minor_metals_mining = 5 #Tantalum, alumina
     }
     naval_exit_id = 3047
@@ -158,6 +159,7 @@ STATE_ERITREA = {
 
 
 
+
     }
     naval_exit_id = 3047
 }
@@ -200,9 +202,8 @@ STATE_DARB_EL_ARBAIN = {
     #STATE_DARB_EL_ARBAIN
     id = 3503
     subsistence_building = "building_subsistence_pastures"
-    provinces = { x011B9B x04709D x054B09 x0D82D5 x0DF96C x0EEDAA x1090F8 x148DA5 x1766AF x17D9A6 x19839D x266C2B x283C56 x2A8438 x305FFB x30C844 x3231D7 x3621AB x36EF31 x37D51A x38F470 x3B5DB2 x3B8BED x3D369E x410939 x442107 x44C39B x4586BC x489122 x4A40BB x4D1F29 x4EB670 x4FC3BD x509EA3 x510933 x513188 x527CA4 x57E23D x5D63E5 x5E802B x646AA7 x660662 x676377 x6846D2 x6BD07F x6EA7DD x71CE61 x72ACD5 x77680E x7A81FC x7B85E1 x7E47BC x7EB8A8 x7F40DC x8373D4 x85CCF5 x86281A x88AA5B x8C56D8 x8C8A7D x9030E0 x957D19 x99652C  x9AB09C x9C55FE x9D7E6E x9DD70D xA4E1B0 xA668F8 xA7E315 xA86A12 xAF05DC xAF1E1F xB060C3 xB1A5A5 xB241EF xB319F8 xB4CFDD xB504CF xBD58DE xBEFBD1 xC5236B xCBAC14 xCC661D xCC7B24 xCD6EAD xCDE64E xCF1CDF xD157C6 xD58989 xD6CE98 xD738FB xD781FF xDA1631 xDA9F36 xE39CEC xE53B02 xE7D087 xECB353 xF020AE xF16CDA xF1B993 xF1FBFF xF51BB4 xFAA9A3 xFF4AEC x5B6A6A 
- }
-    impassable = { x660662 x8C56D8 x9DD70D x957D19 x7B85E1 x7F40DC xA86A12 x3B8BED x9030E0 x7A81FC x054B09 x6846D2 x71CE61 x44C39B x0DF96C x1090F8 x86281A x3B5DB2 x1766AF x4D1F29 x3231D7 x266C2B x77680E x5D63E5 x283C56 x7EB8A8 x6EA7DD x99652C x676377 x0EEDAA x4A40BB x510933 x410939 x6BD07F x509EA3 x2A8438 x57E23D  x9AB09C x9C55FE x9D7E6E x9DD70D xA4E1B0 xA668F8 xA7E315 xA86A12 xAF05DC xAF1E1F xB060C3 xB1A5A5 xB241EF xB319F8 xB4CFDD xB504CF xBD58DE xBEFBD1 xC5236B xCBAC14 xCC661D xCC7B24 xCD6EAD xCDE64E xCF1CDF xD157C6 xD58989 xD6CE98 xD738FB xD781FF xDA1631 xDA9F36 xE39CEC xE53B02 xE7D087 xECB353 xF020AE xF16CDA xF1B993 xF1FBFF xF51BB4 xFAA9A3 xFF4AEC }
+    provinces = { x011B9B x04709D x054B09 x0D82D5 x0DF96C x0EEDAA x1090F8 x148DA5 x1766AF x17D9A6 x19839D x266C2B x283C56 x2A8438 x305FFB x30C844 x3231D7 x3621AB x36EF31 x37D51A x38F470 x3B5DB2 x3B8BED x3D369E x410939 x442107 x44C39B x4586BC x489122 x4A40BB x4D1F29 x4EB670 x4FC3BD x509EA3 x510933 x513188 x527CA4 x57E23D x5D63E5 x5E802B x646AA7 x660662 x676377 x6846D2 x6BD07F x6EA7DD x71CE61 x72ACD5 x77680E x7A81FC x7B85E1 x7E47BC x7EB8A8 x7F40DC x8373D4 x85CCF5 x86281A x88AA5B x8C56D8 x8C8A7D x9030E0 x957D19 x99652C x9AB09C x9C55FE x9D7E6E x9DD70D xA4E1B0 xA668F8 xA7E315 xA86A12 xAF05DC xAF1E1F xB060C3 xB1A5A5 xB241EF xB319F8 xB4CFDD xB504CF xBD58DE xBEFBD1 xC5236B xCBAC14 xCC661D xCC7B24 xCD6EAD xCDE64E xCF1CDF xD157C6 xD58989 xD6CE98 xD738FB xD781FF xDA1631 xDA9F36 xE39CEC xE53B02 xE7D087 xECB353 xF020AE xF16CDA xF1B993 xF1FBFF xF51BB4 xFAA9A3 xFF4AEC x5B6A6A }
+    impassable = { x660662 x8C56D8 x9DD70D x957D19 x7B85E1 x7F40DC xA86A12 x3B8BED x9030E0 x7A81FC x054B09 x6846D2 x71CE61 x44C39B x0DF96C x1090F8 x86281A x3B5DB2 x1766AF x4D1F29 x3231D7 x266C2B x77680E x5D63E5 x283C56 x7EB8A8 x6EA7DD x99652C x676377 x0EEDAA x4A40BB x510933 x410939 x6BD07F x509EA3 x2A8438 x57E23D x9AB09C x9C55FE x9D7E6E x9DD70D xA4E1B0 xA668F8 xA7E315 xA86A12 xAF05DC xAF1E1F xB060C3 xB1A5A5 xB241EF xB319F8 xB4CFDD xB504CF xBD58DE xBEFBD1 xC5236B xCBAC14 xCC661D xCC7B24 xCD6EAD xCDE64E xCF1CDF xD157C6 xD58989 xD6CE98 xD738FB xD781FF xDA1631 xDA9F36 xE39CEC xE53B02 xE7D087 xECB353 xF020AE xF16CDA xF1B993 xF1FBFF xF51BB4 xFAA9A3 xFF4AEC }
 
     traits = { "state_trait_sahara_desert" }
     city = "xD781FF"
@@ -216,7 +217,7 @@ STATE_DARB_EL_ARBAIN = {
 STATE_KORDOFAN = {
     id = 183
     subsistence_building = "building_subsistence_pastures"
-    provinces = { x032C4F x0E24E1 x1646F0 x1647C9 x1B9423 x1D7674 x229089 x29D3A4 x2B2E2D x370E9B x3C65B2 x40DB33 x57FCDD x597D96 x61FBFB x626379 x62C35D x70A245 x74A2D3 x7AA326 x7C620A  x902F75 x9B588A x9C967C xA02C79 xA0B800 xA0F49D xBBA919 xBD0B08 xC4132F xC41573 xCAA22A xD05060 xD5F5EC xD6D2BA xE0D838 xE18962 xE47124 xE5BBE8 xF762CD xFCDD6C xFCE1F9 }
+    provinces = { x032C4F x0E24E1 x1646F0 x1647C9 x1B9423 x1D7674 x229089 x29D3A4 x2B2E2D x370E9B x3C65B2 x40DB33 x57FCDD x597D96 x61FBFB x626379 x62C35D x70A245 x74A2D3 x7AA326 x7C620A x902F75 x9B588A x9C967C xA02C79 xA0B800 xA0F49D xBBA919 xBD0B08 xC4132F xC41573 xCAA22A xD05060 xD5F5EC xD6D2BA xE0D838 xE18962 xE47124 xE5BBE8 xF762CD xFCDD6C xFCE1F9 }
     impassable = {}
     traits = { "state_trait_sahel" }
     city = "x7C620A"
@@ -225,6 +226,7 @@ STATE_KORDOFAN = {
     wood = "xD6D2BA"
     arable_land = 30
     arable_resources = { "bg_livestock_ranches" "bg_dye_plantations" } #dye_plantation = gum arabic
+
 
 
 
@@ -253,6 +255,7 @@ STATE_DARFUR = {
     wood = "x3B2BDC"
     arable_land = 20
     arable_resources = { "bg_livestock_ranches" "bg_dye_plantations" } #dye_plantation = gum arabic
+
 
 
 
@@ -294,6 +297,7 @@ STATE_MARRAKECH = {
     wood = "xA71D65"
     arable_land = 60
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" } #Most wine in Fez. Sugar is also produced from Rabat northwards
+
 
 
 
@@ -373,8 +377,9 @@ STATE_TAZA = {
 
 
 
-    
-    
+
+
+
     #bg_coal_mining = 10
     #bg_minor_metals_mining = 5 #zinc, cobalt
     }
@@ -446,6 +451,7 @@ STATE_CONSTANTINE = {
 
 
 
+
         bg_iron_mining = 45 #Ouenza
 
 
@@ -456,7 +462,9 @@ STATE_CONSTANTINE = {
 
 
 
+
         bg_lead_mining = 15 #Lead/zinc at Tala Hamza
+
 
 
 
@@ -500,6 +508,7 @@ STATE_ORAN = {
 
 
 
+
         bg_fishing = 4
     }
     naval_exit_id = 3032
@@ -520,6 +529,7 @@ STATE_TUNISIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_date_plantations" }
     capped_resources = {
         bg_lead_mining = 15 #Lead/zinc
+
 
 
 
@@ -561,7 +571,7 @@ STATE_FEZZAN = {
     provinces = { "x009F47" "x00AA38" "x0190E0" "x02CCF5" "x0479EF" "x06135E" "x070399" "x0A5735" "x0B1422" "x0C5EBE" "x0C98CD" "x11D0A0" "x163759" "x1845BE" "x1C2606" "x1F3EAA" "x1F8886" "x202929" "x26FEF6" "x285F4F" "x2A751D" "x2B86F4" "x2BBB9C" "x321C7F" "x3293BF" "x348703" "x37034A" "x3F1904" "x41960C" "x41FEF5" "x4508B3" "x460BB7" "x463A7E" "x4B9EB1" "x4D4A58" "x4E480E" "x5183F2" "x587B0B" "x5B44AB" "x5B7280" "x5F28EB" "x5F830E" "x617DC1" "x6316C9" "x65294E" "x67758E" "x68DB95" "x6951D5" "x6EA444" "x725A37" "x72AD6F" "x756DFD" "x7C0DA3" "x7CFB8C" "x7EE2C1" "x801060" "x8010E0" "x81C7D9" "x8207BC" "x83708C" "x86E434" "x87476F" "x8855E0" "x886CFB" "x8ADB51" "x8C63E2" "x8EDC4D" "x909C77" "x976D70" "x98E67F" "x9A4E88" "xA06BA4" "xA14DC8" "xA3B5DA" "xA3E261" "xA3FFD3" "xA48E9C" "xA4B02B" "xA95E42" "xAA6A72" "xAAD5CC" "xACD89C" "xACF78C" "xADD677" "xB11A98" "xB55E99" "xB89482" "xBABA5F" "xBFA1D6" "xC3C4EC" "xC4D8ED" "xC724C8" "xCA4E6B" "xCB3322" "xD2D69C" "xD4F032" "xD7CBD9" "xD7FFBE" "xD8876F" "xD9A89D" "xDA32A4" "xDA9E29" "xE6917C" "xE9B457" "xEB8E58" "xF3329A" "xF42EA1" "xF65A12" "xF88C6A" "xFCE120" "xFD5B11" "xFF8008" "xFFED82" }
     impassable = { "x0190E0" "x5F28EB" "x8C63E2" "x070399" "x4508B3" "xF88C6A" "x3F1904" "xD4F032" "x460BB7" "x756DFD" "xA48E9C" "x41FEF5" "x8855E0" "xDA32A4" "xAA6A72" "x11D0A0" "x0B1422" "xA4B02B" "x8ADB51" "x98E67F" "xDA9E29" "x202929" "xD7FFBE" "x0C5EBE" "xD2D69C" "xEB8E58" "xCA4E6B" "xBABA5F" "x87476F" "x5B7280" "x72AD6F" "x2B86F4" "x2A751D" "x886CFB" "x587B0B" "x0479EF" "xC4D8ED" "x348703" "xA3FFD3" "x5F830E" "xAAD5CC" "x86E434" "xF65A12" "x463A7E" "xACD89C" "x285F4F" }
     traits = { "state_trait_sahara_desert" }
-    city = "x009F47" 
+    city = "x009F47"
 
 
 
@@ -572,7 +582,7 @@ STATE_FEZZAN = {
 
 
 
-    farm = "x68DB95" 
+    farm = "x68DB95"
 
 
 
@@ -583,7 +593,7 @@ STATE_FEZZAN = {
 
 
 
-    mine = "x4B9EB1" 
+    mine = "x4B9EB1"
 
 
 
@@ -594,7 +604,7 @@ STATE_FEZZAN = {
 
 
 
-    wood = "xD7FFBE" 
+    wood = "xD7FFBE"
 
 
 
@@ -622,7 +632,7 @@ STATE_LIBYA = {
     provinces = { "x025170" "x04DAA1" "x1189D2" "x13063D" "x1898D8" "x209020" "x2B40DE" "x34A20C" "x40D0E0" "x4FB39B" "x55361C" "x574B81" "x800FBB" "x81B59F" "x8D408F" "x97E206" "x99D6C9" "xA01020" "xA247FB" "xA645B8" "xAD6337" "xB0EEAE" "xBCB1A5" "xC74D58" "xD7040F" "xDF191B" "xE123F5" "xE2D391" "xEEE9E6" "xF9D0BC" "xFA4247" }
     prime_land = { x04DAA1 x13063D x1898D8 x2B40DE x34A20C x40D0E0 x4FB39B x55361C x574B81 x800FBB x97E206 x99D6C9 xA01020 xA645B8 xAD6337 xB0EEAE xBCB1A5 xC74D58 xD7040F xE123F5 xE2D391 x81B59F }
     city = "xE2D391"
-    port = "xD7040F" 
+    port = "xD7040F"
 
 
 
@@ -633,7 +643,7 @@ STATE_LIBYA = {
 
 
 
-    farm = "x55361C" 
+    farm = "x55361C"
 
 
 
@@ -644,7 +654,7 @@ STATE_LIBYA = {
 
 
 
-    mine = "x574B81" 
+    mine = "x574B81"
 
 
 
@@ -655,7 +665,7 @@ STATE_LIBYA = {
 
 
 
-    wood = "x81B59F" 
+    wood = "x81B59F"
 
 
 
@@ -706,6 +716,7 @@ STATE_SAHARA = {
     arable_resources = { "bg_date_plantations" }
     capped_resources = {
         bg_iron_mining = 40 #Gâra Djebilet
+
 
 
 
@@ -775,10 +786,8 @@ STATE_LAGHOUAT = {
 STATE_WEST_SAHARA = {
     id = 196
     subsistence_building = "building_subsistence_pastures"
-    provinces = { "x02AB5D" "x0AAB43" "x0FA44F" "x19094B" "x259965" "x2B6F2B" "x362DCE" "x36911C" "x3F400E" "x415205" "x4A82A1" "x4D7B2F" "x4DE76B" "x53C5EF" "x53DC1A" "x5FCC52" "x6058A7" "x673298" "x695160" "x728745" "x735623" "x7BE047" "x7E1555" "x7E5A63" "x82A9C3" "x85BAAD" "x87BB99" "x88C527" "x8ACEDE" "x8DCD09" "x8DFB0F" "x93E37A" "x96009F" "x98EDBF" "x9E582E" "xA0EF00" "xA0F70B" "xA299F8" "xA83B43" "xA98D71" "xAB9DE9" "xAC1C0E" "xAE5795" "xB100D2" "xB511A8" "xB533D3" "xBD040D" "xC0970C" "xC67B33" "xC690E9" "xDEE6A2" "xE20DB2" "xE63216" "xE80E2E" "xEB7C20" "xF03ACC" "xF1FF9E" "xF23EA5" "xF3E9F2" "xF4A5AA" "xF4BBF1" "xFCD455" 
- }
-    impassable = { "x4D7B2F" "xEB7C20" "xA0EF00" "x36911C" "xA299F8" "xC67B33" "x362DCE" "x9E582E" "x53C5EF" "x8ACEDE" "x4DE76B" "x8DCD09" 
- }
+    provinces = { "x02AB5D" "x0AAB43" "x0FA44F" "x19094B" "x259965" "x2B6F2B" "x362DCE" "x36911C" "x3F400E" "x415205" "x4A82A1" "x4D7B2F" "x4DE76B" "x53C5EF" "x53DC1A" "x5FCC52" "x6058A7" "x673298" "x695160" "x728745" "x735623" "x7BE047" "x7E1555" "x7E5A63" "x82A9C3" "x85BAAD" "x87BB99" "x88C527" "x8ACEDE" "x8DCD09" "x8DFB0F" "x93E37A" "x96009F" "x98EDBF" "x9E582E" "xA0EF00" "xA0F70B" "xA299F8" "xA83B43" "xA98D71" "xAB9DE9" "xAC1C0E" "xAE5795" "xB100D2" "xB511A8" "xB533D3" "xBD040D" "xC0970C" "xC67B33" "xC690E9" "xDEE6A2" "xE20DB2" "xE63216" "xE80E2E" "xEB7C20" "xF03ACC" "xF1FF9E" "xF23EA5" "xF3E9F2" "xF4A5AA" "xF4BBF1" "xFCD455" }
+    impassable = { "x4D7B2F" "xEB7C20" "xA0EF00" "x36911C" "xA299F8" "xC67B33" "x362DCE" "x9E582E" "x53C5EF" "x8ACEDE" "x4DE76B" "x8DCD09" }
     traits = { "state_trait_sahara_desert" }
     city = "x5FCC52"
     port = "xF23EA5"
@@ -841,7 +850,7 @@ STATE_EASTERN_MALI = {
     subsistence_building = "building_subsistence_orchards"
     provinces = { "x06D19A" "x086975" "x0EA985" "x109020" "x1221EE" "x19D3F5" "x227363" "x29246C" "x2A6A2D" "x320EE8" "x3F69A9" "x4B74E2" "x578B75" "x5F189B" "x67D3E7" "x688F7B" "x690C93" "x6AF386" "x70AF40" "x7169E0" "x726410" "x845355" "x852260" "x8CA2B5" "x8CCD97" "x8DC430" "x9090A0" "x941ED5" "x98DE99" "xA08311" "xA24880" "xA41A10" "xA8CAD8" "xAAB26B" "xC4B6B4" "xD5F34F" "xD7C2F6" "xEAE72D" "xEFB040" "xF0EFBF" "xFEB176" }
     traits = { "state_trait_malaria" "state_trait_sahel" "state_trait_niger_river" }
-    city = "xF0EFBF" 
+    city = "xF0EFBF"
 
 
 
@@ -852,7 +861,7 @@ STATE_EASTERN_MALI = {
 
 
 
-    farm = "x70AF40" 
+    farm = "x70AF40"
 
 
 
@@ -863,7 +872,7 @@ STATE_EASTERN_MALI = {
 
 
 
-    mine = "x5F189B" 
+    mine = "x5F189B"
 
 
 
@@ -874,7 +883,7 @@ STATE_EASTERN_MALI = {
 
 
 
-    wood = "x320EE8" 
+    wood = "x320EE8"
 
 
 
@@ -896,6 +905,7 @@ STATE_EASTERN_MALI = {
 
 
 
+
     capped_resources = {
         bg_monuments = 1
     }
@@ -907,7 +917,7 @@ STATE_WESTERN_MALI = {
     subsistence_building = "building_subsistence_orchards"
     provinces = { "x02FB90" "x048EAE" "x04C1C5" "x09666E" "x0FDAC9" "x10FA1F" "x160C3E" "x297B38" "x383F16" "x48A057" "x6190B1" "x7070BF" "x901121" "xBAA7F0" "xBC3771" "xC88528" "xE0BEAB" "xE4FDFA" "xE69A18" }
     traits = { "state_trait_malaria" "state_trait_sahel" }
-    city = "xE69A18" 
+    city = "xE69A18"
 
 
 
@@ -918,7 +928,7 @@ STATE_WESTERN_MALI = {
 
 
 
-    farm = "x048EAE" 
+    farm = "x048EAE"
 
 
 
@@ -929,7 +939,7 @@ STATE_WESTERN_MALI = {
 
 
 
-    mine = "x10FA1F" 
+    mine = "x10FA1F"
 
 
 
@@ -940,7 +950,7 @@ STATE_WESTERN_MALI = {
 
 
 
-    wood = "x160C3E" 
+    wood = "x160C3E"
 
 
 
@@ -955,6 +965,7 @@ STATE_WESTERN_MALI = {
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_opium_plantations" }
     capped_resources = {
         bg_iron_mining = 35 #discoverable
+
 
 
 
@@ -985,7 +996,7 @@ STATE_TIMBUKTU = {
     mine = "x61700A"
     wood = "x006306"
     arable_land = 26
-    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_dye_plantations" } 
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_dye_plantations" }
 
 
 
@@ -1053,6 +1064,7 @@ STATE_NIGER = {
     wood = "xD090E0"
     arable_land = 10
     arable_resources = { "bg_date_plantations" "bg_dye_plantations" } #dye plantations = gum arabic
+
 
 
 

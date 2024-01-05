@@ -156,6 +156,7 @@ STATE_WESTERN_NORWAY = {
 
 
 
+
         bg_logging = 19
         bg_fishing = 15
     }
@@ -187,6 +188,7 @@ STATE_NORTHERN_NORWAY = {
 
 
 
+
         bg_logging = 6
         bg_whaling = 10
         bg_fishing = 10
@@ -208,6 +210,7 @@ STATE_EASTERN_NORWAY = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_iron_mining = 16 #Arendalsfeltet
+
 
 
 
@@ -356,6 +359,7 @@ STATE_HOME_COUNTIES = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 40 #Kent Coal Field, discovered 1890
+
 
 
 
@@ -589,6 +593,7 @@ STATE_MUNSTER = {
 
 
 
+
         #bg_minor_metals_mining = 10
         bg_fishing = 12
     }
@@ -608,6 +613,7 @@ STATE_LEINSTER = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 15 #Deerpark Mines, but also includes Ballingarry Coal Mines and Arigna, which are near the border with Leinster, to simplify the map.
+
 
 
 
@@ -645,7 +651,7 @@ STATE_CONNAUGHT = {
 STATE_ILE_DE_FRANCE = {
     id = 28
     subsistence_building = "building_subsistence_farms"
-    provinces = { x12462D x7080DF x71DA2E x906000 xE13BC2  }
+    provinces = { x12462D x7080DF x71DA2E x906000 xE13BC2 }
     traits = { state_trait_seine_river state_trait_good_soils }
     city = "x906000"
     farm = "x71DA2E"
@@ -661,7 +667,7 @@ STATE_ILE_DE_FRANCE = {
 STATE_PROVENCE = {
     id = 29
     subsistence_building = "building_subsistence_farms"
-    provinces = { x1B4B66 x3040E0 x30C060 x31C0DF x5080E0 x6D5E3F xB040E0 xB0C060 xB0C0E0 xB8E48D xC03918 xCB9C34  }
+    provinces = { x1B4B66 x3040E0 x30C060 x31C0DF x5080E0 x6D5E3F xB040E0 xB0C060 xB0C0E0 xB8E48D xC03918 xCB9C34 }
     traits = { state_trait_rhone_river state_trait_natural_harbors }
     city = "x31C0DF"
     port = "x3040E0"
@@ -681,8 +687,7 @@ STATE_PROVENCE = {
 STATE_NORMANDY = {
     id = 30
     subsistence_building = "building_subsistence_farms"
-    provinces = { x065CAE x0B7098 x1020C0 x65728E x79C0E6 x9020C0 x90A040 xA786BB xB06080 xB8903B xD642B5 xE0A624 
- }
+    provinces = { x065CAE x0B7098 x1020C0 x65728E x79C0E6 x9020C0 x90A040 xA786BB xB06080 xB8903B xD642B5 xE0A624 }
     traits = { "state_trait_seine_river" }
     city = "x9020C0"
     port = "xA786BB"
@@ -758,7 +763,7 @@ STATE_FRENCH_LOW_COUNTRIES = {
 STATE_MAINE_ANJOU = {
     id = 33
     subsistence_building = "building_subsistence_farms"
-    provinces = { x093DF5 x192CA5 x30E080 x56E158 x6B5474 x7CAE05 xB0E080  }
+    provinces = { x093DF5 x192CA5 x30E080 x56E158 x6B5474 x7CAE05 xB0E080 }
     traits = { "state_trait_loire_river" }
     city = "x7CAE05"
     farm = "x56E158"
@@ -776,7 +781,7 @@ STATE_MAINE_ANJOU = {
 STATE_PICARDY = {
     id = 34
     subsistence_building = "building_subsistence_farms"
-    provinces = { x075199 x106000 x10A0C0 x7040A0 x70C020 xC4C61A xCF1F6D  }
+    provinces = { x075199 x106000 x10A0C0 x7040A0 x70C020 xC4C61A xCF1F6D }
     traits = { state_trait_good_soils }
     city = "xCF1F6D"
     port = "x106000"
@@ -843,7 +848,7 @@ STATE_GUYENNE = {
 STATE_BRITTANY = {
     id = 39
     subsistence_building = "building_subsistence_farms"
-    provinces = { x10A040 x2368E7 x2BD902 x32C2E2 x50F4A7 x55607E x706000 x85E5AC xA0B0D1 xABF468 xC4D7A2 xD0E080 xD584A0 xF91DD2  }
+    provinces = { x10A040 x2368E7 x2BD902 x32C2E2 x50F4A7 x55607E x706000 x85E5AC xA0B0D1 xABF468 xC4D7A2 xD0E080 xD584A0 xF91DD2 }
     traits = { "state_trait_loire_river" "state_trait_natural_harbors" }
     city = "x706000"
     port = "x32C2E2"
@@ -861,7 +866,7 @@ STATE_BRITTANY = {
 STATE_BURGUNDY = {
     id = 40
     subsistence_building = "building_subsistence_farms"
-    provinces = { x09BB96 x10DF00 x380D42 x6D7896 x7000E0 x79B85C x8329EC x8C3297 xC69235 xF08060  }
+    provinces = { x09BB96 x10DF00 x380D42 x6D7896 x7000E0 x79B85C x8329EC x8C3297 xC69235 xF08060 }
     traits = { "state_trait_loire_river" }
     city = "x79B85C"
     farm = "x10DF00"
@@ -878,7 +883,7 @@ STATE_BURGUNDY = {
 STATE_CHAMPAGNE = {
     id = 41
     subsistence_building = "building_subsistence_farms"
-    provinces = { x5FEA2F x600883 x669027 x8AE8D1 x999D4B xD6A06D xE280FC xEF00DF xEF40A0 xEFBF20  }
+    provinces = { x5FEA2F x600883 x669027 x8AE8D1 x999D4B xD6A06D xE280FC xEF00DF xEF40A0 xEFBF20 }
     traits = { state_trait_good_soils state_trait_famous_wine_region }
     city = "xD6A06D"
     farm = "xEF00DF"
@@ -895,8 +900,7 @@ STATE_CHAMPAGNE = {
 STATE_FRANCHE_COMTE = {
     id = 42
     subsistence_building = "building_subsistence_farms"
-    provinces = { x3D8EF9 x700060 x708060 xA9D961 xCF46D1 xF00060 
- }
+    provinces = { x3D8EF9 x700060 x708060 xA9D961 xCF46D1 xF00060 }
     city = "xCF46D1"
     farm = "x700060"
     mine = "xF00060"
@@ -929,8 +933,7 @@ STATE_LORRAINE = {
 STATE_AUVERGNE_LIMOUSIN = {
     id = 43
     subsistence_building = "building_subsistence_farms"
-    provinces = { x01FD5F x07BCC1 x306000 x368F00 x3FE149 x50A0C0 x61609A x70C060 x90E000 xA27EFD xA8AE71 xABE045 xAF89BC  xD020C0 xE7B296  xF080E0 
- }
+    provinces = { x01FD5F x07BCC1 x306000 x368F00 x3FE149 x50A0C0 x61609A x70C060 x90E000 xA27EFD xA8AE71 xABE045 xAF89BC xD020C0 xE7B296 xF080E0 }
     city = "x07BCC1"
     farm = "x61609A"
     mine = "xF080E0"
@@ -948,8 +951,7 @@ STATE_AUVERGNE_LIMOUSIN = {
 STATE_AQUITAINE = {
     id = 44
     subsistence_building = "building_subsistence_farms"
-    provinces = { x086618 x5020C0 x606DEC x70A080 x76BA85 xA220D0 xB06000  xBBF036 xC8CD2F xCD8E77 xF0A080 
- }
+    provinces = { x086618 x5020C0 x606DEC x70A080 x76BA85 xA220D0 xB06000 xBBF036 xC8CD2F xCD8E77 xF0A080 }
     traits = { "state_trait_famous_wine_region" }
     city = "xBBF036"
     port = "xBBF036"
@@ -1085,7 +1087,9 @@ STATE_FLANDERS = {
 
 
 
+
     port = "x800060" #Antwerp
+
 
 
 
@@ -1095,12 +1099,15 @@ STATE_FLANDERS = {
 
 
 
+
     mine = "x018061" #Hasselt
 
 
 
 
+
     wood = "x808061" #Turnhout
+
 
 
 
@@ -1148,6 +1155,7 @@ STATE_AUSTRIA = {
 
 
 
+
         bg_logging = 7
     }
 }
@@ -1174,7 +1182,9 @@ STATE_BOHEMIA = {
 
 
 
+
         bg_iron_mining = 38 #Also small amount of tin
+
 
 
 
@@ -1194,7 +1204,9 @@ STATE_BOHEMIA = {
 
 
 
+
         bg_sulfur_mining = 15 #Pyrite
+
 
 
 
@@ -1239,6 +1251,7 @@ STATE_STYRIA = {
         #bg_coal_mining = 32 #Lignite
         bg_iron_mining = 45
         bg_lead_mining = 24 #and magnesium
+
 
 
 
@@ -1295,6 +1308,7 @@ STATE_SOUTH_TYROL = {
 
 
 
+
     }
 }
 
@@ -1341,6 +1355,7 @@ STATE_ELBE = {
 
 
 
+
     }
     resource = {
         type = "bg_oil_extraction"
@@ -1362,6 +1377,7 @@ STATE_EAST_SWITZERLAND = {
     capped_resources = {
         bg_logging = 18
         bg_lead_mining = 30 #Lead/Zinc mines
+
 
 
 
@@ -1441,6 +1457,7 @@ STATE_ANHALT = {
         #bg_coal_mining = 44 #Lignite
         #bg_iron_mining = 15 #Elbingrode & Huttenrode
         bg_sulfur_mining = 22 #Kalisalz
+
         bg_logging = 17
     }
 }
@@ -1468,6 +1485,7 @@ STATE_RHINELAND = {
 
 
 
+
         bg_lead_mining = 20
         bg_logging = 12
     }
@@ -1486,6 +1504,7 @@ STATE_NORTH_RHINE = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_dye_plantations" }
     capped_resources = {
         bg_coal_mining = 35 #lignite not included, 10 to Rhineland (Saar), 20 to Westphalia
+
 
 
 
@@ -1588,6 +1607,7 @@ STATE_HANNOVER = {
 
 
 
+
     }
     resource = {
         type = "bg_oil_extraction"
@@ -1610,6 +1630,7 @@ STATE_BRUNSWICK = {
     capped_resources = {
         #bg_coal_mining = 25 #Lignite
         bg_sulfur_mining = 35 #Südhannoverscher Kalibezirk 
+
 
 
 
@@ -1706,7 +1727,9 @@ STATE_HESSE = {
 
 
 
+
         bg_sulfur_mining = 35 #Goldgrube/Lahn-Dill
+
 
 
 
@@ -1718,6 +1741,7 @@ STATE_HESSE = {
 
         bg_logging = 10
         bg_copper_mining = 30 #Lahn-Dill 
+
 
 
 
@@ -1764,6 +1788,7 @@ STATE_RUHR = {
     capped_resources = {
         bg_coal_mining = 40
         bg_iron_mining = 50 #Siegerland, Bergische Land, Westerwald
+
 
 
 

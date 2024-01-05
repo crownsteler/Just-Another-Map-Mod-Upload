@@ -36,7 +36,9 @@ STATE_PIEDMONT = {
 
 
 
+
         bg_iron_mining = 18 #Val d'Aosta
+
 
 
 
@@ -61,6 +63,7 @@ STATE_SARDINIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_coal_mining = 16 #Mostly if not wholely lignite
+
 
 
 
@@ -206,6 +209,7 @@ STATE_ABRUZZO = {
 
 
 
+
     capped_resources = {
         bg_logging = 12
         bg_fishing = 7
@@ -224,6 +228,7 @@ STATE_SAVOY = {
     wood = "xD000E0"
     arable_land = 20
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" } #about 300 hectares of vineyards, too insignificant to include
+
 
 
 
@@ -274,6 +279,7 @@ STATE_TUSCANY = {
 
 
 
+
     capped_resources = {
         bg_iron_mining = 40
         bg_sulfur_mining = 25 #Pyrite
@@ -285,7 +291,8 @@ STATE_TUSCANY = {
 
 
 
-        
+
+
         #bg_coal_mining = 10 #Mostly Lignite
         bg_logging = 13
         bg_fishing = 5
@@ -394,6 +401,7 @@ STATE_TOLEDO = {
 
 
 
+
     }
 }
 STATE_GALICIA = {
@@ -461,9 +469,8 @@ STATE_CASTILE = {
 STATE_LEON = {
     id = 3404
     subsistence_building = "building_subsistence_farms"
-    provinces = { x0D5242 x2C00C8 x38C557 x70F50D x906201  xB02000 xB1C098  xB3BC6E xD060C0 xD30171 
- }
-    city = "xB1C098" 
+    provinces = { x0D5242 x2C00C8 x38C557 x70F50D x906201 xB02000 xB1C098 xB3BC6E xD060C0 xD30171 }
+    city = "xB1C098"
 
 
 
@@ -475,7 +482,7 @@ STATE_LEON = {
 
 
     farm = "x38C557"
-    mine = "x0D5242" 
+    mine = "x0D5242"
 
 
 
@@ -486,7 +493,7 @@ STATE_LEON = {
 
 
 
-    wood = "xB02000" 
+    wood = "xB02000"
 
 
 
@@ -511,13 +518,14 @@ STATE_LEON = {
 
 
 
+
         bg_logging = 6
     }
 }
 STATE_NAVARRA = {
     id = 96
     subsistence_building = "building_subsistence_farms"
-    provinces = { x073FC4 x10E0C0 x48868C x6E16BB x702080  xABE0B3 xCB3245 }
+    provinces = { x073FC4 x10E0C0 x48868C x6E16BB x702080 xABE0B3 xCB3245 }
     traits = { "state_trait_basque_iron_ore" }
     city = "xAC1425"
     port = "x48868C"
@@ -540,8 +548,7 @@ STATE_NAVARRA = {
 STATE_ARAGON = {
     id = 97
     subsistence_building = "building_subsistence_farms"
-    provinces = { x076DE0 x202982 x2555A4 x30A080 x339B06 x3CBF9E x45B331 x506040 x5FB607 x9060C0 xA603C7 
- }
+    provinces = { x076DE0 x202982 x2555A4 x30A080 x339B06 x3CBF9E x45B331 x506040 x5FB607 x9060C0 xA603C7 }
     city = "x45B331"
     farm = "x506040"
     mine = "x45B331"
@@ -557,8 +564,7 @@ STATE_ARAGON = {
 STATE_CATALONIA = {
     id = 98
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x08B4D6" "x0C64AC" "x1060C0" "x11E041" "x2914C3" "x890622" "x906040" "x936FF3" "x945748" "xC2FFD9" "xD616D2" "xE0C020" 
- }
+    provinces = { "x08B4D6" "x0C64AC" "x1060C0" "x11E041" "x2914C3" "x890622" "x906040" "x936FF3" "x945748" "xC2FFD9" "xD616D2" "xE0C020" }
     city = "xE0C020"
     port = "x890622"
     farm = "x11E041"
@@ -602,6 +608,7 @@ STATE_ANDALUSIA = {
         bg_sulfur_mining = 30
         bg_copper_mining = 40
         bg_coal_mining = 30 #various mines, started in 1740 by Royal Artillery Petty Officers
+
 
 
 
@@ -659,7 +666,7 @@ STATE_BADAJOZ = {
 STATE_VALENCIA = {
     id = 103
     subsistence_building = "building_subsistence_farms"
-    provinces = { x25DD5C x721583 x8FDF80 x99E5CE xCAC27C xD06040 xDFEF80  }
+    provinces = { x25DD5C x721583 x8FDF80 x99E5CE xCAC27C xD06040 xDFEF80 }
     city = "x8FDF80"
     port = "xDFEF80"
     farm = "xD06040"
@@ -696,7 +703,8 @@ STATE_MURCIA = {
 
 
 
-    
+
+
     #bg_minor_metals_mining = 5 #Chromium
     }
     naval_exit_id = 3032
@@ -706,7 +714,7 @@ STATE_BEIRA = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x3020A3" "x84A822" "x9238AD" "xB0177A" "xC3BFC4" "xE24C15" "xE415AF" "xEBA935" "xEFC9BC" "xF92B7F" }
     traits = { "state_trait_cork_forests" }
-    city = "x3020A3" 
+    city = "x3020A3"
 
 
 
@@ -717,7 +725,7 @@ STATE_BEIRA = {
 
 
 
-    farm = "x3020A3" 
+    farm = "x3020A3"
 
 
 
@@ -728,7 +736,7 @@ STATE_BEIRA = {
 
 
 
-    mine = "x84A822" 
+    mine = "x84A822"
 
 
 
@@ -739,7 +747,7 @@ STATE_BEIRA = {
 
 
 
-    wood = "xC3BFC4" 
+    wood = "xC3BFC4"
 
 
 
@@ -779,7 +787,8 @@ STATE_DOURO = {
 
 
 
-    city = "xD0A000" 
+
+    city = "xD0A000"
 
 
 
@@ -790,7 +799,7 @@ STATE_DOURO = {
 
 
 
-    port = "xD0A000" 
+    port = "xD0A000"
 
 
 
@@ -801,7 +810,7 @@ STATE_DOURO = {
 
 
 
-    farm = "xA64B2E" 
+    farm = "xA64B2E"
 
 
 
@@ -812,7 +821,7 @@ STATE_DOURO = {
 
 
 
-    mine = "x37ADD8" 
+    mine = "x37ADD8"
 
 
 
@@ -823,7 +832,7 @@ STATE_DOURO = {
 
 
 
-    wood = "xD0E0C0" 
+    wood = "xD0E0C0"
 
 
 
@@ -848,7 +857,8 @@ STATE_DOURO = {
 
 
 
-    
+
+
     #bg_minor_metals_mining = 10 #Paredes
     }
     #resource = {
@@ -862,7 +872,7 @@ STATE_ESTREMADURA = {
     id = 105
     subsistence_building = "building_subsistence_farms"
     provinces = { "x50A000" "x545164" "xA0F6EC" "xD02000" "xD0A080" }
-    city = "xD0A080" 
+    city = "xD0A080"
 
 
 
@@ -873,7 +883,7 @@ STATE_ESTREMADURA = {
 
 
 
-    port = "xD0A080" 
+    port = "xD0A080"
 
 
 
@@ -884,7 +894,7 @@ STATE_ESTREMADURA = {
 
 
 
-    farm = "xA0F6EC" 
+    farm = "xA0F6EC"
 
 
 
@@ -915,7 +925,7 @@ STATE_ALENTEJO = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x207080" "x88DCE1" "x8B17E3" "xA07080" }
     traits = { "state_trait_iberian_pyrite_belt" }
-    city = "x207080" 
+    city = "x207080"
 
 
 
@@ -926,7 +936,7 @@ STATE_ALENTEJO = {
 
 
 
-    port = "x88DCE1" 
+    port = "x88DCE1"
 
 
 
@@ -937,7 +947,7 @@ STATE_ALENTEJO = {
 
 
 
-    farm = "x8B17E3" 
+    farm = "x8B17E3"
 
 
 
@@ -948,7 +958,7 @@ STATE_ALENTEJO = {
 
 
 
-    mine = "x8B17E3" 
+    mine = "x8B17E3"
 
 
 
@@ -959,7 +969,7 @@ STATE_ALENTEJO = {
 
 
 
-    wood = "xA07080" 
+    wood = "xA07080"
 
 
 
@@ -983,9 +993,11 @@ STATE_ALENTEJO = {
 
 
 
-        bg_sulfur_mining = 25 
+
+        bg_sulfur_mining = 25
 
         bg_sulfur_mining = 25 #Pyrite
+
 
 
 
@@ -1028,6 +1040,7 @@ STATE_CANARY_ISLANDS = {
     wood = "xC2C164"
     arable_land = 7
     arable_resources = { "bg_tobacco_plantations" "bg_sugar_plantations" "bg_dye_plantations" "bg_vineyard_plantations" } #dyes plantations = roccella tinctoria and cochineal
+
 
 
 
@@ -1100,6 +1113,7 @@ STATE_EASTERN_THRACE = {
 
 
 
+
         bg_logging = 4
         bg_fishing = 10
         bg_monuments = 1
@@ -1131,6 +1145,7 @@ STATE_DOBRUDJA = {
 
 
 
+
     }
     naval_exit_id = 3036
 }
@@ -1147,6 +1162,7 @@ STATE_ALBANIA = {
     wood = "xC42EC6"
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" } #should also have spices
+
 
 
 
@@ -1209,9 +1225,11 @@ STATE_NORTHERN_THRACE = {
 
 
 
-        
+
+
         #bg_minor_metals_mining = 10 #Rhodope mountains, tungsten-molybdenum
         bg_lead_mining = 15 #Rhodope mountains, exploited during Crimean war for munitions
+
 
 
 
@@ -1250,7 +1268,8 @@ STATE_BULGARIA = {
 
 
 
-    
+
+
     #bg_minor_metals_mining = 15 #Manganese
     }
     naval_exit_id = 3036
@@ -1272,6 +1291,7 @@ STATE_SLOVENIA = {
         bg_logging = 11
         #bg_minor_metals_mining = 20 #Manganese, mecury (Idrija)
         bg_lead_mining = 15 #Mežica, Lead/Zinc
+
 
 
 
@@ -1345,7 +1365,7 @@ STATE_ISTRIA = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x108021" "x3060BF" "x36B2E3" "x56C78A" "xB061C0" "xF0A040" }
     traits = { "state_trait_terra_rossa" }
-    city = "x3060BF" 
+    city = "x3060BF"
 
 
 
@@ -1356,7 +1376,7 @@ STATE_ISTRIA = {
 
 
 
-    port = "x36B2E3" 
+    port = "x36B2E3"
 
 
 
@@ -1374,6 +1394,7 @@ STATE_ISTRIA = {
     arable_resources = { "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_coal_mining = 44 #Rasa Mine
+
 
 
 
@@ -1402,6 +1423,7 @@ STATE_MONTENEGRO = {
     wood = "xF5F6C2"
     arable_land = 13
     arable_resources = { "bg_livestock_ranches" "bg_vineyard_plantations" } #potential for tobacco
+
 
 
 
@@ -1441,6 +1463,7 @@ STATE_NORTHERN_SERBIA = {
 
 
 
+
         bg_logging = 8
     }
 }
@@ -1458,6 +1481,7 @@ STATE_SOUTHERN_SERBIA = {
     capped_resources = {
         bg_coal_mining = 40
         bg_lead_mining = 36 #Lead/Zinc
+
 
 
 
@@ -1510,6 +1534,7 @@ STATE_WEST_AEGEAN_ISLANDS = {
 
 
 
+
     }
     naval_exit_id = 3034
 }
@@ -1524,6 +1549,7 @@ STATE_EAST_AEGEAN_ISLANDS = {
     wood = "xC56452"
     arable_land = 5
     arable_resources = { "bg_livestock_ranches" "bg_dye_plantations" "bg_vineyard_plantations" } #Dye_plantations = mastic
+
 
 
 
@@ -1591,6 +1617,7 @@ STATE_SKOPIA = {
 
 
 
+
     capped_resources = {
         bg_iron_mining = 36
         bg_logging = 16
@@ -1611,11 +1638,13 @@ STATE_MACEDONIA = {
 
 
 
+
     capped_resources = {
         bg_logging = 9
         bg_fishing = 3
         #bg_coal_mining = 35 #Lignite, Western Macedonia Field
         bg_lead_mining = 10 #Lead/Zinc
+
 
 
 
@@ -1645,6 +1674,7 @@ STATE_WESTERN_THRACE = {
     wood = "xBE51B7"
     arable_land = 25
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" } #removed cotton due to the number of resources and cotton potential in the region.
+
 
 
 

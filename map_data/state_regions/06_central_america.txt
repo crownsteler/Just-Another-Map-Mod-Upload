@@ -42,6 +42,7 @@ STATE_GUATEMALA = {
 
 
 
+
     capped_resources = {
         #bg_minor_metals_mining = 30 #nickel
         bg_logging = 17
@@ -76,8 +77,10 @@ STATE_HONDURAS = {
 
 
 
+
     capped_resources = {
         bg_lead_mining = 15 #lead/silver
+
 
 
 
@@ -118,6 +121,7 @@ STATE_NICARAGUA = {
 
 
 
+
     capped_resources = {
         bg_logging = 14
         bg_fishing = 5
@@ -141,6 +145,7 @@ STATE_COSTA_RICA = {
     wood = "x478109"
     arable_land = 15
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #palm oil
+
 
 
 
@@ -206,6 +211,7 @@ STATE_HAITI = {
 
 
 
+
     capped_resources = {
         bg_logging = 7
         bg_fishing = 6
@@ -259,6 +265,7 @@ STATE_PUERTO_RICO = {
 
 
 
+
     capped_resources = {
         bg_fishing = 4
     }
@@ -279,6 +286,7 @@ STATE_BAHAMAS = {
     wood = "x4EBC79"
     arable_land = 5
     arable_resources = { "bg_rice_farms" "bg_banana_plantations" } #Banana = pineapple
+
 
 
 
@@ -326,6 +334,7 @@ STATE_JAMAICA = {
     farm = "x535B49"
     arable_land = 23
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #potentially spices
+
 
 
 
