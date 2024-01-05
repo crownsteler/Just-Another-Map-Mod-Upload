@@ -1,0 +1,14 @@
+﻿COUNTRIES = {
+	c:BTL = {
+		effect_starting_technology_tier_3_tech = yes
+		
+		# Laws 
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_traditionalism
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_sunni_madrasahs
+		}
+	}
+}

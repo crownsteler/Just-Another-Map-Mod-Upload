@@ -1,0 +1,32 @@
+﻿state_trait_cr_ottowa_timber_trade = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+	modifier = {
+		goods_output_wood_mult = 0.15
+		goods_output_hardwood_mult = -0.20
+	}
+}
+
+state_trait_cr_clay_belt = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.10
+	}
+}
+
+state_trait_cr_the_great_north = {
+	icon = "gfx/interface/icons/state_trait_icons/cold_climate.dds"
+	modifier = {
+		state_colony_growth_speed_mult = -0.50
+        building_group_bg_agriculture_throughput_add = -0.2
+		state_construction_mult = -0.25
+		state_infrastructure_mult = -0.25
+	}
+}
+
+state_trait_cr_humboldt_current = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_fish.dds"
+	
+	modifier = {
+		building_group_bg_fishing_throughput_add = 0.15
+	}
+}

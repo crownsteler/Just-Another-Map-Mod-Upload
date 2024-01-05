@@ -1,0 +1,76 @@
+﻿# This is executed last among all history
+GLOBAL = {
+	s:STATE_NAVARRA = {
+		add_devastation = 24
+	}
+	s:STATE_CATALONIA = {
+		add_devastation = 10
+	}
+	s:STATE_ARAGON = {
+		add_devastation = 10
+	}
+	c:SPA = {
+		set_variable = cr_carlist_war_ongoing
+		#add_treasury = -2000000
+		
+		add_radicals = {
+			value = 0.45
+			culture = cu:basque
+		}
+		add_radicals = {
+			value = 0.30
+			culture = cu:catalan
+		}
+		add_radicals = {
+			value = 0.25
+			culture = cu:galician
+		}
+		add_radicals = {
+			value = 0.25
+			strata = poor
+		}
+		every_scope_state = {
+            limit = {
+                OR = {
+                    state_region = s:STATE_GALICIA
+                    state_region = s:STATE_CATALONIA
+                    state_region = s:STATE_ASTURIAS
+                    state_region = s:STATE_ARAGON					
+                }
+            }
+			add_radicals_in_state = {
+                value = 0.25
+            }
+        }
+		every_scope_state = {
+            limit = {
+                OR = {
+                    state_region = s:STATE_CASTILE
+                    state_region = s:STATE_VALENCIA
+                    state_region = s:STATE_TOLEDO
+                    state_region = s:STATE_BADAJOZ					
+                    state_region = s:STATE_ANDALUSIA					
+                    state_region = s:STATE_GRANADA					
+                    state_region = s:STATE_MURCIA					
+                }
+            }
+            add_radicals_in_state = {
+                value = 0.15
+            }
+        }	
+	}
+	c:CSP = {
+		add_loyalists = {
+			value = 0.45
+			culture = cu:basque
+		}
+		add_loyalists = {
+			value = 0.4
+			culture = cu:catalan
+		}
+		add_radicals = {
+			value = 0.3
+			culture = cu:spanish
+		}
+	}
+}

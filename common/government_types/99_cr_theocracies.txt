@@ -1,0 +1,12 @@
+﻿#gov_cr_caliphate = {
+#	transfer_of_power = dictatorial
+#	
+#	male_ruler = "RULER_TITLE_CALIPH"
+#	female_ruler = "RULER_TITLE_CALIPHA"
+#	
+#	possible = {
+#		has_law = law_type:law_theocracy
+#		exists = c:SOK
+#		c:SOK = ROOT
+#	}
+#}

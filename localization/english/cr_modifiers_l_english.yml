@@ -1,0 +1,104 @@
+﻿l_english:
+ ### State Traits ###
+ #State traits general
+ state_trait_porphyry_copper:0 "Porphyry Deposits"
+ state_trait_siderite_ore:0 "Siderite Deposists"
+ #State traits Indonesia
+ state_trait_cr_andosol:0 "Andosol"
+ state_trait_cr_java_soil:0 "Volcanic Soil"
+ state_trait_cr_sumatran_alluvial_swamps:0 "Peat Swamps"
+ state_trait_cr_barisan_mountains:0 "Barisan Mountains"
+ state_trait_cr_billiton:0 "Koolit-Kollong"
+ state_trait_cr_sandalwood_forests:0 "Sandalwood Islands"
+ #State traits India
+ state_trait_true_indigo:0 "True Indigo"
+ state_trait_kashmir_wool:0 "Cashmere Wool"
+ #State traits Central Asia
+ state_trait_fergana_valley:0 "Fergana Valley"
+ state_trait_cr_tien_shan:0 "Tien Shan Mountain Range"
+ state_trait_cr_pamir_mountains:0 "Pamir Mountains"
+ state_trait_cr_lapis_lazuli_deposits:0 "Lapis Lazuli Deposists"
+ state_trait_cr_altai:0 "Altai Mountains"
+ #State traits Middle East
+ state_trait_cr_yemeni_highlands:0 "Yemeni Highlands"
+ state_trait_cr_asir_mountains:0 "Asir Mountains"
+ state_trait_cr_mesopotamia:0 "Mesopotamia"
+ state_trait_cr_mesopotamian_marshes:0 "Mesopotamian Marshes"
+ state_trait_cr_cedars_of_lebanon:0 "Cedars of Lebanon"
+ #State traits for North Africa
+ state_trait_cr_the_rif:0 "The Rif"
+ #State traits Horn of Africa
+ state_trait_cr_ethiopian_highlands:0 "Ethiopian Highlands"
+ #State traits subsaharan Africa
+ state_trait_cr_copperbelt:0 "Central African Copperbelt"
+ state_trait_cr_the_sudd:0 "The Sudd"
+ state_trait_cr_the_great_dyke:0 "The Great Dyke"
+ state_trait_namib_desert:0 "The Namib"
+ #State traits Europe
+ state_trait_iberian_pyrite_belt:0 "Iberian Pyrite Belt"
+ state_trait_cork_forests:0 "Cork Forests"
+ state_trait_port_of_porto:0 "Port Wine"
+ state_trait_sparkling_champagne:0 "Champagne Wine"
+ state_trait_bordeaux_red:0 "Bordeaux Wine"
+ state_trait_famous_wine_region:0 "Famous Wine Region"
+ state_trait_minette_ore:0 "Minette Ores"
+ state_trait_polders:0 "Polders"
+ state_trait_erzberg:0 "Erzberg"
+ state_trait_slovak_ore_mountains:0 "Slovak Ore Mountains" #Gömör–Szepesi
+ state_trait_skouriotissa_copper:0 "Skouriotissa Coppermine"
+ #State traits East Asia
+ state_trait_cr_halong:0 "Ha Long Bay"
+ 
+ #State traits America
+ state_trait_cr_ottowa_timber_trade:0 "Canadian Spruce"
+ state_trait_cr_athabaska_fur_trade:0 "Athabaska Fur District"
+ state_trait_cr_clay_belt:0 "The Clay Belt"
+ state_trait_cr_the_great_north:0 "The Great North"
+ state_trait_cr_humboldt_current:0 "Humboldt Current"
+ 
+ cr_desamortizacion_ig_devout:0 "Desamortización"
+ cr_desamortizacion_ig_liberals:0 "Desamortización"
+ cr_desamortizacion_denied_ig_devout:0 "Mortmains Reinforced"
+ cr_desamortizacion_denied_ig_liberals:0 "Mortmains Reinforced"
+ 
+ 
+ ### Interest Groups ###
+ cr_riba_condemned_devout:0 "Riba Condemned"
+ cr_riba_condemned_bankers:0 "Riba Condemned"
+ cr_engaged_in_riba:0 "Paid off the moneylenders"
+ cr_paid_noble_debt_positive:0 "Paid off noble debts"
+ cr_paid_noble_debt_negative:0 "Paid off noble debts"
+ cr_not_paid_noble_debt_positive:0 "Refused to pay noble debt"
+ cr_not_paid_noble_debt_negative:0 "Refused to pay noble debt"
+ cr_approved_mining_permits:0 "Approved Mining Permits"
+ cr_denied_mining_permits:0 "Denied Mining Permits"
+ cr_surrendered_to_native_demands:0 "Surrendered to Native Demands"
+ cr_succesful_lobby_normal:1 "Succesful Lobby"
+
+ ### State Modifiers ###
+ cr_riba_condemned_income:0 "Riba Condemned" 
+ cr_riba_endorsed_income:0 "Financed Local Debt"
+ cr_mining_permit_denied:0 "Denied Mining Permits"
+ cr_unceded_territory_95:0 "Unceded Territory"
+ cr_unceded_territory_75:0 "Unceded Territory"
+ cr_unceded_territory_50:0 "Unceded Territory"
+ cr_unceded_territory_30:0 "Unceded Territory"
+ cr_valley_of_plenty_50:0 "Valley of Plenty"
+ cr_valley_of_plenty_25:0 "Valley of Plenty"
+ cr_golden_gate_25:0 "The Golden Gate"
+ cr_tax_revolt:0 "Tax Revolt"
+ cr_infrastructure_overburdened:0 "Overburdened Infrastructure"
+ cr_government_removal_agents:0 "Public Removal Agents"
+ cr_government_improved_removal_regulations:0 "Improved Regulations Concerning the Removal of the Indians"
+ 
+ ### National Modifiers
+ cr_disunifying_the_kyrgyz:0 "Disunifying the clans"
+ cr_dealing_with_the_kyrgyz:0 "Treating with the clans"
+ cr_solomonic_dynasty:0 "A Three Millenia Old Dynasty"
+ cr_treaty_annuities:0 "Treaty Annuities"
+ cr_eyeing_unceded_land:0 "Eyeing Unceded Land"
+ cr_chateau_clique_modifier:0 "The Château Clique"
+ cr_patriote_movement_modifier:0 "Patriote Movement"
+ cr_treaty_of_doaksville:0 "Treaty of Doaksville"
+ 
+ cr_desamortizacion_auctioned:0 "Desamortización"

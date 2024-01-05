@@ -1,0 +1,55 @@
+﻿je_cr_kyrgyz_tribes = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	group = je_group_historical_content
+	
+	on_monthly_pulse = {
+		random_events = {
+			10 = 0
+			1 = cr_central_asia_events.1
+			1 = cr_central_asia_events.5
+		}
+	}
+	
+	
+	immediate = {
+		c:KYZ = {
+			set_variable = cr_kyrzyg_flagmod
+		}
+		add_modifier = {
+			name = cr_disunifying_the_kyrgyz #-150 authority
+		}
+	}
+
+	complete = {
+		c:KYZ = {
+			NOT = {
+				is_country_type = decentralized
+			}
+		}
+	}
+	
+	on_complete = {
+		remove_modifier = cr_disunifying_the_kyrgyz
+	}
+	
+	invalid = {
+		NOT = {
+			exists = c:KOK
+		}
+	}
+	
+	on_invalid = {
+		c:KYZ = {
+			remove_variable = cr_kyrzyg_flagmod
+		}
+		remove_modifier = cr_disunifying_the_kyrgyz
+	
+	}
+	
+	weight = 200
+	
+	should_be_pinned_by_default = yes
+	
+	inheritable = no
+}

@@ -1,0 +1,305 @@
+﻿#############################
+#							#
+#			Arabia			#
+#							#
+#############################
+ARL = {
+	color = { 246 223 223 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { kurdish }
+	religion = sunni
+	capital = STATE_LURISTAN
+}
+
+ASR = {
+	color = { 112 185 32 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bedouin }
+	religion = shiite
+	capital = STATE_HEDJAZ
+}
+
+AZA = {
+	color = { 133 88 89 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bedouin }
+	religion = sunni
+	capital = STATE_BADIYA
+}
+
+BBN = {
+	color = { 194 232 157 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { kurdish }
+	religion = sunni
+	capital = STATE_MOSUL
+}
+
+BKT = {
+	color = { 68 193 84 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { kurdish }
+	religion = sunni
+	capital = STATE_DIYARBAKIR
+}
+
+KHS = {
+	color = { 91 184 103 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { baluchi }
+	religion = sunni
+	capital = STATE_SISTAN
+}
+
+BTL = {
+	color = { 245 245 204 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { kurdish }
+	religion = sunni
+	capital = STATE_DIYARBAKIR
+}
+
+BYD = {
+	color = { 71 95 186 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { kurdish }
+	religion = sunni
+	capital = STATE_DIYARBAKIR
+}
+
+DRU = {
+	color = { 156 117 188 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { mashriqi }
+	religion = shiite
+	capital = STATE_SYRIA
+}
+
+FDH = {
+	color = { 0 154 241 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { yemenite bedouin }
+	religion = sunni
+	capital = STATE_SOUTH_YEMEN
+}
+
+HKR = {
+	color = { 59 131 67 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { kurdish }
+	religion = sunni
+	capital = STATE_DIYARBAKIR
+}
+
+HOW = {
+	color = { 180 153 127 } #180 125 71 
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bedouin }
+	religion = sunni
+	capital = STATE_BADIYA
+}
+
+HUT = {
+	color = { 127 175 105 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bedouin }
+	religion = sunni
+	capital = STATE_HEDJAZ
+}
+
+JLI = {
+	color = { 64 84 31 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { kurdish }
+	religion = sunni
+	capital = STATE_TABRIZ
+}
+
+#KGN = {
+#	color = { 161 224 87 }
+#	
+#	country_type = unrecognized
+#	
+#	tier = principality
+#	
+#	cultures = { bedouin }
+#	religion = sunni
+#	capital = STATE_LARISTAN
+#}
+
+KWT = {
+	color = { 124 144 117 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bedouin }
+	religion = sunni
+	capital = STATE_HAJAR
+}
+
+MKR = {
+	color = { 228 247 202 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { kurdish }
+	religion = sunni
+	capital = STATE_TABRIZ
+}
+
+MZK = {
+	color = { 87 116 224 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bedouin }
+	religion = sunni
+	capital = STATE_FARS
+}
+
+NFD = {
+	color = { 224 208 96 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { bedouin }
+	religion = sunni
+	capital = STATE_HAIL
+}
+
+NJR = {
+	color = { 21 194 85 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bedouin }
+	religion = shiite
+	capital = STATE_HEDJAZ
+}
+
+OTB = {
+	color = { 170 81 81 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bedouin }
+	religion = sunni
+	capital = STATE_HEDJAZ
+}
+
+RBS = {
+	color = { 201 112 61 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { mashriqi }
+	religion = sunni
+	capital = STATE_NEJD
+}
+
+RUB = {
+	color = { 154 145 80 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { bedouin }
+	religion = sunni
+	capital = STATE_NEJD
+}
+
+SDK = {
+	color = { 75 75 195 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { kurdish }
+	religion = shiite
+	capital = STATE_SISTAN
+}
+
+
+SRN = {
+	color = { 90 205 105 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { kurdish }
+	religion = sunni
+	capital = STATE_SISTAN
+}

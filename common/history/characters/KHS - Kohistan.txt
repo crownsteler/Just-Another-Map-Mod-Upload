@@ -1,0 +1,15 @@
+﻿CHARACTERS = {
+	c:KHS = {
+		create_character = {
+			first_name = "Mihrab"
+			last_name = ""
+			historical = yes
+			ruler = yes
+			age = 61
+			interest_group = ig_landowners
+			traits = {
+				ambitious
+				imperious
+			}
+		}	
+}

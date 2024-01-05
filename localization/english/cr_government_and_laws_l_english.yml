@@ -1,0 +1,64 @@
+﻿l_english:
+ #Government Names
+ gov_zz_hakomate:0 "Hakomate"
+ gov_cr_khanate:0 "Khanate"
+ gov_cr_khanate_desc:0 "This is a [concept_government_type] where the power rests completely with the [Concept('concept_ruler','$RULER_TITLE_KHAN$')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_zz_caliphate:0 "Caliphate"
+ gov_zz_caliphate_desc:0 "Placeholder"
+ RULER_TITLE_CALIPHA:0 "Calipha"
+ gov_zz_cr_ethiopian_empire:0 "Empire"
+ gov_zz_cr_ethiopian_empire_desc:0 "This is a [concept_government_type] where the power rests completely with the [Concept('concept_ruler','$RULER_TITLE_NEGUSA_NAGAST$')] or [Concept('concept_ruler','$RULER_TITLE_NEGESTA_NAGASTAT$')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ RULER_TITLE_NEGUSA_NAGAST:0 "Negus Nagast"
+ RULER_TITLE_NEGESTA_NAGASTAT:0 "Negesta Nagastat"
+ RULER_TITLE_LEUL:0 "Leul"
+ RULER_TITLE_LEELT:0 "Le'elt"
+ gov_zz_cr_ethiopian_kingdom:0 "Absolutist Kingdom"
+ gov_zz_cr_ethiopian_kingdom_desc:0 "This is a [concept_government_type] where the power rests completely with the [Concept('concept_ruler','$RULER_TITLE_NEGUS$')] or [Concept('concept_ruler','$RULER_TITLE_NEGEST$')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ RULER_TITLE_NEGUS:0 "Negus"
+ RULER_TITLE_NEGEST:0 "Negest"
+ RULER_TITLE_LEUL_RAS:0 "Leul Ras"
+ RULER_TITLE_LEELT_RAS:0 "Le'elt Ras"
+ gov_zz_cr_ethiopian_principality:0 "Absolutist Principality"
+ gov_zz_cr_ethiopian_principality_desc:0 "This is a [concept_government_type] where the power rests completely with the [Concept('concept_ruler','$RULER_TITLE_RAS$')] or [Concept('concept_ruler','$RULER_TITLE_WOIZERO_HOY$')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ RULER_TITLE_RAS:0 "Ras"
+ RULER_TITLE_WOIZERO:0 "Woizero"
+ RULER_TITLE_LIJ:0 "Lij"
+ 
+ #PRINCELY_STATE:0 "Princely State"
+ VORSTENLAND_desc:0 "Vorstenland"
+ #NATIVE_STATE:0 "Native Monarchy"
+ 
+ gov_vorstenlandsur:0 "Vorstenland"
+ gov_vorstenlandsur_desc:0 "Being a direct decendent of the Sultans of Mataram of old, the [Concept('concept_ruler','$RULER_TITLE_SUSUHUNAN$')] of Soerakarta has been granted a self-ruling [Concept('concept_subject','$VORSTENLAND$')] .\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ gov_vorstenlandyog:0 "Vorstenland"
+ gov_vorstenlandyog_desc:0 "This Native State is a self-ruling Princely State within the Dutch East Indies. The Sultan holds legitimacy through belonging to a cadet branch of the old Sultans of Mataram.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ gov_zz_DEI_princely_state_muslim:0 "Princely State"
+ gov_zz_DEI_princely_state_muslim_desc:0 "This [Concept('concept_government_type','$NATIVE_STATE$')] is a self-governing [Concept('concept_subject','$PRINCELY_STATE$')] of the Dutch East Indies. Its ruler is refered to as [Concept('concept_ruler','$RULER_TITLE_SULTAN$')] or [Concept('concept_ruler','$RULER_TITLE_SULTANA$')]\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ gov_zz_DEI_princely_state_hindu:0 "Princely State"
+ gov_zz_DEI_princely_state_hindu_desc:0 "This [Concept('concept_government_type','$NATIVE_STATE$')] is a self-ruling [Concept('concept_subject','$PRINCELY_STATE$')] of the Dutch East Indies. Its ruler is refered to as the [Concept('concept_ruler','$RULER_TITLE_DEWA_AGUNG$')]\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ gov_zz_DEI_princely_state_hindu2:0 "Princely State"
+ gov_zz_DEI_princely_state_hindu_desc2:0 "This [Concept('concept_government_type','$NATIVE_STATE$')] is a self-ruling [Concept('concept_subject','$PRINCELY_STATE$')] of the Dutch East Indies. Its ruler is refered to as [Concept('concept_ruler','$RULER_TITLE_RAJA$')] or [Concept('concept_ruler','$"RULER_TITLE_RANI$')]\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ RULER_TITLE_PANGERAN:0 "Pangeran"
+ RULER_TITLE_RADEN_AJENG:0 "Raden Ajeng"
+ 
+ gov_sunanat1:0 "Vorstenland"
+ gov_vorst_desc:0 "This is a [concept_government_type] type in which the [Concept('concept_ruler','$RULER_TITLE_SUSUHUNAN$')] has been granted the priviledge of self rule due to their relation to Sultans of Mataram of old.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ 
+ 
+ gov_sultanate_lake_chad:0 "Sultanate"
+ gov_sultanate_lake_chad_desc:0 "This is a [concept_government_type] where the power rests completely with the [Concept('concept_ruler','$RULER_TITLE_SHEHU$')]\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ RULER_TITLE_SHEHU:0 "Shehu"
+ 
+
+ #Interest Groups
+ ig_mesafint:0 "Mesafint"
+ ig_mekwanint:0 "Mekwanint"
+ ig_balabat:0 "Balabat"
+ ig_negadras:0 "Negadras"
+ ig_gebbars:0 "Gebbars"

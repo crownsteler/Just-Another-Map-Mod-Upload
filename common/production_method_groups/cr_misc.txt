@@ -1,0 +1,59 @@
+﻿pmg_base_building_fur_trading_post = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_base_trading_fur_trading_post
+		pm_intensive_trading_fur_trading_post
+	}
+}
+
+pmg_weapon_trading_building_fur_trading_post = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_trading_fur_trading_post_no_weapons
+		pm_weapon_trading_fur_trading_post
+	}
+}
+
+pmg_liquor_trading_fur_trading_post = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_trading_fur_trading_post_no_liquor
+		pm_liquor_trading_fur_trading_post
+	}
+}
+
+pmg_harvesting_building_ivory_trading_post = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_traditional_harvesting_ivory_trading_post
+		pm_intensive_trading_ivory_trading_post
+		pm_modern_harvesting_trading_ivory_trading_post
+	}
+}
+
+pmg_processing_building_ivory_trading_post = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_unprocessed_export_ivory_trading_post
+		pm_artisinal_carving_ivory_trading_post
+		pm_workshops_ivory_trading_post
+	}
+}
+
+pmg_transportation_building_ivory_trading_post = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_slave_portage_ivory_trading_post
+		pm_manual_portage_ivory_trading_post
+		pm_modern_portage_ivory_trading_post
+	}
+}
+
+pmg_kashmir_ranch = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_kashmir_ranch
+		pm_kasmir_farms
+		pm_intensive_kashmir_ranch
+	}
+}

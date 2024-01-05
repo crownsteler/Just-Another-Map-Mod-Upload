@@ -1,0 +1,123 @@
+﻿je_indian_removal = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_historical_content
+	
+	on_monthly_pulse = {
+		random_events = {
+			10 = 0 
+			1 = native_resettlement.2 # john ross
+			1 = native_resettlement.3 # Preparing for resettlement
+			1 = native_resettlement.4 # Trail of Tears
+		}
+	}
+	
+	immediate = {
+		set_variable = cr_choctaw_removal_complete
+		c:CHE = {
+			save_scope_as = cherokee_nation
+		}
+		c:CSW = {
+			save_scope_as = chickasaw_nation
+		}
+		c:CTW = {
+			save_scope_as = choctaw_nation
+		}
+		c:MSC = {
+			save_scope_as = creek_nation
+		}
+		c:SMN = {
+			save_scope_as = seminole_nation
+		}
+		s:STATE_GEORGIA.region_state:USA = {
+			save_scope_as = state_of_georia
+		}
+		s:STATE_ALABAMA.region_state:USA = {
+			save_scope_as = state_of_alabama
+		}
+		s:STATE_MISSISSIPPI.region_state:USA = {
+			save_scope_as = state_of_mississippi
+		}
+		s:STATE_TENNESSEE.region_state:USA = {
+			save_scope_as = state_of_tennessee
+		}
+		s:STATE_NORTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_north_caroline
+		}
+		s:STATE_SOUTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_south_caroline
+		}
+		s:STATE_FLORIDA.region_state:USA = {
+			save_scope_as = state_of_florida
+		}
+		cu:cherokee = {
+			save_scope_as = cherokee_people
+		}
+		cu:yankee = {
+			save_scope_as = yankee_culture
+		}
+		cu:dixie = {
+			save_scope_as = dixie_culture
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = cr_indian_removal_clear_the_states_complete_tt_cherokee
+			has_variable = cr_cherokee_removal_complete
+		}
+		custom_tooltip = {
+			text = cr_indian_removal_clear_the_states_complete_tt_chickasaw
+			has_variable = cr_chickasaw_removal_complete
+		}
+		custom_tooltip = {
+			text = cr_indian_removal_clear_the_states_complete_tt_choctaw
+			has_variable = cr_choctaw_removal_complete
+		}
+		custom_tooltip = {
+			text = cr_indian_removal_clear_the_states_complete_tt_creek
+			has_variable = cr_creek_removal_complete
+		}
+		custom_tooltip = {
+			text = cr_indian_removal_clear_the_states_complete_tt_seminole
+			has_variable = cr_seminole_removal_complete
+		}
+	}
+	
+	on_complete = {
+		custom_tooltip = {
+			text = indian_removal_end
+			if = {
+				limit = {
+					NOT = {
+						any_scope_pop = {
+							culture = cu:cherokee
+						}
+					}
+				}
+				trigger_event = { id = native_resettlement.5 }
+			}
+			else = {
+				trigger_event = { id = native_resettlement.6 }
+			}
+		}
+	}
+	
+	fail = {
+		has_law = law_type:law_no_colonial_affairs
+	}
+	
+	invalid = {
+		NAND = {
+			exists = c:CHE
+			exists = c:USA
+			c:CHE = { is_subject_of = c:USA }
+		}
+	}
+	
+	weight = 200
+	
+	should_be_pinned_by_default = yes
+	
+	transferable = no
+}

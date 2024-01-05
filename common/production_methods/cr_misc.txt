@@ -1,0 +1,296 @@
+﻿######################
+#	Fur Trade post	 #
+######################
+
+pm_base_trading_fur_trading_post = {
+	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 4 # x 40  = 160
+			goods_input_clothes_add = 2 # x 30  = 60
+			# Total cost = 220
+			
+			# output goods
+			goods_output_silk_add = 10 # x 40  = 400
+			# Profit = 180
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 350
+			building_employment_shopkeepers_add = 350
+		}
+	}
+}
+pm_intensive_trading_fur_trading_post = {
+	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 5 # x 40  = 200
+			goods_input_groceries_add = 2 # x 30  = 60
+			goods_input_clothes_add = 2 # x 30  = 60
+			# Total cost = 320
+			
+			# output goods
+			goods_output_silk_add = 15 # x 40  = 600
+			# Profit = 280
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 450
+			building_employment_shopkeepers_add = 450
+		}
+	}
+}
+
+pm_trading_fur_trading_post_no_weapons = {
+	texture = "gfx/interface/icons/production_method_icons/unused/no_arms_manufacturing.dds"
+}
+
+pm_weapon_trading_fur_trading_post = {
+	texture = "gfx/interface/icons/production_method_icons/unused/guns.dds"
+	disallowing_laws = {
+		law_colonial_resettlement
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_small_arms_add = 2 # x 60  = 120
+			# Total cost = 160
+			
+			# output goods
+			goods_output_silk_add = 6 # x 40  = 240
+			# Profit = 120
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 75
+			building_employment_shopkeepers_add = 75
+		}
+	}
+}
+
+pm_trading_fur_trading_post_no_liquor = {
+	texture = "gfx/interface/icons/production_method_icons/canneries.dds"
+}
+
+pm_liquor_trading_fur_trading_post = {
+	texture = "gfx/interface/icons/production_method_icons/canneries.dds"
+	unlocking_laws = {
+		law_colonial_exploitation
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_liquor_add = 5 # x 30  = 150
+			# Total cost = 190
+			
+			# output goods
+			goods_output_silk_add = 10 # x 40  = 400
+			# Profit = 250
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 100
+			building_employment_shopkeepers_add = 100
+		}
+	}
+}
+
+
+######################
+#	  Ivory Trade 	 #
+######################
+
+pm_traditional_harvesting_ivory_trading_post = {
+	texture = "gfx/interface/icons/production_method_icons/unused/pre_guns.dds"
+		# output goods
+		goods_output_fine_art_add = 7 # x200 = 1400
+			
+		level_scaled = {
+			building_employment_aristocrats_add = 100
+		}
+}
+
+pm_intensive_trading_ivory_trading_post = {
+	texture = "gfx/interface/icons/production_method_icons/unused/guns.dds"
+	unlocking_technologies = { rifling }
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_small_arms_add = 4	# x60 =  240
+			
+			# output goods
+			goods_output_fine_art_add = 12	# x200 = 2400
+		}
+
+		level_scaled = {
+			building_employment_aristocrats_add = 100
+		}
+	}
+}
+
+
+pm_modern_harvesting_trading_ivory_trading_post = {
+	texture = "gfx/interface/icons/production_method_icons/unused/breech_loading_artillery.dds"
+	unlocking_technologies = { bolt_action_rifles }
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_small_arms_add = 4	# x60 =  240
+			goods_input_small_ammunition_add = 15	# x50 =  750
+			
+			# output goods
+			goods_output_fine_art_add = 18	# x200 = 3600
+		}
+
+		level_scaled = {
+			building_employment_aristocrats_add = 50
+			building_employment_capitalists_add = 50
+		}
+	}
+}
+
+pm_unprocessed_export_ivory_trading_post = {
+	texture = "gfx/interface/icons/production_method_icons/market_stalls.dds"
+}
+
+pm_artisinal_carving_ivory_trading_post = {
+	texture = "gfx/interface/icons/production_method_icons/crude_tools.dds"
+	
+	unlocking_technologies = { lathe }
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 5		# x40 =  200
+			
+			# output goods
+			goods_output_fine_art_add = 5	# x200 = 1000
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 1000
+		}
+	}
+}
+
+
+pm_workshops_ivory_trading_post = {
+	texture = "gfx/interface/icons/production_method_icons/trade_center.dds"
+	
+	unlocking_technologies = { mechanized_workshops }
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 10		# x40 =  400
+			
+			# output goods
+			goods_output_fine_art_add = 12	# x200 = 2400
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 600
+			building_employment_machinists_add = 400
+		}
+	}
+}
+
+pm_slave_portage_ivory_trading_post = {
+	texture = "gfx/interface/icons/production_method_icons/serfdom.dds"
+	unlocking_laws = {
+		law_slave_trade
+	}	
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			#goods_input_grain_add = 10		# x20 =  200
+			#goods_input_fish_add = 10		# x20 =  200
+			# Total cost = 400
+			
+			# output goods
+			goods_output_fine_art_add = 5 # 1000
+			# Profit = 600
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4000
+			building_employment_shopkeepers_add = 900
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_slave_import_mult = 0.15
+		}
+	}	
+}
+
+
+pm_manual_portage_ivory_trading_post = {
+	texture = "gfx/interface/icons/production_method_icons/no_serfdom.dds"
+
+	disallowing_laws = {
+		law_slave_trade
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			#goods_input_grain_add = 10		# x20 =  200
+			#goods_input_fish_add = 10		# x20 =  200
+			goods_input_fruit_add = 5		# x30 =  150
+			# Total cost = 650
+			
+			goods_output_fine_art_add = 5 # 1000
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4000
+			building_employment_shopkeepers_add = 900
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_slave_import_mult = 0.25
+		}
+	}	
+}
+
+pm_modern_portage_ivory_trading_post = {
+	texture = "gfx/interface/icons/production_method_icons/motorised_logistics.dds"
+		
+	unlocking_technologies = {
+		combustion_engine
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			#goods_input_grain_add = 15			# x20 =  300
+			#goods_input_fish_add = 15			# x20 =  300
+			#goods_input_fruit_add = 5			# x30 =  150
+			goods_input_automobiles_add = 2		# x100 = 200
+			# Total cost = 950
+			
+			# output goods
+			goods_output_fine_art_add = 20 # 1000
+			# Profit = 350
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 500
+		}
+	}	
+}

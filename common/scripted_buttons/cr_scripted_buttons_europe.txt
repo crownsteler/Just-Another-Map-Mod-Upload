@@ -1,0 +1,327 @@
+﻿je_cr_ferdinando_po_button_a = {
+	name = "je_cr_ferdinando_po_a"
+	desc = "je_cr_ferdinando_po_a_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 99
+		#modifier = {
+		#	trigger = {
+		#		OR = {
+		#			p:x902089.owner = {
+		#				NOR = {
+		#					has_attitude = {
+		#						who = ROOT
+		#						attitude = belligerent
+		#					}
+		#					has_attitude = {
+		#						who = ROOT
+		#						attitude = antagonistic
+		#					}
+		#					has_attitude = {
+		#						who = ROOT
+		#						attitude = domineering
+		#					}	
+		#					has_attitude = {
+		#						who = ROOT
+		#						attitude = rebellious
+		#					}			
+		#				}
+		#			}
+		#		}
+		#	}
+		#	add = -1000
+		#}
+		#modifier = {
+		#	trigger = {
+		#		var:je_fernando_po_ai_count_var >5 #The AI should ask no more than 5 times
+		#	}
+		#	add = -1000
+		#}
+		#modifier = {
+		#	trigger = {
+		#		OR = {
+		#			p:x902089.owner = {
+		#				NOR = {
+		#					has_attitude = {
+		#						who = ROOT
+		#						attitude = conciliatory
+		#					}
+		#					has_attitude = {
+		#						who = ROOT
+		#						attitude = protective
+		#					}
+		#					has_attitude = {
+		#						who = ROOT
+		#						attitude = genial
+		#					}	
+		#					has_attitude = {
+		#						who = ROOT
+		#						attitude = cooperative
+		#					}			
+		#				}
+		#			}
+		#		}
+		#	}
+		#	add = 50
+		#}
+		#modifier = {
+		#	trigger = {
+		#		p:x902089.owner = {
+		#			relations:ROOT >= relations_threshold:cordial
+		#		}
+		#	}
+		#	add = 15
+		#}
+		#modifier = {
+		#	trigger = {
+		#		p:x902089.owner = {
+		#			relations:ROOT >= relations_threshold:amicable
+		#		}
+		#	}
+		#	add = 15
+		#}
+		#modifier = {
+		#	trigger = {
+		#		p:x902089.owner = {
+		#			relations:ROOT >= relations_threshold:friendly
+		#		}
+		#	}
+		#	add = 15
+		#}
+	}
+	
+	possible = {
+		has_interest_marker_in_region = region_biafra
+		custom_tooltip = {
+			text = je_cr_ferdinando_po_a_tt
+			NOT = { has_variable = cr_fernando_po_appealed_to_treaty }
+		}
+		p:x902089.owner = {
+			relations:ROOT >= relations_threshold:friendly
+			custom_tooltip = {
+				text = je_cr_ferdinando_po_button_a_tt #don't forget to update the attitude
+				OR = {
+					has_attitude = {
+						who = ROOT
+						attitude = conciliatory
+					}
+					has_attitude = {
+						who = ROOT
+						attitude = protective
+					}
+					has_attitude = {
+						who = ROOT
+						attitude = genial
+					}	
+					has_attitude = {
+						who = ROOT
+						attitude = cooperative
+					}			
+				}
+			}
+			NOT = {
+				has_diplomatic_pact = {
+					who = root
+					type = rivalry 
+				}
+			}
+		}
+		custom_tooltip = {
+			text = je_cr_ferdinando_po_button_a_tt
+		}
+	}
+
+	effect = {
+		change_variable = {
+			name = je_fernando_po_ai_count_var
+			add = 1
+		}
+		save_scope_as = cr_fernado_po_claimant
+		set_variable = { 
+			name = cr_fernando_po_appealed_to_treaty
+			months = 60
+		}
+		p:x902089.region_state = {
+			save_scope_as = cr_fernado_po_province
+		}
+		p:x902089.owner = {
+			trigger_event = {
+				id = cr_europe_events.20 days = 15
+			}
+		}
+	}
+}
+
+je_cr_ferdinando_po_button_b = {
+	name = "je_cr_ferdinando_po_b"
+	desc = "je_cr_ferdinando_po_b_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 50
+	}
+	
+	possible = {
+		custom_tooltip = {
+			text = je_cr_ferdinando_po_a_tt
+			NOT = { has_variable = cr_fernando_po_appealed_to_treaty }
+		}
+		has_interest_marker_in_region = region_biafra
+		p:x902089.owner = {
+			owes_obligation_to = ROOT
+			custom_tooltip = {
+				text = je_cr_ferdinando_po_button_b_tt #don't forget to update the attitude
+				NOR = {
+					has_attitude = {
+						who = ROOT
+						attitude = belligerent
+					}
+					has_attitude = {
+						who = ROOT
+						attitude = antagonistic
+					}
+				}
+			}
+			NOT = {
+				has_diplomatic_pact = {
+					who = root
+					type = rivalry 
+				}
+			}
+		}
+		NOT = { owes_obligation_to = p:x902089.owner } 
+	}
+
+	effect = {
+		save_scope_as = cr_fernado_po_claimant
+		set_variable = { 
+			name = cr_fernando_po_appealed_to_treaty
+			months = 60
+		}
+		p:x902089.region_state = {
+			save_scope_as = cr_fernado_po_province
+		}
+		p:x902089.owner = {
+			save_scope_as = cr_fernado_po_seller
+			post_notification = cr_fernando_po_reclaimed_obligation
+		}
+		scope:cr_fernado_po_seller = {
+			set_owes_obligation_to = {
+				country = ROOT
+				setting = no
+			}
+		}
+		s:STATE_SAO_TOME_AND_PRINCIPE = {
+			set_owner_of_provinces = {
+				country = scope:cr_fernado_po_claimant
+				provinces = {
+					x902089
+				}
+			}
+		}		
+		every_country = {
+			limit = {
+				NOR = {
+					scope:cr_fernado_po_claimant = this
+					scope:cr_fernado_po_seller = this
+				}
+				has_interest_marker_in_region = region_biafra
+					
+			}
+			post_notification = cr_fernando_po_returned
+		}
+	}
+}
+
+je_cr_ferdinando_po_button_c = {
+	name = "je_cr_ferdinando_po_c"
+	desc = "je_cr_ferdinando_po_c_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = {
+				year > 1855
+			}
+			add = 1
+		}
+		modifier = {
+			trigger = {
+				year > 1857
+			}
+			add = 4
+		}
+		modifier = {
+			trigger = {
+				year > 1860
+			}
+			add = 15
+		}
+		modifier = {
+			trigger = {
+				year > 1865
+			}
+			add = 10
+		}
+		modifier = {
+			trigger = {
+				year > 1870
+			}
+			add = 20
+		}
+	}
+	
+	possible = {
+		custom_tooltip = {
+			text = je_cr_ferdinando_po_a_tt
+			NOT = { has_variable = cr_fernando_po_dealt_with_local_var }
+		}
+		has_interest_marker_in_region = region_biafra
+		NOT = { owes_obligation_to = p:x902089.owner } 
+		p:x902089.owner = {
+			relations:ROOT >= relations_threshold:cordial
+			custom_tooltip = {
+				text = je_cr_ferdinando_po_button_c_tt #don't forget to update the attitude
+				NOR = {
+					has_attitude = {
+						who = ROOT
+						attitude = belligerent
+					}
+					has_attitude = {
+						who = ROOT
+						attitude = antagonistic
+					}
+				}
+			}
+			NOT = {
+				has_diplomatic_pact = {
+					who = root
+					type = rivalry 
+				}
+			}
+		}
+	}
+
+	effect = {
+		save_scope_as = cr_fernado_po_claimant
+		set_variable = { 
+			name = cr_fernando_po_appealed_to_treaty
+			months = 60
+		}
+		p:x902089.region_state = {
+			save_scope_as = cr_fernado_po_province
+		}
+		p:x902089.owner = {
+			save_scope_as = cr_fernado_po_seller
+			set_variable = cr_pressed_claimed_offer_obligation
+			trigger_event = {
+				id = cr_europe_events.20 days = 15
+			}
+		}
+	}
+}

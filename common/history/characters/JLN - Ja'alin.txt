@@ -1,0 +1,19 @@
+﻿CHARACTERS = {
+	c:JLN = {
+		create_character = {
+			first_name = "Nimr"
+			last_name = "Muhammed"
+			historical = yes
+			ruler = yes
+			age = 61
+			interest_group = ig_landowners
+			traits = {
+				reckless wrathful pillager stalwart_defender
+			}
+			on_created = {
+				set_variable = {
+					name = mek_minr
+				}				
+			}
+		}	
+}

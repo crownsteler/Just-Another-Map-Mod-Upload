@@ -1,0 +1,397 @@
+﻿namespace = cr_carlist_events
+
+cr_carlist_events.99 = { #cleanup event
+	type = country_event
+	
+	hidden = yes
+	
+	immediate = {
+		c:SPA = {
+			remove_variable = cr_carlist_war_ongoing
+			remove_variable = cr_the_desamortizacions_have_happened
+		}
+	}
+}
+
+cr_carlist_events.1 = { #The Desamortización of the Monastaries
+	type = country_event
+	placement = ROOT
+
+	title = cr_carlist_events.1.t
+	desc = cr_carlist_events.1.desc
+	flavor = cr_carlist_events.1.flavour
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	#on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = cr_the_desamortizacions_have_happened
+		}
+		is_at_war = yes
+	}
+
+	immediate = {
+		set_variable = cr_the_desamortizacions_have_happened
+		c:SPA = {
+			save_scope_as = cr_christinos
+			ig:ig_intelligentsia = {
+				save_scope_as = cr_spanish_liberals
+			}
+			ig:ig_devout = {
+				save_scope_as = cr_spanish_catholic_church
+			}
+			ig:ig_landowners = {
+				save_scope_as = cr_spanish_landowners
+			}
+			
+			ig:ig_rural_folk = {
+				add_modifier = cr_carlist_war_ig_rural_folk
+			}
+			
+			ig:ig_petty_bourgeoisie = {
+				add_modifier = cr_carlist_war_ig_petty_bourgeoisie
+			}
+		}
+		c:CSP = {
+			save_scope_as = cr_carlists
+		}
+		c:GBR = {
+			save_scope_as = cr_britain
+		}
+		cu:basque = {
+			save_scope_as = cr_basque_culture
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.1.a
+		custom_tooltip = cr_carlist_events.1.a_tt
+		default_option = yes
+		if = {
+			limit = {
+				has_technology_researched = mutual_funds
+			}
+			activate_law = law_type:law_commercialized_agriculture
+		}
+		add_loyalists = {
+			pop_type = aristocrats
+			value = large_radicals
+		}
+		add_loyalists = {
+			pop_type = capitalists
+			value = large_radicals
+		}
+		add_modifier = {
+			name = cr_desamortizacion_auctioned
+			months = 37
+		}
+		scope:cr_spanish_liberals = { 
+			add_modifier = {
+				name = cr_desamortizacion_ig_liberals
+				months = 61
+				is_decaying = yes
+			}		
+		}
+		scope:cr_spanish_catholic_church = { 
+			add_modifier = {
+				name = cr_desamortizacion_ig_devout
+				months = 122
+				is_decaying = yes
+			}		
+		}
+		ai_chance = {
+			base = 80
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.1.b
+		custom_tooltip = cr_carlist_events.1.b_tt
+		activate_law = law_type:law_homesteading
+		add_loyalists = {
+			pop_type = farmers
+			value = medium_radicals
+		}
+		add_loyalists = {
+			pop_type = peasants
+			value = medium_radicals
+		}
+		scope:cr_spanish_liberals = { 
+			add_modifier = {
+				name = cr_desamortizacion_ig_liberals
+				months = 61
+				is_decaying = yes
+			}		
+		}
+		scope:cr_spanish_catholic_church = { 
+			add_modifier = {
+				name = cr_desamortizacion_ig_devout
+				months = 122
+				is_decaying = yes
+			}		
+		}		
+		ai_chance = {
+			base = 9
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.1.c
+		custom_tooltip = cr_carlist_events.1.c_tt
+		activate_law = law_type:law_tenant_farmers
+		add_loyalists = {
+			pop_type = clergymen
+			value = very_large_radicals
+		}
+		scope:cr_spanish_liberals = { 
+			add_modifier = {
+				name = cr_desamortizacion_denied_ig_liberals
+				months = 61
+				is_decaying = yes
+			}		
+		}
+		scope:cr_spanish_catholic_church = { 
+			add_modifier = {
+				name = cr_desamortizacion_denied_ig_devout
+				months = 122
+			}		
+		}
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
+	type = country_event
+	placement = p:xABE0B3
+
+	title = cr_carlist_events.10.t
+	desc = cr_carlist_events.10.desc
+	flavor = cr_carlist_events.10.flavour
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	#on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		s:STATE_NAVARRA.region_state:SPA = { save_scope_as = cr_state_navarra }
+		create_country = {
+			origin = this
+			tag = NAV
+			state = s:STATE_NAVARRA.region_state:SPA
+		}
+		c:NAV = {
+			activate_law = law_type:law_monarchy
+			activate_law = law_type:law_oligarchy
+			activate_law = law_type:law_ethnostate
+			activate_law = law_type:law_state_religion
+			activate_law = law_type:law_hereditary_bureaucrats
+			activate_law = law_type:law_national_militia
+			activate_law = law_type:law_free_trade
+			activate_law = law_type:law_traditionalism
+			activate_law = law_type:law_homesteading
+		}
+		create_diplomatic_pact = {
+			country = c:NAV
+			type = personal_union
+		}
+		c:NAV = {
+			save_scope_as = cr_kingdom_of_navarra
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.10.a
+		custom_tooltip = {
+			text = cr_carlist_events.10.a_tt
+			annex = c:NAV
+		}
+		
+		add_loyalists = {
+			value = 0.15
+			culture = cu:spanish
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:catalan
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:galician
+		}
+		add_radicals = {
+			value = 0.4
+			culture = cu:basque
+		}
+		hidden_effect = {
+			trigger_event = { id = cr_carlist_events.99 days = 0 }
+		}
+		
+		ai_chance = {
+			base = 95
+		}
+		default_option = yes
+	}
+
+	option = {
+		name = cr_carlist_events.10.b
+		custom_tooltip = {
+			text = cr_carlist_events.10.b_tt
+		}
+		add_loyalists = {
+			value = 0.15
+			culture = cu:spanish
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:catalan
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:galician
+		}
+		add_loyalists = {
+			value = 0.25
+			culture = cu:basque
+		}
+		hidden_effect = {
+			trigger_event = { id = cr_carlist_events.99 days = 0 }
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+
+cr_carlist_events.25 = { #The Future of the Fueros (Carlist Victory)
+	type = country_event
+	placement = p:xABE0B3
+
+	title = cr_carlist_events.25.t
+	desc = cr_carlist_events.25.desc
+	flavor = cr_carlist_events.25.flavour
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	#on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		s:STATE_NAVARRA.region_state:SPA = { save_scope_as = cr_state_navarra }
+		create_country = {
+			origin = this
+			tag = NAV
+			state = s:STATE_NAVARRA.region_state:SPA
+		}
+		c:NAV = {
+			activate_law = law_type:law_monarchy
+			activate_law = law_type:law_oligarchy
+			activate_law = law_type:law_ethnostate
+			activate_law = law_type:law_state_religion
+			activate_law = law_type:law_hereditary_bureaucrats
+			activate_law = law_type:law_national_militia
+			activate_law = law_type:law_free_trade
+			activate_law = law_type:law_traditionalism
+			activate_law = law_type:law_homesteading
+		}
+		create_diplomatic_pact = {
+			country = c:NAV
+			type = personal_union
+		}
+		c:NAV = {
+			save_scope_as = cr_kingdom_of_navarra
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.25.a
+		custom_tooltip = {
+			text = cr_carlist_events.25.a_tt
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:spanish
+		}
+		add_loyalists = {
+			value = 0.10
+			culture = cu:catalan
+		}
+		add_loyalists = {
+			value = 0.10
+			culture = cu:galician
+		}
+		add_loyalists = {
+			value = 0.25
+			culture = cu:basque
+		}
+		hidden_effect = {
+			trigger_event = { id = cr_carlist_events.99 days = 0 }
+		}
+		ai_chance = {
+			base = 60
+		}
+		default_option = yes
+	}
+
+	option = {
+		name = cr_carlist_events.25.b
+		custom_tooltip = {
+			text = cr_carlist_events.25.b_tt
+			annex = c:NAV
+		}
+		
+		add_loyalists = {
+			value = 0.15
+			culture = cu:spanish
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:catalan
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:galician
+		}
+		add_radicals = {
+			value = 0.40
+			culture = cu:basque
+		}
+		hidden_effect = {
+			trigger_event = { id = cr_carlist_events.99 days = 0 }
+		}
+		
+		ai_chance = {
+			base = 40
+		}
+	}
+}

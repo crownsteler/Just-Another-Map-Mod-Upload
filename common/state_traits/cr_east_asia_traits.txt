@@ -1,0 +1,8 @@
+﻿state_trait_cr_halong = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.15
+		state_infrastructure_mult = 0.10 #The mines are right on the coast, they shouldn't consume infrastructure. If there is a more elegant solution, I am all ears.
+	}
+}

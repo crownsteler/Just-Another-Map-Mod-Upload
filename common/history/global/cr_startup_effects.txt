@@ -1,0 +1,8 @@
+﻿# This is executed last among all history
+#GLOBAL = {
+#	c:EGY = {
+#		add_journal_entry = {
+#			type = je_cr_reinventing_egypt
+#		}
+#	}
+#}

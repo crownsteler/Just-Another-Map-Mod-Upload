@@ -1,0 +1,34 @@
+﻿building_fur_trading_post = {
+	building_group = bg_fur_trading_post
+	texture = "gfx/interface/icons/building_icons/fur_trading_post.dds"
+	city_type = wood
+	required_construction = construction_cost_low
+	terrain_manipulator = forestry
+	levels_per_mesh = 5
+
+	unlocking_technologies = {
+		cr_fur_trapping_tech
+	}
+	
+	production_method_groups = {
+		pmg_base_building_fur_trading_post
+		pmg_weapon_trading_building_fur_trading_post
+		pmg_liquor_trading_fur_trading_post
+	}
+}
+
+building_ivory_trading_post = {
+	building_group = bg_ivory_trading_post
+	texture = "gfx/interface/icons/building_icons/ivory_trade_post.dds"
+	
+	city_type = city
+	required_construction = construction_cost_low
+	
+	levels_per_mesh = 5
+	
+	production_method_groups = {
+		pmg_harvesting_building_ivory_trading_post
+		pmg_processing_building_ivory_trading_post #artisinal carving, carving workshops
+		pmg_transportation_building_ivory_trading_post #Slave portage, Regular Portage, 
+	}
+}

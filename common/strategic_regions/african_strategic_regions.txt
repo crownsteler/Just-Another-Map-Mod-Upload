@@ -1,0 +1,134 @@
+﻿# Strategic Regions in Africa
+
+region_egypt = {
+	graphical_culture = "arabic"
+	capital_province = xC09060
+	map_color = { 120 165 80 }
+	states = { STATE_MIDDLE_EGYPT STATE_UPPER_EGYPT STATE_LOWER_EGYPT STATE_MATRUH STATE_LIBYA STATE_EGYPTIAN_DESERT }
+}
+
+region_nile_basin = {
+	graphical_culture = "arabic"
+	capital_province = x7E0600
+	map_color = { 80 165 120 }
+	states = { STATE_DONGOLA STATE_KORDOFAN STATE_EQUATORIA STATE_BLUE_NILE STATE_DARFUR }
+}
+
+region_red_sea_region = {
+	graphical_culture = "arabic"
+	capital_province = xE19850
+	map_color = { 165 100 95 }
+	states = { STATE_RED_SEA_COAST STATE_EASTERN_DESERT STATE_SINAI STATE_HEDJAZ STATE_YEMEN STATE_ASIR STATE_ERITREA STATE_SOUTH_YEMEN  }
+}
+
+region_western_sahara = {
+	graphical_culture = "arabic"
+	capital_province = x09EC6F
+	map_color = { 0.82 0.78 0.46 }
+	states = { STATE_WEST_SAHARA STATE_SAHARA STATE_INNER_MAURITANIA STATE_AZAWAD STATE_NIGER STATE_MAURITANIA STATE_EAST_SAHARA }
+}
+
+region_eastern_sahara = {
+	graphical_culture = "arabic"
+	capital_province = x009F47
+	map_color = { 0.56 0.48 0.25 }
+	states = { STATE_FEZZAN  STATE_CHAD STATE_DARB_EL_ARBAIN STATE_LIBYAN_DESERT }
+}
+
+region_chad_basin = {
+	graphical_culture = "african"
+	capital_province = x9B7EB0
+	map_color = { 0.4 0.70 0.68 }
+	states = { STATE_BORNU STATE_ZINDER STATE_WADDAI STATE_SHARI }
+}
+
+region_biafra = {
+	graphical_culture = "african"
+	capital_province = xC6087A
+	map_color = { 0.1 0.1 0.15 }
+	states = { STATE_NIGER_DELTA STATE_NORTH_CAMEROON STATE_SOUTH_CAMEROON STATE_GABON STATE_BENIN STATE_NIGERIA STATE_EAST_HAUSALAND STATE_SAO_TOME_AND_PRINCIPE }
+}
+
+region_guinea = {
+	graphical_culture = "african"
+	capital_province = xBC1f14
+	map_color = { 0.40 0.45 0.65 }
+	states = { STATE_SIERRA_LEONE STATE_LIBERIA STATE_WINDWARD_COAST STATE_IVORY_COAST STATE_GHANA STATE_TOGO STATE_DAHOMEY STATE_YORUBA_STATES STATE_MANDINKA STATE_LOWER_VOLTA }
+}
+
+region_ethiopia = {
+	graphical_culture = "arabic"
+	capital_province = x91C70C
+	map_color = { 210 132 100 }
+	states = { STATE_GONDER STATE_AMHARA STATE_OROMIA STATE_SOMALILAND STATE_KENYA STATE_OGADEN STATE_SOMALIA }
+}
+
+region_north_africa = {
+	graphical_culture = "arabic"
+	capital_province = x713C2F
+	map_color = { 0.24 0.45 0.27 }
+	states = { STATE_MARRAKECH STATE_FEZ STATE_AL_RIF STATE_ORAN STATE_ALGIERS STATE_CONSTANTINE STATE_TUNISIA STATE_TRIPOLI STATE_TAZA STATE_LAGHOUAT STATE_TOUGGOURT STATE_INNER_MOROCCO }
+}
+
+region_senegal = {
+	graphical_culture = "african"
+	capital_province = x186409
+	map_color = { 0.41 0.80 0.78 }
+	states = { STATE_GAMBIA STATE_SENEGAL STATE_GUINEA STATE_WESTERN_MALI }
+}
+
+region_niger = {
+	graphical_culture = "african"
+	capital_province = xC76E76
+	map_color = { 0.55 0.38 0.33 }
+	states = { STATE_HAUSALAND STATE_VOLTA STATE_EASTERN_MALI STATE_TIMBUKTU STATE_NIAMEY STATE_OUTER_HAUSALAND }
+}
+
+region_congo = {
+	graphical_culture = "african"
+	capital_province = xE9DE6C
+	map_color = { 0.25 0.42 0.25 }
+	states = { STATE_BAS_CONGO STATE_CONGO STATE_KASAI STATE_EQUATEUR STATE_CONGO_ORIENTALE STATE_UBANGI_SHARI STATE_ANGOLA STATE_KATANGA STATE_KAZEMBE }
+}
+
+region_southern_africa = {
+	graphical_culture = "african"
+	capital_province = x41C0F0
+	map_color = { 0.761 0.134 0.735 }
+	states = { STATE_NORTHERN_CAPE STATE_CAPE_COLONY STATE_EASTERN_CAPE STATE_VRYSTAAT STATE_TRANSVAAL STATE_ZULULAND  }
+}
+
+region_zanj = {
+	graphical_culture = "african"
+	capital_province = x3A7D3F
+	map_color = { 0.65 0.38 0.64 }
+	states = { STATE_ZANZIBAR STATE_LINDI STATE_MOCAMBIQUE }
+}
+
+region_african_lakes = {
+	graphical_culture = "african"
+	capital_province = xA9859E
+	map_color = { 0.43 0.56 0.69 } #133 143 169 Alternative
+	states = { STATE_UGANDA STATE_RIFT_VALLEY STATE_TANGANYIKA }
+}
+
+region_madagascar = {
+	graphical_culture = "african"
+	capital_province = xC3F681
+	map_color = { 0.61 0.65 0.35 }
+	states = { STATE_WEST_MADAGASCAR STATE_EAST_MADAGASCAR STATE_INDIAN_OCEAN_TERRITORY }
+}
+
+region_zambezia = {
+	graphical_culture = "african"
+	capital_province = xC3F681
+	map_color = { 0.73 0.70 0.32 }
+	states = { STATE_LOURENCO_MARQUES STATE_SOFALA STATE_ZAMBEZI STATE_ZAMBIA STATE_BUNDALAND STATE_NYASALAND }
+}
+
+region_south_west_africa = {
+	graphical_culture = "african"
+	capital_province = xC3F681
+	map_color = { 0.90 0.51 0.29 }
+	states = { STATE_BENGUELA STATE_HEREROLAND STATE_NAMAQUALAND STATE_BOTSWANA }
+}

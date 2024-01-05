@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:BKH = {
+		create_character = {
+			#role = politician # Remove this line
+			first_name = "Zhangir"
+			last_name = "Kerei" 
+			historical = yes
+			ruler = yes
+			age = 35
+			interest_group = ig_landowners
+			ideology = ideology_reformer
+			traits = {
+				innovative imperious basic_political_operator
+			}
+		}	
+	}
+}

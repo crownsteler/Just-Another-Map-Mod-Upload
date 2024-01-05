@@ -1,0 +1,71 @@
+﻿#
+# Note: the triggers are checked at certain key points in the code, not all the time
+# color_key = {
+#    color = "black"      # the map color
+#    possible = { ... }   # the trigger to enable this color
+# }
+#
+
+# Example
+#dynamic_map_color_swedish_junta = {
+#    color = "black"
+#	
+#	possible = {
+#		exists = c:SWE # you /must/ check that a tag exists before doing anything else
+#		this = c:SWE
+#
+#        exists = ig:ig_armed_forces
+#        ig:ig_armed_forces = {
+#            is_in_government = yes
+#        }
+#	}
+#}
+
+cr_hedjaz_mecca_sharifate = {
+	color = "hashemite_red"
+
+	possible = {
+		exists = c:HDJ
+		THIS = c:HDJ
+		NOR = {
+			AND = {
+				has_technology_researched = nationalism
+				is_non_customs_union_subject = no
+			}
+			has_technology_researched = pan-nationalism
+		}
+	}
+}
+
+cr_kyrzyg_flagmod = {
+	color = { 119 130 145 }
+	
+	possible = {
+		exists = c:KYZ
+		THIS = c:KYZ
+		c:KYZ = { is_country_type = decentralized }
+	}
+}
+
+cr_padris_color = {
+	color = "black"
+	possible = {
+		exists = c:MGK
+		THIS = c:MGK
+		#scope:actor = {
+			has_law = law_type:law_theocracy
+		#}
+	}
+}
+
+
+cr_pagaruyung_color = {
+	color = { 217 78 117 }
+	possible = {
+		exists = c:MGK
+		THIS = c:MGK
+		#scope:actor = {
+			has_law = law_type:law_monarchy 
+		#}
+	}
+}

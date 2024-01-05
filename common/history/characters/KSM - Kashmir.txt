@@ -1,0 +1,15 @@
+﻿CHARACTERS = {
+	c:KSM = {
+		create_character = {
+			first_name = "Gulab"
+			last_name = "Singh"
+			historical = yes
+			ruler = yes
+			birth_date = 1792.6.16
+			interest_group = ig_landowners
+			traits = {
+				ambitious cruel basic_political_operator
+			}
+		}
+	}
+}

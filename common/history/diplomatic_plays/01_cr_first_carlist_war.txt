@@ -1,0 +1,13 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:CSP = {
+		create_diplomatic_play = {
+			name = cr_first_carlist_war
+		
+			target_state = s:STATE_TOLEDO.region_state:SPA
+			
+			war = yes
+			
+			type = dp_revolution			
+		}	
+	}
+}

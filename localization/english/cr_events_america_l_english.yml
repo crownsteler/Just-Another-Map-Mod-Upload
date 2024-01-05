@@ -1,0 +1,420 @@
+﻿l_english:
+ #Indian Removal
+ cr_indian_removal.1.t:0 "Treaty of Doaksville" #Treaty of Pontotoc Creek
+ cr_indian_removal.1.desc:0 "The removal treaty negation by the [SCOPE.sCountry('chickasaw_nation').GetAdjectiveNoFlag] has proven to be the most lenient of treaties, granting them the leisure to look for suitable land west of the Mississippi on their own before removal would take place, all the while enjoying Federal protection against the State of [SCOPE.sState('state_of_mississippi').GetName] and individual squatters.\n\nYet this leniency has resulted in delay upon delay upon delay as the [SCOPE.sCountry('chickasaw_nation').GetAdjectiveNoFormatting] have worked to extract more concessions. But now they have finally found that suitable land of theirs and are preparing for their removal. The only sticking point is the financial compensation we agreed to pay for the lands lost in Mississippi. And that bill is reckoning up..."
+ cr_indian_removal.1.f:0 "By becoming amalgamated with the whites, your national character will be lost... you must disappear and be forgotten.\n-#italic President Andrew Jackson adressing the [SCOPE.sCountry('chickasaw_nation').GetAdjectiveNoFormatting] nation#!"
+ cr_indian_removal.1.a:0 "Pay now"
+ cr_indian_removal.1.b:0 "Pay #italic eventually#!"
+ cr_indian_removal.1.b_tt:0 "We might be prodded in the future with a request settle this debt"
+ cr_indian_removal.1.c:0 "Table this for now"
+ cr_indian_removal.1.c_tt:0 "We will reconsider this matter in about #variable 6 months#!"
+ 
+ cr_indian_removal.3.t:0 "A Debt Due"
+ cr_indian_removal.3.desc_1:0 "The $ig_intelligentsia$ have started agitating for settling a debt owed to the [SCOPE.sCountry('chickasaw_nation').GetAdjectiveNoFlag] related to their removal from [SCOPE.sState('state_of_mississippi').GetName] over 30 years ago.\n\nUnder the removal treaty the [SCOPE.sCountry('chickasaw_nation').GetAdjectiveNoFormatting] were promised a seizable financial compensation for their lands and property lost as a result of their removal. To this date this compensation has never been paid."
+ cr_indian_removal.3.desc_2:0 "The $ig_intelligentsia$ have started agitating for settling a debt owed to the #variable Chickasaw#! related to their removal from [SCOPE.sState('state_of_mississippi').GetName] over 30 years ago.\n\nUnder the removal treaty the [SCOPE.sCountry('chickasaw_nation').GetAdjectiveNoFormatting] were promised a seizable financial compensation for their lands and property lost as a result of their removal. To this date this compensation has never been paid."
+ cr_indian_removal.3.desc_2:0 "Over 30 years ago the #variable Chickasaw#! agreed to remove themselves from the lands of their fathers to new lands west of the Mississippi. This agreement came with the promise of a sizable financial compensation for their lands in [SCOPE.sState('state_of_mississippi').GetName]. Yet to this day this compensation has never been paid. \n\nThe $ig_intelligentsia$ are now pressuring the government to settle this debt."
+ cr_indian_removal.3.f:0 "The Chickasaw Nation find themselves oppressed in their present situation, by being made subject to the laws of the States in which they reside. Being ignorant of the laws of the white man, they cannot understand or obey them. Rather than submit to this great evil, they prefer to seek a home in the west, where they may live and be governed by their own laws. And believing that they can procure for themselves a home, in a country suited to their wants and condition, provided they had the means to contract and pay for the same, they have determined to sell their country and hunt a new home. -#italic Preamble to the Treaty of Pontotoc Creek#!"
+ cr_indian_removal.3.a:0 "Every debt must be honoured"
+ cr_indian_removal.3.b:0 "Though some debts are more worth of honouring than others"
+ 
+ cr_indian_removal.5.t:0 "The Intruder Controversy"
+ cr_indian_removal.5.desc:0 "While the [SCOPE.sCountry('creek_nation').GetNameNoFlag] are encouraged to remove themselves from [SCOPE.sState('state_of_alabama').GetName] under the #variable Treaty of Cussetta#!, it would seem that some #italic enthousiastic#! Alabamians cannot wait and have already started establishing themselves in this #variable 'New Alabama'#!.\n\nIt is quite clear to all that is process is the result of intimidation, exploitation and outright fraud, but so far no-one -not the state government, not the federal government- has lifted a finger to stop it.\n\n And now [SCOPE.sState('state_of_alabama').GetCityHubName] is a buzz with rumours of the [SCOPE.sCountry('creek_nation').GetNameNoFormatting] organising and arming themselves..."
+ cr_indian_removal.5.desc_1:0 "Via the Treaty of Cussetta the [SCOPE.sCountry('creek_nation').GetNameNoFlag] seceded their lands in [SCOPE.sState('state_of_alabama').GetName] and are #italic encouraged#! to move to lands west of the Mississippi. Though until such time we did pledge to prevent settlement of their terrority. Now it would seem that some #italic enthousiastic#! Alabamians could not wait, and have already been establishing themselves in this 'New Alabama'. It is quite clear to all that is process is the result of intimidation, exploitation and outright fraud, but so far no-one, not the state government, not the federal government, has lifted a finger to stop it.\n\nNow, rumours are being spread of the [SCOPE.sCountry('creek_nation').GetNameNoFormatting] organising and arming themselves..."
+ cr_indian_removal.5.f_1:0 "This country belongs to the red man; and if I had the number of warriors at my command that this nation once had I would not leave a white man on my lands. I would exterminate the whole. I can say this to you, for you can understand me: you are a man; but I would not say it to your people. They'd cry out I was a savage, and would take my life. They cannot appreciate the feelings of a man that loves his country.\n-#italic Chief Neamathla to governor Duval#!"  
+ cr_indian_removal.5.f_2:0 "The time is nearing when the Master of Life will come to bury the children of the Evil Spirt (whites and sinful Indians alike). So that the whole land can be made whole again for the virtuous Indians who reject the white ways and only take from the land what they need. -#italic Tenskswatawa's prophecy (1810)#!"
+ cr_indian_removal.5.a:0 "We must honour our treaties with the Indians"
+ cr_indian_removal.5.a_tt:0 "Removal is halted for now, and the intruders are forcibly evicted from [SCOPE.sCountry('creek_nation').GetNameNoFlag] terrority."
+ cr_indian_removal.5.b:0 "These rumours are but an excuse to attack the Creek"
+ 
+ cr_indian_removal.6.t:0 "Massacre at Roanoke!"
+ cr_indian_removal.6.desc:0 "The rumours of unrest in #variable New [SCOPE.sState('state_of_alabama').GetName]#! seems not to have been exaggerated as [SCOPE.sCountry('creek_nation').GetNameNoFlag] warbands have started terrorising the white settlers.\n\nIn a coup de main the warbands have crossed the Chattahoochee river into [SCOPE.sState('state_of_georgia').GetName] and burnt the town of Roanoke, scalping and burning alive the defenders.\n\nAs the [SCOPE.sCountry('creek_nation').GetNameNoFormatting] continue their savagery, hasty fortifications are thrown up to protect the many refugees while the state militia is being mobilised. It will not long now before war breaks out..."
+ cr_indian_removal.6.desc_2:0 "Panic is spreading amongst the populace of [SCOPE.sState('state_of_mississippi').GetName] and [SCOPE.sState('state_of_georgia').GetName]... For weeks [SCOPE.sCountry('creek_nation').GetNameNoFlag] warbands have been terrorising the white settlers of New Alabama, but now in a coup de main the warbands have crossed the Chattahoochee river into Georgia and burnt the town of Roanoke, scalping and burning alive the defenders.\n\nAs the [SCOPE.sCountry('creek_nation').GetNameNoFlag] continue their savagery, hasty fortifications are thrown up to protect the many refugees while the state militia is being mobilised. It will not long now before war breaks out..."
+ cr_indian_removal.6.f:0 "They have seized our country, and our fathers in their graves reproach us as slaves and cowards. Oh, Muscogees! Brethren of my mother! Brush from your eyelids the sleep of slavery, and strike for vengeance and your country.\n-#italic Tecumseh's speech to the Muscogees#!"
+ cr_indian_removal.6.a:0 "Intervene immediately"
+ cr_indian_removal.6.a_tt:0 "We'll use Federal forces to start the removal process immediately"
+ cr_indian_removal.6.b:0 "Intervene eventually"
+ cr_indian_removal.6.b_tt:0 "We'll wait and see for the outcome" 
+ cr_indian_removal.7.t:0 "The Creek Removal"
+ cr_indian_removal.7.desc:0 "The rebellious, and not so rebellious, Creek have been concentrated into various camps in western Alabama, to await their journey west, away from the bones of their ancestors."
+ 
+ cr_indian_removal.10.t:0 "Treaty of New Echota"
+ cr_indian_removal.10.desc:0 "For years the State of [SCOPE.sState('state_of_georgia').GetName] has been working towards the removal of the [SCOPE.sCountry('cherokee_nation').GetNameNoFlag] from their territory by both legal and extralegal means. The cumulation of this work has now reached the Senate floor: a formal treaty for the [SCOPE.sCountry('cherokee_nation').GetNameNoFormatting] to move west of the Mississippi and a line for the Senate to sign.\n\nYet that this treaty will pass the senate is not at all assured. Spurred on by the vigorous denunciation of the treaty by -perhaps suprisingly- the Principle Chief of the [SCOPE.sCountry('cherokee_nation').GetNameNoFormatting] [SCOPE.sCountry('cherokee_nation').GetRuler.GetFullName] himself, who claims the signitures on the treaty represent only a minority of the [SCOPE.sCountry('cherokee_nation').GetNameNoFormatting], there has been an outpouring of support for their cause from both the public and the senate.\n\nNow, as the vote enters its final moments, it is clear that it will all come down to a single vote..."
+ cr_indian_removal.10.f:0 "We are aware, that some persons suppose it will be for our advantage to remove beyond the Mississippi. We think otherwise. Our people universally think otherwise. ... Not an adult person can be found who would think it best to remove. ... We wish to remain on the land of our fathers. We have a perfect and original right to remain without interruption or molestation. The treaties with us, and laws of the United States, guaranty our residence and our privileges, and secure us against intruders. Our only request is, that these treaties may be fulfilled, and these laws executed. -#italic Principal Chief Ross#!" #The instrument in question is not the act of our nation, we are not parties to its covenants; it has not received the sanction of our people.
+ cr_indian_removal.10.a:0 "Aye"
+ cr_indian_removal.10.a_tt:0 "The removal of the [SCOPE.sCountry('cherokee_nation').GetName] will proceed"
+ cr_indian_removal.10.a_tt_2:0 "The wrongs set forth in the memorial were only imaginary wrongs; and that the treaty had been negotiated in an open, fair, and honorable manner."
+ cr_indian_removal.10.b:0 "Nay"
+ cr_indian_removal.10.b_tt:0 "The removal of the [SCOPE.sCountry('cherokee_nation').GetName] is halted for now"
+ cr_indian_removal.11.t:0 "Comitting a Great Evil"
+ cr_indian_removal.11.desc:0 "As the date of [SCOPE.sCountry('cherokee_nation').GetNameNoFlag] removal from their ancestoral homelands approaches a growing sense of unease can be felt amongst the educated -[SCOPE.sCulture('yankee_culture').GetName]- part of the population who view the expulsion of these most noble people amongst the Indians as a great evil.\n\nThis feeling is perhaps best examplified by the an open letter published by [SCOPE.sCharacter('i_am_emerson').GetFullName] and adressed to [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] [ROOT.GetCountry.GetRuler.GetLastName] in which it is argued that the [SCOPE.sCountry('cherokee_nation').GetNameNoFormatting] have left their barbarous ways behind and are approaching our [ROOT.GetCountry.GetAdjectiveNoFormatting] level of civilisation."
+ cr_indian_removal.11.f:0 "Even in our distant state, some good rumor of their worth and civility has arrived. We have learned with joy their improvement in social arts. We have read their newspapers. We have seen some of them in our schools and colleges. In common with the great body of the American people we have witnessed with sympathy the painful labors of these red men to redeem their own race from the doom of eternal inferiority, and to borrow and domesticate in the tribe, the arts and customs of the Caucasian race. -#italic Ralph Waldo Emerson#!"
+ cr_indian_removal.11.a:0 "Intellectuals..."
+ cr_indian_removal.11.option_a_tt:0 "[SCOPE.sCharacter('i_am_emerson').GetFullName] will start a [concept_political_movement] to enact [GetLawType('law_no_colonial_affairs').GetName]"
+ cr_indian_removal.11.b:0 ""
+ cr_indian_removal.11.c:0 "The censors to the rescue"
+ cr_indian_removal.11.c_tt:0 "This option is available due to our [GetLawGroup('lawgroup_free_speech').GetName] laws"
+ cr_indian_removal.11.d:0 "A quite unwelcome sentiment"
+ cr_indian_removal.11.d_tt:0 "This option is available due to the [concept_ideology] of our [concept_leader] or an [concept_interest_group] in government"
+ cr_indian_removal.11.option_b_c_tt:0 "[SCOPE.sCharacter('i_am_emerson').GetFullName] will be removed and he will not start a [concept_political_movement] to enact [GetLawType('law_no_colonial_affairs').GetName]"
+ 
+ cr_indian_removal.12.t:0 "The Cherokee Removal"
+ cr_indian_removal.12.desc:0 "As the end date of the #variable Treaty of New Echota#! approaches the [SCOPE.sCountry('cherokee_nation').GetNameNoFlag] are preparing to march West, to settle in a new home away from the bones of their ancestors. "
+ cr_indian_removal.12.f:0 "Cherokees!\nThe president of the United States has sent me with a powerful army, to cause you, in obedience to the treaty of 1836, to join that part of your people who are already established in prosperity on the other side of the Mississippi. Unhappily, the two years which were allowed for the purpose, you have suffered to pas away without following, and without making any preparations to follow, and now, or by the time that this solemn address shall reach your distant settlements, the emigration must be commenced in haste, but, I hope, without disorder. I have no power, by granting a further delay to correct the errors that you have committed. The full moon of May is already on the wane, and before another shall have passed away, every Cherokee man, woman and child, in those States, must be in motion to join their brethren in the far West. -#italic Major General Scott#!"
+ cr_indian_removal.12.f:0 "The dark cloud and threatening storm, which, for some time past, have been gathering over my native land, seem now to be full charged and on the eve of exploding. In this awful crisis, we can but resign our destiny into the hands of Him ‘who directs the storm and rides upon the whirlwind.’ -#italic Letter to the Memphis Enquirer#!"
+ cr_indian_removal.12.a:0 "Move along already"
+ cr_indian_removal.12.a_tt:0 "The removal of the [SCOPE.sCountry('cherokee_nation').GetName] will start in earnest"
+ 
+ cr_indian_removal.20.t:0 "The Fate of the [SCOPE.sCountry('seminole_nation').GetNameNoFormatting]"
+ cr_indian_removal.20.desc:0 "With the war with the [SCOPE.sCountry('seminole_nation').GetNameNoFlag] winding down, and this needless bloodshedding ending, the time has come to decided how we will treat the remaining [SCOPE.sCountry('seminole_nation').GetNameNoFormatting]."
+ cr_indian_removal.20.f_1:0 "Should you ... refuse to move, I have then directed the Commanding officer to remove you by force. - #italic President Andrew Jackson adressing the Seminole#!"
+ cr_indian_removal.20.a:0 "The goal has always been total removal"
+ cr_indian_removal.20.a_tt:0 "The [SCOPE.sCountry('seminole_nation').GetName] will be removed west"
+ cr_indian_removal.20.b:0 "Reduced, a few stragglers pose no threat"
+ cr_indian_removal.20.b_tt:0 "The majority of the [SCOPE.sCountry('seminole_nation').GetName] will be removed west, but a small population will remain in [SCOPE.sState['state_of_florida').GetName]"
+ cr_indian_removal.20.complete_tt:0 "This completes the #variable [SCOPE.sCountry('seminole_nation').GetName] Removal#! objective"
+ 
+ # O what a year this has been! O what a sweeping wind has gone over, and carried its thousands to the grave; while thousands have been tortured and scarcely survive, and the whole nation, comparatively thrown out of house and home during this dreary winter. And why? ...For what crime then was this whole nation doomed to perpetual death? -#italic Rev. Daniel Sabin Butrick#!
+ # a number of Georgia citizens near New Echota took sixteen Cherokees and drove them to the fort and then requested permission of General Scott to take them out and whip them, though in this they were not gratified -#italic Rev. Daniel Sabin Butrick#! The citizens of Georgia pressured Scott to move with even more expediency.
+ # Now, in view of the whole scene, how does the United States government appease a great nation, laying aside her dignity and with thousands of soldiers, and all her great men, and all her mighty men, and all her powerful generals, with all her civil and military force, chasing a little trembling hare in the wilderness, merely to take its skin, and send it off to broil in the scorching deserts of the West. 0 how Noble! How magnanimous! How warlike the achievement! 0 what a conquest! What booty! How becoming the glory and grandeur of the United States! -#italic Rev. Daniel Sabin Butrick#!
+ #Incredibly, neither Gibson nor the Secretary of War had thought to provide a physician, or even medicine. Armstrong wrote: "I have as yet employed no physician: to-day an Indian broke his leg, and we will of course have to leave him. We have no medicine but what belongs to private individuals: it is now too late to hear from the department, but I consider it very necessary that we should have medical aid: where there are two thousand Indians, with the wagoners, and those attached to the emigration, at least a physician could have been employed. -#italic William Armstrang#!, removal agent
+ 
+ cr_indian_removal.49.t:0 "On the Trail West"
+ cr_indian_removal.49.desc:0 "The [SCOPE.sCountry('cherokee_nation').GetNameNoFlag] have started moving west."
+ cr_indian_removal.49.f:0 "I saw the helpless Cherokees arrested and dragged from their homes, driven at the bayonet point into the stockade. In the chill of a drizzling rain, I saw them loaded like cattle or sheep into wagons and started toward the west... We encountered a terrific sleet and snow storm with freezing temperatures, from that day until we reach the end of the fateful journey, the sufferings of Cherokees were awful. The trail of the exiles was a trail of death. They had to sleep in the wagons and on the ground without fire. And I've known as many as twenty-two of them to die in one night of pneumonia due to ill treatment, cold and exposure... -#italic Private John G. Burnett#!"
+ cr_indian_removal.49.f_2:0 "The Cherokees are nearly all prisoners. They have been dragged from their houses and camped at the forts and military posts all over the Nation. In Georgia, especially, the most unfeeling and insulting treatment has been experienced by them, in a general way. Multitudes were not allowed time to take anything with them but the clothes they had on. -#italic Rev. Evan Jones#!"
+ cr_indian_removal.49.f_3:0 "The Indians had their families with them; and they brought in their train the wounded and the sick, with children newly born, and old men upon the verge of death. They possessed neither tents nor wagons, but only their arms and some provisions. I saw them embark to pass the mighty river, and never will that solemn spectacle fade from my remembrance. No cry, no sob was heard among the assembled crowd: all were silent. Their calamities were of ancient date, and they knew them to be irremediable. The Indians had all stepped into the bark which was to carry them across, but their dogs remained upon the bank. As soon as these animals perceived that their masters were finally leaving the shore, they set up a dismal howl, and, plunging all together into the icy waters of the Mississippi, they swam after the boat. -#italic Alexis De Tocqueville#!, Democracy in America"
+ cr_indian_removal.49.f_4:0 "It is impossible to conceive the extent of the sufferings which attend these forced emigrations. They are undertaken by a people already exhausted and reduced; and the countries to which the new-comers betake themselves are inhabited by other tribes which receive them with jealous hostility. Hunger is in the rear, war awaits them, and misery besets them on all sides.  -#italic Alexis De Tocqueville#!, Democracy in America"
+ cr_indian_removal.49.f_5:0 "Men working in the fields were arrested and driven to the stockades. Women were dragged from their homes by soldiers whose language they could not understand. Children were often separated from their parents and driven into stockades with the sky for a blanket and the earth for a pillow. And often the old and infirm were prodded with bayonets to hasten them to the stockades.' John G. Burnett -#italic Private John G. Burnett#!"
+ cr_indian_removal.49.f_6:0 "At noon all was in readiness for moving. The teams were stretched out in a line along a road through a heavy forest, groups of persons formed about each wagon...At this very moment a low sound of distant thunder fell on my ear--in almost an exact western direction a dark spiral cloud was rising above the horizon and sent out a murmur I almost thought a voice of divine indignation for the wrong of my poor and unhappy countrymen...the thunder rolled away and seemed hushed in the distance. -#italic William Shorey Coodey#!"
+ cr_indian_removal.49.f_7:0 "O what a year this has been! O what a sweeping wind has gone over, and carried its thousands to the grave; while thousands have been tortured and scarcely survive, and the whole nation, comparatively thrown out of house and home during this dreary winter. And why? ...For what crime then was this whole nation doomed to perpetual death? -#italic Rev. Daniel Sabin Butrick#!"
+ 
+ 
+ cr_indian_removal.49.a:0 "It is a Trail of Tears"
+ cr_indian_removal.49.a_tt:0 "The [SCOPE.sCountry('cherokee_nation').GetName] from [SCOPE.sState('indian_removal_state').GetName] have been removed west"
+ 
+ cr_indian_removal.50.t:0 "On the Roads and Swamps of [SCOPE.sState('swampy_state').GetName]"
+ cr_indian_removal.50.desc:0 "The swamps of [SCOPE.sState('swampy_state').GetName] have long been held to be an impassible obstacle to swift communications, a situation not helped in the light of thousands of Indians passing through them."
+ cr_indian_removal.50.desc_e:0 "The swamps of [SCOPE.sState('swampy_state').GetName] have long been held to be an impassible obstacle to swift communications, yet this claim is being challenged in the light of thousands of Indians passing through them without issue."
+ cr_indian_removal.50.desc_2:0 "The state of [SCOPE.sState('swampy_state').GetName]'s roads has long been a nuisance to all travellers, but the movement of thousands of Indians along the roads have caused such degradation that the roads have become barely passable."
+ cr_indian_removal.50.f:0 "If a body of Indians (men, women and children), with some 200 ponies, can pass through the Mississippi swamp in the course of two or three days, we can see no good reason why the mail cannot be carried through with regularity. -#italic Letter to the Arkansas Gazette#!"
+ cr_indian_removal.50.a:0 "There is defalcation and mismanagement somewhere in the system"
+ cr_indian_removal.50.a_tt:0 "The modifier will be persist for 15 years or until the improve infrastructure degree has been active for at least 6 months."
+ 
+ cr_indian_removal.51.t:0 "Determined to Remain"
+ cr_indian_removal.51.desc:0 "As we work to clear the [culture] from [state] and remove them west, numerous Indians are slipping through the net. They have taken to the wilderness where they are now establishing new [culture] communities in [state]."
+ cr_indian_removal.51.f:0 "After three weeks of the most arduous and fatiguing duty, traveling the country in every direction, searching the mountains on foot in every point where Indians could be heard of we have not been able to get sight of a single one. Their constant vigilance, perfect knowledge of the country, and the rapidity with which that enabled them to communicate intelligence from one camp to another, has rendered all attempts to capture them utterly in vain. -#italic Army Officer#!"
+ cr_indian_removal.51.f_2:0 "When the troops commenced collecting, he and his family kept out of the way ... he and his family were deprived of the means of subsistence and compelled to subsist on the sap of trees and roots, and nearly all the children belonging to his people died, only about two children remained out of a population of near 100 persons -#italic the Cherokee Dickageeska#!"
+ cr_indian_removal.51.f_3:0 "I have made prisoners of 425 or perhaps 450. I think by the time I get in the outstanding members of the families I have broken up I will have as many as I can manage…They run in every instance where they have the best opportunity …It will take me a few days to collect their little plunder as we captured them in the mountains I could not bring off their property at the same time. -#italic Captain William Derrick#!"
+ cr_indian_removal.51.a:0 "Use the army to flush them out"
+ cr_indian_removal.51.b:0 "A few stragglers matter not"
+ 
+ cr_indian_removal.52.t:0 "Native Sympathisers"
+ cr_indian_removal.52.desc:0 "Some of the [state] citizens have started sheltering and covertly supporting the [culture] left behind, greatly hampering our efforts to remove these last stragglers west."
+ cr_indian_removal.52.a:0 "Arrest these sympathisers"
+ cr_indian_removal.52.b:0 "As we work to remove the [culture] from [STATE] to their new lands "
+
+ cr_indian_removal.53.t:0 "Determined to Remain"
+ cr_indian_removal.53.desc:0 "Some of the [culture]"
+ cr_indian_removal.53.f:0 "In driving them a platoon of soldiers walked before and behind, and a file of soldiers on each side, armed with all the common appalling instruments of death; while the soldiers, it is said would often use the same language as if driving hogs, and goad them forward with their bayonets. I heard of one man who, witnessing his children being so abused, picked up a stone and struck a soldier. -#italic Rev. Daniel Sabin Butrick#!"
+ cr_indian_removal.53.f_2:0 "I heard of one man who could neither speak nor hear was surprised by the approach of soldiers arriving to take him away. With his affliction, he could not hear the orders of the soldiers; and when he began running away out of fear, he was shot dead on the spot. -#italic Rev. Daniel Sabin Butrick#!"
+ cr_indian_removal.53.f_3:0 "We also learn that when the last company were taken over the river at Ross's landing, a woman, in the pains of childbirth, stood and walked as long as possible, and then fell on the bank of the river. A soldier coming up, stabbed her with his bayonet, which, together with other pains, soon caused her death. -#italic Rev. Daniel Sabin Butrick#!"
+ cr_indian_removal.53.f_4:0 "I fought through the civil war and have seen men shot to pieces and slaughtered by thousands, but the Cherokee removal was the cruelest work I ever knew. -#italic a Confederate soldier#!"
+ 
+ cr_indian_removal.54.t:0 "The [Culture] Lighthorse"
+ cr_indian_removal.54.desc:0 "With the depravities imposed upon the [culture] their removal west risks turning into a disorganised mess. Only their own constabulary is preventing this"
+ cr_indian_removal.54.f:0 "Two or three Cherokee came in last night drunk—cursing in an awful manner, one of them returned raging like the infernal spirit, but was soon seized by the Cherokee lighthorse & bound." 
+ cr_indian_removal.54.f_2:0 "A number of Cherokees were drinking today at the house of a white man, and the light horse went to stop them, when the drunkards jumpd onto their horses & fled. The light horse pursued them, when one of them sprang from his horse, seized a gun & instantly discharged it, evidently inteding to kill one of the light horse men; though the ball passed through the fore leg of his horse. The light horse seized him and took him to Mr. Taylor's tent.-#italic Rev. Daniel Sabin Butrick#!" 
+ 
+ cr_indian_removal.55.t:0 "No Step Further"
+ cr_indian_removal.55.desc:0 "A band of Indians who have entered [SCOPE.sState('state_of_arkansas').GetName] assert to have arrived west of the Mississippi in accordance to our treaty and can therefore be compelled to go no further."
+ cr_indian_removal.55.f:0 "Harsh and unjust as our Government has been to them, it is still not fair that they should be permitted to remain in the State all the winter, committing depredations on the people and their property. I think Governor Conway should order out a company of volunteers to follow in their rear and drive them on—make them leave the State and go to their homes.\n-#italic Letter to the Arkansas Gazette#!"
+ cr_indian_removal.55.a:0 "Rouse the militia and drive them on"
+ cr_indian_removal.55.a_tt:0 "The [SCOPE.sCountry('cherokee_nation').GetNameNoFlag] from [SCOPE.sState('indian_removal_state').GetName] will be compelled to move on to Oklahoma"
+ cr_indian_removal.55.b:0 "West of the Mississippi is west of the Mississippi"
+ cr_indian_removal.55.b_tt:0 "The [SCOPE.sCountry('cherokee_nation').GetNameNoFlag] from [SCOPE.sState('indian_removal_state').GetName] will be allowed to settle in [SCOPE.sState('state_of_arkansas').GetName]"
+ 
+ cr_indian_removal.56.t:0 "Indians hit by Cholera!"
+ cr_indian_removal.56.desc:0 "Cholera has struck an Indian band on their way to their new home west of the Mississippi, wrecking havoc amongst their numbers."
+ cr_indian_removal.56.f:0 "It is most probable, be the disease what it may, that it has been produced by the crowded state of the Indians on board the steam-boats, and their sudden change of diet from fresh meats and corn, to salt port and wheat, flour, and that, too, probably eaten in a half-cooked state. -#italic Arkansas Gazette#!"
+ cr_indian_removal.56.f_2:0 "Every account I get from the river, is distressing. The steam-boats appear to be a reservoir for the disease. -#italic Letter to the Arkansas Gazette#!"
+ cr_indian_removal.56.f_3:0 "Yet the removing agent, N. Smith, with the cruelty of a Nero, forced them into boats, into poisoned air, and hurried them away to a land of darkness, and the shadow of death, where they must sicken and die. -#italic Rev Daniel Sabin Butrick#!"
+ cr_indian_removal.56.f_3:0 "But oh, the pestilence: the CHOLERA! What this 'scourge of nations' will do with and for the poor Indian tribes, God only knows. It will doubtless sweep multitudes into the grave .... The sword of the destroying angel is doing execution among the new emigrants ... -#italic Rev Loring S. Williams#!"
+ cr_indian_removal.56.a:0 "We can only hope for the best"
+ cr_indian_removal.56.b:0 "Surely we can help them?"
+ cr_indian_removal.56.b_tt:0 "This option is available due to our $institution_health_system$ [concept_institution] investment"
+ 
+ cr_indian_removal.57.t:0 "Steamboat Disaster!"
+ cr_indian_removal.57.desc:0 "A steam boat carrying Indians to their new homes west of the Mississippi was lost after colliding with another steamer. Vastly overloaded, it is expected that hundreds have died due to this disaster."
+ cr_indian_removal.57.f_1:0 "I have no more land. I am driven away from home, driven up the red waters, let us all go, let us all die together and somewhere upon the banks we will be there. -#italic Song of the survivors of the disaster#!"
+ cr_indian_removal.57.f_2:0 "At the time of sailing, an effort was made to get their consent to go into the boats, but not an individual would agree. The agent then struck a line through the camp, the soldiers rushed in and drove the devoted victims into those loathsome receptacles of disease and death. It is said by eye witnesses that the scene of this distress was agonizing in the extreme. -#italic  Rev. Evan Jones#!"
+ cr_indian_removal.57.f_2:0 "The disgusting sight of a vessel loaded with human beings under no control or regularity, leaving their evacuations in every direction through the whole range of the cabins and decks, would create in the mind of any one an additional allowance for the transportation. -#italic  W. S. Colquhoun#!, removal agent"
+ 
+ cr_indian_removal.58.t:0 "The Benefits of Free Enterprise"
+ cr_indian_removal.58.t_2:0 "Regulations Concerning the Removal of the Indians"
+ cr_indian_removal.58.desc:0 "To removal of the [culture] was always going to be a costly and complicated affair. To help expediate the matter we enlisted an army of private suppliers to provide all necessary goods and transportation for the journey west.\n\nWith the reports of deaths and supply shortages along the trail, it seems that not all suppliers have take their responsiblity seriously, and have left te [culture] to fend for themselves as they pocket the government allowance."
+ cr_indian_removal.58.f:0 "Driving them under such circumstances, and then forcing them into filthy boats, to overflowing in this hot season, landing them at Little Rock, a most sickly place, to wait other means of conveyance 200 miles up the Arkansas river, is only a most expensive and painful way of putting the poor people to death. -#italic Rev. Daniel Sabin Butrick#!"
+ cr_indian_removal.58.f_2:0 "The avaricious disposition to increase the profits on the speculation, first induced the chartering of rotten, old, and unseaworthy boats, because they were of a class to be procured cheaply; and then to make those increased profits still larger, the Indians were packed upon these crazy vessels in such crowds, that not the slightest regard seems to have been paid to their safety, comfort, or even decency. The crammed condition of the decks and cabins, was offensive to every sense and feeling, and kept the poor creatures in a state unfit for human beings. -#italic The New Orleans True American#!"
+ cr_indian_removal.58.f_3:0 "I saw valuable flour and corn being left to rot, food that could have been used to feed those going to hunger on the removal trails."
+ cr_indian_removal.58.f_4:0 "All these evils, he said, had been the result of mismanagement. The persons appointed had been generally incapable or unfaithful. The Government ought to have appointed men of intelligence, of firmness, and of honor, who would have faithfully fulfilled their obligations to the United States and to the Indians. Instead of that, men were sent out to make fortunes for themselves, and to oppress the Indians. -#italic Senator John Calhoun#!"
+ cr_indian_removal.58.f_4:0 "I hope the instructions are not intended to mean all that they seem to convey, viz, that I will select agents from persons with whose integrity or qualifications I am entirely unacquainted, to be placed on duty beyond my immediate control, and to be responsible to the United States for the faithful performance of their duty. -#italic William Clark#!, Superintendent of Indian Affairs"
+ 
+ cr_indian_removal.58.a:0 "A little bit of graft is always to be expected"
+ cr_indian_removal.58.b:0 "Perhaps not all things are best left to private enterprise"
+ 
+ cr_indian_removal.59.t:0 "Administrating Removal"
+ cr_indian_removal.59.desc:0 "The removal of the Cochtaw in 1832 had revealed great deficiencies of administration, with vague orders, authority and spheres of responsiblity leading to #italic less than admirable#! results of the removal proces. "
+ cr_indian_removal.59.f:0 "Captain Brown has manifested much displeasure at the mere suggestion of aid from this side of the river... -#italic W.S. Colquhoun#!, removal agent"
+ 
+ cr_indian_removal.58.t:0 "The New Neighbours"
+ cr_indian_removal.58.desc:0 "As the [culture] have been removed west, [dixie /state] citizens have started moving unto the lands they have left behind "
+ cr_indian_removal.58.f:0 "The Cherokees were also terrorized and beaten by the white civilians who were moving onto their lands. In one case, Butrick saw three drunken white men chasing a group of Cherokees near his home. The thugs had beaten a Cherokee named Young Turkey. When Young Turkey struck one of his assailants in the face and ran away with his colleagues, the gang gave chase. The white men were 'running their horses with all speed, swearing that they would kill one of those Indians' when Butrick spotted them. The Cherokees escaped by running into Butrick's 'door yard'. Butrick refused to let their pursuers enter; eventually, one of his acquaintances persuaded the assailants to leave."
+ 
+ cr_indian_removal.59.t:0 "The [Culture] Rose"
+ cr_indian_removal.59.desc:0 "As the [Culture] travel to their new lands in the West, they leave behind a trail of roses blossoming as far as the eye can see"
+ cr_indian_removal.59.f:0 "I have seen the sorrow of the women and I can help them keep their strength for the children. Tell the women to look back to where their tears have fallen to the ground. -#italic Tribal Elder#!"
+ 
+ 
+ 
+ cr_indian_removal.60.t:0 "The New Northern Neighbours"
+ cr_indian_removal.60.desc:0 "The policy of removing the Indians from east of the Mississippi to the Indian terrority along our northern frontier is causing quite some consternation amongst the local citizenry, fearful of what thousands of hostile Indians might do."
+ cr_indian_removal.60.f:0 "If the Indians east of that river are sufficiently formidable to hold the citizens in dread, in a country, too abundantly furnished with every means of defence, the citizens of Texas and the western states of Mexico surely have reason to apprehend hostilities from all the Indian tribes which have, from time to time, been sent on to their borders -#italic Texas Telegraph#!"
+ cr_indian_removal.60.f_2:0 " A 5-year old, he was playing in the front yard when men came with a wagon and ordered everyone to get in. The strangers made him leave his toys in the dirt, and by the time the wagon pulled out, a white boy—the son of the new household—was already playing with them. -#italic A Chocktaw Elder#!"
+ cr_indian_removal.60.a:0 "We expect the US government to keep them in check"
+ cr_indian_removal.60.b_army:0 "We might reinforce our border" #Has professional army
+ cr_indian_removal.60.b_militia:0 "It is nothing our militia might not handle" #Has militia
+ 
+ cr_actions_has_consequences_tt:0 "The action has consequences"
+ cr_actions_might_have_consequences_tt:0 "The action might have consequences"
+ 
+ ####
+ #Oregon Trail
+ ####
+ expedition_events.301.a_tt:0 "The #variable Oregon Trail#! has been mapped."
+ expedition_events.302.a_tt:0 "The #variable Mormon Trail#! has been mapped."
+ expedition_events.403.t:0 "The route to California"
+ expedition_events.403.d:0 "After a long and arduous journey, the expedition has finally come to an end. The expedition has managed to find and map a year round route to the golden shores of California."
+ expedition_events.403.f:0 "The California Trail, with its wagons, hooves, and footsteps, etched a story of human endeavor upon the canvas of the American West. It was a tapestry woven with threads of courage, hope, and sacrifice. Families left behind familiar landscapes, bidding farewell to the comforts of home, embarking on a transformative odyssey. They faced the unforgiving challenges of the wilderness—rugged mountains, treacherous rivers, and vast deserts—that tested their endurance to the limits. The trail became a living testament to the strength of the human spirit, where dreams converged with reality, and ordinary men and women carved a path to their own manifest destiny. The California Trail was more than a physical route; it represented the triumph of the human will, the quest for a better future, and the unyielding pursuit of the American dream. -#italic Anonymous#!" 
+ expedition_events.403.a_tt:0 "The #variable California Trail#! has been mapped."
+ 
+ 
+ ####
+ #Mexican-American War
+ ####
+ mexican_american.2.a_tt_cr:0 "We will loose our claims to the mentioned states, while [SCOPE.sCountry('cr_buying_country').GetName] gains claims"
+ mexican_american.6_tt_cr:0 "We will gain claims to the aforementioned states, while [SCOPE.sCountry('mexico_scope').GetName] looses theirs"
+ 
+ ####
+ #Russian America
+ ####
+ cr_russian_alaska_events.1.t:0 "Two Years Before the Mast"
+ cr_russian_alaska_events.1.d_russia:0 "From the Bostonian publishing houses comes a new novel richly detailing the California hide trade by way of the daily life aboard a brig travelling from from Massachusetts to California via Cape Horn.\n\nBut hidden within its prose an unfortunate truth is contained: the brig's bounty consists almost wholly of #!#italic cow hides#! #bold , and not the #!#italic otter pelts#! #bold our post of Fort Ross so dearly relies upon.#!"
+ cr_russian_alaska_events.1.d:0 "A novel published in Boston contains a bleak message for our trade post of Fort Ross: detailing the journey of a brig from Massachusetts to California via Cape Horn, and back to engage in the lucrative hides Californian hides trade. But hidden within its prose an unfortunate truth is contained: for the brig travels to trade #bold cow hides#!, and not the #bold otter pelts#! our post of Fort Ross so dearly relies upon..."
+ cr_russian_alaska_events.1.f:0 "Our forty thousand cattle hides and thirty thousand horns, besides several barrels of otter and beaver skins, were all stowed below, and the hatches calked down."
+ cr_russian_alaska_events.1.a:0 "One can feel the winds of change in the air..."
+ cr_russian_alaska_events.1.a_tt:0 "From now on building a ranching industry is also an option to maintain control over Fort Ross, however time is of the essence here."
+ cr_russian_alaska_events.1.a_5years:0 "The #variable California Fur Rush#! journal entry advances, reducing the time available to turn the settlement around by #variable 5#! years."
+ cr_russian_alaska_events.1.a_4years:0 "The #variable California Fur Rush#! journal entry advances, reducing the time available to turn the settlement around by #variable 4#! years."
+ cr_russian_alaska_events.1.a_3years:0 "The #variable California Fur Rush#! journal entry advances, reducing the time available to turn the settlement around by #variable 3#! years."
+ cr_russian_alaska_events.1.a_2years:0 "The #variable California Fur Rush#! journal entry advances, reducing the time available to turn the settlement around by #variable 2#! years."
+ cr_russian_alaska_events.1.a_1years:0 "The #variable California Fur Rush#! journal entry advances, reducing the time available to turn the settlement around by #variable 1#! year."
+ cr_russian_alaska_events.1.b:0 "Perhaps it is time to say farewell to Fort Ross"
+ cr_russian_alaska_events.1.b_tt:0 "We will approach [SCOPE.sCountry('buying_country').GetName] to see if they are willing to buy Fort Ross. We can expect a reply in about #variable 30#! days."
+ cr_russian_alaska_events.2.t:0 "The Future of Russian California"
+ cr_russian_alaska_events.2.desc:0 "An envoy from the [SCOPE.sCountry('selling_country').GetName] has approached us with opportunity to limit [SCOPE.sCountry('selling_country_overlord').GetAdjectiveNoFlag] influence on the [SCOPE.sState('california').GetName] coast: They are offering to sell their fur trading post of Fort Ross to us.\n\nIt would seems that with the decline in the sea otter population the viability of the post has been severely undermined."
+ cr_russian_alaska_events.2.f:0 "Once we could catch thousands of otters per season, which would easily sustain us for the rest of the year. But now? How is a man supposed to make a living on just a few hundred otter pelts?"
+ cr_russian_alaska_events.2.a:0 "Excellent idea"
+ cr_russian_alaska_events.2.b:0 "And take over this loss making enterprise?"
+ cr_russian_alaska_events.3.t:0 "[SCOPE.sCountry('buying_country').GetNameNoFormatting] Agrees!"
+ cr_russian_alaska_events.3.desc:0 "[SCOPE.sCountry('buying_country').GetName] has agreed to acquire Fort Ross from us."
+ cr_russian_alaska_events.3.f:0 "Once we could catch thousands of otters per season, which would easily sustain us for the rest of the year. But now? How is a man supposed to make a living on just a few hundred otter pelts?"
+ cr_russian_alaska_events.3.a:0 "Great"
+ cr_russian_alaska_events.4.t:0 "[SCOPE.sCountry('buying_country').GetNameNoFormatting] Declines"
+ cr_russian_alaska_events.4.desc:0 "[SCOPE.sCountry('buying_country').GetName] has declined to acquire Fort Ross from us."
+ cr_russian_alaska_events.4.f:0 "Once we could catch thousands of otters per season, which would easily sustain us for the rest of the year. But now? How is a man supposed to make a living on just a few hundred otter pelts?"
+ cr_russian_alaska_events.4.a:0 "Fine"
+ cr_russian_alaska_events.5.t:0 "The Liquidation of Fort Ross"
+ cr_russian_alaska_events.5.desc:0 "With the exhaustion of the sea otter population along the coast of California and our inability to find a productive use for the post, Fort Ross has been disposed of by order of [SCOPE.sCountry('selling_country_overlord').GetCapital.GetCityHubName]."
+ cr_russian_alaska_events.5.f:0 "It was the sea otter that had brought the Russians to California. It had accounted greatly for their continued interest in the southern coast, and with the disappearance of the otter, so did the Russians dissappear."
+ cr_russian_alaska_events.5.a:0 "Alas"
+ cr_russian_alaska_events.6.t:0 "The End of Russian California"
+ cr_russian_alaska_events.6.desc:0 "Fort Ross, the southern most outpost of the [SCOPE.sCountry('selling_country').GetName] on the coast of [SCOPE.sState('california').GetName], has been disposed of by said Company.\n\nHaving long been in decline following the near extirpation of the sea otter population along the coast, the Company has been unable to find a different productive use for it."
+ cr_russian_alaska_events.6.f:0 "It was the sea otter that had brought the Russians to California. It had accounted greatly for their continued interest in the southern coast, and with the disappearance of the otter, so did the Russians dissappear."
+ cr_russian_alaska_events.6.a:0 "So ends [SCOPE.sCountry('selling_country_overlord').GetAdjectiveNoFormatting] influence on our shores"
+ cr_russian_alaska_events.6.b:0 "So ends our influence on [SCOPE.sCountry('buying_country').GetNameNoFormatting]'s shores"
+ 
+ cr_russian_alaska_events.9.t:0 "The Golden Gate"
+ cr_russian_alaska_events.9.d:0 "With the capture of [SCOPE.sState('california_scope').GetPortHubName], we've gained control over the Golden Gate and great bay behind it. In doing so, we have ensured our control over the wider region."
+ cr_russian_alaska_events.9.f:0 "The Golden Gate is a symbol of hope and opportunity, a beacon of light that shines across the ocean, calling to those who seek a better life in America. -#italic Amy Tan#!"
+ cr_russian_alaska_events.9.a:0 "The valley awaits"
+ 
+ cr_russian_alaska_events.10.t:0 "The Inland Empire"
+ cr_russian_alaska_events.10.desc:0 "With a succesful switch away from hides trading and to agriculture, our post of Fort Ross is showing signs of early rejuvenation. Yet it would be hard to call the post blossoming. Its small population and constrained location on the coast prevents the post from living up to its full potential.\n\nShould we really want to turn Fort Ross around, we need to expand further inland, to the fertile valleys beyond the mountains." 
+ cr_russian_alaska_events.10.d_farming:0 "With a succesful switch away from hides trading and to wheat farming, our post of Fort Ross is showing signs of early rejuvenation. Yet it would be hard to call the post blossoming. Its small population and constrained location on the coast prevents the post from living up to its full potential.\n\nShould we really want to turn Fort Ross around, we need to expand further inland, to the fertile valleys beyond the mountains."
+ cr_russian_alaska_events.10.d_ranching:0 "With a succesful switch away from hides trading and to animal hides trading, our post of Fort Ross is showing signs of early rejuvenation. Yet it would be hard to call the post blossoming. Its small population and constrained location on the coast prevents the post from living up to its full potential.\n\nShould we really want to turn Fort Ross around, we need to expand further inland, to the vast valleys beyond the mountains."
+ cr_russian_alaska_events.10.f:0 "The smell of the rich California earth is like a perfume, a scent that lingers in the memory long after one has left its fields.\n- #italic Joaquin Miller#!"
+ cr_russian_alaska_events.10.a:0 "Across the mountains we must go"
+ cr_russian_alaska_events.10.a_6years:0 "The #variable California Fur Rush#! journal entry diminishes, increasing the time available to turn the settlement around by #variable 6#! years."
+ cr_russian_alaska_events.10.a_5years:0 "The #variable California Fur Rush#! journal entry diminishes, increasing the time available to turn the settlement around by #variable 5#! years."
+ cr_russian_alaska_events.10.a_4years:0 "The #variable California Fur Rush#! journal entry diminishes, increasing the time available to turn the settlement around by #variable 4#! years."
+ cr_russian_alaska_events.10.a_3years:0 "The #variable California Fur Rush#! journal entry diminishes, increasing the time available to turn the settlement around by #variable 3#! years."
+ cr_russian_alaska_events.10.a_2years:0 "The #variable California Fur Rush#! journal entry diminishes, increasing the time available to turn the settlement around by #variable 2#! years."
+ cr_russian_alaska_events.10.a_1years:0 "The #variable California Fur Rush#! journal entry diminishes, increasing the time available to turn the settlement around by #variable 1#! year."
+ cr_russian_alaska_events.11.t:0 "Valley of Plenty"
+ cr_russian_alaska_events.11.desc:0 "The Central Valley is seeing increased settlement in -what can now justifiably be called- [SCOPE.sCountry('selling_country_overlord').GetAdjectiveNoFormatting] California.\n\nDrawn to the area by the Sacramento River which, flowing like a green snake through the fields of gold the Sacramento River, hints of the abundance and generosity of the local earth."
+ cr_russian_alaska_events.11.d:0 "Drawn to the area by the Sacramento River which, like a green snake through the fields of gold, speaks of the abundance and generosity of the earth, our settlers have started striking the earth in that rich and fertile valley in -what can now justifiably be called- [SCOPE.sCountry('selling_country_overlord').GetAdjectiveNoFormatting] California."
+ cr_russian_alaska_events.11.f:0 "To stand in the midst of a California orchard, surrounded by the fragrant blooms of peach, apricot, and almond trees, is to be transported to a world of pure beauty and joy. -#italic Charles Lummis#!"
+ cr_russian_alaska_events.11.a:0 "The valley awaits"
+ cr_russian_alaska_events.closing_je:0 "This ends the #variable California Fur Rush#! journal entry"
+ 
+ ####
+ #Canadian Indian Treaties
+ ####
+ cr_canadian_indian_treaties.1.t:0 "Mining Permits"
+ cr_canadian_indian_treaties.1.desc:0 "A group of [SCOPE.gsInterestGroup('mining_ig').GetName] have approached the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] with a request for mining permits on the north shore of Lake Superior.\n\nSuch permits could of course be granted, but title to the land is still held by the [SCOPE.sCountry('native_state').GetAdjectiveNoFlag] who would not take kindly to such a flagrant disregard for their rights."
+ cr_canadian_indian_treaties.1.f:0 "There is barely an Indian there, and it is not like they are using the land..."
+ cr_canadian_indian_treaties.1.a:0 "We can't let some pesky Indians stand in the way of progress"
+ cr_canadian_indian_treaties.1.b:0 "No legislative, supreme or subordinate, has a right to make itself arbitrary."
+ cr_canadian_indian_treaties.1.a_tt:0 "The [SCOPE.gsInterestGroup('mining_ig').GetName] gain the $cr_approved_mining_permits$ for 2.5 years, replacing any earlier opinion modifier"
+ cr_canadian_indian_treaties.1.b_tt:0 "The [SCOPE.gsInterestGroup('mining_ig').GetName] gain the $cr_denied_mining_permits$ for 2.5 years, replacing any earlier opinion modifier"
+ cr_canadian_indian_treaties.1.b_tt2:0 "Ontario gains the $cr_mining_permit_denied$ for 2.5 years, replacing any earlier modifier"
+ 
+ cr_canadian_indian_treaties.2.t:0 "Surveyor Threatened"
+ cr_canadian_indian_treaties.2.desc:0 "A tense confrontation between chief [SCOPE.sCharacter('native_state_threatener').GetFirstName] and a surveyor in employ of the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] has occured in [SCOPE.sState('copper_mining_area').GetName].\n\nThe [SCOPE.sCountry('native_state').GetAdjectiveNoFlag] Chief is threating violence if the surveying of his land does not end."
+ cr_canadian_indian_treaties.2.desc_industrialists:0 "A surveyor in employ of [SCOPE.gsInterestGroup('mining_ig').GetName] [SCOPE.sCharacter('surveyor_employer').GetFullName] working to map the north shore of Lake Huron has been threatened by an [SCOPE.sCountry('native_state').GetAdjective] chief."
+ cr_canadian_indian_treaties.2.f:0 "Be gone! By right this is our land and you and your colonists are unwelcome here!"
+ cr_canadian_indian_treaties.2.a:0 "We will not be intimidated"
+ cr_canadian_indian_treaties.2.b:0 "Perhaps we should not press the issue"
+ 
+ cr_canadian_indian_treaties.3.t:0 "[SCOPE.sCountry('native_state').GetAdjectiveNoFormatting] Petition to [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting]"
+ cr_canadian_indian_treaties.3.desc:0 "Chief [SCOPE.sCharacter('native_state_petitioner').GetFirstName] of the [SCOPE.sCountry('native_state').GetAdjectiveNoFormatting] has sent a petition to the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] complaining about prospectors violating [SCOPE.sCharacter('native_state_petitioner').GetHerHis] territory and lambasting the lack of support he and his band receive."
+ cr_canadian_indian_treaties.3.f:0 "I fought for the British during the War of 1812 and for my sacrifice we were promised we could live on our lands unmolested forever. Yet everyday we see new prospectors who disturb our land. And where other bands receive payment from [ROOT.GetCountry.GetOverlord.GetRuler.GetHerHis|U] Majesty's Government, we receive not a share of what is found on our land."
+ cr_canadian_indian_treaties.3.a:0 "We thank Chief [SCOPE.sCharacter('native_state_petitioner').GetFirstName] for [SCOPE.sCharacter('native_state_petitioner').GetHerHis] message"
+ cr_canadian_indian_treaties.3.b:0 "Perhaps we can offer [SCOPE.sCharacter('native_state_petitioner').GetHerHim] an incentive?"
+ 
+ cr_canadian_indian_treaties.4.t:0 "On Aboriginal Land Title" #Papineau Report by Denis-Benjamin Papineau, brother to Louis-Joseph Papineau
+ cr_canadian_indian_treaties.4.desc:0 "A [SCOPE.sCulture('ruling_culture').GetName] author has published a treatise on land ownership in [ROOT.GetCountry.GetNameNoFlag] which could be of use to us."
+ cr_canadian_indian_treaties.4.flavour:0 "It is from the natural right of possession that title to land is achieved. As a result we must conclude that it are the [SCOPE.sCulture('ruling_culture').GetNameNoFormatting] who hold title to [SCOPE.sState('copper_mining_state').GetOwner.GetNameNoFormatting], and not the [SCOPE.sCulture('anglo_culture').GetNameNoFormatting] nor the [SCOPE.sCountry('native_state').GetAdjectiveNoFormatting]. For neither were present in 1764 nor sufficiently organised to be said to be capable of holding possession of land."
+ cr_canadian_indian_treaties.4.desc_old:0 "A [SCOPE.sCulture('ruling_culture').GetName] author has published a treatise exploring the question of land ownership in [ROOT.GetCountry.GetNameNoFlag]. In it, he argues, that it is the [SCOPE.sCulture('ruling_culture').GetNameNoFormatting]s who hold legal title through their 'natural rights'.\n\nConcerning the prospecting lands around Lake Superior he hold that the [SCOPE.sCountry('native_state').GetAdjectiveNoFormatting] did not inhabit the region at the time of the Royal Proclamation and therefore did not gain title to the land. But also that that point is mute as the [SCOPE.sCountry('native_state').GetAdjectiveNoFormatting] bands are not sufficiently organised to hold claim to territory anyway."
+ cr_canadian_indian_treaties.4.f:0 "I call God to witness in the beginning and do so now again and say that it was false that the land is not ours, it is ours. -#italic Chief Shingwaukonse#!" 
+ cr_canadian_indian_treaties.4.a:0 "The report is not altogether satisfactory"
+ cr_canadian_indian_treaties.4.b:0 "A useful report to undermine the [SCOPE.sCountry('native_state').GetAdjectiveNoFormatting]"
+  #The cession of 1763, only changed the sovereign power responsible for administering and protecting the territory. In no case did the British Crown become the owner as the Franco-Canadians strong in their "natural right" are the legitimate owners. The current political power is only established to distribute and divide the lands to the citizens who need it.
+ 
+ cr_canadian_indian_treaties.5.t:0 "Incident at the Copper Mine"
+ cr_canadian_indian_treaties.5.desc:0 "A mining manager in [SCOPE.sState('copper_mining_area').GetName] got a rude awaking today, as when he answered the hard knock on his door, he found himself face to face with an angry band of Indians belonging to Chief [SCOPE.sCharacter('native_state_threatener').GetFirstName].\n\nThe reason of their coming is simple: the mine stands on unceded land, and [SCOPE.sCharacter('native_state_threatener').GetFirstName]'s band will either get a share of the profits, or the mine will close."
+ cr_canadian_indian_treaties.5.f:0 "The Great Spirit, we think, placed these rich mines on our lands, for the benefit of his red children so that their rising generation might get support from them when the animals of the woods should have grown too scarce for our subsistence. We will carry out, therefore, the good object of our father, the Great Spirit. We will sell you lands, if you will give us what is right and at the same time, we want pay for every pound of mineral that has been taken off our lands, as well as for that which may hereafter be carried away. -#italic Chief Shingwaukonse#!"
+ cr_canadian_indian_treaties.5.a:0 "The mine closes"
+ cr_canadian_indian_treaties.5.b:0 "A share is only fair"
+ cr_canadian_indian_treaties.5.c:0 "This can only be the start of a wider uprising"
+ 
+ cr_canadian_indian_treaties.6.t:0 "The Copper Country Rebellion"
+ cr_canadian_indian_treaties.6.desc:0 "With little action on the part of [ROOT.GetCountry.GetOverlord.GetRuler.GetHerHis|U] Majesty's Government to control mining on their tribal land, various bands of the [SCOPE.sCountry('native_state').GetAdjectiveNoFormatting] nation have taken up arms and started attacking mining settlements in the region."
+ cr_canadian_indian_treaties.6.f:0 "The Indians, for their part, used their knowledge of the terrain to carefully plan and execute an ambush, ensuring them victory."
+ cr_canadian_indian_treaties.6.a:0 "Will somebody not call the militia?!"
+ 
+ cr_canadian_indian_treaties.8.t:0 "The Long Tail of Civilisation"
+ cr_canadian_indian_treaties.8.desc:0 "With mining booming on the shores of Lake Superior and towns and commerce springing up everwhere, what was once but a wilderness inhabited by a handful of Indians is now seeing the first kernals of civilisation.\n\nThe local [SCOPE.sCountry('native_state').GetAdjectiveNoFlag] Indians, however, are complaining that the mines are driving away game with their noise and poisoning the rivers with their runoff."
+ cr_canadian_indian_treaties.8.f:0 "Once the stream was full of fish and woods full of deer, but with the trees cut to supply timber for the mine and the stream redirected to feed the mining engines, there is no more game to be found here."
+ cr_canadian_indian_treaties.8.a:0 "A small price to pay in the name of progress"
+ 
+ cr_canadian_indian_treaties.10.t:0 "The Robinson Treaties"
+ cr_canadian_indian_treaties.10.desc:0 "With tensions rising between miners and the Indian bands over land rights, a meeting of [SCOPE.sCountry('native_state').GetAdjectiveNoFlag] Chiefs has been called at [SCOPE.sState('copper_mining_state').GetMineHubName] by Commissioner [SCOPE.gsInterestGroup('mining_ig').GetLeader.GetLastName].\n\nThe [SCOPE.sCountry('native_state').GetAdjectiveNoFormatting] Chiefs have expressed their eagerness to enter into a treaty, but hunting and fishing rights and -most importantly- the size of the annuity are proving to be a sticking point, with [SCOPE.sCountry('native_state').GetAdjectiveNoFormatting] demands exceding earlier annuities -and the budget- by a factor of 2 or 3."
+ cr_canadian_indian_treaties.10.desc_defeat:0 "With the rebels firmly defeated, [SCOPE.sCharacter('victorious_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('victorious_general').GetFullName] has called the [SCOPE.sCountry('native_state').GetAdjectiveNoFlag] Chiefs to [SCOPE.sState('copper_mining_state').GetMineHubName] to settle the peace. And not just for the rebellion, but also to settle the question for mining rights.\n\nNaturally, in such circumstances, we will be dictating the terms. The question is just how severe they will be."
+ cr_canadian_indian_treaties.10.f:0 "Whatever may be given to them for the surrender of their right, they must be gainers, for they relinquished nothing but a mere nominal title; they will continue to enjoy all their present advantages and will not be the poorer because the superior intelligence and industry of their white brethren are enabling them to draw wealth from a few limited portions of their territory, which never were nor could be, of any particular service to themselves. -#italic William Benjamin Robinson#!"
+ cr_canadian_indian_treaties.10.a:0 "Peace above everything else"
+ cr_canadian_indian_treaties.10.b:0 "Bully them into accepting more reasonable terms"
+ cr_canadian_indian_treaties.10.c:0 "We will not agree to such extragevant terms"
+ cr_canadian_indian_treaties.10.d:0 "No quarter will be given"
+ cr_canadian_indian_treaties.10.e:0 "We will be generous with our terms"
+
+cr_canadian_indian_treaties.20.t:0 "Land Cession Treaty No. [SCOPE.GetRootScope.GetCountry.GetCustom('cr_numbers_localisation')]"
+cr_canadian_indian_treaties.20.desc:0 "[SCOPE.sCountry('native_state').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCharacter('native_ruler').GetFirstName] of the [SCOPE.sCountry('native_state').GetNameNoFlag] has lead a number of [SCOPE.sCountry('native_state').GetRuler.GetPrimaryRoleTitle|l]s to [SCOPE.sState('cr_numbered_treaties_owned_state').GetCityHubName] to discuss the possibility of land cessions.\n\nHaving met with our Commissioner, they have expressed their willingness to sign over title to their land in exchange for annuities and reservation land."
+cr_canadian_indian_treaties.20.f:0 ""
+cr_canadian_indian_treaties.20.a:0 "Wonderful"
+cr_canadian_indian_treaties.20.b:0 "We will aggressively push these treaties"
+cr_canadian_indian_treaties.20.c:0 "This is not in our current interest"
+
+cr_canadian_indian_treaties.50.t:0 "The Man on the River"
+cr_canadian_indian_treaties.50.summary:0 "Changing tastes in fashion have let to a decline in the previously profitable [SCOPE.sCountry('cr_fur_trading_country').GetAdjectiveNoFlag] fur trade."
+cr_canadian_indian_treaties.50.flavour_1:0 "He is a lonely figure who still braves the wilds of [SCOPE.sStrategicRegion('ruperts_land').GetNameNoFormatting] in search of that elusive perfect pelt. Perhaps he does it out of longing for the freedom it provides? Or maybe out of sheer habit? For rich it doesn't make him. Once it might have, perhaps, but where the frontier barely changes, in far away London a new era is dawning. An era of progress, change and unfathomable wealth. An era of celebration where there is no more use for the dank and musky furs our man built his life around. Where there is no more use for him."
+cr_canadian_indian_treaties.50.flavour_2:0 "He is a relic of a time long passed, that Voyageur making his way along the rivers of [SCOPE.sStrategicRegion('ruperts_land').GetNameNoFormatting]. Traveling, haggling, trading. Day in, day out. The whole season long until the snows and ice make traveling impossible. And then -when spring comes and the rivers are navigable again- he starts over again. His frontier life might never change but the world does. His furs, once in high demand in London society, are now seen as much of a relic of times past as he is. Today it is all silks and cottons they crave. And while this craze will pass and fade in time, today it is his turn to pass and fade from time."
+cr_canadian_indian_treaties.50.flavour_3:0 "Somewhere, in a far away corner of our Empire, rough men prow the rivers and wilds to make their living. Hunting, traveling, trading. Each day in, each day out, for as long as the weather allows and their bodies can carry them. And then some more. It is a way of life which has existed for centuries and has defined the frontiers. The pelts they bring to market -the finest, softest, warmest, you'll ever find- the backbone of our entire colony. But the trade is drying up. Sure the beavers, otters, foxes are as plentiful as ever and their furs never better, but you'll be hard pressed to find a buyer for them in London."
+cr_canadian_indian_treaties.50.a:0 "Tempora mutantur, nos et mutamur in illis"
+cr_canadian_indian_treaties.50.a_tt:0 "The [SCOPE.sBuilding('fur_trading_post').GetName]s across [SCOPE.sStrategicRegion('ruperts_land').GetName] will be depleted and removed from the map."
+
+cr_canadian_indian_treaties.51.a_tt:0 "The [SCOPE.sBuilding('fur_trading_post').GetName]s across the [SCOPE.sCountry('fur_declining_country').GetName] will be depleted and removed from the map."
+
+cr_canadian_indian_treaties.52.a_tt:0 "The Fur Trading Posts across [SCOPE.sStrategicRegion('ruperts_land').GetName], the [SCOPE.sCountry('columbia_district').GetName] and [SCOPE.sStrategicRegion('canada').GetName] have been depleted and removed from the map."
+
+################################
+#
+#   Lower Canada Rebellion
+#
+################################
+cr_lower_canada_rebellion.01.t:0 "The Patriote Threat"
+cr_lower_canada_rebellion.01.desc:0 "With the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoIcon] victory in the House of Assembly election, the issuing of the #variable 92 Resolutions#! and the tax revolt they imposed, the increasing militancy of the [SCOPE.sCulture('franco_canadian_culture').GetName]s is becoming worrysome to some of our [SCOPE.sCulture('anglo_canadian_culture').GetName], who fear for the future of the colony under [SCOPE.sCountry('cr_lower_canada_overlord').GetAdjective] rule.\n\nIn the hopes of safeguarding the future of [SCOPE.sCountry('cr_lower_canada_overlord').GetAdjectiveNoFormatting] rule, various [SCOPE.sCulture('anglo_canadian_culture').GetNameNoFormatting]s have started organising into a volunteer militia they have dubbed the #variable British Rifle Corps#!. They stand ready to put down the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoFormatting] threat, should it come to that."
+cr_lower_canada_rebellion.01.flavour:0 "Our aim is to defend the connection which exists between Great Britain and Lower Canada, and to maintain unimpaired the rights and privileges confirmed to us by the Constitution."
+cr_lower_canada_rebellion.01.a:0 "The [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoFormatting] are no real threat"
+cr_lower_canada_rebellion.01.b:0 "It is always useful to have some militants to work with"
+
+cr_lower_canada_rebellion.02.t:0 "A Call to all Loyal British Men"
+cr_lower_canada_rebellion.02.desc:0 "From the tea houses of [ROOT.GetCountry.GetCapital.GetCityHubName] the rumour is spreading that former members of the banned British Rifle Club have banded together into a new 'political association'. This so called $variable Doric Club#! has the stated aim of protecting [SCOPE.sCulture('anglo_canadian_culture').GetName] interest in the colony against the ravages of the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoFormatting].\n\nEarily similiar to the banned British Rifle Club, this new organisation -a militia in all but name- seems to have found a powerful protector in [SCOPE.gsInterestGroup('cr_canadian_armed_forces').GetLeader.GetFullName] and has a suprisingly large contigent of [SCOPE.gsInterestGroup('cr_canadian_armed_forces').GetNameNoIcon] members."
+cr_lower_canada_rebellion.02.flavour:0 "If we are deserted by the British government and the British people, rather than submit to the degradation of being subject of a French-Canadian republic, we are determined by our own right arms to work out our deliverance."
+cr_lower_canada_rebellion.02.a:0 "A lemon by any other name tastes just as sour"
+cr_lower_canada_rebellion.02.b:0 "We appreciate the loyality these men show"
+
+cr_lower_canada_rebellion.03.t:0 "Enlist!"
+cr_lower_canada_rebellion.03.desc:0 "'Enlist to save the Empire!', 'Enlist to save the Church!' 'Enlist to save British Civilisation!'\n\nThe #variable British Rifle Club#! has started an aggressive campaign of recruitment amongst the [SCOPE.sCulture('anglo_canadian_culture').GetName] male youth, building upon the fear that the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoIcon] might seize control and overthrow the old British order of the monarchy, the church and the British way of life."
+cr_lower_canada_rebellion.03.flavour:0 "flavour"
+cr_lower_canada_rebellion.03.a:0 "opt a"
+cr_lower_canada_rebellion.03.b:0 "opt b"
+
+cr_lower_canada_rebellion.04.t:0 "The Flag Parade"
+cr_lower_canada_rebellion.04.desc:0 "Proudly flying the [SCOPE.sCountry('cr_lower_canada_overlord').GetAdjectiveNoFlag] flag as they march to a tune of fife and drum, a group of young men associated with the #variable British Rifle Club#! have taken it upon themselves to organise a flag parade down the streets of [ROOT.GetCountry.GetCapital.GetCityHubName].\n\nThe city, deeply divided between [SCOPE.sCulture('anglo_canadian_culture').GetName]s and [SCOPE.sCulture('franco_canadian_culture').GetName], is a hotbed of political activity for both the Loyalists and the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoFormatting]. And now, with the authorities watching, the men have stated their intention to march into a deeply [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhood."
+cr_lower_canada_rebellion.04.flavour:0 "flavour"
+cr_lower_canada_rebellion.04.a:0 "If only there was something we could do..."
+cr_lower_canada_rebellion.04.a_tt:0 "This option is available because you have no investement into the [concept_institution_police] institution."
+cr_lower_canada_rebellion.04.b:0 "Perhaps they should continue their march elsewhere..."
+cr_lower_canada_rebellion.04.b_tt:0 "This option is available because you have the [GetLawType('law_right_of_assembly').GetName] or [GetLawType('law_protected_speech').GetName] $concept_laws$ active and at least a level 1 investement into the [concept_institution_police] institution."
+cr_lower_canada_rebellion.04.c:0 "Their right to march is protected, by force if necessary"
+cr_lower_canada_rebellion.04.c_tt:0 "This option is available because you have the [GetLawType('law_right_of_assembly').GetName] or [GetLawType('law_protected_speech').GetName] $concept_laws$ active."
+cr_lower_canada_rebellion.04.d:0 "I didn't know they had permission to march in the first place..."
+cr_lower_canada_rebellion.04.d_tt:0 "This option is available because you have the [GetLawType('law_outlawed_dissent').GetName] or [GetLawType('law_censorship').GetName] $concept_laws$ active."
+
+cr_lower_canada_rebellion.05.t:0 "The [TimeKeeper.GetDate.GetString] Montreal Riots"
+cr_lower_canada_rebellion.05.desc:0 "As the #variable British Rifle club#! marched down the [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhood of [ROOT.GetCountry.GetCapital.GetCityHubName], it was not long before they were met by the first jeers from the growing crowd. But while the first jeers were met with a proud stiff upper lip, but -as more and more people gathered- it was not long before the tensions erupted. When the first stone came -who threw it no-one knows- it was a signal for both sides to have at eachother.\n\nFists were thrown, beatings endured and a window smashed here and there."
+cr_lower_canada_rebellion.05.flavour:0 "flavour"
+cr_lower_canada_rebellion.05.a:0 "A sign for things to come"
+
+cr_lower_canada_rebellion.05.desc_b:0 "As the #variable British Rifle Club#! marched down the [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhood of [ROOT.GetCountry.GetCapital.GetCityHubName], it was not long before they were met by the first jeers from the growing crowd. But while the first jeers were met with a proud stiff upper lip, but -as more and more people gathered- it was not long before the tensions erupted. When the first stone came -who threw it no-one knows- it was a signal for both sides to have at eachother.\n\nFists were thrown, beatings endured and a window smashed here and there.\n\nThe constabulary we gathered stood by and watched, too small in number to be able to stand up against the crowds and make a difference."
+cr_lower_canada_rebellion.05.flavour:0 "flavour"
+cr_lower_canada_rebellion.05.a:0 "A sign for things to come"
+
+cr_lower_canada_rebellion.06.t:0 "The [TimeKeeper.GetDate.GetString] Montreal Parade"
+cr_lower_canada_rebellion.06.desc:0 "With their path into the [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhoods blocked, the #variable British Rifle Club#! marched down the main streets of [ROOT.GetCountry.GetCapital.GetCityHubName] instead. There, amongst their [SCOPE.sCulture('anglo_canadian_culture').GetName] compatriots, they were met with cheers and laurels from an ever growing crowd, who seemed to appreciate the sense of protection and order the Club brought."
+cr_lower_canada_rebellion.06.flavour:0 "flavour"
+cr_lower_canada_rebellion.06.a:0 "A sign for things to come"
+
+cr_lower_canada_rebellion.06.desc_b:0 "As the #variable British Rifle Club#! marched down the [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhood, the air thick with the oppressive presence of the constabulary lining the street, the occassional jeer drowned out by the fifes and drums, the occasional rock thrower quickly caught, it was inescapable to the gathering crowd who called the tune."
+cr_lower_canada_rebellion.06.flavour:0 "flavour"
+cr_lower_canada_rebellion.06.a:0 "A sign for things to come"
+
+cr_lower_canada_rebellion.10.t:0 "The Last [SCOPE.sCulture('franco_canadian_culture').GetNameNoFormatting] in [ROOT.GetCountry.GetCapital.GetCityHubNameNoFormatting]"
+cr_lower_canada_rebellion.10.desc:0 "Every day he stands in his carefully curated out fit -a red toque and sash, a white cotton shirt, his wide-brimmed had adorning a red-white-green cocade- at the Speakers' Corner in the [ROOT.GetCountry.GetCapital.GetCityHubName]. Every day he proclaims his message of times long past. Every day the same people pass him, and every day his message goes unheard. His French tongue an almost lost language. He is the self-proclaimed last [SCOPE.sCulture('franco_canadian_culture').GetName] in [ROOT.GetCountry.GetCapital.GetCityHubName].\n\nWhile it hasn't gotten quite that far yet, [ROOT.GetCountry.GetCapital.GetCityHubNameNoFormatting] stands at a cross road as the influx of [SCOPE.sCulture('anglo_canadian_culture').GetName]s is pushing [SCOPE.sCulture('franco_canadian_culture').GetNameNoFormatting] culture ever more to the periphery."
+cr_lower_canada_rebellion.10.flavour:0 "Flavour"
+cr_lower_canada_rebellion.10.a:0 "Times change and we change with it"
+cr_lower_canada_rebellion.10.b:0 "Something something positive for the franco canadians"
+
+cr_lower_canada_rebellion.11.t:0 "Gateway to America"
+cr_lower_canada_rebellion.11.desc:0 "Busteling and rapidly growing [ROOT.GetCountry.GetCapital.GetCityHubName] is developing itself into the hub of [SCOPE.sCountry('cr_lower_canada_overlord').GetAdjective] North America.  controls all trade to the Great Lakes, and as a result stands to be the Gateway to America, a rival to New York "
+cr_lower_canada_rebellion.11.flavour:0 "Flavour"
+cr_lower_canada_rebellion.11.a:0 "Times change and we change with it"
+cr_lower_canada_rebellion.11.b:0 "Something something positive for the franco canadians"
+
+cr_lower_canada_rebellion.10.t:0 "The Spectre of Revolution"
+cr_lower_canada_rebellion.10.desc:0 ""
+cr_lower_canada_rebellion.10.flavour:0 ""
+cr_lower_canada_rebellion.10.a:0 "A lemon by any other name tastes just as sour"
+cr_lower_canada_rebellion.10.b:0 "We appreciate the loyality these men show"
+
+

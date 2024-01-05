@@ -1,0 +1,42 @@
+﻿CHARACTERS = {
+	c:KYZ = {
+		create_character = {
+			first_name = Tailak
+			last_name = Batyr
+			historical = yes
+			ruler = yes
+			age = 40
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			traits = {
+				meticulous
+				wrathful
+				mountain_commander
+			}
+			on_created = {
+				set_variable = {
+					name = tailak_baatyr
+				}				
+			}
+		}
+		create_character = {
+			is_general = yes
+			first_name = Atantay
+			last_name = Batyr
+			historical = yes
+			age = 39
+			interest_group = ig_landowners
+			ideology = ideology_jingoist_leader
+			hq = region_central_asia
+			traits = {
+				brave
+				pillager
+			}
+			on_created = {
+				set_variable = {
+					name = atantay_baatyr
+				}				
+			}
+		}
+	}
+}

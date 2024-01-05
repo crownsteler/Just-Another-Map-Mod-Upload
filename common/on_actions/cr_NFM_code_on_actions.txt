@@ -1,0 +1,34 @@
+﻿# For on_actions launched by the code itself.
+
+# Root = Country
+on_monthly_pulse_country = {
+	events = {
+		mexican_nfm.1
+
+		acw_modded.4
+	}
+	random_events = {
+		
+	}
+}
+
+on_half_yearly_pulse_country = {
+	events = {
+		
+	}
+	random_events = {
+		50 = 0
+		50 = mexican_american.9  #Dred Scot
+	}
+	random_events = {
+		50 = 0
+		30 = acw_modded.2 #Failed Harper's Ferry
+		10 = acw_modded.3 #Catastrophic Harper's Ferry
+		5 = acw_modded.1 #Succesful Harper's Ferry
+	}
+	# mexican_succession
+	random_events = {
+		30 = 0
+		70 = mexican_nfm.2
+	}
+}

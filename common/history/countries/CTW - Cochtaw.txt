@@ -1,0 +1,10 @@
+﻿COUNTRIES = {
+	c:CTW = {
+		effect_starting_technology_tier_4_tech = yes
+		effect_native_conscription_10 = yes
+		
+		ig:ig_devout = {
+			set_interest_group_name = ig_evangelical_church
+		}
+	}
+}

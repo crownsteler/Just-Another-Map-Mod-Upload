@@ -1,0 +1,348 @@
+﻿#############################
+#							#
+#			Sumatra			#
+#							#
+#############################			
+
+RIA = {
+	color = { 196 14 105 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	capital = STATE_BILLITON
+	cultures = { sumatran }
+}
+
+MGK = {
+	color = { 216 204 92 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	capital = STATE_MINANGKABAU
+	cultures = { minangkabau }
+	is_named_from_capital = yes
+
+}
+
+
+POE = {
+	color = { 167 168 203 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { sumatran }
+	capital = STATE_SOUTH_SUMATRA
+	is_named_from_capital = yes
+}
+
+
+BTK = {
+	color = { 198 32 32 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { batak }
+	capital = STATE_TAPANULI
+}
+
+SGK = {
+	color = { 0 182 142 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { sumatran }
+	capital = STATE_TAPANULI
+}
+
+NIS = {
+	color = { 65 131 65 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { sumatran }
+	religion = animist
+	capital = STATE_TAPANULI
+}
+
+#############################
+#							#
+#			Borneo			#
+#							#
+#############################	
+
+DYK = {
+	color = { 191 187 147 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { dayak }
+	capital = STATE_EAST_BORNEO
+	is_named_from_capital = yes
+}
+
+LDK= {
+	color = { 107 201 217 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+MTN= {
+	color = { 0 119 17 } #7 137 48
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+GTB= {
+	color = { 81 157 106 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bornean }
+	capital = STATE_EAST_BORNEO
+}
+
+SBL= {
+	color = { 48 93 138 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bornean }
+	capital = STATE_EAST_BORNEO
+}
+
+
+#############################
+#							#
+#		  Celebes			#
+#							#
+#############################	
+
+MDR= {
+	color = {237 65 139 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { moluccan }
+	capital = STATE_SOUTH_CELEBES
+}
+
+BON= {
+	color = { 147 166 132 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { moluccan }
+	capital = STATE_SOUTH_CELEBES
+}
+
+LWU= {
+	color = { 119 147 33 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { moluccan }
+	capital = STATE_SOUTH_CELEBES
+}
+
+#############################
+#							#
+#		  Moluccas			#
+#							#
+#############################	
+
+ARU= {
+	color = { 191 187 147 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { moluccan }
+	capital = STATE_MOLUCCAS
+}
+
+#TDR= {
+#	color = { 227 239 108 }
+#	
+#	country_type = unrecognized
+#	
+#	tier = principality
+#	
+#	cultures = { moluccan }
+#	capital = STATE_MOLUCCAS
+#}
+
+TRT= {
+	color = { 36 203 81 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { moluccan }
+	capital = STATE_MOLUCCAS
+}
+
+
+#############################
+#							#
+#	Lesser Sunda Islands	#
+#							#
+#############################	
+
+BIM= {
+	color = { 174 66 77 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { moluccan }
+	capital = STATE_SUNDA_ISLANDS
+}
+
+LRT= {
+	color = { 111 163 68 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { moluccan }
+	capital = STATE_SUNDA_ISLANDS
+}
+
+SBW= {
+	color = { 102 120 230 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { moluccan }
+	capital = STATE_SUNDA_ISLANDS
+}
+
+SMW= {
+	color = { 191 187 147 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { moluccan }
+	capital = STATE_SUNDA_ISLANDS
+}
+
+TMR= {
+	color = { 191 187 147 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { moluccan }
+	capital = STATE_SUNDA_ISLANDS
+}
+
+
+#############################
+#							#
+#		 Philippines		#
+#							#
+#############################	
+
+LZN = {
+	color = { 113 84 167 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { filipino }
+	capital = STATE_LUZON
+}
+
+MDN = {
+	color = { 165 152 190 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { filipino }
+	capital = STATE_MINDANAO
+}
+
+MUI = {
+	color = { 174 205 34 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { bornean }
+	capital = STATE_MINDANAO
+}
+
+#############################
+#							#
+#		   Malaysia			#
+#							#
+#############################	
+
+TGU = {
+	color = { 15 97 37 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { malay }
+	capital = STATE_MALAYA
+}
+
+PTU = {
+	color = { 120 180 200}
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { malay }
+	capital = STATE_MALAYA
+}

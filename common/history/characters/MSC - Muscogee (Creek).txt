@@ -1,0 +1,47 @@
+﻿CHARACTERS = {
+	c:MSC = {
+		create_character = {
+			first_name = "Opothle"
+			last_name = "Yohola"
+			historical = yes
+			ruler = yes
+			birth_date = 1778.1.1
+			interest_group = ig_petty_bourgeoisie
+			ig_leader = yes
+			ideology = ideology_traditionalist
+			traits = {
+				charismatic
+				firebrand
+			}
+		}
+		create_character = {
+			first_name = "Jim"
+			last_name = "Henry"
+			historical = yes
+			is_general = yes
+			birth_date = 1800.1.1
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			traits = {
+			}
+			on_created = {
+				set_variable = {
+					name = jim_henry
+				}				
+			}
+			
+		}
+		create_character = {
+			first_name = "Eneah"
+			last_name = "Emathla"
+			historical = yes
+			is_general = yes
+			birth_date = 1754.1.1
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			traits = {
+			}
+			
+		}
+	}
+}

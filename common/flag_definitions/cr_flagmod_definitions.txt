@@ -1,0 +1,142 @@
+﻿# common variables
+@coa_width = 768
+@coa_height = 512
+@canton_scale_cross_x = @[ ( 333 / coa_width ) + 0.001 ]
+@canton_scale_cross_y = @[ ( 205 / coa_height ) + 0.001 ]
+@canton_scale_sweden_x = @[ ( 255 / coa_width ) + 0.001 ]
+@canton_scale_sweden_y = @[ ( 204 / coa_height ) + 0.001 ]
+@canton_scale_norway_x = @[ ( 192 / coa_width ) + 0.001 ]
+@canton_scale_norway_y = @[ ( 192 / coa_height ) + 0.001 ]
+@canton_scale_denmark_x = @[ ( 220 / coa_width ) + 0.001 ]
+@canton_scale_denmark_y = @[ ( 220 / coa_height ) + 0.001 ]
+@third = @[1/3]
+
+MON = { # Montenegro
+	flag_definition = {
+		coa = MON_theocracy
+		subject_canton = MON_theocracy
+		allow_overlord_canton = no
+		coa_with_overlord_canton = MON_theocracy			
+		priority = 10
+		trigger = { 
+			scope:actor = {
+				coa_def_theocracy_flag_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = MON_principality_absolutist
+		subject_canton = MON_principality_absolutist
+		allow_overlord_canton = no
+		coa_with_overlord_canton = MON_principality_absolutist			
+		priority = 10
+		trigger = { 
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				country_tier = principality
+				has_law = law_type:law_autocracy
+			}
+		}
+	}
+	flag_definition = {
+		coa = MON_principality_variant
+		subject_canton = MON_principality_variant
+		allow_overlord_canton = no
+		coa_with_overlord_canton = MON_principality_variant			
+		priority = 10
+		trigger = { 
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				country_tier = principality
+				NOT = { has_law = law_type:law_autocracy }
+			}
+		}
+	}
+	flag_definition = {
+		coa = MON_kingdom
+		subject_canton = MON_kingdom
+		allow_overlord_canton = no
+		coa_with_overlord_canton = MON_kingdom			
+		priority = 10
+		trigger = { 
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				NOT = { country_tier = principality }
+			}
+		}
+	}
+	flag_definition = {
+		coa = MON_republic
+		subject_canton = MON_republic
+		allow_overlord_canton = no
+		coa_with_overlord_canton = MON_republic		
+		priority = 10
+		trigger = { 
+			scope:actor = {
+				NOR = { 
+					has_law = law_type:law_monarchy 
+					has_law = law_type:law_council_republic
+				}
+			}
+		}
+	}
+	flag_definition = {
+		coa = MON_communist
+		subject_canton = MON_communist
+		allow_overlord_canton = no
+		coa_with_overlord_canton = MON_principality_variant			
+		priority = 10
+		trigger = { 
+			scope:actor = {
+				has_law = law_type:law_council_republic
+			}
+		}
+	}
+}
+
+ASK = {
+	flag_definition = {
+		coa = ASK_sub_RUS
+		subject_canton = ASK_sub_RUS
+		allow_overlord_canton = no
+		#coa_with_overlord_canton = MON_principality_variant			
+		priority = 10
+		trigger = { 
+			AND = {
+				exists = c:RUS
+				scope:actor = {
+					is_subject_of = c:RUS
+				}
+			}
+		}
+	}
+}
+
+MGK = {
+	flag_definition = {
+		coa = MGK_theocracy
+		subject_canton = MGK_theocracy
+		allow_overlord_canton = no			
+		priority = 10
+		trigger = { 
+			scope:actor = {
+				has_law = law_type:law_theocracy
+			}
+		}
+	}
+}
+
+SPA = {
+	flag_definition = {
+		coa = SPA_carlists
+		subject_canton = SPA_carlists
+		allow_overlord_canton = no			
+		priority = 10
+		trigger = { 
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				has_variable = cr_carlist_victory
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+﻿CHARACTERS = {
+	c:RCT = {
+		create_character = {
+			first_name = "Ghulam_Muhammad"
+			last_name = "Ghouse_Khan"
+			historical = yes
+			ruler = yes
+			age = 12
+			interest_group = ig_landowners
+			traits = {
+			}
+		}
+	}
+}

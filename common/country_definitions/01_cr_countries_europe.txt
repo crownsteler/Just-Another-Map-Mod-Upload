@@ -1,0 +1,17 @@
+﻿
+#############################
+#							#
+#		   EUROPE			#
+#							#
+#############################
+
+CSP = {
+	color = { 196 78 78 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { spanish basque }	
+	capital = STATE_NAVARRA
+}

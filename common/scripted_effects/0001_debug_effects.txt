@@ -1,0 +1,44 @@
+﻿debug_success = {
+	add_treasury = 50000
+}
+debug_fail = {
+	add_treasury = -50000
+}
+
+assert = {
+	assert_if = {
+		limit = { always = yes }
+	}
+}
+
+
+set_all_colony = {
+	every_state = {
+		limit = {
+			OR = {
+				region = sr:region_north_africa
+				region = sr:region_southern_africa
+				region = sr:region_zanj
+				region = sr:region_senegal
+				region = sr:region_niger
+				region = sr:region_nile_basin
+				region = sr:region_congo
+				region = sr:region_egypt
+				region = sr:region_red_sea_region
+				region = sr:region_western_sahara
+				region = sr:region_eastern_sahara
+				region = sr:region_chad_basin
+				region = sr:region_biafra
+				region = sr:region_guinea
+				region = sr:region_ethiopia
+				region = sr:region_african_lakes
+				region = sr:region_zambezia
+				region = sr:region_south_west_africa
+			}
+		
+		}
+		set_state_owner = c:GBR
+		set_state_type = unincorporated
+	}
+	
+}

@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:RBS = {
+		create_character = {
+			first_name = "jabir"
+			last_name = "ibn_merdaw"
+			historical = yes
+			ruler = yes
+			age = 56
+			interest_group = ig_landowners
+			traits = {
+				ambitious
+				imperious
+			}
+		}
+	}
+}

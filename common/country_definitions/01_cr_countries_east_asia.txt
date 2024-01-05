@@ -1,0 +1,104 @@
+﻿#############################
+#							#
+#		  Indochina			#
+#							#
+#############################			
+
+CHH = {
+	color = { 251 161 34 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { kachin }	
+	capital = STATE_KACHIN
+}
+
+HSW = {
+	color = { 138 193 120 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { shan }	
+	capital = STATE_SHAN_STATES
+}
+
+KGG = {
+	color = { 92 165 189 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { shan }	
+	capital = STATE_SHAN_STATES
+}
+
+MOI = {
+	color = { 162 52 52 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { khmer }	
+	capital = STATE_ANNAM
+}
+
+MUP = {
+	color = { 47 89 115 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { lao }	
+	capital = STATE_LAOS
+}
+
+NAN = {
+	color = { 164 132 24 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { thai shan }	
+	capital = STATE_CHIANG_MAI
+}
+
+RYU = {
+	color = { 98 130 207 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { japanese }	
+	capital = STATE_RYUKYU_ISLANDS
+}
+
+SPC = {
+	color = { 64 243 141 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { thai }	
+	capital = STATE_TONKIN
+}
+
+YGH = {
+	color = { 190 125 100 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { shan }	
+	capital = STATE_SHAN_STATES
+}

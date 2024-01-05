@@ -1,0 +1,56 @@
+﻿cr_fernando_po_reclaimed_obligation = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/diplomatic_play.dds"
+	notification_type = toast
+}
+
+cr_fernando_po_returned_news = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/colonial.dds"
+	notification_type = feed
+	days = 28
+}
+
+cr_fernando_po_returned = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/colonial.dds"
+	notification_type = toast
+}
+
+cr_fernando_po_kept = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/colonial.dds"
+	notification_type = toast
+}
+
+cr_fernando_po_returned_obligation = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/influence_bad.dds"
+	notification_type = toast
+	days = 28
+}
+
+cr_fernando_po_negotionations_negative_obligation = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/influence_bad.dds"
+	notification_type = toast
+	days = 28
+}
+
+po_returned_notification_their_slavery_reinstated = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/influence_bad.dds"
+	notification_type = toast
+}
+
+po_returned_notification_slavery_reinstated = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/influence_bad.dds"
+	notification_type = toast
+}
+
+cr_fernando_po_returned_scramble_for_africa = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/colonial.dds"
+	notification_type = toast
+}

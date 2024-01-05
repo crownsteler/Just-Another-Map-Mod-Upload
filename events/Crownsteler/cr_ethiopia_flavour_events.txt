@@ -1,0 +1,206 @@
+﻿namespace = cr_ethiopia_events
+
+cr_ethiopia_events.1 = { #The Rebirth of an Empire
+	type = country_event
+	placement = p:xDF2090
+
+	title = cr_ethiopia_events.1.t
+	desc = cr_ethiopia_events.1.desc
+	flavor = cr_ethiopia_events.1.f
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/upperclass_party"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	gui_window = event_window_1char_tabloid
+	left_icon = ROOT.ruler
+
+	trigger = {
+	}
+
+	immediate = {
+	
+	}
+
+	option = {
+		name = cr_ethiopia_events.1.a
+		default_option = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					country_has_state_religion = rel:sunni
+				}
+				c:ETH = {
+					set_state_religion = rel:sunni
+				}
+			}
+		}
+		change_tag = ETH
+		add_modifier = cr_solomonic_dynasty
+		s:STATE_GONDER = { add_claim = ROOT }
+		s:STATE_OROMIA = { add_claim = ROOT }
+		s:STATE_AMHARA = { add_claim = ROOT }
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = cr_ethiopia_events.1.b
+		#change_country_tier = empire
+		s:STATE_GONDER = { add_claim = ROOT }
+		s:STATE_OROMIA = { add_claim = ROOT }
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = cr_ethiopia_events.1.c_gondar
+		trigger = {
+			OR = {
+				ROOT = c:BGM
+				ROOT = c:GJM
+				ROOT = c:WLO
+			}
+		}
+		#set_country_tier = empire
+		set_variable = cr_renamed_to_gondar
+		s:STATE_GONDER = { add_claim = ROOT }
+		s:STATE_OROMIA = { add_claim = ROOT }
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = cr_ethiopia_events.1.c_oromia
+		trigger = {
+			OR = {
+				ROOT = c:WLO
+				ROOT = c:SHW
+			}
+		}
+		#set_country_tier = empire
+		set_variable = cr_renamed_to_oromia
+		remove_primary_culture = cu:amhara
+		remove_primary_culture = cu:tigray
+		remove_primary_culture = cu:sidama
+		s:STATE_GONDER = { add_claim = ROOT }
+		s:STATE_OROMIA = { add_claim = ROOT }
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = cr_ethiopia_events.1.c_amharia
+		trigger = {
+			OR = {
+				ROOT = c:BGM
+				ROOT = c:GJM
+				ROOT = c:SHW
+			}
+		}
+		#change_country_tier = empire
+		set_variable = cr_renamed_to_amharia
+		remove_primary_culture = cu:oromo
+		remove_primary_culture = cu:tigray
+		remove_primary_culture = cu:sidama
+		s:STATE_GONDER = { add_claim = ROOT }
+		s:STATE_OROMIA = { add_claim = ROOT }
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+cr_ethiopia_events.2 = { #The Fall of a Dynasty
+	type = country_event
+	placement = p:xDF2090
+
+	title = cr_ethiopia_events.2.t
+	desc = cr_ethiopia_events.2.desc
+	flavor = cr_ethiopia_events.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/africa_leader_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cr_ethiopia_events.2.a
+		default_option = yes
+		trigger = {
+			OR = {
+				ROOT = c:BGM
+				ROOT = c:GJM
+			}
+		}
+		#set_country_tier = kingdom
+		remove_primary_culture = cu:oromo
+		remove_primary_culture = cu:tigray
+		remove_primary_culture = cu:sidama	
+		ai_chance = {
+			base = 100
+		}	
+	}
+
+	option = {
+		name = cr_ethiopia_events.2.a
+		trigger = {
+			OR = {
+				ROOT = c:WLG
+				ROOT = c:WLO
+			}
+		}
+		#set_country_tier = kingdom
+		remove_primary_culture = cu:amhara
+		remove_primary_culture = cu:tigray
+		remove_primary_culture = cu:sidama
+		ai_chance = {
+			base = 0
+		}		
+	}
+
+	option = {
+		name = cr_ethiopia_events.2.a
+		trigger = {
+			ROOT = c:TGR
+		}
+		#set_country_tier = kingdom
+		remove_primary_culture = cu:amhara
+		remove_primary_culture = cu:oromo
+		remove_primary_culture = cu:sidama	
+		ai_chance = {
+			base = 0
+		}	
+	}
+
+	option = {
+		name = cr_ethiopia_events.2.a
+		trigger = {
+			ROOT = c:SHW
+		}
+		remove_primary_culture = cu:tigray
+		remove_primary_culture = cu:sidama	
+		ai_chance = {
+			base = 0
+		}	
+	}
+}

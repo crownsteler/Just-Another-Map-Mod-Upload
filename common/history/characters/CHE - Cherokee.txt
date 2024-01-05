@@ -1,0 +1,41 @@
+﻿CHARACTERS = {
+	c:CHE = {
+		create_character = {
+			first_name = "John"
+			last_name = "Ross"
+			historical = yes
+			ruler = yes
+			birth_date = 1790.11.3
+			interest_group = ig_petty_bourgeoisie
+			ig_leader = yes
+			traits = {
+				persistent
+				tactful
+				experienced_political_operator
+			}
+			on_created = {
+				set_variable = {
+					name = john_ross
+				}				
+			}
+		}
+		create_character = {
+			first_name = "Major"
+			last_name = "Ridge"
+			historical = yes
+			ruler = no
+			birth_date = 1771.1.1
+			interest_group = ig_intelligentsia
+			ig_leader = yes
+			traits = {
+				cautious
+				basic_political_operator
+			}
+			on_created = {
+				set_variable = {
+					name = major_ridge
+				}				
+			}
+		}
+	}
+}

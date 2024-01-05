@@ -1,0 +1,196 @@
+﻿#############################
+#							#
+#		Central Asia		#
+#							#
+#############################
+BDK = {
+	color = { 154 251 36 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { uzbek }
+	religion = sunni
+	capital = STATE_TAJIKISTAN
+}
+
+BKH = {
+	color = { 97 124 174 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { kazak }
+	religion = sunni
+	capital = STATE_URALSK
+}
+
+BRK = {
+	color = { 100 125 223 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { pashtun }
+	religion = sunni
+	capital = STATE_PASHTUNISTAN
+}
+
+DST = {
+	color = { 215 200 210 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { turkmen }
+	religion = sunni
+	capital = STATE_TURKMENIA
+}
+
+HRT = {
+	color = { 53 102 76 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { persian }
+	religion = sunni
+	capital = STATE_WESTERN_AFGHANISTAN
+}
+
+KBL = {
+	color = { 53 102 76 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { pashtun }
+	religion = sunni
+	capital = STATE_EASTERN_AFGHANISTAN
+}
+
+KDZ = {
+	color = { 100 184 95  }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { uzbek }
+	religion = sunni
+	capital = STATE_WESTERN_AFGHANISTAN
+}
+
+KRK = {
+	color = { 200 210 215 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { turkmen }
+	religion = sunni
+	capital = STATE_TURKMENIA
+}
+
+KZE = {
+	color = { 150 110 115 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { persian }
+	religion = shiite
+	capital = STATE_KHORASAN
+}
+
+KYZ = {
+	color = { 209 136 73 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { kirgiz }
+	religion = sunni
+	capital = STATE_KIRGHIZIA
+}
+
+KZK = {
+	color = { 200 210 215 } #Previously: color = { 210 215 200 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { uzbek }
+	religion = sunni
+	capital = STATE_UZBEKIA
+}
+
+MMN = {
+	color = { 185 140 102 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { uzbek }
+	religion = sunni
+	capital = STATE_WESTERN_AFGHANISTAN
+}
+
+QDR = {
+	color = { 221 206 107 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { persian }
+	religion = sunni
+	capital = STATE_WESTERN_AFGHANISTAN
+}
+
+SST = {
+	color = { 220 220 195 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { persian }
+	religion = sunni
+	capital = STATE_SISTAN
+}
+
+TBJ = {
+	color = { 143 185 157 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { persian }
+	religion = sunni
+	capital = STATE_KHORASAN
+}
+
+ZHB = {
+	color = { 248 254 135 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { pashtun }
+	religion = sunni
+	capital = STATE_BALUCHISTAN
+}

@@ -1,0 +1,74 @@
+﻿#################################
+#								#
+#								#
+#		Vanilla Changed			#
+#								#
+#								#
+#################################
+
+state_trait_sahara_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/dry_climate.dds"
+	required_techs_for_colonization = { "civilizing_mission" }
+	 
+	modifier = {
+        building_group_bg_ranching_throughput_add = -0.1
+		building_group_bg_agriculture_throughput_add = -0.2
+		building_group_bg_plantations_throughput_add = -0.2
+		state_construction_mult = -0.25
+		state_infrastructure_mult = -0.25
+		state_non_homeland_colony_growth_speed_mult = -0.5
+    }
+}
+
+#################################
+#								#
+#								#
+#			   NEW				#
+#								#
+#								#
+#################################
+
+state_trait_cr_copperbelt = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	modifier = {
+		building_copper_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_cr_the_rif = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	modifier = {
+		state_construction_mult = -0.10
+		state_infrastructure_mult = -0.10
+	}
+}
+
+#state_trait_cr_the_great_dyke = {
+#	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+#	modifier = {
+#		building_minor_metals_mine_throughput_mult = 0.15
+#	}
+#}
+
+state_trait_cr_the_sudd = {
+	icon = "gfx/interface/icons/state_trait_icons/swamp.dds"
+	modifier = {
+        building_group_bg_ranching_throughput_add = -0.1
+		building_group_bg_agriculture_throughput_add = -0.1
+		building_group_bg_plantations_throughput_add = -0.1
+		state_construction_mult = -0.15
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_namib_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/dry_climate.dds"
+	required_techs_for_colonization = { "civilizing_mission" } 
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = -0.15
+		building_group_bg_plantations_throughput_add = -0.15
+		state_construction_mult = -0.20
+		state_infrastructure_mult = -0.20
+    }
+}

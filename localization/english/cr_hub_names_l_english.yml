@@ -1,0 +1,328 @@
+﻿l_english:
+ HUB_NAME_STATE_DOURO_city:0 "Porto"
+ HUB_NAME_STATE_DOURO_port:0 "Porto"
+ HUB_NAME_STATE_DOURO_farm:0 "Braga"
+ HUB_NAME_STATE_DOURO_mine:0 "Bragança"
+ HUB_NAME_STATE_DOURO_wood:0 "Vila Real"
+ 
+ HUB_NAME_STATE_BRABANT_city:0 "Den Bosch"
+ HUB_NAME_STATE_BRABANT_farm:0 "Breda"
+ HUB_NAME_STATE_BRABANT_mine:0 "Maastricht"
+ HUB_NAME_STATE_BRABANT_wood:0 "Eindhoven"
+ 
+ HUB_NAME_STATE_KARAGANDA_city:0 "Karaganda"
+ HUB_NAME_STATE_KARAGANDA_farm:0 "Kijewka"
+ HUB_NAME_STATE_KARAGANDA_mine:0 "Zhezkazgan"
+ HUB_NAME_STATE_KARAGANDA_wood:0 "Karkaraly"
+ 
+ HUB_NAME_STATE_TURKISTAN_city:0 "Turkistan"
+ HUB_NAME_STATE_TURKISTAN_port:0 "Aralsk"
+ HUB_NAME_STATE_TURKISTAN_mine:0 "Sayram" 
+ HUB_NAME_STATE_TURKISTAN_farm:0 "Ak-Mechet"
+ HUB_NAME_STATE_TURKISTAN_wood:0 "Aulie-Ata"
+ 
+ HUB_NAME_STATE_FERGANA_city:0 "Kokand"
+ HUB_NAME_STATE_FERGANA_farm:0 "Andijan"
+ HUB_NAME_STATE_FERGANA_mine:0 "Namangan"
+ HUB_NAME_STATE_FERGANA_wood:0 "Fergana"
+ 
+ HUB_NAME_STATE_TASHKENT_city:0 "Tashkent"
+ HUB_NAME_STATE_TASHKENT_farm:0 "Jizzax"
+ HUB_NAME_STATE_TASHKENT_mine:0 "Baxt"
+ HUB_NAME_STATE_TASHKENT_wood:0 "Angren"
+ 
+ HUB_NAME_STATE_KHUDZHAND_city:0 "Khudzhand"
+ HUB_NAME_STATE_KHUDZHAND_farm:0 "Istarawshan"
+ HUB_NAME_STATE_KHUDZHAND_mine:0 "Auchi"
+ HUB_NAME_STATE_KHUDZHAND_wood:0 "Basmanda"
+ 
+ HUB_NAME_STATE_ALAY_city:0 "Osh"
+ HUB_NAME_STATE_ALAY_farm:0 "Uzgen"
+ HUB_NAME_STATE_ALAY_mine:0 "Gulcha"
+ HUB_NAME_STATE_ALAY_wood:0 "Kan"
+ 
+ HUB_NAME_STATE_MAZAR_I_SHARIF_city:0 "Mazar-i Sharif"
+ HUB_NAME_STATE_MAZAR_I_SHARIF_farm:0 "Kunduz"
+ HUB_NAME_STATE_MAZAR_I_SHARIF_mine:0 "Balkhab"
+ HUB_NAME_STATE_MAZAR_I_SHARIF_wood:0 "Maymana"
+ 
+ HUB_NAME_STATE_HERAT_city:0 "Herat"
+ HUB_NAME_STATE_HERAT_farm:0 "Farah"
+ HUB_NAME_STATE_HERAT_mine:0 "Gurian"
+ HUB_NAME_STATE_HERAT_wood:0 "Shindand"
+ 
+ HUB_NAME_STATE_BRUSSELS_city:0 "Brussels"
+ HUB_NAME_STATE_BRUSSELS_farm:0 "Brussels"
+ HUB_NAME_STATE_BRUSSELS_mine:0 "Brussels"
+ HUB_NAME_STATE_BRUSSELS_wood:0 "Brussels"
+ 
+ HUB_NAME_STATE_SOUTH_SWITZERLAND_city:0 "Lugano"
+ HUB_NAME_STATE_SOUTH_SWITZERLAND_farm:0 "Chur"
+ HUB_NAME_STATE_SOUTH_SWITZERLAND_mine:0 "Davos"
+ HUB_NAME_STATE_SOUTH_SWITZERLAND_wood:0 "Sankt Moritz"
+ 
+ HUB_NAME_STATE_LEON_city:0 "Valladolid"
+ HUB_NAME_STATE_LEON_farm:0 "Salamanca"
+ HUB_NAME_STATE_LEON_mine:0 "Leon"
+ HUB_NAME_STATE_LEON_wood:0 "Segovia"
+ 
+ HUB_NAME_STATE_MURCIA_city:0 "Murcia"
+ HUB_NAME_STATE_MURCIA_farm:0 "Lorca"
+ HUB_NAME_STATE_MURCIA_mine:0 "Cartagena"
+ HUB_NAME_STATE_MURCIA_wood:0 "Albacete"
+ HUB_NAME_STATE_MURCIA_port:0 "Águilas"
+ 
+ HUB_NAME_STATE_KURDISTAN_IRAQ_city:0 "Erbil"
+ HUB_NAME_STATE_KURDISTAN_IRAQ_farm:0 "Sulaymaniyah"
+ HUB_NAME_STATE_KURDISTAN_IRAQ_mine:0 "Kirkuk"
+ HUB_NAME_STATE_KURDISTAN_IRAQ_wood:0 "Barzan"
+
+ HUB_NAME_STATE_TAZA_city:0 "Taza"
+ HUB_NAME_STATE_TAZA_port:0 "Saïdia"
+ HUB_NAME_STATE_TAZA_farm:0 "Tafilalt"
+ HUB_NAME_STATE_TAZA_wood:0 "Figuig"
+ HUB_NAME_STATE_TAZA_mine:0 "Oujda"
+
+ HUB_NAME_STATE_LAGHOUAT_city:0 "Laghouat"
+ HUB_NAME_STATE_LAGHOUAT_farm:0 "Djelfa"
+ HUB_NAME_STATE_LAGHOUAT_mine:0 "Béchar"
+ HUB_NAME_STATE_LAGHOUAT_wood:0 "Mécheria"
+
+ HUB_NAME_STATE_TOUGGOURT_city:0 "Touggourt"
+ HUB_NAME_STATE_TOUGGOURT_farm:0 "El Oued"
+ HUB_NAME_STATE_TOUGGOURT_mine:0 "El M'Ghair"
+ HUB_NAME_STATE_TOUGGOURT_wood:0 "Biskra"
+ 
+ HUB_NAME_STATE_FEZZAN_city:0 "Murzuq"
+ HUB_NAME_STATE_FEZZAN_farm:0 "Ghadames"
+ HUB_NAME_STATE_FEZZAN_mine:0 "Sabha"
+ HUB_NAME_STATE_FEZZAN_wood:0 "Ghat"
+ 
+ HUB_NAME_STATE_RED_SEA_COAST_city:0 "Hurghada"
+ HUB_NAME_STATE_RED_SEA_COAST_farm:0 "Marsa Alam"
+ HUB_NAME_STATE_RED_SEA_COAST_mine:0 "Safaga"
+ HUB_NAME_STATE_RED_SEA_COAST_wood:0 "Barramiya"
+ HUB_NAME_STATE_RED_SEA_COAST_port:0 "El Qoseir"
+ 
+ HUB_NAME_STATE_STATE_DARB_EL_ARBAIN_city:0 "Selima"
+ HUB_NAME_STATE_STATE_DARB_EL_ARBAIN_farm:0 "Laquia Arbain"
+ HUB_NAME_STATE_STATE_DARB_EL_ARBAIN_mine:0 "Bir Natrun"
+ HUB_NAME_STATE_STATE_DARB_EL_ARBAIN_wood:0 "Is there a forest here?"
+ 
+ HUB_NAME_STATE_EASTERN_DESERT_city:0 "Suakin"
+ HUB_NAME_STATE_EASTERN_DESERT_farm:0 "Tokar"
+ HUB_NAME_STATE_EASTERN_DESERT_mine:0 "Hayya"
+ HUB_NAME_STATE_EASTERN_DESERT_wood:0 "Sinkat"
+ HUB_NAME_STATE_EASTERN_DESERT_port:0 "Port Sudan"
+ 
+ HUB_NAME_STATE_BADIYA_city:0 "Tadmur"
+ HUB_NAME_STATE_BADIYA_farm:0 "As-Suwayda"
+ HUB_NAME_STATE_BADIYA_mine:0 "Al-Sukhnah"
+ HUB_NAME_STATE_BADIYA_wood:0 "Unused"
+ 
+ HUB_NAME_STATE_HAJAR_city:0 "Manama" #Qatif
+ HUB_NAME_STATE_HAJAR_farm:0 "al-Hofuf"
+ HUB_NAME_STATE_HAJAR_mine:0 "Ghawar"
+ HUB_NAME_STATE_HAJAR_wood:0 "Khafji"
+ HUB_NAME_STATE_HAJAR_port:0 "Kuwait"
+ 
+ HUB_NAME_STATE_SOUTH_YEMEN_city:0 "Lahej"
+ HUB_NAME_STATE_SOUTH_YEMEN_farm:0 "Say'un" 
+ HUB_NAME_STATE_SOUTH_YEMEN_mine:0 "Qishn"
+ HUB_NAME_STATE_SOUTH_YEMEN_wood:0 "Shuqrah"
+ HUB_NAME_STATE_SOUTH_YEMEN_port:0 "Aden"
+
+ HUB_NAME_STATE_ASIR_city:0 "Abha"
+ HUB_NAME_STATE_ASIR_farm:0 "Najran"
+ HUB_NAME_STATE_ASIR_mine:0 "Yadamah"
+ HUB_NAME_STATE_ASIR_wood:0 "Khamis Mushait"
+ HUB_NAME_STATE_ASIR_port:0 "Al Qunfudhah"
+ 
+ HUB_NAME_STATE_EL_DJOUF_city:0 "Taoudénit"
+ HUB_NAME_STATE_EL_DJOUF_farm:0 "Araouane"
+ HUB_NAME_STATE_EL_DJOUF_wood:0 "Al-Ourche"
+ HUB_NAME_STATE_EL_DJOUF_mine:0 "Taoudénit"
+ 
+ HUB_NAME_STATE_NIAMEY_city:0 "Say"
+ HUB_NAME_STATE_NIAMEY_farm:0 "Dosso"
+ HUB_NAME_STATE_NIAMEY_mine:0 "Téra"
+ HUB_NAME_STATE_NIAMEY_wood:0 "Niamey"
+ 
+ HUB_NAME_STATE_ZINDER_city:0 "Zinder"
+ HUB_NAME_STATE_ZINDER_farm:0 "Diffa"
+ HUB_NAME_STATE_ZINDER_mine:0 "N'guigmi"
+ HUB_NAME_STATE_ZINDER_wood:0 "Goure"
+ 
+ HUB_NAME_STATE_MANDINKA_city:0 "Kankan"
+ HUB_NAME_STATE_MANDINKA_farm:0 "Kissidougou"
+ HUB_NAME_STATE_MANDINKA_mine:0 "Simandou"
+ HUB_NAME_STATE_MANDINKA_wood:0 "Faranah"
+ 
+ HUB_NAME_STATE_LOWER_VOLTA_city:0 "Tamale"
+ HUB_NAME_STATE_LOWER_VOLTA_farm:0 "Damongo" 
+ HUB_NAME_STATE_LOWER_VOLTA_mine:0 "Yendi"
+ HUB_NAME_STATE_LOWER_VOLTA_wood:0 "Wa"
+ 
+ HUB_NAME_STATE_SAO_TOME_AND_PRINCIPE_city:0 "Sao Tomé"
+ HUB_NAME_STATE_SAO_TOME_AND_PRINCIPE_port:0 "Fernando Pó"
+ HUB_NAME_STATE_SAO_TOME_AND_PRINCIPE_farm:0 "Principe"
+ HUB_NAME_STATE_SAO_TOME_AND_PRINCIPE_wood:0 "Principe"
+ HUB_NAME_STATE_SAO_TOME_AND_PRINCIPE_mine:0 "Sao Tomé"
+ 
+ HUB_NAME_STATE_UNGAVA_city:0 "Fort Rupert"
+ HUB_NAME_STATE_UNGAVA_port:0 "Fort George"
+ HUB_NAME_STATE_UNGAVA_farm:0 "Amos"
+ HUB_NAME_STATE_UNGAVA_mine:0 "Mont Wright"
+ HUB_NAME_STATE_UNGAVA_wood:0 "La Sarre"
+ 
+ HUB_NAME_STATE_KENORA_city:0 "Kenora"
+ HUB_NAME_STATE_KENORA_port:0 "Fort Albany"
+ HUB_NAME_STATE_KENORA_farm:0 "Cochrane"
+ HUB_NAME_STATE_KENORA_mine:0 "Timmins"
+ HUB_NAME_STATE_KENORA_wood:0 "Iroquois Falls" #Drydan
+ 
+ HUB_NAME_STATE_SOMALIA_city:0 "Afgooye"
+ HUB_NAME_STATE_SOMALIA_port:0 "Mogadishu"
+ HUB_NAME_STATE_SOMALIA_farm:0 "Kismayo"
+ HUB_NAME_STATE_SOMALIA_mine:0 "Alula"
+ HUB_NAME_STATE_SOMALIA_wood:0 "Afmado"
+ 
+ HUB_NAME_STATE_WEST_MADAGASCAR_city:0 "Antananarivo"
+ HUB_NAME_STATE_WEST_MADAGASCAR_port:0 "Mahajanga"
+ HUB_NAME_STATE_WEST_MADAGASCAR_farm:0 "Antsirabe"
+ HUB_NAME_STATE_WEST_MADAGASCAR_mine:0 "Toliara"
+ HUB_NAME_STATE_WEST_MADAGASCAR_wood:0 "Fianarantsoa"
+ 
+ HUB_NAME_STATE_EAST_MADAGASCAR_city:0 "Antsiranana"
+ HUB_NAME_STATE_EAST_MADAGASCAR_port:0 "Toamasina"
+ HUB_NAME_STATE_EAST_MADAGASCAR_farm:0 "Fort Dauphin"
+ HUB_NAME_STATE_EAST_MADAGASCAR_mine:0 "TBD"
+ HUB_NAME_STATE_EAST_MADAGASCAR_wood:0 "Ambanja"
+ 
+ HUB_NAME_STATE_ANGOLA_city:0 "São Salvador" #M'banza-Kongo
+ HUB_NAME_STATE_ANGOLA_port:0 "Luanda"
+ HUB_NAME_STATE_ANGOLA_farm:0 "Malanje"
+ HUB_NAME_STATE_ANGOLA_mine:0 "Ambriz" #Lucapa for Diamond mining
+ HUB_NAME_STATE_ANGOLA_wood:0 "Lucapa"
+ 
+ HUB_NAME_STATE_BENGUELA_city:0 "Halã-Vala" #Bailundo / Vila Teixeira da Silva
+ HUB_NAME_STATE_BENGUELA_port:0 "Lobito"
+ HUB_NAME_STATE_BENGUELA_farm:0 "Huambo"
+ HUB_NAME_STATE_BENGUELA_mine:0 "Cuanja" #Jamba
+ HUB_NAME_STATE_BENGUELA_wood:0 "Belmonte"
+ 
+ HUB_NAME_STATE_BUNDALAND_city:0 "Lumbala"
+ HUB_NAME_STATE_BUNDALAND_farm:0 "Luso"
+ HUB_NAME_STATE_BUNDALAND_mine:0 "Luacano"
+ HUB_NAME_STATE_BUNDALAND_wood:0 "Menongue"
+ 
+ HUB_NAME_STATE_SOFALA_city:0 "Sofala"
+ HUB_NAME_STATE_SOFALA_port:0 "Quelimane"
+ HUB_NAME_STATE_SOFALA_farm:0 "Tete"
+ HUB_NAME_STATE_SOFALA_wood:0 "Mutarara"
+ HUB_NAME_STATE_SOFALA_mine:0 "Manje"
+ 
+ HUB_NAME_STATE_NYASALAND_city:0 "Zomba"
+ HUB_NAME_STATE_NYASALAND_farm:0 "Lilongwe" #Founded 1947
+ HUB_NAME_STATE_NYASALAND_wood:0 "Fort Johnston"
+ HUB_NAME_STATE_NYASALAND_mine:0 "Livingstonia"
+ 
+ HUB_NAME_STATE_SURINAME_city:0 "Paramaribo"
+ HUB_NAME_STATE_SURINAME_port:0 "Commewijne"
+ HUB_NAME_STATE_SURINAME_farm:0 "Nieuw Nickerie"
+ HUB_NAME_STATE_SURINAME_mine:0 "Bakhuis"
+ HUB_NAME_STATE_SURINAME_wood:0 "Pokigron"
+ 
+ HUB_NAME_STATE_CAYENNE_city:0 "Cayenne"
+ HUB_NAME_STATE_CAYENNE_port:0 "Rémire-Montjoly"
+ HUB_NAME_STATE_CAYENNE_farm:0 "Sinnamary"
+ HUB_NAME_STATE_CAYENNE_mine:0 "Saint-Marie-les-Mines"
+ HUB_NAME_STATE_CAYENNE_wood:0 "Saint-Laurent-du-Maroni"
+ 
+ HUB_NAME_STATE_APAMA_city:0 "Apama"
+ HUB_NAME_STATE_APAMA_port:0 "Malvina"
+ HUB_NAME_STATE_APAMA_farm:0 "Porto Grande"
+ HUB_NAME_STATE_APAMA_mine:0 "Lourenço"
+ HUB_NAME_STATE_APAMA_wood:0 "Oiapoque"
+ 
+ HUB_NAME_STATE_LEEWARD_ANTILLES_city:0 "Oranjestad"
+ HUB_NAME_STATE_LEEWARD_ANTILLES_port:0 "Willemstad"
+ HUB_NAME_STATE_LEEWARD_ANTILLES_farm:0 "Kralendijk"
+ HUB_NAME_STATE_LEEWARD_ANTILLES_mine:0 "Willemstad"
+ HUB_NAME_STATE_LEEWARD_ANTILLES_wood:0 "Willemstad"
+ 
+ HUB_NAME_STATE_UCAYALI_city:0 "Pucallpa"
+ HUB_NAME_STATE_UCAYALI_farm:0 "Campoverde"
+ HUB_NAME_STATE_UCAYALI_mine:0 "Huepethue"
+ HUB_NAME_STATE_UCAYALI_wood:0 "Puerto Maldonado"
+ 
+ HUB_NAME_STATE_SARAWAK_city:0 "Kota Batu"
+ HUB_NAME_STATE_SARAWAK_port:0 "Kuching"
+ HUB_NAME_STATE_SARAWAK_farm:0 "Bintulu"
+ HUB_NAME_STATE_SARAWAK_wood:0 "Maling"
+ HUB_NAME_STATE_SARAWAK_mine:0 "Bau" 
+ 
+ HUB_NAME_STATE_TAPANULI_city:0 "Nias"
+ HUB_NAME_STATE_TAPANULI_port:0 "Sibolga"
+ HUB_NAME_STATE_TAPANULI_farm:0 "Sidikalang"
+ HUB_NAME_STATE_TAPANULI_wood:0 "Padang Sidempuan"
+ HUB_NAME_STATE_TAPANULI_mine:0 "Tarutung" 
+ 
+ HUB_NAME_STATE_MINANGKABAU_city:0 "Pagaruyung"
+ HUB_NAME_STATE_MINANGKABAU_port:0 "Padang"
+ HUB_NAME_STATE_MINANGKABAU_farm:0 "Bukittinggi"
+ HUB_NAME_STATE_MINANGKABAU_wood:0 "Bonjol"
+ HUB_NAME_STATE_MINANGKABAU_mine:0 "Ombilin"
+ 
+ HUB_NAME_STATE_BILLITON_city:0 "Daik"
+ HUB_NAME_STATE_BILLITON_port:0 "Riouw"
+ HUB_NAME_STATE_BILLITON_farm:0 "Pangkal Pinang"
+ HUB_NAME_STATE_BILLITON_wood:0 "Muntok"
+ HUB_NAME_STATE_BILLITON_mine:0 "Billiton"
+ 
+ HUB_NAME_STATE_SIAK_city:0 "Siak"
+ HUB_NAME_STATE_SIAK_port:0 "Dumbai"
+ HUB_NAME_STATE_SIAK_farm:0 "Pekanbaru"
+ HUB_NAME_STATE_SIAK_wood:0 "Duri"
+ HUB_NAME_STATE_SIAK_mine:0 "Minas"
+ 
+ HUB_NAME_STATE_THE_LAMPONGS_city:0 "Tanjungkarang"
+ HUB_NAME_STATE_THE_LAMPONGS_port:0 "Oosthaven"
+ HUB_NAME_STATE_THE_LAMPONGS_farm:0 "Bencoolen"
+ HUB_NAME_STATE_THE_LAMPONGS_wood:0 "Menggala"
+ HUB_NAME_STATE_THE_LAMPONGS_mine:0 "Lebong"
+  
+ HUB_NAME_STATE_BALI_city:0 "Klungkung"
+ HUB_NAME_STATE_BALI_port:0 "Den Pasar"
+ HUB_NAME_STATE_BALI_farm:0 "Mataram"
+ HUB_NAME_STATE_BALI_wood:0 "Bululeng"
+ HUB_NAME_STATE_BALI_mine:0 "Lombok"   
+ 
+ HUB_NAME_STATE_SOUTH_CELEBES_city:0 "Palopo"
+ HUB_NAME_STATE_SOUTH_CELEBES_port:0 "Makassar"
+ HUB_NAME_STATE_SOUTH_CELEBES_farm:0 "Watampone"
+ HUB_NAME_STATE_SOUTH_CELEBES_wood:0 "Bau-Bau"
+ HUB_NAME_STATE_SOUTH_CELEBES_mine:0 "Sorowako" 
+ 
+ HUB_NAME_STATE_ALTAI_city:0 "Ulala"
+ HUB_NAME_STATE_ALTAI_farm:0 "Kosh-Agach"
+ HUB_NAME_STATE_ALTAI_wood:0 "Turochak"
+ HUB_NAME_STATE_ALTAI_mine:0 "Alakhinskoye" #Lithium mine
+ 
+ HUB_NAME_STATE_ARAKAN_city:0 "Mrauk U"
+ HUB_NAME_STATE_ARAKAN_port:0 "Akyab"
+ HUB_NAME_STATE_ARAKAN_farm:0 "Kyaukpyu"
+ HUB_NAME_STATE_ARAKAN_wood:0 "Sandoway"
+ HUB_NAME_STATE_ARAKAN_mine:0 "Maputi"
+ 
+ HUB_NAME_STATE_TAMBRALINGA_city:0 "Nakhon Si Thammarat"
+ HUB_NAME_STATE_TAMBRALINGA_port:0 "Patanni"
+ HUB_NAME_STATE_TAMBRALINGA_farm:0 "Surat Thani"
+ HUB_NAME_STATE_TAMBRALINGA_wood:0 "Phuket"
+ HUB_NAME_STATE_TAMBRALINGA_mine:0 "Wang Phai"
+ 
+ 
+ HUB_NAME_STATE_SHARI_city:0 "Bangassou"
+ HUB_NAME_STATE_SHARI_farm:0 "Bria"
+ HUB_NAME_STATE_SHARI_wood:0 "Obo"
+ HUB_NAME_STATE_SHARI_mine:0 "Birao"

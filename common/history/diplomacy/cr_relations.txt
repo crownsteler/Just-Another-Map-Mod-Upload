@@ -1,0 +1,207 @@
+﻿DIPLOMACY = {
+	c:EGY = {
+		set_relations = { country = c:JLN value = -80 } #Mek Nimr murdered Ali Pasha's son
+		set_relations = { country = c:AZA value = -20 } #Desert raiders
+		set_relations = { country = c:ZAI value = -30 } #Recent conquest of the coast
+	}
+	c:TUR= {
+		set_relations = { country = c:AZA value = -30 } #Desert Raiders
+		set_relations = { country = c:ACE value = 80 } #Atjeh pledged allegiance to the Sultan/Caliph
+	}
+	c:PER = {
+		set_relations = { country = c:OMA value = -20 } #Bandar Abbas Lease 	
+		set_relations = { country = c:ABU value = -20 } #Presence on the Persian Gulf coast	
+		set_relations = { country = c:MZK value = -20 } #Presence on the Persian Gulf coast	
+		set_relations = { country = c:RBS value = 20 } #Autonomous vassel which didn't cause trouble as long as Persia didn't try to exert influence
+		set_relations = { country = c:KHS value = -40 } #The ruler of Kohistan didn't quite like the Persians
+		set_relations = { country = c:HRT value = -60 } #Persia really wanted to rule Herat, and Herat really didn't want that in return
+	}
+	c:HRT = {
+		set_relations = { country = c:QDR value = -50 } #Kamran Shah wanted to conquer Kandahar
+	}
+	c:KBL = {
+		set_relations = { country = c:QDR value = 40 } #Half-brothers of Dorst Mohammed Khan ruled Kandahar
+		set_relations = { country = c:HRT value = -40 } #Herat is remnant of Durrani Empire
+		set_relations = { country = c:KDZ value = -20 } #Troubles following fall of Durrani Empire
+		set_relations = { country = c:MMN value = -20 } #Troubles following fall of Durrani Empire
+	}
+	c:NEJ = {
+		set_relations = { country = c:EGY value = -60 } #Wahhabi War which would soon erupt again
+		set_relations = { country = c:TUR value = -40 } #Wahhabi War which would soon erupt again
+		set_relations = { country = c:JAB value = -40 } #Intra-arabian rivalries
+		set_relations = { country = c:KWT value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:BHN value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:HUT value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:OTB value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:HDJ value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:HOW value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:AZA value = -20 } #Intra-arabian rivalries
+	}
+	c:HDJ = {
+		set_relations = { country = c:EGY value = -10 } 
+		set_relations = { country = c:TUR value = 20 } #Installed by the Ottomans
+		set_relations = { country = c:JAB value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:KWT value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:BHN value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:HUT value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:OTB value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:HOW value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:AZA value = -20 } #Intra-arabian rivalries
+	}
+	c:JAB = {
+		set_relations = { country = c:EGY value = -10 } 
+		set_relations = { country = c:TUR value = 10 } #Installed by the Ottomans
+		set_relations = { country = c:KWT value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:BHN value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:HUT value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:OTB value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:HOW value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:AZA value = -20 } #Intra-arabian rivalries
+	}
+	c:KWT = {
+		set_relations = { country = c:EGY value = 10 } 
+		set_relations = { country = c:TUR value = -15 } #Haven for Ottoman refugees and relied on British protection
+		set_relations = { country = c:BHN value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:HUT value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:OTB value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:HOW value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:AZA value = -20 } #Intra-arabian rivalries
+	}
+	c:BHN = {
+		set_relations = { country = c:EGY value = 10 } 
+		set_relations = { country = c:TUR value = 15 } 
+		set_relations = { country = c:HUT value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:OTB value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:HOW value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:AZA value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:PER value = 25 } #In 1821 Bahrain signed a treaty of protection with Persia which was quickly disavowed by the British
+	}
+	c:HOW = {
+		set_relations = { country = c:EGY value = -20 } #Desert raiders
+		set_relations = { country = c:TUR value = -15 } #Desert raiders
+		set_relations = { country = c:OTB value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:HUT value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:AZA value = -20 } #Intra-arabian rivalries
+	}
+	c:OTB = {
+		set_relations = { country = c:EGY value = 10 }
+		set_relations = { country = c:TUR value = -15 } #Haven for Ottoman refugees and relied on British protection
+		set_relations = { country = c:HUT value = -20 } #Intra-arabian rivalries
+		set_relations = { country = c:AZA value = -20 } #Intra-arabian rivalries
+	}
+	c:HUT= {
+		set_relations = { country = c:EGY value = 10 }
+		set_relations = { country = c:TUR value = -15 } #Haven for Ottoman refugees and relied on British protection
+		set_relations = { country = c:AZA value = -20 } #Intra-arabian rivalries
+	}
+	c:DEN = {
+		set_relations = { country = c:BAL value = 30 } #Mads Johansen Lange
+	}
+	c:MDA = {
+		set_relations = { country = c:ADA value = -50 } #Due tot Fulani Jihad
+		set_relations = { country = c:SOK value = -40 } #Due tot Fulani Jihad
+	}
+	c:BOR = {
+		set_relations = { country = c:ADA value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:SOK value = -30 } #Due tot Fulani Jihad
+	}
+	c:ZDR = {
+		set_relations = { country = c:ADA value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:SOK value = -60 } #Due tot Fulani Jihad
+	}
+	c:SOK = {
+		set_relations = { country = c:LPT value = 40 } #Part time Sokoto vassal
+		set_relations = { country = c:SAY value = 50 } #Part time Sokoto vassal
+		set_relations = { country = c:BRG value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:ILR value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:IBD value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:KTU value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:IJB value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:BEN value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:TIV value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:DAH value = -10 } #Due tot Fulani Jihad
+	}
+	c:SAY = {
+		set_relations = { country = c:LPT value = 10 } #Part time Sokoto vassals
+	}
+	c:DSS = {
+		set_relations = { country = c:ADA value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:SOK value = -20 } #Due tot Fulani Jihad
+	}
+	c:SGU = {
+		set_relations = { country = c:MSN value = -50 } #Due tot Fulani Jihad
+		set_relations = { country = c:KRT value = 20 } #Due tot Fulani Jihad
+	}
+	c:FTR = {
+		set_relations = { country = c:JLF value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:KSO value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:BND value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:CAY value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:SRR value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:KBU value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:KYA value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:FTJ value = 20 } #Due tot Fulani Jihad
+	}
+	c:FTJ = {
+		set_relations = { country = c:JLF value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:KSO value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:BND value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:CAY value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:SRR value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:KBU value = -20 } #Due tot Fulani Jihad
+		set_relations = { country = c:KYA value = -20 } #Due tot Fulani Jihad
+	}
+	c:HAU = {
+		set_relations = { country = c:ZDR value = 20 } #Generally friendly to neighbours
+		set_relations = { country = c:MGA value = 20 } #Generally friendly to neighbours
+		set_relations = { country = c:BOR value = 20 } #Generally friendly to neighbours
+		set_relations = { country = c:MDA value = 20 } #Generally friendly to neighbours
+		set_relations = { country = c:KNM value = 20 } #Generally friendly to neighbours
+		set_relations = { country = c:KNM value = 10 } #Generally friendly to neighbours
+		set_relations = { country = c:ADA value = 10 } #Generally friendly to neighbours
+		set_relations = { country = c:ZDR value = 10 } #Generally friendly to neighbours
+	}
+	c:ASH = {
+		set_relations = { country = c:FTE value = -50 } #Historic enemies
+		set_relations = { country = c:DKY value = -20 } #Recently subdued
+		set_relations = { country = c:DAH value = -20 } #Historic rivals?
+	}
+	c:DAH = {
+		set_relations = { country = c:KTU value = -50 } #Recently freed?
+		set_relations = { country = c:IBD value = -25 } #Historic enemies?
+		set_relations = { country = c:ILR value = -25 } #Historic enemies?
+		set_relations = { country = c:IFE value = -25 } #Historic enemies?
+		set_relations = { country = c:IJB value = -25 } #Historic enemies?
+	}
+	c:IBD = {
+		set_relations = { country = c:KTU value = -15 } #Collapse of Yorduba
+		set_relations = { country = c:ILR value = -15 } #Collapse of Yorduba
+		set_relations = { country = c:IFE value = -15 } #Collapse of Yorduba
+		set_relations = { country = c:IJB value = -15 } #Collapse of Yorduba
+	}
+	c:KTU = {
+		set_relations = { country = c:ILR value = -15 } #Collapse of Yorduba
+		set_relations = { country = c:IFE value = -15 } #Collapse of Yorduba
+		set_relations = { country = c:IJB value = -15 } #Collapse of Yorduba
+	}
+	c:ILR = {
+		set_relations = { country = c:IFE value = -15 } #Collapse of Yorduba
+		set_relations = { country = c:IJB value = -15 } #Collapse of Yorduba
+	}
+	c:IFE = {
+		set_relations = { country = c:IJB value = -15 } #Collapse of Yorduba
+	}
+	c:GZA = {
+		set_relations = { country = c:TEV value = -45 } #Expansionism of Gaza
+		set_relations = { country = c:MNC value = -30 } #Expansionism of Gaza
+		set_relations = { country = c:BRW value = -20 } #Expansionism of Gaza
+		set_relations = { country = c:POR value = -50 } #Recently sacked Portuguese possessions
+	}
+	c:DAI = {
+		set_relations = { country = c:SIA value = -50 } #Due to conflict over Cambodia	
+	}
+	c:WTL = {
+		set_relations = { country = c:GLD value = 50 } #Apparently friendly with Yusuf Mahamud Ibrahim due to rivalry with Oman	
+		set_relations = { country = c:OMA value = -50 } #rebellious subject	
+	}
+}

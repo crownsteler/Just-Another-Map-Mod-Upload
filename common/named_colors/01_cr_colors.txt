@@ -1,0 +1,20 @@
+colors = {
+	
+	gunung_orange =		hsv360	{ 33 77 93 }
+	gunung_orange_dark=	hsv360	{ 33 95 72 }
+	jambi_blue = 		hsv360	{ 196 85 48 }
+	javan_red =			hsv360	{ 4 78 75 }
+	landak_blue =		hsv360	{ 181 53 65 }
+	matan_green =		hsv360	{ 139 95 54 }
+	riau_green = 		hsv360 	{ 120 100 50 }
+	siak_green =		hsv360	{ 139 99 54 }
+	siak_yellow =		hsv360	{ 54 94 97 }
+	hail_red = 			hsv360	{ 360 99 89 }
+	hail_yellow =		hsv360	{ 46 90 97 }
+	fadhli_green =		hsv360	{ 119 100 78 }
+	fadhli_blue =		hsv360	{ 202 100 95 }
+	hashemite_red =		hsv360	{ 1 86 65 }
+	anazzah_red =		hsv360	{ 357 100 52 }
+	herat_green =		hsv360	{ 148 100 40 }
+	montenegro_blue =	hsv360	{ 203 100 59 }
+} 

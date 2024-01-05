@@ -1,0 +1,16 @@
+﻿MILITARY_DEPLOYMENTS = {
+#	c:USA = {
+#		random_scope_general = { #No need to deploy to Florida, the Dade party ambush was a suprise
+#			limit = { #Should now target Zachary Taylor
+#			#	has_trait = experienced_offensive_planner
+#			#	has_trait = direct
+#			#	has_trait = innovative
+#			}
+#
+#			commander_military_formation = {
+#				fully_mobilize_army = yes
+#				teleport_to_front = p:0C1D7F.front
+#			}
+#		}
+#	}
+}

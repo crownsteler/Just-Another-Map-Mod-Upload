@@ -1,0 +1,147 @@
+﻿##################
+#	Trade post	 #
+##################
+
+pm_flood_irrigation_date_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_fruit_add = 30 # x 30  = 900
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4000
+			building_employment_farmers_add = 650
+			building_employment_clergymen_add = 200
+		}
+	}
+}
+
+pm_furrow_irrigation_date_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+
+	unlocking_technologies = {
+		pumpjacks
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 5 # x 40  = 200
+			goods_output_fruit_add = 40 # x 30  = 1200
+			# Profit =  1000
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 3500
+			building_employment_farmers_add = 1000
+			building_employment_clergymen_add = 200
+		}
+	}
+}
+
+pm_automatic_irrigation_date_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 2
+		}
+	}
+	
+	unlocking_technologies = {
+		pumpjacks
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 5 # x 60  = 300
+			goods_output_fruit_add = 40 # x 30  = 1800
+			# Profit =  1500
+		}
+
+		level_scaled = {
+			# profit
+			building_employment_laborers_add = 2000
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 400
+			building_employment_clergymen_add = 150
+		}
+	}
+}
+
+pm_fertilization_date_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 4
+		}
+	}
+	
+	unlocking_technologies = {
+		pumpjacks
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 10 # x 60  = 600
+			goods_input_fertilizer_add = 5 # x 30 = 150
+			goods_output_fruit_add = 60 # x 30  = 2400
+			
+			# Profit =  1650
+		}
+
+		level_scaled = {
+			# profit
+			building_employment_laborers_add = 2000
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+pm_tamar_harvest_date_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
+	
+}
+
+pm_rutab_harvest_date_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
+
+	unlocking_technologies = {
+		pumpjacks
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods					
+			goods_input_transportation_add = 5 # x 30 = 150
+			
+			#Output goods
+			goods_output_fruit_add = 10 # x 30  = 300
+			
+			#Profit 150
+		}
+	}
+}
+
+pm_khalal_harvest_date_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
+
+	unlocking_technologies = {
+		pumpjacks
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods					
+			goods_input_transportation_add = 5 # x 30 = 150
+			goods_input_electricity_add = 5 # x 30 = 150
+			
+			#Output goods
+			goods_output_fruit_add = 20 # x 30  = 600
+		}
+	}
+}
+

@@ -1,0 +1,66 @@
+﻿state_trait_cr_andosol = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_plantations_throughput_add = 0.25
+		state_infrastructure_mult = -0.10
+	}
+}
+
+#state_trait_cr_java_soil = {
+#	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+#	
+#	modifier = {
+#		building_group_bg_agriculture_throughput_add = 0.20
+#		building_group_bg_plantations_throughput_add = 0.20
+#		building_group_bg_mining_throughput_add = -0.20
+#	}
+#}
+
+
+state_trait_cr_sumatran_alluvial_swamps = {
+	icon = "gfx/interface/icons/state_trait_icons/swamp.dds"
+	
+	modifier = {
+		state_construction_mult = -0.15
+		state_infrastructure_mult = -0.20
+		building_group_bg_agriculture_throughput_add = -0.10
+		goods_output_hardwood_mult = 0.15
+		building_dye_plantation_throughput_add = 0.2
+		building_group_bg_fishing_throughput_add = 0.10
+	}
+}
+
+state_trait_cr_barisan_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_construction_mult = -0.10
+		state_infrastructure_mult = -0.10
+		building_group_bg_mining_throughput_add = -0.10
+	}
+}
+
+state_trait_cr_billiton = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_lead_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_copper_coast = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_copper_mine_throughput_add = 0.10
+	}
+}
+
+state_trait_true_indigo = {
+	icon = "gfx/interface/icons/state_trait_icons/unused/resources_exotic.dds"
+	
+	modifier = {
+		building_dye_plantation_throughput_add = 0.1
+	}
+}

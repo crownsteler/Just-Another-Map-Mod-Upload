@@ -1,0 +1,42 @@
+﻿# This is executed last among all history
+GLOBAL = {
+	#c:GBR = {
+	#	add_treasury = -9500000
+	#}
+	#c:FRA = {
+	#	add_treasury = -4500000
+	#}
+	#c:AUS = {
+	#	add_treasury = -5200000
+	#}
+	#c:SPA = {
+	#	add_treasury = -3200000
+	#}
+	#c:POR = {
+	#	add_treasury = -650000
+	#}
+	#c:SAR = {
+	#	add_treasury = -800000
+	#}
+	#c:PAR = {
+	#	add_treasury = -80000
+	#}
+	#c:MOD = {
+	#	add_treasury = -90000
+	#}
+	#c:LUC = {
+	#	add_treasury = -20000
+	#}
+	#c:TUS = {
+	#	add_treasury = -230000
+	#}
+	#c:PAP = {
+	#	add_treasury = -560000
+	#}
+	#c:SIC = {
+	#	add_treasury = -2000000
+	#}
+	#c:BRZ = {
+	#	add_treasury = -200000
+	#}
+}

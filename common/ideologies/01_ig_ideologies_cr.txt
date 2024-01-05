@@ -1,0 +1,68 @@
+﻿ideology_national_liberalism_cr = {
+	icon = "gfx/interface/icons/ideology_icons/unused/nationalism.dds"
+	
+	lawgroup_governance_principles = {
+		law_monarchy = neutral
+		law_theocracy = strongly_disapprove		
+		law_presidential_republic = approve
+		law_parliamentary_republic = strongly_approve
+		law_council_republic = strongly_disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = approve
+		law_national_supremacy = strongly_approve
+		law_racial_segregation = neutral
+		law_cultural_exclusion = neutral
+		law_multicultural = strongly_disapprove	
+	}
+	
+	lawgroup_trade_policy = {		
+		law_isolationism = neutral
+		law_mercantilism = approve
+		law_protectionism = strongly_approve
+		law_free_trade = disapprove
+	}	
+}
+
+ideology_liberal_quebec_cr = {
+	icon = "gfx/interface/icons/ideology_icons/liberal.dds"
+	
+	lawgroup_economic_system = {		
+		law_traditionalism = neutral
+		law_agrarianism = strongly_approve
+		law_interventionism = approve
+		law_industry_banned = disapprove
+		law_laissez_faire = approve
+		law_cooperative_ownership = strongly_disapprove
+		law_command_economy = strongly_disapprove
+	}
+	
+	lawgroup_policing = {
+		law_no_police = neutral
+		law_dedicated_police = neutral
+		law_local_police = disapprove
+		law_militarized_police = strongly_disapprove
+	}
+	
+	lawgroup_internal_security = {
+		law_guaranteed_liberties = strongly_approve
+		law_no_home_affairs = neutral
+		law_national_guard = disapprove
+		law_secret_police = disapprove
+	}
+	
+	lawgroup_free_speech = {
+		law_protected_speech = strongly_approve
+		law_right_of_assembly = approve
+		law_censorship = neutral
+		law_outlawed_dissent = disapprove
+	}
+	
+	lawgroup_rights_of_women = {
+		law_no_womens_rights = disapprove
+		law_women_own_property = approve
+		law_women_in_the_workplace = neutral
+		law_womens_suffrage = neutral
+	}
+}

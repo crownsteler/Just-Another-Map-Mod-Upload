@@ -1,0 +1,160 @@
+﻿je_cr_russian_america = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	
+	group = je_group_historical_content
+	
+	
+	on_monthly_pulse = {
+		random_events = {
+			
+		}
+	}
+
+	complete = {
+		# Has Green Grass Campaign on Alaska
+		# Has colonial settlement law
+		# Has X level of colonial institutions
+		# Has fully colonised Alaska
+		# Britain does not control Yukon Territory and British Columbia
+		
+		# To prevent sale of Fort Ross needs to have a claim on California, or control San Fransisco
+		institution_investment_level = {
+			institution = institution_colonial_affairs
+			value >= 3
+		}
+	}
+	
+	on_complete = {
+		
+	}
+	
+	invalid = {
+	
+	}
+	
+	weight = 200
+	
+	should_be_pinned_by_default = yes
+	
+	inheritable = no
+}
+
+je_cr_fort_ross = {	
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_historical_content
+	
+	immediate = {
+		c:RUS = {
+			save_scope_as = russia_scope
+		}
+		s:STATE_ALASKA.region_state:ASK = {
+			save_scope_as = alaska_scope
+		}
+		s:STATE_CALIFORNIA.region_state:ASK = {
+			save_scope_as = california_scope
+		}
+		set_variable = {
+			name = cr_russian_california_counter
+			value = 0
+		}
+	}
+	
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = cr_russian_california_counter
+				add = 1
+			}
+		}
+		random_events = {
+			11 = 0
+			1 = cr_russian_alaska_events.1
+		}
+	}
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+		custom_tooltip = {
+			text = je_cr_fort_ross_goal_complete_tt
+			calc_true_if = {
+				amount >= 1
+				p:x5EF8F5.owner = ROOT
+				p:xAB1AA2.owner = ROOT
+				p:x2A91D8.owner = ROOT
+				p:xC78CD3.owner = ROOT
+				p:xB8F452.owner = ROOT
+				p:x1116AA.owner = ROOT
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = cr_russian_alaska_events.10 } # The Valley of Plenty
+	}
+	
+    fail = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+		custom_tooltip = {
+			text = je_cr_fort_ross_goal_fail_tt
+			calc_true_if = {
+				amount < 1
+				p:x5EF8F5.owner = ROOT
+				p:xAB1AA2.owner = ROOT
+				p:x2A91D8.owner = ROOT
+				p:xC78CD3.owner = ROOT
+				p:xB8F452.owner = ROOT
+			}
+		}
+    }
+	
+	on_fail = {
+		hidden_effect = {
+			trigger_event = { id = cr_russian_alaska_events.5 } #The Liquidation of Fort Ross
+		}		
+	}
+	
+	invalid = {
+		OR = {
+			NOT = {
+				any_scope_state = {
+					state_region = s:STATE_CALIFORNIA
+				}
+			}
+			p:x1116AA.owner = ROOT
+		}
+	}
+	
+	on_invalid = {
+		if = {
+			limit = {
+				p:x1116AA.owner = ROOT
+			}
+			trigger_event = { id = cr_russian_alaska_events.9 } #The Golden Horn
+		}
+	}
+	
+	current_value = {
+		value = root.var:cr_russian_california_counter
+	}
+
+	goal_add_value = {
+		add = 120
+	}
+
+	progressbar = yes
+
+	weight = 200
+
+	inheritable = yes
+	
+	
+	should_be_pinned_by_default = yes
+
+}
+

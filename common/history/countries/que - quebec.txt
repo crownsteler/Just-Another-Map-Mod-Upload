@@ -1,0 +1,75 @@
+﻿COUNTRIES = {
+	c:QUE = {
+		# set_next_election_date = ???
+		
+		effect_starting_technology_tier_2_tech = yes
+		
+		activate_law = law_type:law_presidential_republic		
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property #technically the Constitutional Act of 1791 granted the franchise to 'persons' without regard to gender, but -according to the Canadian Encyclopedia- by 1834 legal shenanigans and increased social conservatism had caused most women to cease voting
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_national_militia
+
+		ig:ig_landowners = { #should get stewards (+agriculture and ranching output) and nobless obligee as traits
+			set_interest_group_name = ig_seigneurs
+			add_ruling_interest_group = no
+		}
+		
+		ig:ig_intelligentsia = {
+			set_interest_group_name = ig_patriotes
+			remove_ideology = ideology_liberal
+			remove_ideology = ideology_republican
+			add_ideology = ideology_national_liberalism_cr
+			add_ideology = ideology_liberal_quebec_cr
+		}
+
+		ig:ig_rural_folk = { #Should get Frontiersmen (+ colonial growth, + defense) and corvee (+ construction speed or infrastructure)
+			set_interest_group_name = ig_habitants
+		}
+
+		ig:ig_industrialists = {
+			set_interest_group_name = ig_chateau_clique
+			add_ruling_interest_group = yes
+		}
+
+		ig:ig_armed_forces = {
+			add_ruling_interest_group = yes
+		}
+		add_journal_entry = {
+			type = je_cr_chateau_clique
+		}
+		add_journal_entry = {
+			type = je_cr_92_resolutions_ENG
+		}
+		add_taxed_goods = g:grain
+
+		add_modifier = {
+			name = cr_chateau_clique_modifier
+			months = very_long_modifier_time
+		}
+
+		add_modifier = {
+			name = cr_patriote_movement_modifier
+			months = very_long_modifier_time
+			is_decaying = yes
+		}
+		s:STATE_QUEBEC.region_state:QUE = {
+			add_modifier = {
+				name = cr_tax_revolt
+				months = normal_modifier_time
+				is_decaying = yes
+			}
+		
+		}
+	}
+}

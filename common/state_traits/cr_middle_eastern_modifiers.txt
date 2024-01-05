@@ -1,0 +1,48 @@
+﻿state_trait_cr_yemeni_highlands = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	modifier = {
+		building_coffee_plantation_throughput_add = 0.15
+		state_infrastructure_mult = -0.15
+		state_construction_mult = -0.15
+	}
+}
+
+state_trait_cr_ethiopian_highlands = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	modifier = {
+		building_coffee_plantation_throughput_add = 0.2
+		state_infrastructure_mult = -0.15
+		state_construction_mult = -0.15
+	}
+}
+
+state_trait_cr_asir_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	modifier = {
+		state_infrastructure_mult = -0.10
+		state_construction_mult = -0.10
+	}
+}
+
+state_trait_cr_mesopotamia = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	modifier = {
+		state_infrastructure_add = 30
+	}
+}
+
+state_trait_cr_mesopotamian_marshes = {
+	icon = "gfx/interface/icons/state_trait_icons/swamp.dds"
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.15
+		state_infrastructure_mult = -0.10
+	}
+}
+
+state_trait_cr_cedars_of_lebanon = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+	modifier = {
+		goods_output_hardwood_mult = 0.15
+	}
+}

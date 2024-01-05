@@ -1,0 +1,45 @@
+﻿
+
+# Compagnie des mines d'Anzin
+company_mines_anzin = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/france_compagnie_des_mines_danzin.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+
+	flavored_company = yes
+	
+	building_types = {  
+		building_coal_mine
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_low_countries
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_FRENCH_LOW_COUNTRIES
+			}
+		}
+	}			
+	
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_FRENCH_LOW_COUNTRIES
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_coal_mine
+				level >= 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_steel_mills_throughput_add = 0.05
+		building_railway_throughput_add = 0.1
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}

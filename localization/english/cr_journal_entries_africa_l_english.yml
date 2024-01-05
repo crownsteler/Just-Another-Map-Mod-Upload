@@ -1,0 +1,14 @@
+﻿l_english:
+ #The Zemene Mesfanit
+ cr_je_age_of_princes_owns_gonder:0 "Own the Imperial capital of #variable Gondar#!"
+ cr_je_age_of_princes_owns_meleke:0 "Own the capital of Tigray: #variable Mel'eke#!"
+ cr_je_age_of_princes_owns_dessie:0 "Own the capital of Wello: #variable Dessie#!"
+ cr_je_age_of_princes_owns_bahirdar:0 "Own the capital of Gojjam: #variable Bahir Dar#!"
+ cr_je_age_of_princes_owns_ankober:0 "Own the capital of Shewa: #variable Ankober#!"
+ #The Last King of Shedi
+ je_cr_the_last_king_shedi:0 "The Last King of Shedi"
+ je_cr_the_last_king_shedi_reason:0 "Whether it was a slap across the face with a pipe, or calling his daughter lifestock and a slave matters not. What matters is how Mek Nimr responded to this insult inflicted upon him by Ismail, son of Muhammed Ali. Barely restrained from sabering Ismail on the spot by his servants, Mek Nimr would not rest until he would have his revenge. And fate would not have him wait long, as Ismail foolishly decide to camp across the river from Mek Nimr. Seeing his opportunity, Mek Nimr moved in the deep of night to barracade Ismail in the house he was sleeping before setting the whole camp on fire, killing Ismail and his entire entourage. However, Muhammed Ali was not without a vengeance of his own, and quickly dispatch the ruthless Defterdar to exact this bloody vengeance. Little was left of Mek Nimr's capital of Shedi when the Defterdar was done with it. And even less was left of Mek Nimr's power and influence once the Defterdar was done inflicting his inhumanities on Mek Nimr's tribe.\n\nNow reduced to eeking out an existance in the borderlands with Ethiopia raiding Egyptian outposts, will Mek Nimr be resigned to his fate? Or will he make a triumphant return to Shedi and restore his, and his tribes, position of prominence in the Sudan?" 
+ 
+ #Reinventing Egypt
+ je_cr_reinventing_egypt:0 "Reinventing Egypt"
+ je_cr_reinventing_egypt_reason:0 "Reinventing Egypt"

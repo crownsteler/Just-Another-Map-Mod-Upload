@@ -1,0 +1,50 @@
+﻿pm_kashmir_ranch = {
+	texture = "gfx/interface/icons/production_method_icons/sheep_ranch.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_grain_add = 5
+			goods_output_silk_add = 10
+		}
+	}
+}
+
+pm_kasmir_farms = {
+	texture = "gfx/interface/icons/production_method_icons/sheep_farms.dds"
+	
+	unlocking_technologies = {
+		intensive_agriculture
+	}	
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_grain_add = 10
+			goods_output_silk_add = 20
+			goods_output_fertilizer_add = 5
+			goods_output_meat_add = -5
+		}
+	}
+}
+
+pm_intensive_kashmir_ranch = {
+	texture = "gfx/interface/icons/production_method_icons/large_sheep_ranch.dds"
+
+	unlocking_technologies = {
+		mechanized_farming
+	}
+
+	unlocking_production_methods = {
+		pm_butchering_tools
+		pm_slaughterhouses
+		pm_mechanized_slaughtering
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_grain_add = 20
+			goods_output_silk_add = 30
+			goods_output_fertilizer_add = 10
+			goods_output_meat_add = -10
+		}
+	}
+}

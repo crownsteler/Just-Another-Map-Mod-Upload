@@ -1,0 +1,728 @@
+﻿
+
+frisian={
+	color= hsv{ 0.55 0.24 0.57 }
+	religion = protestant
+	traits = { beneluxian_culture_group european_heritage }
+	male_common_first_names={
+		Abe
+		Aiko
+		Akke
+		Anders
+		Anne
+		Auke
+		Bauke
+		Boye
+		Cornelis
+		Douwe
+		Durk
+		Eeltsje
+		Epke
+		Faas
+		Frans
+		Fedde
+		Feike
+		Fokke
+		Foppe
+		Gerben
+		Henno
+		Hidde
+		Hylke
+		Ies
+		Jabik
+		Jan
+		Jelle
+		Jelmer
+		Jelte
+		Jens
+		Jep
+		Jesse
+		Jilt
+		Jitse
+		Joop
+		Josse
+		Jorrit
+		Jort
+		Lammert
+		Lieuwe
+		Okke
+		Onno
+		Otte
+		Pals
+		Piter
+		Marten
+		Meindert
+		Melle
+		Nyckly
+		Nyk
+		Riendert
+		Rienk
+		Siebe
+		Sietse
+		Seppe
+		Sito
+		Syl
+		Sjoerd
+		Sjouke
+		Steven
+		Taeke
+		Tidde
+		Tsead
+		Tsjebbe
+		Tjerk
+		Waling
+		Watse
+		Wiebe
+		Willem
+		Wopke
+		Ype
+	}
+	female_common_first_names = {
+		Aachje
+		Aafke
+		Aaltje
+		Aggie
+		Albertina
+		Amarins
+		Auck
+		Aukje
+		Bente
+		Boukje
+		Brecht
+		Diede
+		Dieuwertje
+		Dieuwke
+		Doutsen
+		Eise
+		Elke
+		Fardou
+		Feije
+		Femke
+		Fenne
+		Fiep
+		Froukje
+		Geertje
+		Geeske
+		Geke
+		Grystje
+		Hendirka
+		Hielke
+		Hil
+		Hylfkje
+		Imke
+		Ise
+		Jacoba
+		Jente
+		Jeske
+		Jildou
+		Jitske
+		Jinte
+		Jippe
+		Lobke
+		Nynke
+		Mare
+		Marga
+		Marrit
+		Meike
+		Mette
+		Minke
+		Oedske
+		Pita
+		Rinske
+		Rixt
+		Saakje
+		Sietske
+		Sikke
+		Sjoukje
+		Sylke
+		Tabea
+		Titia
+		Tjarda
+		Tjitske
+		Wiep
+		Wietske
+		Yfke
+	}	
+	noble_last_names = {
+		Aebinga_van_Humalda
+		Alberda
+		Buma
+		Burmania
+		Collot_d_Escury
+		Douma_van_Oenema
+		Harinxma_thoe_Heeg
+		Harinxma_thoe_IJslt
+		Lycklam_a_Nijeholt
+		Oenema
+		Ockinga
+		Popma_van_Terschelling
+		Popma_van_IJselt
+		Popma_van_Weidum
+		Rinia
+		Roorda_van_Tzummarum
+		Rooda_van_Genum
+		thoe_Schwartzenberg_en_Hohenlansberg
+		van_Asbeck
+		van_Aylva
+		van_Burmania
+		van_Cammingha
+		van_Eysinga
+		van_Meckema
+		Vegelin_van_Claerbergen
+		
+	}
+	common_last_names={
+		Abbema
+		Aesgema
+		Bergsma
+		Bruinja
+		Bylsma
+		Camstra
+		Cuperus
+		de_Boer
+		de_Jong
+		de_Vries
+		Dekema
+		Dijkstra
+		Douma
+		Eminga
+		Eisinga
+		Elzinga
+		Fenega
+		Ferwerda
+		Foppinga
+		Galama
+		Glins
+		Goinga
+		Goslinga
+		Haagsma
+		Halbertsma
+		Heemstra
+		Herema
+		Hiddema
+		Hettinga
+		Hoekstra
+		Hoxwier
+		Hoytema
+		Jaersma
+		Jongema
+		Juwinga
+		Juwsma
+		Kingma
+		Kramer
+		Liauckema
+		Plantinga
+		Nicolai
+		Peanstra
+		Postma
+		Reitsma
+		Scheltema
+		Sierdsma
+		Sipma
+		Sixma
+		Sjaerda
+		Solckema
+		Steensma
+		Sybesma
+		Taekema
+		Terpstra
+		Troelstra
+		Valomstra
+		Veenstra
+		Walta
+		Wiegersma
+		Wiersma
+		Wybenga
+		Wytsma
+		Ydsma		
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+
+
+minangkabau={													# TODO: Add more names
+	color={ 216 204 92 }
+	religion = sunni
+	traits = { southeast_asian_heritage malay_culture }
+	male_common_first_names = {
+		Abdoel
+		Abisin
+		Adam
+		Adnan
+		Ahmad
+		Aidil
+		Ananda
+		Andjar
+		Ali
+		Amroellah
+		Arbi
+		Arifin
+		Assaat
+		Azymardi
+		Bachtiar
+		Bagindo
+		Bahder
+		Basrief
+		Basrizal
+		Boeyoeng
+		Chairul
+		Daradjat
+		Deliar
+		Djamaloeddin
+		Gustafrizal
+		Hasnoel
+		Hajsim
+		Hamka
+		Haroen
+		Ibrahim
+		Idrus
+		Indra
+		Ismail
+		Isryad
+		Jandia
+		Jahja
+		Joesoef
+		Karim
+		Lintaoe
+		Ma_amoen
+		Malik
+		Marah
+		Misbach
+		Mochtar
+		Mohammed
+		Moh_Husein
+		Moreno
+		Motinggo
+		Nan_Toeo
+		Nasroel
+		Nasri
+		Nazir_Datuk
+		Nazril
+		Noer_Sutan
+		Noesantara
+		Noesjirwan
+		Oesmar
+		Pasaman
+		Renceh
+		Rao
+		Roestam
+		Rosihan
+		Saifoel
+		Saldi
+		Salman
+		Sjahrir
+		Soetan
+		Syamsir
+		Taharoeddin
+		Toelis_Sutan
+		Wandly
+		Werry
+		Wisran
+		Yoenizar
+		Yoesril
+		Zakiah
+		Zoeber
+	}
+	female_common_first_names = { #Cut Nyak Dhien - Atjeh
+		Andung
+		Ani
+		Asnah
+		Atika
+		Azizah
+		Desi
+		Dewi
+		Djaninar
+		Djunita
+		Fatimah
+		Fatmawati
+		Hoeriah
+		Jajang
+		Matayam
+		Noerkoerniati
+		Oepi
+		Rafi_ah
+		Rasoenah
+		Ratina
+		Riri
+		Roehana
+		Roesma
+		Sariamin
+		Whoelandary
+		Zoeraida
+	}	
+	noble_last_names = {
+		Alisjahbana
+		Al_Rasyid
+		Balai_Balai
+		Bin_Abu_Bakar
+		Bin_Mahathir
+		Bin_Meranun
+		Bin_Modh_Ali
+		Darta_Taifoer
+		Datoek_Kajo
+		Datoek_Moedo
+		Effendi
+		Fitri_Sari
+		Gelar_Bagindo_Khatib
+		Koedoes
+		Maharadja_Soetan
+		Padoeko_Radjo
+		Pamoentjak
+		Palindih
+		Sidi_Mangkoeto
+		Sani_Syair_Alamsyah
+		Tan_Malika
+		
+		Bey
+		Moeis
+		Navis
+		Noer
+		
+		Roesli
+		Sanit
+		Tirtaamidjaja
+	}
+	common_last_names = {
+		Abbas
+		Absyar
+		Adam
+		Aidit
+		Alam
+		Amroellah
+		Anwar
+		Apin
+		Arief
+		Asmara
+		Azizchan
+		Azra
+		Bahri
+		Boesra
+		Boesye
+		Daradjat
+		Djadal
+		Djamil
+		Djanilus
+		Djohan
+		Etek
+		Firmansyah
+		Gani
+		Hadi
+		Halim
+		Hatta
+		Husain
+		Idris
+		Ihram
+		Isak
+		Iskander
+		Ismail
+		Jamal
+		Jasin
+		Jazid
+		Kido
+		Koto
+		Latief
+		Malik
+		Malna
+		Martha
+		Mikola
+		Nasroen
+		Oesman
+		Poetra
+		Radzak
+		Rapal
+		Rivai
+		Sahroni
+		Saleh
+		Sati
+		Sjafri
+		Sjahrir
+		Soehaimi
+		Soemargo
+		Soeprato
+		Soeri
+		Taib
+		Tasrif
+		Tjaniago
+		Yoesa_Biran
+	}
+	graphics = east_asian
+	ethnicities = {
+		1 = asian
+	}
+}
+
+sundanese={													# TODO: Add more names
+	color={ 73 65 27 }
+	religion = sunni
+	traits = { southeast_asian_heritage malay_culture }
+	male_common_first_names = {
+		Achdiat
+		Addie
+		Adjip
+		Agoem
+		Asep
+		Ateng
+		Dada
+		Djoeanda
+		Djoehri
+		Ebet
+		Elfa
+		Farid
+		Ginandjar
+		Hassan
+		Jalak
+		Machmud
+		Moeliana
+		Oemar
+		Oma
+		Otista
+		Rachmat
+		Raffi
+		Rangga
+		Ridwan
+		Soeharna
+		Soetisna
+		Taufik
+		Zaenal
+		Zaharsjah
+		
+		Ahmad
+		Ali
+		Mochtar
+		Mohammed
+
+	}
+	female_common_first_names = { #Cut Nyak Dhien - Atjeh
+		Dira
+		Erna
+		Erpi
+		Hartini
+		Itjih
+		Niji
+		Nining
+		Ratnaringrum
+		Tantri
+		Tjutju
+		Vina
+		
+		Dewi
+	}	
+	noble_last_names = {
+		Haroepat
+		Kartaadipeotra
+		Karta_Mihardja
+		Kartasasmita
+		Kartawidjaja
+		Koesoemaatmadja
+		Moeljadi_Sumaatmadja
+		Rajapermas
+		Sartika
+		Soenandar_Soenarja
+		Somanegara
+		Wiradjoeda
+		Wirahadikoesoemah
+		Witoelar
+	}
+	common_last_names = {
+		Goemelar
+		Goeslaw
+		Hadajat
+		Hasboellah
+		Herjawan
+		Irama
+		Iskanderdinata
+		Kadaroesman
+		Kamasih
+		Kamil
+		Koesoema
+		Masdjan
+		Monat
+		Natelegawa
+		Noerdjanah
+		Pandoewinata
+		Poetrambami
+		Radisti
+		Ratnadilla
+		Rosada
+		Rosidi
+		Sadikin
+		Sastavijana
+		Setaistoeti
+		Soegandi
+		Soekaesih
+		Soerapranata
+		Soerjaningsih
+		Wahjoedi
+		Walinono
+		Woelansari
+		
+		Ahmad
+		Alisjahbana
+		Arief
+		Latief
+		Roesli
+	}
+	graphics = east_asian
+	ethnicities = {
+		1 = asian
+	}
+}
+
+
+#### North America ####
+
+
+
+#anishinaabe={													# TODO: Add more names
+#	color={ 160 200 145 }
+#	religion = animist
+#	traits = { indigenous_american_heritage north_american_group }
+#	male_common_first_names={
+#		Aqueezhiok
+#		Babaseekemdase
+#		Bildanwan
+#		Cabamabee
+#		Cawwindow
+#		Chaboner
+#		Chanchanquose
+#		Cheonoquet
+#		Chickasautchee
+#		Chulioa
+#		Jiauba
+#		Ianbensee
+#		Iaubeence
+#		Ignace
+#		Kahaka
+#		Kautawaubeta
+#		Kawachewan
+#		Kelachule
+#		Keokuk
+#		Kewetakepe
+#		Kiawatas
+#		Kweeweeziashish
+#		Maugegabo
+#		Mechimenduck
+#		Mechuckimon
+#		Mooseomone
+#		Mushkoss
+#		Naudin
+#		Nauquanabee
+#		Nauquanosh
+#		Neesidaysish
+#		Nebonabee
+#		Nekiek
+#		Neesopens
+#		Onquiess
+#		Peechananim
+#		Peesecker
+#		Piagick
+#		Pinshiwa
+#		Pontiac
+#		Pugaagik
+#		Pugisaingegen
+#		Puinanegi
+#		Shaata
+#		Shawfauwick
+#		Shuckey
+#		Souanooka
+#		Tarhe
+#		Tawwananee
+#		Tohaditkarawa
+#		Tukaubishoo
+#		Wabbicomicot
+#		Weshion
+#		Wossino
+#		Waiskee
+#		
+#	}
+#	female_common_first_names = {
+#		Akat
+#		Alliquippa
+#		Dehhewanis
+#		Gahonnoneh
+#		Kaniehtiio
+#		Kateri
+#		Kawisenhawe
+#		Tekakwitha
+#		Tyonajanegen
+#	}
+#	noble_last_names = {
+#		Gitspee
+#		Monga
+#		Nainaboozho
+#		Naubun
+#		Shiguabe
+#		Weescoup
+#	}
+#	common_last_names={
+#		Bennett
+#		Crants
+#		Gibson
+#		Heron
+#		Hubbard
+#		Jemison
+#		Lyons
+#		Mohawk
+#		Montour
+#		Pallan
+#		Parker
+#		Pierce
+#		Plummer
+#		Seneca
+#		Steele
+#		Watt
+#	}
+#	ethnicities = {
+#		1 = native_american
+#	}
+#}
+
+sidama={
+	color= hsv{ 0.20 0.30 0.38 }
+	religion = animist
+	traits = { ethiopian east_african_culture_group african_heritage }
+	male_common_first_names={
+		Aba
+		Beshi
+		Gaha
+		Gaki
+		Galli
+		Gawa
+		Gunji
+		Hoti
+		Jawe
+		Jilcha
+		Kaye
+		Sacho
+		Sana
+		Shagi
+		Tekle
+	}
+	female_common_first_names = {
+		Kameria
+		Maryam
+		Tirunesh
+	}	
+	noble_last_names = {
+		Damot
+		Dinagde
+		Safo
+		Qallu
+	}
+	common_last_names={
+		Bulgu
+		Gaocho
+		Ginocho
+		Gomol
+		Nechocho
+		Sachi
+		Sherocho
+	}
+	ethnicities = {
+		1 = african
+	}
+}

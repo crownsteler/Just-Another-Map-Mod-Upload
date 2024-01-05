@@ -1,0 +1,28 @@
+﻿pmg_irrigation_building_date_plantation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_flood_irrigation_date_plantation
+		pm_furrow_irrigation_date_plantation
+		pm_automatic_irrigation_date_plantation
+		pm_fertilization_date_plantation
+	}
+}
+
+pmg_harvest_building_date_plantation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_tamar_harvest_date_plantation
+		pm_rutab_harvest_date_plantation
+		pm_khalal_harvest_date_plantation
+	}
+}
+
+pmg_ownership_land_building_date_plantation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned_plantation
+		pm_publicly_traded
+		pm_government_run
+		pm_worker_cooperative_plantation
+	}
+}

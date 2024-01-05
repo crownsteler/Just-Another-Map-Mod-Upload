@@ -1,0 +1,277 @@
+﻿je_cr_carlist_war_carlists = {
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_historical_content
+	
+	complete = {
+        custom_tooltip = {
+			text = cr_defeat_the_christinos
+			is_at_war = no
+			NOT = { exists = c:SPA }
+		}
+	}
+	immediate = {
+		s:STATE_NAVARRA.state_region:CSP = {
+			save_scope_as = cr_state_navarra
+		}
+		c:SPA = {
+			save_scope_as = cr_christinos
+			ig:ig_intelligentsia = {
+				save_scope_as = cr_spanish_liberals
+			}
+			ig:ig_devout = {
+				save_scope_as = cr_spanish_catholic_church
+			}
+		}
+		c:CSP = {
+			save_scope_as = cr_carlists
+		}
+		cu:basque = {
+			save_scope_as = cr_basque_culture
+		}
+		c:GBR = {
+			save_scope_as = cr_britain
+		}
+	}
+	
+	should_be_pinned_by_default = yes
+	
+
+	on_complete = {
+		annex = c:SPA
+		change_tag = SPA
+		hidden_effect = {
+			c:SPA = {
+				set_variable = cr_carlist_victory
+			}
+		}
+		trigger_event = {
+			id = cr_carlist_events.25
+		}
+	}
+}
+
+je_cr_carlist_war_christinos = {
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_historical_content
+	
+
+	complete = {
+        custom_tooltip = {
+			text = cr_defeat_the_carlists
+			is_at_war = no
+			NOT = { exists = c:CSP }
+		}	
+	}
+	immediate = {
+		s:STATE_NAVARRA.state_region:CSP = {
+			save_scope_as = cr_state_navarra
+		}
+		c:SPA = {
+			save_scope_as = cr_christinos
+			ig:ig_intelligentsia = {
+				save_scope_as = cr_spanish_liberals
+			}
+			ig:ig_devout = {
+				save_scope_as = cr_spanish_catholic_church
+			}
+			ig:ig_landowners = {
+				save_scope_as = cr_spanish_landowners
+			}
+			
+			ig:ig_rural_folk = {
+			}
+			
+			ig:ig_petty_bourgeoisie = {
+			}
+		}
+		c:CSP = {
+			save_scope_as = cr_carlists
+		}
+		c:GBR = {
+			save_scope_as = cr_britain
+		}
+		cu:basque = {
+			save_scope_as = cr_basque_culture
+		}
+	}
+	
+	should_be_pinned_by_default = yes
+	
+	on_monthly_pulse = {
+		random_events = {
+			1 = 0
+			1 = cr_carlist_events.1 #The Desamortización of the Monastaries
+		}
+	}
+	
+	on_complete = {
+		trigger_event = {
+			id = cr_carlist_events.10
+		}
+	}
+}
+
+je_cr_ferdinando_po = {
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_foreign_affairs
+	
+    is_shown_when_inactive = {
+		OR = {
+			AND = {
+				exists = c:SPA
+				THIS = c:SPA
+			}
+			AND = {
+				exists = c:CSP
+				THIS = c:CSP
+			}
+		}
+		NOT = {
+			p:x902089.owner = ROOT 
+		}
+    }
+	
+	scripted_button = je_cr_ferdinando_po_button_a
+	scripted_button = je_cr_ferdinando_po_button_b
+	scripted_button = je_cr_ferdinando_po_button_c
+	
+    possible = {
+		has_interest_marker_in_region = region_biafra
+    }
+	
+	immediate = {
+		set_variable = {
+			name = je_fernando_po_ai_count_var
+			value = 0
+		}
+		save_scope_as = cr_fernado_po_claimant
+		s:STATE_SAO_TOME_AND_PRINCIPE.region_state:GBR = {
+			save_scope_as = cr_fernando_po_state
+		}
+		p:x902089.region = {
+			save_scope_as = cr_fernando_po_region
+		}
+		p:x365A5B.region = {
+			save_scope_as = cr_rio_de_la_plata_region
+		}
+		s:STATE_URUGUAY.region_state:URU = {
+			save_scope_as = cr_uruguay_state
+		}
+		p:x902089.owner = {
+			save_scope_as = cr_fernado_po_owner
+		}
+		c:POR = {
+			save_scope_as = cr_fernado_po_prev_owner
+		}
+		sr:region_biafra = {
+			save_scope_as = cr_biafra
+		}
+		sr:region_guinea = {
+			save_scope_as = cr_guinea
+		}
+		sr:region_congo = {
+			save_scope_as = cr_congo
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = je_cr_ferdinando_po_complete_tooltip
+			p:x902089.owner = this
+		}
+	}
+	
+	should_be_pinned_by_default = yes
+	
+	on_complete = {
+		p:x902089.owner = {
+			save_scope_as = cr_fernado_po_owner
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					THIS = ROOT
+				}
+				has_interest_marker_in_region = region_biafra
+			}
+			post_notification = cr_fernando_po_returned_notification
+		}
+		hidden_effect = {
+			remove_variable = je_fernando_po_ai_count_var
+			remove_variable = cr_fernando_po_dealt_with_local_var
+		}
+	}
+	
+	fail = {
+		OR = {
+			has_law = law_type:law_slave_trade
+			scope:cr_fernando_po_state.owner = {
+				OR = {
+					has_law = law_type:law_slave_trade
+					has_technology_researched = civilizing_mission
+				}
+			}
+		}
+	}
+	
+	on_fail = {
+		save_scope_as = cr_fernado_po_claimant
+		p:x902089.owner = {
+			save_scope_as = cr_fernado_po_owner
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_slave_trade
+			}
+			post_notification = cr_fernando_po_returned_notification_slavery_reinstated
+		}
+		else_if = {
+			limit = {
+				p:x902089.owner = {
+					has_law = law_type:law_slave_trade
+				}
+			}
+			post_notification = po_returned_notification_their_slavery_reinstated			
+		}
+		else_if = {
+			limit = {
+				p:x902089.owner = {
+					has_technology_researched = civilizing_mission
+				}
+			}
+			post_notification = po_returned_notification_their_slavery_reinstated			
+		}
+		hidden_effect = {
+			remove_variable = je_fernando_po_ai_count_var
+			remove_variable = cr_fernando_po_dealt_with_local_var
+			remove_variable = cr_fernando_po_appealed_to_treaty
+		}
+	}
+	
+	
+	
+	invalid = {
+		NOR = { 
+			scope:cr_fernando_po_state.owner = c:GBR 
+			scope:cr_fernando_po_state.owner = c:ENG
+		}	
+	}
+	
+	on_invalid = {
+		save_scope_as = cr_fernado_po_claimant
+		scope:cr_fernando_po_state.owner = {
+			save_scope_as = cr_fernado_po_occupier
+		}
+		hidden_effect = {
+			remove_variable = je_fernando_po_ai_count_var
+			remove_variable = cr_fernando_po_dealt_with_local_var
+			remove_variable = cr_fernando_po_appealed_to_treaty
+		}
+	}
+}

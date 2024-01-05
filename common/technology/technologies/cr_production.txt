@@ -1,0 +1,17 @@
+﻿### ERA 1
+
+cr_fur_trapping_tech = {
+	# Unlocks Fur Trapping Stations
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/sericulture.dds"
+	category = production
+	can_research = no
+	
+	modifier = {
+		
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}

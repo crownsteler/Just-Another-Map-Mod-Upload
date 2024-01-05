@@ -1,0 +1,193 @@
+﻿CHARACTERS = {
+	c:NET = {
+		create_character = {
+			# King William I of the Netherlands
+			first_name = "Willem"
+			last_name = "van_Oranje-Nassau"
+			historical = yes
+			ruler = yes
+			birth_date = 1772.8.24
+			dna = dna_king_william_01
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_royalist
+			traits = {
+				ambitious
+				imperious
+			}
+		}	
+
+		create_character = {
+			first_name = "Willem"
+			last_name = "van_Oranje-Nassau"
+			historical = yes
+			heir = yes
+			birth_date = 1792.6.12
+			interest_group = ig_intelligentsia
+			ideology = ideology_reformer
+			traits = {
+				romantic
+				expensive_tastes
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {
+			first_name = Johanna
+			last_name = Borski
+			historical = yes
+			female = yes
+			birth_date = 1764.8.26
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie #Merchant-Bankers
+			ideology = ideology_market_liberal
+			traits = {
+				meticulous
+				expert_political_operator
+			}
+		}
+
+
+		create_character = {
+			first_name = Lodewijk_Casper
+			last_name = Luzac
+			historical = yes
+			birth_date = 1786.8.1
+			ig_leader = yes
+			interest_group = ig_intelligentsia #Liberals
+			ideology = ideology_market_liberal
+			traits = {
+				meticulous
+			}
+		}
+
+		create_character = {
+			first_name = Abraham
+			last_name = Capadose
+			historical = yes
+			culture = cu:ashkenazi
+			religion = rel:protestant
+			birth_date = 1795.8.22
+			ig_leader = yes
+			interest_group = ig_rural_folk #Protestants
+			ideology = ideology_theocrat
+			traits = {
+				reserved
+			}
+		}
+
+		create_character = {
+			first_name = Cornelius_Ludovicus
+			last_name = de_Wijkerslooth
+			historical = yes
+			religion = rel:catholic
+			culture = cu:flemish
+			birth_date = 1786.5.25
+			ig_leader = yes
+			interest_group = ig_devout #Catholics
+			ideology = ideology_traditionalist
+			traits = {
+				arrogant
+			}
+		}
+
+		create_character = {
+			first_name = Theodoor
+			last_name = Huydecoper
+			historical = yes
+			birth_date = 1803.3.16
+			ig_leader = yes
+			interest_group = ig_trade_unions #Socialists
+			ideology = ideology_traditionalist
+			traits = {
+				bigoted
+			}
+		}
+
+		create_character = {
+			first_name = Jacob_Dirk_Carel
+			last_name = van_Heeckeren
+			historical = yes
+			birth_date = 1809.2.8
+			ig_leader = yes
+			interest_group = ig_landowners #Landowners
+			ideology = ideology_royalist
+			traits = {
+				charismatic
+			}
+		}
+
+		create_character = {
+			first_name = Gideon_Jan
+			last_name = Verdam
+			historical = yes
+			birth_date = 1801.12.2
+			ig_leader = yes
+			interest_group = ig_industrialists #Industrialists
+			ideology = ideology_moderate
+			traits = {
+				innovative
+			}
+		}
+
+		#create_character = { # General
+		#	is_general = yes
+		#	first_name = David_Hendrik
+		#	last_name = Chasse
+		#	historical = yes
+		#	birth_date = 1765.3.18
+		#	traits = {
+		#		wrathful
+		#		wounded # Right upper arm
+		#	}
+		#}
+		#
+		#create_character = { # Admiral
+		#	is_admiral = yes
+		#	first_name = Engelbertus
+		#	last_name = Lucas
+		#	historical = yes
+		#	birth_date = 1785.5.13
+		#	traits = {
+		#		experienced_naval_commander
+		#		wrathful
+		#	}
+		# }
+		
+	#	create_character = {
+	#		is_general = yes
+	#		first_name = Charles
+	#		last_name = Nepveu
+	#		age = 45
+	#		traits = {
+	#			bigoted
+	#	#		powerful_friends
+	#		}
+	#	}
+		
+	#	create_character = {
+	#		is_general = yes
+	#		first_name = Karel_Bernhard
+	#		last_name = van_Saksen_Weimar_Eisenach
+	#		age = 44
+	#		traits = {
+	#	#		smart_trait
+	#	#		uncommonly_young
+	#		}
+	#
+	#	}
+		
+	#	create_character = {
+	#		is_general = yes
+	#		first_name = Hendrik
+	#		last_name = Duycker
+	#		age = 44
+	#		traits = {
+	#	#		mediocre
+	#	#   	military_family
+	#		}
+	#
+	#	}
+	}
+}

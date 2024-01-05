@@ -1,0 +1,354 @@
+﻿### Try to keep tags in alphabetical order if it's not too far gone, please.
+
+
+HDJ = {
+	dynamic_country_name = {
+		name = dyn_c_mecca_sharifate
+		adjective = dyn_c_mecca_sharifate_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			#coa_def_theocracy_flag_trigger = yes
+			scope:actor = {
+				is_country_type = unrecognized
+			}
+		}
+	}
+}
+
+#sub_HDJ = { # Hedjaz
+#	dynamic_country_name = {
+#		name = dyn_c_mecca_sharifate
+#		adjective = dyn_c_mecca_sharifate_ADJ
+#		
+#		is_main_tag_only = yes
+#		priority = 1
+#		
+#		trigger = {
+#			coa_def_theocracy_flag_trigger = yes
+#			scope:actor = {
+#				is_non_customs_union_subject = yes
+#				#NOT = {
+#				#	AND = {
+#				#		has_technology_researched = nationalism
+#				#		is_non_customs_union_subject = no
+#				#	}
+#				#	has_technology_researched = pan-nationalism
+#				#}
+#			}
+#		}
+#	}
+#	dynamic_country_name = {
+#		name = dyn_c_saudi_arabia
+#		adjective = dyn_c_saudi_arabia_adj
+#		
+#		is_main_tag_only = yes
+#		priority = 0
+#		
+#		trigger = {
+#			coa_def_monarchy_flag_trigger = yes
+#			scope:actor = {
+#				owns_entire_state_region = STATE_NEJD
+#				owns_entire_state_region = STATE_HEDJAZ
+#			}
+#		}
+#	}
+#	dynamic_country_name = {
+#		name = dyn_c_hashemite_arabia
+#		adjective = dyn_c_hashemite_ADJ
+#		
+#		is_main_tag_only = yes
+#		priority = 0
+#		
+#		trigger = {
+#			coa_def_monarchy_flag_trigger = yes
+#			scope:actor = {
+#				owns_entire_state_region = STATE_NEJD
+#				owns_entire_state_region = STATE_HEDJAZ
+#				owns_entire_state_region = STATE_HAIL
+#			}
+#		}
+#	}
+#}
+HRB = {
+	dynamic_country_name = {
+		name = dyn_c_hiraab_imamate
+		adjective = HRB_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				has_law = law_type:law_theocracy
+			}
+		}
+	}
+}
+
+SPA = {
+	dynamic_country_name = {
+		name = SPA
+		adjective = dyn_c_christinos_spain_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			has_variable = cr_carlist_war_ongoing
+		}
+	}
+}
+
+#MON = {
+#	dynamic_country_name = {
+#		name = MON
+#		adjective = MON_ADJ
+#		
+#		is_main_tag_only = yes
+#		priority = 0
+#		
+#		trigger = {
+#			scope:actor = {
+#				coa_def_theocracy_flag_trigger = yes
+#				has_law = law_type:law_theocracy
+#			}
+#		}
+#	}
+#}
+
+NEJ = { # Nejd
+	dynamic_country_name = {
+		name = dyn_c_saudi_arabia
+		adjective = dyn_c_saudi_arabia_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_NEJD
+				owns_entire_state_region = STATE_HEDJAZ
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_saudi_arabia_full
+		adjective = dyn_c_saudi_arabia_full_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_NEJD
+				owns_entire_state_region = STATE_HEDJAZ
+				owns_entire_state_region = STATE_HAIL
+			}
+		}
+	}
+}
+
+NNV = {
+	dynamic_country_name = {
+		name = dyn_c_inuit
+		adjective = dyn_c_inuit_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				is_country_type = decentralized
+			}
+		}
+	}
+}
+
+BGM = {
+	dynamic_country_name = {
+		name = dyn_c_gondar
+		adjective = dyn_c_gondar_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				has_variable = cr_renamed_to_gondar
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_amharia
+		adjective = dyn_c_amharia_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				has_variable = cr_renamed_to_amharia
+			}
+		}
+	}
+}
+
+GJM = {
+	dynamic_country_name = {
+		name = dyn_c_gondar
+		adjective = dyn_c_gondar_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				has_variable = cr_renamed_to_gondar
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_amharia
+		adjective = dyn_c_amharia_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				has_variable = cr_renamed_to_amharia
+			}
+		}
+	}
+}
+
+SHW = {
+	dynamic_country_name = {
+		name = dyn_c_amharia
+		adjective = dyn_c_amharia_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				has_variable = cr_renamed_to_amharia
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_oromia
+		adjective = dyn_c_oromia_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				has_variable = cr_renamed_to_oromia
+			}
+		}
+	}
+}
+
+WLO = {
+	dynamic_country_name = {
+		name = dyn_c_gondar
+		adjective = dyn_c_gondar_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				has_variable = cr_renamed_to_gondar
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_oromia
+		adjective = dyn_c_oromia_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				has_variable = cr_renamed_to_oromia
+			}
+		}
+	}
+}
+
+ASK = {
+	dynamic_country_name = {
+		name = dyn_c_russian_alaska
+		adjective = dyn_c_russian_alaska_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				AND = {
+					exists = c:RUS
+					scope:actor = {
+						is_subject_of = c:RUS
+					}
+				}
+			}
+		}
+	}
+}
+
+
+MGK = {
+	dynamic_country_name = {
+		name = dyn_c_padris
+		adjective = dyn_c_padris_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				has_law = law_type:law_theocracy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_pagaruyung
+		adjective = dyn_c_pagaruyung_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+}
+
+TUV = {
+	dynamic_country_name = {
+		name = dyn_c_uriankjai
+		adjective = dyn_c_uriankjai_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				is_country_type = decentralized
+			}
+		}
+	}
+}
+

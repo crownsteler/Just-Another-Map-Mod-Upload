@@ -1,0 +1,779 @@
+﻿LAT = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+EST = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+LIT = {
+	states = { STATE_LITHUANIA }
+
+	ai_will_do = { always = no }
+}
+
+NAS = {
+	provinces = { x3E794B x90C0A0 x1357DB }
+	
+	ai_will_do = { always = no }
+}
+
+
+ALT = {
+	provinces = { xD9BEFE x78C465 xBD8628  }
+	
+	ai_will_do = { always = no }
+}
+
+
+FRM = {
+	provinces = { x11C0A0 }
+	
+	ai_will_do = { always = no }
+}
+
+LUB = {
+	provinces = { x60809F }
+	
+	ai_will_do = { always = no }
+}
+
+HAM = {
+	provinces = { x587297 }
+	
+	ai_will_do = { always = no }
+}
+
+BRE = {
+	provinces = { xC08061 x68BE66 }
+	
+	ai_will_do = { always = no }
+}
+
+
+PUE = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+
+AIN = {
+	use_culture_states = yes
+	
+	ai_will_do = { always = no }
+}
+
+
+RIO = {
+
+	provinces = {
+		# Rio Grande
+		x00879A x00B001 x059C97 x08C98F x0DA7FA x0F59F0 x1B9AEE x1BD480 x1C58D1 x1CC654 x20360A x2F16DF x304ACD x41A909 x4C9B4D x4EE20D x4FF638 x50EF80 x54B95F x592CDF x59E37B x60385F x654D48 x6EDB2C x766F08 x7B177A x7F00A8 x8030C0 x80B080 x9486AD x9C099B x9F69AD xA164AB xA20ABD xA98620 xA995BC xB13782 xB65993 xBA8759 xBCFFF7 xC03001 xC1EF57 xC202B5 xC68684 xCAEB7A xD51E89 xD69138 xDCEE0B xDDC3A9 xDDE205 xDEEEB0 xE1E8AB xE4E032 xE86EA3 xEA81D3 xF468A1 xF53F63 xF9A35E xFC72E1 xFEC6A5
+
+		# Mexican Texas
+		x3751A7 x24C127 x10CA7B x951736 x871357 xD08070 xB9118E xC9D330 x5D3843 x2DA551 x760779 x4E19F4 x6958D6 x6E8169 xBB8A78 x0E125F x90CE2B x860F5A x0D192D x6BB536 xA55E5C xB16A3C x8EBCC7 x94A617 x18F9D5 x03FDD9 xE222E2 xDB3E39 x27C614 xE3F481 x08F331 x3DAE0A xC7ED1C xFDD38C xD206BC x0030C0 xED08F5 xA3A810 x91A02C
+	}
+
+	ai_will_do = { always = no }
+}
+
+
+IRO = {
+	provinces = {
+		x195b49 x8c059d xe217b5 x70c080 x2ca754 x4b0747 xb343e6 x308000 x38c881 x01d042 xe7be2d xa6bed5 xedc7da x3cb274 x235e9f xa7b5fe x42d496 xb00080 x05187e x9484f3 xec2eaa x73a16c xfcf1be x99cb10
+	}
+
+	ai_will_do = { always = no }
+}
+IRQ = {
+	states = {
+		STATE_BAGHDAD
+		STATE_MOSUL
+	}
+	ai_will_do = { always = no }
+}
+
+TUV = {
+	states = {
+		STATE_TUVA
+	}
+	ai_will_do = { always = no }
+}
+
+
+SUD = {
+	states = {
+		STATE_BLUE_NILE
+		STATE_KORDOFAN
+		STATE_DONGOLA
+		STATE_EASTERN_DESERT
+		
+	}
+	ai_will_do = { always = no }
+}
+
+
+ALD = {
+	states = {
+		STATE_ALGIERS
+		STATE_CONSTANTINE
+		STATE_ORAN
+		STATE_TOUGGOURT
+		STATE_LAGHOUAT
+		STATE_SAHARA
+		STATE_EAST_SAHARA
+	}
+	ai_will_do = { always = no }
+}
+
+
+DZG = {
+	provinces = {
+		x7CB839 x80A0A0
+	}
+
+	ai_will_do = { always = no }
+}
+
+
+KUR = {
+	states = {
+		STATE_KURDISTAN_IRAQ
+		STATE_MOSUL
+		STATE_DEIR_EZ_ZOR
+		STATE_LURISTAN
+		STATE_DIYARBAKIR
+	}
+
+	ai_will_do = { always = no }
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+}
+
+
+UOM = {
+	states = {
+		STATE_MICHIGAN
+	}
+	
+	ai_will_do = { always = no }
+	
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+}
+
+
+BEL = {
+	use_culture_states = yes
+	
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+}
+
+
+BRA = {
+	states = {
+		STATE_BRUNSWICK
+	}
+	ai_will_do = { always = no }
+}
+
+HOL = {
+	provinces = { xBFCC21 x804160 x64824C xE000A0 }
+	ai_will_do = { always = no }
+}
+
+SCH = {
+	provinces = { x00C060 x78B203 xE3C876 }
+	ai_will_do = { always = no }
+}
+
+LUX = {
+	provinces = { x5180A0 }
+	ai_will_do = { always = no }
+}
+
+MEC = {
+	states = {
+		STATE_MECKLENBURG
+	}
+	ai_will_do = { always = no }
+}
+
+OLD = {
+	provinces = { xECC3B4 xC00161 x4101E0 }
+	ai_will_do = { always = no }
+}
+
+SAX = {
+	states = {
+		STATE_SAXONY
+	}
+	ai_will_do = { always = no }
+}
+
+WUR = {
+	provinces = { x118060 x100060 xC541D2 x8F0060 xDBB84C }
+	ai_will_do = { always = no }
+}
+
+LUC = {
+	provinces = { xF080A0 }
+	ai_will_do = { always = no }
+}
+
+MOD = {
+	provinces = { xEF0021 xF08021 }
+	ai_will_do = { always = no }
+}
+
+PAR = {
+	provinces = { x0B3B43 x700120 }
+	ai_will_do = { always = no }
+}
+
+
+TUS = {
+	states = {
+		STATE_TUSCANY
+	}
+	ai_will_do = { always = no }
+}
+
+KRA = {
+	provinces = { x906060 }
+	ai_will_do = { always = no }
+}
+
+SWI = {
+	states = {
+		STATE_WEST_SWITZERLAND
+		STATE_EAST_SWITZERLAND
+		STATE_SOUTH_SWITZERLAND
+	}
+	ai_will_do = { always = no }
+}
+
+
+BUK = {
+	provinces = {
+		x8A56DC xD87EBF xF5EF8A x417F81 xED1489 xA1DF6D x973B9F x20B021 xE72886 x865AAB x11BEB1 x8B8972 x8DE506 xD056DC x17227F xC07A80 xC89C46 x156B96 xFD2FE1 xF9BC1A x71F3E8 x367C49 xDC6A33 xA69FFF
+				
+		x070194 xBB15CC x9B9047 xA1DDFA xD8C311 xFAAE74 #Turkmenibad
+	}
+	ai_will_do = { always = no }
+}
+
+
+KHI = {
+	provinces = {
+				x665341 x2CDB86 xF2786A xC19656 x0A3F4D xF1C7F1 x9B6910 x5743DD xACA7FD xA487BA x5BB27E xDB89A8 xC6FC10 xFF1B6D x956DE6 x1C2FB8 x03630A x891E67 xEE0054 
+				x0C18E0 x85B179 xE4C351 xC131A1 x521ED8 x5FF9CD #Daşoguz
+	}
+	ai_will_do = { always = no }
+}
+
+
+KOK = {
+	provinces = {
+		xB24B12 x3D854F x4B7066 xC0D040	x48AE67 x7052F1 xDBD8BE x542EFD xFB192C x6EA842 x7625F5 xAD3425 xBB21A5 x8828FB xE5AD64 x6A30D3 x180E7A x7AAB55 xA5418A x2C5197 xCE5CD4 x1C545C x5A2C97 xC78F24 x3EA155 x3A3AE2 x9B5DFD x643CF5 xBE2F49 x480704 x99410F x6678CA x8B7EFD xF0EADF xAA36C3 xA9525C x261D0F x4214B3 x3EF868 xCDA745 xC863B0 x599B9D x30CC9D xAA16B7 x427426 xBA55E4 x3582E9 x568056 x6AB6B7 x7F26D4 xFC519D x9D8D01 xCC5769 x78E5EA	x131337 xE5D5C2 x9E6765 x4B4659 x75D8BE x46CEC2 x5929A2 x1DE878	xD0E049	xF980F5 xCF05B0 x86511D xA3F943 xF9A3AF x38E787 x43BF94 xBB92FC x06E5B4 x669165 xBC9B7E x3C11D2 x9AB575	xCD3064 xC425C5 xC6A43A x22B945 xE922B8 x5B6497 xC4716E xE60BC3 x721F04 x45E049
+	}
+	ai_will_do = { always = no }
+}
+
+NEJ = {
+	states = {
+		STATE_NEJD
+	}
+	ai_will_do = { always = no }
+}
+
+
+JAB = {
+	states = {
+		STATE_HAIL
+	}
+	ai_will_do = { always = no }
+}
+
+YEM = {
+	states = {
+		STATE_YEMEN
+		STATE_SOUTH_YEMEN
+	}
+	possible = {
+		has_technology_researched = nationalism
+	}
+	ai_will_do = { always = no }
+}
+
+MAH = {
+	provinces = { x30A3E2 x37058f xAD1CE2 x8D121D x8D6307 xBDEA27 x02B35C xA2FDFA x6BD0A9 xB010DF x9D6547 xA0540A }
+	ai_will_do = { always = no }
+}
+
+KAT = {
+	provinces = { xC790E8 x299C0F xDFA579 x346541 x90602A x3D86FC x75D341 x8E96A7 xDD732E x95D64E x5F3582 x2A9E89 xBAA208 x308FDF xD6CC22 x1C7B77 xA05CB5 x6D2F95 x5C91FE x3D7345 xC09525 xB8A8D2 x672267 x60DFF9 xD3F276 xA1AAB0 x843C65 x5DF9FC x895FE6 xCF61E1 x0B9A27 xF385EB x0C7E0C x872CEB x8BF4B8 }
+	ai_will_do = { always = no }
+}
+
+ZAI = {
+	provinces = { x567A83 xE5892F x02F9FF x7EC879 x625380 x9D8A78 xEF2E43 xBB387A xCF6C49 x7C3EA9 xFE5027 x68B524 xE5DF3B x1A7BB0 x2576C1 xCF401E x49FCAB x6290E6 xF86F58 x84FA60 x8B1488 x075453  x00E3EF xB79DED x9E941B x034B03 x8436FE }
+	ai_will_do = { always = no }
+}
+
+LAH = {
+	provinces = { x319060 xB090E0 x2BD409 xFA0283 x657048 x54840B x3D1674 x2975A3 }
+	ai_will_do = { always = no }
+}
+
+FDH = {
+	provinces = { x0C7E0C xD3F276 xBAA208 x657048 x3D1674 xA1AAB0 x567A83 xFA0283 x2975A3 x54840B x2BD409 }
+	ai_will_do = { always = no }
+}
+
+BHN = {
+	provinces = { x505AE0 x2768F8 xEF5020 }
+	ai_will_do = { always = no }
+}
+
+BAS = {
+	provinces = { x8ECE82 x013159 xF09DA1 x1170A0 xB56E8E x2F70FB x274E94 x66F24C x20BC2C xC38F66 }
+	ai_will_do = { always = no }
+}
+
+
+BIK = {
+	provinces = { xF3C5EA x9601FD x84F1F8 xA99FB3 xC40894 xF591B3 x53A30A x01F0E0 xEBA05F x214E7A x6A103F xEB0422 x5DACF4 }
+	ai_will_do = { always = no }
+}
+
+BUN = {
+	provinces = { x52001D x66337F x5CBFF7 xD64336 x7884D6 x6B7184 x4605A8 }
+	ai_will_do = { always = no }
+}
+
+GWA = {
+	provinces = { xC77D13 x6A8538 xCD2556 xDCAFE4 xFBDCC9 x346A50 x87DE7B x897F27 xE3AF55 xAA246A x983C0D x0A05FF xF6BCF1 xC4F4E4 }
+	ai_will_do = { always = no }
+}
+
+
+IND = {
+	provinces = { x1E9A75 x82DEEF x2A9BFB xFA701B xE9D03F xC0F1B9 x746A39 x14EB25 x585F79 x4CA2A3 xB8A7B3 x0E199B x70D0E0 xA9E591 }
+	ai_will_do = { always = no }
+}
+
+JAI = {
+	provinces = { xE0F021 x604D2F x82B440 xC7EF85 x0170B1 x67EA54 x0710F5 xA2025E x4EA8C5 xBA06BC xFFFB3C x5A410D xB9580C x0A43D0 x61F021 }
+	ai_will_do = { always = no }
+}
+
+JAS = {
+	provinces = { x3C6F90 x77810B xD0F7A0 x6E8BCD xBD0984 x6031A0 x1031A8 x599EC5 x006D72 }
+	ai_will_do = { always = no }
+}
+
+JOD = {
+	provinces = { xBD1F80 x9A6A95 x7B1C30 x22627C xDD12D2 xD77479 xCA50D5 x4CEAC0 xCBE6C4 x0C11FE x425430 xD76ACC xA389C9 xBAD851 xC28B1B x4922B9 xE0B020 x2A57A1 x25467F x3FF532 x166BD9 x5C95B5 }
+	ai_will_do = { always = no }
+}
+
+KUT = {
+	provinces = { xC0310F xF64FA2 xB05060 xEB6009 x5B6745 x8F568D xB89EF0 }
+	ai_will_do = { always = no }
+}
+
+MAK = {
+	provinces = { x978421 x4E09C5 xF9577D x45F2DD x113E0B x7FE584 xC070E0 xC6E602 xB0F79E x407060 x951063 xB7B2BD x8ED831 x2E7961 xE87BBF }
+	ai_will_do = { always = no }
+}
+
+MEW = {
+	provinces = { xA9F108 x40881F xF051DF xCC8FF3 x0A34C2 xF671B7 x6E01FB x37D8C4 xA614CA xE27278 xDCFF99 xE95A9E xBC1373 }
+	ai_will_do = { always = no }
+}
+
+
+SIK = {
+	provinces = { xE0B0E0 x2070E0 }
+	ai_will_do = { always = no }
+}
+
+
+BAL = {
+	provinces = { x5ABA94 x100090 }
+	ai_will_do = { always = no }
+}
+
+BHU = {
+	provinces = { x388D2C xDA7F32 x665E5B x01C109 xD10C8F x4F99DC x84F73C xE5D3E0 x60B0DF }
+	ai_will_do = { always = no }
+}
+
+LAN = {
+	provinces = { x1C7417 x2A3D46 xE02CB6 }
+	ai_will_do = { always = no }
+}
+
+BRU = {
+	states = {
+		STATE_NORTH_BORNEO
+	}
+	ai_will_do = { always = no }
+}
+
+
+CAM = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+LUA = {
+	provinces = { x3130A0 x89F1F9 xDFCAA8 x70B3CE xED7937 x874BED xCD2D5D x1F8AE4 x8D0FE2 x6BA60C xDA6CAB xE8A817 x0B160B x578898 x8D4D75 x2DE84E x1957E0 x1E6D3C x625009 xEAEF3A xB0B020 xDE87E1 x46CCB6 x8BFF1F x6C400A x61478F }
+	ai_will_do = { always = no }
+}
+
+CHP = {
+	provinces = { xB0EFA0 x30EFA0 x3E6297 x036ED6 x32A2B1 x21D9CC xC8AFB5 x94CA13 x899047 }
+	ai_will_do = { always = no }
+}
+
+DES = {
+	states = {
+		STATE_UTAH
+	}
+	ai_will_do = { always = no }
+}
+
+
+PEU = {
+	states = {
+		STATE_LIMA
+		STATE_CAJAMARCA
+		STATE_ICA
+		STATE_AREQUIPA
+		STATE_TARAPACA
+		STATE_UCAYALI
+	}
+	ai_will_do = { always = no }
+}
+
+
+MKT = {
+	provinces = { x17F33B x6C22F2 x59D231 xAD9EE8 }
+	ai_will_do = { always = no }
+}
+
+
+HZJ = {
+	provinces = {
+		x05AA3A xA8DB52 xA45DA0 x8FACBC x16930C x87FE9C x2F26B8 xDC008F x6F8118 x5C6E60 x09828D x7FED21 xF36208 x0EE28B xF902AB x60B0A0 xA31731 x0487A7 x7AA1D1 x68901F x04B03F x27FE11 x4414C8 x8831D3 x6DBF4A xDB584F x938A92 xAF1A31 x4F1DA7 x99A835 xB6EB52 x42A020 x18B003 xD37042 xE81774 xAD7935 x548EAA xE8122E x01CB5D xE0898D
+	}
+	ai_will_do = { always = no }
+}
+
+
+MNP = {
+	provinces = { xB03121 xA17DC4 x8C53B3 xCB0893 x30B15A x8F90F5 xB238B2 }
+	ai_will_do = { always = no }
+}
+
+TOB = {
+	states = {
+		STATE_NORTH_SUMATRA
+	}
+	ai_will_do = { always = no }
+}
+
+KLT = {
+	states = {
+		STATE_WEST_BORNEO
+		STATE_EAST_BORNEO
+		STATE_NORTH_BORNEO
+		STATE_SARAWAK
+	}
+	ai_will_do = { always = no }
+}
+
+
+SRB = {
+	states = {
+		STATE_SAXONY
+	}
+	ai_will_do = { always = no }
+}
+
+
+COB = {
+	provinces = { x66FE0A }
+	ai_will_do = { always = no }
+}
+
+MEI = {
+	provinces = { x5141A0 xD0C021 }
+	ai_will_do = { always = no }
+}
+
+WEI = {
+	provinces = { xC00A37 }
+	ai_will_do = { always = no }
+}
+
+SCW = {
+	provinces = { x51C021 }
+	ai_will_do = { always = no }
+}
+
+HEK = {
+	provinces = { xD04121 x2248E2 xC08020 xFF1DBB }
+	ai_will_do = { always = no }
+}
+
+LIP = {
+	provinces = { x9F0060 }
+	ai_will_do = { always = no }
+}
+
+SCM = {
+	provinces = { x1BA4F6 }
+	ai_will_do = { always = no }
+}
+
+MST = {
+	provinces = { xE041A0 xD9A469 }
+	ai_will_do = { always = no }
+}
+
+HOH = {
+	provinces = { x908060 }
+	ai_will_do = { always = no }
+}
+
+WLD = {
+	provinces = { x3E794B }
+	ai_will_do = { always = no }
+}
+
+SAK = {
+	provinces = { x01317D x3F7EA0 x677AA6 x87F7B6 x8171EA x48428B x6021D0 x5BE3D2 x8B7A14 x35213F }
+	ai_will_do = { always = no }
+}
+
+PON = {
+	provinces = { xFFE074 x71D428 x706E00 xA91194 x4DD36E xB7B05B xAD54BC x4408AB xF8375D }
+	ai_will_do = { always = no }
+}
+
+SMB = {
+	provinces = { x60FDC2 x42973E x6D4CDF }
+	ai_will_do = { always = no }
+}
+
+JMB = {
+	provinces = { x5157D3 xDA82F4 x7AC280 xAE71B4 xEC5DEA xA2F773 x6ED39E xE4C2D6 }
+	ai_will_do = { always = no }
+}
+
+YOG = {
+	provinces = { xD19D2E }
+	ai_will_do = { always = no }
+}
+
+SRK = {
+	provinces = { x143969 }
+	ai_will_do = { always = no }
+}
+
+BTN = {
+	states = {
+		STATE_SOUTH_CELEBES
+	}
+	ai_will_do = { always = no }
+}
+
+SEL = {
+	provinces = { x23578B x8E3305 xC84C4C }
+	ai_will_do = { always = no }
+}
+
+PRK = {
+	provinces = { xAA2287 x78EF92 xCF3E8D xD8E596 xE87C53 }
+	ai_will_do = { always = no }
+}
+
+SUL = {
+	provinces = { x0180F0 x99D030 }
+	ai_will_do = { always = no }
+}
+
+TID = {
+	states = {
+		STATE_MOLUCCAS
+	}
+	ai_will_do = { always = no }
+}
+
+STG = {
+	provinces = { x477680 xA6D36E xCF4105 x7FFBF0 xBC374E xA5A916 x56FE77 x445D59 x9910E9 x939612 x04BB3B }
+	ai_will_do = { always = no }
+}
+
+BNJ = {
+	provinces = { x9B7A4D x496AEF xDF0BCF x0ED6AA xE9E984 xDB778E xEA35E9 x71A232 x3660F5 x9C48FE x38416A x6A70EA x88A1EC xFF0B89 x10645D x0E858D x8D8D4A x8F8FDE x0596C2 x0A7250 x0A8175}
+	ai_will_do = { always = no }
+}
+
+CIR = {
+	states = {
+		STATE_KUBAN
+	}
+	ai_will_do = { always = no }
+}
+
+CHC = {
+	states = {
+		STATE_DAGESTAN
+	}
+	ai_will_do = { always = no }
+}
+
+HOB = {
+	provinces = { xE585C3 x1D4F93 x324717 xCB3B07 x6BA02C x6D66A6 xFE3534 x60EAC8 xDDF9DB xE4636A x76595D x83A1A3 x58307A xB64D3E x049442 xF5E822 x73FE30 xA05C39 x6D0680 x469B34 xA2A857 x529552 }
+
+	ai_will_do = { always = no }
+}
+
+ASS = {
+	states = {
+		STATE_MOSUL
+		STATE_DEIR_EZ_ZOR
+		STATE_KURDISTAN_IRAQ
+	}
+	possible = {
+		has_technology_researched = nationalism
+	}
+	ai_will_do = { always = no }
+}
+
+
+KLM = {
+	states = { 
+		STATE_ASTRAKHAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+
+CAU = {
+	states = {
+		STATE_GREATER_CAUCASUS
+		STATE_ARMENIA
+		STATE_AZERBAIJAN
+		STATE_KARS
+	}
+	
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+	
+	possible = {
+		has_technology_researched = pan-nationalism
+	}
+}
+
+
+MOR = {
+	states = {
+		STATE_MARRAKECH
+		STATE_FEZ
+		STATE_AL_RIF
+		STATE_TAZA
+		STATE_INNER_MOROCCO
+	}
+	
+	required_num_states = 4
+
+	ai_will_do = { always = no }
+}
+
+TUN = {
+	states = {
+		STATE_TUNISIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+TRI = {
+	states = {
+		STATE_TRIPOLI
+		STATE_LIBYA
+		STATE_LIBYAN_DESERT
+		STATE_FEZZAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+FZN = {
+	states = {
+		STATE_FEZZAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+DFR = {
+	states = {
+		STATE_DARFUR
+	}
+	ai_will_do = { always = no }
+}
+
+ASH = {
+	states = {
+		STATE_GHANA
+	}
+	ai_will_do = { always = no }
+}
+
+DAH = {
+	states = {
+		STATE_DAHOMEY
+	}
+	ai_will_do = { always = no }
+}
+
+WAD = {
+	states = {
+		STATE_CHAD
+		STATE_WADDAI
+	}
+	ai_will_do = { always = no }
+}
+
+
+AIT = {
+	provinces = { x429B12 x9AF6A4 x8E7690 x2DF9DB x3A0E38 x0090A0 xB1BCFF x0C5C65 }
+	ai_will_do = { always = no }
+}
+
+CNW = {
+	provinces = { x1E38F8 x63EF7E xC900EF xA2DD9E }
+	
+	ai_will_do = { always = no }
+	
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+}

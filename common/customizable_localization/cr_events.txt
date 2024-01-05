@@ -1,0 +1,276 @@
+﻿#cr_shore_of_lake_superior = {
+#	type = country
+#	random_valid = no
+#	text = {
+#		localization_key = custom_cr_shore_of_lake_superior
+#	}
+#}
+#cr_lake_superior = {
+#	type = country
+#	random_valid = no
+#	text = {
+#		localization_key = custom_cr_lake_superior
+#	}
+#}
+
+cr_ordinal_numbers_localisation = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 1
+		}
+		localization_key = cr_first
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 2
+		}
+		localization_key = cr_second
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 3
+		}
+		localization_key = cr_third
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 4
+		}
+		localization_key = cr_fourth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 5
+		}
+		localization_key = cr_fifth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 6
+		}
+		localization_key = cr_sixth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 7
+		}
+		localization_key = cr_seventh
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 8
+		}
+		localization_key = cr_eight
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 9
+		}
+		localization_key = cr_ninth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 10
+		}
+		localization_key = cr_tenth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 11
+		}
+		localization_key = cr_eleventh
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 12
+		}
+		localization_key = cr_twelfth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 13
+		}
+		localization_key = cr_thirteenth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 14
+		}
+		localization_key = cr_fourteenth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 15
+		}
+		localization_key = cr_fifteenth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 16
+		}
+		localization_key = cr_sixteenth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 17
+		}
+		localization_key = cr_seventeenth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 18
+		}
+		localization_key = cr_eightteenth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 19
+		}
+		localization_key = cr_nineteenth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 20
+		}
+		localization_key = cr_twentieth
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter > 20
+		}
+		localization_key = cr_larger_than_twenty
+	}
+}
+
+cr_numbers_localisation = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 1
+		}
+		localization_key = cr_one
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 2
+		}
+		localization_key = cr_two
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 3
+		}
+		localization_key = cr_three
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 4
+		}
+		localization_key = cr_four
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 5
+		}
+		localization_key = cr_five
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 6
+		}
+		localization_key = cr_six
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 7
+		}
+		localization_key = cr_seven
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 8
+		}
+		localization_key = cr_eight
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 9
+		}
+		localization_key = cr_nine
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 10
+		}
+		localization_key = cr_ten
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 11
+		}
+		localization_key = cr_eleven
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 12
+		}
+		localization_key = cr_twelve
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 13
+		}
+		localization_key = cr_thirteen
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 14
+		}
+		localization_key = cr_fourteen
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 15
+		}
+		localization_key = cr_fifteen
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 16
+		}
+		localization_key = cr_sixteen
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 17
+		}
+		localization_key = cr_seventeen
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 18
+		}
+		localization_key = cr_eightteen
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 19
+		}
+		localization_key = cr_nineteen
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter = 20
+		}
+		localization_key = cr_twenty
+	}
+	text = {
+		trigger = {
+			global_var:cr_numbered_treaties_counter > 20
+		}
+		localization_key = cr_larger_than_twenty
+	}
+}

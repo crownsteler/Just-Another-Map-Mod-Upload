@@ -1,0 +1,87 @@
+﻿# Strategic Regions in West and South Asia
+
+region_anatolia = {
+	graphical_culture = "arabic"
+	capital_province = x66B13B
+	map_color = { 189 78 83 }
+	states = { STATE_KONYA STATE_ANKARA STATE_DIYARBAKIR STATE_ERZURUM STATE_ADANA }
+}
+
+region_levant = {
+	graphical_culture = "arabic"
+	map_color = { 141 171 110 }
+	states = { STATE_CYPRUS STATE_TRANSJORDAN STATE_PALESTINE STATE_LEBANON STATE_SYRIA STATE_ALEPPO }
+}
+
+region_iraq = {
+	graphical_culture = "arabic"
+	map_color = { 95 110 175 }
+	states = { STATE_BAGHDAD STATE_MOSUL STATE_KURDISTAN_IRAQ STATE_KHUZESTAN STATE_LURISTAN STATE_DEIR_EZ_ZOR }
+}
+
+region_arabic = {
+	graphical_culture = "arabic"
+	map_color = { 78 153 113 }
+	states = { STATE_HAIL STATE_NEJD STATE_BADIYA }
+}
+
+region_persia = {
+	graphical_culture = "arabic"
+	map_color = { 146 152 91  }
+	states = { STATE_ISFAHAN STATE_MAZANDARAN  STATE_FARS STATE_TABRIZ STATE_LARISTAN STATE_IRAKAJEMI STATE_HERAT STATE_KHORASAN STATE_TURKMENIA }
+}
+
+region_the_persian_gulf = {
+	graphical_culture = "arabic"
+	map_color = { 211 185 130 }
+	states = { STATE_ABU_DHABI STATE_HAJAR STATE_OMAN }
+}
+
+region_central_asia = {
+	graphical_culture = "arabic"
+	capital_province = x8ABC27
+	map_color = { 0.24 0.65 0.34 }
+	states = { STATE_KIRGHIZIA STATE_SEMIRECHE STATE_AKMOLINSK STATE_DZUNGARIA STATE_TIANSHAN STATE_URALSK STATE_SAMARA STATE_JETISY STATE_TURKISTAN STATE_TASHKENT STATE_UZBEKIA STATE_KHIVA STATE_TAJIKISTAN STATE_KHUDZHAND STATE_FERGANA STATE_ALAY STATE_KARAGANDA }
+}
+
+region_afghanistan = {
+	graphical_culture = "arabic"
+	capital_province = xEF9ECA
+	map_color = { 151 127 96 }
+	states = { STATE_MAZAR_I_SHARIF STATE_WESTERN_AFGHANISTAN STATE_SISTAN STATE_BALUCHISTAN STATE_EASTERN_AFGHANISTAN STATE_PASHTUNISTAN  }
+}
+
+region_caucasus = {
+	graphical_culture = "arabic"
+	capital_province = xFB38B0
+	map_color = { 1 0.1 0.2 }
+	states = { STATE_ARMENIA STATE_AZERBAIJAN STATE_DAGESTAN STATE_KUBAN STATE_GREATER_CAUCASUS STATE_ROSTOV STATE_ASTRAKHAN STATE_KARS }
+}
+
+region_south_india = {
+	graphical_culture = "arabic"
+	capital_province = x9A2EF3
+	map_color = { 0.607 0.843 0.337 }
+	states = { STATE_CEYLON STATE_CIRCARS STATE_MYSORE STATE_TRAVANCORE STATE_MADRAS STATE_HYDERABAD STATE_NAGPUR STATE_BOMBAY }
+}
+
+region_north_india = {
+	graphical_culture = "arabic"
+	capital_province = xB39D42
+	map_color = { 0.392 0.863 1 }
+	states = { STATE_DELHI STATE_AWADH STATE_SINDH STATE_PUNJAB STATE_RAJPUTANA STATE_GUJARAT STATE_CENTRAL_INDIA  }
+}
+
+region_bengal = {
+	graphical_culture = "arabic"
+	capital_province = x0A2277
+	map_color = { 0.43 0.36 0.73 }
+	states = { STATE_ORISSA STATE_BIHAR STATE_NORTH_BENGAL STATE_SOUTH_BENGAL STATE_ASSAM STATE_ARAKAN }
+}
+
+region_himalayas = {
+	graphical_culture = "asian"
+	capital_province = x06698A
+	map_color = { 177 207 205 }
+	states = { STATE_HIMALAYAS STATE_LHASA STATE_NGARI STATE_KASHMIR STATE_QINGHAI }
+}

@@ -1,0 +1,3 @@
+﻿
+#Treaty annuity payments
+cr_ontario_treaty_annuity_payments = 300

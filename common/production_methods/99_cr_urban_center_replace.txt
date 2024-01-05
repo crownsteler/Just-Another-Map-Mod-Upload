@@ -1,0 +1,130 @@
+﻿pm_traditional_art = {
+	texture = "gfx/interface/icons/production_method_icons/traditional_art.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { # 480 profit
+			goods_input_paper_add = 8 # 240
+			goods_input_copper_add = 2 # 80
+			goods_output_fine_art_add = 4 # 800
+		}
+	}
+}
+
+pm_realist_art = {
+	texture = "gfx/interface/icons/production_method_icons/realist_art.dds"
+
+	unlocking_technologies = {
+		realism
+	}
+
+	building_modifiers = {		
+	
+		workforce_scaled = { # 540 profit
+			goods_input_paper_add = 10 # 300
+			goods_input_copper_add = 4 # 160
+			goods_output_fine_art_add = 5 # 1000
+		}				
+	}
+}
+
+pm_photographic_art = {
+	texture = "gfx/interface/icons/production_method_icons/photographic_art.dds"
+
+	unlocking_technologies = {
+		camera
+	}
+	
+	building_modifiers = {		
+	
+		workforce_scaled = { # 620 profit
+			goods_input_paper_add = 10 # 300
+			goods_input_copper_add = 4 # 160
+			goods_input_tools_add = 8 # 320
+
+			goods_output_fine_art_add = 7 # 1400
+		}					
+	}
+}
+
+
+pm_hydroelectric_plant = {
+	texture = "gfx/interface/icons/production_method_icons/hydroelectric_plant.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	
+	building_modifiers = { 
+		workforce_scaled = {
+			goods_output_engines_add = 10 # x60 =  600
+			goods_output_copper_add = 15 # x40 =  600
+			goods_output_electricity_add = 70 # x30 2100 (profit 900)
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 1800
+			building_employment_engineers_add = 1200
+		}
+	}
+}
+
+pm_coal-fired_plant = {
+	texture = "gfx/interface/icons/production_method_icons/coal_fired_plant.dds"
+	
+	unlocking_technologies = {
+		steam_turbine
+	}				
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 50
+		}
+	}
+
+	building_modifiers = { 
+		workforce_scaled = {
+			goods_input_engines_add = 10 # x60 =  600
+			goods_input_copper_add = 15 # x40 =  600
+			goods_input_coal_add = 30 # x30 =  900
+			goods_output_electricity_add = 120 # x30 =  3600 (profit 1500)
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1400
+		}
+	}
+}
+
+pm_oil-fired_plant = {
+	texture = "gfx/interface/icons/production_method_icons/oil_fired_plant.dds"
+	
+	unlocking_technologies = {
+		oil_turbine
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 75
+		}
+	}
+
+	building_modifiers = { 
+		workforce_scaled = {
+			goods_input_engines_add = 10 # x60 =  600
+			goods_input_copper_add = 15 # x40 =  600
+			goods_input_oil_add = 30 # x40 =  1200
+			goods_output_electricity_add = 130 # x30 =  3900
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1400
+		}
+	}
+}

@@ -1,0 +1,14 @@
+﻿CHARACTERS = {
+	c:FZN = {
+		create_character = {
+			first_name = "abdel_jalil"
+			last_name = "saif_al_nasser"
+			historical = yes
+			ruler = yes
+			age = 48
+			interest_group = ig_landowners
+			traits = {
+				imperious
+			}
+		}	
+}

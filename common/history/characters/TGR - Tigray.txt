@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:TGR = {
+		create_character = {
+			# Sahle Selassie
+			#role = politician # Remove this line
+			first_name = "Wube"
+			last_name = "Haile_Maryam"
+			ruler = yes
+			age = 36
+			culture = cu:amhara
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			traits = {
+				ambitious imperious bandit 
+			}
+		}	
+	}
+}

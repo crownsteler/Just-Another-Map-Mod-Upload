@@ -1,0 +1,298 @@
+﻿namespace = cr_central_asia_events
+#need to look into Shabdan Batyr/Batir for more events
+
+cr_central_asia_events.1 = { #The Kazakh Khan / Tailak Baatyr
+	type = country_event
+	placement = p:xAA16B7
+
+	title = cr_central_asia_events.1.t
+	desc = cr_central_asia_events.1.d
+	flavor = cr_central_asia_events.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_courtroom_upheaval.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:KYZ
+		exists = c:KOK
+		ROOT = c:KOK
+		c:KYZ.ruler = {
+			has_variable = tailak_baatyr
+		}
+		p:xAA16B7.owner = c:KOK
+	}
+
+	immediate = {
+		c:KYZ = {
+			save_scope_as = cr_kyrgyzia
+		}
+		p:x9BB46B.owner = {
+			save_scope_as = cr_china
+		}
+	}
+
+	option = {
+		name = cr_central_asia_events.1.a #Kill Tailak Baatyr
+		default_option = yes
+		custom_tooltip = cr_central_asia_events.1.a_tt_2
+		custom_tooltip = cr_central_asia_events.1.a_tt
+		trigger = {
+			authority > 0
+		}
+		c:KYZ.ruler = {
+			kill_character = yes
+		}
+		change_infamy = 5
+		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
+			add_radicals = {
+				culture = cu:kirgiz
+				value = large_radicals
+			}
+		}
+		change_relations = {
+			country = c:KYZ
+			value = -25
+		}
+		hidden_effect = {
+			set_variable = {
+				name = cr_omran_is_coming
+			}
+		}
+		ai_chance = {
+			base = 95
+		}
+	}
+
+	option = {
+		name = cr_central_asia_events.1.b #Provoke Tailak Baatyr
+		c:KYZ= {
+			set_country_type = unrecognized
+		}
+		s:STATE_KIRGHIZIA = {
+			add_claim = c:KYZ
+		}
+		change_relations = {
+			country = c:KYZ
+			value = -50
+		}
+		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
+			add_radicals = {
+				culture = cu:kirgiz
+				value = very_large_radicals
+			}
+		}
+		remove_modifier = cr_disunifying_the_kyrgyz
+		ai_chance = {
+			base = 5
+		}
+	}
+	option = {
+		name = cr_central_asia_events.1.c
+		trigger = {
+			is_ai = no
+		}
+		c:KYZ= {
+			set_country_type = unrecognized
+		}
+		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
+			add_radicals = {
+				culture = cu:kirgiz
+				value = very_large_radicals
+			}
+		}
+		s:STATE_KIRGHIZIA = {
+			add_claim = c:KYZ
+		}
+		play_as = C:KYZ
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+cr_central_asia_events.5 = { #On the shores of the Issyk-Kul - Orman Khan's Kurultai
+	type = country_event
+	placement = p:xC8CDED
+
+	title = cr_central_asia_events.5.t
+	desc = cr_central_asia_events.5.d
+	flavor = cr_central_asia_events.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_upperclass_party.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+		ROOT = c:KOK
+		year < 1850
+		p:xAA16B7.owner = c:KOK
+		exists = c:KYZ
+		c:KYZ = {
+			is_country_type = decentralized
+			NOR = {
+				ruler = {
+					has_variable = tailak_baatyr
+				}
+				has_variable = cr_omran_is_coming
+				months = normal_modifier_time
+			}
+		}
+	}
+
+	immediate = {
+		c:KYZ = {
+			save_scope_as = cr_kyrgyzia
+		}
+		c:KYZ = {
+			set_country_type = unrecognized
+			create_character = {
+				first_name = "Ormon"
+				last_name = "Khan"
+				ruler = yes
+				birth_date = 1790.1.1
+				culture = cu:kirgiz
+				interest_group = ig_armed_forces
+				female = no
+				noble = yes
+				ideology = ideology_reformer
+				traits = {
+					charismatic
+					ambitious
+					cruel
+					basic_political_operator
+					mountain_commander
+				}
+				on_created = {
+					set_variable = orman_khan
+				}
+			}
+		}
+		
+	}
+
+	option = {
+		name = cr_central_asia_events.5.a #Orman is made khan
+		default_option = yes
+		custom_tooltip = cr_central_asia_events.5.a_tt
+		s:STATE_KIRGHIZIA = {
+			add_claim = c:KYZ
+		}
+		change_relations = {
+			country = c:KYZ
+			value = -25
+		}
+		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
+			add_radicals = {
+				culture = cu:kirgiz
+				value = large_radicals
+			}
+		}
+		remove_modifier = cr_disunifying_the_kyrgyz
+		#hidden_effect = {
+		#	set_country_type = unrecognized
+		#}
+		ai_chance = {
+			base = 25
+		}
+	}
+	option = {
+		name = cr_central_asia_events.5.b #Perhaps we can ensure his support
+		trigger = {
+			influence > 0
+		}
+		custom_tooltip = cr_central_asia_events.5.b_tt
+		custom_tooltip = cr_central_asia_events.5.b_tt_2
+		remove_modifier = cr_disunifying_the_kyrgyz
+		add_modifier = {
+			name = cr_dealing_with_the_kyrgyz #-100 influence
+			years = 5
+		}
+		change_relations = {
+			country = c:KYZ
+			value = 15
+		}
+		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
+			add_radicals = {
+				culture = cu:kirgiz
+				value = medium_radicals
+			}
+		}
+		#hidden_effect = {
+		#	c:KYZ = {
+		#		set_country_type = unrecognized
+		#	}
+		#}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 25
+				influence > 125
+			}
+		}
+	}
+
+	option = {
+		name = cr_central_asia_events.5.c #Disunify the clans
+		custom_tooltip = cr_central_asia_events.5.c_tt
+		custom_tooltip = cr_central_asia_events.5.c_tt_2
+		trigger = {
+			authority > 0
+		}
+		c:KYZ = {
+			set_country_type = decentralized
+		}
+		change_relations = {
+			country = c:KYZ
+			value = -25
+		}
+		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
+			add_radicals = {
+				culture = cu:kirgiz
+				value = medium_radicals
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 25
+				authority >175
+			}
+		}
+	}
+	option = {
+		name = cr_central_asia_events.5.e
+		trigger = {
+			is_ai = no
+		}
+		#hidden_effect = {
+		#	c:KYZ = {
+		#		set_country_type = unrecognized
+		#	}
+		#}
+		play_as = C:KYZ
+		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
+			add_radicals = {
+				culture = cu:kirgiz
+				value = large_radicals
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}

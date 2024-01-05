@@ -1,0 +1,2117 @@
+#####################
+#####################
+#					#
+#	    Europe		#
+#					#
+#####################
+
+NET_communist = { # Dutch communism
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {		
+		texture = "ce_stripes_02_bottom_lithuania.dds"
+		color1 = "blue"
+		color2 = "white"
+	}
+
+	colored_emblem = {		
+		texture = "ce_hammer_and_sickle_round.dds"
+		color1 = "yellow"
+        instance = { position = { 0.25 0.25 } scale = { 0.33 0.33 } }
+	}
+}
+
+CSP = { # Carlists
+	
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {		
+		texture = "ce_cross_burgundy.dds"
+		color1 = "red"
+	}
+}
+
+SPA_carlists = { # Carlists
+	
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {		
+		texture = "ce_cross_burgundy.dds"
+		color1 = "red"
+	}
+}
+
+MON_communist = { # Communist
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "montenegro_blue"
+		color2 = "white"
+	}
+	colored_emblem = {
+		texture = "ce_star_05_pinwheeled.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.66 0.66 } position = { 0.5 0.5 } }	
+	}
+	colored_emblem = {
+		texture = "ce_star_05_pinwheeled.dds"
+		color1 = "red"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.5 } }	
+	}
+	
+}
+
+MON_principality_alternative = { # Principality of Montenegro no monogram variant
+	pattern = "pattern_border_double.dds"
+	color1 = "red"
+	color2 = "red"
+	color3 = "white"
+	
+	colored_emblem = {
+		texture = "ce_eagle_doubleheaded_base.dds"
+		color1 = "white"
+		color2 = "yellow"
+		color3 = "white"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_eagle_claws.dds"
+		color1 = "yellow"
+		color2 = "blue"
+		color3 = "white"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_crown_imperial_russia.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		color3 = "red"
+		instance = { scale = { 0.23 0.23 } position = { 0.5 0.18 } }			
+	}
+	colored_emblem = {
+		texture = "ce_shield_accolade_03.dds"
+		color1 = "white"
+		color2 = "yellow"
+		instance = { scale = { 0.38 0.38 } position = { 0.5 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_lion_statant_guardant.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.21 0.21 } position = { 0.50 0.48 } }			
+	}
+}
+
+MON_principality_absolutist = { # Principality of Montenegro
+	pattern = "pattern_border_double.dds"
+	color1 = "red"
+	color2 = "red"
+	color3 = "white"
+	
+	colored_emblem = {
+		texture = "ce_eagle_doubleheaded_base.dds"
+		color1 = "white"
+		color2 = "yellow"
+		color3 = "white"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.4 } }			
+	}
+	colored_emblem = {
+		texture = "ce_eagle_claws.dds"
+		color1 = "yellow"
+		color2 = "blue"
+		color3 = "white"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.4 } }			
+	}
+	colored_emblem = {
+		texture = "ce_crown_imperial_russia.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		color3 = "red"
+		instance = { scale = { 0.18 0.18 } position = { 0.5 0.17 } }			
+	}
+	colored_emblem = {
+		texture = "ce_shield_accolade_03.dds"
+		color1 = "white"
+		color2 = "yellow"
+		instance = { scale = { 0.27 0.27 } position = { 0.5 0.4 } }			
+	}
+	colored_emblem = {
+		texture = "ce_letter_h.dds"
+		color1 = "red"
+		instance = { scale = { 0.10 0.15 } position = { 0.48 0.4 } }			
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "red"
+		instance = { scale = { 0.03 0.03 } position = { 0.504 0.43 } }			
+	}
+	colored_emblem = {
+		texture = "ce_letter_i.dds"
+		color1 = "red"
+		instance = { scale = { 0.10 0.15 } position = { 0.52 0.4 } }			
+	}
+	colored_emblem = {
+		texture = "ce_lion_statant_guardant.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.27 0.27 } position = { 0.50 0.8 } }			
+	}
+}
+
+MON_republic = { # Republic of Montenegro
+	pattern = "pattern_border_double.dds"
+	color1 = "red"
+	color2 = "red"
+	color3 = "yellow"
+	instance = { scale = { 1.33 1.33 } } #position = { 0.50 0.8 } 
+
+	colored_emblem = {
+		texture = "ce_eagle_doubleheaded_base.dds"
+		color1 = "yellow"
+		color2 = "yellow_dark"
+		color3 = "red"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_eagle_claws.dds"
+		color1 = "yellow"
+		color2 = "montenegro_blue"
+		color3 = "yellow_dark"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = "yellow"
+		color2 = "yellow_dark"
+		color3 = "montenegro_blue"
+		instance = { scale = { 0.23 0.23 } position = { 0.5 0.18 } }			
+	}
+	colored_emblem = {
+		texture = "ce_shield_accolade_03.dds"
+		color1 = "montenegro_blue"
+		color2 = "yellow"
+		instance = { scale = { 0.38 0.38 } position = { 0.5 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_lion_statant_guardant.dds"
+		color1 = "yellow"
+		color2 = "yellow_dark"
+		instance = { scale = { 0.21 0.21 } position = { 0.50 0.48 } }			
+	}
+}
+
+MON_kingdom = { # Kingdom of Montenegro
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "montenegro_blue"
+		color2 = "white"
+	}
+	colored_emblem = {
+		texture = "ce_eagle_doubleheaded_base.dds"
+		color1 = "white"
+		color2 = "yellow"
+		color3 = "white"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_eagle_claws.dds"
+		color1 = "yellow"
+		color2 = "blue"
+		color3 = "white"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_crown_imperial_russia.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		color3 = "blue"
+		instance = { scale = { 0.23 0.23 } position = { 0.5 0.18 } }			
+	}
+	colored_emblem = {
+		texture = "ce_shield_accolade_03.dds"
+		color1 = "red"
+		color2 = "yellow"
+		instance = { scale = { 0.38 0.38 } position = { 0.5 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_lion_statant_guardant.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.21 0.21 } position = { 0.50 0.48 } }			
+	}
+}
+
+MON_theocracy = { # Prince-Bishopric Montenegro
+	pattern = "pattern_border_double.dds"
+	color1 = "red"
+	color2 = "red"
+	color3 = "white"
+	
+	colored_emblem = {
+		texture = "ce_cross_patty.dds"
+		color1 = "white"
+		instance = { scale = { 0.66 0.66 } position = { 0.5 0.5 } }			
+	}
+}
+
+#####################
+#					#
+#	  Indonesia		#
+#					#
+#####################
+
+BDJ = { # Bandjar - absolute_monarchy
+	
+	pattern = "pattern_border_of_3_decorated.dds"
+	color1 = "siak_yellow"
+	color2 = "white"
+	color3 = "gunung_orange"
+
+	colored_emblem = {		
+		texture = "ce_star_16_bright.dds"
+		color1 = "gunung_orange_dark"
+        instance = { position = { 0.50 0.50 } scale = { 0.75 0.75 } }
+	}
+	
+	colored_emblem = {		
+		texture = "ce_star_08.dds"
+		color1 = "blue"
+        instance = { position = { 0.50 0.50 } scale = { 0.70 0.70 } }
+	}
+	
+	colored_emblem = {		
+		texture = "ce_inti.dds"
+		color1 = "gunung_orange_dark"
+        instance = { position = { 0.50 0.50 } scale = { 0.20 0.20 } }
+	}
+	
+	colored_emblem = {		
+		texture = "ce_frame_circle_doted.dds"
+		color1 = "gunung_orange"
+        instance = { position = { 0.50 0.50 } scale = { 0.10 0.10 } }
+	}
+	
+	colored_emblem = {		
+		texture = "ce_circle.dds"
+		color1 = "gunung_orange_dark"
+        instance = { position = { 0.50 0.50 } scale = { 0.5 0.5 } }
+	}
+}
+
+BTN = { # Buton
+	
+	pattern = "pattern_verical_bicolor_third.dds"
+	color1 = rgb { 40 164 148 }
+	color2 = rgb { 213 196 57 }
+
+	colored_emblem = {		
+		texture = "ce_shahada_rotated.dds"
+		color1 = "white"
+	}
+
+	colored_emblem = {		
+		texture = "ce_border_checkered.dds"
+		color1 = "white"
+		color2 = rgb { 40 164 148 }
+	}
+
+	colored_emblem = {		
+		texture = "ce_border_checkered.dds"
+		color1 = "white"
+		color2 = rgb { 40 164 148 }
+        instance = { position = { 0.20 2.00 } scale = { -1.00 1.00 } }
+	}
+}
+
+DJA = { #flag based on coat of arms
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "siak_yellow"
+		color2 = "matan_green"
+	}
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "siak_yellow"
+        instance = { position = { 0.50 0.50 } scale = { 0.70 1.00 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_crossed_kris_daggers.dds"
+		color1 = "black"
+        instance = { position = { 0.50 0.50 } scale = { 0.75 0.75 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_crossed_kris_daggers.dds"
+		color1 = "jambi_blue"
+        instance = { position = { 0.50 0.50 } scale = { 0.70 0.70 } }
+	}
+	
+}
+
+DJA_absolute_monarchy = { # Djambi
+	# Starting flag
+	
+	pattern = "pattern_solid.tga"
+	color1 = "jambi_blue"
+
+	colored_emblem = {		
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"
+        instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
+	}
+}
+
+#KTI = { # Kutai
+#	# Starting flag
+#	
+#	pattern = "pattern_solid.tga"
+#	color1 = rgb { 255 231 24 }
+#
+#	colored_emblem = {		
+#		texture = "ce_kutai_crown.dds"
+#		color1 = "white"
+#        instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_tiger_passant.dds"
+#		color1 = rgb { 205 205 205 }
+#		color2 = rgb { 205 205 205 }
+#		color3 = black
+#        instance = { position = { 0.55 0.5 } scale = { 0.85 0.85 } }
+#	}
+#}
+
+LDK_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "landak_blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "siak_yellow"
+		color2 = "red"
+	}
+}
+
+LDK = { #absolute_monarchy
+	pattern = "pattern_solid.tga"
+	color1 = "landak_blue"
+
+	colored_emblem = {
+		texture = "ce_eternal_knot.dds"
+		color1 = "white"
+        instance = { position = { 0.50 0.50 } scale = { 0.40 0.40 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_wreath.dds"
+		color1 = "white"
+        instance = { position = { 0.50 0.50 } scale = { 0.75 0.75 } }
+	}
+	
+}
+
+PTU = { #Fictional
+	pattern = "pattern_solid.tga"
+	color1 = "yellow_dark"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		#color1 = "white"		
+		color1 = "green"		
+	}	
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "black"	
+        instance = { position = { 0.165 0.50 } scale = { 0.33 1.00 } }	
+	}
+	
+	colored_emblem = {
+		texture = "ce_crescent_star_06.dds"
+		color1 = "white"	
+        instance = { position = { 0.2 0.275 } scale = { 0.33 0.33 } }	
+	}	
+	
+}
+
+RIA = { # Riau-Lingga
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_crescent_large.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.45 0.50 } }			
+	}
+	colored_emblem = {
+		texture = "ce_star_05_tilted.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.20 0.20 } position = { 0.65 0.50 } }			
+	}	
+}
+RIA_absolute_monarchy = { # Riau-Lingga
+	# Flag as set in the treaty of 1818
+	# Starting flag
+	
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {		
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"
+        instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
+	}
+}
+RIA_republic = {
+	# 1949-1950
+	
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_bicolor_top.dds"
+		color1 = "riau_green"
+		color2 = "riau_green"
+	}
+}
+RIA_dictatorship = {
+	pattern = "pattern_border_of_3.dds"
+	color1 = "yellow"
+	color2 = "riau_green"
+
+}
+RIA_theocracy = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_crescent_star.dds"
+		color1 = "riau_green"
+		color2 = "riau_green"
+		instance = { scale = { 0.5 0.5 } position = { 0.45 0.50 } }			
+	}
+}
+RIA_subject = {
+	# Yellow border to better distinguish from Turkey
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.44 0.44 } position = { 0.75 0.5 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_crescent_star_turkey.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.32 0.32 } position = { 0.75 0.5 } }			
+	}	
+}
+
+MGK = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "red"
+		color2 = "yellow"
+	}
+}
+
+MGK_theocracy = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {
+		texture = "ce_shahada.dds"
+		color1 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }		
+	}	
+
+}
+
+
+MTN= {
+	pattern = "pattern_solid.tga"
+	color1 = "matan_green"
+
+	colored_emblem = {
+		texture = "ce_eternal_knot.dds"
+		color1 = "yellow"
+        instance = { position = { 0.50 0.40 } scale = { 0.60 0.60 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_scimitar.dds"
+		color1 = "yellow"
+        instance = { position = { 0.50 0.80 } scale = { 0.40 0.40 } }
+	}
+	
+}
+
+MTN_republic = { #base design
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "matan_green"
+	}
+}
+
+PNK = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_crescent_star_05_pale.dds"
+		color1 = "riau_green"
+	}
+}
+
+SAK_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "siak_yellow"
+		color2 = "siak_green"
+	}
+}
+
+SAK = {
+	pattern = "pattern_solid.tga"
+	color1 = "siak_yellow"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+        instance = { position = { 0.25 0.33 } scale = { 0.60 0.60 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_siak_coat.dds"
+		color1 = "red"
+        instance = { position = { 0.25 0.33 } scale = { 0.50 0.50 } }
+	}
+}
+
+SMB = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_stripe_center.dds"
+		color1 = "white"
+	}
+}
+
+SOE = {
+	pattern = "pattern_solid.tga"
+	color1 = "javan_red"
+
+	colored_emblem = {
+		texture = "ce_stripes_11.dds"
+		color1 = "white"
+	}
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "javan_red"
+        instance = { position = { 0.50 0.75 } scale = { 0.50 1.00 } }
+	}
+}
+
+SOE_absolute_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "javan_red"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "javan_red"
+	}
+}
+
+TGU = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "black"
+        instance = { position = { 0.50 0.50 } scale = { 0.85 0.85 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_crescent_star_05.dds"
+		color1 = "white"	
+		instance = { scale = { 0.66 0.66 } position = { 0.5 0.5 } }
+	}		
+}
+
+TID = {
+	pattern = "pattern_solid.tga"
+	color1 = "siak_yellow"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "black"
+        instance = { position = { 0.50 0.50 } scale = { 0.55 0.55 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+        instance = { position = { 0.50 0.50 } scale = { 0.50 0.50 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_takbir.dds"
+		color1 = "black"
+        instance = { position = { 0.50 0.50 } scale = { 0.45 0.45 } }
+	}	
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "black"
+        instance = { position = { 0.00 0.00 } scale = { 0.55 0.55 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+        instance = { position = { 0.00 0.00 } scale = { 0.50 0.50 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "black"
+        instance = { position = { 1.00 1.00 } scale = { 0.55 0.55 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+        instance = { position = { 1.00 1.00 } scale = { 0.50 0.50 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "black"
+        instance = { position = { 1.00 0.00 } scale = { 0.55 0.55 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+        instance = { position = { 1.00 0.00 } scale = { 0.50 0.50 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "black"
+        instance = { position = { 0.00 1.00 } scale = { 0.55 0.55 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+        instance = { position = { 0.00 1.00 } scale = { 0.50 0.50 } }
+	}
+
+
+}
+
+TDR_theocracy = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal_thick.dds"
+		color1 = "siak_yellow"
+		color2 = "siak_yellow"
+	}
+	
+	colored_emblem = {
+		texture = "ce_shahada_02.dds"
+		color1 = "red"
+        instance = { position = { 0.50 0.12 } scale = { 1.00 1.00 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_frame_circle_triangles.dds"
+		color1 = "red"
+        instance = { position = { 0.50 0.60 } scale = { 0.66 0.66 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_frame_circle_outline.dds"
+		color1 = "red"
+        instance = { position = { 0.50 0.60 } scale = { 0.45 0.45 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_takbir.dds"
+		color1 = "red"
+        instance = { position = { 0.50 0.60 } scale = { 0.30 0.30 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "red"
+        instance = { position = { 0.80 0.45 } scale = { 0.15 0.15 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "red"
+        instance = { position = { 0.80 0.75 } scale = { 0.15 0.15 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "red"
+        instance = { position = { 0.85 0.60 } scale = { 0.20 0.05 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "red"
+        instance = { position = { 0.20 0.45 } scale = { -0.15 0.15 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "red"
+        instance = { position = { 0.20 0.75 } scale = { -0.15 0.15 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "red"
+        instance = { position = { 0.15 0.60 } scale = { 0.20 0.05 } }
+	}
+}
+
+TRT = {
+	pattern = "pattern_solid.tga"
+	color1 = "siak_yellow"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+        instance = { position = { 0.50 0.50 } scale = { 0.60 0.60 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_takbir.dds"
+		color1 = "black"
+        instance = { position = { 0.50 0.50 } scale = { 0.50 0.50 } }
+	}
+}
+
+TRT_republic = {
+	pattern = "pattern_border_of_3.dds"
+	color1 = "siak_yellow"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+        instance = { position = { 0.50 0.50 } scale = { 0.70 0.70 } }
+	}
+	
+	
+	colored_emblem = {
+		texture = "ce_gandaberunda.dds"
+		color1 = "gunung_orange"
+		color2 = "red"
+        instance = { position = { 0.50 0.50 } scale = { 0.66 0.66 } }
+	}
+}
+
+YOG = { #absolute_monarchy
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_frame_square.dds"
+		color1 = "red"
+        instance = { position = { 0.50 0.50 } scale = { 0.66 0.66 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_gunelve.dds"
+		color1 = "white"
+        instance = { position = { 0.50 0.50 } scale = { 0.60 0.60 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_pattern_bukhara.dds"
+		color1 = "red"
+        instance = { position = { 0.85 0.85 } scale = { 0.33 0.33 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_pattern_bukhara.dds"
+		color1 = "red"
+        instance = { position = { 0.15 0.85 } scale = { -0.33 0.33 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_pattern_bukhara.dds"
+		color1 = "red"
+        instance = { position = { 0.85 0.15 } scale = { 0.33 -0.33 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_pattern_bukhara.dds"
+		color1 = "red"
+        instance = { position = { 0.15 0.15 } scale = { -0.33 -0.33 } }
+	}
+}
+
+GTB = {
+	pattern = "pattern_solid.tga"
+	color1 = "siak_yellow"
+
+	colored_emblem = {
+		texture = "ce_frame_square.dds"
+		color1 = "white"
+        instance = { position = { 0.0475 0.5 } scale = { 0.12 1.20 } }
+	}
+	colored_emblem = {
+		texture = "ce_zulfikar.dds"
+		color1 = "gunung_orange"
+        instance = { position = { 0.40 0.33 } scale = { -0.66 0.66 } }
+	}
+}
+
+BIM = {
+	pattern = "pattern_solid.tga"
+	color1 = "siak_yellow"
+
+	colored_emblem = {
+		texture = "ce_lotus.dds"
+		color1 = "red"
+        instance = { position = { 0.50 0.50 } scale = { 0.80 0.80 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_gandaberunda.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { position = { 0.50 0.50 } scale = { 0.66 0.66 } }
+	}
+}
+
+BON = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_cr_boni_garuda.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}	
+}
+
+
+SBW = {
+	pattern = "pattern_border_west_africa_03.dds"
+	color1 = rgb { 36 52 178 }
+	color2 = rgb { 205 205 205 }
+	color3 = "black"
+	
+	colored_emblem = {
+		texture = "ce_star_05_tilted.dds"
+		color1 = rgb { 205 205 205 }
+        instance = { position = { 0.2 0.3 } scale = { 0.2 0.2 } }	
+        instance = { position = { 0.2 0.7 } scale = { -0.2 0.2 } }	
+	}
+	colored_emblem = {
+		texture = "ce_tiger_passant.dds"
+		color1 = rgb { 205 205 205 }
+		color2 = rgb { 205 205 205 }
+		color3 = black
+        instance = { position = { 0.55 0.5 } scale = { 0.85 0.85 } }
+	}
+}
+
+
+SMN = {
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = "white"
+	color2 = "red"
+	
+	colored_emblem = {
+		texture = "ce_stripes_04.dds"
+		color1 = "black"
+        instance = { position = { 0.50 0.50 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_stripes_04.dds"
+		color1 = "yellow"
+        instance = { position = { 0.50 1.00 } }
+	}
+}
+
+#######################
+#					  #
+#Arabia & North Africa#
+#					  #
+#######################
+
+AZA = { # Anazzah
+	pattern = "pattern_solid.tga"
+	color1 = "anazzah_red"
+	
+	colored_emblem = {
+		texture = "ce_crossed_scimitars.dds"
+		color1 = "white"
+		instance = { scale = { 0.80 0.80 } position = { 0.5 0.5 } }			
+	}	
+}
+
+ASR = { # Asir
+	pattern = "pattern_border_west_africa_03.dds"
+	color1 = "green"
+	color2 = "white"
+	color3 = "black"
+	
+	colored_emblem = {
+		texture = "ce_shahada.dds"
+		color1 = "white"
+		instance = { scale = { 0.80 0.80 } position = { 0.5 0.5 } }			
+	}	
+}
+
+BHN = { # Bahrain
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_left_third_indented.dds"
+		color1 = "white"
+		instance = { scale = { 1.00 1.00 } position = { 0.5 0.5 } }			
+	}	
+}
+
+#BNB = { #Beni Abbas
+#	pattern = "pattern_solid.tga"
+#	color1 = "red"
+#	
+#	colored_emblem = {
+#		texture = "ce_tricolor_horizontal_thick.dds"
+#		color1 = "green"
+#		color2 = "red"
+#		instance = { scale = { 1.00 1.00 } position = { 0.5 0.5 } }			
+#	}
+#	
+#	colored_emblem = {
+#		texture = "ce_takbir.dds"
+#		color1 = "yellow"
+#		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }			
+#	}
+#}
+#
+#CNS = { #Beylik of Constantine
+#	pattern = "pattern_solid.tga"
+#	color1 = "red"
+#	
+#	colored_emblem = {
+#		texture = "ce_addorsed_scimitars.dds"
+#		color1 = "white"
+#		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }		
+#	}
+#}
+
+DRU = {
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = "red"
+	color2 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_stripes_04.dds"
+		color1 = "yellow"
+        instance = { position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_stripes_04.dds"
+		color1 = "white"
+        instance = { position = { 0.50 1.00 } }
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "green"
+		instance = { scale = { 0.8 1.00 } position = { 0.0 0.5 } }			
+	}	
+}
+
+FDH = { # Fadhili
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "green"
+		color2 = "blue_light"
+		instance = { scale = { 1.00 1.00 } position = { 0.5 0.5 } }			
+	}
+	
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "white"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }			
+	}	
+	
+	colored_emblem = {
+		texture = "ce_star_05_pinwheeled.dds"
+		color1 = "white"
+		instance = { scale = { 0.30 0.30 } position = { 0.6 0.5 } }			
+	}	
+}
+
+HDJ = { # Mecca Sharifate
+	pattern = "pattern_solid.tga"
+	color1 = "hashemite_red"
+	
+	colored_emblem = {
+		texture = "ce_shahada.dds"
+		color1 = "white"
+		instance = { scale = { 0.60 0.33 } position = { 0.5 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_flagmod_shahadah_circle.dds"
+		color1 = "white"
+		instance = { scale { 0.175 0.175 } position = { 0.15 0.5 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_frame_circle_doted.dds"
+		color1 = "white"
+		instance = { scale { 0.2 0.2 } position = { 0.15 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_07.dds"
+		color1 = "white"
+		instance = { scale = { 0.20 0.20 } position = { 0.85 0.5 } }			
+	}
+}
+
+
+KAT = { # Kathiri
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "green"
+		color2 = "yellow"
+		instance = { scale = { 1.00 1.00 } position = { 0.5 0.5 } }			
+	}
+	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "red"
+		instance = { scale = { 1.15 1.00 } position = { 0.0 0.5 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		instance = { scale = { 0.18 0.18 } position = { 0.30 0.5 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		instance = { scale = { 0.18 0.18 } position = { 0.15 0.33 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		instance = { scale = { 0.18 0.18 } position = { 0.15 0.67 } }			
+	}	
+}
+
+KWT = { # Kuwait
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_left_third_indented.dds"
+		color1 = "white"
+		instance = { scale = { 1.25 1.00 } position = { 0.25 0.5 } }			
+	}	
+}
+
+MAH = { # Mahra
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 1.00 1.00 } position = { 0.5 0.5 } }			
+	}
+	
+	colored_emblem = {
+		texture = "ce_crescent_star_turkey.dds"
+		color1 = "black"
+		instance = { scale = { 0.20 0.20 } position = { 0.5 0.5 } }			
+	}	
+}
+
+NEJ = { # Nejd
+	# 1822-90
+	
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_thick.dds"
+		color1 = "green"
+		color2 = "white"
+		instance = { scale = { 1.00 1.00 } position = { 0.5 0.5 } }			
+	}
+	
+	colored_emblem = {
+		texture = "ce_shahada.dds"
+		color1 = "white"
+		instance = { scale = { 0.66 0.66 } position = { 0.5 0.5 } }			
+	}	
+}
+
+NJR = { # Najran
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+}
+
+RUB = { #Rub al-Khali
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "anazzah_red"
+		instance = { scale = { 0.5 0.5 } position = { 0.25 0.3 } }			
+	}	
+}
+
+
+SSS = { # Souss / Shilha
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {		
+		texture = "ce_solid.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.7 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {		
+		texture = "ce_checker_06.dds"
+		color1 = "black"
+		instance = { scale = { 0.5 0.7 } position = { 0.5 0.5 } }
+	}
+}
+
+ZWA = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_hand.dds"
+		color1 = "white"
+		instance = { scale = { -0.55 0.55 }	position = { 0.5 0.5 }	}
+	}
+	colored_emblem = {
+		texture = "ce_crescent_rotated.dds"
+		color1 = "white"
+		instance = { scale = { 0.4 -0.4 }	position = { 0.2 0.25 }	}
+	}
+	colored_emblem = {
+		texture = "ce_crescent_rotated.dds"
+		color1 = "white"
+		instance = { scale = { -0.4 -0.4 }	position = { 0.8 0.25 }	}
+	}
+	colored_emblem = {
+		texture = "ce_crescent_rotated.dds"
+		color1 = "white"
+		instance = { scale = { 0.4 0.4 }	position = { 0.2 0.75 }	}
+	}
+	colored_emblem = {
+		texture = "ce_crescent_rotated.dds"
+		color1 = "white"
+		instance = { scale = { -0.4 0.4 }	position = { 0.8 0.75 }	}
+	}
+}
+
+
+HRB = {
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = "red"
+	color2 = "blue"
+
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "white"
+		instance = { scale = { 1.35 1.0 } position = { 1.0 0.5 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "white"
+		instance = { scale = { 0.3 0.3 }	position = { 0.2 0.25 }	}
+		instance = { scale = { 0.3 0.3 }	position = { 0.2 0.75 }	}
+	}
+}
+
+
+KBL = { # Kabul
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {
+		texture = "ce_sunburst.dds"
+		color1 = "white"		
+	}
+	
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "black"	
+		instance = { scale = { 0.60 0.60 }	position = { 0.5 0.5 }	}	
+	}	
+	colored_emblem = {
+		texture = "ce_flagmod_shahadah_circle.dds"
+		color1 = "white"
+		instance = { scale { 0.35 0.35 } position = { 0.5 0.5 } }
+	}
+}
+
+
+HRT = { # Herat
+	
+	pattern = "pattern_solid.tga"
+	color1 = "herat_green"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "herat_green"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }			
+	}	
+}
+
+
+ARO = { #Shilluk
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {		
+		texture = "ce_solid.dds"
+		color1 = "red"
+		instance = { scale = { 0.35 0.5 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {		
+		texture = "ce_solid.dds"
+		color1 = "black"
+		instance = { scale = { 0.25 0.4 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {		
+		texture = "ce_nguni_shield.dds"
+		color1 = "yellow"
+		color2 = "red"
+		instance = { scale = { 0.35 0.35 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {		
+		texture = "ce_eagle_italy_fascist.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.35 0.35 } position = { 0.5 0.15 } }
+	}
+	colored_emblem = {		
+		texture = "ce_crown_st_edward.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "red"
+		instance = { scale = { 0.3 0.4 } position = { 0.2 0.5 } }
+		instance = { scale = { 0.3 0.4 } position = { 0.8 0.5 } }
+	}
+}
+
+CAY = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {		
+		texture = "ce_crescent.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.65 0.65 } position = { 0.6 0.5 } }	
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.7 1.0 } position = { 0.0 0.5 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "red"
+		instance = { scale = { 0.6 0.9 } position = { 0.0 0.5 } }			
+	}	
+}
+
+SUK = { #Shilluk
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_hexacolor_horizontal.dds"
+		color1 = "black"
+		color2 = "white"
+	}	
+}
+
+
+WTL = {
+	pattern = "pattern_vertical_split_01.tga"
+	color1 = "white"
+	color2 = "red"
+	
+	colored_emblem = {
+		texture = "ce_star_05_pinwheeled.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }	
+	}	
+}
+
+#####################
+#					#
+#	    India		#
+#					#
+#####################
+
+AGP = { #Arunachal Pradesh
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_rising_sun.dds"
+		color1 = "yellow"	
+	}
+	
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "red"		
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.65 } }
+	}	
+}
+
+BHW = { #Bahawalpur
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "green"	
+	}	
+	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "black"
+		instance = { scale = { 1.15 1.00 } position = { 0.0 0.5 } }			
+	}	
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.66 0.30 } position = { 0.75 0.5 } }			
+	}	
+	
+	colored_emblem = {
+		texture = "ce_crescent_star_05.dds"
+		color1 = "white"
+		instance = { scale = { 0.45 0.45 } position = { 0.20 0.5 } }			
+	}		
+}
+
+GHW= { #Surguja 
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "green"	
+	}	
+}
+
+JHS = { #Jhansi 
+	pattern = "pattern_per_bend.dds"
+	color1 = "white"
+	color2 = "orange"
+}
+
+KHP = { #Kolhapur
+	pattern = "pattern_solid.tga"
+	color1 = "orange"
+	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "white"
+		instance = { scale = { 0.8 1.0 } position = { 1.0 0.5 } }	
+	}	
+}
+
+KTA = { #Kota
+	pattern = "pattern_solid.tga"
+	color1 = "orange"
+	
+	colored_emblem = {
+		texture = "ce_gandaberunda.dds"
+		color1 = "brown"
+		color2 = "white"
+		color3 = "white"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }	
+	}	
+}
+
+KSM = { #Jammu
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal_thick.dds"
+		color1 = "red"	
+		color2 = "yellow"	
+	}	
+	
+	colored_emblem = {
+		texture = "ce_sunburst.dds"
+		color1 = "yellow"	
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.5 } }	
+	}	
+}
+
+KSM_republic = { #Kashmir Republic
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_kashmir_coat.dds"
+		color1 = "white"
+		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }	
+	}	
+}
+
+LAS = { #Las Bela
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = "green"
+	color2 = "black"
+	
+	colored_emblem = {
+		texture = "ce_stripes_04.dds"
+		color1 = "red"
+        instance = { position = { 0.50 0.50 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_stripes_04.dds"
+		color1 = "white"
+        instance = { position = { 0.50 1.00 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_crescent_star_05_rotated.dds"
+		color1 = "white"
+        instance = { scale = { 0.6 0.6 } position = { 0.75 0.25 } }
+	}
+}
+
+LDH = { #Based on the Ladakh nationalist flag for lack of anything better
+	pattern = "pattern_solid.tga"
+	color1 = "light_blue"
+	
+	colored_emblem = {
+		texture = "ce_border_decor_india.dds"
+		color1 = "light_blue"
+		color2 = "saffron"
+		color3 = "blue"
+		instance = { scale = { -1.0 1.0 } position = { 0.5 0.5 } }	
+	}	
+	
+	colored_emblem = {
+		texture = "ce_dharmachakra.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.375 } }	
+	}	
+	
+	colored_emblem = {
+		texture = "ce_crescent_nepal.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.50 } }	
+	}	
+}
+
+
+MPU = { #Using vanilla assets isn't brilliant
+	pattern = "pattern_solid.tga"
+	color1 = "roman_red"
+	
+	colored_emblem = {
+		texture = "ce_eternal_knot.dds"
+		color1 = "white"
+		instance = { scale = { 0.75 0.75 } position = { 0.50 0.50 } }
+	}	
+}
+
+
+NGL = { #Based on the Unofficial flag of Nagaland on Wikipedia
+	pattern = "pattern_solid.tga"
+	color1 = "light_blue"
+	
+	colored_emblem = {
+		texture = "ce_star_06.dds"
+		color1 = "white"
+		instance = { scale = { 0.33 0.33 } position = { 0.200 0.225 } }
+	}
+	colored_emblem = {
+		texture = "ce_bend_sinister.dds"
+		color1 = "red"
+		instance = { scale = { 1.00 1.00 } position = { 0.40 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_bend_sinister.dds"
+		color1 = "yellow"
+		instance = { scale = { 1.15 1.15 } position = { 0.55 0.55 } }
+	}	
+	colored_emblem = {
+		texture = "ce_bend_sinister.dds"
+		color1 = "green"
+		instance = { scale = { 1.15 1.15 } position = { 0.675 0.6 } }
+	}
+	colored_emblem = {
+		texture = "ce_bend_sinister.dds"
+		color1 = "light_blue"
+		instance = { scale = { 1.15 1.15 } position = { 0.70 0.75 } }
+	}
+}
+
+PTA = { #Patiala
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_stripes_08_hawaii.dds"
+		color1 = "green"
+		color2 = "yellow"
+		instance = { scale = { 1.0 1.11 } position = { 0.5 0.575 } }	
+	}	
+}
+
+RCT = { #Arcot 
+	pattern = "pattern_border_of_4.dds"
+	color1 = "white"
+	color2 = "green"
+	
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "green"	
+		instance = { scale = { 1.0 0.7 } position = { 0.45 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"	
+		instance = { scale = { 0.9 0.7 } position = { 0.55 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_star_05_tilted.dds"
+		color1 = "green"	
+		instance = { scale = { 0.35 0.35 } position = { 0.6 0.5 } }
+	}	
+}
+
+SIN = { #Sindh - based on the flag the Talpur rulers of Khairpur
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_saltire_fimbriated.dds"
+		color1 = "white"	
+		color2 = "red"	
+		#instance = { scale = { 0.5 1.0 } position = { 1.0 0.5 } }
+	}	
+	
+	colored_emblem = {
+		texture = "ce_shield_heater_border.dds"
+		color1 = "white"	
+		color2 = "red"	
+		instance = { scale = { 0.60 0.60 } position = { 0.5 0.5 } }
+	}	
+	
+	colored_emblem = {
+		texture = "ce_crescent_star_05.dds"
+		color1 = "red"
+		instance = { scale = { 0.35 0.35 } position = { 0.5 0.5 } }
+	}	
+}
+
+SGJ = { #Surguja 
+	pattern = "pattern_solid.tga"
+	color1 = "light_green"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "yellow"	
+	}	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "white"	
+		instance = { scale = { 0.5 1.0 } position = { 1.0 0.5 } }
+	}	
+}
+
+#####################
+#					#
+# Sub-Sahara Africa	#
+#					#
+#####################
+
+#ADAL = { # Ethiopia as Adal
+#	pattern = "pattern_solid.tga"
+#	color1 = "white"
+#	
+#	colored_emblem = {
+#		texture = "ce_tricolor_vertical.dds"
+#		color1 = "red"
+#		color2 = "white"
+#	}	
+#
+#	colored_emblem = {
+#		texture = "ce_crescent_large.dds"
+#		color1 = "red"
+#		instance = { scale = { 0.6 0.65 } position = { 0.2 0.5 } }	
+#		instance = { scale = { 0.6 0.65 } position = { 0.825 0.5 } }
+#	}	
+#
+#	colored_emblem = {
+#		texture = "ce_crescent_large.dds"
+#		color1 = "white"
+#		instance = { scale = { 0.6 0.65 } position = { 0.515 0.5 } }	
+#	}
+#
+#}
+
+ATR = { #Antankarana
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_crescent_pale.dds"
+		color1 = "red"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }
+	}	
+	
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "red"
+		instance = { scale = { 0.35 0.35 } position = { 0.5 0.35 } }
+	}	
+}
+
+ANG = { #Angoche
+	pattern = "pattern_solid.tga"
+	color1 = "anazzah_red"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_fimbriated_large.dds"
+		color1 = "white"
+		color2 = "white"
+		color3 = "white"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}	
+	
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "anazzah_red"
+		instance = { scale = { 0.5 0.5 } position = { 0.35 0.5 } }
+	}	
+}
+
+BAA = { #Boina
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_thick.dds"
+		color1 = "white"
+		color2 = "red"
+	}	
+	
+	colored_emblem = {
+		texture = "ce_cross_couped.dds"
+		color1 = "red"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }
+	}	
+}
+
+BMB = { #Bemba
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_checker_04.dds"
+		color1 = "red"
+	}	
+}
+
+HRO = { #Hereroland
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "black"
+	}	
+}
+
+KBA = { #fictional, something I found online
+	pattern = "pattern_solid.tga"
+	color1 = "yellow_dark"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "brown"
+		instance = { scale = { 0.175 0.225 } position = { 0.35 0.5815 } }
+		instance = { scale = { 0.175 0.1825 } position = { 0.44 0.30 } }
+		instance = { scale = { 0.175 0.225 } position = { 0.65 0.425 } }
+		
+		instance = { scale = { 0.175 0.225 } position = { 0.5625 0.695 } }
+	}	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "yellow_dark"
+		instance = { scale = { 0.125 0.15 } position = { 0.3775 0.5375 } }
+		instance = { scale = { 0.15 0.175 } position = { 0.4725 0.35 } }
+		instance = { scale = { 0.125 0.15 } position = { 0.625 0.4625 } }
+		
+		instance = { scale = { 0.125 0.175 } position = { 0.5375 0.6375 } }
+	}	
+	colored_emblem = {
+		texture = "ce_cross_couped.dds"
+		color1 = "brown"
+		instance = { scale = { 0.575 0.50 } position = { 0.5 0.5 } }
+	}	
+}
+
+LBA = { #based on something I found online, probably not accurate
+	pattern = "pattern_solid.tga"
+	color1 = "light_blue"
+	
+	colored_emblem = {
+		texture = "ce_saltire_fimbriated.dds"
+		color1 = "yellow"
+		color2 = "black"
+	}	
+}
+
+LND = { #based on something I found online, probably not accurate
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_per_saltire.dds"
+		color1 = "green"
+	}
+	colored_emblem = {
+		texture = "ce_saltire_fimbriated_02.dds"
+		color1 = "white"
+		color2 = "red"
+		color3 = "green"
+	}	
+	colored_emblem = {
+		texture = "ce_star_14.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }
+	}	
+}
+
+
+LZO = { #Barotse
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_bend_dexter_fimbriated.dds"
+		color1 = "white"
+		color2 = "white"
+	}	
+}
+
+MAE = { #Menabe/Sakalava
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_fimbriated_large.dds"
+		color1 = "red"
+		color2 = "white"
+		color3 = "red"
+	}	
+	
+	colored_emblem = {
+		texture = "ce_humbacked_cow.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }
+	}	
+}
+
+MBU = { #Mbunda, has a flag with an elephant with a raised trunk on a white background apparently. Used the elephant but changed the map to differiate from Dahomey better
+	pattern = "pattern_border_west_africa_02.dds"
+	color1 = "white"
+	color2 = "green_light"
+	color3 = "red"
+	
+	colored_emblem = {
+		texture = "ce_elephant_african.dds"
+		color1 = "grey"
+		color2 = "white"
+	}	
+}
+
+YKA = { #fictional
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_per_saltire.dds"
+		color1 = "green"
+		color2 = "white"
+	}
+	
+	colored_emblem = {
+		texture = "ce_saltire_fimbriated_02.dds"
+		color1 = "yellow_dark"
+		color2 = "green"
+		color3 = "white"
+	}		
+}
+
+
+#####################
+#					#
+#	North America	#
+#					#
+#####################
+
+ASK = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.18 0.18 } position = { 0.78 0.22 } }				
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.10 0.10 } position = { 0.52 0.77 } }	
+		instance = { scale = { 0.10 0.10 } position = { 0.58 0.67 } }	
+		instance = { scale = { 0.10 0.10 } position = { 0.42 0.72 } }		
+		instance = { scale = { 0.10 0.10 } position = { 0.43 0.59 } }		
+		instance = { scale = { 0.10 0.10 } position = { 0.37 0.49 } }		
+		instance = { scale = { 0.10 0.10 } position = { 0.30 0.41 } }		
+		instance = { scale = { 0.10 0.10 } position = { 0.20 0.36 } }		
+	}
+
+}
+
+ASK_sub_RUS  = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"	
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.875 } }			
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue"	
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.625 } }			
+	}
+    sub = {
+        parent = "sub_RUS_coa" 
+        instance = { scale = { 0.5 0.5 } offset = { 0.025 0.025 } }
+    }
+}
+
+#####################
+#					#
+#	  East Asia		#
+#					#
+#####################
+
+CHH = { #Based on the flag of Chin State
+	pattern = "pattern_solid.tga"
+	color1 = "revolutionary_blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "red"
+		color2 = "green"
+	}
+	colored_emblem = {
+		texture = "ce_stars_circle_13.dds"
+		color1 = "white"
+	}
+}
+
+MOI = { #Based on the flag for the Montagnard country of South Indochina
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.55 0.55 } }	
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "blue"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }	
+	}
+	colored_emblem = {
+		texture = "ce_star_04.dds"
+		color1 = "white"
+		instance = { scale = { 0.25 0.25 } position = { 0.525 0.20 } }	
+		instance = { scale = { 0.25 0.25 } position = { 0.375 0.45 } }	
+		instance = { scale = { 0.25 0.25 } position = { 0.25 0.7 } }	
+	}
+}
+
+MUP = { #Random
+	pattern = "pattern_solid.tga"
+	color1 = "dark_blue"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { 0.50 0.50 } }	
+		instance = { scale = { 0.15 0.15 } position = { 0.15 0.15 } }	
+		instance = { scale = { 0.15 0.15 } position = { 0.15 0.85 } }	
+		instance = { scale = { 0.15 0.15 } position = { 0.85 0.85 } }	
+		instance = { scale = { 0.15 0.15 } position = { 0.85 0.15 } }	
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "dark_blue"
+		instance = { scale = { 0.65 0.65 } position = { 0.5 0.5 } }	
+	}
+	colored_emblem = {
+		texture = "ce_lotus.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }	
+	}
+	colored_emblem = {
+		texture = "ce_endless_knot.dds"
+		color1 = "dark_blue"
+		instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 } }	
+	}
+}
+
+NAN = { #Loosely based on the flag for the Nan province of Thailand
+	pattern = "pattern_solid.tga"
+	color1 = "dark_blue"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "yellow"
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "yellow_dark"
+		instance = { scale = { 0.80 0.80 } position = { 0.5 0.5 } }	
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "dark_blue"
+		instance = { scale = { 0.725 0.725 } position = { 0.5 0.5 } }	
+	}
+	colored_emblem = {
+		texture = "ce_umbrella_champasak.dds"
+		color1 = "yellow_dark"
+		instance = { scale = { 0.725 0.725 } position = { 0.5 0.5 } }	
+	}
+}
+
+SPC = { #Flag of Sip Song Chau Tai
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"	
+		color2 = "blue"		
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "red"	
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }			
+	}
+}
+
+RYU = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "black"	
+		instance = { scale = { 1.0 0.35	} position = { 0.5 0.85 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"	
+		instance = { scale = { 1.0 0.1 } position = { 0.5 0.825 } }
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "black"	
+		instance = { scale = { 0.90 0.90 } position = { 0.5 0.35 } }
+	}
+	colored_emblem = {
+		texture = "ce_ryukyu_coat.dds"
+		color1 = "blue_light"	
+		instance = { scale = { 0.825 0.825 } position = { 0.5125 0.335 } }
+	}
+}

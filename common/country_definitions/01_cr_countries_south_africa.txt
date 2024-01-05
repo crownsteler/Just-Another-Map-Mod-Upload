@@ -1,0 +1,195 @@
+﻿#############################
+#							#
+#		 Madagascar			#
+#							#
+#############################
+
+ATR={ #Antakarana
+	color = { 207 152 100 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { malagasy }
+	religion = sunni
+	capital = STATE_EAST_MADAGASCAR
+}
+
+BAA= { #Boina
+	color = { 66 66 185 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { malagasy }
+	religion = sunni
+	capital = STATE_WEST_MADAGASCAR
+}
+
+BAR= { #Bara
+	color = { 125 75 55 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { malagasy }
+	capital = STATE_WEST_MADAGASCAR
+}
+
+ONI= {
+	color = { 122 161 188 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { malagasy }
+	capital = STATE_WEST_MADAGASCAR
+}
+
+MAE= { #Menabe/Sakarana
+	color = { 218 94 104 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { malagasy }
+	religion = sunni
+	capital = STATE_WEST_MADAGASCAR
+}
+
+TRY= {
+	color = { 103 95 193 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { malagasy }
+	capital = STATE_WEST_MADAGASCAR
+}
+
+TSY= {
+	color = { 84 187 64 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { malagasy }
+	capital = STATE_WEST_MADAGASCAR
+}
+
+#############################
+#							#
+#	 	Mozambique			#
+#							#
+#############################
+
+ANG = {
+	color = { 208 64 64 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { swahili }
+	religion = sunni
+	capital = STATE_MOCAMBIQUE
+}
+
+BRW = {
+	color = { 136 186 166 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { sena }
+	capital = STATE_SOFALA
+}
+
+TEV = {
+	color = { 160 140 190 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { sena }
+	capital = STATE_SOFALA
+}
+
+YAO = {
+	color = { 213 184 92 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { yao }
+	capital = STATE_MOCAMBIQUE
+}
+
+
+
+#############################
+#							#
+#	 	  Angola			#
+#							#
+#############################
+
+MMB = {
+	color = { 67 94 137 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { swahili }
+	capital = STATE_ANGOLA
+}
+
+NGO = {
+	color = { 208 64 64 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { swahili }
+	capital = STATE_ANGOLA
+}
+
+NMB = { #Skeleton Coast/Namib Desert
+	color = { 110 110 110 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { khoisan }
+	capital = STATE_HEREROLAND
+}
+
+
+#############################
+#							#
+#	 	South Africa		#
+#							#
+#############################
+
+KLG = {
+	color = { 33 210 68 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { shona }
+	capital = STATE_BOTSWANA
+}

@@ -1,0 +1,875 @@
+﻿STATE_NEJD = {
+    id = 398
+    subsistence_building = "building_subsistence_pastures"
+    provinces = { "x001A99" "x014B90" "x0276AD" "x030A29" "x03AD52" "x03B8A4" "x04756B" "x063D99" "x0835E8" "x08A8B0" "x08E6CF" "x090696" "x0A1C72" "x0EE414" "x0F7462" "x130065" "x13E2EE" "x1411DE" "x142509" "x18536F" "x1FA718" "x2387F9" "x2483AB" "x250B0E" "x28AB45" "x2B1EB3" "x2DA603" "x30E29D" "x317BEE" "x3445FA" "x3554CB" "x371FC4" "x382FAD" "x3B0975" "x3BB2E2" "x3EF543" "x416A9E" "x422C6A" "x4321AD" "x43837A" "x43DB23" "x443432" "x445868" "x468626" "x48F325" "x4ADF4E" "x4B6758" "x4FD8C9" "x5023B3" "x50903A" "x52847C" "x536B7A" "x5461E0" "x54F127" "x586525" "x5C2C37" "x5D87C7" "x5F7B8A" "x5FA64F" "x60AB0A" "x669166" "x6946FC" "x6A104D" "x6BC246" "x6C493A" "x6CDC54" "x6EA51D" "x6F3B7D" "x701160" "x70AFC0" "x712029" "x717C19" "x71E27F" "x72129E" "x72CB0D" "x736469" "x736EC1" "x74B16E" "x753E9E" "x7555A8" "x765651" "x767161" "x78581D" "x7866FA" "x788181" "x7A9AF7" "x7AA367" "x7AAB57" "x7FEB87" "x816D47" "x81AD79" "x821346" "x8263B3" "x82AF5D" "x82D00F" "x83A8BC" "x85C635" "x87117C" "x8ACAD4" "x8CCFC9" "x8D6BC4" "x90AE99" "x91E56C" "x922E92" "x92BE4B" "x93D43A" "x94933E" "x96A809" "x9AC0EF" "x9C0490" "xA001BF" "xA3248D" "xA442E6" "xA52567" "xA96ED6" "xAB3869" "xABB380" "xAC17D9" "xAEAA42" "xB01160" "xB0D0A0" "xB3966A" "xB3E853" "xBA5612" "xBA637E" "xBFB998" "xC49ED2" "xC5E0C7" "xC62CC1" "xC88610" "xC98450" "xCA21E2" "xCC7D14" "xCCA55B" "xCEC01C" "xD150BE" "xD2725A" "xD41D69" "xD54924" "xD5868B" "xD5DCA6" "xD74E77" "xD8F2D3" "xDC89F7" "xDCC93F" "xDD2A56" "xDFF432" "xE03651" "xE2051D" "xE533FB" "xE5E695" "xE834B6" "xE83C08" "xE8809E" "xE8DCBA" "xE92E2D" "xEA412C" "xEA70D2" "xEB098E" "xEB66C8" "xEBCF1F" "xECABD7" "xECF47B" "xEDF7AC" "xF26B5E" "xF6BC1D" "xF77056" "xF7CA2B" "xFA46C5" "xFB02EE" "xFB9491" "xFE9B94" "xFEDA9C" }
+    prime_land = { x142509 x5D87C7 x9C0490 x93D43A x130065 xB3966A xAC17D9 x43DB23 x736EC1 x5FA64F x922E92 x816D47 xB0D0A0 x50903A x4FD8C9 x6A104D xEB66C8 x443432 x468626 xECF47B xD5DCA6 xA96ED6 xDC89F7 xE03651 xC5E0C7 x91E56C xB3E853 x422C6A x767161 x6F3B7D x6C493A xE83C08 x74B16E xD2725A x5C2C37 x2DA603 xFB9491 x0F7462 xE8809E x0A1C72 xEA70D2 xFE9B94 xEBCF1F x371FC4 x317BEE x5461E0 xE533FB x0835E8 x83A8BC xCCA55B x30E29D x821346 x586525 x382FAD x0EE414 xEA412C x6946FC x014B90 x60AB0A x063D99 xCEC01C xF77056 x445868 x9AC0EF xF7CA2B x1411DE xAB3869 x81AD79 x2387F9 x7866FA }
+    impassable = { xE2051D xD54924 x8D6BC4 x85C635 x2483AB x5F7B8A x04756B x4ADF4E x416A9E x71E27F xD8F2D3 xABB380 x28AB45 x753e9e x54F127 xE5E695 xC88610 x72129E x753E9E xFEDA9C xD5868B x43837A x08E6CF x94933E x90AE99 xF26B5E x250B0E x03B8A4 xD150BE xC62CC1 x87117C xBA5612 x536B7A x6CDC54 x090696 x7AA367 x717C19 x4321AD x3BB2E2 xE834B6 x08A8B0 x03AD52 xE8DCBA x2B1EB3 xA001BF x48F325 x001A99 x765651 x70AFC0 x78581D x3445FA xEB098E xDD2A56 x669166 x7FEB87 xAEAA42 x3554CB x3EF543 xFA46C5 xDCC93F x13E2EE x92BE4B xA52567 x7A9AF7 xC98450 xA3248D x4B6758 xD41D69 x6BC246 xECABD7 xE92E2D x8CCFC9 x0276AD x52847C xFB02EE x7AAB57 x736469 x82AF5D x8263B3 x72CB0D x5023B3 xC49ED2 x96A809 xCC7D14 xB01160 x1FA718 xBFB998 x18536F xBA637E xA442E6 xF6BC1D xD74E77 xDFF432 x030A29 xEDF7AC x701160 x7555A8 x82D00F x8ACAD4 x3B0975 xCA21E2 x788181 x6EA51D x712029 }
+    traits = { "state_trait_arabian_desert" }
+    city = "xEB66C8"
+    farm = "x50903A"
+    mine = "xF7CA2B"
+    wood = "x586525"
+    arable_land = 10
+    arable_resources = { "bg_date_plantations" }
+    capped_resources = {
+        bg_lead_mining = 10 #Silver/Copper/Lead/Zinc
+
+
+
+
+
+
+
+
+
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 60
+    }
+    naval_exit_id = 3046
+}
+
+STATE_OMAN = {
+    id = 399
+    subsistence_building = "building_subsistence_pastures"
+    provinces = { "x00BADA" "x0289EB" "x02FBFB" "x030A95" "x05983E" "x06581E" "x075D78" "x07D89B" "x093AC3" "x13506D" "x17CD85" "x1B25E6" "x1EA1F1" "x2DB9C1" "x2EDA6E" "x377D71" "x395325" "x3AFE0D" "x3C2FE8" "x42A960" "x48AF9C" "x5627A0" "x589BAF" "x59D849" "x5AF663" "x5FCC2E" "x68646C" "x6E2CE7" "x70519F" "x757C65" "x794443" "x79A9F3" "x7BE5F4" "x84FDD6" "x85D4B9" "x85E141" "x8941AF" "x8BA0D5" "x8BC60B" "x937BB2" "xA3015F" "xAAFA29" "xB6755D" "xB6FBDA" "xB70CA0" "xB82286" "xB8D035" "xBC6325" "xBFD3D7" "xC1BD52" "xC273D0" "xC790A2" "xCB50CF" "xCD06CE" "xD0D18E" "xD9AF1E" "xDEB75C" "xDEE039" "xE4E126" "xEDE86E" "xEF50A0" "xEFD0A0" "xF44B1E" "xF656B5" "xF7E8FC" "xF89153" "xF963C3" "xFD7FD6" }
+    prime_land = { x70519F xDEB75C x8BC60B x757C65 x589BAF xE4E126 x02FBFB x13506D xAAFA29 xCB50CF xB6755D xC1BD52 x59D849 x395325 xD0D18E xEF50A0 x937BB2 xDEE039 x68646C x17CD85 xB8D035 x07D89B x7BE5F4 xF656B5 xF7E8FC x84FDD6 x5FCC2E x794443 x48AF9C x3AFE0D xCD06CE x3C2FE8 xF963C3 x00BADA xBC6325 }
+    impassable = { xB6FBDA xEFD0A0 xB70CA0 x5AF663 x8941AF xFD7FD6 x1B25E6 xF44B1E xC273D0 x377D71 x075D78 x2DB9C1 xC790A2 x8BA0D5 x42A960 x1EA1F1 x06581E x093AC3 x6E2CE7 x05983E x85E141 xD9AF1E x5627A0 x0289EB xF89153 x2EDA6E xB82286 xBFD3D7 x85D4B9 xEDE86E x030A95 xA3015F x79A9F3 }
+    traits = { "state_trait_arabian_desert" }
+    city = "x70519F"
+    port = "xBC6325"
+    farm = "xDEB75C"
+    mine = "xB6755D"
+    wood = "x395325"
+    arable_land = 10
+    arable_resources = { "bg_date_plantations" }
+    capped_resources = {
+        bg_fishing = 10
+        bg_copper_mining = 15 #Lasail mine. More open pit/VMS mining
+
+
+
+
+
+
+
+
+
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 20
+    }
+    naval_exit_id = 3048
+}
+
+STATE_ABU_DHABI = {
+    id = 400
+    subsistence_building = "building_subsistence_pastures"
+    provinces = { "x0DC972" "x1830A7" "x2768F8" "x28D126" "x4D3B30" "x631F32" "x65A581" "x69B568" "x70D020" "x723F1D" "x8C6854" "xA9240B" "xC9472E" "xD12977" "xE8E0A4" "xEF5020" "xF0D021" "xFF7473" }
+    prime_land = { x4D3B30 xD12977 xFF7473 xC9472E x65A581 x8C6854 x631F32 xF0D021 x28D126 x2768F8 x0DC972 }
+    impassable = { xA9240B xE8E0A4 x69B568 x723F1D x1830A7 x70D020 }
+    traits = { "state_trait_arabian_desert" }
+    city = "x1830A7"
+    port = "x65A581"
+    farm = "xF0D021"
+    mine = "x2768F8"
+    wood = "x0DC972"
+    arable_land = 3
+    arable_resources = { "bg_date_plantations" }
+    capped_resources = {
+        bg_fishing = 4
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 60
+    }
+    naval_exit_id = 3046
+}
+
+STATE_YEMEN = {
+    id = 401
+    subsistence_building = "building_subsistence_pastures"
+    provinces = { "x00E3EF" "x02F9FF" "x034B03" "x075453" "x1A7BB0" "x2197EF" "x2576C1" "x314190" "x49FCAB" "x625380" "x6290E6" "x68B524" "x7C3EA9" "x7EC879" "x8436FE" "x84FA60" "x8B1488" "x9D8A78" "x9E941B" "x9EDF3C" "xB08F60" "xB79DED" "xBB387A" "xCF401E" "xCF6C49" "xDD033C" "xE5892F" "xE5DF3B" "xEF2E43" "xF86F58" "xFE5027" }
+    prime_land = { xE5892F x7EC879 x625380 x9D8A78 xEF2E43 xBB387A xCF6C49 x7C3EA9 x68B524 xE5DF3B x1A7BB0 x2576C1 xCF401E x49FCAB x6290E6 xF86F58 x8B1488 x00E3EF xB79DED x9E941B x034B03 x8436FE }
+    impassable = { x02F9FF xFE5027 x84FA60 x075453 }
+    traits = { "state_trait_cr_yemeni_highlands" }
+    city = "x8B1488"
+    port = "x9EDF3C"
+    farm = "x9E941B"
+    mine = "x8B1488"
+    wood = "x7EC879"
+    arable_land = 45
+    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_date_plantations" }
+    capped_resources = {
+        #Oil
+        #bg_lead_mining = 8 #Zinc, Nickel, Manganese Cobalt
+        bg_copper_mining = 10
+        bg_fishing = 4
+    }
+    naval_exit_id = 3047
+}
+STATE_SOUTH_YEMEN = {
+    id = 3410
+    subsistence_building = "building_subsistence_pastures"
+    provinces = { x02B35C x0B9A27 x0C7E0C x1C7B77 x2975A3 x299C0F x2A9E89 x2BD409 x308FDF x30A3E2 x319060 x346541 x37058F x3D1674 x3D7345 x3D86FC x54840B x567A83 x5C91FE x5DF9FC x5F3582 x60DFF9 x657048 x672267 x6BD0A9 x6D2F95 x726925 x75D341 x843C65 x872CEB x895FE6 x8BF4B8 x8D121D x8D6307 x8E96A7 x90602A x95D64E x9D6547 xA0540A xA05CB5 xA1AAB0 xA2FDFA xAD1CE2 xB010DF xB090E0 xB8A8D2 xBAA208 xBDEA27 xC09525 xC790E8 xCF61E1 xD3F276 xD6CC22 xDD732E xDFA579 xF385EB xFA0283 }
+    prime_land = { x0C7E0C xD3F276 xBAA208 x657048 x3D1674 xA1AAB0 x567A83 xFA0283 x2975A3 x54840B x2BD409 x319060 xB090E0 x726925 x3D7345 xB8A8D2 x5C91FE xB010DF x6D2F95 x60DFF9 xD6CC22 x672267 x1C7B77 xA05CB5 x308FDF x30A3E2 xA2FDFA x6BD0A9 xA0540A x9D6547 x37058F x30A3E2 xA2FDFA x6BD0A9 xA0540A x9D6547 x37058F }
+    impassable = { x8D6307 xAD1CE2 x8D121D x299C0F x02B35C x346541 xC09525 x90602A x8BF4B8 x5F3582 xBDEA27 xC790E8 x2A9E89 xDFA579 x895FE6 xCF61E1 x3D86FC x0B9A27 x75D341 xF385EB x95D64E x8E96A7 x5DF9FC x872CEB xDD732E x843C65 }
+    traits = { "state_trait_arabian_desert" }
+    city = "xA05CB5"
+    port = "x726925"
+    farm = "x1C7B77"
+    mine = "xD3F276"
+    wood = "x319060"
+    arable_land = 25
+    arable_resources = { bg_livestock_ranches bg_tobacco_plantations bg_date_plantations } #Frankincense, Wheat, Dates, Coconuts, Coffee, Cattle
+
+
+
+
+
+
+
+
+
+    capped_resources = {
+        #Oil
+        bg_fishing = 8
+    }
+    naval_exit_id = 3018
+}
+
+STATE_HEDJAZ = {
+    id = 402
+    subsistence_building = "building_subsistence_pastures"
+    provinces = { "x01B53C" "x034F87" "x04F7B6" "x0521C1" "x05AA56" "x1BC05F" "x21BF48" "x226FAA" "x24FBED" "x27A2A8" "x28DBD5" "x292DD7" "x2999ED" "x2B5B11" "x3090A0" "x314E1E" "x320615" "x3B598C" "x3BE5E7" "x490DFA" "x4F8C15" "x521E15" "x56AD8A" "x5A8CB9" "x5CBEA7" "x5DA23F" "x5F15CE" "x61CFA0" "x6809FA" "x694321" "x6AB15B" "x6DE5B5" "x6DECD7" "x74B86E" "x74CB6D" "x75C3D2" "x778137" "x7CE787" "x7E1168" "x87AE0B" "x8BF770" "x8DCF10" "x91C7AF" "x93BDD6" "x96DD61" "x9DCEC5" "xA3FA9D" "xA657F7" "xA81C83" "xA8EF8C" "xADCFD1" "xADF397" "xAF3276" "xB2A43B" "xB47D47" "xBB2219" "xBBA7D8" "xC6CF64" "xCD06B6" "xCE4CD0" "xCEC06C" "xD128E6" "xDAF133" "xDD0665" "xDF5580" "xE0B808" "xE19850" "xE4415E" "xE463A6" "xE49A74" "xE4A66C" "xE6B022" "xECA39C" "xEEB4B7" "xF4D889" "xF5C539" "xF9520D" }
+    prime_land = { x521E15 x04F7B6 xE463A6 x034F87 xCEC06C xADCFD1 x4F8C15 x320615 xA3FA9D x694321 x3090A0 xBBA7D8 x27A2A8 x01B53C xE19850 xE49A74 x2B5B11 x93BDD6 x2999ED x56AD8A x21BF48 x6809FA x61CFA0 x96DD61 x9DCEC5 x226FAA xF5C539 xECA39C x05AA56 x5CBEA7 xF4D889 x778137 x3B598C x6DE5B5 x75C3D2 x1BC05F x314E1E xBB2219 }
+    traits = { "state_trait_arabian_desert" }
+    city = "xE19850"
+    port = "x2999ED"
+    farm = "x314E1E"
+    mine = "x314E1E"
+    wood = "x5F15CE"
+    arable_land = 35
+    arable_resources = { "bg_date_plantations" }
+    capped_resources = {
+        bg_fishing = 5
+    }
+    naval_exit_id = 3047
+}
+
+STATE_ASIR = {
+    id = 3420
+    subsistence_building = "building_subsistence_pastures"
+    provinces = { "x12C743" "x189DA8" "x1B7D77" "x1DBFE3" "x1EBD1A" "x21EDF5" "x46CB97" "x5DF095" "x60A82A" "x60CD79" "x6E30A8" "x73D602" "x7FB9EE" "x80B1A9" "x862801" "x926BB8" "x9BC8FF" "x9D05B5" "xA1824A" "xB090A0" "xBB3419" "xBB9BB6" "xD24798" "xE2A4DE" "xE5D28A" "xE78A14" }
+    prime_land = { x21EDF5 x926BB8 xBB9BB6 x80B1A9 x6E30A8 x1DBFE3 x1B7D77 x1EBD1A }
+    traits = { state_trait_cr_asir_mountains }
+    city = "x6E30A8"
+    port = "x9BC8FF"
+    farm = "xE2A4DE"
+    mine = "x9D05B5"
+    wood = "x189DA8"
+    arable_land = 35
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" }
+    capped_resources = {
+        bg_fishing = 4
+    }
+    naval_exit_id = 3047
+}
+
+STATE_HAIL = {
+    id = 403
+    subsistence_building = "building_subsistence_pastures"
+    provinces = { "x00B021" "x011A2F" "x059E9F" "x081DD4" "x0E3333" "x0E606A" "x11A9A4" "x130CEC" "x1332B9" "x1AFF99" "x1CF62E" "x1D96F8" "x217576" "x27DDAC" "x28C1E8" "x28DBAD" "x2937E4" "x2BCAA5" "x3068DF" "x307F57" "x30EBD1" "x328E22" "x388A84" "x389704" "x3B179D" "x3F8A4B" "x3FEADD" "x401521" "x405F10" "x44074C" "x458484" "x460D09" "x46E03C" "x488838" "x48DC3C" "x48E404" "x50A5AD" "x53215C" "x54B461" "x570586" "x57E5FC" "x5A6200" "x5A986D" "x5AAB63" "x5BA9F3" "x5F4303" "x609720" "x68A578" "x6910E2" "x69D7E7" "x71291D" "x7163A1" "x754541" "x760116" "x7B6B4D" "x803121" "x8229D9" "x8256C9" "x84592D" "x8582F8" "x881873" "x8D66EA" "x90776F" "x91BB79" "x92CA55" "x93179D" "x946FD4" "x949F2A" "x9BD6E3" "x9FE32C" "xA0251B" "xA04148" "xA1AD00" "xA2B74B" "xA37483" "xA5E10E" "xA60DFE" "xA7B102" "xA81C4A" "xA9C5FE" "xAAC851" "xAC7DDC" "xACDA6F" "xB011A0" "xB3B3AE" "xB3FC59" "xB46AF9" "xB4CC55" "xB5E66A" "xB66B21" "xBA976C" "xC1AFC6" "xCA15F6" "xCB37B1" "xCC9EF0" "xD088C8" "xD0C6ED" "xD9A997" "xDA2107" "xDCA1DD" "xDD224F" "xDD5764" "xDF5AD9" "xDF5AFC" "xE15684" "xE2AE6A" "xE341F7" "xE65A5E" "xE9E209" "xEBBF58" "xEFB342" "xF14451" "xF163D2" "xF6C5D3" "xF8FF73" "xF94BA1" }
+    prime_land = { x53215C x881873 x5A6200 x460D09 x458484 x389704 x54B461 xC1AFC6 xDA2107 x27DDAC xAAC851 xB011A0 xDF5AFC x3B179D x48E404 x71291D xA2B74B x488838 xF6C5D3 x44074C x50A5AD xCC9EF0 xA5E10E x11A9A4 xDD224F x307F57 xA60DFE xE65A5E x1CF62E x760116 xB3FC59 x5F4303 xE15684 x217576 xCB37B1 x1D96F8 x081DD4 xE9E209 x28DBAD x803121 xACDA6F xA81C4A xA0251B }
+    traits = { "state_trait_arabian_desert" }
+    city = "x389704"
+    farm = "xACDA6F"
+    mine = "x011A2F"
+    wood = "x11A9A4"
+    arable_land = 7
+    arable_resources = { "bg_date_plantations" }
+}
+
+STATE_CYPRUS = {
+    id = 404
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x40B020" "x79685E" "xBF3020" }
+    traits = { state_trait_skouriotissa_copper }
+    city = "x40B020"
+    port = "xBF3020"
+    farm = "x79685E"
+    arable_land = 9
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" }
+    capped_resources = {
+        bg_fishing = 5
+        bg_copper_mining = 35
+    }
+    naval_exit_id = 3034
+}
+
+STATE_TRANSJORDAN = {
+    id = 405
+    subsistence_building = "building_subsistence_pastures"
+    provinces = { x0C8C1E x104A1B x32C1E8 x50A387 x599378 x5BDBD7 x60D0E0 x720E3F x8241B7 x8DED0C x9F049F xA25988 xC2B483 xE050E0 xEF6A66 }
+    prime_land = { x0C8C1E x60D0E0 xE050E0 xC2B483 x720E3F x104A1B x599378 }
+    city = "xC2B483"
+    port = "xE050E0"
+    farm = "x720E3F"
+    mine = "x104A1B"
+    wood = "x60D0E0"
+    arable_land = 5
+    arable_resources = { "bg_livestock_ranches" "bg_date_plantations" }
+    capped_resources = {
+        bg_sulfur_mining = 35
+        bg_iron_mining = 12 #Ajloun
+
+
+
+
+
+
+
+
+
+    }
+    naval_exit_id = 3047
+}
+
+STATE_PALESTINE = {
+    id = 406
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x0EC997" "x136A0C" "x365E8F" "x605060" "x60D060" "xC9CBC0" "xE05060" "xE0D060" }
+    traits = { state_trait_cr_cedars_of_lebanon }
+    city = "xC9CBC0"
+    port = "x605060"
+    farm = "x60D060"
+    mine = "xE05060"
+    wood = "x365E8F"
+    arable_land = 35
+    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tobacco_plantations" "bg_date_plantations" "bg_vineyard_plantations" }
+    capped_resources = {
+        #bg_iron_mining = 24 #Makhtesh, in desert, should be discoverable. Merged it into Transjordan for now.
+        bg_logging = 6
+        bg_fishing = 4
+    }
+    naval_exit_id = 3034
+}
+
+STATE_LEBANON = {
+    id = 407
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x6010E0" "x6BA268" "xA050E0" "xC7ECCB" "xECCAC7" }
+    traits = { state_trait_cr_cedars_of_lebanon }
+    city = "xC7ECCB"
+    port = "x6010E0"
+    farm = "xECCAC7"
+    mine = "xECCAC7"
+    wood = "xA050E0"
+    arable_land = 30
+    arable_resources = { "bg_livestock_ranches" "bg_silk_plantations" "bg_tobacco_plantations" } #removed wheat as, according to wikipedia, wheat production was marginal in Lebanon
+
+
+
+
+
+
+
+
+
+    capped_resources = {
+        bg_logging = 12 #Cedars of Lebanon
+
+
+
+
+
+
+
+
+
+        bg_coal_mining = 10 #According to Wikipedia Muhammed Ali got some coal from Lebanon
+
+
+
+
+
+
+
+
+
+        bg_fishing = 5
+    }
+    naval_exit_id = 3034
+}
+
+STATE_SYRIA = {
+    id = 408
+    subsistence_building = "building_subsistence_farms"
+    provinces = { x186A43 x499A08 x6905BC x80B020 x99646E x9A258F xCB0113 xE011E0 }
+    traits = {}
+    city = "x186A43"
+    farm = "x9A258F"
+    mine = "xCB0113"
+    wood = "xE011E0"
+    arable_land = 30
+    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_date_plantations" }
+    capped_resources = {}
+}
+
+STATE_ALEPPO = {
+    id = 409
+    subsistence_building = "building_subsistence_farms"
+    provinces = { x0F0BCB x14AB01 x619060 x7A1679 x7A47D7 x7B5D3F xE01160 xE09060 xE2C7D1 xECD96B }
+    traits = {}
+    city = "x7A47D7"
+    port = "x619060"
+    farm = "x619060"
+    mine = "xE01160"
+    wood = "x14AB01"
+    arable_land = 35
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tobacco_plantations" }
+    capped_resources = {
+        bg_logging = 8
+        bg_fishing = 5
+    }
+    naval_exit_id = 3034
+}
+
+STATE_BAGHDAD = {
+    id = 410
+    subsistence_building = "building_subsistence_orchards"
+    provinces = { x0748CD x0B769F x1CC9CC x1D7F5E x205060 x312AA2 x34A371 x396DB2 x41F864 x5F9550 x6CBE21 x7CAD29 x807060 x88ADC8 x9F9CCA xA4A407 xAE7D6F xBE6A23 xE090E0 xF1BF17 xFE18C1 }
+    traits = { "state_trait_cr_mesopotamian_marshes" "state_trait_cr_mesopotamia" }
+    city = "x205060"
+    farm = "xAE7D6F"
+    mine = "x0748CD"
+    wood = "x396DB2"
+    port = "x807060"
+    arable_land = 56
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_cotton_plantations" "bg_date_plantations" }
+    capped_resources = {
+        bg_fishing = 6
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 60
+    }
+    naval_exit_id = 3046
+}
+
+STATE_MOSUL = {
+    id = 411
+    subsistence_building = "building_subsistence_orchards"
+    provinces = { x00B0A0 x0D20D8 x13CEE0 x1EC145 x1EDF69 x1F78F4 x2090E0 x246A9F x281DD3 x389F34 x50D95C x54DF0B x6F55BA x7F8783 x81730A x92702E xA05060 xA2BD38 xBD22F1 xC375C0 xDC55AB xE67DB6 xEE1814 xF98995 }
+    prime_land = { x00B0A0 xF98995 xA2BD38 x1F78F4 x6F55BA xEE1814 x2090E0 x389F34 x1EDF69 x92702E xC375C0 x1EC145 x54DF0B xDC55AB }
+    traits = { "state_trait_cr_mesopotamia" }
+    city = "x6F55BA"
+    farm = "x07BB1D"
+    mine = "xE4E63B"
+    wood = "x4BE9F1"
+    arable_land = 30
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_sulfur_mining = 39
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 40
+    }
+}
+
+STATE_DEIR_EZ_ZOR = {
+    id = 412
+    subsistence_building = "building_subsistence_pastures"
+    provinces = { x19152C x1B437C x1ECFDA x205956 x24B968 x479916 x519F26 x56095E x68D9E3 x6BDF5C x7125D6 x849047 x969057 x97B814 x9A097B xA6B14C xCE5C9A xF5D646 }
+    traits = { "state_trait_euphrates_river" }
+    prime_land = { x97B814 x1ECFDA x7125D6 x19152C xCE5C9A x9A097B x68D9E3 x24B968 x969057 }
+    city = "x849047"
+    farm = "x97B814"
+    mine = "x519F26"
+    wood = "x1ECFDA"
+    arable_land = 20
+    arable_resources = { "bg_livestock_ranches" }
+}
+
+STATE_KURDISTAN_IRAQ = {
+    id = 413
+    subsistence_building = "building_subsistence_orchards"
+    provinces = { x029A2B x07BB1D x0A79A0 x111137 x130A78 x1F3350 x2F0CE8 x4BE9F1 xB09D9C xBAF0C7 xC11149 xD097E1 xE4E63B }
+    traits = {}
+    city = "x029A2B"
+    farm = "x4BE9F1"
+    mine = "x111137"
+    wood = "x1F3350"
+    arable_land = 36
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_tobacco_plantations" }
+    capped_resources = {
+        bg_logging = 9
+    #bg_copper_mining = 5 #Insignificant deposits
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 50
+    }
+}
+STATE_HAJAR = {
+    #STATE_AL_HASA
+    id = 3411
+    subsistence_building = "building_subsistence_pastures"
+    provinces = { x0065FA x00F060 x04600E x0ACC6B x16AA3B x1BC279 x1E06DA x2255C1 x2BAA0A x3E4014 x3F4AE7 x4B8848 x4C5D5F x4DE08D x505AE0 x68C89A x705120 x7DA074 x90E0EA x920B4A xCB2408 xDABB9C xEF8A47 }
+    prime_land = { x16AA3B xEF8A47 xCB2408 x920B4A x4C5D5F x705120 x04600E x4DE08D x3F4AE7 x0065FA x2255C1 x1E06DA x0ACC6B }
+    traits = { "state_trait_arabian_desert" }
+    city = "x4C5D5F"
+    port = "x00F060"
+    farm = "x0ACC6B"
+    mine = "x2255C1"
+    wood = "x2BAA0A"
+    arable_land = 9
+    arable_resources = { bg_date_plantations }
+    capped_resources = {
+        bg_fishing = 5
+    }
+    naval_exit_id = 3046
+}
+
+STATE_BADIYA = {
+    id = 3412
+    subsistence_building = "building_subsistence_farms"
+    provinces = { x0030A0 x01E950 x0972E0 x0CA064 x1C3F80 x1D7CB1 x1FF559 x203F3E x2050E0 x20D060 x2164B9 x2BC2EE x2EA1C0 x2F8925 x2FDA89 x30EFBE x332989 x336DA5 x3698B6 x3E0347 x42D850 x461557 x46784B x4CF20D x4F90CC x4FD1AE x523252 x531544 x5ABE79 x5CB1D1 x5CC6DD x5FBEAB x6090E0 x679B60 x68BA3E x6C593D x6C8E49 x73246F x733357 x738496 x76F2F5 x77A913 x79A258 x7AD6CB x803872 x82B24D x87F943 x8EF895 x908AEA x93CB74 x94ADBF x9AAC16 x9CED6B xA0D060 xA18F1A xA4E920 xB77CA8 xB78BC7 xB9C9EB xBB57AC xBF549D xC414B6 xD1C9DA xE009D7 xE0D0E0 xE8DCB1 xE92697 xF85497 }
+    traits = { "state_trait_arabian_desert" }
+    city = "x9AAC16"
+    farm = "x8EF895"
+    mine = "x461557"
+    wood = "x4CF20D"
+    arable_land = 5
+    arable_resources = { "bg_date_plantations" }
+    capped_resources = {
+        bg_sulfur_mining = 25 #removed from Syria
+    }
+}
+
+STATE_FARS = {
+    id = 414
+    subsistence_building = "building_subsistence_orchards"
+    provinces = { x89054E xB80596 x8C28A6 x8030DF xE816BC xEB15EE x8A4184 x077437 xE622E5 xC83D18 x626618 xB1591C xF033FA x517637 x3C79B5 x6375B3 x01B060 x35A806 x3FA81D x20B506 x879264 x898FBC xEB8219 x8D9D57 x4AB629 x759BE2 xA194C3 x80B060 xB5A598 xF58FBD xB2B395 x01F0A0 xFFA8FA x39E6FA xFDAFF4 x80F0A0 x95EAC4 xB9E770 xAFE8A5 x0130E0 x80B060 x3FA81D xB80596 }
+    traits = { "state_trait_zagros_mountains" }
+    city = "x95EAC4"
+    port = "x0130E0"
+    farm = "x517637"
+    mine = "xB5A598"
+    wood = "x8030DF"
+    arable_land = 30
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_cotton_plantations" "bg_date_plantations" "bg_vineyard_plantations" }
+    capped_resources = {
+        bg_sulfur_mining = 25 #phosphates
+        bg_fishing = 7
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 60
+    }
+    naval_exit_id = 3046
+}
+
+STATE_LARISTAN = {
+    #STATE_KERMAN
+    id = 415
+    subsistence_building = "building_subsistence_farms"
+    provinces = { x75053B x8D0125 x350DED x5E1734 xCC1B0F x0D4D86 x124E6F x5D2CF2 x922EDA x83424B x2E57B1 x0170A0 xA54E11 x407020 x177599 xB0513F x2F832B xB55662 xF14D58 x876E91 x8070A0 xF24BDE xB67223 xC07020 x159AB3 x6796CE x7FB23D x75B934 x1BC9CB xEB9357 x75B0BE x95A3F5 x01F020 x9CBF51 x6DDC3B x36F270 xCACC49 x42FC41 xE9C86A x80F020 xCCDD76 x9DF415 xF6D834 xD4E165 x99F186 xAFF45C xF4E18B xCBE9C4 x0170A0 x350DED x75B0BE x36F270 x42FC41 x01F020 xEB9357 x75B934 x922EDA xCACC49 x2F832B xCC1B0F xAAA21C x5293C9 x9869E8 xE862E9 xFF73DA xF8EBE8 x648853 x901598 xD73959 x2E09CE xB55662 x62D297 xC0E354 }
+    impassable = { x5293C9 x9869E8 xE862E9 xFF73DA xF8EBE8 x648853 x901598 xD73959 x2E09CE xB55662	x62D297 xC0E354 }
+    traits = { "state_trait_natural_harbors" "state_trait_bam_narmashir" } #"state_trait_porphyry_copper"
+    city = "xA54E11"
+    port = "x350DED"
+    farm = "x01F020"
+    mine = "x6DDC3B"
+    wood = "x8070A0"
+    arable_land = 24
+    arable_resources = { "bg_wheat_farms" "bg_dye_plantations" "bg_date_plantations" }
+    capped_resources = {
+        bg_coal_mining = 18
+        bg_copper_mining = 45
+        bg_sulfur_mining = 32
+        bg_fishing = 7
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 40
+    }
+    naval_exit_id = 3046
+}
+
+STATE_SISTAN = {
+    id = 416
+    subsistence_building = "building_subsistence_farms"
+    provinces = { x29CD3D x3FE8A6 x5D9506 xFEEC0B x2EB9D4 x2F2582 x1E9374 x258E35 x838A84 x48E7B8 x321257 x945FA2 xA9F721 xFF026E x9CBF51 x47F50F x10F3F4 x20531A xA81990 xC68B25 x2F10E8 x243D68 x89A8C6 x6E3249 xB7864D x20A19F x24B920 x51274D xD547B8 x26DEEC xC74971 xC982BC xB6CF46 xB33E22 x9D6744 x6C7630 x4131A0 x91E7E0 x4CEB3F xEC93DC x4430D6 x0FC204 x4B4B04 }
+    prime_land = { x29CD3D x3FE8A6 x5D9506 xFEEC0B x2EB9D4 x2F2582 }
+    city = "x20A19F"
+    port = "x4131A0"
+    farm = "x321257"
+    mine = "xEC93DC"
+    wood = "xFF026E"
+    arable_land = 19
+    arable_resources = { "bg_wheat_farms" "bg_sugar_plantations" "bg_date_plantations" }
+    capped_resources = {
+        bg_fishing = 4
+    }
+    naval_exit_id = 3046
+}
+
+STATE_KHORASAN = {
+    id = 417
+    subsistence_building = "building_subsistence_farms"
+    provinces = { x89332A xE10ECF x4F3FC9 xAA21EB x017021 x746A7C x9369BF xAE765F x9C8A25 x92941B x5BAC61 xB99ECB xE3EF67 x95D808 x964953 xB0A555 x16AE6E xF394BC x235294 x932884 xE3E233 x98DCCC x6208A0 xE91143 x2CC853 x250EA9 x4CD18D x09EC79 x888432 x95024E xF4E0BD x9369BF x53B53B x4058BB xB7CE9D xC0F0E0 xEBB44F x6D2203 xBEA6BB xA6D67E xCFE904 x84BB30 x57893E xC7F975 x6E6FDC xC6F164 x868586 x9C5383 xC0B020 xDEE397 xF559AB xA7818E xD37C65 x6E99FA x71BA88 x943855 xEB9FD7 xEADB0F xD3C02D xAC03B8 x8A3C3C x9CB55A xA26087 x39C083 x6FE987 xA8549E x07C3C1 x56E6F2 xEF1467 x41B208 }
+    impassable = { xEADB0F xD3C02D xAC03B8 x8A3C3C x9CB55A xA26087 x39C083 x6FE987 xA8549E x07C3C1 x56E6F2 xEF1467 x41B208 }
+    traits = {}
+    city = "xF559AB"
+    farm = "x746A7C"
+    mine = "x98DCCC"
+    wood = "x943855"
+    arable_land = 37
+    arable_resources = { "bg_wheat_farms" "bg_dye_plantations" "bg_opium_plantations" "bg_cotton_plantations" }
+    capped_resources = {
+        bg_iron_mining = 22
+        bg_coal_mining = 20
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 20
+    }
+}
+
+STATE_KHUZESTAN = {
+    #STATE_ARABISTAN
+    id = 418
+    subsistence_building = "building_subsistence_orchards"
+    provinces = { x80E4E1 x80B0E0 x241E05 x5D400F xFBA38B x4CA291 x09F8D1 x4FDA9B xA99276 xA18555 x55D475 x00B0DF xF5BD8F x872ACE xDB6370 }
+    city = "x55D475"
+    port = "xFBA38B"
+    farm = "x4CA291"
+    mine = "x80E4E1"
+    wood = "xF5BD8F"
+    arable_land = 37
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_sugar_plantations" "bg_date_plantations" }
+    capped_resources = {
+        #bg_sulfur_mining = 40
+        bg_fishing = 5
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 60
+    }
+    naval_exit_id = 3046
+}
+
+STATE_ISFAHAN = {
+    id = 419
+    traits = { "state_trait_turqoise_deposits" }
+    subsistence_building = "building_subsistence_orchards"
+    provinces = { x202B10 x6F0F7C x362C14 x37295A x672217 x4C1CD8 x991C41 x124E8C x803160 x5E4062 x2657C9 x077C30 x616406 x527229 x6C648A x356EFD xED39D0 xEB4F2E xD35B7E x89719E xB75FFC xA37A77 x7D89AA xE47095 x7A9D34 x4E9FD1 x639DDD xF17A7A xE679AF x8D9CEC xF29735 xB0AA8F x9DC400 x31DF75 xC5AECF x7CCE94 xE9B06D x8EC8D6 x5FE0AF x7AE349 x8DDEC3 x9DF482 x2A39A6 x662658 x346B17 x5E50D5 xD6E8C2 x24A57B  }
+    impassable = { x662658 x346B17 x5E50D5 xD6E8C2 x24A57B }
+    city = "xED39D0"
+    farm = "xA37A77"
+    mine = "xE9B06D"
+    wood = "xE679AF"
+    arable_land = 50
+    arable_resources = { "bg_wheat_farms" "bg_silk_plantations" "bg_opium_plantations" "bg_dye_plantations" "bg_cotton_plantations" }
+    capped_resources = {
+        bg_iron_mining = 55
+        bg_lead_mining = 42 #lead/zinc
+    }
+}
+
+STATE_MAZANDARAN = {
+    id = 420
+    traits = { "state_trait_hyrcanian_forests" "state_trait_alborz_mountains" }
+    subsistence_building = "building_subsistence_farms"
+    provinces = { x241E43 x7417A0 x3834CF x4070A0 x8070DF x5694AE xE697E6 xC0B0E0 x0FF449 x5ADBFF x51E7A3 x40EFA0 x63F238 xE6DB67 x129FA5 }
+    city = "xE697E6"
+    farm = "x63F238"
+    mine = "x3834CF"
+    wood = "x51E7A3"
+    arable_land = 70
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" "bg_sugar_plantations" "bg_tobacco_plantations" }
+    capped_resources = {
+        bg_coal_mining = 48
+        bg_logging = 18
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 20
+    }
+}
+
+STATE_IRAKAJEMI = {
+    id = 421
+    subsistence_building = "building_subsistence_farms"
+    provinces = { x3701A3 x8F1825 x553125 x053EBF x71249D x4030E0 xD710D1 x8A452E x1F687B  xCD35CC xE131D0 x466F62 xDA35F1 x588437 xAD9186 x6AB1CB x70C503 x3DDD90 x35E580 x46E4AC x6FEED1 x9DE783 xE7E218 xE3DC87 x68FFB7 xC0F0A0 xC070A0 x64A12B x69D9F4 x807020 x81B71E xD58A3C x7257FA }
+    impassable = { xC070A0 x64A12B x69D9F4 x807020 x81B71E xD58A3C x7257FA  }
+    city = "xC0F0A0"
+    farm = "x4030E0"
+    mine = "x41B060"
+    wood = "x9DE783"
+    arable_land = 48
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_dye_plantations" }
+    capped_resources = {
+        bg_logging = 4
+        bg_iron_mining = 19
+    }
+}
+
+STATE_TABRIZ = {
+    id = 422
+    subsistence_building = "building_subsistence_farms"
+    traits = { "state_trait_zagros_mountains" }
+    provinces = { x6050A0 x2B1395 x102BCB x018E23 xBD5DC4 x592890 x211111 xC277FE x63528E x9B1366 x264C9D xADF8DB xDC46D1 x780DBA x2281CB x04D39A xCA2489 x2C653E xC8C637 xCC139E x97DFB2 xCEA2AE x43A850 xD82CB4 xBF30DF x41B0E0 xA70D55 xFF325A xC5BF2C x7F1958 x0256AF xA010DF xB0C672 xCCA63F x80B0A0 }
+    city = "x2B1395"
+    farm = "x780DBA"
+    mine = "xC277FE"
+    wood = "xCA2489"
+    arable_land = 125
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_vineyard_plantations" }
+    capped_resources = {
+        bg_logging = 4
+        bg_copper_mining = 30
+        bg_lead_mining = 25 #Lead/zinc
+    }
+}
+
+STATE_LURISTAN = {
+    id = 423
+    subsistence_building = "building_subsistence_orchards"
+    provinces = { x361152 x141ABA x793216 xC82A67 x5E4B82 xC03160 xAF4250 xE92D8F x0170E0 xC241E1 x9963BE xE050A0 xDF5E83 x2E8EE8 x349E91 x2AAA44 xC77B7D x01B2D8 x38B60D x2EA8EE x41B060 x928FFD x3DB0B9 xBC8ADC x78B5D4 xC3A894 xC0B060 x4FD77D x44E945 xBDD368 x6F8D9F x4A1B9A xB25FAE x6B83E1 xC186BC x2D2CC8 xD7D07C x80F060 x51BDFA  }
+    traits = { "state_trait_zagros_mountains" }
+    city = "x38B60D"
+    farm = "xBDD368"
+    mine = "x141ABA"
+    wood = "x928FFD"
+    arable_land = 55
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_opium_plantations" "bg_dye_plantations" }
+
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 40
+    }
+    capped_resources = {}
+}
+
+STATE_HUDAVENDIGAR = {
+    id = 424
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x13886D" "x2F78D7" "x3020E0" "x30A060" "x31CD7B" "x34C810" "x3F1505" "x809000" "xB0A060" "xB4D60B" "xB8FEBB" }
+    city = "x13886D"
+    port = "xB0A060"
+    farm = "x3F1505"
+    mine = "xB8FEBB"
+    wood = "xB4D60B"
+    arable_land = 40
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_tobacco_plantations" }
+    capped_resources = {
+        #also chrome, mercury and antimony
+        #bg_iron_mining = 18 #Deposit of Cam Dagi moved to eastern Thrace to make industrialising Istanbul slightly easier
+        bg_logging = 10
+        bg_fishing = 6
+    }
+    naval_exit_id = 3035
+}
+
+STATE_AYDIN = {
+    id = 425
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x15CC91" "x205020" "x20AAE2" "x6E8DF4" "x95ABDB" "xA090A0" "xABD1D0" "xB020E0" "xBEA226" "xC0FCA9" "xE8A5DB" "xFD1F86" }
+    city = "xE8A5DB"
+    port = "xB020E0"
+    farm = "x15CC91"
+    mine = "xABD1D0"
+    wood = "x205020"
+    arable_land = 40
+    arable_resources = { "bg_wheat_farms" "bg_cotton_plantations" "bg_silk_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" "bg_dye_plantations" } #Replaced livestock with dyes because reasons
+
+
+
+    capped_resources = {
+        #bg_coal_mining = 48 #Lignite
+        bg_lead_mining = 20 #chrome, antimony and mercury
+
+
+
+        bg_logging = 7
+        bg_fishing = 15
+    }
+    naval_exit_id = 3035
+}
+
+STATE_KONYA = {
+    id = 426
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x02FE8B" "x04C595" "x0EABBE" "x1D4A61" "x375BA2" "x401060" "x472F2C" "x47B8CA" "x4CEBB4" "x547B95" "x55148F" "x56087A" "x601020" "x602629" "x65DE76" "x661DB3" "x669397" "x6DB349" "x70373E" "x76099B" "x76C0DF" "x802F12" "x8505DE" "x8F7C3D" "x93F78F" "x9E386C" "x9FFCAB" "xA4ED5C" "xB54481" "xBACCB8" "xBB0729" "xBC2D46" "xC0A9EB" "xC1905F" "xCB2093" "xCCE5E0" "xDE59BB" "xE01020" "xE090A0" "xE8D503" "xEB98F3" "xF28CC2" "xF7871B" "xFA1AEF" }
+    city = "x547B95"
+    port = "x04C595"
+    farm = "x669397"
+    mine = "xFA1AEF"
+    wood = "x1D4A61"
+    arable_land = 40
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_vineyard_plantations" "bg_silk_plantations" }
+    capped_resources = {
+        #also mercury and chrome
+        bg_fishing = 6
+    }
+    naval_exit_id = 3034
+}
+
+STATE_KASTAMONU = {
+    id = 427
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x1D8401" "x312F4B" "x415C04" "x449057" "x6089D1" "x747BB5" "x7A7E06" "xB82B24" "xBEBB3F" "xC01000" "xC1C893" "xE1E090" "xF040E0" }
+    city = "x415C04"
+    port = "x7A7E06"
+    farm = "x747BB5"
+    mine = "xC01000"
+    wood = "xBEBB3F"
+    arable_land = 35
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tea_plantations" "bg_cotton_plantations" }
+    capped_resources = {
+        bg_coal_mining = 72
+        bg_logging = 18
+        bg_fishing = 8
+    }
+    naval_exit_id = 3036
+}
+
+STATE_DIYARBAKIR = {
+    id = 428
+    subsistence_building = "building_subsistence_orchards"
+    provinces = { "x0FD328" "x1D287B" "x319F6B" "x31F004" "x376F7A" "x3CB54F" "x47DD99" "x510E91" "x55EC85" "x5E4B3A" "x60D4AE" "x665380" "x86D676" "x8A4F16" "x9457C4" "x95EA60" "x9E2132" "xA090E0" "xA57AFA" "xC9CF24" "xD8B670" "xF3EE0A" "xFB66D7" }
+    traits = { "state_trait_euphrates_river" "state_trait_zagros_mountains" }
+    city = "xC9CF24"
+    farm = "xD8B670"
+    mine = "x510E91"
+    wood = "x55EC85"
+    arable_land = 40
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" }
+    capped_resources = {
+        #bg_coal_mining = 32 #Lignite
+        bg_copper_mining = 45 #Diyarbakir means land of copper and copper mining dates back millennia
+
+
+
+
+
+
+
+
+
+    }
+}
+
+STATE_ADANA = {
+    id = 429
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x2111E0" "x39CBF7" "x4DA0F1" "x63E9DB" "x7DD48B" "x8517E9" "x909463" "xA09060" "xA4523A" "xB0E060" "xCCBD19" "xDAD836" "xE8DCC5" "xF657D8" "xFA9C84" }
+    traits = {}
+    prime_land = { x2111E0 xB0E060 xCCBD19 x8517E9 xDAD836 }
+    city = "x2111E0"
+    port = "x2111E0"
+    farm = "xE8DCC5"
+    mine = "xA4523A"
+    wood = "xF657D8"
+    arable_land = 35
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_vineyard_plantations" }
+    capped_resources = {
+        #also pyrite
+        #bg_coal_mining = 44 #Lignite
+        bg_logging = 7
+        bg_fishing = 7
+    }
+    naval_exit_id = 3034
+}
+
+STATE_TRABZON = {
+    id = 430
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x001080" "x009080" "x1357F8" "x146DD9" "x288BCD" "x809080" "x9655BD" "xA88EEC" "xAE07E3" "xB526B3" }
+    city = "x146DD9"
+    port = "x9655BD"
+    farm = "x809080"
+    mine = "x001080"
+    wood = "x9655BD"
+    arable_land = 40
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tea_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+    capped_resources = {
+        bg_copper_mining = 21 #Also Zinc #state_trait_porphyry_copper?
+
+
+
+
+
+
+
+
+
+        bg_logging = 16
+        bg_fishing = 9
+    }
+    naval_exit_id = 3036
+}
+
+STATE_ERZURUM = {
+    id = 431
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x00D000" "x25E046" "x27689E" "x3051BD" "x31B08C" "x409080" "x4F6E8F" "x52EB9A" "x59E513" "x5C223C" "x60677E" "x669A31" "x6E2D49" "x740ED1" "x795751" "x7BC870" "x801080" "x81F589" "x895074" "x8F5A6A" "x90BA49" "x92A943" "xA23F9A" "xC01080" "xC33C0F" "xC41BC3" "xC7DC49" "xD0901D" "xF51B98" "xFDB72C" }
+    city = "x895074"
+    farm = "x4F6E8F"
+    mine = "xC01080"
+    wood = "x7BC870"
+    arable_land = 40
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_iron_mining = 30 #Divrigi
+
+
+
+
+
+
+
+
+
+        bg_lead_mining = 36
+    }
+}
+
+STATE_ANKARA = {
+    id = 432
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x03F8EA" "x04F350" "x098D9C" "x0BD6EC" "x0D1D4E" "x15BC1F" "x17B19B" "x180265" "x1A75C7" "x25499A" "x29D9AF" "x3041CC" "x30A0E0" "x39B060" "x3E9653" "x401080" "x409000" "x431F60" "x465D69" "x5D2F75" "x5F00C0" "x62FAA8" "x66B13B" "x785849" "x7DD19B" "x8713CE" "x895D6B" "x8E9935" "x964F97" "x967F78" "xA8674E" "xB556A0" "xC09000" "xC29DFD" "xCAF12B" "xCB8C83" "xE17847" "xEB1F97" "xF470A0" }
+    city = "x17B19B"
+    farm = "x0BD6EC"
+    mine = "x25499A"
+    wood = "xCAF12B"
+    arable_land = 65
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_opium_plantations" "bg_vineyard_plantations" }
+    capped_resources = {
+        bg_iron_mining = 30
+    }
+}
+
+STATE_KARS = {
+    id = 991
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x009000" "x327755" "x467F92" "x809001" "x8A9689" "xB8481F" "xC09080" }
+    city = "x467F92"
+    port = "x809001"
+    farm = "x8A9689"
+    mine = "x327755"
+    wood = "x8A9689"
+    arable_land = 10
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tea_plantations" "bg_tobacco_plantations" }
+    capped_resources = {
+        bg_logging = 10
+        bg_fishing = 5
+    }
+    naval_exit_id = 3036
+}
+

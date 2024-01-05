@@ -1,0 +1,65 @@
+﻿#je_cr_reinventing_egypt = {
+#	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+#	
+#	group = je_group_historical_content
+#	
+#	
+#	on_monthly_pulse = {
+#		random_events = {
+#			
+#		}
+#	}
+#	
+#	immediate = {
+#		ruler = {
+#			save_scope_as = Muhammad_ali
+#		}
+#	}
+#
+#	complete = {
+#		bureaucracy >= 0
+#		authority >= 0
+#		OR = {
+#			has_law = law_type:law_interventionism
+#			has_law = law_type:law_command_economy
+#		}
+#        any_scope_building = { 
+#            is_building_type = building_textile_mills
+#			has_active_production_method = pm_dye_workshops  
+#            level >= 5
+#            occupancy >= 0.75
+#        }
+#        any_scope_building = { 
+#            is_building_type = building_cotton_plantation
+#            level >= 10
+#            occupancy >= 0.75
+#        }
+#		country_pm_usage = {
+#			target = ROOT
+#			production_method = line_infantry
+#			value > 0.75
+#		}
+#		institution_investment_level = {
+#			institution = institution_health_system
+#			value > 0
+#		}
+#		institution_investment_level = {
+#			institution = institution_schools
+#			value > 0
+#		}
+#	}
+#	
+#	on_complete = {
+#		
+#	}
+#	
+#	invalid = {
+#	
+#	}
+#	
+#	weight = 200
+#	
+#	should_be_pinned_by_default = yes
+#	
+#	inheritable = no
+#}

@@ -1,0 +1,574 @@
+﻿je_cr_robinson_treaties = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	#is_shown_when_inactive = {
+    #    OR = {
+	#		country_has_primary_culture = cu:franco_canadian
+	#		country_has_primary_culture = cu:anglo_canadian
+	#	}
+	#	ROOT = {
+	#		any_scope_state = {
+	#			OR = {
+	#				state_region = s:STATE_QUEBEC
+	#				state_region = s:STATE_ONTARIO
+	#			}
+	#		}
+	#	}
+	#	c:CTF = {
+	#		any_scope_state = {
+	#			state_region = s:STATE_ONTARIO
+	#		}			
+	#	}
+    #}
+    #possible = {
+    #    ROOT = {
+	#		any_scope_state = {
+	#			state_region = s:STATE_ONTARIO
+	#		}
+	#	}
+    #}
+	
+	group = je_group_historical_content
+	
+	immediate = {
+		set_global_variable = {
+			name = cr_robinson_treaty_var
+			value = 1
+		}
+		add_modifier = {
+			name = cr_eyeing_unceded_land
+			months = long_modifier_time
+		}
+	}
+	
+	on_monthly_pulse = {
+		random_events = {
+			20 = 0
+			4 = cr_canadian_indian_treaties.1 #Mining Permit
+			2 = cr_canadian_indian_treaties.2 #Surveyor Threatened
+			1 = cr_canadian_indian_treaties.3 #Ojibwe Petition
+			1 = cr_canadian_indian_treaties.4 #On Aboriginal Land Titles/Papineau Report
+			1 = cr_canadian_indian_treaties.5 #Incident at the Copper Mine/Mica Bay Incident
+			4 = cr_canadian_indian_treaties.6 #The Copper Country Rebellion
+			2 = cr_canadian_indian_treaties.8 #The Long Tail of Civilisation / Mining Tailings
+			8 = cr_canadian_indian_treaties.10 #The Robinson Treaties - random
+		}
+	}
+
+	complete = {
+		has_diplomatic_pact = {
+			who = c:CTF
+			type = colonization_rights 
+	 	}
+	}
+	
+	on_complete = {
+		custom_tooltip = {
+			text = je_cr_robinson_treaties_complete_tt
+			if = {
+				limit = {
+					has_truce_with = c:CTF
+				}
+				trigger_event = { id = cr_canadian_indian_treaties.10 } # The Robinson Treaties
+			}
+			else_if = {
+				trigger_event = { id = cr_canadian_indian_treaties.99 } #cleanup event
+			}
+		}
+		ig:ig_industrialists = {
+			add_modifier = {
+				name = cr_succesful_lobby_normal
+				months = normal_modifier_time
+			}	
+		}
+		s:STATE_ONTARIO = {
+			random_scope_state = {
+				limit = {
+					owner = ROOT
+				}
+				if = {
+					limit = {
+						has_modifier = cr_unceded_territory_95
+					}
+					remove_modifier = cr_unceded_territory_95
+				}
+				else_if = {
+					limit = {
+						has_modifier = cr_unceded_territory_75
+					}
+					remove_modifier = cr_unceded_territory_75
+				}
+				else_if = {
+					limit = {
+						has_modifier = cr_unceded_territory_50
+					}
+					remove_modifier = cr_unceded_territory_50
+				}
+				else_if = {
+					limit = {
+						has_modifier = cr_unceded_territory_30
+					}
+					remove_modifier = cr_unceded_territory_30
+				}
+				else = {
+				
+				}
+			}
+		}
+		hidden_effect = {
+			remove_global_variable = cr_robinson_treaty_var
+			remove_global_variable = cr_ojibwe_petition_against_mines_has_happened
+			remove_global_variable = cr_papineau_report_has_been_published
+		}		
+	}
+	
+    fail = {
+		OR = {
+			NOT = {
+				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_interventionism
+			}
+			#ig:ig_industrialists = {
+			#	is_marginal = yes
+			#}
+		}
+    }
+	
+	on_fail = {
+		hidden_effect = {
+			trigger_event = { id = cr_canadian_indian_treaties.99 } #cleanup event
+		}		
+	}
+	
+	invalid = {
+			#has_state_in_state_region = STATE_ONTARIO
+			#any_scope_state = {
+			#	state_region = s:STATE_ONTARIO
+			#	NOT = { owner = ROOT }
+			#}
+		NOR = {
+			any_scope_state = {
+				state_region = s:STATE_ONTARIO
+				#owner = ROOT
+			}
+			c:CTF = {
+				any_scope_state = {
+					state_region = s:STATE_ONTARIO
+				}
+			}
+		}
+	}
+	
+	on_invalid = {
+		hidden_effect = {
+			trigger_event = { id = cr_canadian_indian_treaties.99 } #cleanup event
+		}	
+	}
+	
+	weight = 100
+	
+	should_be_pinned_by_default = yes
+	
+	inheritable = yes
+}
+
+je_cr_numbered_treaties = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_historical_content
+	
+	is_shown_when_inactive = {
+        OR = {
+			country_has_primary_culture = cu:franco_canadian
+			country_has_primary_culture = cu:anglo_canadian
+		}
+		#any_scope_state = {
+		#	OR = {
+		#		region = sr:region_canada
+		#		region = sr:region_ruperts_land
+		#	}
+		#	OR = {
+		#		has_modifier = cr_unceded_territory_95
+		#		has_modifier = cr_unceded_territory_75
+		#		has_modifier = cr_unceded_territory_50
+		#		has_modifier = cr_unceded_territory_30
+		#	}
+		#}
+		any_scope_state = {
+			OR = {
+				has_modifier = cr_unceded_territory_95
+				has_modifier = cr_unceded_territory_75
+				has_modifier = cr_unceded_territory_50
+				has_modifier = cr_unceded_territory_30
+			}
+		}
+    }
+    possible = {
+		has_technology_researched = civilizing_mission
+		has_law = law_type:law_colonial_resettlement
+    }
+	
+	immediate = {
+		set_global_variable = {
+			name = cr_numbered_treaties_counter
+			value = 0
+		}
+		add_modifier = {
+			name = cr_eyeing_unceded_land
+			months = long_modifier_time
+		}
+	}
+	
+	on_monthly_pulse = {
+		random_events = {
+			12 = 0
+			1 = cr_canadian_indian_treaties.20
+		}
+	}
+
+	complete = {
+		NOT = {
+			any_scope_state = {
+				has_modifier = cr_unceded_territory_95
+				has_modifier = cr_unceded_territory_75
+				has_modifier = cr_unceded_territory_50
+				has_modifier = cr_unceded_territory_30
+			}
+		}
+	}
+	
+	on_complete = {
+		hidden_effect = {
+			remove_global_variable = cr_numbered_treaties_counter
+			#remove_global_variable = cr_ojibwe_petition_against_mines_has_happened
+			#remove_global_variable = cr_papineau_report_has_been_published
+		}		
+	}
+	
+    fail = {
+		OR = {
+			has_law = law_type:law_multicultural
+		}
+    }
+	
+	on_fail = {
+		hidden_effect = {
+			#trigger_event = { id = cr_canadian_indian_treaties.99 } #cleanup event
+		}		
+	}
+	
+	invalid = {
+	}
+	
+	on_invalid = {
+		hidden_effect = {
+			#trigger_event = { id = cr_canadian_indian_treaties.99 } #cleanup event
+		}	
+		remove_modifier = cr_pushing_numbered_treaties
+	}
+	
+	
+	#current_value = {
+	#	value = global_var:cr_pressure_on_natives_var
+	#}
+	#
+	#progressbar = yes
+	weight = 10000
+	should_be_pinned_by_default = yes
+	
+	#inheritable = yes
+}
+
+je_cr_chateau_clique = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	group = je_group_historical_content
+	
+	is_shown_when_inactive = {
+        OR = {
+			country_has_primary_culture = cu:franco_canadian
+		}
+    }
+    possible = {
+    }
+	
+	immediate = {
+		c:QUE = {
+			save_scope_as = cr_lower_canada
+		}
+		c:GBR = {
+			save_scope_as = cr_lower_canada_overlord
+		}
+		c:ONT = {
+			save_scope_as = cr_upper_canada
+			ig:ig_devout = {
+				save_scope_as = cr_anglican_church
+			}
+		}
+		c:FRA = {
+			save_scope_as = cr_original_coloniser_quebec
+			ig:ig_devout = {
+				save_scope_as = cr_catholic_church
+			}		
+		}
+		ig:ig_intelligentsia = {
+			save_scope_as = cr_canadian_liberals
+		}
+		random_scope_character  = {
+			limit = {
+				has_variable = is_louis_joseph_papineau_var
+			}
+			save_scope_as = louis_joseph_papineau
+		}
+		c:QUE = {
+			save_scope_as = cr_lower_canada
+		}
+		ig:ig_intelligentsia = {
+			save_scope_as = cr_canadian_liberals
+		}
+		ig:ig_industrialists = {
+			save_scope_as = cr_canadian_industrialists
+		}
+		ig:ig_landowners = {
+			save_scope_as = cr_canadian_landowners
+		}
+		cu:british = {
+			save_scope_as = english_culture
+		}
+		cu:franco_canadian = {
+			save_scope_as = franco_canadian_culture
+		}
+		cu:anglo_canadian = {
+			save_scope_as = anglo_canadian_culture
+		}
+	
+	}
+	
+	on_monthly_pulse = {
+		random_events = {
+			#12 = 0
+			#1 = cr_canadian_indian_treaties.20
+		}
+	}
+
+	complete = {
+		OR = {
+			ig:ig_industrialists = {
+				is_marginal = yes
+			}
+			AND = {
+				custom_tooltip = {
+					text = je_cr_92_resolutions_ENG_tooptip1
+					OR = {
+						has_law = law_type:law_census_voting
+						has_law = law_type:law_universal_suffrage
+					}
+				}
+				custom_tooltip = {
+					text = je_cr_92_resolutions_ENG_tooptip2
+					OR = {
+						has_law = law_type:law_national_supremacy
+						has_law = law_type:law_ethnostate
+					}
+				}
+			}
+			NOR = {
+				c:QUE = { is_subject_of = c:GBR } 
+			}
+		}
+	}
+	
+	on_complete = {
+		if = {
+			limit = {
+				has_modifier = cr_chateau_clique_modifier
+			}
+			remove_modifier = cr_chateau_clique_modifier
+		}
+		if = {
+			limit = {
+				country_has_primary_culture = cu:anglo_canadian
+			}
+			c:QUE = {
+				add_primary_culture = cu:franco_canadian
+				remove_primary_culture = cu:anglo_canadian
+			}
+		}
+		if = {
+			limit = {
+				country_has_state_religion = rel:protestant
+			}
+			c:QUE = {
+				set_state_religion = rel:catholic
+			}
+		}
+		s:STATE_QUEBEC = {
+			random_scope_state = {
+				limit = {
+					owner = ROOT
+				}
+				if = {
+					limit = {
+						has_modifier = cr_tax_revolt
+					}
+					remove_modifier = cr_tax_revolt
+				}
+				else = {
+				
+				}
+			}
+		}	
+	}
+	
+    fail = {
+	
+    }
+	
+	on_fail = {
+		hidden_effect = {
+			#trigger_event = { id = cr_canadian_indian_treaties.99 } #cleanup event
+		}		
+	}
+	
+	invalid = {
+	}
+	
+	on_invalid = {
+		hidden_effect = {
+			#trigger_event = { id = cr_canadian_indian_treaties.99 } #cleanup event
+		}	
+	}
+	
+	
+	#current_value = {
+	#	value = global_var:cr_pressure_on_natives_var
+	#}
+	#
+	#progressbar = yes
+	weight = 10000
+	should_be_pinned_by_default = yes
+	
+	#inheritable = yes
+}
+
+je_cr_92_resolutions_ENG = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	group = je_group_historical_content
+	
+	is_shown_when_inactive = {
+    }
+    possible = {
+    }
+	
+	immediate = {
+		c:QUE = {
+			save_scope_as = cr_lower_canada
+		}
+		c:ONT = {
+			save_scope_as = cr_upper_canada
+		}
+		ig:ig_intelligentsia = {
+			save_scope_as = cr_canadian_liberals
+		}
+		ig:ig_industrialists = {
+			save_scope_as = cr_canadian_industrialists
+		}
+		ig:ig_landowners = {
+			save_scope_as = cr_canadian_landowners
+		}
+		c:ONT = {
+			ig:ig_devout = {
+				save_scope_as = cr_anglican_church
+			}
+		}
+		c:FRA = {
+			ig:ig_devout = {
+				save_scope_as = cr_catholic_church
+			}		
+		}
+		random_scope_character  = {
+			limit = {
+				has_variable = is_louis_joseph_papineau_var
+			}
+			save_scope_as = louis_joseph_papineau
+		}
+		cu:british = {
+			save_scope_as = english_culture
+		}
+		cu:franco_canadian = {
+			save_scope_as = franco_canadian_culture
+		}
+		cu:anglo_canadian = {
+			save_scope_as = anglo_canadian_culture
+		}
+	}
+	
+	on_monthly_pulse = {
+		random_events = {
+			#12 = 0
+			#1 = cr_canadian_indian_treaties.20
+		}
+	}
+
+	complete = {
+		OR = {
+			custom_tooltip = {
+				text = cr_offered_response_to_92_resolutions_text
+				has_variable = cr_offered_response_to_92_resolutions
+			}
+			AND = {
+				custom_tooltip = {
+					text = je_cr_92_resolutions_ENG_tooptip1
+					OR = {
+						has_law = law_type:law_census_voting
+						has_law = law_type:law_universal_suffrage
+					}
+				}
+				custom_tooltip = {
+					text = je_cr_92_resolutions_ENG_tooptip2
+					OR = {
+						has_law = law_type:law_national_supremacy
+						has_law = law_type:law_ethnostate
+					}
+				}
+			}
+		}
+	}
+	
+	on_complete = {
+		hidden_effect = {
+		}		
+	}
+	
+    fail = {
+		NOR = {
+			c:QUE = { is_subject_of = c:GBR } 
+		}
+    }
+	
+	on_fail = {
+		hidden_effect = {
+			#trigger_event = { id = cr_canadian_indian_treaties.99 } #cleanup event
+		}		
+	}
+	
+	invalid = {
+	}
+	
+	on_invalid = {
+		hidden_effect = {
+			#trigger_event = { id = cr_canadian_indian_treaties.99 } #cleanup event
+		}	
+	}
+	
+	
+	#current_value = {
+	#	value = global_var:cr_pressure_on_natives_var
+	#}
+	#
+	#progressbar = yes
+	weight = 10000
+	should_be_pinned_by_default = yes
+	
+	#inheritable = yes
+}

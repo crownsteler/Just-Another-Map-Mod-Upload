@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:ADA = {
+		create_character = {
+			first_name = "Adama"
+			last_name = "bii_Ardo_Hassana" 
+			historical = yes
+			ruler = yes
+			age = 50
+			interest_group = ig_devout
+			ideology = ideology_moderate
+			traits = {
+				reserved pious pillager 
+			}
+		}	
+	}
+}

@@ -1,0 +1,18 @@
+﻿l_english:
+ #The Netherlands
+ ig_catholics:0 "Catholics"
+ ig_liberals:0 "Liberals"
+ ig_merchant_bankers:0 "Merchant-Bankers"
+ ig_protestants:0 "Protestants"
+ ig_socialists:0 "Socialists"
+ #Dutch East Indies
+ ig_bupati:0 "Baputi"
+ #Lower/Franco-Canada
+ ig_seigneurs:0 "Seigneurs"
+ ig_seigneurs_desc:0 "Taking pride in their roles as stewards of the land, the Seigneurs hold vast land grants, often granted during the French colonial period. With the grants came certain privileges through which they hold significant authority over the Habitants who live on their land."
+ ig_habitants:0 "Habitants"
+ ig_habitants_desc:0 "The Habitants are the proud and resilient farmers living in the countryside and on the frontier. Known for their self-sufficiency and deep connection to the land, they take great pride in their way of life and ability to live of the land."
+ ig_patriotes:0 "Patriotes"
+ ig_patriotes_desc:0 "Inspired by the Enlightenment and feeling marginalised in the British political system, the Patriotes are a political movement in Lower Canada that seeks democratic reforms and greater autonomy for French Canadians."
+ ig_chateau_clique:0 "Château Clique"
+ ig_chateau_clique_desc:0 "The collective name of an influential group of English merchants who work to advance the interest of modern industry -and of assimilating Lower Canada into a large Anglophone Canada-"
