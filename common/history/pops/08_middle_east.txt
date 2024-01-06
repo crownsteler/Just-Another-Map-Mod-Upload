@@ -1112,20 +1112,11 @@
 			create_pop = {
 				culture = bedouin
 				religion = shiite
-				size = 46269
+				size = 3269
 			}
 			create_pop = {
 				culture = bedouin
-				size = 7016
-			}
-			create_pop = {
-				culture = sephardic
-				size = 320
-			}
-			create_pop = {
-				culture = somali
-				size = 320
-				pop_type = slaves
+				size = 516
 			}
 		}
 		region_state:KHS = {
@@ -1350,6 +1341,26 @@
 			create_pop = {
 				culture = sephardic
 				size = 16215
+				pop_type = slaves
+			}
+		}
+		region_state:MZK = {
+			create_pop = {
+				culture = bedouin
+				religion = shiite
+				size = 43269
+			}
+			create_pop = {
+				culture = bedouin
+				size = 6516
+			}
+			create_pop = {
+				culture = sephardic
+				size = 320
+			}
+			create_pop = {
+				culture = somali
+				size = 320
 				pop_type = slaves
 			}
 		}

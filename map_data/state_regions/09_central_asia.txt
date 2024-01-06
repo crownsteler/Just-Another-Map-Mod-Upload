@@ -58,12 +58,16 @@ STATE_ARMENIA = {
 
 
 
+
+
     wood = "x3161E0"
     arable_land = 20
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_cotton_plantations" }
     capped_resources = {
         bg_logging = 4
         bg_copper_mining = 24 #Kajaran & Alaverdi
+
+
 
 
 
@@ -90,6 +94,8 @@ STATE_AZERBAIJAN = {
     capped_resources = {
         #bg_iron_mining = 15
         bg_lead_mining = 18 #Lead/zinc
+
+
 
 
 
@@ -140,6 +146,8 @@ STATE_SAMARA = {
     capped_resources = {
         bg_iron_mining = 30
         bg_copper_mining = 35 #Bashkortostan (Tverdyshevs – Myasnikov); Orenburg (Gaisky Mine Complex), Kargaly
+
+
 
 
 
@@ -221,6 +229,8 @@ STATE_URALSK = {
     arable_land = 30
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {} #Volcanic hosted massive sulphide (VHMS) copper deposit at 50 Let Oktyabrya/Koktau/Priorskoe/Priorskoye 130 km east of Aktobe
+
+
 
 
 
@@ -339,6 +349,8 @@ STATE_KIRGHIZIA = {
 
 
 
+
+
     }
 }
 
@@ -397,41 +409,9 @@ STATE_TURKMENIA = {
     prime_land = { x8955C1 x7B5777 x6D1768 x156A20 x132704 xDC167D }
     impassable = { xD72954 xC57238 x42BBE7 xB9F093 x7751AF x0111C0 x2E361B xEE6836 x184E72 xC62005 x1B7D15 xFFCBC4 x80FDCA x4D1581 xB9040B x9868A3 xE5817B x182A2C x109507 xEA5990 x7B3A19 x2E3A04 x818A90 xB0CFEC x9B1898 x5F1CE5 x79947D x29133A xECBE1C xDCACAB x1B9E03 xE0A7FF xBE7494 xC9EFBF x3982B1 x8851E8 xB1243B x622B3C x3A816D xE16FA1 x087318 x39988A x35E93F xBB10AF xAC0120 xF76F3D x8E76F9 xF9C1AD x582102 x6598F7 x1DA83C x6CF557 x6E71E4 x780AED x4C919C x43C9E9 x1046AA x72E5D4 x18C1D8 xDA5251 xB9F803 xA63721 x9834F7 x645473 xEA083E xD00821 x08AD1A xB402D5 x3FC76E x2D73A6 x21CDD7 x90EADD x4253A8 xF0796E x9D4820 xA89A25 x9A0BDB x87AA70 x4758E8 }
     city = "x8955C1"
-
-
-
-
-
-
-
-
     farm = "x8955C1"
-
-
-
-
-
-
-
-
     mine = "x62E34E"
-
-
-
-
-
-
-
-
     wood = "x7B5777"
-
-
-
-
-
-
-
-
     arable_land = 35
     arable_resources = { "bg_wheat_farms" "bg_opium_plantations" "bg_tobacco_plantations" }
     capped_resources = {
@@ -439,7 +419,7 @@ STATE_TURKMENIA = {
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        undiscovered_amount = 45
     }
 }
 
@@ -457,6 +437,8 @@ STATE_SEMIRECHE = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_opium_plantations" }
     capped_resources = {
         bg_copper_mining = 25 #Bozshakol? Porphyry copper deposit, Orlovksy mine, Borodulikha, East Kazakhstan? 
+
+
 
 
 
@@ -525,7 +507,11 @@ STATE_TURKISTAN = {
 
 
 
+
+
         bg_lead_mining = 20 #lead/zinc mine #Maleesky mine?
+
+
 
 
 
@@ -592,6 +578,8 @@ STATE_KARAGANDA = {
 
 
 
+
+
     #bg_copper_mining = 60 #Aktogay, porphyry copper deposit
     }
 }
@@ -616,6 +604,8 @@ STATE_PASHTUNISTAN = {
 
 
 
+
+
         bg_logging = 7
     }
 }
@@ -633,6 +623,8 @@ STATE_WESTERN_AFGHANISTAN = {
     wood = "xB7ED78"
     arable_land = 45
     arable_resources = { "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_silk_plantations" } #Also pistachios, almond, walnut
+
+
 
 
 
@@ -666,6 +658,8 @@ STATE_EASTERN_AFGHANISTAN = {
 
 
 
+
+
     capped_resources = {
         bg_copper_mining = 45 #Mes Aynak
 
@@ -674,7 +668,11 @@ STATE_EASTERN_AFGHANISTAN = {
 
 
 
+
+
         bg_iron_mining = 25 #Hajigak Mine
+
+
 
 
 
@@ -709,6 +707,8 @@ STATE_HERAT = {
 
 
 
+
+
     }
 }
 
@@ -728,6 +728,8 @@ STATE_MAZAR_I_SHARIF = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_tobacco_plantations" "bg_dye_plantations" }
     capped_resources = {
         bg_coal_mining = 32 #Shabashak/Dar-I-Suf
+
+
 
 
 
@@ -799,6 +801,8 @@ STATE_BALUCHISTAN = {
 
 
 
+
+
         #bg_lead_mining = 12 #Duddar mine
         #bg_copper_mining = 25 #Reko Diq mine, Saindak Copper Gold Project, porphyry deposit
         bg_fishing = 5
@@ -846,6 +850,8 @@ STATE_HIMALAYAS = {
     traits = { "state_trait_himalayas_mountains" }
 
     impassable = { x8FF69F x59BBCE xF202E0 xE0C455 } #Himachal Pradesh, don't forget to update 
+
+
 
 
 

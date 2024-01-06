@@ -78,6 +78,8 @@ STATE_YUNNAN = {
 
 
 
+
+
         bg_logging = 17
     }
 }
@@ -120,7 +122,7 @@ STATE_SHAOZHOU = {
 }
 
 STATE_ALXA = {
- #STATE_INNER_MONGOLIA
+    #STATE_INNER_MONGOLIA
     id = 484
     subsistence_building = "building_subsistence_pastures"
     provinces = { x406E86 xEC70ED x299999 x91D0D9 x7C853E xE168F6 xD830CC xA418FA xC36EF4 x44ACDA x237BED xAE9CAF xBD1A16 x40D14F x943F9F xB0CF8A x0A8ABF x1045BD x3D6CBC xDAABD8 x0F7D1A x9E1C8F xB2BC38 x37F2AE x1C9DAE xE60991 xA5DFC1 xDD4350 x24ADB5 x845D6C x619001 x30BDCD xCAE233 x1AD9E9 xCA805C xC4F9AD x44E419 xE7AE13 x2C3E1C x36E525 x0BC088 x2C91D2 xA0BF03 x53E07B x6F9BFD x700F29 x328F66 x9582A7 xEAB081 xB03C26 xF968DB x23F13F x95322B x531F24 x5A3C39 xC81F52 x4F79A2 xC64CF3 xEB46AE x23E439 x9C146E x60FB3C xAB8C53 x65A6EE xEFBEBE x08F4F9 xDD2DD0 xCBAD9E xB06961 x2938F6 xB8A865 x78913A x822408 xA34D75 x8CFDEA x8CA3D1 x65BB92 xC93C5A x249BF1 x821CB1 x030522 x0B083B x13148D x0717B0 x7C0109 x4F0969 x51049D x0B290E x1920B1 x212B44 x7D03D7 x950856 x6C1D10 x084245 x402AA1 x612E18 xBF0E96 x20446F x9A290F xE61212 x0E4A9E x6C3633 xB4179D xB1199E x274966 xF700DB xB018D2 xDF1557 x2F4B70 x57486F x604C22 xDD18DC xF612D5 xE1254D xE81DA5 xDD248C x52517A x545458 xBB346C x9B3D7F x804F17 x9D4375 x72508B xA05101 x356F29 xB539EC x6953F3 x765C76 xA74D78 xBF4F34 x686682 x6265E6 x946285 x5D8002 x9F5DDB x577A97 x697F3F xC66162 x189764 x6079C8 x0C97C7 x499327 xAE752D xEF59B7 x4D9365 x9A7C60 x3591DF x6885B9 x4C9D47 xDC7606 xCF6FC5 x4D9FBE x21B375 xB28D24 x509BF7 xD58188 x09BDB5 x47B534 x48B165 xE579C7 x789EBE xD287BA x4ABE28 x9B9AEF xB2A065 xE09080 xC99C56 x52BBA8 x74B481 xAAA387 x3DD007 xEA991E x0ED964 x56BACB x4DC0A9 x11D2B4 xF789D7 x9BB42F x43C3CE xB4B216 x56C873 x9FB63F xF992BD x13D9CC x7FCC4E xE9A4AD x29E1D9 xB4B7CD x58DF63 x6FCDE9 x5DDC82 x61E50B x18F94F x7DE432 xF3C61B x54F824 x78E67B xC0D911 x35F8B6 xE6C4C4 xACE725 xCAE219 x7DF862 xD8D89F xCBDEAC xB2F616 xBCEE88 xD5E9B3 xA8F8B1 xC3EFFD xCCFC62 xF7EA9D xC9FE6C xDAFBB4 x6EB371 xD1BFAF x495253 }
@@ -237,6 +239,8 @@ STATE_OUTER_MANCHURIA = {
         bg_coal_mining = 32
         bg_iron_mining = 45
         bg_copper_mining = 20 #Tin/copper Sable tin deposit at Solnechny District
+
+
 
         bg_logging = 20
         bg_fishing = 10
@@ -645,7 +649,7 @@ STATE_FORMOSA = {
     arable_land = 80
     arable_resources = { "bg_rice_farms" "bg_dye_plantations" "bg_tea_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
- #also copper but by 1880 only coal and sulfur were know to exist in economic quantities 
+        #also copper but by 1880 only coal and sulfur were know to exist in economic quantities 
         bg_logging = 9
         bg_fishing = 13
         bg_coal_mining = 30
@@ -711,7 +715,11 @@ STATE_ULIASTAI = {
     capped_resources = {
         bg_coal_mining = 48 #Tavan Tolgoi, largest coal site in Mongolia
 
+
+
         bg_copper_mining = 42 #Oyu Tolgoi 
+
+
 
     }
 }
@@ -751,7 +759,7 @@ STATE_CAMBODIA = {
         #bg_iron_mining = 25 #Hermatite, Magnetite and Limonite, discovered in the 1950s
         #bg_copper_mining = 18
         bg_logging = 20
-        bg_fishing = 5
+        bg_fishing = 3
         bg_monuments = 1
     }
     resource = {
@@ -762,7 +770,7 @@ STATE_CAMBODIA = {
 }
 
 STATE_BANGKOK = {
- #STATE_SIAM
+    #STATE_SIAM
     id = 516
     subsistence_building = "building_subsistence_rice_paddies"
     provinces = { x5B0F13 x154B0D x742F1F x2C4B2F x9030DF x4B58FD x10AFE0 x23B4B7 x62B39D xA4A851 x20DFD0 xEEFF94 xA0084E x541AFB x194621 x552E9A xAA42AD xDF3CAD xCE49D1 x118CA3 x99A1C0 x30EF20 }
@@ -801,7 +809,7 @@ STATE_TONKIN = {
         bg_coal_mining = 60
         bg_iron_mining = 27
         bg_logging = 19
-        bg_fishing = 7
+        bg_fishing = 5
     }
     naval_exit_id = 3054
 }
@@ -821,8 +829,10 @@ STATE_ANNAM = {
     capped_resources = {
         #bg_coal_mining = 25 #Nong Song and Ba River deposit, doesn't seem to be too important. Added to Tokin instead due to the high quality anthracite coal there.
         bg_logging = 16
-        bg_fishing = 13
+        bg_fishing = 12
         bg_copper_mining = 22 #Here primarily to nerf Tonkin
+
+
 
     }
     resource = {
@@ -833,7 +843,7 @@ STATE_ANNAM = {
 }
 
 STATE_MEKONG = {
- #STATE_COCHINCHINA
+    #STATE_COCHINCHINA
     id = 519
     subsistence_building = "building_subsistence_rice_paddies"
     provinces = { x4923A3 xDF070D x223DD3 x474B0B x0C662E x246E58 x217F68 x1D9718 x4080B0 x00C0B0 xE5A4DA xA4DBB7 }
@@ -846,7 +856,7 @@ STATE_MEKONG = {
     arable_land = 90
     arable_resources = { "bg_rice_farms" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_fishing = 18
+        bg_fishing = 10
     }
     resource = {
         type = "bg_rubber"
@@ -873,12 +883,14 @@ STATE_LAOS = {
         #bg_copper_mining = 32
         bg_lead_mining = 24 #Tin
 
+
+
         bg_logging = 18
     }
 }
 
 STATE_CHIANG_MAI = {
- #STATE_LANNA
+    #STATE_LANNA
     id = 521
     subsistence_building = "building_subsistence_rice_paddies"
     provinces = { x01087A xAB195B xBD159F xF32BB5 x32744C x507060 xB17111 x2C97B1 xEE6A10 xED5FC5 x3AAF2B x32B1BD x09C664 x94A916 x7BB73F xD6A9D8 x47E1BB x4AEF8A x88EF9B x77FDDB xABF7A2 xFBF0A4 }
@@ -890,16 +902,20 @@ STATE_CHIANG_MAI = {
     arable_land = 30
     arable_resources = { "bg_rice_farms" "bg_opium_plantations" "bg_coffee_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_banana_plantations" } #Palm oil
 
+
+
     capped_resources = {
         #bg_coal_mining = 32 #Mae Mo Mine discovered 1917, lignite
         bg_lead_mining = 26 #Zinc, also Wolfram
+
+
 
         bg_logging = 26
     }
 }
 
 STATE_NAKHON_RATCHASIMA = {
- #STATE_KHORAT
+    #STATE_KHORAT
     id = 522
     subsistence_building = "building_subsistence_rice_paddies"
     provinces = { x1417E7 x311E4F x9E031E xB30E09 x732208 xC90993 x5C3070 x0A49C7 xFB1F7E x934893 xF22DE6 x707020 x108DB4 x449632 xBF6988 x4E9753 xB48097 xCD871B x8795AE x01D94F x6BB1AD x18C6F5 x50CE4E x37DC38 x6FC6A1 x29EB28 x56E44C xB9C742 x57E793 xA3D6B8 x1CFFD0 x45FABD xEAD71D }
@@ -913,6 +929,8 @@ STATE_NAKHON_RATCHASIMA = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" }
     capped_resources = {
         bg_sulfur_mining = 22 #Potash
+
+
 
         bg_logging = 12
         bg_iron_mining = 15
@@ -932,10 +950,10 @@ STATE_TENASSERIM = {
     arable_land = 20
     arable_resources = { "bg_rice_farms" "bg_dye_plantations" "bg_banana_plantations" }
     capped_resources = {
- #Tin
+        #Tin
         bg_logging = 17
         bg_lead_mining = 24
-        bg_fishing = 12
+        bg_fishing = 8
     }
     resource = {
         type = "bg_rubber"
@@ -957,7 +975,7 @@ STATE_TAMBRALINGA = {
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_logging = 6
-        bg_fishing = 12
+        bg_fishing = 8
     }
     resource = {
         type = "bg_rubber"
@@ -982,6 +1000,8 @@ STATE_KACHIN = {
         bg_logging = 30
         bg_iron_mining = 30 #Hapkant, Kachin State
 
+
+
     #bg_minor_metals_mining = 10 #Nickel
     }
 }
@@ -1001,6 +1021,8 @@ STATE_SHAN_STATES = {
         bg_coal_mining = 20
         bg_lead_mining = 37 #Bawdwin, 6th largest in world in 1942, Silver/lead/zinc
 
+
+
         #bg_iron_mining = 24 #Mount Pinpet, discovered in the 1950s
         bg_logging = 14
     }
@@ -1012,6 +1034,8 @@ STATE_BURMA = {
     provinces = { x620442 xDA0253 x212FE8 xD5035C x363A85 x4D31CA xF5193B xCD31D0 x546B18 x397139 x3E75FA x118ECF x2497E7 xE15EF6 xA17AB8 x6E8FA2 x26A2E9 x3DB5A9 x75BE27 xD7A648 x60CBBF xB8B1D2 xE2C923 x2FF9BD xB7E202 x90EF60 xD2F36A xDEFDA8 xC1940E }
     traits = {} # "state_trait_burmese_teak"
 
+
+
     city = "x620442"
     farm = "xCD31D0"
     mine = "xDA0253"
@@ -1019,10 +1043,14 @@ STATE_BURMA = {
     arable_land = 85
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_opium_plantations" } #Also spices, perhaps in stead of Opium?
 
+
+
     capped_resources = {
         #bg_iron_mining = 36 #added to Shan and Kachin
         #bg_logging = 20 #represents the arid Irrawaddy valley
         bg_copper_mining = 38 #Letpadaung Copper Mine
+
+
 
     }
     resource = {
@@ -1192,8 +1220,12 @@ STATE_CHUBU = {
     arable_land = 150
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_tea_plantations" "bg_vineyard_plantations" } #Merged cotton into Kanto and Kansai as production is very much on the border of both
 
+
+
     capped_resources = {
         bg_lead_mining = 28 #lead/zinc
+
+
 
         bg_logging = 16
         bg_fishing = 16
@@ -1339,10 +1371,14 @@ STATE_BUSAN = {
     arable_land = 85
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_vineyard_plantations" "bg_tobacco_plantations" } #added vinyards instead of silk to improve economic diversity. Viticulture started in Kyongbuk in 1910.
 
+
+
     capped_resources = {
         #bg_coal_mining = 10 #Lignite
         bg_copper_mining = 15
         bg_lead_mining = 15 #Lead/zinc
+
+
 
         bg_logging = 7
         bg_whaling = 2
@@ -1362,6 +1398,8 @@ STATE_YANGHO = {
     wood = "x34B782"
     arable_land = 110
     arable_resources = { "bg_rice_farms" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" } #Tea has been produced here for centuries, but first plantations date to the 20th century according to wikipedia
+
+
 
     capped_resources = {
         #bg_coal_mining = 10 #lignite
@@ -1406,6 +1444,8 @@ STATE_PYONGYANG = {
     wood = "x47D537"
     arable_land = 100
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tobacco_plantations" } #spices / gingseng
+
+
 
     capped_resources = {
         bg_coal_mining = 60

@@ -272,12 +272,6 @@
 				size = 272000
 			}
 		}
-		region_state:FRA = {
-			create_pop = {
-				culture = basque
-				size = 173592
-			}
-		}
 	}
 	s:STATE_ARAGON = {
 		region_state:SPA = {
@@ -328,12 +322,6 @@
 			create_pop = {
 				culture = spanish
 				size = 15794
-			}
-		}
-		region_state:FRA = {
-			create_pop = {
-				culture = catalan
-				size = 111800
 			}
 		}
 	}

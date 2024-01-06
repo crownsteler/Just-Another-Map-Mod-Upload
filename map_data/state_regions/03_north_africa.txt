@@ -73,6 +73,8 @@ STATE_RED_SEA_COAST = {
 
 
 
+
+
     #bg_minor_metals_mining = 5 #Tantalum, alumina
     }
     naval_exit_id = 3047
@@ -160,6 +162,8 @@ STATE_ERITREA = {
 
 
 
+
+
     }
     naval_exit_id = 3047
 }
@@ -236,6 +240,8 @@ STATE_KORDOFAN = {
 
 
 
+
+
     capped_resources = {}
     resource = {
         type = "bg_oil_extraction"
@@ -255,6 +261,8 @@ STATE_DARFUR = {
     wood = "x3B2BDC"
     arable_land = 20
     arable_resources = { "bg_livestock_ranches" "bg_dye_plantations" } #dye_plantation = gum arabic
+
+
 
 
 
@@ -297,6 +305,8 @@ STATE_MARRAKECH = {
     wood = "xA71D65"
     arable_land = 60
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" } #Most wine in Fez. Sugar is also produced from Rabat northwards
+
+
 
 
 
@@ -380,6 +390,8 @@ STATE_TAZA = {
 
 
 
+
+
     #bg_coal_mining = 10
     #bg_minor_metals_mining = 5 #zinc, cobalt
     }
@@ -452,6 +464,8 @@ STATE_CONSTANTINE = {
 
 
 
+
+
         bg_iron_mining = 45 #Ouenza
 
 
@@ -463,7 +477,11 @@ STATE_CONSTANTINE = {
 
 
 
+
+
         bg_lead_mining = 15 #Lead/zinc at Tala Hamza
+
+
 
 
 
@@ -509,6 +527,8 @@ STATE_ORAN = {
 
 
 
+
+
         bg_fishing = 4
     }
     naval_exit_id = 3032
@@ -529,6 +549,8 @@ STATE_TUNISIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_date_plantations" }
     capped_resources = {
         bg_lead_mining = 15 #Lead/zinc
+
+
 
 
 
@@ -726,6 +748,8 @@ STATE_SAHARA = {
 
 
 
+
+
     }
     resource = {
         type = "bg_oil_extraction"
@@ -818,7 +842,7 @@ STATE_MAURITANIA = {
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
         #bg_copper_mining = 15
-        bg_fishing = 15
+        bg_fishing = 8
     }
     naval_exit_id = 3088
 }
@@ -906,6 +930,8 @@ STATE_EASTERN_MALI = {
 
 
 
+
+
     capped_resources = {
         bg_monuments = 1
     }
@@ -965,6 +991,8 @@ STATE_WESTERN_MALI = {
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_opium_plantations" }
     capped_resources = {
         bg_iron_mining = 35 #discoverable
+
+
 
 
 
@@ -1064,6 +1092,8 @@ STATE_NIGER = {
     wood = "xD090E0"
     arable_land = 10
     arable_resources = { "bg_date_plantations" "bg_dye_plantations" } #dye plantations = gum arabic
+
+
 
 
 

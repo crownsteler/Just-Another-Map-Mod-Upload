@@ -563,7 +563,7 @@
 			}			
 			create_pop = {
 				culture = catalan
-				size = 145206
+				size = 264006
 			}
 			create_pop = {
 				culture = french
@@ -573,6 +573,8 @@
 				culture = sephardic
 				size = 895
 			}
+		}
+		region_state:FRA = {
 		}
 	}
 	s:STATE_RHONE = {
@@ -873,7 +875,7 @@
 			}
 			create_pop = {
 				culture = basque
-				size = 60145
+				size = 233737
 		}
 			create_pop = {
 				culture = sephardic

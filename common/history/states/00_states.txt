@@ -1941,14 +1941,6 @@ STATES = {
 			}
 		}
 		
-		create_state = {
-			country = c:FRA
-			owned_provinces = { 
-				x6E16BB #Labourd/Bayonne/Biarritz
-				x073FC4 #Basque Country
-			}
-		}
-		
 		add_homeland = cu:spanish
 		add_homeland = cu:basque
 	}
@@ -1964,13 +1956,6 @@ STATES = {
 				x2914C3 x08B4D6 x945748 x0C64AC 
 			}
 		}	
-		
-		create_state = {
-			country = c:FRA
-			owned_provinces = { 
-				x1060C0 #Perpignan
-			}
-		}
 		
 		add_homeland = cu:spanish
 		add_homeland = cu:catalan
@@ -4993,6 +4978,7 @@ STATES = {
 				
 				x906080 #Montpellier/Hérault
 				xCF9FBF #Narbonne/Aude
+				x1060C0 #Perpignan
 			}
 		}
 		
@@ -5197,10 +5183,13 @@ STATES = {
 				xB06000 x086618 #Lot-et-Garonne
 				x70A080 #Landes \ Mont-de-Marsan
 				xF0A080 x76BA85 x606DEC #Landes
-		
 				xCD8E77 #Pau
+				
+				x6E16BB #Labourd/Bayonne/Biarritz
+				x073FC4 #Basque Country
 			}
 		}
+		
 		
 		add_homeland = cu:french
 		add_homeland = cu:occitan
@@ -8920,6 +8909,11 @@ STATES = {
 			country = c:RBS
 			owned_provinces = { xFBA38B x4CA291 x09F8D1 x4FDA9B xA99276 xA18555 x55D475 x00B0DF xF5BD8F x872ACE xDB6370 }
 		}
+		create_state = {
+			country = c:MZK
+			owned_provinces = { 
+				x0130E0 x80B060 xB80596 
+		}
 		
 		add_homeland = cu:persian
 		add_homeland = cu:mashriqi
@@ -8951,7 +8945,7 @@ STATES = {
 		create_state = {
 			country = c:MZK
 			owned_provinces = { 
-				x0130E0 x80B060 x3FA81D xB80596 
+				x3FA81D 
 		}
 		}
 		#create_state = {

@@ -216,7 +216,7 @@ MZK = {
 	
 	cultures = { bedouin }
 	religion = sunni
-	capital = STATE_FARS
+	capital = STATE_KHUZESTAN
 }
 
 NFD = {

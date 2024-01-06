@@ -16,7 +16,7 @@ region_levant = {
 region_iraq = {
 	graphical_culture = "arabic"
 	map_color = { 95 110 175 }
-	states = { STATE_BAGHDAD STATE_MOSUL STATE_KURDISTAN_IRAQ STATE_KHUZESTAN STATE_LURISTAN STATE_DEIR_EZ_ZOR }
+	states = { STATE_BAGHDAD STATE_MOSUL STATE_KURDISTAN_IRAQ STATE_DEIR_EZ_ZOR }
 }
 
 region_arabic = {
@@ -28,13 +28,13 @@ region_arabic = {
 region_persia = {
 	graphical_culture = "arabic"
 	map_color = { 146 152 91  }
-	states = { STATE_ISFAHAN STATE_MAZANDARAN  STATE_FARS STATE_TABRIZ STATE_LARISTAN STATE_IRAKAJEMI STATE_HERAT STATE_KHORASAN STATE_TURKMENIA }
+	states = { STATE_ISFAHAN STATE_MAZANDARAN STATE_TABRIZ STATE_LARISTAN STATE_IRAKAJEMI STATE_HERAT STATE_KHORASAN STATE_TURKMENIA STATE_LURISTAN  }
 }
 
 region_the_persian_gulf = {
 	graphical_culture = "arabic"
 	map_color = { 211 185 130 }
-	states = { STATE_ABU_DHABI STATE_HAJAR STATE_OMAN }
+	states = { STATE_ABU_DHABI STATE_HAJAR STATE_OMAN STATE_FARS STATE_KHUZESTAN }
 }
 
 region_central_asia = {
