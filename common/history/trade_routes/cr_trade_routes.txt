@@ -6,30 +6,12 @@
 			level = 2
 			direction = import
 			target = c:SWE.market
-		}	
-		create_trade_route = {
-			goods = copper
-			level = 1
-			direction = import
-			target = c:JAP.market
-		}	
-		create_trade_route = {
-			goods = copper
-			level = 1
-			direction = export
-			target = c:CHI.market
 		}			
 		create_trade_route = {
 			goods = tools
 			level = 2
 			direction = import
 			target = c:PRU.market
-		}			
-		create_trade_route = {
-			goods = tools
-			level = 1
-			direction = export
-			target = c:JAP.market
 		}		
 		create_trade_route = {
 			goods = meat
@@ -51,9 +33,17 @@
 		}	
 		create_trade_route = {
 			goods = coffee
-			level = 5
+			level = 2
 			direction = export
 			target = c:AUS.market
+		}		
+	}
+	c:DEI = {		
+		create_trade_route = {
+			goods = grain
+			level = 2
+			direction = import
+			target = c:BAL.market
 		}		
 	}
 	# Belgium

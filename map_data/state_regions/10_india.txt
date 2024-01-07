@@ -30,6 +30,7 @@ STATE_NORTH_BENGAL = {
 
 
 
+
     capped_resources = {
         bg_iron_mining = 30
         bg_logging = 16
@@ -53,8 +54,10 @@ STATE_ASSAM = {
 
 
 
+
     capped_resources = {
         bg_coal_mining = 48 #Discovered 1825, good quality coal
+
 
 
 
@@ -147,8 +150,7 @@ STATE_KASHMIR = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x00161D" "x07D342" "x150D2C" "x15F552" "x18CED8" "x1F1AF7" "x2070A0" "x20771F" "x217021" "x21F020" "x24EF26" "x2969A3" "x2B6E7C" "x2D5D46" "x2DDFDB" "x2FF385" "x330DE3" "x37C3E4" "x3FDA5A" "x43B99F" "x448F36" "x476FB0" "x47E5AB" "x504561" "x56684E" "x5990A7" "x5A0252" "x6326A6" "x641782" "x6A9303" "x6AA44A" "x6D7ECD" "x7074E3" "x72F7C2" "x78C076" "x808216" "x874936" "x917660" "x950143" "x964219" "x9666D9" "xA09736" "xA0F020" "xA875F3" "xAA60FC" "xB0FE2D" "xB4AA65" "xB637A4" "xC08722" xC49B8C xCCD333 xCDB7DB xD107A3 xD25436 xD458B6 xD71AAB xDB6487 xE19C79 xEDCC3E xF28F90 xF469BC xF48515 xF8D822 xFD692B }
     impassable = { xB0FE2D xE19C79 x808216 x874936 x20771F xDB6487 x950143 xA0F020 xC08722 x641782 x2070A0 x6A9303 x47E5AB x448F36 x917660 x6D7ECD x476FB0 x330DE3 x78C076 }
-    prime_land = { xFD692B xD107A3 x24EF26 x7074E3 xD458B6 x964219 x3FDA5A xE19C79 x808216 x874936 xD71AAB xF469BC
- }
+    prime_land = { xFD692B xD107A3 x24EF26 x7074E3 xD458B6 x964219 x3FDA5A xE19C79 x808216 x874936 xD71AAB xF469BC }
     traits = { "state_trait_kashmir_wool" "state_trait_indus_river" "state_trait_himalayas_mountains" }
     city = "xFD692B"
 
@@ -172,6 +174,7 @@ STATE_KASHMIR = {
 
     arable_land = 130
     arable_resources = { "bg_rice_farms" "bg_kashmir_ranches" "bg_tea_plantations" } #medicinal herbs and plants, resins, deodar, tea is marginal
+
 
 
 
@@ -233,10 +236,12 @@ STATE_SOUTH_BENGAL = {
 
 
 
+
     capped_resources = {
         bg_logging = 7
         bg_fishing = 12
         bg_coal_mining = 20 #Raniganj Coalfield
+
 
 
 
@@ -286,6 +291,7 @@ STATE_RAJPUTANA = {
 
 
 
+
         bg_sulfur_mining = 40 #largest source of phosphate rock in India?
 
 
@@ -293,7 +299,9 @@ STATE_RAJPUTANA = {
 
 
 
+
         bg_copper_mining = 24 #Kethri, in operation
+
 
 
 
@@ -348,7 +356,7 @@ STATE_INDIAN_OCEAN_TERRITORY = {
 STATE_ORISSA = {
     id = 471
     subsistence_building = "building_subsistence_rice_paddies"
-    provinces = { "x0CE6EA" "x11D169" "x1504AD" "x1622F2" "x22B96B" "x30C2D5" "x323B8A" "x38A6E6" "x404EEA" "x5031A0" "x597E99" "x5BC5C8" "xA0A8E0" "xA15F01" "xA2EF24" "xB07FDD" "xB6E5C1" "xBAE4B3" "xBB9552" "xCCE5B7" "xD031A0" "xE1911A" "xF8BB81" "xFBF096" "xFFBC41" }
+    provinces = { "x0CE6EA" "x11D169" "x1504AD" "x1622F2" "x22B96B" "x30C2D5" "x323B8A" "x38A6E6" "x404EEA" "x5031A0" "x597E99" "x5BC5C8" "xA0A8E0" "xA15F01" "xA2EF24" "xB07FDD" "xB6E5C1" "xBAE4B3" "xBB9552" "xCCE5B7" "xE1911A" "xF8BB81" "xFBF096" "xFFBC41" }
     prime_land = { "x597E99" "xA2EF24" "xFFBC41" "x38A6E6" "xBB9552" }
     city = "x5BC5C8"
     port = "xBB9552"
@@ -357,6 +365,7 @@ STATE_ORISSA = {
     wood = "xB07FDD"
     arable_land = 50
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_sugar_plantations" "bg_tea_plantations" } #spices
+
 
 
 
@@ -376,7 +385,7 @@ STATE_CIRCARS = {
     #Andhra
     id = 472
     subsistence_building = "building_subsistence_rice_paddies"
-    provinces = { "x063403" "x0AC82E" "x0F1912" "x11F0A0" "x180640" "x207C4F" "x338BFB" "x34BB3B" "x35AB0E" "x365CC3" "x3EC5D1" "x42F4F2" "x461A00" "x477063" "x5170A0" "x54D463" "x59BBE1" "x669373" "x6B15F1" "x7166FA" "x73B187" "x84EE56" "x8B1F32" "x9070A0" "x9193B1" "xB00B6B" "xB3DED5" "xC744F9" "xCDFBE6" "xCFF020" "xD19AD8" "xE2CF64" "xE9BCE7" "xEBBB7A" "xF2F82A" "xF46AEC" "xF91482" }
+    provinces = { "x063403" "x0AC82E" "x0F1912" "x11F0A0" "x180640" "x207C4F" "x338BFB" "x34BB3B" "x35AB0E" "x365CC3" "x3EC5D1" "x42F4F2" "x461A00" "x477063" "x5170A0" "x54D463" "x59BBE1" "x669373" "x6B15F1" "x7166FA" "x73B187" "x84EE56" "x8B1F32" "x9070A0" "x9193B1" "xB00B6B" "xB3DED5" "xC744F9" "xCDFBE6" "xCFF020" "xD19AD8" "xE2CF64" "xE9BCE7" "xEBBB7A" "xF2F82A" "xF46AEC" "xF91482" "xD031A0" }
     city = "x59BBE1"
     port = "x477063"
     farm = "xF46AEC"
@@ -412,6 +421,7 @@ STATE_MYSORE = {
 
 
 
+
     capped_resources = {
         bg_gold_mining = 4
         bg_iron_mining = 29
@@ -433,6 +443,7 @@ STATE_TRAVANCORE = {
     wood = "xA0A050"
     arable_land = 80
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tea_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #spices/pepper
+
 
 
 
@@ -499,6 +510,7 @@ STATE_BOMBAY = {
     wood = "x40CE40"
     arable_land = 350
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_sugar_plantations" } #spices
+
 
 
 

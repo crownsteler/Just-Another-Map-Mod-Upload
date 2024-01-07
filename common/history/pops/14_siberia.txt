@@ -42,8 +42,8 @@
 		}
 		region_state:TUV = {
 			create_pop = {
-				culture = tuvan
-				size = 16000
+				culture = tatar
+				size = 32000
 			}
 		}
 	}
@@ -220,16 +220,22 @@
 				size = 5992
 			}
 			create_pop = {
+				culture = mongol
+				size = 77854
+			}
+			create_pop = {
 				culture = manchu
 				size = 85996
 			}
 			create_pop = {
-				culture = mongol
-				size = 36000
-			}
-			create_pop = {
 				culture = siberian
 				size = 17996
+			}
+		}
+		region_state:TUV = {
+			create_pop = {
+				culture = mongol
+				size = 24000
 			}
 		}
 	}
@@ -240,18 +246,14 @@
 				size = 388408
 			}
 			create_pop = {
-				culture = mongol
-				size = 101854
-			}
-			create_pop = {
 				culture = siberian
 				size = 4996
 			}
 		}
 		region_state:TUV = {
 			create_pop = {
-				culture = tuvan
-				size = 16004
+				culture = mongol
+				size = 36000
 			}
 		}
 	}

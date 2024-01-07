@@ -280,6 +280,18 @@
  HUB_NAME_STATE_EAST_SWITZERLAND_farm:1 "Zürich"
  HUB_NAME_STATE_EAST_SWITZERLAND_wood:0 "Lucerne"
  
+ #Russia
+ HUB_NAME_STATE_IRKUTSK_city:0 "Irkutsk"
+ HUB_NAME_STATE_IRKUTSK_farm:0 "Bratsk"
+ HUB_NAME_STATE_IRKUTSK_wood:0 "Ust-Kut"
+ HUB_NAME_STATE_IRKUTSK_mine:0 "Cheremkhovo"
+ 
+ HUB_NAME_STATE_TRANS_BAIKAL_city:0 "Verkhneudinsk" 
+ HUB_NAME_STATE_TRANS_BAIKAL_farm:0 "Chita" 
+ HUB_NAME_STATE_TRANS_BAIKAL_wood:0 "Kyakhta" 
+ HUB_NAME_STATE_TRANS_BAIKAL_mine:0 "Nerchinsk"
+ 
+ 
  
  #Iraq
  HUB_NAME_STATE_BAGHDAD_city:0 "Baghdad"

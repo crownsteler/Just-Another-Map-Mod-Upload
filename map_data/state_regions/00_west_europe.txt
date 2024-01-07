@@ -1416,17 +1416,6 @@ STATE_EAST_SWITZERLAND = {
         bg_logging = 18
         bg_lead_mining = 30 #Lead/Zinc mines
 
-
-
-
-
-
-
-
-
-
-
-
     }
 }
 STATE_WEST_SWITZERLAND = {

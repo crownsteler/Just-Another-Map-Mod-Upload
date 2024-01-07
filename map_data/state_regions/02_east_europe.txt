@@ -384,6 +384,7 @@ STATE_ESTONIA = {
 
 
 
+
         bg_fishing = 8
     }
     naval_exit_id = 3000
@@ -420,7 +421,7 @@ STATE_LITHUANIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 13
-        #bg_fishing = 2 #relatively small coastline
+    #bg_fishing = 2 #relatively small coastline
     }
     #resource = {
     #    type = "bg_iron_mining"
@@ -618,6 +619,7 @@ STATE_CENTRAL_HUNGARY = {
 
 
 
+
         bg_logging = 8
     #bg_sulfur_mining = 5 #Pyrite
     }
@@ -728,6 +730,7 @@ STATE_EAST_SLOVAKIA = {
     capped_resources = {
         #Slovak Ore Mountains
         bg_iron_mining = 53 #Szepes-Gomor
+
 
 
 

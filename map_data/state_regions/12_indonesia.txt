@@ -16,9 +16,11 @@
 
 
 
+
     capped_resources = {
         bg_coal_mining = 32
         bg_lead_mining = 24 #tin mining
+
 
 
 
