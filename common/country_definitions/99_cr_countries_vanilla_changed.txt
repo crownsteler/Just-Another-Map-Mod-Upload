@@ -4,6 +4,17 @@
 #							#
 #############################
 
+ACH = {
+	color = { 166 225 217 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { nilotic }
+	capital = STATE_UGANDA
+}
+
 ASH = {
 	color = { 220 197 102 }
 	
