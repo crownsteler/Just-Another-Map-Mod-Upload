@@ -39,7 +39,13 @@ STATE_PIEDMONT = {
 
 
 
+
+
+
         bg_iron_mining = 18 #Val d'Aosta
+
+
+
 
 
 
@@ -67,6 +73,9 @@ STATE_SARDINIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_coal_mining = 16 #Mostly if not wholely lignite
+
+
+
 
 
 
@@ -218,6 +227,9 @@ STATE_ABRUZZO = {
 
 
 
+
+
+
     capped_resources = {
         bg_logging = 12
         bg_fishing = 7
@@ -236,6 +248,9 @@ STATE_SAVOY = {
     wood = "xD000E0"
     arable_land = 20
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" } #about 300 hectares of vineyards, too insignificant to include
+
+
+
 
 
 
@@ -292,9 +307,15 @@ STATE_TUSCANY = {
 
 
 
+
+
+
     capped_resources = {
         bg_iron_mining = 40
         bg_sulfur_mining = 25 #Pyrite
+
+
+
 
 
 
@@ -406,6 +427,9 @@ STATE_TOLEDO = {
         bg_logging = 8
         #bg_coal_mining = 4
         bg_lead_mining = 28 #Almadén mercury mine
+
+
+
 
 
 
@@ -537,6 +561,9 @@ STATE_LEON = {
 
 
 
+
+
+
         bg_logging = 6
     }
 }
@@ -638,6 +665,9 @@ STATE_ANDALUSIA = {
 
 
 
+
+
+
         bg_fishing = 9
     }
     #resource = {
@@ -715,6 +745,9 @@ STATE_MURCIA = {
     capped_resources = {
         bg_fishing = 5
         bg_lead_mining = 18 #Lead/silver at La Union
+
+
+
 
 
 
@@ -812,6 +845,9 @@ STATE_DOURO = {
 
 
 
+
+
+
     city = "xD0A000"
 
 
@@ -873,6 +909,9 @@ STATE_DOURO = {
         bg_logging = 5
         bg_fishing = 5
         bg_iron_mining = 8 #Torre de Moncorvo
+
+
+
 
 
 
@@ -1022,9 +1061,15 @@ STATE_ALENTEJO = {
 
 
 
+
+
+
         bg_sulfur_mining = 25
 
         bg_sulfur_mining = 25 #Pyrite
+
+
+
 
 
 
@@ -1070,6 +1115,9 @@ STATE_CANARY_ISLANDS = {
     wood = "xC2C164"
     arable_land = 7
     arable_resources = { "bg_tobacco_plantations" "bg_sugar_plantations" "bg_dye_plantations" "bg_vineyard_plantations" } #dyes plantations = roccella tinctoria and cochineal
+
+
+
 
 
 
@@ -1148,6 +1196,9 @@ STATE_EASTERN_THRACE = {
 
 
 
+
+
+
         bg_logging = 4
         bg_fishing = 10
         bg_monuments = 1
@@ -1182,6 +1233,9 @@ STATE_DOBRUDJA = {
 
 
 
+
+
+
     }
     naval_exit_id = 3036
 }
@@ -1198,6 +1252,9 @@ STATE_ALBANIA = {
     wood = "xC42EC6"
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" } #should also have spices
+
+
+
 
 
 
@@ -1267,8 +1324,14 @@ STATE_NORTHERN_THRACE = {
 
 
 
+
+
+
         #bg_minor_metals_mining = 10 #Rhodope mountains, tungsten-molybdenum
         bg_lead_mining = 15 #Rhodope mountains, exploited during Crimean war for munitions
+
+
+
 
 
 
@@ -1314,6 +1377,9 @@ STATE_BULGARIA = {
 
 
 
+
+
+
     #bg_minor_metals_mining = 15 #Manganese
     }
     naval_exit_id = 3036
@@ -1335,6 +1401,9 @@ STATE_SLOVENIA = {
         bg_logging = 11
         #bg_minor_metals_mining = 20 #Manganese, mecury (Idrija)
         bg_lead_mining = 15 #Mežica, Lead/Zinc
+
+
+
 
 
 
@@ -1452,6 +1521,9 @@ STATE_ISTRIA = {
 
 
 
+
+
+
         bg_logging = 5
         bg_fishing = 10
     }
@@ -1471,6 +1543,9 @@ STATE_MONTENEGRO = {
     wood = "xF5F6C2"
     arable_land = 13
     arable_resources = { "bg_livestock_ranches" "bg_vineyard_plantations" } #potential for tobacco
+
+
+
 
 
 
@@ -1516,6 +1591,9 @@ STATE_NORTHERN_SERBIA = {
 
 
 
+
+
+
         bg_logging = 8
     }
 }
@@ -1533,6 +1611,9 @@ STATE_SOUTHERN_SERBIA = {
     capped_resources = {
         bg_coal_mining = 40
         bg_lead_mining = 36 #Lead/Zinc
+
+
+
 
 
 
@@ -1591,6 +1672,9 @@ STATE_WEST_AEGEAN_ISLANDS = {
 
 
 
+
+
+
     }
     naval_exit_id = 3034
 }
@@ -1605,6 +1689,9 @@ STATE_EAST_AEGEAN_ISLANDS = {
     wood = "xC56452"
     arable_land = 5
     arable_resources = { "bg_livestock_ranches" "bg_dye_plantations" "bg_vineyard_plantations" } #Dye_plantations = mastic
+
+
+
 
 
 
@@ -1678,6 +1765,9 @@ STATE_SKOPIA = {
 
 
 
+
+
+
     capped_resources = {
         bg_iron_mining = 36
         bg_logging = 16
@@ -1701,11 +1791,17 @@ STATE_MACEDONIA = {
 
 
 
+
+
+
     capped_resources = {
         bg_logging = 9
         bg_fishing = 3
         #bg_coal_mining = 35 #Lignite, Western Macedonia Field
         bg_lead_mining = 10 #Lead/Zinc
+
+
+
 
 
 
@@ -1738,6 +1834,9 @@ STATE_WESTERN_THRACE = {
     wood = "xBE51B7"
     arable_land = 25
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" } #removed cotton due to the number of resources and cotton potential in the region.
+
+
+
 
 
 

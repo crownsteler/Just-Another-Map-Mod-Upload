@@ -1,44 +1,44 @@
 ﻿STATE_DAGESTAN = {
     id = 433
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x019041" "x01D041" "x0BDBDA" "x0F3A99" "x205781" "x27E9C3" "x2C776A" "x3B6A9E" "x41D080" "x4C6398" "x537501" "x5C32EA" "x676C0E" "x72A1AB" "x84A24F" "x8FD393" "x9A6A44" "x9CDC20" "x9F1D8F" "xBD38C5" "xC01040" "xC09041" "xDA5ABE" "xDA8EF4" }
+    provinces = { xC01040 x9F1D8F x5C32EA x205781 x405080 x793FDE xBD38C5 x4C6398 x3B6A9E x2C776A x537501 x9A6A44 xDA5ABE x84A24F x72A1AB x01D041 xDA8EF4 xF88EA3 xEE9B40 x41D080 x0BDBDA x27E9C3 x9CDC20 x76C012 x8FD393 xC09041 x019041 x0F3A99 x676C0E x2790A8 x83F33B x23F98B x668A47 xC05001 x56FD87 }
     city = "x72A1AB"
-    farm = "x27E9C3"
-    mine = "x676C0E"
-    wood = "x01D041"
+    farm = "x9F1D8F"
+    mine = "x27E9C3" 
+    wood = "x0BDBDA"
     arable_land = 30
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_dye_plantations" "bg_vineyard_plantations" } #Dyes for madder production at Derbent
     capped_resources = {
-        bg_logging = 8
+        bg_logging = 10
+		bg_lead_mining = 22
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        undiscovered_amount = 20
     }
 }
 
 STATE_KUBAN = {
     id = 434
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x0E69B9" "x16687C" "x191F70" "x1ED727" "x23F98B" "x2790A8" "x2CF115" "x2E1A32" "x32FEBA" "x33CC4D" "x3C9016" "x3E954F" "x405000" "x405080" "x469A99" "x522F82" "x565E50" "x56FD87" "x594403" "x61D073" "x668A47" "x6B2515" "x6BB70E" "x6F16AA" "x708C99" "x7685A4" "x76B63F" "x76C012" "x793FDE" "x796017" "x7BCBCC" "x80D080" "x83F33B" "x891792" "x89223D" "x929AC4" "x9809B7" "x9A01E0" "x9A43C9" "x9B5EC8" "x9BAE11" "xA4B654" "xAA6E62" "xAF4F59" "xB3593A" "xB63D94" "xBC214C" "xBCF376" "xC05001" "xC0D001" "xC88562" "xD5648D" "xD7EDE7" "xD9CD9D" "xE0E16A" "xE2E1EB" "xE6667B" "xEB2EF5" "xEE9B40" "xF51533" "xF7D005" "xF88EA3" }
+    provinces = { x522F82 xE6667B x80D080 x0E69B9 x33CC4D x6F16AA x469A99 x191F70 xF51533 x3C9016 x76B63F x708C99 x9809B7 x89223D x3E954F xBC214C xE2E1EB x7685A4 xD7EDE7 x9A01E0 xE0E16A xF7D005 xA4B654 x32FEBA xAA6E62 x565E50 xC0D001 x9A43C9 x796017 x1ED727 xAF4F59 x9B5EC8 x891792 x9BAE11 x6B2515 xB3593A x929AC4 x16687C xB63D94 x7BCBCC x6BB70E x2CF115 xC88562 xD5648D x2E1A32 xBCF376 xD9CD9D x405000 x594403 x61D073 xEB2EF5 }
     traits = { "state_trait_western_steppe" }
     city = "x80D080"
     port = "x9809B7"
-    farm = "x405000"
-    mine = "x1ED727"
-    wood = "xD9CD9D"
+    farm = "x1ED727"
+    mine = "x2CF115"
+    wood = "x405000"
     arable_land = 80
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" } #Some minor tea production around Sochi, didn't find it to be too relevant.
     capped_resources = {
         #bg_coal_mining = 32 #No coal reserves here at all?
         #bg_copper_mining = 18 #Karachay-Cherkessia, 1.51% copper
-        bg_lead_mining = 27
-        bg_logging = 6
-        bg_fishing = 7
+        bg_logging = 5
+        bg_fishing = 6
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        undiscovered_amount = 20
     }
     naval_exit_id = 3036
 }
@@ -61,12 +61,16 @@ STATE_ARMENIA = {
 
 
 
+
+
     wood = "x3161E0"
     arable_land = 20
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_cotton_plantations" }
     capped_resources = {
         bg_logging = 4
         bg_copper_mining = 24 #Kajaran & Alaverdi
+
+
 
 
 
@@ -96,6 +100,8 @@ STATE_AZERBAIJAN = {
     capped_resources = {
         #bg_iron_mining = 15
         bg_lead_mining = 18 #Lead/zinc
+
+
 
 
 
@@ -147,18 +153,9 @@ STATE_SAMARA = {
     arable_land = 150
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 30
-        bg_copper_mining = 35 #Bashkortostan (Tverdyshevs – Myasnikov); Orenburg (Gaisky Mine Complex), Kargaly
+        bg_iron_mining = 45 #Bashkortostan (Tverdyshevs – Myasnikov); 
 
-
-
-
-
-
-
-
-
-
+        bg_copper_mining = 30 #Orenburg (Gaisky Mine Complex), Kargaly
 
         #bg_sulfur_mining = 20 #Bashkortostan
         bg_logging = 12
@@ -233,6 +230,8 @@ STATE_URALSK = {
     arable_land = 30
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {} #Volcanic hosted massive sulphide (VHMS) copper deposit at 50 Let Oktyabrya/Koktau/Priorskoe/Priorskoye 130 km east of Aktobe
+
+
 
 
 
@@ -357,6 +356,8 @@ STATE_KIRGHIZIA = {
 
 
 
+
+
     }
 }
 
@@ -454,6 +455,8 @@ STATE_SEMIRECHE = {
 
 
 
+
+
         bg_coal_mining = 28
         bg_logging = 4
     }
@@ -517,7 +520,11 @@ STATE_TURKISTAN = {
 
 
 
+
+
         bg_lead_mining = 20 #lead/zinc mine #Maleesky mine?
+
+
 
 
 
@@ -590,6 +597,8 @@ STATE_KARAGANDA = {
 
 
 
+
+
     #bg_copper_mining = 60 #Aktogay, porphyry copper deposit
     }
 }
@@ -617,6 +626,8 @@ STATE_PASHTUNISTAN = {
 
 
 
+
+
         bg_logging = 7
     }
 }
@@ -634,6 +645,8 @@ STATE_WESTERN_AFGHANISTAN = {
     wood = "xB7ED78"
     arable_land = 45
     arable_resources = { "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_silk_plantations" } #Also pistachios, almond, walnut
+
+
 
 
 
@@ -673,6 +686,8 @@ STATE_EASTERN_AFGHANISTAN = {
 
 
 
+
+
     capped_resources = {
         bg_copper_mining = 45 #Mes Aynak
 
@@ -684,7 +699,11 @@ STATE_EASTERN_AFGHANISTAN = {
 
 
 
+
+
         bg_iron_mining = 25 #Hajigak Mine
+
+
 
 
 
@@ -725,6 +744,8 @@ STATE_HERAT = {
 
 
 
+
+
     }
 }
 
@@ -744,6 +765,8 @@ STATE_MAZAR_I_SHARIF = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_tobacco_plantations" "bg_dye_plantations" }
     capped_resources = {
         bg_coal_mining = 32 #Shabashak/Dar-I-Suf
+
+
 
 
 
@@ -821,6 +844,8 @@ STATE_BALUCHISTAN = {
 
 
 
+
+
         #bg_lead_mining = 12 #Duddar mine
         #bg_copper_mining = 25 #Reko Diq mine, Saindak Copper Gold Project, porphyry deposit
         bg_fishing = 5
@@ -868,6 +893,8 @@ STATE_HIMALAYAS = {
     traits = { "state_trait_himalayas_mountains" }
 
     impassable = { x8FF69F x59BBCE xF202E0 xE0C455 } #Himachal Pradesh, don't forget to update 
+
+
 
 
 

@@ -128,10 +128,7 @@
  
  HUB_NAME_STATE_MUNSTER_port:0 "Limerick"
  
- #Caucasus
- #Russia
- HUB_NAME_STATE_DAGESTAN_city:0 "Tarki"
- 
+ #Caucasus 
  HUB_NAME_STATE_GREATER_CAUCASUS_city:0 "Tiflis"
  HUB_NAME_STATE_GREATER_CAUCASUS_farm:0 "Koetaisi"
  HUB_NAME_STATE_GREATER_CAUCASUS_mine:0 "Akhaltsikhe"
@@ -291,7 +288,50 @@
  HUB_NAME_STATE_TRANS_BAIKAL_wood:0 "Kyakhta" 
  HUB_NAME_STATE_TRANS_BAIKAL_mine:0 "Nerchinsk"
  
+ HUB_NAME_STATE_OKHOTSK_city:0 "Ayan"
+ HUB_NAME_STATE_OKHOTSK_port:0 "Okhotsk"
+ HUB_NAME_STATE_OKHOTSK_farm:0 "Arman"
+ HUB_NAME_STATE_OKHOTSK_wood:0 "Arka"
+ HUB_NAME_STATE_OKHOTSK_mine:0 "Magadan"
  
+ HUB_NAME_STATE_YAKUTSK_city:0 "Yakutsk"
+ HUB_NAME_STATE_YAKUTSK_farm:0 "Pokrovskoye"
+ HUB_NAME_STATE_YAKUTSK_wood:0 "Mukhtuya"
+ HUB_NAME_STATE_YAKUTSK_mine:0 "Nyurba"
+ 
+ HUB_NAME_STATE_TOMSK_city:0 "Tomsk"
+ HUB_NAME_STATE_TOMSK_farm:0 "Barnaul"
+ HUB_NAME_STATE_TOMSK_wood:0 "Krasnoyarsk"
+ HUB_NAME_STATE_TOMSK_mine:0 "Kuznetsk"
+ 
+ HUB_NAME_STATE_UPPER_YENISEYSK_city:0 "Yeniseysk"
+ HUB_NAME_STATE_UPPER_YENISEYSK_farm:0 "Boguchany"
+ HUB_NAME_STATE_UPPER_YENISEYSK_wood:0 "Maklakovo"
+ HUB_NAME_STATE_UPPER_YENISEYSK_mine:0 "Norlisk"
+ 
+ HUB_NAME_STATE_TOBOLSK_city:0 "Tyumen"
+ HUB_NAME_STATE_TOBOLSK_farm:0 "Omsk"
+ HUB_NAME_STATE_TOBOLSK_wood:0 "Tobolsk"
+ HUB_NAME_STATE_TOBOLSK_mine:0 "Kurgan"
+ 
+ HUB_NAME_STATE_OB_city:0 "Samarovo"
+ HUB_NAME_STATE_OB_port:0 "Obdorsk"
+ HUB_NAME_STATE_OB_farm:0 "Obdorsk" 
+ HUB_NAME_STATE_OB_wood:0 "Nizhnevartovsk"
+ HUB_NAME_STATE_OB_mine:0 "Surgut"
+ 
+ HUB_NAME_STATE_URAL_wood:0 "Sitka"
+
+ HUB_NAME_STATE_DAGESTAN_city:0 "Tarki"
+ HUB_NAME_STATE_DAGESTAN_farm:0 "Derbent" 
+ HUB_NAME_STATE_DAGESTAN_wood:0 "Vladikavkaz" 
+ HUB_NAME_STATE_DAGESTAN_mine:0 "Grozny"
+ 
+ HUB_NAME_STATE_KUBAN_city:0 "Yekaterinodar"
+ HUB_NAME_STATE_KUBAN_port:0 "Novorossiysk"
+ HUB_NAME_STATE_KUBAN_farm:0 "Pyatigorsk"
+ HUB_NAME_STATE_KUBAN_wood:0 "Sochi"
+ HUB_NAME_STATE_KUBAN_mine:0 "Maykop"
  
  #Iraq
  HUB_NAME_STATE_BAGHDAD_city:0 "Baghdad"

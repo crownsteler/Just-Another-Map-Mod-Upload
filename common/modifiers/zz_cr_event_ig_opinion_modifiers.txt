@@ -1,34 +1,4 @@
-﻿cr_riba_condemned_devout = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	interest_group_approval_add = 1
-}
-cr_riba_condemned_bankers = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	interest_group_pop_attraction_mult = -0.15
-}
-cr_engaged_in_riba = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	interest_group_approval_add = -1
-	interest_group_pop_attraction_mult = 0.1
-}
-
-cr_paid_noble_debt_positive = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	interest_group_approval_add = 1
-}
-cr_paid_noble_debt_negative = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	interest_group_approval_add = -1
-}
-cr_not_paid_noble_debt_positive = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	interest_group_approval_add = 1
-}
-cr_not_paid_noble_debt_negative = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	interest_group_approval_add = -1
-}
-
+﻿
 cr_approved_mining_permits = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	interest_group_pol_str_mult = 0.05

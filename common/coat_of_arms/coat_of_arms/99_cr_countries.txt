@@ -986,6 +986,23 @@ SMN = {
 	}
 }
 
+#####################
+#					#
+#	Central Asia	#
+#					#
+#####################
+
+HZJ = { # Anazzah
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"	
+		color2 = "yellow_light"	
+	}	
+}
+
 #######################
 #					  #
 #Arabia & North Africa#
@@ -1217,6 +1234,18 @@ NJR = { # Najran
 	color1 = "green"
 }
 
+RBS = { #Arabistan / Muhammara, based on some random design found of /r/vexillology
+	pattern = "pattern_border_of_4.dds"
+	color1 = "white"
+	color2 = "red"
+	
+	colored_emblem = {
+		texture = "ce_crescent_star_08.dds"
+		color1 = "black"
+		instance = { scale = { 0.45 0.45 } position = { 0.275 0.325 } }			
+	}	
+}
+
 RUB = { #Rub al-Khali
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -1225,6 +1254,16 @@ RUB = { #Rub al-Khali
 		texture = "ce_crescent.dds"
 		color1 = "anazzah_red"
 		instance = { scale = { 0.5 0.5 } position = { 0.25 0.3 } }			
+	}	
+}
+
+SRN = { #Soran, found on crwflags
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "white"	
 	}	
 }
 
@@ -1788,6 +1827,18 @@ BMB = { #Bemba
 	colored_emblem = {
 		texture = "ce_checker_04.dds"
 		color1 = "red"
+	}	
+}
+
+DNK = { #Dinka, based on a design from /r/vexillology
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_fimbriated_thin.dds"
+		color1 = "red"
+		color2 = "yellow"
+		color3 = "green"
 	}	
 }
 

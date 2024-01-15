@@ -1,20 +1,10 @@
-﻿cr_riba_condemned_income = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_capitalists_investment_pool_contribution_add = -0.20
-	state_aristocrats_investment_pool_contribution_add = -0.20
-	state_shopkeepers_investment_pool_contribution_add = -0.20
-}
+﻿
 
 cr_mining_permit_denied = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	state_capitalists_investment_pool_contribution_add = -0.10
 	state_aristocrats_investment_pool_contribution_add = -0.10
 	state_shopkeepers_investment_pool_contribution_add = -0.10
-}
-
-cr_riba_endorsed_income = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	state_rich_standard_of_living_add = 1
 }
 
 cr_solomonic_dynasty = {

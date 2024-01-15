@@ -15,6 +15,9 @@
         bg_lead_mining = 10 #Silver/Copper/Lead/Zinc
 
 
+
+
+
     }
     resource = {
         type = "bg_oil_extraction"
@@ -40,6 +43,9 @@ STATE_OMAN = {
     capped_resources = {
         bg_fishing = 10
         bg_copper_mining = 15 #Lasail mine. More open pit/VMS mining
+
+
+
 
 
 
@@ -119,6 +125,9 @@ STATE_SOUTH_YEMEN = {
     wood = "x319060"
     arable_land = 28
     arable_resources = { bg_livestock_ranches bg_tobacco_plantations bg_date_plantations } #Frankincense, Wheat, Dates, Coconuts, Coffee, Cattle
+
+
+
 
 
     capped_resources = {
@@ -226,6 +235,9 @@ STATE_TRANSJORDAN = {
 
 
 
+
+
+
     }
     naval_exit_id = 3047
 }
@@ -273,6 +285,9 @@ STATE_LEBANON = {
 
 
 
+
+
+
     capped_resources = {
         bg_logging = 12 #Cedars of Lebanon
 
@@ -286,7 +301,13 @@ STATE_LEBANON = {
 
 
 
+
+
+
         bg_coal_mining = 10 #According to Wikipedia Muhammed Ali got some coal from Lebanon
+
+
+
 
 
 
@@ -452,13 +473,16 @@ STATE_BADIYA = {
         bg_sulfur_mining = 25 #removed from Syria
 
 
+
+
+
     }
 }
 
 STATE_FARS = {
     id = 414
     subsistence_building = "building_subsistence_orchards"
-    provinces = { x89054E x8C28A6 x8030DF xE816BC xEB15EE x8A4184 x077437 xE622E5 xC83D18 x626618 xB1591C xF033FA x517637 x3C79B5 x6375B3 x01B060 x35A806 x20B506 x879264 x898FBC xEB8219 x8D9D57 x4AB629 x759BE2 xA194C3 xB5A598 xF58FBD xB2B395 x01F0A0 xFFA8FA x39E6FA xFDAFF4 x80F0A0 x95EAC4 xB9E770 xAFE8A5 xA54E11 xF14D58 x876E91 x8070A0 xB67223 x1BC9CB x9DF415 x0170A0 x350DED x75B0BE x36F270 x42FC41 x01F020 xAAA21C x2F832B xCC1B0F x9CBF51 x3FA81D }
+    provinces = { x89054E x8C28A6 x8030DF xE816BC xEB15EE x077437 xE622E5 xC83D18 x626618 xB1591C xF033FA x3C79B5 x6375B3 x01B060 x35A806 x20B506 x879264 x898FBC xEB8219 x8D9D57 x4AB629 x759BE2 xB5A598 xF58FBD xB2B395 x01F0A0 xFFA8FA x39E6FA xFDAFF4 x80F0A0 x95EAC4 xB9E770 xAFE8A5 xA54E11 xF14D58 x876E91 x8070A0 xB67223 x1BC9CB x9DF415 x0170A0 x350DED x75B0BE x36F270 x42FC41 x01F020 xAAA21C x2F832B xCC1B0F x9CBF51 x3FA81D }
     traits = { "state_trait_zagros_mountains" "state_trait_natural_harbors" }
     city = "x95EAC4"
     port = "x350DED"
@@ -481,6 +505,9 @@ STATE_LARISTAN = {
     provinces = { x75053B x8D0125 x5E1734 x0D4D86 x124E6F x5D2CF2 x83424B x2E57B1 x407020 x177599 xB0513F xF24BDE xC07020 x159AB3 x6796CE x7FB23D x95A3F5 x6DDC3B xE9C86A x80F020 xCCDD76 xF6D834 xD4E165 x99F186 xAFF45C xF4E18B xCBE9C4 x362C14 x2A39A6 x5E4062 x616406 x6C648A xED39D0 x89719E x24A57B x639DDD xF17A7A x8D9CEC xF29735 x31DF75 x7CCE94 x5FE0AF x7AE349 x8DDEC3 xD6E8C2 xEB9357 x75B934 x922EDA xCACC49 x5293C9 x9869E8 xE862E9 xFF73DA xF8EBE8 x648853 x901598 xD73959 x2E09CE xB55662 x62D297 xC0E354 }
     impassable = { x5293C9 x9869E8 xE862E9 xFF73DA xF8EBE8 x648853 x901598 xD73959 x2E09CE xB55662 x62D297 xC0E354 x24A57B xD6E8C2 }
     traits = {} #"state_trait_porphyry_copper" "state_trait_bam_narmashir" 
+
+
+
 
 
     city = "x6DDC3B"
@@ -546,7 +573,7 @@ STATE_KHUZESTAN = {
     #STATE_ARABISTAN
     id = 418
     subsistence_building = "building_subsistence_orchards"
-    provinces = { x80E4E1 x80B0E0 x241E05 x5D400F xFBA38B x4CA291 x09F8D1 x4FDA9B xA99276 xA18555 x55D475 x00B0DF xF5BD8F x872ACE xDB6370 x0130E0 x80B060 xB80596 }
+    provinces = { x80E4E1 x80B0E0 x241E05 x5D400F xFBA38B x4CA291 x09F8D1 x4FDA9B xA99276 xA18555 x55D475 x00B0DF xF5BD8F x872ACE xDB6370 x0130E0 x80B060 xB80596 xA194C3 x8A4184 x517637 }
     traits = { "state_trait_zagros_mountains" }
     city = "xF5BD8F"
     port = "x0130E0 "
@@ -580,6 +607,9 @@ STATE_ISFAHAN = {
     arable_resources = { "bg_wheat_farms" "bg_silk_plantations" "bg_opium_plantations" "bg_dye_plantations" "bg_cotton_plantations" }
     capped_resources = {
         bg_lead_mining = 38 #lead/zinc
+
+
+
 
 
     }
@@ -637,6 +667,9 @@ STATE_TABRIZ = {
         bg_logging = 4
         bg_copper_mining = 30
         bg_lead_mining = 25 #Lead/zinc
+
+
+
 
 
     }
@@ -699,9 +732,15 @@ STATE_AYDIN = {
 
 
 
+
+
+
     capped_resources = {
         #bg_coal_mining = 48 #Lignite
         bg_lead_mining = 20 #chrome, antimony and mercury
+
+
+
 
 
 
@@ -775,6 +814,9 @@ STATE_DIYARBAKIR = {
 
 
 
+
+
+
     }
 }
 
@@ -824,6 +866,9 @@ STATE_TRABZON = {
 
 
 
+
+
+
         bg_logging = 16
         bg_fishing = 9
     }
@@ -843,6 +888,9 @@ STATE_ERZURUM = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_iron_mining = 30 #Divrigi
+
+
+
 
 
         bg_logging = 7

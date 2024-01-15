@@ -145,6 +145,9 @@ STATE_SOUTH_AUSTRALIA = {
 
 
 
+
+
+
         bg_whaling = 2
         bg_fishing = 6
     }
@@ -195,6 +198,9 @@ STATE_NORTHERN_TERRITORY = {
     arable_resources = { "bg_livestock_ranches" "bg_cotton_plantations" }
     capped_resources = {
         bg_sulfur_mining = 45 #Phosphates
+
+
+
 
 
 

@@ -385,6 +385,9 @@ STATE_ESTONIA = {
 
 
 
+
+
+
         bg_fishing = 8
     }
     naval_exit_id = 3000
@@ -620,6 +623,9 @@ STATE_CENTRAL_HUNGARY = {
 
 
 
+
+
+
         bg_logging = 8
     #bg_sulfur_mining = 5 #Pyrite
     }
@@ -730,6 +736,9 @@ STATE_EAST_SLOVAKIA = {
     capped_resources = {
         #Slovak Ore Mountains
         bg_iron_mining = 53 #Szepes-Gomor
+
+
+
 
 
 
