@@ -660,7 +660,6 @@ STATE_DELVIDEK = {
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 4
     }
     resource = {
         type = "bg_oil_extraction"
@@ -812,8 +811,7 @@ STATE_BESSARABIA = {
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_logging = 6
-        bg_fishing = 9
+        bg_fishing = 4
     }
     naval_exit_id = 3036
 }

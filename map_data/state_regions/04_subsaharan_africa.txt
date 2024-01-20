@@ -19,7 +19,7 @@
 
 
     capped_resources = {
-        bg_logging = 28
+        bg_logging = 18
         bg_fishing = 9
         bg_iron_mining = 24
     }
@@ -49,7 +49,7 @@ STATE_WINDWARD_COAST = {
     arable_land = 55
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" }
     capped_resources = {
-        bg_logging = 7
+        bg_logging = 6
     }
 }
 
@@ -260,7 +260,6 @@ STATE_HAUSALAND = {
     arable_land = 130
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_tobacco_plantations" "bg_skyscraper" }
     capped_resources = {
-        bg_logging = 3
         bg_iron_mining = 20
     }
 # resource = {
@@ -562,28 +561,8 @@ STATE_EAST_HAUSALAND = {
     wood = "xD42491"
     arable_land = 140
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_cotton_plantations" } #spices
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
-        bg_logging = 12
+        bg_logging = 6
         bg_iron_mining = 20
     }
     resource = {
@@ -914,7 +893,7 @@ STATE_OROMIA = {
     arable_land = 130
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_logging = 11
+        bg_logging = 8
     }
 }
 
@@ -972,7 +951,7 @@ STATE_GONDER = {
     arable_land = 160
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" }
     capped_resources = {
-        bg_logging = 15
+        bg_logging = 4
         bg_sulfur_mining = 15 #Potash
 
 
@@ -1014,7 +993,6 @@ STATE_OGADEN = {
     arable_land = 40
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 12
     }
     resource = {}
 }
@@ -1329,7 +1307,7 @@ STATE_SOUTH_CAMEROON = {
     arable_land = 90
     arable_resources = { "bg_millet_farms" "bg_coffee_plantations" "bg_tea_plantations" "bg_banana_plantations" "bg_sugar_plantations" }
     capped_resources = {
-        bg_logging = 28
+        bg_logging = 34
         bg_iron_mining = 15
         bg_fishing = 6
     #bg_minor_metals_mining = 10 #Bauxite
@@ -1389,34 +1367,14 @@ STATE_UBANGI_SHARI = {
     farm = "xC0A0D0"
     mine = "x6F3553" #Bakala iron mine
 
-
-
-
-
-
-
-
-
-
-
     wood = "x1BDDD1" #Mbaki
-
-
-
-
-
-
-
-
-
-
 
     arable_land = 40
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_iron_mining = 25
         #bg_coal_mining = 48 #Lignite
-        bg_logging = 19
+        bg_logging = 14
     }
     resource = {
         type = "bg_rubber"
@@ -1456,7 +1414,7 @@ STATE_CONGO = {
     arable_land = 50
     arable_resources = { "bg_millet_farms" "bg_dye_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 34
+        bg_logging = 46
         bg_fishing = 8
         bg_sulfur_mining = 25 #Potash in Congo, Phosphates in Cabinda
 
@@ -1506,7 +1464,7 @@ STATE_CONGO_ORIENTALE = {
     arable_resources = { "bg_millet_farms" "bg_coffee_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_coal_mining = 44
-        bg_logging = 30
+        bg_logging = 42
     #bg_minor_metals_mining = 40 #Wolfram, tin coltan, columbite
     }
     resource = {
@@ -1529,7 +1487,7 @@ STATE_KASAI = {
     arable_resources = { "bg_millet_farms" "bg_cotton_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_iron_mining = 27
-        bg_logging = 20
+        bg_logging = 32
     }
     resource = {
         type = "bg_rubber"
@@ -1551,7 +1509,7 @@ STATE_BAS_CONGO = {
     arable_land = 50
     arable_resources = { "bg_millet_farms" "bg_dye_plantations" "bg_coffee_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 24
+        bg_logging = 26
         bg_fishing = 4
     }
     resource = {
@@ -1574,7 +1532,7 @@ STATE_EQUATEUR = {
     arable_land = 50
     arable_resources = { "bg_millet_farms" "bg_coffee_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 35
+        bg_logging = 62
     }
     resource = {
         type = "bg_rubber"
@@ -1607,7 +1565,7 @@ STATE_ANGOLA = {
 
 
     capped_resources = {
-        bg_logging = 13
+        bg_logging = 18
         bg_sulfur_mining = 20 #Phosphates
 
 
@@ -1700,7 +1658,7 @@ STATE_KATANGA = {
     arable_land = 90
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_sugar_plantations" }
     capped_resources = {
-        bg_logging = 18
+        bg_logging = 23
         bg_copper_mining = 70
         bg_lead_mining = 20 #Lead/Zinc
 
@@ -1765,7 +1723,7 @@ STATE_GABON = {
     arable_land = 40
     arable_resources = { "bg_millet_farms" "bg_coffee_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 32
+        bg_logging = 42
         bg_fishing = 9
         bg_lead_mining = 15 #Lead/Zinc
 

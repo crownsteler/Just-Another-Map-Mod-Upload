@@ -333,25 +333,6 @@ STATE_MARRAKECH = {
     wood = "xA71D65"
     arable_land = 60
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" } #Most wine in Fez. Sugar is also produced from Rabat northwards
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         bg_fishing = 8
         bg_iron_mining = 25
@@ -373,7 +354,6 @@ STATE_FEZ = {
     arable_land = 70
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_sugar_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_logging = 4
         bg_fishing = 5
     }
     naval_exit_id = 3031
@@ -556,7 +536,7 @@ STATE_CONSTANTINE = {
 
 
         bg_fishing = 5
-        bg_logging = 4
+        bg_logging = 5
     #bg_minor_metals_mining = 10 #Azzaba - Mercury
     }
     resource = {
@@ -639,7 +619,7 @@ STATE_TUNISIA = {
 
 
         bg_sulfur_mining = 48
-        bg_logging = 5
+        bg_logging = 3
         bg_fishing = 7
     }
     naval_exit_id = 3032

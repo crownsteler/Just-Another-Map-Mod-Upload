@@ -166,7 +166,6 @@ STATE_HINGGAN = {
     capped_resources = {
         bg_iron_mining = 36
         bg_lead_mining = 24
-        bg_logging = 6
     }
 }
 
@@ -200,7 +199,7 @@ STATE_BEIJING = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" }
     capped_resources = {
         bg_coal_mining = 28
-        bg_logging = 2
+        bg_logging = 4
         bg_fishing = 3
         bg_monuments = 1
     }
@@ -222,7 +221,7 @@ STATE_SHENGJING = {
     capped_resources = {
         bg_lead_mining = 15
         bg_iron_mining = 18
-        bg_logging = 2
+        bg_logging = 4
         bg_fishing = 2
     }
     resource = {
@@ -1322,9 +1321,8 @@ STATE_KANTO = {
         #bg_iron_mining = 10
         bg_coal_mining = 15
         bg_copper_mining = 37
-        bg_logging = 9
-        bg_whaling = 7
-        bg_fishing = 10
+        bg_whaling = 4
+        bg_fishing = 8
     }
     naval_exit_id = 3059
 }
@@ -1413,6 +1411,7 @@ STATE_KYUSHU = {
         bg_coal_mining = 64
         bg_lead_mining = 18
         bg_sulfur_mining = 40
+        bg_logging = 9
         bg_fishing = 18
     }
     naval_exit_id = 3059
