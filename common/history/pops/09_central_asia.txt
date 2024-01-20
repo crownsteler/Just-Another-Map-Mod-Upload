@@ -3,7 +3,7 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = north_caucasian
-				size = 271100
+				size = 389904
 			}
 			create_pop = {
 				culture = sephardic
@@ -23,6 +23,10 @@
 				culture = russian
 				size = 45500
 			}
+			create_pop = {
+				culture = mongol
+				size = 4000
+			}
 		}
 		region_state:CHC = {
 			create_pop = {
@@ -30,16 +34,22 @@
 				size = 92200
 			}
 		}
+		region_state:CIR = {
+			create_pop = {
+				culture = circassian
+				size = 131000
+			}
+			create_pop = {
+				culture = north_caucasian
+				size = 72140
+			}
+		}
 	}
 	s:STATE_KUBAN = {
 		region_state:RUS = {
 			create_pop = {
 				culture = circassian
-				size = 328804
-			}
-			create_pop = {
-				culture = north_caucasian
-				size = 218804
+				size = 378804
 			}
 			create_pop = {
 				culture = greek
@@ -53,19 +63,15 @@
 				culture = ukrainian
 				size = 212204
 			}
-			create_pop = {
-				culture = mongol
-				size = 4000
-			}
 		}
 		region_state:CIR = {
 			create_pop = {
 				culture = circassian
-				size = 531000
+				size = 431000
 			}
 			create_pop = {
 				culture = north_caucasian
-				size = 32140
+				size = 12140
 			}
 		}
 	}
@@ -169,16 +175,36 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = russian
-				size = 1977196
+				size = 1713384
 			}
 			create_pop = {
 				culture = tatar
-				religion = orthodox
-				size = 60000
+				size = 34000
+			}
+			create_pop = {
+				culture = north_german
+				size = 72004
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 35996
+			}
+		}
+	}
+	s:STATE_ORENBURG = {
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 222812
 			}
 			create_pop = {
 				culture = tatar
-				size = 352000
+				size = 42000
+			}
+			create_pop = {
+				culture = kazak
+				size = 42000
 			}
 		}
 	}
@@ -186,21 +212,16 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = russian
-				size = 2455124
-			}
-			create_pop = {
-				culture = ugrian
-				religion = orthodox
-				size = 100004
+				size = 955124
 			}
 			create_pop = {
 				culture = tatar
-				size = 642996
+				size = 1102996
 			}
 			create_pop = {
 				culture = tatar
 				religion = orthodox
-				size = 220000
+				size = 110000
 			}
 		}
 	}
@@ -212,16 +233,8 @@
 			}
 			create_pop = {
 				culture = tatar
-				size = 24000
-			}
-			create_pop = {
-				culture = north_german
-				size = 72004
-			}
-			create_pop = {
-				culture = north_german
-				religion = catholic
-				size = 35996
+				religion = orthodox
+				size = 84000
 			}
 		}
 	}
@@ -250,6 +263,10 @@
 			create_pop = {
 				culture = russian
 				size = 7996
+			}
+			create_pop = {
+				culture = kazak
+				size = 5200
 			}
 		}
 

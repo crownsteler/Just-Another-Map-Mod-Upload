@@ -852,6 +852,16 @@
 		}
 	}
 	s:STATE_CHAD={
+		region_state:BGI={
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}		
+		}
+	}
+	s:STATE_TIBESTI={
 		region_state:TBI={
 		}
 	}

@@ -649,7 +649,7 @@ MDA = {
 	
 	cultures = { equatorial_bantu }
 	religion = sunni
-	capital = STATE_WADDAI
+	capital = STATE_CHAD
 }
 
 MDB = {
@@ -709,6 +709,16 @@ TAQ = {
 	
 	cultures = { nuba }
 	capital = STATE_KORDOFAN
+}
+
+TBI = {
+	color = { 220 210 97 }
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { teda }
+	capital = STATE_TIBESTI
 }
 
 VIY = {

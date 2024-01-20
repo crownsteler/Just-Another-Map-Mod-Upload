@@ -56,6 +56,16 @@ BJA = { # Beja
 	capital = STATE_EASTERN_DESERT
 }
 
+BGI = {
+	color = { 64 124 157 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { baguirmi }
+	capital = STATE_CHAD
+}
+
 BND = {
 	color = { 60 118 54 }
 	country_type = unrecognized

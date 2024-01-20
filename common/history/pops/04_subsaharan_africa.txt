@@ -2642,52 +2642,6 @@
 		}
 	}
 	s:STATE_WADDAI = {
-		region_state:KNM = {
-			create_pop = {
-				culture = bedouin
-				size = 7431
-			}
-			create_pop = {
-				culture = kanuri
-				size = 98000
-			}
-			create_pop = {
-				culture = fur
-				size = 22060
-			}
-			create_pop = {
-				culture = tuareg
-				size = 7000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = equatorial_bantu
-				size = 11500
-			}
-		}
-		region_state:BGI = {
-			create_pop = {
-				culture = baguirmi
-				size = 81992
-			}
-			create_pop = {
-				culture = kanuri
-				size = 21000
-			}
-			create_pop = {
-				culture = equatorial_bantu
-				size = 28461
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = sara
-				size = 8000
-			}
-			create_pop = {
-				culture = equatorial_bantu
-				size = 12714
-			}
-		}
 		region_state:WAD = {
 			create_pop = {
 				culture = fur
@@ -2724,36 +2678,6 @@
 				pop_type = slaves
 				culture = equatorial_bantu
 				size = 13000
-			}
-		}
-		region_state:MDA = {
-			create_pop = {
-				culture = fulbe
-				size = 3515
-			}
-			create_pop = {
-				culture = equatorial_bantu
-				size = 16237 
-			}
-		}
-		region_state:SRA = {
-			create_pop = {
-				culture = equatorial_bantu
-				size = 136515
-			}
-			create_pop = {
-				culture = sara
-				size = 41485
-			}			
-		}
-		region_state:BOR = {
-			create_pop = {
-				culture = fur
-				size = 12060
-			}
-			create_pop = {
-				culture = hausa
-				size = 11060
 			}
 		}
 	}

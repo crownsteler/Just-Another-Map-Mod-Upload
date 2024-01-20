@@ -108,6 +108,9 @@
  STATE_ARAKAN:0 "Arakan"
  STATE_TAMBRALINGA:0 "Tambralinga"
  STATE_SHARI:0 "Shari"
+ STATE_ORENBURG:0 "Orenburg"
+ STATE_POLTAVA:0 "Poltava"
+ STATE_TIBESTI:0 "Tibesti"
  
  #TAGs
  ADA:0 "Adamawa"

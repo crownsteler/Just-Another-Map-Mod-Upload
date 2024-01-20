@@ -309,10 +309,10 @@
  HUB_NAME_STATE_UPPER_YENISEYSK_wood:0 "Maklakovo"
  HUB_NAME_STATE_UPPER_YENISEYSK_mine:0 "Norlisk"
  
- HUB_NAME_STATE_TOBOLSK_city:0 "Tyumen"
- HUB_NAME_STATE_TOBOLSK_farm:0 "Omsk"
+ HUB_NAME_STATE_TOBOLSK_city:0 "Omsk"
+ HUB_NAME_STATE_TOBOLSK_farm:0 "Tyumen"
  HUB_NAME_STATE_TOBOLSK_wood:0 "Tobolsk"
- HUB_NAME_STATE_TOBOLSK_mine:0 "Kurgan"
+ HUB_NAME_STATE_TOBOLSK_mine:0 "Tara"
  
  HUB_NAME_STATE_OB_city:0 "Samarovo"
  HUB_NAME_STATE_OB_port:0 "Obdorsk"
@@ -320,18 +320,102 @@
  HUB_NAME_STATE_OB_wood:0 "Nizhnevartovsk"
  HUB_NAME_STATE_OB_mine:0 "Surgut"
  
- HUB_NAME_STATE_URAL_wood:0 "Sitka"
-
- HUB_NAME_STATE_DAGESTAN_city:0 "Tarki"
- HUB_NAME_STATE_DAGESTAN_farm:0 "Derbent" 
- HUB_NAME_STATE_DAGESTAN_wood:0 "Vladikavkaz" 
- HUB_NAME_STATE_DAGESTAN_mine:0 "Grozny"
+ HUB_NAME_STATE_URAL_farm:0 "Kurgan"
+ HUB_NAME_STATE_URAL_wood:0 "Chelyabinsk"
+ 
+ HUB_NAME_STATE_PERM_city:0 "Perm"
+ HUB_NAME_STATE_PERM_farm:0 "Kungur"
+ HUB_NAME_STATE_PERM_mine:0 "Berezniki"
+ HUB_NAME_STATE_PERM_wood:0 "Vyatka"
+ 
+ HUB_NAME_STATE_URAL_farm:0 "Kurgan"
+ HUB_NAME_STATE_URAL_wood:0 "Chelyabinsk"
+ 
+ HUB_NAME_STATE_KAZAN_city:0 "Kazan"
+ HUB_NAME_STATE_KAZAN_farm:0 "Ufa" 
+ HUB_NAME_STATE_KAZAN_wood:0 "Sterlitamak"
+ HUB_NAME_STATE_KAZAN_mine:0 "Zlatoust"
+ 
+ HUB_NAME_STATE_SAMARA_city:0 "Samara"
+ HUB_NAME_STATE_SAMARA_farm:0 "Saratov" 
+ HUB_NAME_STATE_SAMARA_wood:0 "Simbirsk"
+ HUB_NAME_STATE_SAMARA_mine:0 "Syzran"
+ 
+ HUB_NAME_STATE_GALICH_city:0 "Niznhy Novgorod"
+ HUB_NAME_STATE_GALICH_farm:0 "Arzamas" 
+ HUB_NAME_STATE_GALICH_wood:0 "Tsaryovokokshaysk"
+ HUB_NAME_STATE_GALICH_mine:0 "Cheboksary"
+ 
+ HUB_NAME_STATE_TVER_city:0 "Yaroslavl"
+ HUB_NAME_STATE_TVER_farm:0 "Vladimir" 
+ HUB_NAME_STATE_TVER_wood:0 "Kostromo"
+ HUB_NAME_STATE_TVER_mine:0 "Ivanovo"
+ 
+ HUB_NAME_STATE_NOVGOROD_city:0 "Novgorod"
+ HUB_NAME_STATE_NOVGOROD_farm:0 "Tver" 
+ HUB_NAME_STATE_NOVGOROD_wood:0 "Kirillov"
+ HUB_NAME_STATE_NOVGOROD_mine:0 "Chudovo"
+ 
+ HUB_NAME_STATE_MOSCOW_city:0 "Moscow"
+ HUB_NAME_STATE_MOSCOW_farm:0 "Podolsk" 
+ HUB_NAME_STATE_MOSCOW_wood:0 "Boridino"
+ HUB_NAME_STATE_MOSCOW_mine:0 "Serpukhov"
+ 
+ HUB_NAME_STATE_SMOLENSK_city:0 "Bryansk"
+ HUB_NAME_STATE_SMOLENSK_farm:0 "Kaluga" 
+ HUB_NAME_STATE_SMOLENSK_wood:0 "Smolensk"
+ HUB_NAME_STATE_SMOLENSK_mine:0 "Safonovo"
+ 
+ HUB_NAME_STATE_BRYANSK_city:0 "Tula"
+ HUB_NAME_STATE_BRYANSK_farm:0 "Orel" 
+ HUB_NAME_STATE_BRYANSK_wood:0 "Dankov"
+ HUB_NAME_STATE_BRYANSK_mine:0 "Lipetsk"
+ 
+ HUB_NAME_STATE_KURSK_city:0 "Kursk"
+ HUB_NAME_STATE_KURSK_farm:0 "Voronezh" 
+ HUB_NAME_STATE_KURSK_wood:0 "Belgorod"
+ HUB_NAME_STATE_KURSK_mine:0 "Stary Oskol"
+ 
+ HUB_NAME_STATE_TARTARIA_city:0 "Ryazan"
+ HUB_NAME_STATE_TARTARIA_farm:0 "Tambov"
+ HUB_NAME_STATE_TARTARIA_wood:0 "Saransk"
+ HUB_NAME_STATE_TARTARIA_mine:0 "Penza"
+ 
+ HUB_NAME_STATE_ASTRAKHAN_wood:0 "Kharabali"
+ 
+ HUB_NAME_STATE_ROSTOV_city:0 "Novocherkassk"
+ HUB_NAME_STATE_ROSTOV_port:0 "Rostov"
+ HUB_NAME_STATE_ROSTOV_farm:0 "Semikarakorsk"
+ HUB_NAME_STATE_ROSTOV_wood:0 "Vyoshenskaya"
+ HUB_NAME_STATE_ROSTOV_mine:0 "Alexandrovsk-Grushevsky"
  
  HUB_NAME_STATE_KUBAN_city:0 "Yekaterinodar"
  HUB_NAME_STATE_KUBAN_port:0 "Novorossiysk"
  HUB_NAME_STATE_KUBAN_farm:0 "Pyatigorsk"
  HUB_NAME_STATE_KUBAN_wood:0 "Sochi"
  HUB_NAME_STATE_KUBAN_mine:0 "Maykop"
+ 
+ HUB_NAME_STATE_DAGESTAN_city:0 "Tarki"
+ HUB_NAME_STATE_DAGESTAN_farm:0 "Derbent" 
+ HUB_NAME_STATE_DAGESTAN_wood:0 "Vladikavkaz" 
+ HUB_NAME_STATE_DAGESTAN_mine:0 "Grozny"
+ 
+ HUB_NAME_STATE_KIEV_city:0 "Kiev"
+ HUB_NAME_STATE_KIEV_farm:0 "Bila Tserkva"
+ HUB_NAME_STATE_KIEV_wood:0 "Zhytomyr"
+ HUB_NAME_STATE_KIEV_mine:0 "Vinnytsia"
+ 
+ HUB_NAME_STATE_CHERSON_city:0 "Ekaterinoslav"
+ HUB_NAME_STATE_CHERSON_port:0 "Odessa"
+ HUB_NAME_STATE_CHERSON_farm:0 "Cherson"
+ HUB_NAME_STATE_CHERSON_wood:0 "Voznesensk"
+ HUB_NAME_STATE_CHERSON_mine:0 "Kryvy Rih"
+ 
+ HUB_NAME_STATE_LUHANSK_city:0 "Kharkov"
+ HUB_NAME_STATE_LUHANSK_port:0 "Mariupol"
+ HUB_NAME_STATE_LUHANSK_farm:0 "Luhansk"
+ HUB_NAME_STATE_LUHANSK_wood:0 "Sloviansk"
+ HUB_NAME_STATE_LUHANSK_mine:0 "Donetsk"
  
  #Iraq
  HUB_NAME_STATE_BAGHDAD_city:0 "Baghdad"
@@ -558,7 +642,15 @@
  
  HUB_NAME_STATE_BENIN_mine:0 "Auchi"
  
- HUB_NAME_STATE_WADDAI_farm:0 "Maroua"
+ HUB_NAME_STATE_CHAD_city:0 "N'Djamena"
+ HUB_NAME_STATE_CHAD_farm:0 "Maroua"
+ HUB_NAME_STATE_CHAD_wood:0 "Maingara"
+ HUB_NAME_STATE_CHAD_mine:0 "Doba"
+ 
+ HUB_NAME_STATE_WADDAI_city:0 "Abéché"
+ HUB_NAME_STATE_WADDAI_farm:0 "Dabengat"
+ HUB_NAME_STATE_WADDAI_wood:0 "Haraze"
+ HUB_NAME_STATE_WADDAI_mine:0 "Adré"
  
  HUB_NAME_STATE_BORNU_city:0 "Kukawa" #Or Maiduguri which became Bornu capital in 1907
  HUB_NAME_STATE_BORNU_farm:0 "Kalwa" #In 1907 renamed/refounded as Maiduguri

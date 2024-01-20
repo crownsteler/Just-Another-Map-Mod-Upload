@@ -79,6 +79,9 @@ STATE_RED_SEA_COAST = {
 
 
 
+
+
+
     #bg_minor_metals_mining = 5 #Tantalum, alumina
     }
     naval_exit_id = 3047
@@ -156,6 +159,9 @@ STATE_ERITREA = {
         bg_copper_mining = 15
         bg_fishing = 6
         bg_sulfur_mining = 10 #Potash
+
+
+
 
 
 
@@ -254,6 +260,9 @@ STATE_KORDOFAN = {
 
 
 
+
+
+
     capped_resources = {}
     resource = {
         type = "bg_oil_extraction"
@@ -273,6 +282,9 @@ STATE_DARFUR = {
     wood = "x3B2BDC"
     arable_land = 20
     arable_resources = { "bg_livestock_ranches" "bg_dye_plantations" } #dye_plantation = gum arabic
+
+
+
 
 
 
@@ -321,6 +333,9 @@ STATE_MARRAKECH = {
     wood = "xA71D65"
     arable_land = 60
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" } #Most wine in Fez. Sugar is also produced from Rabat northwards
+
+
+
 
 
 
@@ -416,6 +431,9 @@ STATE_TAZA = {
 
 
 
+
+
+
     #bg_coal_mining = 10
     #bg_minor_metals_mining = 5 #zinc, cobalt
     }
@@ -494,6 +512,9 @@ STATE_CONSTANTINE = {
 
 
 
+
+
+
         bg_iron_mining = 45 #Ouenza
 
 
@@ -511,7 +532,13 @@ STATE_CONSTANTINE = {
 
 
 
+
+
+
         bg_lead_mining = 15 #Lead/zinc at Tala Hamza
+
+
+
 
 
 
@@ -569,6 +596,9 @@ STATE_ORAN = {
 
 
 
+
+
+
         bg_fishing = 4
     }
     naval_exit_id = 3032
@@ -589,6 +619,9 @@ STATE_TUNISIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_date_plantations" }
     capped_resources = {
         bg_lead_mining = 15 #Lead/zinc
+
+
+
 
 
 
@@ -798,6 +831,9 @@ STATE_SAHARA = {
 
 
 
+
+
+
     }
     resource = {
         type = "bg_oil_extraction"
@@ -984,6 +1020,9 @@ STATE_EASTERN_MALI = {
 
 
 
+
+
+
     capped_resources = {
         bg_monuments = 1
     }
@@ -1043,6 +1082,9 @@ STATE_WESTERN_MALI = {
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_opium_plantations" }
     capped_resources = {
         bg_iron_mining = 35 #discoverable
+
+
+
 
 
 
@@ -1175,18 +1217,32 @@ STATE_NIGER = {
 STATE_CHAD = {
     id = 203
     subsistence_building = "building_subsistence_pastures"
-    provinces = { x012580 x071A85 x07780C x0B50CD x0DD2DC x0EA7B1 x143523 x16A232 x19B4DB x1D50BA x1DC5B8 x21102F x236274 x2387AC x264623 x2671F3 x28F766 x2935A4 x2A39EC x2D70ED x2E991B x2FF27D x31268D x313F1F x339E84 x356A3D x36AAA0 x37C0E7 x385FAF x38671E x3948EB x3A1CAC x3CD139 x4432CD x4630D5 x46F7F6 x47001E x47CD50 x49092F x49D8EA x4BD8E5 x4C21F4 x4EECCF x4FFD7C x5090E0 x51AB89 x51BD30 x52FC22 x565AEC x58241A x5BE279 x5C6934 x60CA92 x612671 x668C81 x67BD5B x693080 x69C8EF x6FB203 x6FEC94 x72176D x721F62 x722718 x728C7D x747EEE x77BAE9 x77F836 x7B24F4 x84A273 x84AC70 x864514 x8DE26F x8E3D25 x90F6EC x91BB91 x954978 x957131 x98455D x9B1C71 x9D0543 x9DFAD4 xA2B329 xA83800 xA8C0CC xABB311 xABB7F4 xABC5E8 xAE0778 xAE8F84 xAF7729 xB08124 xB08C7E xB13AC9 xB1C7E4 xB202D0 xB27AD9 xB2B9D0 xB4E85D xB50A87 xB56846 xB57E4F xB71D68 xBA992B xBD7F71 xBF55ED xC46C85 xC6FE19 xC72561 xC9498B xCC5E0D xCCE7FE xD011DF xD20780 xD44F72 xD87F94 xD96721 xDA6353 xE282F7 xE4EDE2 xE59A76 xE748A3 xE8D0A9 xEA79E6 xEA8489 xEAE9AC xED9AE4 xEEA556 xF0D447 xF523D7 xF55FD8 xF6EFE3 xF716D4 xFDD8D2 xFFF16A }
-    traits = { "state_trait_sahara_desert" }
-    prime_land = { x0DD2DC x60CA92 xD87F94 x954978 xB1C7E4 x8E3D25 xEEA556 x4432CD x2A39EC x3A1CAC x693080 x721F62 x356A3D x49D8EA x58241A x0B50CD xD44F72 x19B4DB x49092F x47CD50 x4C21F4 x07780C x9D0543 x47001E x7B24F4 xAF7729 }
-    city = "x4FFD7C"
-    farm = "xC72561"
-    mine = "x4EECCF"
-    wood = "x5C6934"
-    arable_land = 10
-    arable_resources = { "bg_livestock_ranches" "bg_date_plantations" }
+    provinces = { x97098C x022834 xBE0DD5 x0463EF x619C5E x08D310 xD09021 x90C968 x815967 xFE1B2E x9CFD89 x061036 x0ED3DF x5E906B xD11858 x7C4D25 xD62009 xCFFFA7 xC08646 x2A283A xBA95F2 xD2CB1C xADEC7A xC2903A xB50BBC xBBFD2F x3AA356 x1134A4 x75371E x80A0D0 xB8433D xC0A050 x0E95EA x3FA17F x9B7EB0 xD28614 xF42410 x915193 x907D63 xD7D808 x3A28C0 x16B5EB xB2CF76 x105589 xD17974 xE86570 xE0D9F6 x6D3421 x179616 x625A6A x955141 xD090A0 xF1EDE4 xB48161 xA04F86 x2E1718 x5090A0 xEC3C28 xDDEE90 x7B31F9 xB53F51 x2A6299 x26D9BF xD96611 x203F1F xF236EA x905160 xC4A492 x700354 x169BFB xBCB4F7 x50E9F2 }
+    traits = { "state_trait_malaria" "state_trait_sahel" }
+    #prime_land = { }
+    city = "xD11858"
+    farm = "x16B5EB"
+    mine = "xEC3C28"
+    wood = "xA04F86"
+    arable_land = 48
+    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_sugar_plantations" }
     resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 10
     }
+}
+
+STATE_TIBESTI = {
+    id = 3203
+    subsistence_building = "building_subsistence_pastures"
+    provinces = { x012580 x071A85 x07780C x0B50CD x0DD2DC x0EA7B1 x143523 x16A232 x19B4DB x1D50BA x1DC5B8 x21102F x236274 x2387AC x264623 x2671F3 x28F766 x2935A4 x2A39EC x2D70ED x2E991B x2FF27D x31268D x313F1F x339E84 x356A3D x36AAA0 x37C0E7 x385FAF x38671E x3948EB x3A1CAC x3CD139 x4432CD x4630D5 x46F7F6 x47001E x47CD50 x49092F x49D8EA x4BD8E5 x4C21F4 x4EECCF x4FFD7C x5090E0 x51AB89 x51BD30 x52FC22 x565AEC x58241A x5BE279 x5C6934 x60CA92 x612671 x668C81 x67BD5B x693080 x69C8EF x6FB203 x6FEC94 x72176D x721F62 x722718 x728C7D x747EEE x77BAE9 x77F836 x7B24F4 x84A273 x84AC70 x864514 x8DE26F x8E3D25 x90F6EC x91BB91 x954978 x957131 x98455D x9B1C71 x9D0543 x9DFAD4 xA2B329 xA83800 xA8C0CC xABB311 xABB7F4 xABC5E8 xAE0778 xAE8F84 xAF7729 xB08124 xB08C7E xB13AC9 xB1C7E4 xB202D0 xB27AD9 xB2B9D0 xB4E85D xB50A87 xB56846 xB57E4F xB71D68 xBA992B xBD7F71 xBF55ED xC46C85 xC6FE19 xC72561 xC9498B xCC5E0D xCCE7FE xD011DF xD20780 xD44F72 xD87F94 xD96721 xDA6353 xE282F7 xE4EDE2 xE59A76 xE748A3 xE8D0A9 xEA79E6 xEA8489 xEAE9AC xED9AE4 xEEA556 xF0D447 xF523D7 xF55FD8 xF6EFE3 xF716D4 xFDD8D2 xFFF16A }
+    traits = { "state_trait_sahara_desert" }
+    prime_land = { x0DD2DC x60CA92 xD87F94 x954978 xB1C7E4 x8E3D25 xEEA556 x4432CD x2A39EC x3A1CAC x693080 x721F62 x356A3D x49D8EA x58241A x0B50CD xD44F72 x19B4DB x49092F x47CD50 x4C21F4 x07780C x9D0543 x47001E x7B24F4 xAF7729 xAE8F84 }
+    city = "x7B24F4"
+    farm = "xAE8F84"
+    mine = "x339E84"
+    wood = "x60CA92"
+    arable_land = 10
+    arable_resources = { "bg_date_plantations" }
 }
 

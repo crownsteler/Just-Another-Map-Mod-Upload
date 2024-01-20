@@ -168,16 +168,16 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = yakut
-				size = 43008
+				size = 8008
 			}
 			create_pop = {
 				culture = yakut
 				religion = orthodox
-				size = 20196
+				size = 4196
 			}
 			create_pop = {
 				culture = siberian
-				size = 9400
+				size = 29400
 			}
 			create_pop = {
 				culture = russian
@@ -190,7 +190,7 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = yakut
-				size = 41100
+				size = 86100
 			}
 			create_pop = {
 				culture = yakut
@@ -203,7 +203,7 @@
 			}
 			create_pop = {
 				culture = siberian
-				size = 800
+				size = 1800
 			}
 		}
 	}

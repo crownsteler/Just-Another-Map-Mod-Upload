@@ -32,14 +32,14 @@ region_eastern_sahara = {
 	graphical_culture = "arabic"
 	capital_province = x009F47
 	map_color = { 0.56 0.48 0.25 }
-	states = { STATE_FEZZAN  STATE_CHAD STATE_DARB_EL_ARBAIN STATE_LIBYAN_DESERT }
+	states = { STATE_FEZZAN STATE_TIBESTI STATE_DARB_EL_ARBAIN STATE_LIBYAN_DESERT }
 }
 
 region_chad_basin = {
 	graphical_culture = "african"
 	capital_province = x9B7EB0
 	map_color = { 0.4 0.70 0.68 }
-	states = { STATE_BORNU STATE_ZINDER STATE_WADDAI STATE_SHARI }
+	states = { STATE_BORNU STATE_ZINDER STATE_WADDAI STATE_SHARI STATE_CHAD }
 }
 
 region_biafra = {

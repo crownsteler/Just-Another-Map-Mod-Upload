@@ -128,22 +128,26 @@
 	s:STATE_SAMARA={
 		region_state:RUS={
 			create_building={
-				building="building_arms_industry"
-				level=5
-				reserves=1
-				activate_production_methods={ "pm_muskets" "pm_merchant_guilds_building_arms_industry" }
-			}
-			create_building={
 				building="building_food_industry"
 				level=2
 				reserves=1
 				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" "pm_merchant_guilds_building_food_industry" }
 			}
 			create_building={
-				building="building_rye_farm"
+				building="building_wheat_farm"
 				level=4
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
+			}
+		}
+	}
+	s:STATE_ORENBURG={
+		region_state:RUS={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
 				building="building_copper_mine"
@@ -151,11 +155,11 @@
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_copper_mine" }
 			}
-			create_building={ #Bashkortostan (Tverdyshevs – Myasnikov)
-				building="building_iron_mine"
-				level=2
+			create_building={
+				building="building_wheat_farm"
+				level=1
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_iron_mine" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
 		}
 	}
@@ -163,7 +167,7 @@
 		region_state:RUS={
 			create_building={
 				building="building_government_administration"
-				level=5
+				level=4
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
@@ -191,9 +195,15 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
 			}
+			create_building={ #Bashkortostan (Tverdyshevs – Myasnikov)
+				building="building_iron_mine"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_iron_mine" }
+			}
 			create_building={
 				building="building_logging_camp"
-				level=5
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
@@ -202,16 +212,10 @@
 	s:STATE_TARTARIA={
 		region_state:RUS={
 			create_building={
-				building="building_iron_mine"
-				level=8
+				building="building_wheat_farm"
+				level=4
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_iron_mine" }
-			}
-			create_building={
-				building="building_rye_farm"
-				level=5
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
 		}
 	}
