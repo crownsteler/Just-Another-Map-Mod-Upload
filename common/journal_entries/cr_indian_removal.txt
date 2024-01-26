@@ -12,8 +12,19 @@
 		}
 	}
 	
+	scripted_button = je_cr_indian_removal_button_a_choctaw
+	scripted_button = je_cr_indian_removal_button_b_chickasaw
+	scripted_button = je_cr_indian_removal_button_c_creek
+	scripted_button = je_cr_indian_removal_button_d_cherokee_treaty 
+	scripted_button = je_cr_indian_removal_button_d_cherokee
+	scripted_button = je_cr_indian_removal_button_e_seminole
+	
 	immediate = {
 		set_variable = cr_choctaw_removal_complete
+		set_variable = {
+			name = cr_negotiating_with_the_cherokee_var
+			months = short_modifier_time
+		}
 		c:CHE = {
 			save_scope_as = cherokee_nation
 		}
@@ -30,7 +41,7 @@
 			save_scope_as = seminole_nation
 		}
 		s:STATE_GEORGIA.region_state:USA = {
-			save_scope_as = state_of_georia
+			save_scope_as = state_of_georgia
 		}
 		s:STATE_ALABAMA.region_state:USA = {
 			save_scope_as = state_of_alabama
@@ -85,21 +96,14 @@
 	}
 	
 	on_complete = {
+		#custom_tooltip = {
+		#	text = indian_removal_end
+		#}
 		custom_tooltip = {
-			text = indian_removal_end
-			if = {
-				limit = {
-					NOT = {
-						any_scope_pop = {
-							culture = cu:cherokee
-						}
-					}
-				}
-				trigger_event = { id = native_resettlement.5 }
-			}
-			else = {
-				trigger_event = { id = native_resettlement.6 }
-			}
+			text = je_indian_removal_end_1
+		}
+		custom_tooltip = {
+			text = je_indian_removal_end_2
 		}
 	}
 	
@@ -112,6 +116,78 @@
 			exists = c:CHE
 			exists = c:USA
 			c:CHE = { is_subject_of = c:USA }
+		}
+	}
+	
+	weight = 200
+	
+	should_be_pinned_by_default = yes
+	
+	transferable = no
+}
+
+je_chickasaw_removal = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_historical_content
+	
+	on_monthly_pulse = {
+		random_events = {
+			70 = 0
+			20 = cr_indian_removal.49
+			1 = cr_indian_removal.50
+			3 = cr_indian_removal.51
+			1 = cr_indian_removal.55
+			5 = cr_indian_removal.56
+			1 = cr_indian_removal.57
+		}
+	}
+	
+	immediate = {
+		c:CSW = {
+			save_scope_as = target_of_removal
+		}
+		s:STATE_ALABAMA.region_state:USA = {
+			save_scope_as = state_of_alabama
+		}
+		s:STATE_MISSISSIPPI.region_state:USA = {
+			save_scope_as = state_of_mississippi
+		}
+		cu:yankee = {
+			save_scope_as = yankee_culture
+		}
+		cu:dixie = {
+			save_scope_as = dixie_culture
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = cr_indian_removal_clear_the_states_complete_tt_chickasaw
+			NOT = {
+				c:CSW = {
+					any_scope_state = { state_region = s:STATE_ALABAMA }
+					any_scope_state = { state_region = s:STATE_MISSISSIPPI }
+				}
+			}
+		}
+	}
+	
+	on_complete = {
+		custom_tooltip = {
+			text = cr_chickasaw_removal_complete
+		}
+	}
+	
+	fail = {
+		has_law = law_type:law_no_colonial_affairs
+	}
+	
+	invalid = {
+		NAND = {
+			exists = c:CSW
+			exists = c:USA
+			c:CSW = { is_subject_of = c:CSW }
 		}
 	}
 	

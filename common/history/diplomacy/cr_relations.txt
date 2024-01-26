@@ -204,4 +204,7 @@
 		set_relations = { country = c:GLD value = 50 } #Apparently friendly with Yusuf Mahamud Ibrahim due to rivalry with Oman	
 		set_relations = { country = c:OMA value = -50 } #rebellious subject	
 	}
+	c:BUK = {
+		set_relations = { country = c:KOK value = -35 } #Historic rivals		
+	}
 }

@@ -102,19 +102,35 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = ukrainian
-				size = 3923992
+				size = 2354877
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 381996
+				size = 240905
 			}
 			create_pop = {
 				culture = polish
-				size = 141504
+				size = 139504
 			}
 			create_pop = {
 				culture = russian
-				size = 36400
+				size = 26400
+			}
+		}
+	}
+	s:STATE_POLTAVA = {
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				size = 1169115
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 141091
+			}
+			create_pop = {
+				culture = russian
+				size = 16400
 			}
 		}
 	}

@@ -1,0 +1,53 @@
+﻿l_english:
+ ### Event Descriptions ###
+ cr_europe_events.1.t:0 "The Sound of Science"
+ cr_europe_events.1.d2:0 "The #bold #variable [SCOPE.sState('sound_of_science_state').GetFarmHubName]-[SCOPE.sState('sound_of_science_state').GetCityHubName]#!#! railway has bore witness to an imaginative experiment to test a theory on the movement of the stars."
+ cr_europe_events.1.d:0 "A professors at [SCOPE.sState('sound_of_science_state').GetCityHubName] University has demonstrated the the validity of #variable Christian Doppler#!'s theory that the observed frequency of sound or light changes if either the source or the observer is moving."
+ cr_europe_events.1.f:0 "A racing train, a blaring brass horn and a dozen perfect pitch ears have come together on the #bold #variable [SCOPE.sState('sound_of_science_state').GetFarmHubName]-[SCOPE.sState('sound_of_science_state').GetCityHubName]#!#! railway for an imaginative experiment. At stake? Doppler's theory on the movement of stars. For if the theory that the frequency of a wave changes with the speed of an object is correct, then a noticable drop in pitch from the blaring horn should be observed as the train races past the spectators.\nSelected for their ability to hear even a 1/8th difference in pitch, the spectators carefully record their observations as the train races by. Now; after 3 days of tabulation the results are in... And... Uniformly a drop in pitch is recorded!"
+ cr_europe_events.1.a:0 "Observation and experimentation is the foundation of knowledge."
+ cr_europe_events.1.b:0 "One cannot know how unexpectedly a new truth can find a purpose."
+ cr_europe_events.5.t:0 "The English Sitt"
+ cr_europe_events.5.desc:0 "In the mountains of Lebanon lives a reclusive English Sitt -adventurer, archeologist and matron of refugees, outcasts and criminals- who has fallen deeply in debt. Now the local moneylenders are asking us to intercede and force her to settle them."
+ cr_europe_events.5.desc_2:0 "In the mountains of Lebanon lives a reclusive English Sitt who has established herself as matron of refugees, outcasts and criminals who flocked to the protection her English banner provides.\n\nYet her many escapades are starting to catch up on her; from a punitive expedition against the Alawites to a failed archeological excavation at Ashkelon, she is left with debts far exceding her ability to pay.\n\nNow the local moneylenders and powerbrokers have requested we intercede and force her to settle her debts, one way or another."
+ cr_europe_events.5.f:0 "As for my debts, it is not, as you think, 25 per cent, yearly that I have to pay, but 50 and 95; and in one instance I have suffered more loss still. Gold of 28 piastres they counted to me here at 45, which I spent at 28, and am to repay at Beyrout at the rate of 45... calculate that! -#italic Letter of Lady Hester to her personal physician#!"
+ cr_europe_events.5.a:0 "Remind the moneylenders that #italic riba#! is #italic haram#!..."
+ cr_europe_events.5.a_tt:0 "#italic Muslim (1598) narrated that Jaabir said: The Messenger of Allah (blessings and peace of Allah be upon him) cursed the one who consumes riba (usury) and the one who pays it, the one who writes it down and the two who witness it, and he said: they are all the same.#!"
+ cr_europe_events.5.b:0 "Perhaps we can ask the English to intercede for us"
+ cr_europe_events.5.b_tt:0 "#italic All English subjects resident in the Levant are, by the capitulations, under the sole jurisdiction of their own Government, and all suits are carried before the tribunal of their Consul, and decided by him. Strictly speaking, we have no more right, under the law of England, to adjudicate in such matters, than to compel our subjects to appear before the English consul.#!"
+ cr_europe_events.5.c:0 "Will no one rid us of this turbulent women?"
+ cr_europe_events.5.c_tt:0 "#italic She could be extremely sarcastic, and her satire was often terrible. Many of her letters are 'illuminated' with her caustic criticisms. There was no end to her eccentricities. She had many whimsical tests of character both for man and beast, and, of course, was often deceived by both, to her cost.#!"
+ cr_europe_events.5.d:0 "In the interest of friendship we ought to settle her debts"
+ cr_europe_events.5.d_tt:0 "On most subjects she was not merely sane, but sensible, well-informed, and extremely shrewd. She possessed extraordinary powers of conversation, and was perfectly fascinating to all with whom she chose to make herself agreeable."
+ cr_europe_events.6.t:0 "Queen of the Desert"
+ cr_europe_events.6.desc:0 "The Levantine escapades of the #variable Lady Hester Stanhope#!, niece to the venerable #variable William Pitt the Younger#!, have become a source of some embarrassment to [ROOT.GetCountry.GetRuler.GetHerHis|U] Majesty's Government.\n\nPerennially short on money, Lady Hester's [SCOPE.sCountry('LadyHestersLiege').GetAdjectiveNoFlag] moneylenders have appealed to the [SCOPE.sCountry('LadyHestersLiege').GetRuler.GetPrimaryRoleTitle] to settled her not insubstantial debts. Under the Capitulations [SCOPE.sCountry('LadyHestersLiege').GetRuler.GetSheHe] has refered the matter to our consol in [SCOPE.sState('LadyHestersHome').GetCityHubName] to decide."
+ cr_europe_events.6.desc_2:0 "Years ago the #bold #variable Lady Hester Stanhope#!#!, niece to the venerable #bold #variable William Pitt the Younger#!#!, left Britain to pursue her destiny in the Levant -or flee the gossips of polite society, whichever you will.\n\nPerennially short on money, her escapades have become the source of some embarrassment to [ROOT.GetCountry.GetRuler.GetHerHis|U] Majesty's Government; Lady Hester's [SCOPE.sCountry('LadyHestersLiege').GetAdjectiveNoFlag] moneylenders have appealed to the [SCOPE.sCountry('LadyHestersLiege').GetRuler.GetPrimaryRoleTitle] to settled her not insubstantial debts. Under the Capitulations [SCOPE.sCountry('LadyHestersLiege').GetRuler.GetSheHe] has refered the matter to our consol in [SCOPE.sState('LadyHestersHome').GetCityHubName] to decide."
+ cr_europe_events.6.f:0 "On Malta she was told that she would be the saviour of the Jews; in Constantinople she stared the Sultan in the eyes; in Caïro she met Ali Pasha as an equal; Damascus she entered unveiled and on a horse; she was hailed by the Palmyrans as #italic Meleki#!; in Lebanon she befriended the mysterious Druze; for the murder of a French colonel the Alawites suffered dearly at her hands, yet when war came she granted sanctuary to all who asked for it. Today she rules as the half-mad prophetess of Djoun, a recluse who does not leave the walls of her castle and only converses in the darkness of the night."
+ cr_europe_events.6.a:0 "For the love of her late uncle we will pay"
+ cr_europe_events.6.a_tt:0 "#italic Her influence is vast with the Arab tribes and with all those who have suffered from Ibrahim’s army, or who sigh over the tottering condition of the Turkish empire. She, more than any person, can secure to England the friendship of nations whose goodwill must be vitally essential to our interests, when —and the time must soon come— we have to contend with Russia for the independence of the Porte.#! -Sir William Napier"
+ cr_europe_events.6.b:0 "Her Ladyship is on her own, unfortunately"
+ cr_europe_events.6.b_tt:0 "#italic These debts were incurred many of them for foolish reasons – so for instance she gave Rabbi Levy from Hebron 7000 piastres for having remained up with her a whole night and conversed about the Messiah etc.#! -Report of doctor Wolff to Lord Palmerston"
+ cr_europe_events.7.t:0 "The English Sitt"
+ cr_europe_events.7.desc:0 "The English consul at [SCOPE.sState('LadyHestersHome').GetCityHubName] has let it be known that [SCOPE.sCountry('LadyHesterMotherland').GetRuler.GetHerHis|U] Majesty's Government has declined to settle #variable Lady Hester Stanhope#!'s debts for her.\n\nIndeed, he has repudiated all [SCOPE.sCountry('LadyHesterMotherland').GetAdjectiveNoFlag] involvement, leaving the matter fully in our hands."
+ cr_europe_events.7.f:0 "Now that, at last, she held the letter in her hand, Lady Hester believed all her troubles had come to an end. She never for a moment doubted what the answer would be. No more waiting and watching; no more of the low agony of hope deferred; no more debts and duns; the hour of her triumph and deliverance had struck, and she had come into her inheritance. She had worked herself up to such a pitch of excitement that the doctor actually feared she might break a blood-vessel. Alas! when she opened her letter, she found it was not the expected reply from Sir Francis, but a very different missive. It was her death-blow that she had unconsciously received."
+ cr_europe_events.8.t:0 "The English Sitt"
+ cr_europe_events.8.desc:0 "The English consul at [SCOPE.sState('LadyHestersHome').GetCityHubName] has let it be known that [SCOPE.sCountry('LadyHesterMotherland').GetRuler.GetHerHis|U] Majesty's Government will be settling the #variable Lady Hester Stanhope#!'s debts for her."
+ cr_europe_events.8.f:0 "If X's story is true, and my debts, amounting to 10,000, or nearly, are to be paid, then I shall go on making sublime and philosophical discoveries, and employing myself in deep, abstract studies; although, as my strength is gone, I cannot work day and night as I have done. In that case, I shall want a mason, a carpenter, a ploughman, a gardener, groom, doctor, &c., so that I must have assistance. Income made out, 4,000 a year, and 1,000 more for persons like you, that I should want; and 5,000 ready money for provisions, buildings, animals, money in hand, &c., that I may start clear. -#italic Letter of Lady Hester to her personal physician#!"
+ cr_europe_events.8.a:0 "We can consider this matter closed"
+ 
+ ### Modifiers ###
+ # Interest Groups #
+ cr_riba_condemned_devout:0 "Riba Condemned"
+ cr_riba_condemned_bankers:0 "Riba Condemned"
+ cr_engaged_in_riba:0 "Paid off the moneylenders"
+ cr_paid_noble_debt_positive:0 "Paid off noble debts"
+ cr_paid_noble_debt_negative:0 "Paid off noble debts"
+ cr_not_paid_noble_debt_positive:0 "Refused to pay noble debt"
+ cr_not_paid_noble_debt_negative:0 "Refused to pay noble debt"
+ 
+ # State Modifiers #
+ cr_riba_condemned_income:0 "Riba Condemned" 
+ cr_riba_endorsed_income:0 "Financed Local Debt"
+ 
+ # National Modifiers #
+ cr_sound_of_science_prestige_modifier:0 "The Sound of Science"
+ cr_sound_of_science_tech_spread_modifier:0 "The Sound of Science"

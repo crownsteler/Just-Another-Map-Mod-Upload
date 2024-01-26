@@ -89,6 +89,10 @@ STATE_YUNNAN = {
 
 
 
+
+
+
+
         bg_logging = 17
     }
 }
@@ -247,6 +251,10 @@ STATE_OUTER_MANCHURIA = {
         bg_coal_mining = 32
         bg_iron_mining = 45
         bg_copper_mining = 20 #Tin/copper Sable tin deposit at Solnechny District
+
+
+
+
 
 
 
@@ -738,7 +746,15 @@ STATE_ULIASTAI = {
 
 
 
+
+
+
+
         bg_copper_mining = 42 #Oyu Tolgoi 
+
+
+
+
 
 
 
@@ -873,6 +889,10 @@ STATE_ANNAM = {
 
 
 
+
+
+
+
     }
     resource = {
         type = "bg_rubber"
@@ -933,6 +953,10 @@ STATE_LAOS = {
 
 
 
+
+
+
+
         bg_logging = 18
     }
 }
@@ -961,9 +985,17 @@ STATE_CHIANG_MAI = {
 
 
 
+
+
+
+
     capped_resources = {
         #bg_coal_mining = 32 #Mae Mo Mine discovered 1917, lignite
         bg_lead_mining = 26 #Zinc, also Wolfram
+
+
+
+
 
 
 
@@ -995,6 +1027,10 @@ STATE_NAKHON_RATCHASIMA = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" }
     capped_resources = {
         bg_sulfur_mining = 22 #Potash
+
+
+
+
 
 
 
@@ -1086,6 +1122,10 @@ STATE_KACHIN = {
 
 
 
+
+
+
+
     #bg_minor_metals_mining = 10 #Nickel
     }
 }
@@ -1104,6 +1144,10 @@ STATE_SHAN_STATES = {
     capped_resources = {
         bg_coal_mining = 20
         bg_lead_mining = 37 #Bawdwin, 6th largest in world in 1942, Silver/lead/zinc
+
+
+
+
 
 
 
@@ -1138,6 +1182,10 @@ STATE_BURMA = {
 
 
 
+
+
+
+
     city = "x620442"
     farm = "xCD31D0"
     mine = "xDA0253"
@@ -1156,10 +1204,18 @@ STATE_BURMA = {
 
 
 
+
+
+
+
     capped_resources = {
         #bg_iron_mining = 36 #added to Shan and Kachin
         #bg_logging = 20 #represents the arid Irrawaddy valley
         bg_copper_mining = 38 #Letpadaung Copper Mine
+
+
+
+
 
 
 
@@ -1350,8 +1406,16 @@ STATE_CHUBU = {
 
 
 
+
+
+
+
     capped_resources = {
         bg_lead_mining = 28 #lead/zinc
+
+
+
+
 
 
 
@@ -1520,10 +1584,18 @@ STATE_BUSAN = {
 
 
 
+
+
+
+
     capped_resources = {
         #bg_coal_mining = 10 #Lignite
         bg_copper_mining = 15
         bg_lead_mining = 15 #Lead/zinc
+
+
+
+
 
 
 
@@ -1554,6 +1626,10 @@ STATE_YANGHO = {
     wood = "x34B782"
     arable_land = 110
     arable_resources = { "bg_rice_farms" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" } #Tea has been produced here for centuries, but first plantations date to the 20th century according to wikipedia
+
+
+
+
 
 
 
@@ -1609,6 +1685,10 @@ STATE_PYONGYANG = {
     wood = "x47D537"
     arable_land = 100
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tobacco_plantations" } #spices / gingseng
+
+
+
+
 
 
 

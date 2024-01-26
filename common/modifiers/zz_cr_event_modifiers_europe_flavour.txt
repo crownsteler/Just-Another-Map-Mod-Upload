@@ -1,0 +1,59 @@
+﻿####Sound of Science cr_europe_events.1
+cr_sound_of_science_prestige_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		country_prestige_add = 5
+}
+
+cr_sound_of_science_tech_spread_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_tech_spread_mult = 0.15
+}
+
+####The English Sitt/Queen of the Desert cr_europe_events.5
+
+#State modifier for Lebanon because moneylenders lost money and are admonished for charging such high interests
+cr_riba_condemned_income = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_capitalists_investment_pool_contribution_add = -0.50
+	state_aristocrats_investment_pool_contribution_add = -0.50
+	state_shopkeepers_investment_pool_contribution_add = -0.50
+}
+
+#State modifier for Lebanon because moneylenders are reimbursed for their unpaid debts. 
+cr_riba_endorsed_income = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	state_rich_standard_of_living_add = 1
+}
+
+#IG modifiers Egypt. Devout don't like riba/interest. Condemning it will reduce IG_industrialist attraction
+cr_riba_condemned_devout = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_approval_add = 1
+}
+cr_riba_condemned_bankers = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_pop_attraction_mult = -0.15
+}
+cr_engaged_in_riba = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -1
+	interest_group_pop_attraction_mult = 0.1
+}
+
+#IG modifiers for UK. Liberals do not like it when government funds are used to support nobles, and visa versa.
+#cr_paid_noble_debt_positive = { #unused
+#	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+#	interest_group_approval_add = 1
+#}
+cr_paid_noble_debt_negative = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -1
+}
+#cr_not_paid_noble_debt_positive = { #unused
+#	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+#	interest_group_approval_add = 1
+#}
+cr_not_paid_noble_debt_negative = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -1
+}

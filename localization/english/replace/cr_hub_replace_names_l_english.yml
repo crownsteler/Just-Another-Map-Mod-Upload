@@ -417,6 +417,24 @@
  HUB_NAME_STATE_LUHANSK_wood:0 "Sloviansk"
  HUB_NAME_STATE_LUHANSK_mine:0 "Donetsk"
  
+ HUB_NAME_STATE_CRIMEA_city:0 "Simferopol"
+ HUB_NAME_STATE_CRIMEA_port:0 "Sevastopol"
+ HUB_NAME_STATE_CRIMEA_farm:0 "Melitopol"
+ HUB_NAME_STATE_CRIMEA_wood:0 "Perekop" 
+ HUB_NAME_STATE_CRIMEA_mine:0 "Alexandrovsk" 
+ 
+ HUB_NAME_STATE_ARKHANGELSK_city:0 "Vologda"
+ HUB_NAME_STATE_ARKHANGELSK_port:0 "Arkhangelsk"
+ HUB_NAME_STATE_ARKHANGELSK_farm:0 "Velsk"
+ HUB_NAME_STATE_ARKHANGELSK_wood:0 "Onega"
+ #HUB_NAME_STATE_ARKHANGELSK_mine:0 "mine"
+ 
+ HUB_NAME_STATE_NENETSIA_city:0 "Ust-Sysolsk"
+ HUB_NAME_STATE_NENETSIA_port:0 "Naryan-Mar"
+ HUB_NAME_STATE_NENETSIA_farm:0 "Ukhta"
+ HUB_NAME_STATE_NENETSIA_wood:0 "Naryan-Mar"
+ HUB_NAME_STATE_NENETSIA_mine:0 "Vorkuta"
+ 
  #Iraq
  HUB_NAME_STATE_BAGHDAD_city:0 "Baghdad"
  HUB_NAME_STATE_BAGHDAD_mine:0 "Karbala"

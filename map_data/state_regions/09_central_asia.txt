@@ -4,13 +4,17 @@
     provinces = { xC01040 x9F1D8F x5C32EA x205781 x405080 x793FDE xBD38C5 x4C6398 x3B6A9E x2C776A x537501 x9A6A44 xDA5ABE x84A24F x72A1AB x01D041 xDA8EF4 xF88EA3 xEE9B40 x41D080 x0BDBDA x27E9C3 x9CDC20 x76C012 x8FD393 xC09041 x019041 x0F3A99 x676C0E x2790A8 x83F33B x23F98B x668A47 xC05001 x56FD87 }
     city = "x72A1AB"
     farm = "x9F1D8F"
-    mine = "x27E9C3" 
+    mine = "x27E9C3"
     wood = "x0BDBDA"
     arable_land = 30
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_dye_plantations" "bg_vineyard_plantations" } #Dyes for madder production at Derbent
+
+
+
+
     capped_resources = {
         bg_logging = 10
-		bg_lead_mining = 22
+        bg_lead_mining = 22
     }
     resource = {
         type = "bg_oil_extraction"
@@ -30,6 +34,10 @@ STATE_KUBAN = {
     wood = "x405000"
     arable_land = 80
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" } #Some minor tea production around Sochi, didn't find it to be too relevant.
+
+
+
+
     capped_resources = {
         #bg_coal_mining = 32 #No coal reserves here at all?
         #bg_copper_mining = 18 #Karachay-Cherkessia, 1.51% copper
@@ -50,12 +58,20 @@ STATE_ARMENIA = {
     city = "x805000"
     farm = "x005000"
     mine = "x805000" #Kajaran? Alaverdi?
+
+
+
+
     wood = "x3161E0"
     arable_land = 20
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_cotton_plantations" }
     capped_resources = {
         bg_logging = 4
         bg_copper_mining = 24 #Kajaran & Alaverdi
+
+
+
+
     #bg_minor_metals_mining = 18 #molybdenum
     }
 }
@@ -74,6 +90,10 @@ STATE_AZERBAIJAN = {
     capped_resources = {
         #bg_iron_mining = 15
         bg_lead_mining = 18 #Lead/zinc
+
+
+
+
         bg_logging = 6
     }
     resource = {
@@ -132,6 +152,10 @@ STATE_ORENBURG = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_copper_mining = 30 #Orenburg (Gaisky Mine Complex), Kargaly
+
+
+
+
     }
 }
 
@@ -148,6 +172,10 @@ STATE_KAZAN = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_iron_mining = 45 #Bashkortostan (Tverdyshevs – Myasnikov)
+
+
+
+
         bg_logging = 12
     }
     resource = {
@@ -169,10 +197,9 @@ STATE_TARTARIA = {
     arable_land = 150
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
     capped_resources = {
-		bg_logging = 8
+        bg_logging = 8
     }
-    resource = {
-    }
+    resource = {}
 }
 
 STATE_ASTRAKHAN = {
@@ -192,7 +219,7 @@ STATE_ASTRAKHAN = {
 STATE_URALSK = {
     id = 441
     subsistence_building = "building_subsistence_pastures"
-    provinces = { xB8A7BC xDCDFB1 xC1E0B1 xB4BA02 xC0703B  x820B82 x505B56 xEFFD2B x736584 x6B8061 xC2D1FD x77E944 x0A5203 x999C2F xF55425 xB055C0 xDF5085 xDB54E0 x3DF767 xB6AD98 xBBCDF6 x10F394 xE91FBD xEE6AAB x37BB95 x447DA8 x20663E x68D5C5 x85212C xB02CC9 x3398D7 x6BA380 x032CA6 x78CED8 xD1364F x9B5561 x00E170 x6E0170 xD32A64 x0C16D5 x5EF765 x2D0AAC x1E7905 x867C05 x1A765B x510B92 x05A5D3 xF9CD4F x84FA13 x32C0C8 x6AD008 x0CDDC8 xC6E6CD x780B11 x881AFB x153EF8 x55C060 x1F5F1A xBC84A6 xEC9E67 xC866F3 xC05141 xE32413 x74A226 x588F70 x58D48C x10F2A4 x23B70B x19DB52 x2660A5 xB62DEC x86A90A x1A973F x6906B2 xBB4E20 xDAD022 xCBB325 xE4A7D1 x92F404 x3A7473 xF66290 x5DCF1A x093A29 x2E12FC xAE51B4 x70B0CC x618800 x118B82 xF387A5 xD04D31 x8EF6A9 x22943A x2577CF xB1D6DB xDB8ABA xBD0769 x03DEAB x1A0A77 xE2A5AC x62EE42 x504F54 x3190BF x56279A x21907E xB0FEAB xB92DE8 x3354E8 x12B014 x044E87 x10D440 xDE558E xA57492 x1EB604 x7BAA61 xD4D80A x2973FB x9C6012 x3D0E20 x729951 x68D6C0 xFE2865 x81BE7E x94A660 xAFDF44 xC053C7 x88A88E x2173E6 x6025C2 xB16E1C x3F854B xA59D8C x69439D xFC1095 x59BA59 x7FD811 x742700 x8AD1D8 x893233 x6A8667 x758597 x328878 xc090c0 xEA852B xD02F90 x1DBF7E xAB615D xEC282D xF093EB xD805E6 x287729 xCCFBF7 x07204C x5AAE42 xD19488 x0A536E x6CB6E4 xFD16B0 x85DBDD x31BCAB xE51ED5 x7D3F89 x2EAF5D xA73E93 x42F8B1 xC1B4B5 xBF10BF xD97D9F xA5EEB0 x38F85A xB8C2BA x918816 xD2C1B9 x9FC86F x969B20 x20999F x576B59 xD82B39 x6BED25 x466F4E x7281B9 xBA7175 x0264AE x396B2F x73B0D9 x912BDA x8EFEFC x9B5F76 x445B0F x3BED19 x0BE32E xD5697A x875397 x32BA7F x0A5153 x20AE87 xE057F4 xD80A79 xEFB805 xA49B9D xA1D13D x5E6DE0 x4015A9 x372422 xAC0C13 x202061 x1343FA xA05932 xC82AAC x09D625 xF8D42E x1EA24F x544E52 x482E88 x0A68E0 x8A60EF x5A093C x7A0B02 x5E2101 x2D27C6 x702E4A xDD121A xB22244 x024FEF x873F80 xCD2E5B xEA1BD5 x745238 x285ED3 x6C4AFC xDB32CF x137A72 x32745E x636379 x944AFB x448823 xA86F28 xFE5B2A x09A78F x23A192 x389F61 x818962 x09BF53 xEF7A45 x839887 x54B279 x85B325 x7FAE7F x03D970 x31D92C x84BB74 x3ADF14 x47D771 x8EC3E4 xBEC5B8 xF4D564 xF3CFD6 xD1DAF9 }
+    provinces = { xB8A7BC xDCDFB1 xC1E0B1 xB4BA02 xC0703B x820B82 x505B56 xEFFD2B x736584 x6B8061 xC2D1FD x77E944 x0A5203 x999C2F xF55425 xB055C0 xDF5085 xDB54E0 x3DF767 xB6AD98 xBBCDF6 x10F394 xE91FBD xEE6AAB x37BB95 x447DA8 x20663E x68D5C5 x85212C xB02CC9 x3398D7 x6BA380 x032CA6 x78CED8 xD1364F x9B5561 x00E170 x6E0170 xD32A64 x0C16D5 x5EF765 x2D0AAC x1E7905 x867C05 x1A765B x510B92 x05A5D3 xF9CD4F x84FA13 x32C0C8 x6AD008 x0CDDC8 xC6E6CD x780B11 x881AFB x153EF8 x55C060 x1F5F1A xBC84A6 xEC9E67 xC866F3 xC05141 xE32413 x74A226 x588F70 x58D48C x10F2A4 x23B70B x19DB52 x2660A5 xB62DEC x86A90A x1A973F x6906B2 xBB4E20 xDAD022 xCBB325 xE4A7D1 x92F404 x3A7473 xF66290 x5DCF1A x093A29 x2E12FC xAE51B4 x70B0CC x618800 x118B82 xF387A5 xD04D31 x8EF6A9 x22943A x2577CF xB1D6DB xDB8ABA xBD0769 x03DEAB x1A0A77 xE2A5AC x62EE42 x504F54 x3190BF x56279A x21907E xB0FEAB xB92DE8 x3354E8 x12B014 x044E87 x10D440 xDE558E xA57492 x1EB604 x7BAA61 xD4D80A x2973FB x9C6012 x3D0E20 x729951 x68D6C0 xFE2865 x81BE7E x94A660 xAFDF44 xC053C7 x88A88E x2173E6 x6025C2 xB16E1C x3F854B xA59D8C x69439D xFC1095 x59BA59 x7FD811 x742700 x8AD1D8 x893233 x6A8667 x758597 x328878 xc090c0 xEA852B xD02F90 x1DBF7E xAB615D xEC282D xF093EB xD805E6 x287729 xCCFBF7 x07204C x5AAE42 xD19488 x0A536E x6CB6E4 xFD16B0 x85DBDD x31BCAB xE51ED5 x7D3F89 x2EAF5D xA73E93 x42F8B1 xC1B4B5 xBF10BF xD97D9F xA5EEB0 x38F85A xB8C2BA x918816 xD2C1B9 x9FC86F x969B20 x20999F x576B59 xD82B39 x6BED25 x466F4E x7281B9 xBA7175 x0264AE x396B2F x73B0D9 x912BDA x8EFEFC x9B5F76 x445B0F x3BED19 x0BE32E xD5697A x875397 x32BA7F x0A5153 x20AE87 xE057F4 xD80A79 xEFB805 xA49B9D xA1D13D x5E6DE0 x4015A9 x372422 xAC0C13 x202061 x1343FA xA05932 xC82AAC x09D625 xF8D42E x1EA24F x544E52 x482E88 x0A68E0 x8A60EF x5A093C x7A0B02 x5E2101 x2D27C6 x702E4A xDD121A xB22244 x024FEF x873F80 xCD2E5B xEA1BD5 x745238 x285ED3 x6C4AFC xDB32CF x137A72 x32745E x636379 x944AFB x448823 xA86F28 xFE5B2A x09A78F x23A192 x389F61 x818962 x09BF53 xEF7A45 x839887 x54B279 x85B325 x7FAE7F x03D970 x31D92C x84BB74 x3ADF14 x47D771 x8EC3E4 xBEC5B8 xF4D564 xF3CFD6 xD1DAF9 }
     traits = { "state_trait_western_steppe" }
     city = "xEFFD2B"
     farm = "x1E7905"
@@ -201,6 +228,10 @@ STATE_URALSK = {
     arable_land = 30
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {} #Volcanic hosted massive sulphide (VHMS) copper deposit at 50 Let Oktyabrya/Koktau/Priorskoe/Priorskoye 130 km east of Aktobe
+
+
+
+
     resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 60
@@ -316,6 +347,10 @@ STATE_KIRGHIZIA = {
 
 
 
+
+
+
+
     }
 }
 
@@ -415,6 +450,10 @@ STATE_SEMIRECHE = {
 
 
 
+
+
+
+
         bg_coal_mining = 28
         bg_logging = 4
     }
@@ -434,9 +473,17 @@ STATE_TURKISTAN = {
     arable_resources = { bg_wheat_farms bg_livestock_ranches bg_cotton_plantations bg_tobacco_plantations }
     capped_resources = {
         bg_copper_mining = 25 #copper gold mine #Maleevsky/Maleyevskiy mine?
+
+
+
+
         bg_lead_mining = 20 #lead/zinc mine #Maleesky mine?
+
+
+
+
     }
-	
+
     resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 15
@@ -503,6 +550,10 @@ STATE_KARAGANDA = {
 
 
 
+
+
+
+
     #bg_copper_mining = 60 #Aktogay, porphyry copper deposit
     }
 }
@@ -532,6 +583,10 @@ STATE_PASHTUNISTAN = {
 
 
 
+
+
+
+
         bg_logging = 7
     }
 }
@@ -549,6 +604,10 @@ STATE_WESTERN_AFGHANISTAN = {
     wood = "xB7ED78"
     arable_land = 45
     arable_resources = { "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_silk_plantations" } #Also pistachios, almond, walnut
+
+
+
+
     capped_resources = {
         bg_iron_mining = 20
     #bg_copper_mining = 20
@@ -568,10 +627,22 @@ STATE_EASTERN_AFGHANISTAN = {
     wood = "xB1300D"
     arable_land = 65
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" "bg_opium_plantations" } #also fruits
+
+
+
+
     capped_resources = {
         bg_copper_mining = 45 #Mes Aynak
 
+
+
+
+
         bg_iron_mining = 25 #Hajigak Mine
+
+
+
+
 
         bg_logging = 4
     #bg_minor_metals_mining = 20 #Berrylium, lithium
@@ -593,6 +664,10 @@ STATE_HERAT = {
     capped_resources = {
         #bg_copper_mining = 30
         bg_lead_mining = 15 #Lead/zinc
+
+
+
+
     }
 }
 
@@ -612,6 +687,10 @@ STATE_MAZAR_I_SHARIF = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_tobacco_plantations" "bg_dye_plantations" }
     capped_resources = {
         bg_coal_mining = 32 #Shabashak/Dar-I-Suf
+
+
+
+
 
     #bg_copper_mining = 40 #Balkhab copper mine, porphyry deposit
     }
@@ -681,6 +760,10 @@ STATE_BALUCHISTAN = {
 
 
 
+
+
+
+
         #bg_lead_mining = 12 #Duddar mine
         #bg_copper_mining = 25 #Reko Diq mine, Saindak Copper Gold Project, porphyry deposit
         bg_fishing = 5
@@ -728,6 +811,10 @@ STATE_HIMALAYAS = {
     traits = { "state_trait_himalayas_mountains" }
 
     impassable = { x8FF69F x59BBCE xF202E0 xE0C455 } #Himachal Pradesh, don't forget to update 
+
+
+
+
 
 
 

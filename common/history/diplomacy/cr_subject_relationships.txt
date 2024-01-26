@@ -1,4 +1,14 @@
 ﻿DIPLOMACY = { #type = vassal #type = tributary
+	c:RUS = {
+		create_diplomatic_pact = {
+			country = c:BKH
+			type = protectorate
+		}		
+		create_diplomatic_pact = {
+			country = c:ASK
+			type = puppet
+		}		
+	}
 	c:EGY = {
 		create_diplomatic_pact = {
 			country = c:DRU
@@ -101,16 +111,6 @@
 			type = tributary
 		}			
 	}
-	c:RUS = {
-		create_diplomatic_pact = {
-			country = c:BKH
-			type = protectorate
-		}		
-		create_diplomatic_pact = {
-			country = c:ASK
-			type = puppet
-		}		
-	}
 	c:ASH = {	
 		create_diplomatic_pact = {
 			country = c:GGY
@@ -131,13 +131,6 @@
 	c:POR = {	
 		create_diplomatic_pact = {
 			country = c:LRT
-			type = protectorate
-		}	
-	}
-	
-	c:BIC = {	
-		create_diplomatic_pact = {
-			country = c:MPU
 			type = protectorate
 		}	
 	}
@@ -248,6 +241,20 @@
 		}	
 	}
 	
+	c:BUK = {
+		create_diplomatic_pact = {
+			country = c:KOK
+			type = rivalry
+		}	
+	}
+	
+	c:KOK = {
+		create_diplomatic_pact = {
+			country = c:BUK
+			type = rivalry
+		}	
+	}
+	
 	c:BIC = { #New princely states
 		create_diplomatic_pact = {
 			country = c:KTW
@@ -277,5 +284,28 @@
 			country = c:SGJ
 			type = puppet
 		}	
+		create_diplomatic_pact = {
+			country = c:MPU
+			type = protectorate
+		}	
+	}
+	
+	c:USA = {
+		create_diplomatic_pact = {
+			country = c:MSC
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:CTW
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:CSW
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:CHE
+			type = protectorate
+		}
 	}
 }

@@ -889,15 +889,14 @@ mexican_american.6 = { #Treaty of G H
 			limit = { 
 				c:CAL = {
 					is_player = no
-						OR = {
-							is_subject = no
-							is_subject_of = c:USA
-						}
+					OR = {
+						is_subject = no
+						is_subject_of = c:USA
 					}
-					exists = c:CAL
 				}
-				annex = c:CAL
+				exists = c:CAL
 			}
+			annex = c:CAL
 		}
 	}
 

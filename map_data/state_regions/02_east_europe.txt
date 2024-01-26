@@ -95,7 +95,7 @@ STATE_POLTAVA = {
     mine = "xDAAE11"
     wood = "x9723F8"
     arable_land = 110
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
         #bg_coal_mining = 72 #Lignite
         bg_logging = 9
@@ -176,17 +176,17 @@ STATE_EAST_KARELIA = {
 STATE_ARKHANGELSK = {
     id = 140
     subsistence_building = "building_subsistence_farms"
-    provinces = { xA082DB x0662C5 x5A9872 x237586 x360D95 x40D3DA x4D2452 x7D80D6 xFE65B5 x6DBE60 xD0FC2C x5F87BA x009EB7 x60053A xA57615 x8ED444 x37D5D3 x787542 x73F31C x35C277 x5539CF x67A6D0 x952880 xCE6ECE x7A608A x835452 xB07CEC xA10EA2 xAB54F1 x8F45AB xC35BA4 x78A0D5 x1230DB xCD39E2 xA2F602 xCF8844 x9AAAF0 x81827E x7FE1CB x6E148E xAA9473 xB4907A xF29885 x1D4E77 x973436 xEDEE19 x577ADC x116B4E x6A0C01 x533140 xE587B2 x27923A x7BFAD9 x49C142 x178A5C xB663D9 xF3672D xBCC48C x90A6D0 x48BC6F xB71DD4 x99B3A6 xB272FC xC699CC xD4B959 xBB094C x53C825 x9A6F0B x4A6073 x85CE81 x417983 xCF2221 xD6BC8B xEAE9CB x50829A xC86EE7 x257570 x40F1F0 x6DE113 xAC7A28 x17C3A9 x877BDE x125781 x339F71 xE72A8A xB0726B x09201E x461ABA x4A5404 x58F495 xA3F91A x68FEEE xB3E4A8 x1405E0 xE05893 x51742F x4E1756 x45C3AD x5D0C97 x8DA9F9 xEF2B17 x39C3D7 xC280EF x8CA5D6 x848EFC x5943FE x73AE5B x7A00E6 x2FA786 xA4D7E2 x956021 xFD14D2 xD8621E x51A54B x28E71E x03B78B x0F63E6 x6145FA x14D961 xEDE24C x24B773 x475460 x0D7374 x19C43D x6F6902 xA51FC9 x6B4598 x0BB972 x9D4FED x941E57 xBF9952 x5E9259 x5CB6C2 xC55EBF x54E958 x83BEB8 x7FE794 x16B133 x9E074B x8E109A x075A1C x801A38 x84213E x949437 xBC2FD3 xBF0692 x1CE50A x0BBA97 xAC4E81 x6A932C x8A82B0 xC6AC60 }
+    provinces = { xA082DB x0662C5 x5A9872 x237586 x360D95 x40D3DA x4D2452 x7D80D6 xFE65B5 x6DBE60 xD0FC2C x5F87BA x009EB7 x60053A xA57615 x8ED444 x37D5D3 x787542 x73F31C x35C277 x5539CF x67A6D0 x952880 xCE6ECE x7A608A x835452 xB07CEC xA10EA2 xAB54F1 x8F45AB xC35BA4 x78A0D5 x1230DB xCD39E2 xA2F602 xCF8844 x9AAAF0 x81827E x7FE1CB x6E148E xAA9473 xB4907A xF29885 x1D4E77 x973436 xEDEE19 x577ADC x116B4E x6A0C01 x533140 xE587B2 x27923A x7BFAD9 x49C142 x178A5C xB663D9 xF3672D xBCC48C x90A6D0 x48BC6F xB71DD4 x99B3A6 xB272FC xC699CC xD4B959 xBB094C x53C825 x9A6F0B x4A6073 x85CE81 x417983 xCF2221 xD6BC8B xEAE9CB x50829A xC86EE7 x257570 x40F1F0 x6DE113 xAC7A28 x17C3A9 x877BDE x125781 x339F71 xE72A8A xB0726B x09201E x461ABA x4A5404 x58F495 xA3F91A x68FEEE xB3E4A8 x1405E0 xE05893 x51742F x4E1756 x45C3AD x5D0C97 x8DA9F9 xEF2B17 x39C3D7 xC280EF x8CA5D6 x848EFC x5943FE x73AE5B x7A00E6 x2FA786 xA4D7E2 x956021 xFD14D2 xD8621E x51A54B x28E71E x03B78B x0F63E6 x6145FA x14D961 xEDE24C x24B773 x475460 x0D7374 x19C43D x6F6902 xA51FC9 x6B4598 x0BB972 x9D4FED x941E57 xBF9952 x5E9259 x5CB6C2 xC55EBF x54E958 x83BEB8 x7FE794 x16B133 x9E074B x8E109A x075A1C x801A38 x84213E x949437 xBC2FD3 xBF0692 x1CE50A x0BBA97 xAC4E81 x6A932C x8A82B0 xC6AC60 x031459 x13128B x4706A4 x0D15CC x1B14F9 xE2021A xAF0F6E x6221DB x3D4310 x741EFC x6F2AC4 x04598A x34514C x604180 xF42CBB xCF3ACB x9150D1 x69648C x6B739D xAB60B3 x826AF1 x6579D2 x309392 xDA6E23 xCC786B x0EACC1 x559AAA xBC7BF9 x868EF5 xF28110 xFA767B x7AB134 xD586F1 x1FCB93 x0AEB68 xD2B385 x03F85A x26F544 x3CFD3C x70EE4A xC4D5AC x7EFD2D x64C8B4 }
     traits = { "state_trait_russian_forest" "state_trait_cold_water_port" }
-    city = "xCF8844"
-    port = "x125781"
-    farm = "xE587B2"
+    city = "x7EFD2D"
+    port = "x99B3A6"
+    farm = "x8A82B0"
     mine = "x6E148E"
-    wood = "x9A6F0B"
+    wood = "x125781"
     arable_land = 15
     arable_resources = {}
     capped_resources = {
-        bg_logging = 16
+        bg_logging = 19
         bg_fishing = 5
     }
     naval_exit_id = 3039
@@ -195,7 +195,7 @@ STATE_ARKHANGELSK = {
 STATE_TVER = {
     id = 141
     subsistence_building = "building_subsistence_farms"
-    provinces = { x130A3E x0D1821 x89264F xDA1620 xE02020 x1053DD x824587 x704EB0 xB9892E xC37BBA xD19951 x53CD52 x6DD07A x41FF83 x74EDD1 x40FEDE x000181 x560151 x1D2223 x221D59 x012E20 x0C1CF9 x4B1E24 x4D1D44 xEA0D0B xEE2E88 x2478A2 x028EC5 xCD5677 x726FCF x8D7901 xF04BD2 xF155D1 x9B8556 xCC8451 x64B6B7 x60C080 xF39D33 x6ED279 xD9ACBE xC0C040 xE0C080 x62E9DA x8DEF0D xA3D7FA xCADAA7 xBDF81C xE0FC8D xFEF0CB x400383 x912892 xDF20A0 xB24923 xE33B67 xE03FE3 xA36510 x756F52 x5C950C x2FC308 x4DBAEC xB0A39B xABAE9B x9DFD09 xFFEC80 x221C4C x8F478B xCD34E8 xCC840C x2FB453 xE78F94 x53C6EC xF7AA04 x23F3C4  }
+    provinces = { x130A3E x0D1821 x89264F xDA1620 xE02020 x1053DD x824587 x704EB0 xB9892E xC37BBA xD19951 x53CD52 x6DD07A x41FF83 x74EDD1 x40FEDE x000181 x560151 x1D2223 x221D59 x012E20 x0C1CF9 x4B1E24 x4D1D44 xEA0D0B xEE2E88 x2478A2 x028EC5 xCD5677 x726FCF x8D7901 xF04BD2 xF155D1 x9B8556 xCC8451 x64B6B7 x60C080 xF39D33 x6ED279 xD9ACBE xC0C040 xE0C080 x62E9DA x8DEF0D xA3D7FA xCADAA7 xBDF81C xE0FC8D xFEF0CB x400383 x912892 xDF20A0 xB24923 xE33B67 xE03FE3 xA36510 x756F52 x5C950C x2FC308 x4DBAEC xB0A39B xABAE9B x9DFD09 xFFEC80 x221C4C x8F478B xCD34E8 xCC840C x2FB453 xE78F94 x53C6EC xF7AA04 x23F3C4 }
     traits = { "state_trait_russian_forest" "state_trait_volga_river" }
     city = "x40FEDE"
     farm = "xFFEC80"
@@ -216,9 +216,9 @@ STATE_CRIMEA = {
     traits = { "state_trait_western_steppe" "state_trait_sevastopol_bay" }
     city = "x31E0E0"
     port = "xB0DFDF"
-    farm = "x9426E7"
-    mine = "xF56D13"
-    wood = "x706060"
+    farm = "x35FCF1"
+    mine = "x055C67"
+    wood = "x6B9AB7"
     arable_land = 40
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" "bg_tobacco_plantations" }
     capped_resources = {
@@ -364,7 +364,9 @@ STATE_PERM = {
     capped_resources = {
         bg_copper_mining = 35
         bg_lead_mining = 35
-		bg_sulfur_mining = 35 #Potash
+        bg_sulfur_mining = 35 #Potash
+
+
         bg_logging = 26
     }
     resource = {
@@ -387,6 +389,8 @@ STATE_ESTONIA = {
     capped_resources = {
         bg_logging = 16
         bg_sulfur_mining = 35 #phosporite, exploitation started in 1924
+
+
         bg_fishing = 8
     }
     naval_exit_id = 3000
@@ -609,6 +613,8 @@ STATE_CENTRAL_HUNGARY = {
     capped_resources = {
         #bg_coal_mining = 20 #Lignite
         bg_copper_mining = 15 #Copper/Zinc/Lead
+
+
         bg_logging = 8
     #bg_sulfur_mining = 5 #Pyrite
     }
@@ -659,8 +665,7 @@ STATE_DELVIDEK = {
     wood = "x9E1AD1"
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
-    capped_resources = {
-    }
+    capped_resources = {}
     resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 10
@@ -718,6 +723,8 @@ STATE_EAST_SLOVAKIA = {
     capped_resources = {
         #Slovak Ore Mountains
         bg_iron_mining = 53 #Szepes-Gomor
+
+
         bg_copper_mining = 30
         bg_logging = 18
     }

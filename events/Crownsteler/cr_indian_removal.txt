@@ -26,8 +26,7 @@ cr_indian_removal.1 = { #The Chickasaw Removal
 	duration = 3
 
 	trigger = {
-		has_variable = treaty_of_new_echota_passed
-		NOT = { has_variable = treaty_of_doaksville_delayed } 
+		NOT = { has_variable = cr_treaty_of_doaksville }
 		exists = c:CSW
 	}
 	
@@ -35,35 +34,14 @@ cr_indian_removal.1 = { #The Chickasaw Removal
 		#ig:ig_intelligentsia = {
 		#	save_scope_as = intellectuals
 		#}
-		c:CHE = {
-			save_scope_as = cherokee_nation
-		}
-		c:MSC = {
-			save_scope_as = creek_nation
-		}
 		c:CSW = {
 			save_scope_as = chickasaw_nation
-		}
-		s:STATE_GEORGIA.region_state:USA = {
-			save_scope_as = state_of_georgia
 		}
 		s:STATE_ALABAMA.region_state:USA = {
 			save_scope_as = state_of_alabama
 		}
 		s:STATE_MISSISSIPPI.region_state:USA = {
 			save_scope_as = state_of_mississippi
-		}
-		s:STATE_TENNESSEE.region_state:USA = {
-			save_scope_as = state_of_tennessee
-		}
-		s:STATE_NORTH_CAROLINA.region_state:USA = {
-			save_scope_as = state_of_north_caroline
-		}
-		s:STATE_SOUTH_CAROLINA.region_state:USA = {
-			save_scope_as = state_of_south_caroline
-		}
-		cu:cherokee = {
-			save_scope_as = cherokee_people
 		}
 		cu:yankee = {
 			save_scope_as = yankee_culture
@@ -89,7 +67,7 @@ cr_indian_removal.1 = { #The Chickasaw Removal
 		hidden_effect = {
 			c:CSW = { set_capital = STATE_OKLAHOMA }
 		}
-		set_variable = chicksaw_removal_has_started
+		set_variable = cr_treaty_of_doaksville
 		set_variable = cr_treaty_of_doaksville_debt_to_be_paid
 		ai_chance = {
 			base = 20
@@ -122,68 +100,9 @@ cr_indian_removal.1 = { #The Chickasaw Removal
 		hidden_effect = {
 			c:CSW = { set_capital = STATE_OKLAHOMA }
 		}
-		set_variable = chicksaw_removal_has_started
+		set_variable = cr_treaty_of_doaksville
 		ai_chance = {
 			base = 80
-		}
-	}
-	
-	option = {
-		name = cr_indian_removal.1.c
-		custom_tooltip = {
-			text = cr_indian_removal.1.c_tt
-			set_variable = {
-				name = treaty_of_doaksville_delayed
-				months = 6
-			}
-		}
-		s:STATE_MISSISSIPPI.region_state:USA= {
-			add_radicals_in_state = {
-				value = medium_radicals
-				culture = cu:dixie
-			}		
-		}
-		s:STATE_ALABAMA.region_state:USA = {
-			add_radicals_in_state = {
-				value = small_radicals
-				culture = cu:dixie
-			}		
-		}
-		if = {
-			limit = {
-				NOT = { owns_entire_state_region = STATE_GEORGIA }
-			}
-			s:STATE_GEORGIA.region_state:USA = {
-				add_radicals_in_state = {
-					value = small_radicals
-					culture = cu:dixie
-				}		
-			}
-		}
-		if = {
-			limit = {
-				NOT = { owns_entire_state_region = STATE_TENNESSEE }
-			}
-			s:STATE_TENNESSEE.region_state:USA = {
-				add_radicals_in_state = {
-					value = small_radicals
-					culture = cu:dixie
-				}		
-			}
-		}
-		if = {
-			limit = {
-				NOT = { owns_entire_state_region = STATE_NORTH_CAROLINA }
-			}
-			s:STATE_NORTH_CAROLINA.region_state:USA = {
-				add_radicals_in_state = {
-					value = small_radicals
-					culture = cu:dixie
-				}		
-			}
-		}
-		ai_chance = {
-			base = 0
 		}
 	}
 }
@@ -267,6 +186,10 @@ cr_indian_removal.3 = { #The Chickasaw Removal
 				country = c:CSW
 				value = 15
 			}
+			create_diplomatic_pact = {
+				country = c:CSW
+				type = puppet
+			}
 		}
 		ai_chance = {
 			base = 50
@@ -299,6 +222,10 @@ cr_indian_removal.3 = { #The Chickasaw Removal
 			change_relations = {
 				country = c:CSW
 				value = -50
+			}
+			create_diplomatic_pact = {
+				country = c:CSW
+				type = puppet
 			}
 		}
 		ai_chance = {
@@ -1103,7 +1030,7 @@ cr_indian_removal.20 = { #The Fate of the Seminole
 
 cr_indian_removal.49 = { #The Move West
 	type = country_event
-	placement = p:x169E1F
+	placement = scope:indian_removal_state
 
 	title = cr_indian_removal.49.t
 	desc = cr_indian_removal.49.desc
@@ -1159,21 +1086,15 @@ cr_indian_removal.49 = { #The Move West
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	#on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
 
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
 	duration = 3
 
 	trigger = {
-		has_variable = the_trial_of_tears_has_started
 		NOT = { 
 			has_variable = supporting_the_trail_of_tears 
 			has_variable = first_removal_has_happened
-		}
-		exists = c:CHE
-		possible_political_movements = {
-			law_no_colonial_affairs
 		}
 	}
 	
@@ -1181,15 +1102,15 @@ cr_indian_removal.49 = { #The Move West
 		#ig:ig_intelligentsia = {
 		#	save_scope_as = intellectuals
 		#}
-		c:CHE = {
-			save_scope_as = cherokee_nation
-		}
-		c:MSC = {
-			save_scope_as = creek_nation
-		}
-		c:CSW = {
-			save_scope_as = chickasaw_nation
-		}
+		#c:CHE = {
+		#	save_scope_as = cherokee_nation
+		#}
+		#c:MSC = {
+		#	save_scope_as = creek_nation
+		#}
+		#c:CSW = {
+		#	save_scope_as = chickasaw_nation
+		#}
 		s:STATE_GEORGIA.region_state:USA = {
 			save_scope_as = state_of_georgia
 		}
@@ -1214,18 +1135,23 @@ cr_indian_removal.49 = { #The Move West
 		cu:yankee = {
 			save_scope_as = yankee_culture
 		}
+		cu:dixie = {
+			save_scope_as = dixie_culture
+		}
 		
-		c:CHE = {
+		scope:target_of_removal = {
 			random_scope_state = {
-				OR = {
-					state_region = s:STATE_ALABAMA
-					state_region = s:STATE_NORTH_CAROLINA
-					state_region = s:STATE_ALABAMA
-					state_region = s:STATE_TENNESSEE
+				limit = {
+					NOT = {
+						state_region = s:STATE_OKLAHOMA
+					}
 				}
 				save_scope_as = indian_removal_state
 			}
-			s:STATE_OKLAHOMA.region_state:CHE = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_OKLAHOMA
+				}
 				save_scope_as = oklahoma_state
 			}
 		}
@@ -1242,7 +1168,6 @@ cr_indian_removal.49 = { #The Move West
 				}
 				kill_population_percent_in_state = {
 					percent = 0.05
-					culture = cu:cherokee
 				}
 			}
 			else_if = {
@@ -1253,7 +1178,6 @@ cr_indian_removal.49 = { #The Move West
 				}
 				kill_population_percent_in_state = {
 					percent = 0.1
-					culture = cu:cherokee
 				}
 			}
 			hidden_effect = {
@@ -1261,6 +1185,8 @@ cr_indian_removal.49 = { #The Move West
 					every_scope_pop = {
 						limit = {
 							OR = {
+								culture = cu:muskogean
+								culture = cu:caddoan
 								culture = cu:cherokee
 								culture = cu:afro_american							
 							}
@@ -1287,14 +1213,12 @@ cr_indian_removal.50 = { #On the Roads and Swamps of [SCOPE.sState('swampy_state
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	#on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
 
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
 	duration = 3
 
 	trigger = {
-		has_variable = the_trial_of_tears_has_started
 		NOT = { 
 			has_variable = supporting_the_trail_of_tears 
 			has_variable = first_removal_has_happened
@@ -1305,15 +1229,15 @@ cr_indian_removal.50 = { #On the Roads and Swamps of [SCOPE.sState('swampy_state
 		#ig:ig_intelligentsia = {
 		#	save_scope_as = intellectuals
 		#}
-		c:CHE = {
-			save_scope_as = cherokee_nation
-		}
-		c:MSC = {
-			save_scope_as = creek_nation
-		}
-		c:CSW = {
-			save_scope_as = chickasaw_nation
-		}
+		#c:CHE = {
+		#	save_scope_as = cherokee_nation
+		#}
+		#c:MSC = {
+		#	save_scope_as = creek_nation
+		#}
+		#c:CSW = {
+		#	save_scope_as = chickasaw_nation
+		#}
 		s:STATE_GEORGIA.region_state:USA = {
 			save_scope_as = state_of_georgia
 		}
@@ -1338,18 +1262,23 @@ cr_indian_removal.50 = { #On the Roads and Swamps of [SCOPE.sState('swampy_state
 		cu:yankee = {
 			save_scope_as = yankee_culture
 		}
+		cu:dixie = {
+			save_scope_as = dixie_culture
+		}
 		
-		c:CHE = {
+		scope:target_of_removal = {
 			random_scope_state = {
-				OR = {
-					state_region = s:STATE_ALABAMA
-					state_region = s:STATE_NORTH_CAROLINA
-					state_region = s:STATE_ALABAMA
-					state_region = s:STATE_TENNESSEE
+				limit = {
+					NOT = {
+						state_region = s:STATE_OKLAHOMA
+					}
 				}
 				save_scope_as = indian_removal_state
 			}
-			s:STATE_OKLAHOMA.region_state:CHE = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_OKLAHOMA
+				}
 				save_scope_as = oklahoma_state
 			}
 		}
@@ -1369,36 +1298,265 @@ cr_indian_removal.50 = { #On the Roads and Swamps of [SCOPE.sState('swampy_state
 			}
 		}
 		scope:indian_removal_state = {
-			#if = {
-			#	limit = {
-			#		has_variable = supporting_the_trail_of_tears
-			#	}
-			#	kill_population_percent_in_state = {
-			#		percent = 0.05
-			#		culture = cu:cherokee
-			#	}
-			#}
-			#else_if = {
-			#	limit = {
-			#		NOT = {
-			#			has_variable = supporting_the_trail_of_tears
-			#		}
-			#	}
-			#	kill_population_percent_in_state = {
-			#		percent = 0.1
-			#		culture = cu:cherokee
-			#	}
-			#}
+			if = {
+				limit = {
+					has_variable = supporting_the_trail_of_tears
+				}
+				kill_population_percent_in_state = {
+					percent = 0.05
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_variable = supporting_the_trail_of_tears
+					}
+				}
+				kill_population_percent_in_state = {
+					percent = 0.1
+				}
+			}
 			hidden_effect = {
 				scope:indian_removal_state = {
 					every_scope_pop = {
 						limit = {
 							OR = {
+								culture = cu:muskogean
+								culture = cu:caddoan
 								culture = cu:cherokee
 								culture = cu:afro_american							
 							}
 						}
 						move_pop = scope:oklahoma_state
+					}
+				}
+			}
+			set_state_owner = c:USA
+		}
+	}
+}
+
+cr_indian_removal.51 = { #Stragglers
+	type = country_event
+	placement = scope:indian_removal_state
+
+	title = cr_indian_removal.51.t
+	desc = cr_indian_removal.51.desc
+	flavor = cr_indian_removal.51.f
+
+	event_image = {
+		video = "europenorthamerica_native_american" #definately need a better one
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	duration = 3
+
+	trigger = {
+		NOT = { 
+			has_variable = supporting_the_trail_of_tears 
+			has_variable = first_removal_has_happened
+		}
+	}
+	
+	immediate = {
+		#ig:ig_intelligentsia = {
+		#	save_scope_as = intellectuals
+		#}
+		#c:CHE = {
+		#	save_scope_as = cherokee_nation
+		#}
+		#c:MSC = {
+		#	save_scope_as = creek_nation
+		#}
+		#c:CSW = {
+		#	save_scope_as = chickasaw_nation
+		#}
+		s:STATE_GEORGIA.region_state:USA = {
+			save_scope_as = state_of_georgia
+		}
+		s:STATE_ALABAMA.region_state:USA = {
+			save_scope_as = state_of_alabama
+		}
+		s:STATE_MISSISSIPPI.region_state:USA = {
+			save_scope_as = state_of_mississippi
+		}
+		s:STATE_TENNESSEE.region_state:USA = {
+			save_scope_as = state_of_tennessee
+		}
+		s:STATE_NORTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_north_caroline
+		}
+		s:STATE_SOUTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_south_caroline
+		}
+		cu:cherokee = {
+			save_scope_as = cherokee_people
+		}
+		cu:yankee = {
+			save_scope_as = yankee_culture
+		}
+		cu:dixie = {
+			save_scope_as = dixie_culture
+		}
+		
+		scope:target_of_removal = {
+			random_scope_state = {
+				limit = {
+					NOT = {
+						state_region = s:STATE_OKLAHOMA
+					}
+				}
+				save_scope_as = indian_removal_state
+			}
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_OKLAHOMA
+				}
+				save_scope_as = oklahoma_state
+			}
+		}
+	}
+	
+	option = {
+		name = cr_indian_removal.51.a
+		default_option = yes
+		custom_tooltip = cr_indian_removal.51.a_tt
+		scope:swampy_state = {
+			add_modifier = {
+				name = cr_infrastructure_overburdened
+				months = normal_modifier_time
+			}
+		}
+		scope:indian_removal_state = {
+			if = {
+				limit = {
+					has_variable = supporting_the_trail_of_tears
+				}
+				kill_population_percent_in_state = {
+					percent = 0.05
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_variable = supporting_the_trail_of_tears
+					}
+				}
+				kill_population_percent_in_state = {
+					percent = 0.1
+				}
+			}
+			hidden_effect = {
+				scope:indian_removal_state = {
+					every_scope_pop = {
+						limit = {
+							OR = {
+								culture = cu:muskogean
+								culture = cu:caddoan
+								culture = cu:cherokee
+								culture = cu:afro_american							
+							}
+						}
+						move_pop = scope:oklahoma_state
+					}
+				}
+			}
+			set_state_owner = c:USA
+		}
+	}
+	
+	option = {
+		name = cr_indian_removal.51.b
+		default_option = yes
+		custom_tooltip = cr_indian_removal.51.b_tt
+		scope:swampy_state = {
+			add_modifier = {
+				name = cr_infrastructure_overburdened
+				months = normal_modifier_time
+			}
+		}
+		scope:indian_removal_state = {
+			if = {
+				limit = {
+					has_variable = supporting_the_trail_of_tears
+				}
+				kill_population_percent_in_state = {
+					percent = 0.05
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_variable = supporting_the_trail_of_tears
+					}
+				}
+				kill_population_percent_in_state = {
+					percent = 0.1
+				}
+			}
+			hidden_effect = {
+				scope:indian_removal_state = {
+					every_scope_pop = {
+						limit = {
+							OR = {
+								culture = cu:muskogean
+								culture = cu:caddoan
+								culture = cu:cherokee
+								culture = cu:afro_american							
+							}
+						}
+						move_pop = scope:oklahoma_state
+					}
+					if = {
+						limit = {
+							scope:target_of_removal = c:CSW
+						}
+						create_pop = {
+							culture = caddoan
+							size = 300		
+						}
+					}
+					else_if = {
+						limit = {
+							scope:target_of_removal = c:CTW
+						}
+						create_pop = {
+							culture = caddoan
+							size = 300		
+						}
+					}
+					else_if = {
+						limit = {
+							scope:target_of_removal = c:MSC
+						}
+						create_pop = {
+							culture = muskogean
+							size = 300		
+						}
+					}
+					else_if = {
+						limit = {
+							scope:target_of_removal = c:SMN
+						}
+						create_pop = {
+							culture = muskogean
+							size = 300		
+						}
+					}
+					else_if = {
+						limit = {
+							scope:target_of_removal = c:CHE
+						}
+						create_pop = {
+							culture = cherokee
+							size = 300		
+						}
+					}
+					else = {
+					
 					}
 				}
 			}
@@ -1420,7 +1578,6 @@ cr_indian_removal.55 = { #No Step Further
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	#on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
 
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
@@ -1434,19 +1591,21 @@ cr_indian_removal.55 = { #No Step Further
 		}
 	}
 	
+	
+	
 	immediate = {
 		#ig:ig_intelligentsia = {
 		#	save_scope_as = intellectuals
 		#}
-		c:CHE = {
-			save_scope_as = cherokee_nation
-		}
-		c:MSC = {
-			save_scope_as = creek_nation
-		}
-		c:CSW = {
-			save_scope_as = chickasaw_nation
-		}
+		#c:CHE = {
+		#	save_scope_as = cherokee_nation
+		#}
+		#c:MSC = {
+		#	save_scope_as = creek_nation
+		#}
+		#c:CSW = {
+		#	save_scope_as = chickasaw_nation
+		#}
 		s:STATE_GEORGIA.region_state:USA = {
 			save_scope_as = state_of_georgia
 		}
@@ -1471,18 +1630,23 @@ cr_indian_removal.55 = { #No Step Further
 		cu:yankee = {
 			save_scope_as = yankee_culture
 		}
+		cu:dixie = {
+			save_scope_as = dixie_culture
+		}
 		
-		c:CHE = {
+		scope:target_of_removal = {
 			random_scope_state = {
-				OR = {
-					state_region = s:STATE_ALABAMA
-					state_region = s:STATE_NORTH_CAROLINA
-					state_region = s:STATE_ALABAMA
-					state_region = s:STATE_TENNESSEE
+				limit = {
+					NOT = {
+						state_region = s:STATE_OKLAHOMA
+					}
 				}
 				save_scope_as = indian_removal_state
 			}
-			s:STATE_OKLAHOMA.region_state:CHE = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_OKLAHOMA
+				}
 				save_scope_as = oklahoma_state
 			}
 		}
@@ -1616,15 +1780,15 @@ cr_indian_removal.56 = { #Indians hit by Cholera!
 		#ig:ig_intelligentsia = {
 		#	save_scope_as = intellectuals
 		#}
-		c:CHE = {
-			save_scope_as = cherokee_nation
-		}
-		c:MSC = {
-			save_scope_as = creek_nation
-		}
-		c:CSW = {
-			save_scope_as = chickasaw_nation
-		}
+		#c:CHE = {
+		#	save_scope_as = cherokee_nation
+		#}
+		#c:MSC = {
+		#	save_scope_as = creek_nation
+		#}
+		#c:CSW = {
+		#	save_scope_as = chickasaw_nation
+		#}
 		s:STATE_GEORGIA.region_state:USA = {
 			save_scope_as = state_of_georgia
 		}
@@ -1643,27 +1807,29 @@ cr_indian_removal.56 = { #Indians hit by Cholera!
 		s:STATE_SOUTH_CAROLINA.region_state:USA = {
 			save_scope_as = state_of_south_caroline
 		}
-		s:STATE_ARKANSAS.region_state:USA = {
-			save_scope_as = state_of_arkansas
-		}
 		cu:cherokee = {
 			save_scope_as = cherokee_people
 		}
 		cu:yankee = {
 			save_scope_as = yankee_culture
 		}
+		cu:dixie = {
+			save_scope_as = dixie_culture
+		}
 		
-		c:CHE = {
+		scope:target_of_removal = {
 			random_scope_state = {
-				OR = {
-					state_region = s:STATE_ALABAMA
-					state_region = s:STATE_NORTH_CAROLINA
-					state_region = s:STATE_ALABAMA
-					state_region = s:STATE_TENNESSEE
+				limit = {
+					NOT = {
+						state_region = s:STATE_OKLAHOMA
+					}
 				}
 				save_scope_as = indian_removal_state
 			}
-			s:STATE_OKLAHOMA.region_state:CHE = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_OKLAHOMA
+				}
 				save_scope_as = oklahoma_state
 			}
 		}
@@ -1787,6 +1953,18 @@ cr_indian_removal.57 = { #Steamboat Disaster
 					always = yes
 				}
 			}
+			triggered_desc = {
+				desc = cr_indian_removal.57.f_3
+				trigger = {
+					always = yes
+				}
+			}
+			triggered_desc = {
+				desc = cr_indian_removal.57.f_4
+				trigger = {
+					always = yes
+				}
+			}
 		}
 	}
 
@@ -1813,15 +1991,15 @@ cr_indian_removal.57 = { #Steamboat Disaster
 		#ig:ig_intelligentsia = {
 		#	save_scope_as = intellectuals
 		#}
-		c:CHE = {
-			save_scope_as = cherokee_nation
-		}
-		c:MSC = {
-			save_scope_as = creek_nation
-		}
-		c:CSW = {
-			save_scope_as = chickasaw_nation
-		}
+		#c:CHE = {
+		#	save_scope_as = cherokee_nation
+		#}
+		#c:MSC = {
+		#	save_scope_as = creek_nation
+		#}
+		#c:CSW = {
+		#	save_scope_as = chickasaw_nation
+		#}
 		s:STATE_GEORGIA.region_state:USA = {
 			save_scope_as = state_of_georgia
 		}
@@ -1840,27 +2018,29 @@ cr_indian_removal.57 = { #Steamboat Disaster
 		s:STATE_SOUTH_CAROLINA.region_state:USA = {
 			save_scope_as = state_of_south_caroline
 		}
-		s:STATE_ARKANSAS.region_state:USA = {
-			save_scope_as = state_of_arkansas
-		}
 		cu:cherokee = {
 			save_scope_as = cherokee_people
 		}
 		cu:yankee = {
 			save_scope_as = yankee_culture
 		}
+		cu:dixie = {
+			save_scope_as = dixie_culture
+		}
 		
-		c:CHE = {
+		scope:target_of_removal = {
 			random_scope_state = {
-				OR = {
-					state_region = s:STATE_ALABAMA
-					state_region = s:STATE_NORTH_CAROLINA
-					state_region = s:STATE_ALABAMA
-					state_region = s:STATE_TENNESSEE
+				limit = {
+					NOT = {
+						state_region = s:STATE_OKLAHOMA
+					}
 				}
 				save_scope_as = indian_removal_state
 			}
-			s:STATE_OKLAHOMA.region_state:CHE = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_OKLAHOMA
+				}
 				save_scope_as = oklahoma_state
 			}
 		}
@@ -1969,15 +2149,15 @@ cr_indian_removal.58 = { #The Benefits of Free Enterprise
 		#ig:ig_intelligentsia = {
 		#	save_scope_as = intellectuals
 		#}
-		c:CHE = {
-			save_scope_as = cherokee_nation
-		}
-		c:MSC = {
-			save_scope_as = creek_nation
-		}
-		c:CSW = {
-			save_scope_as = chickasaw_nation
-		}
+		#c:CHE = {
+		#	save_scope_as = cherokee_nation
+		#}
+		#c:MSC = {
+		#	save_scope_as = creek_nation
+		#}
+		#c:CSW = {
+		#	save_scope_as = chickasaw_nation
+		#}
 		s:STATE_GEORGIA.region_state:USA = {
 			save_scope_as = state_of_georgia
 		}
@@ -1996,27 +2176,29 @@ cr_indian_removal.58 = { #The Benefits of Free Enterprise
 		s:STATE_SOUTH_CAROLINA.region_state:USA = {
 			save_scope_as = state_of_south_caroline
 		}
-		s:STATE_ARKANSAS.region_state:USA = {
-			save_scope_as = state_of_arkansas
-		}
 		cu:cherokee = {
 			save_scope_as = cherokee_people
 		}
 		cu:yankee = {
 			save_scope_as = yankee_culture
 		}
+		cu:dixie = {
+			save_scope_as = dixie_culture
+		}
 		
-		c:CHE = {
+		scope:target_of_removal = {
 			random_scope_state = {
-				OR = {
-					state_region = s:STATE_ALABAMA
-					state_region = s:STATE_NORTH_CAROLINA
-					state_region = s:STATE_ALABAMA
-					state_region = s:STATE_TENNESSEE
+				limit = {
+					NOT = {
+						state_region = s:STATE_OKLAHOMA
+					}
 				}
 				save_scope_as = indian_removal_state
 			}
-			s:STATE_OKLAHOMA.region_state:CHE = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_OKLAHOMA
+				}
 				save_scope_as = oklahoma_state
 			}
 		}

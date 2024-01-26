@@ -256,6 +256,10 @@ STATE_MONTANA = {
 
 
 
+
+
+
+
         bg_iron_mining = 33
         bg_logging = 17
         bg_copper_mining = 40
@@ -360,24 +364,6 @@ STATE_OKLAHOMA = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     traits = { "state_trait_comancheria" }
     city = "xD6ADF2"
     farm = "xEB66DA"
@@ -462,7 +448,7 @@ STATE_MINNESOTA = {
     id = 284
     subsistence_building = "building_subsistence_farms"
     provinces = { "x00A0C0" "x03F3AE" "x096804" "x0FAD27" "x1000C0" "x108319" "x108E46" "x1B5ADB" "x1B5B1A" "x1B6243" "x1DF928" "x1E5DFD" "x21D67D" "x27DB3F" "x28022C" "x282692" "x289431" "x29243C" "x2E8F99" "x2F06FA" "x36ECCB" "x373F2F" "x450FD3" "x45FBF5" "x46F177" "x4DCFD1" "x4FFFFC" "x54C77A" "x57556B" "x59C9CA" "x5A4A79" "x5CFCFE" "x5D35AB" "x5E307F" "x658093" "x6AD1DD" "x70957E" "x71C380" "x7388CD" "x7B3020" "x8334D0" "x84B824" "x85D457" "x865EB8" "x8D5116" "x929D22" "x9A9297" "x9D934A" "xA8B1F6" "xAB7F2A" "xBDF621" "xBE054B" "xC2D863" "xC5E30A" "xCC4DE2" "xCCC204" "xCDECF0" "xD06D27" "xD0C080" "xDE887C" "xDEFE70" "xDF2B35" "xDFFB08" "xE3F82F" "xE649BF" "xE7EF56" "xECA010" "xEE7CFB" "xF09A2C" "xF3CD0C" "xFBB91E" "xFF83EB" }
-    traits = { "state_trait_mississippi_river" }
+    traits = { "state_trait_native_resistance" "state_trait_mississippi_river" }
     city = "x9A9297"
     farm = "xCCC204"
     mine = "x658093"
@@ -527,6 +513,10 @@ STATE_MICHIGAN = {
         bg_sulfur_mining = 32
         bg_logging = 20
         bg_copper_mining = 45 #discovered 1840s
+
+
+
+
 
 
 
@@ -618,6 +608,10 @@ STATE_TENNESSEE = {
 
 
 
+
+
+
+
     traits = { "state_trait_mississippi_river" "state_trait_american_chestnuts" }
     city = "x454965"
     farm = "xC85BEB"
@@ -630,6 +624,10 @@ STATE_TENNESSEE = {
         bg_coal_mining = 30
         bg_logging = 17
         bg_copper_mining = 30 #discovered 1843
+
+
+
+
 
 
 
@@ -680,6 +678,10 @@ STATE_MISSISSIPPI = {
 
 
 
+
+
+
+
     traits = { "state_trait_mississippi_river" "state_trait_american_chestnuts" }
     city = "x4BD19A"
     port = "xE41653"
@@ -705,6 +707,10 @@ STATE_ALABAMA = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x00F000" "x12DEAF" "x168AE9" "x20B000" "x31044F" "x3837AA" "x3E5AFE" "x40A911" "x43AAC6" "x489DF2" "x492B79" "x53C044" "x5462C6" "x6510ED" "x656E7D" "x6D9811" "x807000" "x8E9218" "x913125" "x966D03" "x98A56F" "x9DD556" "xA50BE3" "xBD9F23" "xC8BB61" "xCC3103" "xCDE01B" "xE8D1CA" "xEE9129" }
     prime_land = { x492B79 x40A911 xCDE01B x6510ED xEE9129 xC8BB61 xBD9F23 x8E9218 x31044F } #Just so to make annexing the native minors more appealing
+
+
+
+
 
 
 
@@ -778,6 +784,10 @@ STATE_GEORGIA = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x13B302" "x14A138" "x169E1F" "x19EFC6" "x21E256" "x391CFA" "x39E367" "x3D2D7D" "x407040" "x40F040" "x476DE4" "x4EA3CA" "x56DBDA" "x69FAA9" "x6D8A9F" "x7B295A" "x802080" "x98A030" "x9BEA44" "xA496A6" "xA86682" "xABCC5E" "xB3D9D8" "xBDB2BA" "xBE8916" "xC07040" "xC2859C" "xCB1A53" "xCD4C42" "xD66E1C" "xE2E34A" "xE631D3" "xE933F3" "xEE9338" "xF0CB48" "xFCECD3" "xFD85D7" }
     prime_land = { x169E1F xB3D9D8 x407040 } #Just so to make annexing the Cherokee more appealing
+
+
+
+
 
 
 
@@ -996,6 +1006,10 @@ STATE_MASSACHUSETTS = {
 
 
 
+
+
+
+
         bg_iron_mining = 36
         bg_logging = 14
         bg_whaling = 8
@@ -1088,6 +1102,10 @@ STATE_NORTH_CAROLINA = {
 
 
 
+
+
+
+
     traits = { "state_trait_appalachian_coal" }
     city = "xA59977"
     port = "x00F040"
@@ -1120,6 +1138,10 @@ STATE_UTAH = {
         bg_iron_mining = 30
         bg_logging = 6
         bg_copper_mining = 25 #discovered 1848
+
+
+
+
 
 
 
@@ -1222,6 +1244,10 @@ STATE_ONTARIO = {
 
 
 
+
+
+
+
         bg_fur_trading_post = 20
     }
     resource = {
@@ -1290,6 +1316,10 @@ STATE_QUEBEC = {
         bg_whaling = 4
         bg_fishing = 6
         bg_lead_mining = 12 #Lead/Zinc/Copper
+
+
+
+
 
 
 
@@ -1550,6 +1580,10 @@ STATE_BERMUDA = {
 
 
 
+
+
+
+
     capped_resources = {
         bg_fishing = 2
     }
@@ -1630,7 +1664,15 @@ STATE_ARIZONA = {
 
 
 
+
+
+
+
     farm = "x1A5AE7" #Phoenix
+
+
+
+
 
 
 
@@ -1660,6 +1702,10 @@ STATE_ARIZONA = {
         bg_iron_mining = 21
         bg_logging = 2
         bg_copper_mining = 40 #Copper-molybdenum
+
+
+
+
 
 
 
@@ -1726,6 +1772,10 @@ STATE_NEW_MEXICO = {
 
 
 
+
+
+
+
     }
 }
 
@@ -1741,6 +1791,10 @@ STATE_CALIFORNIA = {
     wood = "x607BA8"
     arable_land = 300
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" } #don't forget to update cr_russian_alaska_events.10
+
+
+
+
 
 
 
@@ -1818,6 +1872,10 @@ STATE_SONORA = {
 
 
 
+
+
+
+
         bg_fishing = 7
     }
     resource = {
@@ -1861,6 +1919,10 @@ STATE_RIO_GRANDE = {
     capped_resources = {
         bg_logging = 5
         bg_coal_mining = 40 #Sabinas/Carbonífera coalfields, explored from 1866, major exploration from 1884 by Edwin Ludlow
+
+
+
+
 
 
 
@@ -2093,6 +2155,10 @@ STATE_JALISCO = {
     capped_resources = {
         #bg_iron_mining = 33
         bg_copper_mining = 25 #Inguran mines, state of Michiachan
+
+
+
+
 
 
 

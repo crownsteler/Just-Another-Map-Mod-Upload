@@ -147,6 +147,10 @@ STATE_WESTERN_NORWAY = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_copper_mining = 25 #Copper Sulfide?
+
+
+
+
         bg_logging = 21
         bg_fishing = 15
     }
@@ -169,6 +173,10 @@ STATE_NORTHERN_NORWAY = {
     capped_resources = {
         bg_iron_mining = 28
         bg_copper_mining = 25 #Copper Sulfide?
+
+
+
+
         bg_logging = 9
         bg_whaling = 10
         bg_fishing = 10
@@ -190,6 +198,10 @@ STATE_EASTERN_NORWAY = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_iron_mining = 16 #Arendalsfeltet
+
+
+
+
         bg_logging = 22
         bg_fishing = 5
     }
@@ -329,6 +341,10 @@ STATE_HOME_COUNTIES = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 40 #Kent Coal Field, discovered 1890
+
+
+
+
 
 
 
@@ -581,6 +597,10 @@ STATE_MUNSTER = {
 
 
 
+
+
+
+
         #bg_minor_metals_mining = 10
         bg_fishing = 12
     }
@@ -600,6 +620,10 @@ STATE_LEINSTER = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 15 #Deerpark Mines, but also includes Ballingarry Coal Mines and Arigna, which are near the border with Leinster, to simplify the map.
+
+
+
+
 
 
 
@@ -1095,7 +1119,15 @@ STATE_FLANDERS = {
 
 
 
+
+
+
+
     port = "x800060" #Antwerp
+
+
+
+
 
 
 
@@ -1127,6 +1159,10 @@ STATE_FLANDERS = {
 
 
 
+
+
+
+
     mine = "x018061" #Hasselt
 
 
@@ -1143,7 +1179,15 @@ STATE_FLANDERS = {
 
 
 
+
+
+
+
     wood = "x808061" #Turnhout
+
+
+
+
 
 
 
@@ -1213,6 +1257,10 @@ STATE_AUSTRIA = {
 
 
 
+
+
+
+
         bg_logging = 7
     }
 }
@@ -1230,6 +1278,10 @@ STATE_BOHEMIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 20 #Also Lignite, not included
+
+
+
+
 
 
 
@@ -1271,6 +1323,10 @@ STATE_BOHEMIA = {
 
 
 
+
+
+
+
         bg_lead_mining = 20 #Lead/zinc
 
 
@@ -1292,7 +1348,15 @@ STATE_BOHEMIA = {
 
 
 
+
+
+
+
         bg_sulfur_mining = 15 #Pyrite
+
+
+
+
 
 
 
@@ -1348,6 +1412,10 @@ STATE_STYRIA = {
         #bg_coal_mining = 32 #Lignite
         bg_iron_mining = 45
         bg_lead_mining = 24 #and magnesium
+
+
+
+
 
 
 
@@ -1426,6 +1494,10 @@ STATE_SOUTH_TYROL = {
 
 
 
+
+
+
+
     }
 }
 
@@ -1483,6 +1555,10 @@ STATE_ELBE = {
 
 
 
+
+
+
+
     }
     resource = {
         type = "bg_oil_extraction"
@@ -1504,6 +1580,10 @@ STATE_EAST_SWITZERLAND = {
     capped_resources = {
         bg_logging = 18
         bg_lead_mining = 30 #Lead/Zinc mines
+
+
+
+
 
 
 
@@ -1594,6 +1674,10 @@ STATE_ANHALT = {
 
 
 
+
+
+
+
         bg_logging = 17
     }
 }
@@ -1632,6 +1716,10 @@ STATE_RHINELAND = {
 
 
 
+
+
+
+
         bg_lead_mining = 20
         bg_logging = 12
     }
@@ -1650,6 +1738,10 @@ STATE_NORTH_RHINE = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_dye_plantations" }
     capped_resources = {
         bg_coal_mining = 35 #lignite not included, 10 to Rhineland (Saar), 20 to Westphalia
+
+
+
+
 
 
 
@@ -1774,6 +1866,10 @@ STATE_HANNOVER = {
 
 
 
+
+
+
+
     }
     resource = {
         type = "bg_oil_extraction"
@@ -1796,6 +1892,10 @@ STATE_BRUNSWICK = {
     capped_resources = {
         #bg_coal_mining = 25 #Lignite
         bg_sulfur_mining = 35 #Südhannoverscher Kalibezirk 
+
+
+
+
 
 
 
@@ -1914,7 +2014,15 @@ STATE_HESSE = {
 
 
 
+
+
+
+
         bg_sulfur_mining = 35 #Goldgrube/Lahn-Dill
+
+
+
+
 
 
 
@@ -1937,6 +2045,10 @@ STATE_HESSE = {
 
         bg_logging = 10
         bg_copper_mining = 30 #Lahn-Dill 
+
+
+
+
 
 
 
@@ -1994,6 +2106,10 @@ STATE_RUHR = {
     capped_resources = {
         bg_coal_mining = 40
         bg_iron_mining = 50 #Siegerland, Bergische Land, Westerwald
+
+
+
+
 
 
 

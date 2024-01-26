@@ -27,6 +27,10 @@ STATE_NORTH_BENGAL = {
     wood = "x475FC4"
     arable_land = 600
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" "bg_tobacco_plantations" } #Cotton = jute
+
+
+
+
     capped_resources = {
         bg_iron_mining = 30
         bg_logging = 8
@@ -59,8 +63,16 @@ STATE_ASSAM = {
 
 
 
+
+
+
+
     capped_resources = {
         bg_coal_mining = 48 #Discovered 1825, good quality coal
+
+
+
+
 
 
 
@@ -111,8 +123,7 @@ STATE_AWADH = {
     wood = "xB4FE19"
     arable_land = 250
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_opium_plantations" "bg_tobacco_plantations" }
-    capped_resources = {
-    }
+    capped_resources = {}
 }
 
 STATE_GUJARAT = {
@@ -151,8 +162,7 @@ STATE_CENTRAL_INDIA = {
     wood = "x51E979"
     arable_land = 300
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_opium_plantations" }
-    capped_resources = {
-    }
+    capped_resources = {}
 }
 
 STATE_KASHMIR = {
@@ -168,6 +178,10 @@ STATE_KASHMIR = {
     wood = "x9666D9"
     arable_land = 130
     arable_resources = { "bg_rice_farms" "bg_kashmir_ranches" "bg_tea_plantations" } #medicinal herbs and plants, resins, deodar, tea is marginal
+
+
+
+
 
     capped_resources = {
         #bg_coal_mining = 12 #Some coal, not particularly relevant I think
@@ -231,10 +245,18 @@ STATE_SOUTH_BENGAL = {
 
 
 
+
+
+
+
     capped_resources = {
         bg_logging = 7
         bg_fishing = 12
         bg_coal_mining = 20 #Raniganj Coalfield
+
+
+
+
 
 
 
@@ -302,6 +324,10 @@ STATE_RAJPUTANA = {
 
 
 
+
+
+
+
         bg_sulfur_mining = 40 #largest source of phosphate rock in India?
 
 
@@ -318,7 +344,15 @@ STATE_RAJPUTANA = {
 
 
 
+
+
+
+
         bg_copper_mining = 24 #Kethri, in operation
+
+
+
+
 
 
 
@@ -391,6 +425,10 @@ STATE_ORISSA = {
     wood = "xB07FDD"
     arable_land = 50
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_sugar_plantations" "bg_tea_plantations" } #spices
+
+
+
+
     capped_resources = {
         bg_iron_mining = 30
         bg_lead_mining = 45
@@ -433,6 +471,10 @@ STATE_MYSORE = {
     wood = "x9FE13F"
     arable_land = 100
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_silk_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #spices, banana = coconut
+
+
+
+
     capped_resources = {
         bg_gold_mining = 4
         bg_iron_mining = 29
@@ -454,6 +496,10 @@ STATE_TRAVANCORE = {
     wood = "xA0A050"
     arable_land = 80
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tea_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #spices/pepper
+
+
+
+
     capped_resources = {
         bg_logging = 11
         bg_fishing = 8
@@ -513,6 +559,10 @@ STATE_BOMBAY = {
     wood = "x40CE40"
     arable_land = 350
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_sugar_plantations" } #spices
+
+
+
+
     capped_resources = {
         bg_fishing = 12
     }

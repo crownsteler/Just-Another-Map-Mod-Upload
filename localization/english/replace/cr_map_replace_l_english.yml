@@ -64,7 +64,7 @@
  STATE_EASTERN_MALI:0 "Mali"
  STATE_WESTERN_MALI:0 "Kayes"
  STATE_TRIPOLI:0 "Tripolitania"
- STATE_EAST_HAUSALAND:0 "Middle Belt"
+ STATE_EAST_HAUSALAND:0 "Nigeria"
  STATE_NIGERIA:0 "Fombina"
  STATE_IVORY_COAST:0 "Windward Coast"
  STATE_WINDWARD_COAST:0 "Savanna"
@@ -90,6 +90,11 @@
  STATE_ALXA:0 "Inner Mongolia"
  STATE_HINGGAN:0 "Khingan"
  STATE_UBANGI_SHARI:0 "Ubangi"
+ STATE_TARTARIA:0 "Tambov"
+ STATE_KAZAN:0 "Tartaria"
+ STATE_ROSTOV:0 "Don Voisko"
+ STATE_GALICH:0 "Nizhny Novgorod"
+ STATE_TVER:0 "Yaroslavl"
  
  #Strategic Regions
  region_bosphorus:0 "the Bosphorus"

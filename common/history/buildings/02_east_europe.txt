@@ -161,13 +161,13 @@
 			}
 			create_building={
 				building="building_livestock_ranch"
-				level=5
+				level=3
 				reserves=1
 				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
 			}			
 			create_building={
 				building="building_wheat_farm"
-				level=45
+				level=25
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
@@ -176,6 +176,22 @@
 				level=3
 				reserves=1
 				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" "pm_merchant_guilds_building_textile_mills" }
+			}
+		}
+	}
+	s:STATE_POLTAVA={
+		region_state:RUS={
+			create_building={
+				building="building_livestock_ranch"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+			}			
+			create_building={
+				building="building_wheat_farm"
+				level=15
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
 		}
 	}
@@ -283,14 +299,8 @@
 			}
 		}
 	}
-	s:STATE_TVER={
+	s:STATE_TVER={ #STATE_YAROSLAVL
 		region_state:RUS={
-			create_building={
-				building="building_arms_industry"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_muskets" "pm_merchant_guilds_building_arms_industry" }
-			}
 			create_building={
 				building="building_logging_camp"
 				level=4
@@ -421,8 +431,32 @@
 			}
 		}
 	}
-	s:STATE_GALICH={
+	s:STATE_GALICH={ #STATE_NIZHNY_NOVGOROD
 		region_state:RUS={
+			create_building={
+				building="building_government_administration"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_arms_industry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_merchant_guilds_building_arms_industry" }
+			}
+			create_building={
+				building="building_paper_mills"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled" "pm_merchant_guilds_building_paper_mills" }
+			}
+			create_building={
+				building="building_food_industry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" "pm_merchant_guilds_building_food_industry" }
+			}
 			create_building={
 				building="building_rye_farm"
 				level=3

@@ -36,7 +36,7 @@
 	
 	should_be_pinned_by_default = yes
 	
-	inheritable = no
+	transferable = no
 }
 
 je_cr_fort_ross = {	
@@ -151,7 +151,7 @@ je_cr_fort_ross = {
 
 	weight = 200
 
-	inheritable = yes
+	transferable = no
 	
 	
 	should_be_pinned_by_default = yes

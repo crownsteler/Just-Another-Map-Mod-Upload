@@ -7,6 +7,35 @@
  indian_removal_end:0 "If the Removal is not prevented, the Cherokee people will be forced to migrate at great loss of life."
  indian_cr_removal_fail_tt:0 "No Cherokee [Concept('concept_pop', '$concept_pops$')] remain in the United States"
  
+ je_cr_indian_removal_button_a_choctaw:0 "Start the Choctaw removal"
+ je_cr_indian_removal_button_a_choctaw_desc:0 ""
+ je_cr_indian_removal_button_a_choctaw_finished:0 "We have finished the Choctaw Removal"
+ je_cr_indian_removal_button_b_chickasaw:0 "Start the Chickasaw removal"
+ je_cr_indian_removal_button_b_chickasaw_desc:0 "Under the Treaty of Pontotoc Creek the Chickasaw have agreed to sell their remaining lands east of the Mississippi and to remove themselves west, but only when a suitable tract of land to move to has been found."
+ je_cr_indian_removal_button_b_chickasaw_tt:0 "The Chickasaw have choosen a suitable piece of land in the west"
+ je_cr_indian_removal_button_b_chickasaw_tt_b:0 "The Chickasaw have #variable not#! yet started their journey west"
+ je_cr_indian_removal_button_b_chickasaw_effect:0 "The removal of the Chickasaw Nation will start"
+ je_cr_indian_removal_button_c_creek_tt:0 "A suitable provocation has been found"
+ je_cr_indian_removal_button_c_creek:0 "Start the Creek  removal"
+ je_cr_indian_removal_button_c_creek_desc:0 "Start the Creek removal"
+ je_cr_indian_removal_button_d_cherokee_treaty:0 "Sign a removal treaty with the Cherokee"
+ je_cr_indian_removal_button_d_cherokee_treaty_desc:0 "Under the Indian Removal Act removal can only be executed through a formal treaty with the Indian tribe. As we currently lack such a treaty we should pursue one before removal can begin."
+ je_cr_indian_removal_button_d_cherokee_treaty_tt:0 "We are #variable not#! currently negotiating a treaty."
+ je_cr_indian_removal_button_d_cherokee:0 "Start the Cherokee removal"
+ je_cr_indian_removal_button_d_cherokee_desc:0 "Start the Cherokee removal"
+ je_cr_indian_removal_button_e_seminole:0 "Start the Seminole removal"
+ je_cr_indian_removal_button_e_seminole_desc:0 "Start the removal of the Seminole Nation"
+ 
+ je_chickasaw_removal:1 "The Chickasaw Trail of Tears"
+ je_chickasaw_removal_reason:1 "Now -with lands secured west of the Mississippi- the [SCOPE.sCountry('target_of_removal').GetAdjective] can be removed west and forced to settle on their new lands, away from the bones of their ancestors."
+ cr_chickasaw_removal_complete:0 "The [SCOPE.sCountry('target_of_removal').GetAdjective] land will be opened up for settlement"
+ 
+ je_cr_chickasaw_removal:1 "The Creek Trail of Tears"
+ je_cr_chickasaw_removal_reason:1 "The Creek Trail of Tears"
+ 
+ je_cr_cherokee_removal:1 "The Cherokee Trail of Tears"
+ je_cr_cherokee_removal_reason:1 "The Cherokee Trail of Tears"
+ 
  
  je_cr_robinson_treaties:1 "The Lake Superior Copper Rush"
  je_cr_robinson_treaties_reason:0 "Traditional the economy of the shores of Lake Superiour has revolved around fur trading, with Ojibwe trappers providing beaver pelts. First to French Voyageurs, and now to the Hudson Bay Company. And while copper deposits have been known for centuries, exploration has so far not amounted to much. This is set to change, however, as large deposits of copper have been found across the lake in Michigan. Hopes are high that similar deposits can found on the northern shore and fortunes can be made.\n\nHigh as the hopes may be, there is the small matter of land ownership to be dealt with: For the local Ojibwe still hold the aboriginal title to the land, and -under the stipulations of the Royal Proclamation of 1763- no development can take place without their consent.\n\nThe $ig_industrialists$ are therefore pressuring the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] to open up the region to economic development by entering into a treaty with the Ojibwe."

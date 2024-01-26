@@ -3,7 +3,9 @@
  je_indian_removal:1 "The Indian Removal Act"
  je_indian_removal_reason:2 "While in the North the Indians have long since dissappeared, in the South the Five Civilised Tribes -the Cherokee, Chickasaw, Choctaw, Creek and Seminole- were until recently still firmly established. It would be hard to argue that they were prospering though: they were subject of continuous encroachment by settlers seeking new, fertile, lands to farm. In this march of progress, it is unlikely that their way of life -or indeed they themselves- would survive for long.\n\n The Indian Removal Act has been enacted to allow -force- the tribes to evacuate West, across the Mississippi, where they can live and preserve their way of life under self-rule."
  je_indian_removal_resolve_the_chain:0 "Conclude the ongoing process of Removal either by stopping the proceedings or completing them."
-
+ je_indian_removal_end_1:0 "For each succesful removal the amount of arable land and natural resources in the affected states will be increased"
+ je_indian_removal_end_2:0 "In addition [SCOPE.sState('state_of_georgia').GetName] will get a limited number of #variable gold fields#!, while [SCOPE.sState('state_of_alabama').GetName] will get a small #variable copper deposit#!"
+ 
  cr_indian_removal_clear_the_states_complete_tt_cherokee:0 "The #variable [SCOPE.sCountry('cherokee_nation').GetName] Removal#! has been completed"
  cr_indian_removal_clear_the_states_complete_tt_chickasaw:0 "The #variable [SCOPE.sCountry('chickasaw_nation').GetName] Removal#! has been completed"
  cr_indian_removal_clear_the_states_complete_tt_choctaw:0 "The #variable [SCOPE.sCountry('choctaw_nation').GetName] Removal#! has been completed"
