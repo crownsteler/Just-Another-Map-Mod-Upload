@@ -971,7 +971,7 @@
 		}
 	}
 	s:STATE_WESTERN_NEW_GUINEA = {
-		region_state:TRT = {
+		region_state:TID = {
 			create_pop = {
 				culture = melanesian
 				size = 12321
@@ -1136,7 +1136,7 @@
 				size = 17392
 			}
 		}
-		region_state:TID = {
+		region_state:TRT = {
 			create_pop = {
 				culture = moluccan
 				size = 38912
@@ -1598,27 +1598,32 @@
 		}
 	}
 	s:STATE_EAST_MICRONESIA = {
-		region_state:MCR = {
+		region_state:MCR = { #Marshall Islands
 			create_pop = {
 				culture = micronesian
-				size = 23840
+				size = 10000
 			}
+		}
+
+		region_state:GIL = { #Gilbert Islands
 			create_pop = {
-				culture = spanish
-				size = 24
+				culture = micronesian
+				size = 20000
 			}
+			}
+		region_state:ELL = {
 			create_pop = {
-				culture = polynesian
-				size = 360
+				culture = micronesian
+				size = 2750
 			}
 		}
 	}
 
 	s:STATE_WEST_MICRONESIA = {
-		region_state:MCR = {
+		region_state:SPA = {
 			create_pop = {
 				culture = micronesian
-				size = 23840
+				size = 38000
 			}
 			create_pop = {
 				culture = spanish
@@ -1626,7 +1631,13 @@
 			}
 			create_pop = {
 				culture = polynesian
-				size = 360
+				size = 700
+			}
+		}
+		region_state:CRL = {
+			create_pop = {
+				culture = micronesian
+				size = 22000
 			}
 		}
 	}
@@ -1634,7 +1645,7 @@
 		region_state:BLA = {
 			create_pop = {
 				culture = melanesian
-				size = 52400
+				size = 64500
 			}
 		}
 		
@@ -1644,7 +1655,7 @@
 		region_state:NRU = {
 			create_pop = {
 				culture = melanesian
-				size = 80000
+				size = 1800
 			}
 		}
 	}
@@ -1653,7 +1664,7 @@
 		region_state:FJI = {
 			create_pop = {
 				culture = melanesian
-				size = 82000
+				size = 138000
 			}
 		}
 	}
@@ -1662,7 +1673,7 @@
 		region_state:VNT = {
 			create_pop = {
 				culture = melanesian
-				size = 92000
+				size = 32500
 			}
 		}
 	}
@@ -1671,7 +1682,7 @@
 		region_state:KNK = {
 			create_pop = {
 				culture = melanesian
-				size = 56004
+				size = 43000
 			}
 		}
 	}
@@ -1689,7 +1700,7 @@
 		region_state:PLY = {
 			create_pop = {
 				culture = polynesian
-				size = 169004
+				size = 11500
 			}
 			create_pop = {
 				culture = polynesian
@@ -1702,13 +1713,87 @@
 				size = 400
 			}
 		}
+		region_state:MGR = { #Mangareva
+			create_pop = {
+				culture = polynesian
+				size = 7500
+			}
+		}
+		region_state:TUP = { #Tupuai
+			create_pop = {
+				culture = polynesian
+				size = 3500
+			}
+		}
+		region_state:MQS = { #Marquesas
+			create_pop = {
+				culture = polynesian
+				size = 25000
+			}
+		}
+
+		region_state:BOA = { #Bora-Bora
+			create_pop = {
+				culture = polynesian
+				size = 6500
+			}
+		}
+
+		region_state:TUM = { #Tuamotu
+			create_pop = {
+				culture = polynesian
+				size = 3500
+			}
+		}
+
+		region_state:RAP = { #Rapa Nui
+			create_pop = {
+				culture = polynesian
+				size = 2000
+			}
 	}
+		region_state:ENG = { #Pitcairn
+			create_pop = {
+				culture = british
+				religion = protestant
+				size = 250
+			}
+		}
+}
 
 	s:STATE_TONGA = {
 		region_state:TNG = {
 			create_pop = {
 				culture = polynesian
-				size = 40000
+				size = 20000
+			}
+		}
+
+		region_state:SAM = {
+			create_pop = {
+				culture = polynesian
+				size = 47000
+			}
+		}
+
+		region_state:CKI = {
+			create_pop = {
+				culture = polynesian
+				size = 17500
+			}
+		}
+
+		region_state:TOK = {
+			create_pop = {
+				culture = polynesian
+				size = 1500
+			}
+		}
+
+		region_state:WFU = {
+			create_pop = {
+				culture = polynesian
+				size = 4500
 			}
 		}
 	}

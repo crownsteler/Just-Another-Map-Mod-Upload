@@ -1,0 +1,39 @@
+﻿
+dhivehin={
+	color= hsv{ 0.99 0.27 0.29 }
+	religion = sunni
+	traits = { south_asian_heritage hindustani }
+	male_common_first_names={
+		Afsheen
+		Azaan		
+		Hassan
+		Layaan
+		Muhammad
+		Mushan
+		Naaif		
+	}
+	female_common_first_names = {
+		Aisha
+		Anaa
+		Hidhaayath
+		Niha
+		Nissa
+		Thuqa
+	}	
+	common_last_names={
+		Bee
+		Didi
+		Fulhu
+		Kader
+		Kalo
+		Kavah
+		Koya
+		Manika
+		Thakan
+		Veer
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+}

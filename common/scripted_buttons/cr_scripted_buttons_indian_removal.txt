@@ -69,14 +69,32 @@ je_cr_indian_removal_button_c_creek = {
 	possible = {
 		custom_tooltip = {
 			text = je_cr_indian_removal_button_c_creek_tt
-			has_variable = cr_creek_intruder_controversy
+			#has_variable = cr_creek_intruder_controversy
 		}	
+		custom_tooltip = {
+			text = je_cr_indian_removal_button_b_creek_tt_b
+			NOT = { has_variable = cr_creek_removal_has_started }
+		}
 		NOT = {
 			has_war_with = c:MSC
 		}
 	}
 
 	effect = {
+	
+		custom_tooltip = {
+			text = je_cr_indian_removal_button_c_creek
+			set_variable = cr_creek_removal_has_started
+			add_journal_entry = { type = je_creek_removal }
+			s:STATE_OKLAHOMA = {
+				set_owner_of_provinces = {
+					country = c:MSC
+					provinces = {
+						x286941 xD6ADF2 xE1CC08
+					}
+				}
+			}
+		}
 	}
 }
 

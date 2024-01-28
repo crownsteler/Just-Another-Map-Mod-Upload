@@ -1,0 +1,137 @@
+﻿#############################
+#							#
+#  PamaNyungan Aboriginals	#
+#							#
+#############################
+
+ARR = { #Arrernte 
+	color = { 91 85 208 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_NORTHERN_TERRITORY
+}
+
+DJB = { #Djirbalic
+	color = { 35 67 147 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_QUEENSLAND
+}
+
+KLN = { #Kulin
+	color = { 45 153 67 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_VICTORIA
+}
+
+KNC = { #Karnic
+	color = { 59 173 86 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_QUEENSLAND
+}
+
+MRC = { #Maric
+	color = { 155 75 193 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_QUEENSLAND
+}
+
+NGT = { #Ngayarta 
+	color = { 64 91 183 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+NGY = { #Ngumpin-Yapa 
+	color = { 133 195 67 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+PAA = { #Paakintyi 
+	color = { 77 68 204 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+PMN = { #Paman 
+	color = { 155 75 193 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_QUEENSLAND
+}
+
+WTI = { #Wati
+	color = { 91 85 208 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+YMT = { #Yamatji
+	color = { 119 62 247 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+YUR = { #Thura-Yura 
+	color = { 255 173 58 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_SOUTH_AUSTRALIA
+}

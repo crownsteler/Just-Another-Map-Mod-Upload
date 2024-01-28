@@ -1030,6 +1030,15 @@
 				size = 5900
 			}
 		}
+
+		region_state:MLD = {
+			create_pop = {
+				culture = dhivehin
+				religion = sunni
+				size = 56000
+			}
+		}
+
 	}
 	s:STATE_ORISSA = {
 		region_state:ORI = {

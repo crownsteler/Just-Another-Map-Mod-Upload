@@ -112,14 +112,14 @@ region_oceania = {
 region_melanesia = {
 	graphical_culture = "asian"
 	capital_province = x0C7820
-	map_color = { 0.4 0.095 0.4 }
+	map_color = { 0.16 0.40 0.33 } 
 	states = { STATE_WESTERN_NEW_GUINEA STATE_EASTERN_NEW_GUINEA STATE_SOLOMON_ISLANDS STATE_BOUGAINVILLE STATE_FIJI STATE_VANUATU STATE_KANAK }
 }
 
 region_micronesia = {
 	graphical_culture = "asian"
 	capital_province = x418382
-	map_color = { 0.16 0.40 0.33 }
+	map_color = { 0.4 0.095 0.4 }
 	states = { STATE_EAST_MICRONESIA STATE_WEST_MICRONESIA STATE_NAURU }
 }
 

@@ -1,0 +1,12 @@
+﻿
+MLD = { #Maldives
+	color = { 38 92 34 }
+
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { dhivehin }
+	religion = sunni
+	capital = STATE_INDIAN_OCEAN_TERRITORY
+}

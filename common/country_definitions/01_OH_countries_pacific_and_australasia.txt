@@ -1,0 +1,144 @@
+﻿
+SAM = { #Samoa
+	color = { 82 73 89 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { polynesian }
+	capital = STATE_TONGA
+}
+
+CKI = { #Cook Islands
+	color = { 13 7 54 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { polynesian }
+	capital = STATE_TONGA
+}
+
+TOK = { #Tokelau
+	color = { 221 120 203 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { polynesian }
+	capital = STATE_TONGA
+}
+
+WFU = { #Wallis & Futuna
+	color = { 190 109 50 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { polynesian }
+	capital = STATE_TONGA
+}
+
+GIL = { #Gilbert Islands
+	color = { 219 132 20 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { micronesian }
+	capital = STATE_EAST_MICRONESIA
+}
+
+ELL = { #Ellice Islands
+	color = { 238 17 79 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { micronesian }
+	capital = STATE_EAST_MICRONESIA
+}
+
+RAP = { #Rapa Nui
+	color = { 63 110 69 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { polynesian }
+	capital = STATE_TAHITI
+}
+
+MGR = { #Mangareva
+	color = { 206 148 0 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { polynesian }
+	capital = STATE_TAHITI
+}
+
+TUP = { #Tupua'i
+	color = { 155 216 147 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { polynesian }
+	capital = STATE_TAHITI
+}
+
+MQS = { #Marquesas
+	color = { 59 9 221 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { polynesian }
+	capital = STATE_TAHITI
+}
+
+BOA = { #Bora-Bora
+	color = { 79 47 60 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { polynesian }
+	capital = STATE_TAHITI
+}
+
+TUM = { #Tuamotus
+	color = { 82 160 35 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { polynesian }
+	capital = STATE_TAHITI
+}
+
+CRL = { #Carolines
+	color = { 231 0 33 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { polynesian }
+	capital = STATE_WEST_MICRONESIA
+}
+

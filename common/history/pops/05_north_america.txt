@@ -1472,6 +1472,12 @@
 				size = 39996
 			}
 		}
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 4200
+			}
+		}
 		region_state:NNV = {
 			create_pop = {
 				culture = inuit

@@ -5,10 +5,10 @@
 	
 	on_monthly_pulse = {
 		random_events = {
-			10 = 0 
-			1 = native_resettlement.2 # john ross
-			1 = native_resettlement.3 # Preparing for resettlement
-			1 = native_resettlement.4 # Trail of Tears
+			#10 = 0 
+			#1 = native_resettlement.2 # john ross
+			#1 = native_resettlement.3 # Preparing for resettlement
+			#1 = native_resettlement.4 # Trail of Tears
 		}
 	}
 	
@@ -96,15 +96,18 @@
 	}
 	
 	on_complete = {
-		#custom_tooltip = {
-		#	text = indian_removal_end
-		#}
+		custom_tooltip = {
+			text = je_indian_removal_end_0
+		}
 		custom_tooltip = {
 			text = je_indian_removal_end_1
 		}
 		custom_tooltip = {
 			text = je_indian_removal_end_2
 		}
+		#custom_tooltip = {
+		#	text = je_indian_removal_end_3
+		#}
 	}
 	
 	fail = {
@@ -133,8 +136,8 @@ je_chickasaw_removal = {
 	
 	on_monthly_pulse = {
 		random_events = {
-			70 = 0
-			20 = cr_indian_removal.49
+			10 = 0
+			25 = cr_indian_removal.49
 			1 = cr_indian_removal.50
 			3 = cr_indian_removal.51
 			1 = cr_indian_removal.55
@@ -146,12 +149,176 @@ je_chickasaw_removal = {
 	immediate = {
 		c:CSW = {
 			save_scope_as = target_of_removal
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_OKLAHOMA
+				}
+				save_scope_as = oklahoma_state
+			}
+		}
+		ig:ig_intelligentsia = {
+			save_scope_as = intellectuals
+		}
+		c:CHE = {
+			save_scope_as = cherokee_nation
+		}
+		c:MSC = {
+			save_scope_as = creek_nation
+		}
+		c:CSW = {
+			save_scope_as = chickasaw_nation
+		}
+		s:STATE_GEORGIA.region_state:USA = {
+			save_scope_as = state_of_georgia
 		}
 		s:STATE_ALABAMA.region_state:USA = {
 			save_scope_as = state_of_alabama
 		}
 		s:STATE_MISSISSIPPI.region_state:USA = {
 			save_scope_as = state_of_mississippi
+		}
+		s:STATE_TENNESSEE.region_state:USA = {
+			save_scope_as = state_of_tennessee
+		}
+		s:STATE_NORTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_north_caroline
+		}
+		s:STATE_SOUTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_south_caroline
+		}
+		cu:cherokee = {
+			save_scope_as = cherokee_people
+		}
+		cu:yankee = {
+			save_scope_as = yankee_culture
+		}
+		cu:dixie = {
+			save_scope_as = dixie_culture
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = cr_indian_removal_clear_the_states_complete_tt_chickasaw
+			c:CSW = {			
+				NOT = {
+					any_scope_state = { 
+						state_region = s:STATE_ALABAMA 
+					}
+				}
+			}
+			c:CSW = {
+				NOT = {
+					any_scope_state = { 
+						state_region = s:STATE_MISSISSIPPI 
+					}
+				}
+			}
+		}
+	}
+	
+	on_complete = {
+		custom_tooltip = {
+			text = cr_chickasaw_removal_complete
+		}
+		s:STATE_ALABAMA.region_state:USA = {
+			add_modifier = {
+				name = cr_indians_removed_modifier
+				months = normal_modifier_time
+			}
+			state_region = {
+				add_arable_land = 5
+			}
+		}
+		s:STATE_MISSISSIPPI.region_state:USA = {
+			add_modifier = {
+				name = cr_indians_removed_modifier
+				months = normal_modifier_time
+			}
+			state_region = {
+				add_arable_land = 25
+			}
+		}
+	}
+	
+	fail = {
+		has_law = law_type:law_no_colonial_affairs
+	}
+	
+	invalid = {
+		#NAND = {
+		#	exists = c:CSW
+		#	exists = c:USA
+		#	c:CSW = { is_subject_of = c:CSW }
+		#}
+	}
+	
+	weight = 200
+	
+	should_be_pinned_by_default = yes
+	
+	transferable = no
+}
+
+je_creek_removal = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_historical_content
+	
+	on_monthly_pulse = {
+		random_events = {
+			10 = 0
+			25 = cr_indian_removal.49
+			1 = cr_indian_removal.50
+			3 = cr_indian_removal.51
+			1 = cr_indian_removal.55
+			5 = cr_indian_removal.56
+			1 = cr_indian_removal.57
+		}
+	}
+	
+	immediate = {
+		c:MSC = {
+			save_scope_as = target_of_removal
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_OKLAHOMA
+				}
+				save_scope_as = oklahoma_state
+			}
+		}
+		ig:ig_intelligentsia = {
+			save_scope_as = intellectuals
+		}
+		c:CHE = {
+			save_scope_as = cherokee_nation
+		}
+		c:MSC = {
+			save_scope_as = creek_nation
+		}
+		c:CSW = {
+			save_scope_as = chickasaw_nation
+		}
+		s:STATE_GEORGIA.region_state:USA = {
+			save_scope_as = state_of_georgia
+		}
+		s:STATE_ALABAMA.region_state:USA = {
+			save_scope_as = state_of_alabama
+		}
+		s:STATE_MISSISSIPPI.region_state:USA = {
+			save_scope_as = state_of_mississippi
+		}
+		s:STATE_TENNESSEE.region_state:USA = {
+			save_scope_as = state_of_tennessee
+		}
+		s:STATE_NORTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_north_caroline
+		}
+		s:STATE_SOUTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_south_caroline
+		}
+		cu:cherokee = {
+			save_scope_as = cherokee_people
 		}
 		cu:yankee = {
 			save_scope_as = yankee_culture
@@ -165,9 +332,10 @@ je_chickasaw_removal = {
 		custom_tooltip = {
 			text = cr_indian_removal_clear_the_states_complete_tt_chickasaw
 			NOT = {
-				c:CSW = {
-					any_scope_state = { state_region = s:STATE_ALABAMA }
-					any_scope_state = { state_region = s:STATE_MISSISSIPPI }
+				c:MSC = {
+					any_scope_state = { 
+						state_region = s:STATE_ALABAMA 
+					}
 				}
 			}
 		}
@@ -175,7 +343,187 @@ je_chickasaw_removal = {
 	
 	on_complete = {
 		custom_tooltip = {
-			text = cr_chickasaw_removal_complete
+			text = cr_creek_removal_complete
+		}
+		custom_tooltip = {
+			text = cr_creek_removal_complete
+		create_diplomatic_pact = {
+			country = c:MSC
+			type = protectorate
+		}
+		}
+		s:STATE_ALABAMA.region_state:USA = {
+			add_modifier = {
+				name = cr_indians_removed_modifier
+				months = normal_modifier_time
+			}
+			state_region = {
+				add_arable_land = 25
+			}
+		}
+		
+	}
+	
+	fail = {
+		has_law = law_type:law_no_colonial_affairs
+	}
+	
+	invalid = {
+		#NAND = {
+		#	exists = c:CSW
+		#	exists = c:USA
+		#	c:CSW = { is_subject_of = c:CSW }
+		#}
+	}
+	
+	weight = 200
+	
+	should_be_pinned_by_default = yes
+	
+	transferable = no
+}
+
+je_cherokee_removal = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_historical_content
+	
+	on_monthly_pulse = {
+		random_events = {
+			10 = 0
+			25 = cr_indian_removal.49
+			1 = cr_indian_removal.50
+			3 = cr_indian_removal.51
+			1 = cr_indian_removal.55
+			5 = cr_indian_removal.56
+			1 = cr_indian_removal.57
+		}
+	}
+	
+	immediate = {
+		c:CHE = {
+			save_scope_as = target_of_removal
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_OKLAHOMA
+				}
+				save_scope_as = oklahoma_state
+			}
+		}
+		ig:ig_intelligentsia = {
+			save_scope_as = intellectuals
+		}
+		c:CHE = {
+			save_scope_as = cherokee_nation
+		}
+		c:MSC = {
+			save_scope_as = creek_nation
+		}
+		c:CSW = {
+			save_scope_as = chickasaw_nation
+		}
+		s:STATE_GEORGIA.region_state:USA = {
+			save_scope_as = state_of_georgia
+		}
+		s:STATE_ALABAMA.region_state:USA = {
+			save_scope_as = state_of_alabama
+		}
+		s:STATE_MISSISSIPPI.region_state:USA = {
+			save_scope_as = state_of_mississippi
+		}
+		s:STATE_TENNESSEE.region_state:USA = {
+			save_scope_as = state_of_tennessee
+		}
+		s:STATE_NORTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_north_caroline
+		}
+		s:STATE_SOUTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_south_caroline
+		}
+		cu:cherokee = {
+			save_scope_as = cherokee_people
+		}
+		cu:yankee = {
+			save_scope_as = yankee_culture
+		}
+		cu:dixie = {
+			save_scope_as = dixie_culture
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = cr_indian_removal_clear_the_states_complete_tt_cherokee
+			c:CHE = {			
+				NOT = {
+					any_scope_state = { 
+						state_region = s:STATE_GEORGIA 
+					}
+				}
+			}
+			c:CSW = {
+				NOT = {
+					any_scope_state = { 
+						state_region = s:STATE_ALABAMA
+					}
+				}
+			}
+			c:CSW = {
+				NOT = {
+					any_scope_state = { 
+						state_region = s:STATE_TENNESSEE
+					}
+				}
+			}
+			c:CSW = {
+				NOT = {
+					any_scope_state = { 
+						state_region = s:STATE_NORTH_CAROLINA
+					}
+				}
+			}
+		}
+	}
+	
+	on_complete = {
+		custom_tooltip = {
+			text = cr_cherokee_removal_complete
+		}
+		s:STATE_GEORGIA.region_state:USA = {
+			add_modifier = {
+				name = cr_indians_removed_modifier
+				months = normal_modifier_time
+			}
+			state_region = {
+				add_arable_land = 30
+			}
+		}
+		s:STATE_ALABAMA.region_state:USA = {
+			add_modifier = {
+				name = cr_indians_removed_modifier
+				months = normal_modifier_time
+			}
+			state_region = {
+				add_arable_land = 20
+			}
+		}
+		s:STATE_TENNESSEE.region_state:USA = {
+			add_modifier = {
+				name = cr_indians_removed_modifier
+				months = normal_modifier_time
+			}
+			state_region = {
+				add_arable_land = 20
+			}
+		}
+		s:STATE_NORTH_CAROLINA.region_state:USA = {
+			add_modifier = {
+				name = cr_indians_removed_modifier
+				months = normal_modifier_time
+			}
+			state_region = {
+				add_arable_land = 5
+			}
 		}
 	}
 	
@@ -184,11 +532,11 @@ je_chickasaw_removal = {
 	}
 	
 	invalid = {
-		NAND = {
-			exists = c:CSW
-			exists = c:USA
-			c:CSW = { is_subject_of = c:CSW }
-		}
+		#NAND = {
+		#	exists = c:CSW
+		#	exists = c:USA
+		#	c:CSW = { is_subject_of = c:CSW }
+		#}
 	}
 	
 	weight = 200

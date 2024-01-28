@@ -81,6 +81,7 @@
  cr_infrastructure_overburdened:0 "Overburdened Infrastructure"
  cr_government_removal_agents:0 "Public Removal Agents"
  cr_government_improved_removal_regulations:0 "Improved Regulations Concerning the Removal of the Indians"
+ cr_indians_removed_modifier:0 "Indians Removed"
  
  ### National Modifiers
  cr_disunifying_the_kyrgyz:0 "Disunifying the clans"

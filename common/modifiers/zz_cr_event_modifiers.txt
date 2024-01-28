@@ -114,3 +114,10 @@ cr_treaty_of_doaksville = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_tax_income_add = -1500
 }
+
+cr_indians_removed_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_landowners_pol_str_mult = 0.1
+	state_migration_pull_mult = 0.1
+	state_birth_rate_mult = 0.01
+}

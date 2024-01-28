@@ -35,6 +35,18 @@ AYI = {
 	capital = STATE_IVORY_COAST
 }
 
+BMM = {
+	color = { 197 201 163 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { equatorial_bantu }
+	religion = sunni
+	capital = STATE_SOUTH_CAMEROON
+}
+
 BLE = {
 	color = { 218 104 44 }
 	country_type = unrecognized

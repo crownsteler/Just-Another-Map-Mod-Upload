@@ -261,7 +261,7 @@
 				building="building_barracks"
 				level=10
 				reserves=1
-				activate_production_methods={ "pm_general_training" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 			create_building={
 				building="building_port"
@@ -289,7 +289,7 @@
 				building="building_barracks"
 				level=10
 				reserves=1
-				activate_production_methods={ "pm_general_training" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 			create_building={
 				building="building_port"
@@ -341,7 +341,7 @@
 				building="building_barracks"
 				level=10
 				reserves=1
-				activate_production_methods={ "pm_general_training" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 		region_state:YOG={	
@@ -712,7 +712,7 @@
 		region_state:BAL={
 			create_building={
 				building="building_rice_farm"
-				level=4
+				level=3
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_no_secondary" }
 			}
@@ -869,7 +869,7 @@
 				building="building_barracks"
 				level=10
 				reserves=1
-				activate_production_methods={ "pm_general_training" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 			create_building={
 				building="building_port"
@@ -910,11 +910,23 @@
 		}
 	}
 	s:STATE_WEST_MICRONESIA={
-		region_state:MCR={
+		region_state:SPA={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+		}
+		region_state:CAR={ #Caroline Islands
 		}
 	}
 	s:STATE_EAST_MICRONESIA={
-		region_state:MCR={
+		region_state:MCR={ #Marshall Islands
+		}
+		region_state:GIL={ #Gilbert Islands
+		}
+		region_state:ELL={ #Ellice Islands
 		}
 	}
 	s:STATE_SOLOMON_ISLANDS={
@@ -959,9 +971,32 @@
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
 			}
 		}
+		region_state:RAP={ #Rapa Nui
+		}
+		region_state:ENG={ #Pitcairn Islands
+		}
+		region_state:MGR={ #Mangareva
+		}
+		region_state:TUP={ #Tupua'i
+		}
+		region_state:MQS={ #Marquesas
+		}
+		region_state:BOA={ #Bora-Bora
+		}
+		region_state:TUM={ #Tuamotus
+		}
+
 	}
 	s:STATE_TONGA={
-		region_state:TNG={
+		region_state:TNG={ #Tonga
+		}
+		region_state:SAM={ #Samoa
+		}
+		region_state:CKI={ #Cook Islands
+		}
+		region_state:TOK={ #Tokelau
+		}
+		region_state:WFU={ #Wallis
 		}
 	}
 }

@@ -537,7 +537,7 @@
 			}
 		}
 	}
-	s:STATE_SOUTH_BENGAL={ #STATE_WEST_BENGAL
+	s:STATE_SOUTH_BENGAL={
 		region_state:BIC={
 			create_building={
 				building="building_government_administration"
@@ -775,6 +775,9 @@
 				reserves=1
 				activate_production_methods={ "pm_anchorage" }
 			}
+		}
+
+		region_state:MLD={ #Maldives
 		}
 	}
 	s:STATE_ORISSA={
