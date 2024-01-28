@@ -26,17 +26,6 @@ AIA = {
 #	capital = STATE_NORTH_DAKOTA
 #}
 
-CLI = {
-	color = { 126 161 81 }
-	
-	country_type = decentralized
-	
-	tier = principality
-	
-	cultures = { hokan }
-	capital = STATE_CALIFORNIA
-}
-
 CSW = {
 	color = { 46 46 112 }
 	
@@ -102,6 +91,17 @@ GVT = {
 	
 	cultures = { siouan }
 	capital = STATE_MONTANA
+}
+
+HKI = {
+	color = { 126 161 81 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { hokan }
+	capital = STATE_CALIFORNIA
 }
 
 INU = {

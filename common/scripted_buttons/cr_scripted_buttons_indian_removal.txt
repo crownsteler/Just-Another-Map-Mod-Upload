@@ -9,6 +9,9 @@
 	}
 	
 	possible = {
+		c:CTW = {
+			is_subject_of = ROOT
+		}
 		custom_tooltip = {
 			text = je_cr_indian_removal_button_a_choctaw_finished
 			NOT = {
@@ -35,6 +38,9 @@ je_cr_indian_removal_button_b_chickasaw = {
 	}
 	
 	possible = {
+		c:CSW = {
+			is_subject_of = ROOT
+		}
 		custom_tooltip = {
 			text = je_cr_indian_removal_button_b_chickasaw_tt
 			has_variable = cr_treaty_of_doaksville
@@ -67,6 +73,9 @@ je_cr_indian_removal_button_c_creek = {
 	}
 	
 	possible = {
+		c:MSC = {
+			is_subject_of = ROOT
+		}
 		custom_tooltip = {
 			text = je_cr_indian_removal_button_c_creek_tt
 			#has_variable = cr_creek_intruder_controversy
@@ -108,6 +117,9 @@ je_cr_indian_removal_button_d_cherokee_treaty = {
 	}
 	
 	possible = {
+		c:CHE = {
+			is_subject_of = ROOT
+		}
 		custom_tooltip = {
 			text = je_cr_indian_removal_button_d_cherokee_treaty_tt
 			NOT = { has_variable = cr_negotiating_with_the_cherokee_var }
@@ -138,6 +150,9 @@ je_cr_indian_removal_button_d_cherokee = {
 	}
 	
 	possible = {
+		c:CHE = {
+			is_subject_of = ROOT
+		}
 		NOT = { has_variable = cr_cherokee_removal_treaty_cooldown_var }
 		NOT = {
 			has_war_with = c:CHE
@@ -158,6 +173,9 @@ je_cr_indian_removal_button_e_seminole = {
 	}
 	
 	possible = {
+		c:SMN = {
+			is_subject_of = ROOT
+		}
 		NOT = {
 			has_war_with = c:SMN
 		}

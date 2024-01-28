@@ -2970,7 +2970,7 @@ STATES = {
 			}
 		}
 		create_state = {
-			country = c:CLI
+			country = c:HKI
 			owned_provinces = { 
 				 x2FD5DD x1B31B7 x911882 xDCBAE1 xD29C90 
 			}
@@ -3072,7 +3072,7 @@ STATES = {
 			}
 		}
 		create_state = {
-			country = c:CLI
+			country = c:HKI
 			owned_provinces = {
 				x0E8D26 xB21AB9 x6E6D40 x2B1204 xB881EE xC5390E x914E48 x6CCFDB xCA5813 xD507FA x864B45 xCD0B47 x4160C1 x2A2B04 x2D1B0B xEBF5A0 x4AB8EE xFD4509 x5625EF x995E0F x8A35D2 x032BE2 xCC07D4 
 				
@@ -12069,7 +12069,7 @@ STATES = {
 			owned_provinces = { x205040 xBC4223 xC642C3 x1E47C8 x9F7207 x7546F8 x0418C4 xD34672 xDD6E50 x6320AE xF8AB7F x249043 x57EBCB x0D1D9D xB0A278 x21AA9D xBED6FE xA1B232 x657B7B x247143 x90DF58 x11D494 x567116 x5B4ABD xC42EA6 }
 		}
 		create_state = {
-			country = c:CLI
+			country = c:HKI
 			owned_provinces = {
 				xD5E26E  x3FF655 xD4D12E 
 			}

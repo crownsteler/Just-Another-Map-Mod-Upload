@@ -298,6 +298,20 @@
 				size = 4000
 			}
 		}
+		region_state:MEX = {
+			create_pop = {
+				culture = paiute
+				size = 250
+			}
+			create_pop = {
+				culture = siouan
+				size = 250
+			}
+			create_pop = {
+				culture = mexican
+				size = 50
+			}
+		}
 	}
 	s:STATE_WYOMING = {
 		#region_state:USA = {
@@ -1229,6 +1243,16 @@
 				size = 11000
 			}
 		}
+		region_state:MEX = {
+			create_pop = {
+				culture = paiute
+				size = 450
+			}
+			create_pop = {
+				culture = mexican
+				size = 50
+			}
+		}
 	}
 	s:STATE_SOUTH_CAROLINA = {
 		region_state:USA = {
@@ -1780,6 +1804,16 @@
 				size = 22000
 			}
 		}
+		region_state:MEX = {
+			create_pop = {
+				culture = paiute
+				size = 250
+			}
+			create_pop = {
+				culture = mexican
+				size = 50
+			}
+		}
 	}
 	s:STATE_ARIZONA = {
 		region_state:MEX = {
@@ -1824,7 +1858,7 @@
 				size = 9000
 			}
 		}
-		region_state:CLI = {
+		region_state:HKI = {
 			create_pop = {
 				culture = hokan
 				size = 1300
@@ -1894,7 +1928,7 @@
 				size = 91150
 			}
 		}
-		region_state:CLI = {
+		region_state:HKI = {
 			create_pop = {
 				culture = hokan
 				size = 12300
@@ -2224,7 +2258,7 @@
 				size = 1300
 			}
 		}
-		region_state:CLI = {
+		region_state:HKI = {
 			create_pop = {
 				culture = hokan
 				size = 1300
