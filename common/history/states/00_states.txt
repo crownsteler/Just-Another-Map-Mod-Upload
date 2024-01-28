@@ -2249,7 +2249,7 @@ STATES = {
 	s:STATE_EAST_MICRONESIA = {
 		create_state = {
 			country = c:MCR
-			owned_provinces = { "xF5DBBF" "x80C011" "x808011" "xCD1EA0" "xc2b527" "x1d663e" "xdc5568" "x2a9436" "x1e6c78" "xd912e0" "x5fc9c8" "xb7c609" "x314240" "x7f2e1c" "x8fd0a9" 
+			owned_provinces = { "xF5DBBF" "x80C011" "x808011" "xCD1EA0" "xc2b527" "xdc5568" "x2a9436" "x1e6c78" "xd912e0" "x5fc9c8" "xb7c609" "x314240" "x7f2e1c" "x8fd0a9" 
 			"x527F6C" #Wake
 			}
 		}
@@ -8765,7 +8765,7 @@ STATES = {
 		create_state = {
 			country = c:TUM
 			owned_provinces = { 
-				"x2A4340" "x2C2E13" "x42432A" "x54BB3D" "x643424" "x718885" "x728871" "x7D7D62" "x887771" "x888659" "x98C3C6" "xBA6E55" "xC6B798" "xCBC996" "xDBAE9F" "xF1DBF3" "x055e24" "x7ce1ea" "x77597b" "xe6f817" "x129e8c" "xb8043b" "xbff62c" "xf6742c" "x67605d" "x475691" "xd2f006" "xf0a606" "x87eb9e" "x342a65" "x61038c" #Tuamotus
+				"x2A4340" "x2C2E13" "x42432A" "x54BB3D" "x643424" "x718885" "x728871" "x7D7D62" "x887771" "x888659" "x98C3C6" "xBA6E55" "xC6B798" "xCBC996" "xDBAE9F" "xF1DBF3" "x055e24" "x7ce1ea" "x77597b" "xe6f817" "x129e8c" "xb8043b" "xf6742c" "x67605d" "x475691" "xd2f006" "xf0a606" "x87eb9e" "x342a65" "x61038c" #Tuamotus
 				}
 		}
 		

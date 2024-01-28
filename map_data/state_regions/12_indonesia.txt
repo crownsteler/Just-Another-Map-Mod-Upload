@@ -749,7 +749,7 @@ STATE_WEST_MICRONESIA = {
 STATE_EAST_MICRONESIA = {
     id = 1000
     subsistence_building = "building_subsistence_fishing_villages"
-    provinces = { "x808011" "x80C011" "xCD1EA0" "xF5DBBF" "xc2b527" "x1d663e" "xdc5568" "x2a9436" "x1e6c78" "xd912e0" "x5fc9c8" "xb7c609" "x314240" "x7f2e1c" "x8fd0a9" #Marshall Islands
+    provinces = { "x808011" "x80C011" "xCD1EA0" "xF5DBBF" "xc2b527" "xdc5568" "x2a9436" "x1e6c78" "xd912e0" "x5fc9c8" "xb7c609" "x314240" "x7f2e1c" "x8fd0a9" #Marshall Islands
  "x527F6C" #Wake
  "x9ee29c" "xb8859c" "xe76b71" "x5685cb" "xd5d666" "xaf4177" "x914d28" #Gilbert Islands
  "x808090" "xedf389" #Ellice Islands
@@ -893,7 +893,7 @@ STATE_TAHITI = {
     id = 557
     subsistence_building = "building_subsistence_fishing_villages"
     provinces = { "xA000B0" "x0181B0" "x998293" "x59885E" "x59885E" "x98C69C" "x5E2464" "xc0f62c" "x102256" "xeaeea9" "xc77b29" "x3ff6a2" "x66501e" #Tahiti
- "x2A4340" "x2C2E13" "x42432A" "x54BB3D" "x643424" "x718885" "x728871" "x7D7D62" "x887771" "x888659" "x98C3C6" "xBA6E55" "xC6B798" "xCBC996" "xDBAE9F" "xF1DBF3" "x055e24" "x7ce1ea" "x77597b" "xe6f817" "x129e8c" "xb8043b" "xbff62c" "xf6742c" "x67605d" "x475691" "xd2f006" "xf0a606" "x87eb9e" "x342a65" "x61038c" #Tuamotus
+ "x2A4340" "x2C2E13" "x42432A" "x54BB3D" "x643424" "x718885" "x728871" "x7D7D62" "x887771" "x888659" "x98C3C6" "xBA6E55" "xC6B798" "xCBC996" "xDBAE9F" "xF1DBF3" "x055e24" "x7ce1ea" "x77597b" "xe6f817" "x129e8c" "xb8043b" "xf6742c" "x67605d" "x475691" "xd2f006" "xf0a606" "x87eb9e" "x342a65" "x61038c" #Tuamotus
  "xaa0f45" "x4d6752" "xe7fe1d" "x323d51" #Mangareva
  "x786bb1" "x7e7357" #Tupua'i
  "xd5437d" "x1f5410" #Marquesas
