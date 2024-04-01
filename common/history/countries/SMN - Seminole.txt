@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:SMN = {
+	c:SMN ?= {
 		effect_native_conscription_11 = yes
 		
 		effect_starting_technology_tier_4_tech = yes

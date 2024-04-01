@@ -692,16 +692,16 @@ algeria_events.5 = {
 				c:ONL = { relations:root <= relations_threshold:neutral }
 				NOT = { c:ONL = { is_subject_of = c:FRA } }
 			}
-			AND = { #Decentralised
-				exists = c:CAO
-				c:CAO = { relations:root <= relations_threshold:neutral }
-				NOT = { c:CAO = { is_subject_of = c:FRA } }
-			}
-			AND = { #Decentralised, desert
-				exists = c:WSH
-				c:OSC = { relations:root <= relations_threshold:neutral }
-				NOT = { c:WSH = { is_subject_of = c:WSH } }
-			}
+			#AND = { #Decentralised
+			#	exists = c:CAO
+			#	c:CAO = { relations:root <= relations_threshold:neutral }
+			#	NOT = { c:CAO = { is_subject_of = c:FRA } }
+			#}
+			#AND = { #Decentralised, desert
+			#	exists = c:WSH
+			#	c:OSC = { relations:root <= relations_threshold:neutral }
+			#	NOT = { c:WSH = { is_subject_of = c:WSH } }
+			#}
 		}
 		any_scope_character = {
 			has_role = general
@@ -728,8 +728,8 @@ algeria_events.5 = {
 						c:ZWA ?= owner
 						c:OSC ?= owner
 						c:ONL ?= owner
-						c:CAO ?= owner #Decentralised
-						c:WSH ?= owner #Decentralised, desert
+						#c:CAO ?= owner #Decentralised
+						#c:WSH ?= owner #Decentralised, desert
 					}
 					NOT = { owner = { is_subject_of = c:FRA } }
 					owner = { relations:root <= relations_threshold:neutral }
@@ -746,8 +746,8 @@ algeria_events.5 = {
 						c:ZWA ?= owner
 						c:OSC ?= owner
 						c:ONL ?= owner
-						c:CAO ?= owner #Decentralised
-						c:WSH ?= owner #Decentralised, desert
+						#c:CAO ?= owner #Decentralised
+						#c:WSH ?= owner #Decentralised, desert
 					}
 					NOT = { owner = { is_subject_of = c:FRA } }
 					owner = { relations:root <= relations_threshold:neutral }

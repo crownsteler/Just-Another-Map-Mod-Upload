@@ -297,7 +297,7 @@
 	c:USA = {
 		create_diplomatic_pact = {
 			country = c:MSC
-			type = puppet
+			type = protectorate #should be puppet, but that results in the Creek joining the Seminole War.
 		}
 		create_diplomatic_pact = {
 			country = c:CTW

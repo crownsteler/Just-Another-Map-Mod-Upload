@@ -1729,16 +1729,16 @@
 				size = 12344
 			}	
 		}
-		region_state:HKR = {
-			create_pop = {
-				culture = kurdish
-				size = 72007
-			}
-			create_pop = {
-				culture = armenian
-				size = 8821
-			}
-		}
+		#region_state:HKR = {
+		#	create_pop = {
+		#		culture = kurdish
+		#		size = 72007
+		#	}
+		#	create_pop = {
+		#		culture = armenian
+		#		size = 8821
+		#	}
+		#}
 	}
 	s:STATE_ADANA = {
 		region_state:EGY = {

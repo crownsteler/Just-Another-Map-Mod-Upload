@@ -2,26 +2,11 @@
 
 cr_russian_alaska_events.1 = { #Two Years Before the Mast
 	type = country_event
-	placement = p:x211ECF
+	placement = p:xD6A835
 
 	title = cr_russian_alaska_events.1.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				desc = cr_russian_alaska_events.1.d_russia
-				trigger = {
-					ROOT = c:ASK
-					is_subject_of = c:RUS
-				}
-			}
-			triggered_desc = {
-				desc = cr_russian_alaska_events.1.d
-				trigger = {
-					always = yes
-				}
-			}
-		}
-	}
+	desc = cr_russian_alaska_events.1.d
+
 	flavor = cr_russian_alaska_events.1.f
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/africa/construction_colony"
@@ -29,17 +14,17 @@ cr_russian_alaska_events.1 = { #Two Years Before the Mast
 	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_steam_ship.bk2"
+		video = "africa_construction_colony"
 	}
 	
 	duration = 3
 
 	trigger = {
 		year > 1836
-		p:xD6A835.owner = ROOT
-		s:STATE_CALIFORNIA.region_state:ASK = {
-			any_scope_building = {
-				is_building_type = building_fur_trading_post
+		OR = {
+			p:xD6A835.owner = ROOT
+			any_subject_or_below = {
+				p:xD6A835.owner = THIS
 			}
 		}
 	}
@@ -54,6 +39,14 @@ cr_russian_alaska_events.1 = { #Two Years Before the Mast
 		p:x1116AA.owner = {
 			save_scope_as = buying_country
 		}
+		p:xD6A835.owner = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_CALIFORNIA
+				}
+				save_scope_as = our_california
+			}
+		}
 		s:STATE_CALIFORNIA = {
 			random_scope_state = {
 				limit = {
@@ -62,88 +55,63 @@ cr_russian_alaska_events.1 = { #Two Years Before the Mast
 				save_scope_as = california
 			}
 		}
+		scope:our_california.state_region = {
+			save_scope_as = state_of_california
+		}
+		s:STATE_ALASKA = {
+			random_scope_state = {
+				limit = {
+					owner = c:ASK
+				}
+				save_scope_as = alaska
+			}
+		}
+		scope:our_california = {
+			remove_building = building_fur_trading_post
+			force_resource_depletion = bg_fur_trading_post
+		}
 	}
 
 	option = {
 		name = cr_russian_alaska_events.1.a
-		#custom_tooltip = cr_russian_alaska_events.1.a_tt
-		s:STATE_CALIFORNIA.region_state:ASK = {
-			remove_building = building_fur_trading_post
-			force_resource_depletion = bg_fur_trading_post
-		}
-		default_option = yes
-		if = {
-			limit = {
-				var:cr_russian_california_counter < 50
+		custom_tooltip = cr_russian_alaska_events.1.a_tt
+		show_as_tooltip = {
+			scope:our_california = {
+				remove_building = building_fur_trading_post
+				force_resource_depletion = bg_fur_trading_post
 			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.1.a_5years
-				change_variable = {
-					name = cr_russian_california_counter
-					add = 60
+		}
+		c:ASK = {
+			add_journal_entry = {
+				type = je_cr_fort_ross
+			}
+			if = {
+				limit = {
+					AND = {
+						is_ai = yes
+						ROOT = {
+							is_ai = yes
+						}
+					}
+				}
+				scope:our_california = {
+					start_building_construction = building_wheat_farm
 				}
 			}
-		}
-		else_if = {
-			limit = {
-				var:cr_russian_california_counter < 60
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.1.a_4years
-				change_variable = {
-					name = cr_russian_california_counter
-					add = 48
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				var:cr_russian_california_counter < 70
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.1.a_3years
-				change_variable = {
-					name = cr_russian_california_counter
-					add = 36
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				var:cr_russian_california_counter < 80
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.1.a_2years
-				change_variable = {
-					name = cr_russian_california_counter
-					add = 24
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				var:cr_russian_california_counter < 100
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.1.a_1years
-				change_variable = {
-					name = cr_russian_california_counter
-					add = 12
-				}
-			}
-		}
-		else = {
-		
 		}
 		ai_chance = {
-			base = 85
+			base = 1
+			modifier = {
+				factor = 5
+				taking_loans = no
+			}
 		}
 	}
 
 	option = {
 		name = cr_russian_alaska_events.1.b
 		trigger = {
-			is_at_war = no
+			NOT = { has_war_with = scope:buying_country }
 		}
 		custom_tooltip = {
 			text = cr_russian_alaska_events.1.b_tt
@@ -151,12 +119,15 @@ cr_russian_alaska_events.1 = { #Two Years Before the Mast
 				trigger_event = { id = cr_russian_alaska_events.2 days = 30 }			
 			}
 		}
-		ai_chance = {
-			base = 15
-			modifier = {
-				factor = 2
-				taking_loans = yes
+		show_as_tooltip = {
+			scope:our_california = {
+				remove_building = building_fur_trading_post
+				force_resource_depletion = bg_fur_trading_post
 			}
+		}
+		default_option = yes
+		ai_chance = {
+			base = 99
 		}
 	}
 }
@@ -189,10 +160,21 @@ cr_russian_alaska_events.2 = { #The Future of Russian California
 	option = {
 		name = cr_russian_alaska_events.2.a
 		scope:selling_country = {
-			trigger_event = { id = cr_russian_alaska_events.3 }			
+			post_notification = cr_fort_ross_accepted 		
+		}
+		c:ASK = {
+			if= {
+				limit = {
+					is_subject_of = scope:selling_country
+				}		
+				post_notification = cr_fort_ross_accepted 
+			}
+		}
+		scope:our_california = {
+			set_state_owner = scope:buying_country
 		}
 		show_as_tooltip = {
-			s:STATE_CALIFORNIA.region_state:THIS = {
+			scope:california = {
 				remove_building = building_fur_trading_post
 				force_resource_depletion = bg_fur_trading_post
 			}
@@ -200,17 +182,10 @@ cr_russian_alaska_events.2 = { #The Future of Russian California
 		add_treasury = -5000
 		default_option = yes
 		ai_chance = {
-			base = 95
+			base = 99
 			modifier = {
 				factor = 0
-				gold_reserves < 10000
-			}
-			modifier = {
-				OR = {
-					is_diplomatic_play_committed_participant = yes
-					is_at_war = yes
-				}
-				add = -1000
+				scaled_debt  > 0.85
 			}
 		}
 	}
@@ -218,161 +193,23 @@ cr_russian_alaska_events.2 = { #The Future of Russian California
 	option = {
 		name = cr_russian_alaska_events.2.b
 		scope:selling_country = {
-			trigger_event = { id = cr_russian_alaska_events.4 }			
+			post_notification = cr_fort_ross_rejected 		
+		}
+		show_as_tooltip = {
+			scope:california = {
+				remove_building = building_fur_trading_post
+				force_resource_depletion = bg_fur_trading_post
+			}
 		}
 		ai_chance = {
 			base = 0
 			modifier = {
 				add = 100
-				gold_reserves < 10000
-			}
-			modifier = {
-				OR = {
-					is_diplomatic_play_committed_participant = yes
-					is_at_war = yes
-				}
-				add = 1000
+				scaled_debt  > 0.85
 			}
 		}
 	}
 }
-
-cr_russian_alaska_events.3 = { #Mexico Accepts
-	type = country_event
-	placement = ROOT
-
-	title = cr_russian_alaska_events.3.t
-	desc = cr_russian_alaska_events.3.desc
-	flavor = cr_russian_alaska_events.3.f
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/africa/construction_colony"
-
-	icon = "gfx/interface/icons/event_icons/event_industry.dds"
-
-	event_image = {
-		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
-	}
-	
-	duration = 3
-
-	trigger = {
-	}
-
-	immediate = {
-	}
-
-	option = {
-		name = cr_russian_alaska_events.3.a
-		custom_tooltip = cr_russian_alaska_events.closing_je
-		s:STATE_CALIFORNIA.region_state:ROOT = {
-			set_state_owner = scope:buying_country
-		}
-		add_treasury = 5000
-		scope:california = {
-			remove_building = building_fur_trading_post
-			force_resource_depletion = bg_fur_trading_post
-		}
-		default_option = yes
-	}
-}
-
-cr_russian_alaska_events.4 = { #Mexico Rejects
-	type = country_event
-	placement = ROOT
-
-	title = cr_russian_alaska_events.4.t
-	desc = cr_russian_alaska_events.4.desc
-	flavor = cr_russian_alaska_events.4.f
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/africa/construction_colony"
-
-	icon = "gfx/interface/icons/event_icons/event_industry.dds"
-
-	event_image = {
-		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
-	}
-	
-	duration = 3
-
-	trigger = {
-	}
-
-	immediate = {
-	}
-
-	option = {
-		name = cr_russian_alaska_events.4.a
-		default_option = yes
-		s:STATE_CALIFORNIA.region_state:ASK = {
-			remove_building = building_fur_trading_post
-			force_resource_depletion = bg_fur_trading_post
-		}
-		if = {
-			limit = {
-				var:cr_russian_california_counter < 50
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.1.a_5years
-				change_variable = {
-					name = cr_russian_california_counter
-					add = 60
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				var:cr_russian_california_counter < 60
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.1.a_4years
-				change_variable = {
-					name = cr_russian_california_counter
-					add = 48
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				var:cr_russian_california_counter < 70
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.1.a_3years
-				change_variable = {
-					name = cr_russian_california_counter
-					add = 36
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				var:cr_russian_california_counter < 80
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.1.a_2years
-				change_variable = {
-					name = cr_russian_california_counter
-					add = 24
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				var:cr_russian_california_counter < 100
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.1.a_1years
-				change_variable = {
-					name = cr_russian_california_counter
-					add = 12
-				}
-			}
-		}
-		else = {
-		
-		}
-	}
-}
-
 
 cr_russian_alaska_events.5 = { #The Liquidation of Fort Ross
 	type = country_event
@@ -483,9 +320,9 @@ cr_russian_alaska_events.9 = { #The Golden Gate
 	type = country_event
 	placement = p:x1116AA
 
-	title = cr_russian_alaska_events.6.t
-	desc = cr_russian_alaska_events.6.desc
-	flavor = cr_russian_alaska_events.6.f
+	title = cr_russian_alaska_events.9.t
+	desc = cr_russian_alaska_events.9.desc
+	flavor = cr_russian_alaska_events.9.f
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/africa/construction_colony"
 
@@ -510,27 +347,26 @@ cr_russian_alaska_events.9 = { #The Golden Gate
 		p:x1116AA.owner = {
 			save_scope_as = buying_country
 		}
-		s:STATE_CALIFORNIA = {
-			random_scope_state = {
-				limit = {
-					owner = ROOT
-				}
-				save_scope_as = california
-			}
+		s:STATE_CALIFORNIA.region_state:ASK = {
+			save_scope_as = california
 		}
 	}
 
 	option = {
 		name = cr_russian_alaska_events.9.a
-		custom_tooltip = cr_russian_alaska_events.closing_je
-		scope:california = {
-			add_modifier = {
-				name = cr_golden_gate_25
-				months = long_modifier_time
+		#custom_tooltip = cr_russian_alaska_events.closing_je
+		if = {
+			limit = {
+				scope:california = {
+					NOT = { has_modifier = cr_golden_gate_25 }
+				}
 			}
-		}
-		hidden_effect = {
-			remove_variable = cr_russian_california_counter
+			scope:california = {
+				add_modifier = {
+					name = cr_golden_gate_25
+					months = normal_modifier_time
+				}
+			}
 		}
 		default_option = yes
 	}
@@ -556,29 +392,29 @@ cr_russian_alaska_events.10 = { #The Inland Empire
 	duration = 3
 
 	trigger = {
-		s:STATE_CALIFORNIA.region_state:ASK = {
-			OR = {
-				any_scope_building = {
-					is_building_type = building_wheat_farm
-					weekly_profit > 0
-					cash_reserves_ratio > 0.8
-				}
-			}	
-			OR = {
-				any_scope_building = {
-					is_building_type = building_livestock_ranch
-					weekly_profit > 0
-					cash_reserves_ratio > 0.8
-				}
-			}	
-			OR = {
-				any_scope_building = {
-					is_building_type = building_cotton_plantation
-					weekly_profit > 0
-					cash_reserves_ratio > 0.8
-				}
-			}			
-		}
+		#s:STATE_CALIFORNIA.region_state:ASK = {
+		#	OR = {
+		#		any_scope_building = {
+		#			is_building_type = building_wheat_farm
+		#			weekly_profit > 0
+		#			cash_reserves_ratio > 0.8
+		#		}
+		#	}	
+		#	OR = {
+		#		any_scope_building = {
+		#			is_building_type = building_livestock_ranch
+		#			weekly_profit > 0
+		#			cash_reserves_ratio > 0.8
+		#		}
+		#	}	
+		#	OR = {
+		#		any_scope_building = {
+		#			is_building_type = building_cotton_plantation
+		#			weekly_profit > 0
+		#			cash_reserves_ratio > 0.8
+		#		}
+		#	}			
+		#}
 	}
 
 	immediate = {
@@ -604,75 +440,6 @@ cr_russian_alaska_events.10 = { #The Inland Empire
 			add_modifier = {
 				name = cr_valley_of_plenty_25
 				months = long_modifier_time
-			}
-		}
-		if = {
-			limit = {
-				var:cr_russian_california_counter < 50
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.10.a_1years
-				change_variable = {
-					name = cr_russian_california_counter
-					subtract = 12
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				var:cr_russian_california_counter < 60
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.10.a_2years
-				change_variable = {
-					name = cr_russian_california_counter
-					subtract = 24
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				var:cr_russian_california_counter < 70
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.10.a_3years
-				change_variable = {
-					name = cr_russian_california_counter
-					subtract = 36
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				var:cr_russian_california_counter < 80
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.10.a_4years
-				change_variable = {
-					name = cr_russian_california_counter
-					subtract = 48
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				var:cr_russian_california_counter < 100
-			}
-			custom_tooltip = {
-				text = cr_russian_alaska_events.10.a_5years
-				change_variable = {
-					name = cr_russian_california_counter
-					subtract = 60
-				}
-			}
-		}
-		else = {
-			custom_tooltip = {
-				text = cr_russian_alaska_events.10.a_6years
-				change_variable = {
-					name = cr_russian_california_counter
-					subtract = 72
-				}
 			}
 		}
 	}

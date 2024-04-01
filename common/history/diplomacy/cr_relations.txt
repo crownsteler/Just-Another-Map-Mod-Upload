@@ -207,4 +207,12 @@
 	c:BUK = {
 		set_relations = { country = c:KOK value = -35 } #Historic rivals		
 	}
+	
+	c:USA = {
+		set_relations = { country = c:CHE value = -20 } #Indian removal
+		set_relations = { country = c:CSW value = -15 } #Indian removal
+		set_relations = { country = c:CTW value = -15 } #Indian removal
+		set_relations = { country = c:MSC value = -48 } #Indian removal
+	
+	}
 }

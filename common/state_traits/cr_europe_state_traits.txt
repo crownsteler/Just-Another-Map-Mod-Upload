@@ -12,7 +12,7 @@ state_trait_cork_forests = {
 	
 	modifier = {
 		building_group_bg_logging_throughput_add = 0.05
-		goods_output_wine_mult = 0.05
+		building_vineyard_plantation_throughput_add = 0.05
 	}
 }
 
@@ -44,7 +44,7 @@ state_trait_famous_wine_region = {
     icon = "gfx/interface/icons/state_trait_icons/famous_wine.dds"
 	
 	modifier = {
-		goods_output_wine_mult = 0.15
+		building_vineyard_plantation_throughput_add = 0.15
 	}
 }
 

@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:MPU = {
+	c:MPU ?= {
 		effect_starting_technology_tier_4_tech = yes
 		
 		add_technology_researched = mandatory_service

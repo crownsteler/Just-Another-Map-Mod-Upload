@@ -27,6 +27,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
     resource = {
         type = "bg_oil_extraction"
@@ -52,6 +66,20 @@ STATE_OMAN = {
     capped_resources = {
         bg_fishing = 10
         bg_copper_mining = 15 #Lasail mine. More open pit/VMS mining
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -136,13 +164,27 @@ STATE_SOUTH_YEMEN = {
     prime_land = { x0C7E0C xD3F276 xBAA208 x657048 x3D1674 xA1AAB0 x567A83 xFA0283 x2975A3 x54840B x2BD409 x319060 xB090E0 x726925 x3D7345 xB8A8D2 x5C91FE xB010DF x6D2F95 x60DFF9 xD6CC22 x672267 x1C7B77 xA05CB5 x308FDF x30A3E2 xA2FDFA x6BD0A9 xA0540A x9D6547 x37058F x30A3E2 xA2FDFA x6BD0A9 xA0540A x9D6547 x37058F }
     impassable = { x8D6307 xAD1CE2 x8D121D x299C0F x02B35C x346541 xC09525 x90602A x8BF4B8 x5F3582 xBDEA27 xC790E8 x2A9E89 xDFA579 x895FE6 xCF61E1 x3D86FC x0B9A27 x75D341 xF385EB x95D64E x8E96A7 x5DF9FC x872CEB xDD732E x843C65 }
     traits = { "state_trait_arabian_desert" }
-    city = "xA05CB5"
+    city = "x319060"
     port = "x726925"
     farm = "x1C7B77"
     mine = "xD3F276"
     wood = "x319060"
     arable_land = 28
     arable_resources = { bg_livestock_ranches bg_tobacco_plantations bg_date_plantations } #Frankincense, Wheat, Dates, Coconuts, Coffee, Cattle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -274,6 +316,20 @@ STATE_TRANSJORDAN = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
     naval_exit_id = 3047
 }
@@ -333,6 +389,20 @@ STATE_LEBANON = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     capped_resources = {
         bg_logging = 12 #Cedars of Lebanon
 
@@ -358,7 +428,35 @@ STATE_LEBANON = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         bg_coal_mining = 10 #According to Wikipedia Muhammed Ali got some coal from Lebanon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -548,6 +646,20 @@ STATE_BADIYA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
 
@@ -577,6 +689,20 @@ STATE_LARISTAN = {
     provinces = { x75053B x8D0125 x5E1734 x0D4D86 x124E6F x5D2CF2 x83424B x2E57B1 x407020 x177599 xB0513F xF24BDE xC07020 x159AB3 x6796CE x7FB23D x95A3F5 x6DDC3B xE9C86A x80F020 xCCDD76 xF6D834 xD4E165 x99F186 xAFF45C xF4E18B xCBE9C4 x362C14 x2A39A6 x5E4062 x616406 x6C648A xED39D0 x89719E x24A57B x639DDD xF17A7A x8D9CEC xF29735 x31DF75 x7CCE94 x5FE0AF x7AE349 x8DDEC3 xD6E8C2 xEB9357 x75B934 x922EDA xCACC49 x5293C9 x9869E8 xE862E9 xFF73DA xF8EBE8 x648853 x901598 xD73959 x2E09CE xB55662 x62D297 xC0E354 }
     impassable = { x5293C9 x9869E8 xE862E9 xFF73DA xF8EBE8 x648853 x901598 xD73959 x2E09CE xB55662 x62D297 xC0E354 x24A57B xD6E8C2 }
     traits = {} #"state_trait_porphyry_copper" "state_trait_bam_narmashir" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -692,6 +818,20 @@ STATE_ISFAHAN = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
 
@@ -761,6 +901,20 @@ STATE_TABRIZ = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
 
@@ -795,7 +949,7 @@ STATE_HUDAVENDIGAR = {
     mine = "xB8FEBB"
     wood = "xB4D60B"
     arable_land = 40
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_tobacco_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_dye_plantations" "bg_silk_plantations" "bg_tobacco_plantations" }
     capped_resources = {
         #also chrome, mercury and antimony
         #bg_iron_mining = 18 #Deposit of Cam Dagi moved to eastern Thrace to make industrialising Istanbul slightly easier
@@ -833,9 +987,37 @@ STATE_AYDIN = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     capped_resources = {
         #bg_coal_mining = 48 #Lignite
         bg_lead_mining = 20 #chrome, antimony and mercury
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -887,7 +1069,7 @@ STATE_KASTAMONU = {
     mine = "xC01000"
     wood = "xBEBB3F"
     arable_land = 35
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tea_plantations" "bg_cotton_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" }
     capped_resources = {
         bg_coal_mining = 72
         bg_logging = 18
@@ -910,6 +1092,20 @@ STATE_DIYARBAKIR = {
     capped_resources = {
         #bg_coal_mining = 32 #Lignite
         bg_copper_mining = 45 #Diyarbakir means land of copper and copper mining dates back millennia
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -968,29 +1164,9 @@ STATE_TRABZON = {
     mine = "x001080"
     wood = "x9655BD"
     arable_land = 40
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tea_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_tea_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_copper_mining = 21 #Also Zinc #state_trait_porphyry_copper?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1013,6 +1189,20 @@ STATE_ERZURUM = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_iron_mining = 30 #Divrigi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

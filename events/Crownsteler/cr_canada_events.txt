@@ -8,6 +8,12 @@ cr_canadian_indian_treaties.99 = { #cleanup event
 		remove_global_variable = cr_ojibwe_petition_against_mines_has_happened
 		remove_global_variable = cr_papineau_report_has_been_published
 		remove_modifier = cr_eyeing_unceded_land
+		remove_variable = cr_lake_superior_cooldown
+		remove_variable = cr_lake_superior_mining_permits_cooldown
+		remove_variable = cr_lake_superior_surveyor_threatend_cooldown
+		remove_variable = cr_lake_superior_incident_at_coppermine_cooldown
+		remove_variable = cr_lake_superior_copper_rebellion_cooldown
+		remove_variable = cr_lake_superior_mining_tails_cooldown
 		if = {
 			limit = {
 				is_ai = yes
@@ -38,45 +44,32 @@ cr_canadian_indian_treaties.1 = { #Mining Permit
 	duration = 3
 
 	trigger = {
-		global_var:cr_robinson_treaty_var < 6
-		#s:STATE_ONTARIO = {
-		#	any_scope_state = {
-		#		limit = {
-		#			owner = ROOT
-		#		}			
-		#		random_scope_building = {
-		#			limit = {
-		#				is_building_type = building_copper_mine
-		#			}
-		#			can_queue_building_levels = 1
-		#		}
-		#	}
-		#}
-		any_state = {
-			owner = ROOT
-			state_region = s:STATE_ONTARIO
-			#any_scope_building = {
-			#	is_building_type = building_copper_mine
-			#	can_queue_building_levels = 1
-			#}
-		}	
+		NOT = {
+			has_variable = cr_lake_superior_cooldown
+			has_variable = cr_lake_superior_mining_permits_cooldown
+		}
+		OR = {
+			scope:copper_mining_state = {
+				NOT = {
+					any_scope_building = {
+						is_building_type = building_copper_mine
+						is_under_construction = yes
+					}
+				}
+			}
+			AND = {
+				scope:copper_mining_state = {
+					any_scope_building = {
+						is_building_type = building_copper_mine
+						is_under_construction = yes
+					}
+				}
+				investment_pool <10000
+			}
+		}
 	}
 
 	immediate = {
-		c:CTF = {
-			save_scope_as = native_state
-		}
-		ig:ig_industrialists = {
-			save_scope_as = mining_ig
-		}
-		s:STATE_ONTARIO = {
-			random_scope_state = {
-				limit = {
-					owner = ROOT
-				}
-				save_scope_as = copper_mining_state
-			}
-		}
 	}
 
 	option = {
@@ -91,20 +84,73 @@ cr_canadian_indian_treaties.1 = { #Mining Permit
 				months = short_modifier_time
 			}
 		}
-		scope:copper_mining_state = {
-			if = {
-				limit = {
-					any_scope_building = {
-						is_building_type = building_copper_mine
-						is_under_construction = yes
+		if = { #Helping the AI out a bit.
+			limit = { is_ai = yes }
+			scope:copper_mining_state = {
+				if = {
+					limit = {
+						NOT = { has_building = building_copper_mine }
+					}
+					create_building = {
+						building = building_copper_mine
+						level = 1
 					}
 				}
-				create_building = {
-					building = building_copper_mine
-					level = 1
+				if = {
+					limit = {
+						ROOT = { is_ai = yes }
+						any_scope_building = {
+							is_building_type = building_copper_mine
+							level = 1
+						}
+					}
+					create_building = {
+						building = building_copper_mine
+						level = 2
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { is_ai = yes }
+						any_scope_building = {
+							is_building_type = building_copper_mine
+							level = 2
+						}
+					}
+					create_building = {
+						building = building_copper_mine
+						level = 3
+					}
+				}
+				else_if = {
+					start_privately_funded_building_construction = building_copper_mine
+					ROOT = {
+						add_investment_pool = 85000
+					}
 				}
 			}
-			else_if = {
+		}
+		else_if = { #mining permits attracting new investment
+			limit = {
+				scope:copper_mining_state = {
+					AND = {
+						any_scope_building = {
+							is_building_type = building_copper_mine
+							is_under_construction = yes
+						}
+					}
+				}
+				investment_pool <10000
+			}
+			ROOT = {
+				add_investment_pool = 40000
+			}
+		}
+		else = {
+			ROOT = {
+				add_investment_pool = 50000
+			}
+			scope:copper_mining_state = {
 				start_privately_funded_building_construction = building_copper_mine
 			}
 		}
@@ -180,51 +226,67 @@ cr_canadian_indian_treaties.2 = { #Surveyor Threatened
 		video = "gfx/event_pictures/europenorthamerica_native_american.bk2"
 	}
 
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/africa/soldiers_breaking_protest"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
 	duration = 3
 
-	trigger = {		
-		global_var:cr_robinson_treaty_var >2
-		any_state = {
-			owner = ROOT
-			state_region = s:STATE_ONTARIO
+	trigger = {
+		NOT = {
+			has_variable = cr_lake_superior_cooldown
+			has_variable = cr_lake_superior_surveyor_threatend_cooldown
+		} 
+		scope:copper_mining_state = {
 			any_scope_building = {
 				is_building_type = building_copper_mine
-			}
-		}
-		NOT = {
-			c:CTF.ruler = {
-				has_ideology = ideology:ideology_pacifist
+				is_under_construction = yes
 			}
 		}
 	}
 
 	immediate = {
-		c:CTF = {
-			#save_scope_as = native_state
-			every_scope_character = {
+		scope:native_state = {
+			random_scope_character = {
 				limit = {
-					NOT = { has_ideology = ideology_pacifist }
+					NOT = { 
+						has_ideology = ideology:ideology_pacifist 
+						has_trait = trait_child
+					}
 				}
 				save_scope_as = native_state_threatener
 			}
 		}
-		ig:ig_industrialists = {
-			save_scope_as = mining_ig
-		}
-		s:STATE_ONTARIO.region_state:ONT = {
-			save_scope_as = copper_mining_state
+		scope:copper_mining_state = {
+			random_scope_building = {
+				limit = {
+					is_building_type = building_copper_mine
+					is_under_construction = yes	
+				}
+				save_scope_as = under_construction_mine
+			}
 		}
 	}
 
 	option = {
 		name = cr_canadian_indian_treaties.2.a
 		default_option = yes
-		
+		if = {
+			limit = {
+				scope:copper_mining_state = {
+					AND = {
+						any_scope_building = {
+							is_building_type = building_copper_mine
+							is_under_construction = yes
+						}
+					}
+				}
+				investment_pool < 15000
+			}
+			add_investment_pool = 20000
+			set_variable = {
+				name = cr_lake_superior_mining_permits_cooldown
+				months = 4
+			}
+		}
 		scope:native_state = {
 			change_tension = {
 				country = root
@@ -236,20 +298,24 @@ cr_canadian_indian_treaties.2 = { #Surveyor Threatened
 				name = cr_robinson_treaty_var
 				add = 1
 			}
+			set_variable = {
+				name = cr_lake_superior_surveyor_threatend_cooldown
+				months = 5
+			}
 		}
 		ai_chance = {
 			base = 85
 		}
 	}
 
-	option = {
+	option = { #should slow down construction somehow
 		name = cr_canadian_indian_treaties.2.b
 		if = {
 			limit = {
 				has_law = law_type:law_laissez_faire
 			}
 			scope:copper_mining_state = {
-				add_radicals = {
+				add_radicals_in_state = {
 					value = small_radicals
 					pop_type = capitalists
 				}
@@ -257,11 +323,35 @@ cr_canadian_indian_treaties.2 = { #Surveyor Threatened
 		}
 		else_if = {
 			scope:copper_mining_state = {
-				add_radicals = {
+				add_radicals_in_state = {
 					value = small_radicals
 					pop_type = bureaucrats
 				}
 			}
+		}
+		if = {
+			limit = {
+				scope:copper_mining_state = {
+					AND = {
+						any_scope_building = {
+							is_building_type = building_copper_mine
+							is_under_construction = yes
+						}
+					}
+				}
+				investment_pool >20000
+			}
+			add_investment_pool = -20000
+			set_variable = {
+				name = cr_lake_superior_mining_permits_cooldown
+				months = 4
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				name = cr_lake_superior_surveyor_threatend_cooldown
+				months = 8
+			}		
 		}
 		ai_chance = {
 			base = 15
@@ -289,40 +379,30 @@ cr_canadian_indian_treaties.3 = { #Ojibwe Petition
 	duration = 3
 
 	trigger = {
-		global_var:cr_robinson_treaty_var >3
+		global_var:cr_robinson_treaty_var > 3
 		NOT = {
+			has_variable = cr_lake_superior_cooldown
 			has_global_variable = cr_ojibwe_petition_against_mines_has_happened
 		}
-		#s:STATE_ONTARIO = {
-		#	random_scope_state = {
-		#		limit = {
-		#			owner = ROOT
-		#		}		
-		#		has_building = building_copper_mine #should be level 2 or higher
-		#	}
-		#}	
-		any_state = {
-			owner = ROOT
-			state_region = s:STATE_ONTARIO
+		scope:copper_mining_state = {
 			any_scope_building = {
 				is_building_type = building_copper_mine
-				level >= 2
+				level >= 1
 			}
 		}	
 	}
 
 	immediate = {
-		c:CTF = {
-			save_scope_as = native_state
-			every_scope_character = {
+		scope:native_state = {
+			random_scope_character = {
 				limit = {
-					NOT = { has_ideology = ideology_pacifist }
+					NOT = { 
+						has_ideology = ideology:ideology_pacifist 
+						has_trait = trait_child
+					}
 				}
 				save_scope_as = native_state_petitioner
 			}
-		}
-		ig:ig_industrialists = {
-			save_scope_as = mining_ig
 		}
 		set_global_variable = cr_ojibwe_petition_against_mines_has_happened
 	}
@@ -382,26 +462,12 @@ cr_canadian_indian_treaties.4 = { #On the Legal Ownership of Lands on Lake Super
 	duration = 3
 
 	trigger = {
-		global_var:cr_robinson_treaty_var >4
 		NOT = {
+			has_variable = cr_lake_superior_cooldown
 			has_global_variable = cr_papineau_report_has_been_published
 		}
-		#s:STATE_ONTARIO = {
-		#	random_scope_state = {
-		#		limit = {
-		#			owner = ROOT
-		#		}		
-		#		has_building = building_copper_mine
-		#	}
-		#}
-		any_state = {
-			owner = ROOT
-			state_region = s:STATE_ONTARIO
-			any_scope_building = {
-				is_building_type = building_copper_mine
-				level >= 2
-			}
-		}
+		is_enacting_law = law_type:law_frontier_colonization
+		global_var:cr_robinson_treaty_var >= 2
 		OR = {
 			ROOT = c:QUE
 			NOT = {
@@ -412,26 +478,6 @@ cr_canadian_indian_treaties.4 = { #On the Legal Ownership of Lands on Lake Super
 	}
 
 	immediate = {
-		c:CTF = {
-			save_scope_as = native_state
-		}
-		ig:ig_industrialists = {
-			save_scope_as = mining_ig
-		}
-		cu:franco_canadian ={
-			save_scope_as = ruling_culture
-		}
-		cu:anglo_canadian ={
-			save_scope_as = anglo_culture
-		}
-		s:STATE_ONTARIO = {
-			random_scope_state = {
-				limit = {
-					owner = ROOT
-				}
-				save_scope_as = copper_mining_state
-			}
-		}
 		set_global_variable = cr_papineau_report_has_been_published
 	}
 
@@ -456,7 +502,9 @@ cr_canadian_indian_treaties.4 = { #On the Legal Ownership of Lands on Lake Super
 
 	option = {
 		name = cr_canadian_indian_treaties.4.b
-		
+		add_enactment_modifier = {
+			name = cr_laws_papineau_report
+		}
 		scope:native_state = {
 			change_tension = {
 				country = root
@@ -465,7 +513,7 @@ cr_canadian_indian_treaties.4 = { #On the Legal Ownership of Lands on Lake Super
 		}
 		s:STATE_ONTARIO = {
 			add_claim = c:QUE
-			add_homeland = franco_canadian
+			add_homeland = cu:franco_canadian
 		}
 		add_loyalists = {
 			value = small_radicals
@@ -508,61 +556,44 @@ cr_canadian_indian_treaties.5 = { #Incident at the Copper Mine/Mica Bay Incident
 	duration = 3
 
 	trigger = {
-		global_var:cr_robinson_treaty_var >5
-		#s:STATE_ONTARIO = {
-		#	random_scope_state = {
-		#		limit = {
-		#			owner = ROOT
-		#		}	
-		#		has_building = building_copper_mine #Should be level 3 or higher
-		#	}
-		#}
-		any_state = {
-			owner = ROOT
-			state_region = s:STATE_ONTARIO
+		NOT = {
+			has_variable = cr_lake_superior_incident_at_coppermine_cooldown
+		}
+		global_var:cr_robinson_treaty_var > 4
+		scope:copper_mining_state = {
 			any_scope_building = {
 				is_building_type = building_copper_mine
-				level >= 3
+				level >= 1
 			}
 		}	
 	}
 
 	immediate = {
-		c:CTF = {
-			save_scope_as = native_state
-			every_scope_character = {
+		scope:native_state = {
+			random_scope_character = {
 				limit = {
-					NOT = { has_ideology = ideology_pacifist }
+					NOT = { 
+						has_ideology = ideology:ideology_pacifist 
+						has_trait = trait_child
+					}
 				}
 				save_scope_as = native_state_threatener
 			}
 		}
-		ig:ig_industrialists = {
-			save_scope_as = mining_ig
-		}
-		ig:ig_armed_forces = {
-			save_scope_as = armed_forces_ig		
-		}
-		s:STATE_ONTARIO = {
-			random_scope_state = {
+		scope:copper_mining_state = {
+			random_scope_building = {
 				limit = {
-					owner = ROOT
+					is_building_type = building_copper_mine
+					level >= 1
 				}
-				save_scope_as = copper_mining_state
+				save_scope_as = contested_mine
 			}
-		}
-		s:STATE_ONTARIO = {
-			random_scope_state = {
-				limit = {
-					owner = c:CTF
-				}
-				save_scope_as = copper_mining_area
-			}
-		}
+		}	
 	}
 
 	option = {
-		name = cr_canadian_indian_treaties.5.a
+		name = cr_canadian_indian_treaties.5.a #should reduce building level by 1, now reduces investment pool
+		custom_tooltip = cr_canadian_indian_treaties.5.a_tt
 		scope:native_state = {
 			change_tension = {
 				country = root
@@ -575,10 +606,84 @@ cr_canadian_indian_treaties.5 = { #Incident at the Copper Mine/Mica Bay Incident
 				months = normal_modifier_time
 			}		
 		}
+		if = {
+			limit = {
+				investment_pool >100000
+			}
+			add_investment_pool = -100000
+		}
+		else_if = {
+			limit = {
+				investment_pool >90000
+			}
+			add_investment_pool = -90000
+		}
+		else_if = {
+			limit = {
+				investment_pool >80000
+			}
+			add_investment_pool = -80000
+		}
+		else_if = {
+			limit = {
+				investment_pool >70000
+			}
+			add_investment_pool = -70000
+		}
+		else_if = {
+			limit = {
+				investment_pool >50000
+			}
+			add_investment_pool = -50000
+		}
+		else_if = {
+			limit = {
+				investment_pool >40000
+			}
+			add_investment_pool = -40000
+		}
+		else_if = {
+			limit = {
+				investment_pool >30000
+			}
+			add_investment_pool = -30000
+		}
+		else_if = {
+			limit = {
+				investment_pool >20000
+			}
+			add_investment_pool = -20000
+		}
+		else_if = {
+			limit = {
+				investment_pool >10000
+			}
+			add_investment_pool = -10000
+		}
+		else_if = {
+			limit = {
+				investment_pool >5000
+			}
+			add_investment_pool = -5000
+		}
+		else_if = {
+			limit = {
+				investment_pool >1000
+			}
+			add_investment_pool = -1000
+		}
 		hidden_effect = {
 			change_global_variable = {
 				name = cr_robinson_treaty_var
 				add = 1
+			}
+			set_variable = {
+				name = cr_lake_superior_incident_at_coppermine_cooldown
+				months = 6
+			}
+			set_variable = {
+				name = cr_lake_superior_mining_permits_cooldown
+				months = 9
 			}
 		}
 		default_option = yes
@@ -589,9 +694,25 @@ cr_canadian_indian_treaties.5 = { #Incident at the Copper Mine/Mica Bay Incident
 
 	option = {
 		name = cr_canadian_indian_treaties.5.b
-		add_modifier = {
-			name = cr_treaty_annuities
-			months = very_long_modifier_time
+		custom_tooltip = cr_canadian_indian_treaties.5.b_tt
+		scope:contested_mine = {
+			if = {
+				limit = {
+					NOT = {
+						has_modifier = cr_native_land_payments_building
+					}
+				}
+				add_modifier = { 
+					name = cr_native_land_payments_building
+					months = very_long_modifier_time
+				}
+			}
+		}	
+		scope:native_state = {
+			change_tension = {
+				country = root
+				value = -10
+			}
 		}
 		scope:armed_forces_ig = {
 			add_modifier = {
@@ -599,10 +720,14 @@ cr_canadian_indian_treaties.5 = { #Incident at the Copper Mine/Mica Bay Incident
 				months = normal_modifier_time
 			}		
 		}
-		scope:native_state = {
-			change_tension = {
-				country = root
-				value = -10
+		hidden_effect = {
+			set_variable = {
+				name = cr_lake_superior_incident_at_coppermine_cooldown
+				months = 3
+			}		
+			set_variable = {
+				name = cr_lake_superior_mining_permits_cooldown
+				months = 5
 			}
 		}
 		ai_chance = {
@@ -612,10 +737,18 @@ cr_canadian_indian_treaties.5 = { #Incident at the Copper Mine/Mica Bay Incident
 
 	option = {
 		name = cr_canadian_indian_treaties.5.c
+		custom_tooltip = {
+			text = cr_canadian_indian_treaties.5.c_tt
+			create_character = {
+				is_agitator = yes
+				interest_group = ig:ig_armed_forces
+				ideology = ideology_jingoist_leader
+			}
+		}
 		scope:native_state = {
 			change_tension = {
 				country = root
-				value = 35
+				value = 20
 			}
 		}
 		hidden_effect = {
@@ -623,6 +756,12 @@ cr_canadian_indian_treaties.5 = { #Incident at the Copper Mine/Mica Bay Incident
 				name = cr_robinson_treaty_var
 				add = 4
 			}
+		}
+		hidden_effect = {
+			set_variable = {
+				name = cr_lake_superior_incident_at_coppermine_cooldown
+				months = 2
+			}		
 		}
 		ai_chance = {
 			base = 5
@@ -651,47 +790,30 @@ cr_canadian_indian_treaties.6 = { #The Copper Country Insurgency
 	duration = 3
 
 	trigger = {
-		global_var:cr_robinson_treaty_var >7
-		#s:STATE_ONTARIO = {
-		#	random_scope_state = {
-		#		limit = {
-		#			owner = ROOT
-		#		}		
-		#		has_building = building_copper_mine #should be level 3 or higher
-		#	}
-		#}
-		any_state = {
-			owner = ROOT
-			state_region = s:STATE_ONTARIO
+		NOT = {
+			has_variable = cr_lake_superior_copper_rebellion_cooldown
+		}
+		NOT = {
+			has_truce_with = c:CTF
+			has_war_with = c:CTF
+		}
+		global_var:cr_robinson_treaty_var >6
+		scope:copper_mining_state = {
 			any_scope_building = {
 				is_building_type = building_copper_mine
-				level >= 3
+				level >= 2
 			}
-		}	
+		}
 	}
 
 	immediate = {
-		c:CTF = {
-			save_scope_as = native_state
-			every_scope_character = {
+		scope:native_state = {
+			random_scope_character = {
 				limit = {
-					NOT = { has_ideology = ideology_pacifist }
+					NOT = { has_ideology = ideology:ideology_pacifist }
 				}
+				set_ideology = ideology:ideology_jingoist_leader
 				save_scope_as = native_state_threatener
-			}
-		}
-		ig:ig_industrialists = {
-			save_scope_as = mining_ig
-		}
-		ig:ig_armed_forces = {
-			save_scope_as = armed_forces_ig		
-		}
-		s:STATE_ONTARIO = {
-			random_scope_state = {
-				limit = {
-					owner = ROOT
-				}
-				save_scope_as = copper_mining_state
 			}
 		}
 	}
@@ -699,7 +821,7 @@ cr_canadian_indian_treaties.6 = { #The Copper Country Insurgency
 	option = {
 		name = cr_canadian_indian_treaties.6.a
 		scope:copper_mining_state = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = large_radicals
 				culture = cu:algonquian
 			}
@@ -710,14 +832,28 @@ cr_canadian_indian_treaties.6 = { #The Copper Country Insurgency
 		scope:native_state = {
 			change_tension = {
 				country = root
-				value = 25
+				value = 35
 			}
 		}
+		create_diplomatic_play = {
+			set_key = cr_copper_country_insurgency
+			
+			war = yes
+			
+			type = dp_native_uprising
+			
+			target_state = s:STATE_ONTARIO.region_state:CTF
+			target = c:CTF
+		}	
 		hidden_effect = {
 			change_global_variable = {
 				name = cr_robinson_treaty_var
 				add = 1
 			}
+			set_variable = {
+				name = cr_lake_superior_copper_rebellion_cooldown
+				months = 12
+			}	
 		}
 		default_option = yes
 		#ai_chance = {
@@ -738,26 +874,16 @@ cr_canadian_indian_treaties.8 = { #The Long Tail of Mining
 		video = "gfx/event_pictures/europenorthamerica_gold_prospectors.bk2"
 	}
 
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/africa/construction_colony"
-
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	duration = 3
 
 	trigger = {
-		global_var:cr_robinson_treaty_var >5
-		#s:STATE_ONTARIO = {
-		#	random_scope_state = {
-		#		limit = {
-		#			owner = ROOT
-		#		}	
-		#		has_building = building_copper_mine #should have level 3 or higher
-		#	}
-		#}
-		any_state = {
-			owner = ROOT
-			state_region = s:STATE_ONTARIO
+		NOT = {
+			has_variable = cr_lake_superior_cooldown
+			has_variable = cr_lake_superior_mining_tails_cooldown
+		}
+		scope:copper_mining_state = {
 			any_scope_building = {
 				is_building_type = building_copper_mine
 				level >= 3
@@ -766,27 +892,12 @@ cr_canadian_indian_treaties.8 = { #The Long Tail of Mining
 	}
 
 	immediate = {
-		c:CTF = {
-			save_scope_as = native_state
-			every_scope_character = {
+		scope:native_state = {
+			random_scope_character = {
 				limit = {
-					NOT = { has_ideology = ideology_pacifist }
+					NOT = { has_ideology = ideology:ideology_pacifist }
 				}
 				save_scope_as = native_state_threatener
-			}
-		}
-		ig:ig_industrialists = {
-			save_scope_as = mining_ig
-		}
-		ig:ig_armed_forces = {
-			save_scope_as = armed_forces_ig		
-		}
-		s:STATE_ONTARIO = {
-			random_scope_state = {
-				limit = {
-					owner = ROOT
-				}
-				save_scope_as = copper_mining_state
 			}
 		}
 	}
@@ -794,7 +905,7 @@ cr_canadian_indian_treaties.8 = { #The Long Tail of Mining
 	option = {
 		name = cr_canadian_indian_treaties.8.a
 		scope:copper_mining_state = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = medium_radicals
 				culture = cu:algonquian
 			}
@@ -813,6 +924,10 @@ cr_canadian_indian_treaties.8 = { #The Long Tail of Mining
 				name = cr_robinson_treaty_var
 				add = 1
 			}
+			set_variable = {
+				name = cr_lake_superior_mining_tails_cooldown
+				months = 5
+			}	
 		}
 		default_option = yes
 		#ai_chance = {
@@ -821,7 +936,197 @@ cr_canadian_indian_treaties.8 = { #The Long Tail of Mining
 	}
 }
 
-cr_canadian_indian_treaties.10 = { #The Robinson Treaties - random
+cr_canadian_indian_treaties.9 = { #The Tools of the Trade
+	type = country_event
+	placement = p:x313BB2
+
+	title = cr_canadian_indian_treaties.9.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						any_scope_building = {
+							is_building_type = building_tooling_workshops
+						}
+					}
+				}
+				desc = cr_canadian_indian_treaties.9.desc
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_canadian_indian_treaties.9.desc_home_production
+			}
+		}
+	}
+	
+	flavor = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						any_scope_building = {
+							is_building_type = building_tooling_workshops
+						}
+					}
+				}
+				desc = cr_canadian_indian_treaties.9.f
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_canadian_indian_treaties.9.f_home_production
+			}
+		}	
+	}
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	trigger = {
+		has_law = law_type:law_interventionism
+		scope:copper_mining_state = {
+			any_scope_building = {
+				is_building_type = building_copper_mine
+				level >= 2
+			}
+		}
+		scope:copper_mining_state = {
+			sg:tools = { state_goods_pricier > 0.2 }
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				market_capital.market = {
+					mg:tools = {
+						market_goods_production >= 1
+					}
+				}
+			}
+			top_overlord = {
+				random_scope_state = {
+					limit = {
+						has_building = building_tooling_workshops
+					}
+					save_scope_as = toolmaking_state
+				}
+			}
+		}
+		#else_if = {
+		#	limit = {
+		#		any_trade_route = {
+		#			importer.owner = root
+		#			goods = g:tools
+		#		}
+		#	}
+		#	any_trade_route = {
+		#		importer.owner = root
+		#		goods = g:tools
+		#		exporter.owner = {
+		#			random_scope_state = {
+		#				limit = {
+		#					any_scope_building = {
+		#						is_building_type = building_tooling_workshops
+		#					}
+		#				}
+		#				save_scope_as = toolmaking_state
+		#			}
+		#		}
+		#	}
+		#}
+		else_if = {
+			limit = {
+				NOT = {
+					has_building = building_tooling_workshops				
+				}
+			}
+			random_state = {
+				limit = {
+					has_building = building_tooling_workshops
+				}
+				save_scope_as = toolmaking_state
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					has_building = building_tooling_workshops
+				}
+				save_scope_as = toolmaking_state
+			}
+		}
+		random_state = {
+			limit = {
+				has_building = building_tooling_workshops
+			}
+			save_scope_as = foreign_toolmaking_state
+		}
+		random_scope_building = {
+			limit = {
+				is_building_type = building_tooling_workshops
+			}
+			save_scope_as = tooling_plant
+		}
+	}
+
+	option = {
+		name = cr_canadian_indian_treaties.9.a
+		scope:copper_mining_state = {
+			start_building_construction = building_copper_mine
+			add_loyalists_in_state = {
+				value = small_radicals
+				pop_type = capitalists
+			}
+		}
+		hidden_effect = {
+			change_global_variable = {
+				name = cr_robinson_treaty_var
+				add = 1
+			}
+			set_variable = {
+				name = cr_lake_superior_mining_tails_cooldown
+				months = 1
+			}	
+		}
+		default_option = yes
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = {
+		name = cr_canadian_indian_treaties.9.b
+		scope:copper_mining_state = {
+			start_privately_funded_building_construction = building_copper_mine
+		}
+		hidden_effect = {
+			change_global_variable = {
+				name = cr_robinson_treaty_var
+				add = 1
+			}
+			set_variable = {
+				name = cr_lake_superior_mining_tails_cooldown
+				months = 1
+			}	
+		}
+		default_option = yes
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+cr_canadian_indian_treaties.10 = { #The Robinson Treaties
 	type = country_event
 	placement = p:x313BB2
 
@@ -856,14 +1161,14 @@ cr_canadian_indian_treaties.10 = { #The Robinson Treaties - random
 	duration = 3
 
 	trigger = {
-		OR = {
-			global_var:cr_robinson_treaty_var >5
-			has_truce_with = c:CTF
-			has_diplomatic_pact = {
-				who = c:CTF
-				type = colonization_rights 
-			}
-		}
+		#OR = {
+		#	global_var:cr_robinson_treaty_var >6
+		#	has_truce_with = c:CTF
+		#	has_diplomatic_pact = {
+		#		who = c:CTF
+		#		type = colonization_rights 
+		#	}
+		#}
 		#s:STATE_ONTARIO = {
 		#	random_scope_state = {
 		#		limit = {
@@ -872,42 +1177,27 @@ cr_canadian_indian_treaties.10 = { #The Robinson Treaties - random
 		#		has_building = building_copper_mine #should be level 2 or higher
 		#	}
 		#}
-		any_state = {
-			owner = ROOT
-			state_region = s:STATE_ONTARIO
-			any_scope_building = {
-				is_building_type = building_copper_mine
-				level >= 2
-			}
-		}			
+		#any_state = {
+		#	owner = ROOT
+		#	state_region = s:STATE_ONTARIO
+		#	any_scope_building = {
+		#		is_building_type = building_copper_mine
+		#		level >= 3
+		#	}
+		#}			
 	}
 
 	immediate = {
-		c:CTF = {
-			save_scope_as = native_state
+		scope:native_state = {
 			every_scope_character = {
 				limit = {
-					NOT = { has_ideology = ideology_pacifist }
+					NOT = { has_ideology = ideology:ideology_pacifist }
 				}
 				save_scope_as = native_state_threatener
 			}
 		}
-		ig:ig_industrialists = {
-			save_scope_as = mining_ig
-		}
-		ig:ig_armed_forces = {
-			save_scope_as = armed_forces_ig		
-		}
-		s:STATE_ONTARIO = {
-			random_scope_state = {
-				limit = {
-					owner = ROOT
-				}
-				save_scope_as = copper_mining_state
-			}
-		}
 		###Could perhaps autogenerate a Commissioner by the name of William Benjamin Robinson
-		every_scope_character = {
+		random_scope_character = {
 			limit = {
 				has_role = general
 			}
@@ -922,13 +1212,14 @@ cr_canadian_indian_treaties.10 = { #The Robinson Treaties - random
 				has_truce_with = c:CTF
 			}
 		}
-		create_diplomatic_pact = {
-			country = scope:native_state
-			type = colonization_rights
+		hidden_effect = {
+			create_truce = {
+				country = scope:native_state
+				months = normal_modifier_time
+			}
 		}
 		add_modifier = {
 			name = cr_treaty_annuities
-			months = very_long_modifier_time
 		}
 		hidden_effect = {
 			scope:copper_mining_state = {
@@ -954,12 +1245,22 @@ cr_canadian_indian_treaties.10 = { #The Robinson Treaties - random
 				has_truce_with = c:CTF
 			}
 		}
-		create_diplomatic_pact = {
-			country = scope:native_state
-			type = colonization_rights
+		if= {
+			limit = {
+				NOT = {
+					has_law = law_type:law_frontier_colonization
+				}
+			}
+			activate_law = law_type:law_frontier_colonization
+		}
+		hidden_effect = {
+			create_truce = {
+				country = scope:native_state
+				months = normal_modifier_time
+			}
 		}
 		scope:copper_mining_state = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = medium_radicals
 				culture = cu:algonquian
 			}
@@ -1006,7 +1307,7 @@ cr_canadian_indian_treaties.10 = { #The Robinson Treaties - random
 			has_truce_with = c:CTF
 		}
 		scope:copper_mining_state = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = medium_radicals
 				culture = cu:algonquian
 			}
@@ -1038,7 +1339,7 @@ cr_canadian_indian_treaties.10 = { #The Robinson Treaties - random
 			months = normal_modifier_time
 		}
 		scope:copper_mining_state = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = small_radicals
 				culture = cu:algonquian
 			}
@@ -1383,6 +1684,9 @@ cr_canadian_indian_treaties.50 = { #The Man on the River
 			top_overlord = {
 				has_technology_researched = realism
 			}
+		}
+		NOT = {
+			has_war_with = c:CHI
 		}
 	}
 

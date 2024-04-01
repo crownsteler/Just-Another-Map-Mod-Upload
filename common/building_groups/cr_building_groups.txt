@@ -48,6 +48,8 @@ bg_copper_mining = {
 	
 	default_building = building_copper_mine
 
+	discoverable_resource = yes
+
 	can_use_slaves = yes
 }
 

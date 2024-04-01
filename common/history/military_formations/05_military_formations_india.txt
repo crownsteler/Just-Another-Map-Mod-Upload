@@ -1,5 +1,5 @@
 ﻿MILITARY_FORMATIONS = {
-	c:PAN = {
+	c:PAN ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_afghanistan
@@ -143,7 +143,7 @@
 		}	
 	}
 
-	c:BIC = {
+	c:BIC ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_india
@@ -184,6 +184,27 @@
 				state_region = s:STATE_BOMBAY
 				count = 5
 			}
+			save_scope_as = bombay_army
+		}
+
+		create_character = { # BIC, general Not technically with the BIC army at game start, but infamous for the retreat from Kabul
+			is_general = yes
+			first_name = William_George_Keith
+			last_name = Elphinstone
+			culture = cu:scottish
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			birth_date = 1782.1.26
+			commander_rank = commander_rank_2
+			traits = {
+				reckless
+				tactful
+			}
+			save_scope_as = elphinstone_gen
+		}
+
+		scope:elphinstone_gen = {
+			transfer_to_formation = scope:bombay_army
 		}
 
 		create_military_formation = {
@@ -240,16 +261,16 @@
 			}
 		}
 
-		#create_military_formation = {
-		#	type = fleet
-		#	hq_region = sr:region_bengal
-		#	name = "Indian Navy"
-		#
-		#	combat_unit = { # Nothing the size of a frigate
-		#		type = unit_type:combat_unit_type_frigate
-		#		state_region = s:STATE_SOUTH_BENGAL	
-		#		count = 1
-		#	}
-		#}	
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_north_india
+			name = Indian_Navy
+
+			combat_unit = { # Nothing the size of a frigate
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_BOMBAY	
+				count = 1
+			}
+		}	
 	}
 }

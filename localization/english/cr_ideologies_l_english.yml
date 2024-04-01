@@ -2,3 +2,12 @@
  #The Netherlands
  ideology_national_liberalism_cr:0 "Nationalist"
  ideology_liberal_quebec_cr:0 "Liberal"
+ ideology_agrarian_planters:0 "Agrarian"
+ ideology_colonial_subjects_cr:0 "Colonial Subject"
+ ideology_colonial_subjects_cr_desc:0 "This interest group is made up of people subject to a colonial state."
+ ideology_colonial_overlords_cr:0 "Colonial Overlords"
+ ideology_colonial_overlords_cr_desc:0 "This interest group is made up of people belonging to a colonial state."
+ ideology_moralist_colonial:0 "Moralist"
+ 
+ ideology_frontier_expansionist_leader_cr:0 "Frontier Expansionist"
+ ideology_frontier_expansionist_leader_cr_desc:0 "This leader seeks to expand the borders of the state to include land currently 'unsettled'."

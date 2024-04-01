@@ -15,70 +15,104 @@ ARR = { #Arrernte
 	capital = STATE_NORTHERN_TERRITORY
 }
 
-DJB = { #Djirbalic
-	color = { 35 67 147 }
-	
-	country_type = decentralized
-	
-	tier = principality
-	
-	cultures = { aborigine }
-	capital = STATE_QUEENSLAND
-}
+I01 = { # Kulinic - was KLN
+	color = { 27 1 230 }
 
-KLN = { #Kulin
-	color = { 45 153 67 }
-	
 	country_type = decentralized
-	
+
 	tier = principality
-	
+
 	cultures = { aborigine }
 	capital = STATE_VICTORIA
 }
 
-KNC = { #Karnic
-	color = { 59 173 86 }
-	
+I09 = { # Karnic - was KNC
+	color = { 236 232 85 }
+
 	country_type = decentralized
-	
+
 	tier = principality
-	
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+
+I12 = { # Paman - was PMN
+	color = { 207 182 66 }
+
+	country_type = decentralized
+
+	tier = principality
+
 	cultures = { aborigine }
 	capital = STATE_QUEENSLAND
 }
 
-MRC = { #Maric
-	color = { 155 75 193 }
-	
+I13 = { # Dyirbalic - Was DJB
+	color = { 238 39 2 }
+
 	country_type = decentralized
-	
+
 	tier = principality
-	
+
 	cultures = { aborigine }
 	capital = STATE_QUEENSLAND
 }
 
-NGT = { #Ngayarta 
-	color = { 64 91 183 }
-	
+I18 = { # Maric - was MRC
+	color = { 55 24 41 }
+
 	country_type = decentralized
-	
+
 	tier = principality
-	
+
+	cultures = { aborigine }
+	capital = STATE_QUEENSLAND
+}
+
+I19 = { # Yura - was YUR
+	color = { 218 76 144 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_SOUTH_AUSTRALIA
+}
+
+I21 = { # Wati - was WTI
+	color = { 176 81 41 }
+
+	country_type = decentralized
+
+	tier = principality
+
 	cultures = { aborigine }
 	capital = STATE_WESTERN_AUSTRALIA
 }
 
-NGY = { #Ngumpin-Yapa 
-	color = { 133 195 67 }
-	
+I24 = { # Ngayarda - was NGT
+	color = { 70 16 219 }
+
 	country_type = decentralized
-	
+
 	tier = principality
-	
+
 	cultures = { aborigine }
 	capital = STATE_WESTERN_AUSTRALIA
+}
+
+I26 = { # Ngumpin-Yapa - was NGY
+	color = { 18 141 110 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NORTHERN_TERRITORY
 }
 
 PAA = { #Paakintyi 
@@ -92,28 +126,6 @@ PAA = { #Paakintyi
 	capital = STATE_NEW_SOUTH_WALES
 }
 
-PMN = { #Paman 
-	color = { 155 75 193 }
-	
-	country_type = decentralized
-	
-	tier = principality
-	
-	cultures = { aborigine }
-	capital = STATE_QUEENSLAND
-}
-
-WTI = { #Wati
-	color = { 91 85 208 }
-	
-	country_type = decentralized
-	
-	tier = principality
-	
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
 YMT = { #Yamatji
 	color = { 119 62 247 }
 	
@@ -123,15 +135,4 @@ YMT = { #Yamatji
 	
 	cultures = { aborigine }
 	capital = STATE_WESTERN_AUSTRALIA
-}
-
-YUR = { #Thura-Yura 
-	color = { 255 173 58 }
-	
-	country_type = decentralized
-	
-	tier = principality
-	
-	cultures = { aborigine }
-	capital = STATE_SOUTH_AUSTRALIA
 }

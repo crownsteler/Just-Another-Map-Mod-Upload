@@ -14,15 +14,15 @@ state_is_in_europe = {
 		region = sr:region_danubia
 		region = sr:region_balkans
 		region = sr:region_baltic
-		state_region = s:STATE_PELOPONNESE 
-		state_region = s:STATE_IONIAN_ISLANDS 
-		state_region = s:STATE_ATTICA 
-		state_region = s:STATE_THESSALIA 
-		state_region = s:STATE_MACEDONIA 
-		state_region = s:STATE_WESTERN_THRACE 
-		state_region = s:STATE_WEST_AEGEAN_ISLANDS 
-		state_region = s:STATE_EAST_AEGEAN_ISLANDS 
-		state_region = s:STATE_EASTERN_THRACE
+		#state = s:STATE_PELOPONNESE 
+		#state = s:STATE_IONIAN_ISLANDS 
+		#state = s:STATE_ATTICA 
+		#state = s:STATE_THESSALIA 
+		#state = s:STATE_MACEDONIA 
+		#state = s:STATE_WESTERN_THRACE 
+		#state = s:STATE_WEST_AEGEAN_ISLANDS 
+		#state = s:STATE_EAST_AEGEAN_ISLANDS 
+		#state = s:STATE_EASTERN_THRACE
 	}
 }
 
@@ -87,9 +87,9 @@ state_is_in_africa = {
 		region = sr:region_south_west_africa
 		region = sr:region_madagascar
 		region = sr:region_zambezia
-		state_region = s:STATE_RED_SEA_COAST
-		state_region = s:STATE_EASTERN_DESERT
-		state_region = s:STATE_ERITREA
+		#state = s:STATE_RED_SEA_COAST
+		#state = s:STATE_EASTERN_DESERT
+		#state = s:STATE_ERITREA
 	}
 }
 
@@ -102,16 +102,16 @@ state_is_in_middle_east = {
 		region = sr:region_levant
 		region = sr:region_iraq
 		region = sr:region_the_persian_gulf
-		state_region = s:STATE_CRETE
-		state_region = s:STATE_AYDIN 
-		state_region = s:STATE_KASTAMONU 
-		state_region = s:STATE_HUDAVENDIGAR 
-		state_region = s:STATE_TRABZON	
-		state_region = s:STATE_SINAI 
-		state_region = s:STATE_HEDJAZ 
-		state_region = s:STATE_YEMEN 
-		state_region = s:STATE_SOUTH_YEMEN
-		state_region = s:STATE_ASIR 		
+		#state = s:STATE_CRETE
+		#state = s:STATE_AYDIN 
+		#state = s:STATE_KASTAMONU 
+		#state = s:STATE_HUDAVENDIGAR 
+		#state = s:STATE_TRABZON	
+		#state = s:STATE_SINAI 
+		#state = s:STATE_HEDJAZ 
+		#state = s:STATE_YEMEN 
+		#state = s:STATE_SOUTH_YEMEN
+		#state = s:STATE_ASIR 		
 	}
 }
 
@@ -161,27 +161,15 @@ state_is_in_southeast_asia = {
 		region = sr:region_indochina
 	}
 }
-
-state_is_in_indonesia = {
-	OR = {
-		region = sr:region_malacca
-		region = sr:region_java
-		region = sr:region_makasser
-		region = sr:region_moluccas
-		region = sr:region_philippines
-	}
-}
-
-state_is_in_oceania = {
-	OR = {
-		region = sr:region_oceania
-		region = sr:region_melanesia
-		region = sr:region_micronesia
-		region = sr:region_polynesia
-	}
-}
 ### Country geography triggers
 # exists = capital checks are necessary only because we may test these triggers and scope switch to capitals before states are initialized properly
+
+country_is_in_china = {
+	exists = capital
+	capital = {
+		state_is_in_china = yes
+	}
+}
 
 country_is_in_europe = {
 	exists = capital
@@ -253,18 +241,24 @@ country_is_in_southeast_asia = {
 	}
 }
 
-
-country_is_in_indonesia = {
+state_is_in_indonesia = {
 	exists = capital
-	capital = {
-		state_is_in_indonesia = yes
+	OR = {
+		region = sr:region_malacca
+		region = sr:region_java
+		region = sr:region_makasser
+		region = sr:region_moluccas
+		region = sr:region_philippines
 	}
 }
 
-country_is_in_oceania = {
+state_is_in_oceania = {
 	exists = capital
-	capital = {
-		state_is_in_oceania = yes
+	OR = {
+		region = sr:region_oceania
+		region = sr:region_melanesia
+		region = sr:region_micronesia
+		region = sr:region_polynesia
 	}
 }
 

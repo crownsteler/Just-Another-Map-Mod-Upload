@@ -1,0 +1,12 @@
+{
+  "name" : "Just Another Map Mod",
+  "id" : "",
+  "version" : "0.1.0",
+  "supported_game_version" : "1.6.*",
+  "short_description" : "A complete overhaul of the game map. Someday",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

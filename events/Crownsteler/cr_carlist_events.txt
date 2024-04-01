@@ -260,7 +260,7 @@ cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
 			text = cr_carlist_events.10.b_tt
 		}
 		add_loyalists = {
-			value = 0.15
+			value = 0.10
 			culture = cu:spanish
 		}
 		add_loyalists = {
@@ -277,6 +277,12 @@ cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
 		}
 		hidden_effect = {
 			trigger_event = { id = cr_carlist_events.99 days = 0 }
+			c:NAV = {
+				add_loyalists = {
+					value = 0.5
+					culture = cu:basque
+				}
+			}
 		}
 		ai_chance = {
 			base = 5

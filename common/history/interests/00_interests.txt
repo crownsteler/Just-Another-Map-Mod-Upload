@@ -1,15 +1,22 @@
 ﻿INTERESTS = {
 	c:SWE = {
 		add_declared_interest = region_north_germany
+		add_declared_interest = region_baltic
+		add_declared_interest = region_poland
+		add_declared_interest = region_england
+		add_declared_interest = region_france
+		add_declared_interest = region_low_countries
+		add_declared_interest = region_iberia
+		add_declared_interest = region_caribbean
 	}
 	c:GBR = {
 		add_declared_interest = region_baltic
 		add_declared_interest = region_brazil
+		add_declared_interest = region_south_china
+		add_declared_interest = region_north_china
 		add_declared_interest = region_rhine
 		add_declared_interest = region_low_countries
 		add_declared_interest = region_france
-		add_declared_interest = region_south_china
-		add_declared_interest = region_north_china
 		add_declared_interest = region_egypt
 		add_declared_interest = region_levant
 		add_declared_interest = region_afghanistan
@@ -18,10 +25,8 @@
 		add_declared_interest = region_java
 		add_declared_interest = region_japan
 		add_declared_interest = region_north_africa
-		add_declared_interest = region_russia
+		add_declared_interest = region_guayana
 		add_declared_interest = region_andes
-		add_declared_interest = region_manchuria
-		add_declared_interest = region_occitania
 	}
 	c:BIC = {
 		add_declared_interest = region_south_china
@@ -48,6 +53,7 @@
 		add_declared_interest = region_red_sea_region
 		add_declared_interest = region_the_persian_gulf
 		add_declared_interest = region_arabic
+		add_declared_interest = region_persia
 		add_declared_interest = region_malacca #Friendly with Aceh
 	}
 	c:RUS = {
@@ -63,6 +69,8 @@
 		add_declared_interest = region_manchuria
 		add_declared_interest = region_japan
 		add_declared_interest = region_rhine
+		add_declared_interest = region_low_countries
+		add_declared_interest = region_iberia
 	}
 	c:SIC = {
 		add_declared_interest = region_occitania
@@ -102,6 +110,8 @@
 	}		
 	c:FRA = {
 		add_declared_interest = region_england
+		add_declared_interest = region_low_countries
+		add_declared_interest = region_iberia
 		add_declared_interest = region_dixie
 		add_declared_interest = region_canada
 		add_declared_interest = region_mexico
@@ -112,6 +122,8 @@
 		add_declared_interest = region_baltic
 		add_declared_interest = region_bosphorus
 		add_declared_interest = region_indochina
+		add_declared_interest = region_guayana
+		add_declared_interest = region_guinea
 	}
 	c:BRZ = {
 		add_declared_interest = region_andes
@@ -141,6 +153,7 @@
 		add_declared_interest = region_occitania
 		add_declared_interest = region_iberia
 		add_declared_interest = region_dnieper
+		add_declared_interest = region_low_countries
 	}
 	c:NET = {
 		add_declared_interest = region_baltic	
@@ -149,6 +162,12 @@
 		add_declared_interest = region_north_germany
 		add_declared_interest = region_france
 		add_declared_interest = region_england
+		add_declared_interest = region_guayana
+		add_declared_interest = region_new_england
+		add_declared_interest = region_southern_africa
+		add_declared_interest = region_italy
+		add_declared_interest = region_guinea
+		add_declared_interest = region_japan
 	}
 	c:PRU = {
 		add_declared_interest = region_south_germany

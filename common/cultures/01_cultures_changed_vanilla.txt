@@ -84,6 +84,7 @@
 		Jacob_Dirk_Carel
 		Lodewijk_Casper
 		Andreas_Victor
+		frans_david
 	}
 	female_common_first_names = {
 		Aletta Annewies Anna Anna_Louisa
@@ -118,6 +119,7 @@
 		van_Wassenaer
 		van_Voorst_tot_Voorst
 		van_Dam_van_Isselt
+		de_stuers
 		
 		van_Asch_van_Wijck
 		van_den_Bosch
@@ -356,6 +358,8 @@ flemish={
 		Vincent
 		Werner
 		Willem
+		
+		charles_pierre
 	}
 	female_common_first_names = {
 		Clementine Charlotte Christine
@@ -461,6 +465,7 @@ flemish={
 		Rosseuw
 		Rouppe
 		Rutten
+		Schimpf
 		Schollaert
 		Serruys
 		Simons

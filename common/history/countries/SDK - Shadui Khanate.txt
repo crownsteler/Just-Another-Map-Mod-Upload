@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:SDK = {
+	c:SDK ?= {
 		effect_starting_technology_tier_3_tech = yes
 		
 		# Laws 

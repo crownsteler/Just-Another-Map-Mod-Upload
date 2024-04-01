@@ -17,19 +17,13 @@ POPS = {
 			}
 			create_pop = {
 				culture = amazonian
-				size = 1000
+				size = 11000
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = afro_caribeno
 				size = 84429
 			}		
-		}
-		region_state:AMZ = {
-			create_pop = {
-				culture = amazonian
-				size = 11000
-			}
 		}
 	}
 	s:STATE_GUAYANA = {
@@ -378,6 +372,12 @@ POPS = {
 			create_pop = {
 				culture = amazonian
 				size = 62000
+			}
+		}
+		region_state:ECU = {
+			create_pop = {
+				culture = amazonian
+				size = 11000
 			}
 		}
 	}

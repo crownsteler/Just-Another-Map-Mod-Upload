@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:HKR = {
+	c:HKR ?= {
 		effect_starting_technology_tier_3_tech = yes
 		
 		# Laws 

@@ -1073,7 +1073,7 @@ BHN = { # Bahrain
 #	}
 #}
 
-DRU = {
+DRU = { #Druze
 	pattern = "pattern_horizontal_split_01.tga"
 	color1 = "red"
 	color2 = "blue"
@@ -1316,7 +1316,20 @@ ZWA = {
 }
 
 
-HRB = {
+GLD = { #Geledi
+	pattern = "pattern_verical_bicolor_offset.dds"
+	color1 = "green_dark"
+	color2 = "dark_blue"
+
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		instance = { scale = { 0.40 0.40 } position = { 0.25 0.5 } }	
+	}		
+}
+
+
+HRB = { #Hiraab
 	pattern = "pattern_horizontal_split_01.tga"
 	color1 = "red"
 	color2 = "blue"
@@ -1334,6 +1347,18 @@ HRB = {
 	}
 }
 
+HRT = { # Herat
+	
+	pattern = "pattern_solid.tga"
+	color1 = "herat_green"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "herat_green"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }			
+	}	
+}
 
 KBL = { # Kabul
 	pattern = "pattern_solid.tga"
@@ -1355,21 +1380,6 @@ KBL = { # Kabul
 		instance = { scale { 0.35 0.35 } position = { 0.5 0.5 } }
 	}
 }
-
-
-HRT = { # Herat
-	
-	pattern = "pattern_solid.tga"
-	color1 = "herat_green"
-	
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "white"
-		color2 = "herat_green"
-		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }			
-	}	
-}
-
 
 ARO = { #Shilluk
 	pattern = "pattern_solid.tga"
@@ -1438,6 +1448,21 @@ SUK = { #Shilluk
 	}	
 }
 
+OGD = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "blue"
+		color2 = "red"
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		instance = { scale = { 0.35 0.35 } position = { 0.5 0.5 } }	
+	}	
+}
 
 WTL = {
 	pattern = "pattern_vertical_split_01.tga"
@@ -1445,7 +1470,7 @@ WTL = {
 	color2 = "red"
 	
 	colored_emblem = {
-		texture = "ce_star_05_pinwheeled.dds"
+		texture = "ce_star_05.dds"
 		color1 = "white"
 		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }	
 	}	
@@ -1856,30 +1881,35 @@ HRO = { #Hereroland
 KBA = { #fictional, something I found online
 	pattern = "pattern_solid.tga"
 	color1 = "yellow_dark"
+	colored_emblem = {
+		texture = "ce_framed_cross.dds"
+		color1 = "brown"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}	
 	
-	colored_emblem = {
-		texture = "ce_solid.dds"
-		color1 = "brown"
-		instance = { scale = { 0.175 0.225 } position = { 0.35 0.5815 } }
-		instance = { scale = { 0.175 0.1825 } position = { 0.44 0.30 } }
-		instance = { scale = { 0.175 0.225 } position = { 0.65 0.425 } }
-		
-		instance = { scale = { 0.175 0.225 } position = { 0.5625 0.695 } }
-	}	
-	colored_emblem = {
-		texture = "ce_solid.dds"
-		color1 = "yellow_dark"
-		instance = { scale = { 0.125 0.15 } position = { 0.3775 0.5375 } }
-		instance = { scale = { 0.15 0.175 } position = { 0.4725 0.35 } }
-		instance = { scale = { 0.125 0.15 } position = { 0.625 0.4625 } }
-		
-		instance = { scale = { 0.125 0.175 } position = { 0.5375 0.6375 } }
-	}	
-	colored_emblem = {
-		texture = "ce_cross_couped.dds"
-		color1 = "brown"
-		instance = { scale = { 0.575 0.50 } position = { 0.5 0.5 } }
-	}	
+	#colored_emblem = {
+	#	texture = "ce_solid.dds"
+	#	color1 = "brown"
+	#	instance = { scale = { 0.175 0.225 } position = { 0.35 0.5815 } }
+	#	instance = { scale = { 0.175 0.1825 } position = { 0.44 0.30 } }
+	#	instance = { scale = { 0.175 0.225 } position = { 0.65 0.425 } }
+	#	
+	#	instance = { scale = { 0.175 0.225 } position = { 0.5625 0.695 } }
+	#}	
+	#colored_emblem = {
+	#	texture = "ce_solid.dds"
+	#	color1 = "yellow_dark"
+	#	instance = { scale = { 0.125 0.15 } position = { 0.3775 0.5375 } }
+	#	instance = { scale = { 0.15 0.175 } position = { 0.4725 0.35 } }
+	#	instance = { scale = { 0.125 0.15 } position = { 0.625 0.4625 } }
+	#	
+	#	instance = { scale = { 0.125 0.175 } position = { 0.5375 0.6375 } }
+	#}	
+	#colored_emblem = {
+	#	texture = "ce_cross_couped.dds"
+	#	color1 = "brown"
+	#	instance = { scale = { 0.575 0.50 } position = { 0.5 0.5 } }
+	#}	
 }
 
 LBA = { #based on something I found online, probably not accurate

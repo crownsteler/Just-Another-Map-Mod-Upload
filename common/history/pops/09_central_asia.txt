@@ -1204,18 +1204,6 @@
 				size = 100000
 			}
 		}
-		region_state:AGP = {
-			create_pop = {
-				culture = kachin
-				size = 54000
-			}
-		}
-		region_state:NGL = {
-			create_pop = {
-				culture = kachin
-				size = 6000
-			}
-		}
 	}
 	s:STATE_NGARI = {
 		region_state:TIB = {
@@ -1234,27 +1222,7 @@
 			}
 		}
 	}
-	s:STATE_HIMALAYAS = {
-		region_state:SIK = {
-			create_pop = {
-				culture = tibetan
-				size = 60301
-			}
-			create_pop = {
-				culture = nepali
-				size = 24091
-			}
-		}
-		region_state:BHU = {
-			create_pop = {
-				culture = tibetan
-				size = 140396
-			}
-			create_pop = {
-				culture = nepali
-				size = 16004
-			}
-		}
+	s:STATE_HIMALAYAS = { #STATE_WESTERN_HIMALAYAS
 		region_state:NEP = {
 			create_pop = {
 				culture = nepali
@@ -1268,34 +1236,6 @@
 			create_pop = {
 				culture = tibetan
 				size = 192008
-			}
-		}
-		region_state:BIC = {
-			create_pop = {
-				culture = panjabi
-				religion = sunni
-				size = 33867
-			}
-			create_pop = {
-				culture = avadhi
-				religion = hindu
-				size = 326183
-			}
-			create_pop = {
-				culture = british
-				size = 3072
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = panjabi
-				religion = sunni
-				size = 3000
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = panjabi
-				religion = hindu
-				size = 30200
 			}
 		}
 		region_state:GHW = {
@@ -1333,6 +1273,62 @@
 				culture = panjabi
 				religion = hindu
 				size = 30200
+			}
+		#}
+		#region_state:BIC = {	#Disabled for now to make the Opium Wars work better
+			create_pop = {
+				culture = panjabi
+				religion = sunni
+				size = 33867
+			}
+			create_pop = {
+				culture = avadhi
+				religion = hindu
+				size = 326183
+			}
+			create_pop = {
+				culture = british
+				size = 3072
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = panjabi
+				religion = sunni
+				size = 3000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = panjabi
+				religion = hindu
+				size = 30200
+			}
+		}
+	}
+	s:STATE_EASTERN_HIMALAYAS = {
+		region_state:SIK = {
+			create_pop = {
+				culture = tibetan
+				size = 60301
+			}
+			create_pop = {
+				culture = nepali
+				size = 24091
+			}
+		}
+		region_state:BHU = {
+			create_pop = {
+				culture = tibetan
+				size = 140396
+			}
+			create_pop = {
+				culture = nepali
+				size = 16004
+			}
+		}
+		region_state:AGP = {
+			create_pop = {
+				culture = kachin
+				size = 54000
 			}
 		}
 	}

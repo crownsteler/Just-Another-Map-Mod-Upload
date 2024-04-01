@@ -1,0 +1,294 @@
+﻿MILITARY_FORMATIONS = {
+	#Dutch East Indies
+	c:DEI ?= {
+		create_military_formation = { #About half was native troops
+			type = army
+			hq_region = sr:region_java
+			name = "Koninklijk Nederlands Indisch Leger"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WEST_JAVA
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_WEST_JAVA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CENTRAL_JAVA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_CENTRAL_JAVA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_EAST_JAVA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_EAST_JAVA
+				count = 1
+			}
+			
+			combat_unit = { #Barisankorps
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_EAST_JAVA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_CENTRAL_JAVA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_WEST_JAVA
+				count = 1
+			}
+			save_scope_as = army_knil
+		}
+
+		#create_character = { #already in character templates
+		#	is_general = yes
+		#	first_name = frans_david
+		#	last_name = cochius
+		#	historical = yes
+		#	culture = cu:dutch
+		#	hq = region_java
+		#	commander_rank = commander_rank_3
+		#	birth_date = 1787.13.2
+		#	interest_group = ig_armed_forces
+		#	ideology = ideology_moderate
+		#	traits = {
+		#		pious #From a family of preachers
+		#		meticulous #reorganised the army and instilled discipline
+		#		resupply_commander #reorganised the army and instilled discipline
+		#	}
+		#	save_scope_as = cr_cochius_general
+		#	on_created = {
+		#		set_variable = {
+		#			name = is_cochius
+		#		}				
+		#	}
+		#}
+		#
+		#scope:cr_cochius_general = {
+		#	transfer_to_formation = scope:army_knil
+		#}
+
+		#create_character = { #Retired 1835
+		#	is_general = yes
+		#	first_name = hubert_joseph_jean_lambert
+		#	last_name = de_stuers
+		#	historical = yes
+		#	culture = cu:dutch
+		#	hq = region_java
+		#	commander_rank = commander_rank_3
+		#	birth_date = 1788.11.16
+		#	interest_group = ig_armed_forces
+		#	ideology = ideology_moderate
+		#	traits = {
+		#		brave
+		#		surveyor
+		#		popular_commander #leading from the front
+		#	}
+		#	save_scope_as = cr_de_stuers_general
+		#	on_created = {
+		#		set_variable = {
+		#			name = is_de_stuers
+		#		}				
+		#	}
+		#}
+		#scope:cr_de_stuers_general = {
+		#	transfer_to_formation = scope:army_knil
+		#}
+		
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_malacca
+			name = "Sumatra Expeditie"
+
+			combat_unit = { #1103 European regulars attacked Bonjol apparently (Indonesian wiki)
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WEST_JAVA
+				count = 1
+			}
+			combat_unit = { #4130 native troops attacked Bonjol apparently (Indonesian wiki)
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_CENTRAL_JAVA
+				count = 2
+			}
+			combat_unit = { #4130 native troops attacked Bonjol apparently (Indonesian wiki)
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_MINANGKABAU
+				count = 1
+			}
+			combat_unit = { #Some Sepoys, probably Ghanese troops, but meh, participated in the siege of Bonjol apparently (Indonesian wiki)
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_EAST_JAVA
+				count = 1
+			}
+			save_scope_as = army_sumatra_expeditie
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Andreas_Victor
+			last_name = Michiels
+			historical = yes
+			culture = cu:dutch
+			hq = region_java
+			commander_rank = commander_rank_1
+			birth_date = 1797.5.30
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			traits = {			
+				ambitious
+				basic_political_operator
+			}
+			save_scope_as = cr_michiels_general
+			on_created = {
+				set_variable = {
+					name = is_cr_michiels
+				}				
+			}
+		}
+		scope:cr_michiels_general = {
+			transfer_to_formation = scope:army_sumatra_expeditie
+		}
+		
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_moluccas
+			name = "Ambon Garnizoen"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_MOLUCCAS
+				count = 1
+			}
+			save_scope_as = army_ambon_garnizoen
+		}
+
+		create_character = { #Assigned as governor of the Moluccas in 1837
+			is_general = yes
+			first_name = francois_vincent_henri_antoine
+			last_name = de_stuers
+			historical = yes
+			culture = cu:dutch
+			hq = region_moluccas
+			commander_rank = commander_rank_1
+			birth_date = 1792.11.29
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			traits = {			
+				brave
+			}
+			save_scope_as = cr_de_stuers_2
+			on_created = {
+				set_variable = {
+					name = is_cr_de_stuers_2
+				}				
+			}
+		}
+		scope:cr_de_stuers_2 = {
+			transfer_to_formation = scope:army_ambon_garnizoen
+		}
+		
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_makasser
+			name = "Makassar Garnizoen"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_SOUTH_CELEBES
+				count = 1
+			}
+			save_scope_as = army_makassar_garnizoen
+		}
+
+		create_character = { #Arrived in the indies 1837, don't know where he served, but needed somebody
+			is_general = yes
+			first_name = charles_pierre
+			last_name = schimpf
+			historical = yes
+			culture = cu:flemish
+			hq = region_makasser
+			commander_rank = commander_rank_1
+			birth_date = 1812.2.13
+			interest_group = ig_armed_forces
+			ideology = ideology_reformer
+			traits = {			
+				innovative #Numerous reforms in Suriname
+				master_bureaucrat #Numerous reforms in Suriname
+			}
+			save_scope_as = cr_schimpf
+			on_created = {
+				set_variable = {
+					name = is_schimpf
+				}				
+			}
+		}
+		scope:cr_schimpf = {
+			transfer_to_formation = scope:army_makassar_garnizoen
+		}
+	}
+	
+	c:MGK ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_java
+			name = "Army of Minangkabau"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_MINANGKABAU
+				count = 4
+			}
+			save_scope_as = army_of_minangkabau
+		}
+
+		create_character = { #Arrived in the indies 1837, don't know where he served, but needed somebody
+			is_general = yes
+			first_name = Tuanku
+			last_name = Tambusai
+			historical = yes
+			culture = cu:minangkabau
+			hq = region_java
+			commander_rank = commander_rank_1
+			birth_date = 1784.11.5
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = {			
+				persistent
+				pious
+				charismatic
+				experienced_defensive_strategist
+				stalwart_defender
+				forest_commander
+			}
+			save_scope_as = cr_tambusai
+			on_created = {
+				set_variable = {
+					name = is_tambusai
+				}				
+			}
+		}
+	}
+}
+
+

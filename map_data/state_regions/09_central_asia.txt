@@ -6,8 +6,9 @@
     farm = "x9F1D8F"
     mine = "x27E9C3"
     wood = "x0BDBDA"
-    arable_land = 30
+    arable_land = 45
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_dye_plantations" "bg_vineyard_plantations" } #Dyes for madder production at Derbent
+
 
 
 
@@ -38,6 +39,19 @@ STATE_KUBAN = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     capped_resources = {
         #bg_coal_mining = 32 #No coal reserves here at all?
         #bg_copper_mining = 18 #Karachay-Cherkessia, 1.51% copper
@@ -62,12 +76,38 @@ STATE_ARMENIA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     wood = "x3161E0"
     arable_land = 20
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_cotton_plantations" }
     capped_resources = {
         bg_logging = 4
         bg_copper_mining = 24 #Kajaran & Alaverdi
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -90,6 +130,19 @@ STATE_AZERBAIJAN = {
     capped_resources = {
         #bg_iron_mining = 15
         bg_lead_mining = 18 #Lead/zinc
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -156,6 +209,19 @@ STATE_ORENBURG = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
 
@@ -172,6 +238,19 @@ STATE_KAZAN = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_iron_mining = 45 #Bashkortostan (Tverdyshevs – Myasnikov)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -228,6 +307,19 @@ STATE_URALSK = {
     arable_land = 30
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {} #Volcanic hosted massive sulphide (VHMS) copper deposit at 50 Let Oktyabrya/Koktau/Priorskoe/Priorskoye 130 km east of Aktobe
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -351,6 +443,19 @@ STATE_KIRGHIZIA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
 
@@ -454,6 +559,19 @@ STATE_SEMIRECHE = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         bg_coal_mining = 28
         bg_logging = 4
     }
@@ -477,7 +595,33 @@ STATE_TURKISTAN = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         bg_lead_mining = 20 #lead/zinc mine #Maleesky mine?
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -554,6 +698,19 @@ STATE_KARAGANDA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     #bg_copper_mining = 60 #Aktogay, porphyry copper deposit
     }
 }
@@ -572,6 +729,19 @@ STATE_PASHTUNISTAN = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_opium_plantations" }
     capped_resources = {
         bg_coal_mining = 20 #Chamalang Coal Mines, high volatile C-A bituminous coal
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -608,6 +778,19 @@ STATE_WESTERN_AFGHANISTAN = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     capped_resources = {
         bg_iron_mining = 20
     #bg_copper_mining = 20
@@ -631,6 +814,19 @@ STATE_EASTERN_AFGHANISTAN = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     capped_resources = {
         bg_copper_mining = 45 #Mes Aynak
 
@@ -638,7 +834,33 @@ STATE_EASTERN_AFGHANISTAN = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         bg_iron_mining = 25 #Hajigak Mine
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -668,6 +890,19 @@ STATE_HERAT = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
 
@@ -687,6 +922,19 @@ STATE_MAZAR_I_SHARIF = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_tobacco_plantations" "bg_dye_plantations" }
     capped_resources = {
         bg_coal_mining = 32 #Shabashak/Dar-I-Suf
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -764,6 +1012,19 @@ STATE_BALUCHISTAN = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         #bg_lead_mining = 12 #Duddar mine
         #bg_copper_mining = 25 #Reko Diq mine, Saindak Copper Gold Project, porphyry deposit
         bg_fishing = 5
@@ -774,9 +1035,9 @@ STATE_BALUCHISTAN = {
 STATE_LHASA = {
     id = 453
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x03644A" "x06698A" "x082947" "x095F32" "x099AD7" "x0A6115" "x0BCE33" "x0FA96A" "x1371AA" "x15C347" "x186F38" "x1A5F8B" "x1A87DA" "x1B383B" "x1E3E6C" "x207060" "x20F060" "x216771" "x256241" "x25DC9E" "x286514" "x28F81E" "x2BB5C6" "x2CC414" "x2CE40E" "x2CE52F" "x2CFED9" "x373402" "x3A3E53" "x3B96A1" "x3DD93C" "x422487" "x445E17" "x466F9F" "x4A0FD0" "x4B57BE" "x4C1EF6" "x4CBB7C" "x4E1FF2" "x4E8A60" "x4F2329" "x4FD34F" "x503FF4" "x50C058" "x525CC9" "x527BB9" "x5327D3" "x54B9E5" "x5B12BD" "x5C42DC" "x5CB50A" "x5E58A8" "x61CFD5" "x63DA08" "x644AF9" "x6464CF" "x656DDC" "x672210" "x673438" "x67344F" "x6E4FEF" "x71143F" "x72C382" "x737CBB" "x75AFE7" "x76E336" "x79D100" "x7B33F1" "x7C0E53" "x7DC31D" "x80DA49" "x83DFE3" "x85295B" "x891526" "x892162" "x8A8982" "x8BB70D" "x8D0D90" "x8FE067" "x92480A" "x934A5C" "x9640C8" "x9BEF82" "x9F73DC" "xA07060" "xA1341A" "xA21042" "xA5D54A" "xA78672" "xAC5C8D" "xADDE52" "xADFAA4" "xB02837" "xB2F3ED" "xB5B0EE" "xB5EF16" "xBAB31D" "xBC0BCD" "xBD45E4" "xBDF268" "xC17AA1" "xC268D2" "xC3B349" "xCA11A0" "xCCCA27" "xCE3261" "xCEA5FB" "xD06F1B" "xD2139B" "xD238D2" "xD2C34D" "xD2D422" "xD73CA3" "xDD2AAD" "xDE11E9" "xDF30DF" "xE0BE04" "xE2D3FC" "xE47ADC" "xE701F3" "xEB2EA9" "xEC7BB2" "xEE6A3D" "xEEE60B" "xF520AD" "xF5C0FC" "xF658E0" "xF8346B" "xFC33A4" "xFE3A7A" }
+    provinces = { x63DA08 xEC7BB2 x4E8A60 xF658E0 x92480A x656DDC x8D0D90 x216771 xCA11A0 xA21042 x286514 x2CE52F x1371AA x8A8982 xB02837 x4A0FD0 xD06F1B x9BEF82 x03644A x3A3E53 x80DA49 x06698A x7C0E53 x4C1EF6 x4E1FF2 x1A5F8B xA07060 x4B57BE xBDF268 xC3B349 x4FD34F x1E3E6C x72C382 x0A6115 xFC33A4 x76E336 xA78672 x1B383B xBD45E4 x644AF9 xC268D2 x503FF4 xDD2AAD xADFAA4 x9640C8 x527BB9 xD2D422 x6E4FEF xE0BE04 x6464CF x20F060 xD73CA3 x2CFED9 x85295B x466F9F x9F73DC x67344F x891526 xB5EF16 x5327D3 x5CB50A x5E58A8 xE47ADC xFE3A7A x095F32 x5B12BD x256241 x79D100 x5C42DC x3B96A1 xCCCA27 x0BCE33 x54B9E5 x25DC9E xDE11E9 x737CBB x2CC414 x7B33F1 x934A5C xBAB31D x75AFE7 x207060 x672210 x892162 xB2F3ED xB5B0EE xE2D3FC x099AD7 x2CE40E x4F2329 x1A87DA x082947 x2BB5C6 x15C347 xCE3261 x50C058 x8BB70D x0FA96A xE701F3 xF520AD xAC5C8D x3DD93C xEEE60B x422487 xCEA5FB x445E17 x61CFD5 x71143F xC17AA1 }
     traits = { "state_trait_himalayas_mountains" }
-    impassable = { x4A0FD0 x71143F x422487 x207060 x1A87DA x2CE40E xCEA5FB x80DA49 xB5B0EE xBAB31D x373402 xBC0BCD x673438 xD2139B xA1341A x186F38 xEB2EA9 x525CC9 xDF30DF xF8346B xD238D2 xEE6A3D x4CBB7C x7DC31D x28F81E xD2C34D xA5D54A x8FE067 xADDE52 x83DFE3 xF5C0FC }
+    impassable = { x4A0FD0 x71143F x422487 x207060 x1A87DA x2CE40E xCEA5FB x80DA49 xB5B0EE xBAB31D }
     city = "x06698A"
     farm = "x8D0D90"
     mine = "xBDF268"
@@ -804,33 +1065,40 @@ STATE_NGARI = {
 }
 
 STATE_HIMALAYAS = {
+ #STATE_WESTERN_HHIMALAYAS
     #Nepal, Sikkim, Bhutan, Uttarakhand, Himachal Pradesh
     id = 455
     subsistence_building = "building_subsistence_rice_paddies"
-    provinces = { x0003C6 x01C109 x037AF5 x03A411 x11C815 x1619ED x1C3876 x2070E0 x213060 x218FFE x23C36A x251424 x25994F x29576A x3264B7 x388D2C x45AF2E x4874D9 x49337F x4D5FC1 x4DE9D5 x4F99DC x515E66 x572FB9 x584C9B x59BBCE x605021 x607020 x60B0DF x665E5B x6B646E x6E233E x733AB7 x73C2C6 x812FBE x833D63 x84F73C x8FF69F x920B51 x98BACD xA228F8 xA2C234 xA5D1EB xAD283F xAF11F0 xAF5B29 xBCD18E xC13072 xC1C87A xC1DA32 xC6179B xC6D4A8 xCE4DAE xCF1974 xD10C8F xD52082 xDA7F32 xDA8130 xE0B0E0 xE0C455 xE18F72 xE31B4E xE3A5A5 xE51929 xE5D3E0 xE60F80 xE77282 xF15B70 xF202E0 xF4C868 xFBA109 }
-    traits = { "state_trait_himalayas_mountains" }
-
+    provinces = { xBCD18E x29576A x4DE9D5 xC6179B x920B51 xC1C87A x812FBE xAF5B29 x25994F x11C815 x6E233E xE18F72 xAF11F0 x4874D9 x4D5FC1 xC13072 xA2C234 x605021 x833D63 x73C2C6 x23C36A xCE4DAE xA5D1EB x1C3876 xA228F8 x218FFE x515E66 x213060 x1619ED xDA8130 xC1DA32 xE51929 xC6D4A8 x49337F xAD283F xCF1974 x584C9B x037AF5 x03A411 x98BACD x0003C6 x251424 x572FB9 xF202E0 xE60F80 xE31B4E xD52082 x733AB7 x3264B7 x6B646E x607020 xF15B70 xE77282 x45AF2E x59BBCE xFBA109 xE3A5A5 xE0C455 xF4C868 x8FF69F }
     impassable = { x8FF69F x59BBCE xF202E0 xE0C455 } #Himachal Pradesh, don't forget to update 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    traits = { "state_trait_himalayas_mountains" }
     city = "x1619ED"
-    farm = "x29576A"
-    mine = "x4DE9D5"
-    wood = "xE0B0E0"
-    arable_land = 125
+    farm = "x03A411"
+    mine = "x833D63"
+    wood = "x29576A"
+    arable_land = 85
     arable_resources = { "bg_rice_farms" "bg_kashmir_ranches" "bg_tobacco_plantations" "bg_tea_plantations" }
+
+    capped_resources = {
+        bg_logging = 32
+    }
+}
+
+STATE_EASTERN_HIMALAYAS = {
+    #Sikkim, Bhutan, Himachal Pradesh
+    id = 3450
+    subsistence_building = "building_subsistence_rice_paddies"
+    provinces = { xE0B0E0 x2070E0 x388D2C xDA7F32 x665E5B x01C109 xD10C8F x4F99DC x84F73C xE5D3E0 x60B0DF x373402 xBC0BCD x673438 xD2139B xA1341A x186F38 xEB2EA9 x525CC9 xF8346B xD238D2 xEE6A3D x4CBB7C x7DC31D x28F81E xD2C34D xA5D54A x8FE067 xADDE52 x83DFE3 xF5C0FC }
+    impassable = { x373402 xBC0BCD x673438 xD2139B xA1341A x186F38 x525CC9 xF8346B xD238D2 xEE6A3D x4CBB7C x7DC31D x28F81E xD2C34D xA5D54A x8FE067 xADDE52 x83DFE3 xF5C0FC }
+    traits = { "state_trait_himalayas_mountains" }
+
+    city = "xD10C8F"
+    farm = "xE0B0E0"
+    mine = "xEB2EA9"
+    wood = "x388D2C"
+    arable_land = 45
+    arable_resources = { "bg_rice_farms" "bg_kashmir_ranches" "bg_tea_plantations" }
 
     capped_resources = {
         bg_logging = 32

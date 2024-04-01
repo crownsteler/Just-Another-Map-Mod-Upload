@@ -46,7 +46,7 @@ region_moluccas = {
 	graphical_culture = "asian"
 	capital_province = xAF6607
 	map_color = { 0.224 0.691 0.511 }
-	states = { STATE_CELEBES STATE_MOLUCCAS STATE_SUNDA_ISLANDS }
+	states = { STATE_CELEBES STATE_MOLUCCAS STATE_SUNDA_ISLANDS STATE_TIMOR STATE_WESTERN_NEW_GUINEA }
 }
 
 region_philippines = {
@@ -113,7 +113,7 @@ region_melanesia = {
 	graphical_culture = "asian"
 	capital_province = x0C7820
 	map_color = { 0.16 0.40 0.33 } 
-	states = { STATE_WESTERN_NEW_GUINEA STATE_EASTERN_NEW_GUINEA STATE_SOLOMON_ISLANDS STATE_BOUGAINVILLE STATE_FIJI STATE_VANUATU STATE_KANAK }
+	states = { STATE_EASTERN_NEW_GUINEA STATE_SOLOMON_ISLANDS STATE_BOUGAINVILLE STATE_FIJI STATE_VANUATU STATE_KANAK }
 }
 
 region_micronesia = {

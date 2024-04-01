@@ -61,14 +61,24 @@
  cr_desamortizacion_denied_ig_devout:0 "Mortmains Reinforced"
  cr_desamortizacion_denied_ig_liberals:0 "Mortmains Reinforced"
  
+ cr_colonising_alaska_modifier_rus:0 "Encourging Alaskan colonisation"
+ cr_colonising_alaska_modifier:0 "Colonisation of Alaska encouraged"
+ cr_colonising_california_modifier_rus:0 "Encourging Californian colonisation"
+ cr_colonising_california_modifier:0 "Colonisation of Alaska encouraged"
+ cr_colonising_russia_america_cooldown:0 "North American colonising cooldown"
+ 
  
  ### Interest Groups ###
  cr_approved_mining_permits:0 "Approved Mining Permits"
  cr_denied_mining_permits:0 "Denied Mining Permits"
  cr_surrendered_to_native_demands:0 "Surrendered to Native Demands"
+ cr_lobbying_normal:0 "Lobbying"
  cr_succesful_lobby_normal:1 "Succesful Lobby"
+ cr_failed_lobby_normal:0 "Failed Lobby"
 
  ### State Modifiers ###
+ cr_vestige_of_empire:0 "Vestige of Empire"
+ cr_lake_superior_copper_rush:0 "Lake Superior Copper Rush"
  cr_mining_permit_denied:0 "Denied Mining Permits"
  cr_unceded_territory_95:0 "Unceded Territory"
  cr_unceded_territory_75:0 "Unceded Territory"
@@ -83,7 +93,10 @@
  cr_government_improved_removal_regulations:0 "Improved Regulations Concerning the Removal of the Indians"
  cr_indians_removed_modifier:0 "Indians Removed"
  
- ### National Modifiers
+ ### Buildings Modifiers ###
+ cr_native_land_payments_building:0 "Native Land Payments"
+ 
+ ### National Modifiers ###
  cr_disunifying_the_kyrgyz:0 "Disunifying the clans"
  cr_dealing_with_the_kyrgyz:0 "Treating with the clans"
  cr_solomonic_dynasty:0 "A Three Millenia Old Dynasty"
@@ -94,3 +107,6 @@
  cr_treaty_of_doaksville:0 "Treaty of Doaksville"
  
  cr_desamortizacion_auctioned:0 "Desamortización"
+ 
+ ### Law enactment modifiers ###
+ cr_laws_papineau_report:0 "The Papineau Report"

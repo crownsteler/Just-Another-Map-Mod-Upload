@@ -1,0 +1,47 @@
+﻿
+#############################
+#							#
+#		   SIBERIA			#
+#							#
+#############################
+
+KMI = {
+	color = { 124 133 177 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { ugrian }	
+	capital = STATE_NENETSIA
+}
+KTY = {
+	color = { 75 91 211 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { ugrian }	
+	capital = STATE_OB
+}
+NNT = {
+	color = { 94 177 124 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { ugrian }	
+	capital = STATE_ARKHANGELSK
+}
+NSI = {
+	color = { 98 161 58 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { ugrian }	
+	capital = STATE_OB
+}

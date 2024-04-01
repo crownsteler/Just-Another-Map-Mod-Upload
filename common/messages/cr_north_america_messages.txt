@@ -1,0 +1,35 @@
+﻿cr_fort_ross_accepted = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/diplomatic_play.dds"
+	notification_type = toast
+}
+
+cr_fort_ross_rejected = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/diplomatic_play.dds"
+	notification_type = toast
+}
+
+cr_alaska_colonisation_encouraged = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/colonial.dds"
+	notification_type = toast
+}
+
+cr_alaska_colonisation_discouraged = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/colonial.dds"
+	notification_type = toast
+}
+
+cr_california_colonisation_encouraged = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/colonial.dds"
+	notification_type = toast
+}
+
+cr_california_colonisation_discouraged = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/colonial.dds"
+	notification_type = toast
+}

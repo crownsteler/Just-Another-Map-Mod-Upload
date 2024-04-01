@@ -1,0 +1,24 @@
+﻿cr_laws_papineau_report = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_law_enactment_success_add = 0.40
+}
+
+cr_laws_denied_mining_permits = { #add to cr_canadian_indian_treaties.1.b
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	political_movement_radicalism_add = 10
+}
+
+cr_laws_surveyors_threatend = { #add to cr_canadian_indian_treaties.2.a
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	political_movement_support_add = 0.1
+}
+
+cr_laws_caved_to_native_pressure = { #add to cr_canadian_indian_treaties.2.b
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	political_movement_radicalism_add = 10
+}
+
+cr_laws_incident_at_the_copper_mine = { #add to cr_canadian_indian_treaties.5
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	political_movement_radicalism_add = 10
+}

@@ -109,7 +109,7 @@ region_african_lakes = {
 	graphical_culture = "african"
 	capital_province = xA9859E
 	map_color = { 0.43 0.56 0.69 } #133 143 169 Alternative
-	states = { STATE_UGANDA STATE_RIFT_VALLEY STATE_TANGANYIKA }
+	states = { STATE_UGANDA STATE_RIFT_VALLEY STATE_TANGANYIKA STATE_RUANDA_URUNDI }
 }
 
 region_madagascar = {

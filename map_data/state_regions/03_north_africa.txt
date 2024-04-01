@@ -86,6 +86,20 @@ STATE_RED_SEA_COAST = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     #bg_minor_metals_mining = 5 #Tantalum, alumina
     }
     naval_exit_id = 3047
@@ -186,6 +200,20 @@ STATE_ERITREA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
     naval_exit_id = 3047
 }
@@ -246,20 +274,12 @@ STATE_KORDOFAN = {
     provinces = { x032C4F x0E24E1 x1646F0 x1647C9 x1B9423 x1D7674 x229089 x29D3A4 x2B2E2D x370E9B x3C65B2 x40DB33 x57FCDD x597D96 x61FBFB x626379 x62C35D x70A245 x74A2D3 x7AA326 x7C620A x902F75 x9B588A x9C967C xA02C79 xA0B800 xA0F49D xBBA919 xBD0B08 xC4132F xC41573 xCAA22A xD05060 xD5F5EC xD6D2BA xE0D838 xE18962 xE47124 xE5BBE8 xF762CD xFCDD6C xFCE1F9 }
     impassable = {}
     traits = { "state_trait_sahel" }
-    city = "x7C620A"
+    city = "x0E24E1"
     farm = "xD5F5EC"
     mine = "xFCE1F9"
     wood = "xD6D2BA"
     arable_land = 30
     arable_resources = { "bg_livestock_ranches" "bg_dye_plantations" } #dye_plantation = gum arabic
-
-
-
-
-
-
-
-
 
 
 
@@ -294,6 +314,20 @@ STATE_DARFUR = {
     wood = "x3B2BDC"
     arable_land = 20
     arable_resources = { "bg_livestock_ranches" "bg_dye_plantations" } #dye_plantation = gum arabic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -353,6 +387,20 @@ STATE_MARRAKECH = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     capped_resources = {
         bg_fishing = 8
         bg_iron_mining = 25
@@ -390,7 +438,21 @@ STATE_AL_RIF = {
     mine = "xDFB040"
     wood = "xA0B0C0"
     arable_land = 42
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_sugar_plantations" "bg_vineyard_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" } #"bg_sugar_plantations" removed because 4 resources
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     capped_resources = {
         bg_iron_mining = 28
         bg_logging = 6
@@ -415,6 +477,20 @@ STATE_TAZA = {
     arable_resources = { "bg_livestock_ranches" "bg_date_plantations" }
     capped_resources = {
         bg_lead_mining = 15 #Lead/silver
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -523,6 +599,20 @@ STATE_CONSTANTINE = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         bg_iron_mining = 45 #Ouenza
 
 
@@ -547,7 +637,35 @@ STATE_CONSTANTINE = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         bg_lead_mining = 15 #Lead/zinc at Tala Hamza
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -619,6 +737,20 @@ STATE_ORAN = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         bg_fishing = 4
     }
     naval_exit_id = 3032
@@ -639,6 +771,20 @@ STATE_TUNISIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_date_plantations" }
     capped_resources = {
         bg_lead_mining = 15 #Lead/zinc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -862,6 +1008,20 @@ STATE_SAHARA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
     resource = {
         type = "bg_oil_extraction"
@@ -987,71 +1147,11 @@ STATE_EASTERN_MALI = {
     provinces = { "x06D19A" "x086975" "x0EA985" "x109020" "x1221EE" "x19D3F5" "x227363" "x29246C" "x2A6A2D" "x320EE8" "x3F69A9" "x4B74E2" "x578B75" "x5F189B" "x67D3E7" "x688F7B" "x690C93" "x6AF386" "x70AF40" "x7169E0" "x726410" "x845355" "x852260" "x8CA2B5" "x8CCD97" "x8DC430" "x9090A0" "x941ED5" "x98DE99" "xA08311" "xA24880" "xA41A10" "xA8CAD8" "xAAB26B" "xC4B6B4" "xD5F34F" "xD7C2F6" "xEAE72D" "xEFB040" "xF0EFBF" "xFEB176" }
     traits = { "state_trait_malaria" "state_trait_sahel" "state_trait_niger_river" }
     city = "xF0EFBF"
-
-
-
-
-
-
-
-
-
-
     farm = "x70AF40"
-
-
-
-
-
-
-
-
-
-
     mine = "x5F189B"
-
-
-
-
-
-
-
-
-
-
     wood = "x320EE8"
-
-
-
-
-
-
-
-
-
-
     arable_land = 70
-    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_tobacco_plantations" "bg_dye_plantations" } #dye plantations = gum arabic
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_tobacco_plantations" "bg_dye_plantations" } #dye plantations = gum arabic
 
 
 
@@ -1067,73 +1167,13 @@ STATE_WESTERN_MALI = {
     provinces = { "x02FB90" "x048EAE" "x04C1C5" "x09666E" "x0FDAC9" "x10FA1F" "x160C3E" "x297B38" "x383F16" "x48A057" "x6190B1" "x7070BF" "x901121" "xBAA7F0" "xBC3771" "xC88528" "xE0BEAB" "xE4FDFA" "xE69A18" }
     traits = { "state_trait_malaria" "state_trait_sahel" }
     city = "xE69A18"
-
-
-
-
-
-
-
-
-
-
     farm = "x048EAE"
-
-
-
-
-
-
-
-
-
-
     mine = "x10FA1F"
-
-
-
-
-
-
-
-
-
-
     wood = "x160C3E"
-
-
-
-
-
-
-
-
-
-
     arable_land = 50
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_opium_plantations" }
     capped_resources = {
         bg_iron_mining = 35 #discoverable
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1158,7 +1198,7 @@ STATE_TIMBUKTU = {
     mine = "x61700A"
     wood = "x006306"
     arable_land = 26
-    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_dye_plantations" }
+    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_dye_plantations" }
 
 
 

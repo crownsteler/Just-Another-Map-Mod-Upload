@@ -1,0 +1,145 @@
+﻿#Regents
+ig_trait_friendly_faces = {
+	icon = "gfx/interface/icons/ig_trait_icons/be_fruitful_and_multiply.dds"
+	min_approval = loyal
+	
+	modifier = {
+		state_radicals_from_discrimination_mult = -0.1
+	}
+}
+
+ig_trait_corvee = {
+	icon = "gfx/interface/icons/ig_trait_icons/honest_work.dds"
+	min_approval = happy
+	
+	modifier = {
+		state_construction_mult = 0.1
+	}
+}
+
+ig_trait_helpful_natives = {
+	icon = "gfx/interface/icons/ig_trait_icons/noble_privileges.dds"
+	max_approval = unhappy
+	
+	modifier = {
+		state_radicals_from_sol_change_mult = 0.15
+	}
+}
+
+#KNIL
+ig_trait_marechaussee_te_voet = {
+	icon = "gfx/interface/icons/ig_trait_icons/patriotic_fervor.dds"
+	min_approval = loyal
+	
+	modifier = {
+		state_turmoil_effects_mult = -0.1
+	}
+}
+
+ig_trait_foward_presence = {
+	icon = "gfx/interface/icons/ig_trait_icons/veteran_consultation.dds"
+	min_approval = happy
+	
+	modifier = {
+		country_decree_cost_mult = -0.1
+	}
+}
+
+ig_trait_lax_enforcers = {
+	icon = "gfx/interface/icons/ig_trait_icons/xenophobia.dds"
+	max_approval = unhappy
+	
+	modifier = {
+		state_turmoil_effects_mult = 0.15
+	}
+}
+
+#Devout
+ig_trait_village_recordkeepers = {
+	icon = "gfx/interface/icons/ig_trait_icons/treasury_bonds.dds"
+	min_approval = loyal
+	
+	modifier = {
+		state_tax_capacity_add = 25
+		state_birth_rate_mult = 0.025
+	}
+}
+
+ig_trait_keepers_of_the_calendar = {
+	icon = "gfx/interface/icons/ig_trait_icons/divine_right.dds"
+	min_approval = happy
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.1
+		building_group_bg_plantations_throughput_add = 0.1
+		building_group_bg_ranching_throughput_add = 0.1
+	}
+}
+
+ig_trait_power_of_islam = {
+	icon = "gfx/interface/icons/ig_trait_icons/materiel_waste.dds"
+	max_approval = unhappy
+	
+	modifier = {
+		state_radicals_from_discrimination_mult = 0.2
+	}
+}
+
+#Rural Folk
+ig_trait_benefits_of_civilisation = {
+	icon = "gfx/interface/icons/ig_trait_icons/propagandists.dds"
+	min_approval = loyal
+	
+	modifier = {
+		state_conversion_mult = 0.2
+	}
+}
+
+ig_trait_kampongs= {
+	icon = "gfx/interface/icons/ig_trait_icons/family_ties.dds"
+	min_approval = happy
+	
+	modifier = {
+		state_working_adult_ratio_add = 0.05
+	}
+}
+
+ig_trait_oostindisch_doof = {
+	icon = "gfx/interface/icons/ig_trait_icons/oostindisch_doof.dds"
+	max_approval = unhappy
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = -0.1
+		building_group_bg_plantations_throughput_add = -0.1
+		building_group_bg_ranching_throughput_add = -0.1
+		state_construction_mult = -0.1
+	}
+}
+
+#Petty Bourgeoisie
+ig_trait_widely_traveled = {
+	icon = "gfx/interface/icons/ig_trait_icons/job_creators.dds"
+	min_approval = loyal
+	
+	modifier = {
+			country_tech_spread_mult = 0.1
+	}
+}
+
+ig_trait_porters= {
+	icon = "gfx/interface/icons/ig_trait_icons/middle_managers.dds"
+	min_approval = happy
+	
+	modifier = {
+		state_infrastructure_mult = 0.1
+	}
+}
+
+ig_trait_moneylenders = {
+	icon = "gfx/interface/icons/ig_trait_icons/pious_fiction.dds"
+	max_approval = unhappy
+	
+	modifier = {
+		state_aristocrats_investment_pool_efficiency_mult = 0.1
+	}
+}

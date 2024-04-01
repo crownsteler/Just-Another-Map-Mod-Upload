@@ -1,0 +1,293 @@
+﻿je_cr_russian_america_colonise_alaska_button = {
+	name = "je_cr_russian_america_colonise_alaska_button"
+	desc = "je_cr_russian_america_colonise_alaska_button_desc"
+
+	visible = {   
+		c:ASK = { is_subject_of = ROOT }
+		NOT = { 
+			has_modifier = cr_colonising_alaska_modifier_rus 			
+		}
+	}
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			add = 10
+			authority >=450
+		}
+	}
+	
+	possible = {
+		institution_investment_level = {
+			institution = institution_colonial_affairs
+			value >= 2
+		}
+		
+	}
+
+	effect = {
+		add_modifier = {
+			name = cr_colonising_alaska_modifier_rus
+			#months = short_modifier_time
+		}
+		c:ASK = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_ALASKA
+				}
+				add_modifier = {
+					name = cr_colonising_alaska_modifier
+					#months = short_modifier_time
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_law = law_type:law_colonial_resettlement }
+				}
+				activate_law = law_type:law_colonial_resettlement
+			}
+			post_notification = cr_alaska_colonisation_encouraged
+		}
+		add_modifier = {
+			name = cr_colonising_russia_america_cooldown
+			months = short_modifier_time
+		}
+	}
+}
+je_cr_russian_america_colonise_alaska_stop_button = {
+	name = "je_cr_russian_america_colonise_alaska_stop_button"
+	desc = "je_cr_russian_america_colonise_alaska_stop_button_desc"
+
+	visible = {  
+		c:ASK = { is_subject_of = ROOT }
+		has_modifier = cr_colonising_alaska_modifier_rus
+	}
+
+	ai_chance = {
+		base = 5
+		modifier = {
+			add = 100
+			authority <= 150
+		}
+	}
+	
+	possible = {
+		NOT = { 
+			has_modifier = cr_colonising_russia_america_cooldown 
+		}
+	}
+
+	effect = {
+		remove_modifier = cr_colonising_alaska_modifier_rus
+		add_modifier = {
+			name = cr_colonising_russia_america_cooldown
+			months = short_modifier_time
+		}
+		c:ASK = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_ALASKA
+				}
+				remove_modifier = cr_colonising_alaska_modifier
+			}
+			post_notification = cr_alaska_colonisation_discouraged
+		}
+	}
+}
+
+je_cr_russian_america_colonise_california_button = {
+	name = "je_cr_russian_america_colonise_california_button"
+	desc = "je_cr_russian_america_colonise_california_button_desc"
+
+	visible = {   
+		c:ASK = { 
+			is_subject_of = ROOT 
+			#any_scope_state = { 
+			#	state_region = s:STATE_CALIFORNIA
+			#}
+		}
+		NOT = { 
+			has_modifier = cr_colonising_california_modifier_rus 			
+		}
+	}
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			add = 10
+			authority >= 550
+		}
+	}
+	
+	possible = {
+		c:ASK = { 
+			is_subject_of = ROOT 
+			any_scope_state = { 
+				state_region = s:STATE_CALIFORNIA
+			}
+		}
+		institution_investment_level = {
+			institution = institution_colonial_affairs
+			value >= 3
+		}
+	}
+
+	effect = {
+		add_modifier = {
+			name = cr_colonising_california_modifier_rus
+			#months = short_modifier_time
+		}
+		c:ASK = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_CALIFORNIA
+				}
+				add_modifier = {
+					name = cr_colonising_california_modifier
+					#months = short_modifier_time
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_law = law_type:law_colonial_resettlement }
+				}
+				activate_law = law_type:law_colonial_resettlement
+			}
+			post_notification = cr_california_colonisation_encouraged
+		}
+		add_modifier = {
+			name = cr_colonising_russia_america_cooldown
+			months = short_modifier_time
+		}
+	}
+}
+je_cr_russian_america_colonise_california_stop_button = {
+	name = "je_cr_russian_america_colonise_california_stop_button"
+	desc = "je_cr_russian_america_colonise_california_stop_button_desc"
+
+	visible = {   
+		c:ASK = { 
+			is_subject_of = ROOT 
+			any_scope_state = {
+				state_region = s:STATE_CALIFORNIA
+			}
+		}
+		has_modifier = cr_colonising_california_modifier_rus
+	}
+
+	ai_chance = {
+		base = 5
+		modifier = {
+			add = 100
+			authority <= 250
+		}
+	}
+	
+	possible = {
+		not = { has_modifier = cr_colonising_russia_america_cooldown }
+	}
+
+	effect = {
+		add_modifier = {
+			name = cr_colonising_russia_america_cooldown
+			months = short_modifier_time
+		}
+		remove_modifier = cr_colonising_california_modifier_rus
+		c:ASK = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_CALIFORNIA
+				}
+				remove_modifier = cr_colonising_california_modifier
+			}
+			post_notification = cr_california_colonisation_discouraged
+		}
+	}
+}
+
+je_cr_russian_america_annex_it = {
+	name = "je_cr_russian_america_annex_it_button"
+	desc = "je_cr_russian_america_annex_it_button_desc"
+
+	visible = {   
+		c:ASK = { 
+			is_subject_of = ROOT 
+		}
+	}
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			add = 10
+			c:ASK = { is_ai = yes } 
+		}
+	}
+	
+	possible = {  
+		c:ASK = { 
+			is_subject_of = ROOT 
+		}
+		has_law = law_type:law_colonial_resettlement
+		institution_investment_level = {
+			institution = institution_colonial_affairs
+			value >= 4
+		}
+		NOT = { has_modifier = cr_colonising_russia_america_cooldown }
+	}
+
+	effect = {
+		annex = c:ASK
+		if = {
+			limit = {
+				has_modifier = cr_colonising_alaska_modifier_rus
+			}
+			remove_modifier = cr_colonising_alaska_modifier_rus
+		}
+		if = {
+			limit = {
+				has_modifier = cr_colonising_california_modifier_rus
+			}
+			remove_modifier = cr_colonising_california_modifier_rus
+		}
+		c:ASK = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_ALASKA
+					has_modifier = cr_colonising_alaska_modifier
+				}
+				remove_modifier = cr_colonising_alaska_modifier
+			}
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_CALIFORNIA
+					has_modifier = cr_colonising_california_modifier
+				}
+				remove_modifier = cr_colonising_california_modifier
+			}
+		}
+		show_as_tooltip = {
+			c:ASK = {
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_ALASKA
+					}
+					set_state_type = unincorporated
+				}
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_CALIFORNIA
+					}
+					set_state_type = unincorporated
+				}
+			}
+		}
+		hidden_effect = {
+			s:STATE_ALASKA.region_state:RUS = {
+				set_state_type = unincorporated
+			}
+			s:STATE_CALIFORNIA.region_state:RUS = {
+				set_state_type = unincorporated
+			}
+		}
+	}
+}

@@ -32,7 +32,7 @@ zanzibar.1 = {
 		if = {
 			limit = {
 				any_scope_state = {
-					state_region = STATE_OMAN
+					state_region = s:STATE_OMAN
 				}
 			}
 			set_capital = STATE_OMAN

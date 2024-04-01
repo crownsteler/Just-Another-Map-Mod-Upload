@@ -1,0 +1,21 @@
+﻿
+ideology_frontier_expansionist_leader_cr = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_frontier_expansionist.dds"
+	
+	character_ideology = yes
+
+	lawgroup_colonization = {		
+		law_no_colonial_affairs = disapprove
+		law_colonial_resettlement = neutral
+		law_frontier_colonization = strongly_approve
+		law_colonial_exploitation = neutral
+	}
+	
+	possible = {
+		alway = no
+	}
+	
+	leader_weight = {
+		value = 0
+	}
+}

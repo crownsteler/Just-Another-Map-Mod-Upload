@@ -14,10 +14,21 @@ cr_surrendered_to_native_demands = {
 	interest_group_approval_add = -1
 }
 
+cr_lobbying_normal = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_pol_str_mult = 0.05
+}
+
 cr_succesful_lobby_normal = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	interest_group_approval_add = 1
 	interest_group_pol_str_mult = 0.05
+}
+
+cr_failed_lobby_normal = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_approval_add = -1
+	interest_group_pol_str_mult = -0.05
 }
 
 cr_desamortizacion_ig_devout = {

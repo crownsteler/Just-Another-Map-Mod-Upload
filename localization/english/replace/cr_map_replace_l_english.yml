@@ -75,7 +75,7 @@
  STATE_TLEMCEN:0 "Oran"
  STATE_INNER_MOROCCO:0 "Souss"
  STATE_INNER_MAURITANIA:0 "El Djouf"
- STATE_EGYPTIAN_DESERT:0 "The Western Oasis"
+ STATE_EGYPTIAN_DESERT:0 "The Western Oases"
  STATE_GELRE:0 "Gelderland"
  STATE_ALSACE_LORRAINE:0 "Alsace"
  STATE_SUNDA_ISLANDAS:0 "Soenda Islands"
@@ -95,6 +95,7 @@
  STATE_ROSTOV:0 "Don Voisko"
  STATE_GALICH:0 "Nizhny Novgorod"
  STATE_TVER:0 "Yaroslavl"
+ STATE_HIMALAYAS:0 "Western Himalayas"
  
  #Strategic Regions
  region_bosphorus:0 "the Bosphorus"

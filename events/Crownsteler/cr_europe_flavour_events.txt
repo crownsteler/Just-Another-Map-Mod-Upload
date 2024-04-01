@@ -124,20 +124,9 @@ cr_europe_events.20 = { #An Issue of Ownership
 	immediate = {
 		clear_scope = cr_fernado_po_seller
 		save_scope_as = cr_fernado_po_seller
-		if = {
-			NOT = {
-				var:cr_pressed_the_fernando_po_issue = 0					
-			}
-			set_variable = {
-				name = cr_pressed_the_fernando_po_issue
-				value = 1
-			}
-		}
-		else = {
-			change_variable = {
-				name = cr_pressed_the_fernando_po_issue
-				add = 1
-			}
+		change_variable = {
+			name = cr_pressed_the_fernando_po_issue
+			add = 1
 		}
 		random_state = {
 			limit = {
@@ -354,16 +343,25 @@ cr_europe_events.20 = { #An Issue of Ownership
 			}		
 		}
 		change_infamy = 2
-		#s:STATE_SAO_TOME_AND_PRINCIPE = { #Need to figure out how to only target the British part.
-		#	add_claim = scope:cr_fernado_po_claimant
-		#}
+		if = {
+			limit = {
+				scope:cr_fernado_po_claimant = {
+					NOT = { has_claim = s:STATE_SAO_TOME_AND_PRINCIPE }
+				}
+			}
+			s:STATE_SAO_TOME_AND_PRINCIPE = { #Need to figure out how to only target the British part.
+				add_claim = scope:cr_fernado_po_claimant
+			}
+		}
 		change_relations = {
 			country = scope:cr_fernado_po_claimant
 			value = -25
 		}
+		custom_tooltip = cr_europe_events.20.b_tt_consequence
+
 		hidden_effect = {
 			clear_variable = cr_pressed_claimed_offer_obligation
-			clear_variable = cr_pressed_the_fernando_po_issue
+			#clear_variable = cr_pressed_the_fernando_po_issue
 		}
 		ai_chance = {
 			base = 0
@@ -571,9 +569,6 @@ cr_europe_events.23 = { #Foreign Office Blunder
 		video = "unspecific_politicians_arguing"
 	}
 
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
-
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
 
 	duration = 3
@@ -628,9 +623,6 @@ cr_europe_events.24 = { #Foreign Office Blunder
 	event_image = {
 		video = "unspecific_politicians_arguing"
 	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
 
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
 
@@ -726,9 +718,6 @@ cr_europe_events.28 = { #The Return of Fernando Po
 		video = "unspecific_signed_contract"
 	}
 
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
-
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
 
 	duration = 3
@@ -746,41 +735,50 @@ cr_europe_events.28 = { #The Return of Fernando Po
 
 cr_europe_events.29 = { #The Loss of Fernando Po
 	type = country_event
-	placement = scope:cr_fernado_po_seller.capital
+	placement = p:x902089
 
 	title =  cr_europe_events.29.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				desc =  cr_europe_events.29.desc_our_slavery
-				trigger = {
-					has_variable = cr_slavery_return_of_fernando_po
-					has_law = law_type:law_slave_trade
-				}
-			}
-			triggered_desc = {
-				desc =  cr_europe_events.29.desc_their_slavery
-				trigger = {
-					has_variable = cr_slavery_return_of_fernando_po
-					NOT = { has_law = law_type:law_slave_trade }
-				}
-			}
-			triggered_desc = {
-				desc = cr_europe_events.28.desc_regular
-				trigger = {
-					always = yes
-				}
-			}
-		}
-	}
+	desc = cr_europe_events.29.desc
+	#desc = {
+	#	first_valid = {
+	#		triggered_desc = {
+	#			desc =  cr_europe_events.29.desc_our_slavery
+	#			trigger = {
+	#				has_variable = cr_slavery_return_of_fernando_po
+	#				has_law = law_type:law_slave_trade
+	#			}
+	#		}
+	#		triggered_desc = {
+	#			desc =  cr_europe_events.29.desc_their_slavery
+	#			trigger = {
+	#				has_variable = cr_slavery_return_of_fernando_po
+	#				NOT = { has_law = law_type:law_slave_trade }
+	#			}
+	#		}
+	#		triggered_desc = {
+	#			desc = cr_europe_events.28.desc_regular
+	#			trigger = {
+	#				always = yes
+	#			}
+	#		}
+	#	}
+	#}
 	#flavor =  cr_europe_events.29.f
 
 	event_image = {
 		video = "unspecific_politicians_arguing"
 	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
+	
+	immediate = {
+		clear_scope = cr_fernado_po_province
+		random_state = {
+			limit = {
+				state_region = s:STATE_SAO_TOME_AND_PRINCIPE
+				owner = scope:cr_fernado_po_claimant
+			}
+			save_scope_as = cr_fernado_po_province
+		}
+	}
 
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
 
@@ -788,12 +786,22 @@ cr_europe_events.29 = { #The Loss of Fernando Po
 
 
 	option = {
-		name =  cr_europe_events.29.a
-		custom_tooltip = cr_europe_events.29.a_tt
-		custom_tooltip = cr_europe_events.29.a_tt_2
-		change_relations = {
-			country = scope:cr_fernado_po_owner
-			value = -25
+		name = cr_europe_events.20.a_nWAS
+		show_as_tooltip = {
+			scope:cr_fernado_po_seller = {
+				set_owes_obligation_to = {
+					country = scope:cr_fernado_po_claimant
+					setting = no
+				}
+			}
+			s:STATE_SAO_TOME_AND_PRINCIPE = {
+				set_owner_of_provinces = {
+					country = scope:cr_fernado_po_claimant
+					provinces = {
+						x902089
+					}
+				}
+			}			
 		}
 		hidden_effect = {
 			remove_variable = cr_normal_loss_of_fernando_po

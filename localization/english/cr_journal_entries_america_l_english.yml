@@ -8,7 +8,7 @@
  indian_cr_removal_fail_tt:0 "No Cherokee [Concept('concept_pop', '$concept_pops$')] remain in the United States"
  
  je_cr_indian_removal_button_a_choctaw:0 "Start the Choctaw removal"
- je_cr_indian_removal_button_a_choctaw_desc:0 ""
+ je_cr_indian_removal_button_a_choctaw_desc:0 "We have finished the Choctaw Removal."
  je_cr_indian_removal_button_a_choctaw_finished:0 "We have finished the Choctaw Removal"
  je_cr_indian_removal_button_b_chickasaw:0 "Start the Chickasaw removal"
  je_cr_indian_removal_button_b_chickasaw_desc:0 "Under the Treaty of Pontotoc Creek the Chickasaw have agreed to sell their remaining lands east of the Mississippi and to remove themselves west, but only when a suitable tract of land to move to has been found."
@@ -16,7 +16,7 @@
  je_cr_indian_removal_button_b_chickasaw_tt_b:0 "The Chickasaw have #variable not#! yet started their journey west"
  je_cr_indian_removal_button_b_chickasaw_effect:0 "The removal of the Chickasaw Nation will start"
  je_cr_indian_removal_button_c_creek:0 "Start the Creek removal"
- je_cr_indian_removal_button_c_creek_desc:0 "Start the Creek removal"
+ je_cr_indian_removal_button_c_creek_desc:0 "While under the Treaty of Cussetta the Creek ceded their lands east of the Mississippi and agreed to remove themselves west, a provision in the treaty allowed the Creek who so desired to remain east and be granted individual alotments of land. Invoked en mass this provision has resulted in vast area's of Alabama remaining de facto Creek land.\n\nShould we desire te remedy this situation and open the whole of Alabama up to settlement we should seek to renegotiate the treaty... Or find a provocation to ignore it."
  je_cr_indian_removal_button_c_creek_tt:0 "A suitable provocation has been found"
  je_cr_indian_removal_button_b_creek_tt_b:0 "The Creek have #variable not#! yet started their journey west"
  je_cr_indian_removal_button_d_cherokee_treaty:0 "Sign a removal treaty with the Cherokee"
@@ -41,8 +41,9 @@
  
  
  je_cr_robinson_treaties:1 "The Lake Superior Copper Rush"
- je_cr_robinson_treaties_reason:0 "Traditional the economy of the shores of Lake Superiour has revolved around fur trading, with Ojibwe trappers providing beaver pelts. First to French Voyageurs, and now to the Hudson Bay Company. And while copper deposits have been known for centuries, exploration has so far not amounted to much. This is set to change, however, as large deposits of copper have been found across the lake in Michigan. Hopes are high that similar deposits can found on the northern shore and fortunes can be made.\n\nHigh as the hopes may be, there is the small matter of land ownership to be dealt with: For the local Ojibwe still hold the aboriginal title to the land, and -under the stipulations of the Royal Proclamation of 1763- no development can take place without their consent.\n\nThe $ig_industrialists$ are therefore pressuring the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] to open up the region to economic development by entering into a treaty with the Ojibwe."
- je_cr_robinson_treaties_complete_tt:0 "Triggers the #B The Robinson Treaties#! Event
+ je_cr_robinson_treaties_reason:0 "Traditional the economy of the shores of Lake Superiour has revolved around fur trading with Ojibwe trappers providing beaver pelts. First to French Voyageurs, and now to the Hudson Bay Company. And while copper deposits have been known for centuries, exploration has so far not amounted to much. This is set to change, however, as large deposits of copper have been found across the lake in Michigan. Hopes are high that similar deposits can found on the northern shore and fortunes can be made.\n\nHigh as the hopes may be, there is the small matter of land ownership to be dealt with: For the local Ojibwe still hold the aboriginal title to the land, and -under the stipulations of the Royal Proclamation of 1763- no development can take place without their consent.\n\nThe $ig_industrialists$ are therefore pressuring the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] to open up the region to economic development by entering into a treaty with the Ojibwe."
+ je_cr_robinson_treaties_complete_tt:0 "Triggers the #B The Robinson Treaties#! Event"
+ je_cr_robinson_treaties_fail_on_timeout_tt:0 "#variable 10 years#! have passed"
  
  je_cr_numbered_treaties:1 "The Numbered Treaties"
  je_cr_numbered_treaties_reason:0 "With the integration of Rupert's Land into [ROOT.GetCountry.GetNameNoFlag] comes the daunting task of administrating the region. For as vast as the region is, so sparse is its population. What population exists consists, by large and far, of Indians who's contribution is minor aside from pelts they supply to the #variable Hudson Bay Company#!.\n\n If we are to turn this vast land to productive use -and we can for it is rich in timber, mineral deposits and especially fertile land- we will need to induce people to settle there. However before any such endeavor we will have convince the Indians already living there to transfer the land to us. For under the Royal Proclamation of 1763, they hold an aboriginal title to the land."
@@ -62,11 +63,25 @@
  
  #North American Fur Trade
  je_cr_russian_america:1 "The Russian-American Company"
- je_cr_russian_america_reason:0 "It was otter and the beaver which brought us to the shores of Alaska. For their valuable pelts had formed the impetus for the Eastward Expasion. First across Siberia, then across the Far East, and finally across the Bering Strait into the Americas, always in the pursuit of new hunting grounds, always pursuing new riches. The Russian-American Company now stands as the furthest outposts of our empire, controlling the Maritime fur trade from their headquarters at New Novo-Arkhangelsk.\n\nYet the future of the company is uncertain: The company relies extensively on lucrative sea otter pelts to supply the Chinese fur market, but the population of sea otters is already showing signs of decline, though rich pelting grounds in the American interiour might create a new economic lifeline. More troubling is the remoteness of the territory: Hard to supply and defend, should the Mexicans, Americans or -worse- the British decide to turn their eyes on the territory, they could overwhelming it easily." #Somehow work into a reference to the Promyshlenniki
+ je_cr_russian_america_reason:0 "It was otter and the beaver which brought us to the shores of Alaska. For their valuable pelts had formed the impetus for the Eastward Expasion. First across Siberia, then across the Far East, and finally across the Bering Strait into the Americas, always in the pursuit of new hunting grounds, always pursuing new riches. The Russian-American Company now stands as the furthest outposts of our empire, controlling the Maritime fur trade from their headquarters at Novo-Arkhangelsk.\n\nYet the future of the company is uncertain: The company relies extensively on lucrative sea otter pelts to supply the Chinese fur market, but the population of sea otters is already showing signs of decline, though rich pelting grounds in the American interiour might create a new economic lifeline. More troubling is the remoteness of the territory: Hard to supply and defend, should the Mexicans, Americans or -worse- the British decide to turn their eyes on the territory, they could overwhelming it easily." #Somehow work into a reference to the Promyshlenniki
+ je_cr_russian_america_fail_tt:0 "Neither [THIS.GetCountry.GetName] nor any [THIS.GetCountry.GetAdjectiveNoFlag] [Concept('concept_subject', '$concept_subject$')] owns any territory in Alaska"
  je_cr_russian_america_resolve_the_chain:0 "TBD"
- je_cr_fort_ross:1 "The California Fur Rush"
- je_cr_fort_ross_goal:0 "#variable 10#! years have passed"
+ je_cr_russian_america_colonise_alaska_button:0 "Encourage Alaskan colonisation"
+ je_cr_russian_america_colonise_alaska_button_desc:0 "Our hold on Alaska in tenuous due to its remoteness and its small population. Should we desire to secure our control over Alaska we ought to encourage more settlement.\n\nThere is a #variable 2 year#! cooldown on revoking this or actions related to Russian California."
+ je_cr_russian_america_colonise_alaska_stop_button:0 "Stop encouraging Alaskan colonisation"
+ je_cr_russian_america_colonise_alaska_stop_button_desc:0 "We are currently encouraging the colonisation of Alaska. Yet, as priorities shift, we could halt this project for now.\n\nThere is a #variable 2 year#! cooldown on revoking this or actions related to Russian California."
+ je_cr_russian_america_colonise_california_button:0 "Encourage Californian colonisation"
+ je_cr_russian_america_colonise_california_button_desc:0 "The territory of Alaska is rich in pelts and other resources but poor in arable land, while at the same time its remoteness makes it virtually impossible to resupply. Should we desire to grow our colony there, we ought to look south, to California and its rich agricultural lands, to secure the supply of food and the future prosperity of Alaska.\n\nThere is a #variable 2 year#! cooldown on revoking this or actions related to Russian California."
+ je_cr_russian_america_colonise_california_stop_button:0 "Stop encouraging Californian colonisation"
+ je_cr_russian_america_colonise_california_stop_button_desc:0 "We are currently encouraging the colonisation of California. Yet, as priorities shift, we could halt this project for now.\n\nThere is a #variable 2 year#! cooldown on revoking this or actions related to Russian California."
+ je_cr_russian_america_annex_it_button:0 "Integrate Russian America"
+ je_cr_russian_america_annex_it_button_desc:0 "Integrate Russian America"
+  
+ je_cr_fort_ross:1 "End of the California Fur Rush"
+ je_cr_fort_ross_goal:0 "#variable 5#! years have passed"
  je_cr_fort_ross_reason:0 "When the news broke that Californian otter skins sold in China could fetch a profit in excess of 1,000%, it was not long before British, Bostonian, Mexican traders and -of course- Russian promyshlenniki decended upon the Pacific coast of America. For a few glorious decades excessive fortunes could be made to all who ventured this far. But alas all good things must come to end. Where once thousands of pelts could be harvested every season, a few hundred is already considerd a good harvest, with most not even coming from the lucrative sea otter, but from fur seals instead.\n\nWith stocks so severely depleted, it will not be long before the Californian fur trade will end completely.\n\nFort Ross, our outpost in the region, therefore stands at a cross roads: with a major investment it could, perhaps, be turned into an agricultural colony to supply our posts in Alaska, or it will slowly wither and die as the last otters and fur seals are harvested in the region."
+ je_cr_fort_ross_complete_tt_a:0 "We have secured our colony in [SCOPE.sState('california_scope').GetName] by taking control of the #variable San Francisco Bay#!"
+ je_cr_fort_ross_complete_tt_b:0 "Russia has secured our colony in [SCOPE.sState('california_scope').GetName] inland to the #variable Sacramento River#! or taken control of the #variable San Francisco Bay#!"
  je_cr_fort_ross_goal_complete_tt:0 "We have expanded our colony in [SCOPE.sState('california_scope').GetName] inland to the #variable Sacramento River#! or taken control of the #variable San Francisco Bay#!"
  je_cr_fort_ross_goal_fail_tt:0 "We failed to expanded our colony in [SCOPE.sState('california_scope').GetName] inland to the #variable Sacramento River#! or to taken control of the #variable San Francisco Bay#!"
  

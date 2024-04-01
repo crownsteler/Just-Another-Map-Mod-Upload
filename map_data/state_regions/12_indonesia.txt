@@ -19,29 +19,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         bg_coal_mining = 32
         bg_lead_mining = 24 #tin mining
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -162,7 +142,7 @@ STATE_EAST_BORNEO = {
     wood = "xF6BB4E"
     arable_land = 48
     arable_resources = {  #Rice, maise, coconuts, pepper, tobacco, coffee, sugar, rubber
-"bg_rice_farms" "bg_coffee_plantations" "bg_sugar_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
+"bg_rice_farms" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_coal_mining = 35
         bg_logging = 20
@@ -192,7 +172,7 @@ STATE_WEST_JAVA = {
     arable_land = 185
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_sulfur_mining = 15
+        #bg_sulfur_mining = 15
         bg_fishing = 11
     }
     resource = {
@@ -216,7 +196,7 @@ STATE_EAST_JAVA = {
     arable_land = 95
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_sulfur_mining = 30
+        bg_sulfur_mining = 35
         bg_logging = 10
         bg_fishing = 10
     }
@@ -241,7 +221,7 @@ STATE_CENTRAL_JAVA = {
     arable_land = 175
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_sulfur_mining = 32
+        bg_sulfur_mining = 28
         bg_fishing = 8
     }
     #resource = {
@@ -362,12 +342,13 @@ STATE_BILLITON = {
 STATE_MINANGKABAU = {
     id = 3943
     subsistence_building = "building_subsistence_rice_paddies"
-    provinces = { "x00F15A" "x1F6A11" "x257D2C" "x4CF770" "x4E9BC1" "x79A66E" "x85B004" "x8A3E15" "x9D4BD1" "xD2D88C" "xDC4677" "xE0A0F0" "xE4C2D6" "xEAF2DC" }
+    provinces = { "x00F15A" "x1F6A11" "x257D2C" "x4CF770" "x4E9BC1" "x79A66E" "x85B004" "x8A3E15" "x9D4BD1" "xD2D88C" "xDC4677" "xE0A0F0" "xE4C2D6" "xEAF2DC" "x3D488C" "x9EAF45" }
+    prime_land = { "x4E9BC1" }
     traits = { state_trait_cr_barisan_mountains }
-    city = "x9D4BD1"
+    city = "x257D2C"
     port = "x8A3E15"
     farm = "x257D2C"
-    mine = "x257D2C"
+    mine = "x9EAF45"
     wood = "x4E9BC1"
     arable_land = 45
     arable_resources = { bg_rice_farms bg_livestock_ranches bg_coffee_plantations bg_dye_plantations bg_tobacco_plantations bg_sugar_plantations }
@@ -463,7 +444,7 @@ STATE_TAPANULI = {
     arable_resources = { bg_rice_farms bg_livestock_ranches bg_banana_plantations }
     capped_resources = {
         #bg_iron_mining = 4
-        #bg_sulfur_mining = 2
+        bg_sulfur_mining = 24
         bg_logging = 6
         bg_fishing = 6
     }
@@ -478,16 +459,17 @@ STATE_WESTERN_NEW_GUINEA = {
     id = 548
     subsistence_building = "building_subsistence_farms"
     provinces = { "x059DEC" "x0A9EBC" "x0DC0D2" "x12A1F1" "x1650EE" "x17B500" "x185D9A" "x1C9F62" "x1EFBC7" "x300043" "x30EFC8" "x35E1AE" "x39DD3B" "x3E2E8C" "x3ECEED" "x3F6260" "x4013C3" "x42EB5E" "x43C265" "x459264" "x4BE0B0" "x4FDEFE" "x4FF4F9" "x51BE37" "x51FF7F" "x524F67" "x54B094" "x5541DA" "x5A8ABF" "x5C88B7" "x66C85A" "x706C6E" "x817083" "x822774" "x83923F" "x8611C3" "x8A6BB0" "x8EFC0A" "x918FAF" "x95939C" "x9769DB" "x97A569" "x9B4105" "x9CD217" "x9D6313" "x9E801B" "xA2083C" "xA5F7BC" "xA8E93D" "xAFF001" "xB324A4" "xB40E08" "xB41206" "xB4957C" "xB4F5FA" "xB4FAF7" "xBA1AF0" "xBAE381" "xC0D7B0" "xC153E3" "xC28486" "xC6416E" "xC7965B" "xC8615D" "xC8A7EB" "xCC9AB1" "xCD7250" "xD34DF4" "xD3B54D" "xD729BB" "xDBA9DB" "xDF8B88" "xE8222C" "xE87A71" "xFC62DC" }
+    prime_land = { x39DD3B xD3B54D x0A9EBC }
     traits = { "state_trait_severe_malaria" }
     city = "x0DC0D2"
     port = "x39DD3B"
     farm = "x1C9F62"
     mine = "xAFF001"
     wood = "xC6416E"
-    arable_land = 30
-    arable_resources = { "bg_rice_farms" "bg_dye_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
+    arable_land = 35
+    arable_resources = { "bg_rice_farms" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_copper_mining = 55
+        bg_copper_mining = 65
         bg_logging = 28
         bg_fishing = 9
     }
@@ -604,22 +586,43 @@ STATE_EASTERN_NEW_GUINEA = {
 STATE_SUNDA_ISLANDS = {
     id = 551
     subsistence_building = "building_subsistence_rice_paddies"
-    provinces = { "x108090" "x28EC3F" "x2FA371" "x3CCE91" "x4CFCE1" "x4EE71E" "x555707" "x5F978F" "x699245" "x7D205E" "x7F4592" "x900090" "x908090" "x929145" "xC0D06E" "xCF8A98" "xD0A942" "xE90740" }
+    provinces = { "x108090" "x28EC3F" "x2FA371" "x4CFCE1" "x7D205E" "x900090" "x908090" "x929145" "xC0D06E" "xD0A942" "xE90740" }
     prime_land = { "xD0A942" "x908090" "xC0D06E" }
+    traits = { state_trait_hawaii_sandalwood_forests state_trait_malaria }
+    city = "xD0A942"
+    port = "x2FA371"
+    farm = "xC0D06E"
+    mine = "x900090"
+    wood = "x929145"
+    arable_land = 36
+    arable_resources = { "bg_rice_farms" "bg_sugar_plantations" "bg_dye_plantations" "bg_banana_plantations" }
+    capped_resources = {
+        #fragrances, hardwood, fish, wildlife (birdsnests), iron and copper
+        bg_sulfur_mining = 20
+        bg_logging = 10
+        bg_fishing = 8
+    }
+
+    naval_exit_id = 3125
+}
+
+STATE_TIMOR = {
+    id = 3942
+    subsistence_building = "building_subsistence_rice_paddies"
+    provinces = { "xCF8A98" "xAB53AE" "x5F978F" "x6853AE" "x3BB649" "x106278" "x7A955F" "x8E502F" "x815792" "x6A1038" "x45D295" "xDAC555" "x99E0E1" "x3CCE91" "x555707" "x7F4592" "x4EE71E" "x448ECC" "x95515F" "x1E2D9A" "x8AB65A" "xE44141" "xCCC566" "x41B5C1" "x986E50" "xCB70F0" "x699245" }
     traits = { state_trait_hawaii_sandalwood_forests state_trait_malaria }
     city = "x3CCE91"
     port = "xCF8A98"
-    farm = "xD0A942"
-    mine = "x900090"
-    wood = "x3CCE91"
-    arable_land = 45
-    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_dye_plantations" "bg_tobacco_plantations" "bg_banana_plantations" "bg_cotton_plantations" }
+    farm = "x555707"
+    mine = "x7A955F"
+    wood = "xDAC555"
+    arable_land = 48
+    arable_resources = { "bg_rice_farms" "bg_vineyard_plantations" "bg_banana_plantations" "bg_coffee_plantations" }
     capped_resources = {
         #fragrances, hardwood, fish, wildlife (birdsnests), iron and copper
         bg_copper_mining = 15
-        bg_sulfur_mining = 20
-        bg_logging = 15
-        bg_fishing = 12
+        bg_logging = 7
+        bg_fishing = 5
     }
 
     naval_exit_id = 3125
@@ -720,26 +723,70 @@ STATE_VISAYAS = {
 STATE_WEST_MICRONESIA = {
     id = 555
     subsistence_building = "building_subsistence_fishing_villages"
-    provinces = { "x414170" "xc0426b" #Guam
- "xEF50C0" "xd06e0f" "x0fd013" "xc0d00f" #Mariana Islands
- "xa7f7e3" "x71414d" "x6e4206" "x936113" "x139322" "xd3ec44" "x152278" "x781530" "x5f996e" "xeb573a" "x3aeb4b" "x54a09d" "xb6bc0e" "x9f1974" #Caroline Islands 
- "x0fd025" "xc9d00f" #Palau
- "xEF50C0" 
- }
+    provinces = { "x414170" "xc0426b" "xEF50C0" "xd06e0f" "x0fd013" "xc0d00f" "xa7f7e3" "x71414d" "x6e4206" "x936113" "x139322" "xd3ec44" "x152278" "x781530" "x5f996e" "xeb573a" "x3aeb4b" "x54a09d" "xb6bc0e" "x9f1974" "x0fd025" "xc9d00f" }
     traits = { "state_trait_severe_malaria" }
     city = "xc0426b" #Agana
 
+
+
+
+
+
+
+
+
+
+
     port = "xc0426b" #Agana
+
+
+
+
+
+
+
+
+
+
 
     farm = "xc0d00f" #Saipan
 
+
+
+
+
+
+
+
+
+
+
     mine = "xc9d00f" #Palau
 
+
+
+
+
+
+
+
+
+
+
     wood = "x341aba" #Ponape
+
+
+
+
+
+
+
+
+
+
     arable_land = 5
     arable_resources = { "bg_rice_farms" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 2
         bg_whaling = 3
         bg_fishing = 3
     }
@@ -749,25 +796,70 @@ STATE_WEST_MICRONESIA = {
 STATE_EAST_MICRONESIA = {
     id = 1000
     subsistence_building = "building_subsistence_fishing_villages"
-    provinces = { "x808011" "x80C011" "xCD1EA0" "xF5DBBF" "xc2b527" "xdc5568" "x2a9436" "x1e6c78" "xd912e0" "x5fc9c8" "xb7c609" "x314240" "x7f2e1c" "x8fd0a9" #Marshall Islands
- "x527F6C" #Wake
- "x9ee29c" "xb8859c" "xe76b71" "x5685cb" "xd5d666" "xaf4177" "x914d28" #Gilbert Islands
- "x808090" "xedf389" #Ellice Islands
- }
+    provinces = { "x808011" "x80C011" "xCD1EA0" "xF5DBBF" "xc2b527" "xdc5568" "x2a9436" "x1e6c78" "xd912e0" "x5fc9c8" "xb7c609" "x314240" "x7f2e1c" "x8fd0a9" "x527F6C" "x9ee29c" "xb8859c" "xe76b71" "x5685cb" "xd5d666" "xaf4177" "x914d28" "x808090" "xedf389" "x1d673e" }
     traits = { "state_trait_severe_malaria" }
     city = "xc2b527" #Jaluit
 
+
+
+
+
+
+
+
+
+
+
     port = "x9ee29c" #Tarawa
+
+
+
+
+
+
+
+
+
+
 
     farm = "x808090" #Funafuti
 
+
+
+
+
+
+
+
+
+
+
     mine = "x1e6c78" #Enewetak
 
+
+
+
+
+
+
+
+
+
+
     wood = "x5fc9c8" #Majuro
+
+
+
+
+
+
+
+
+
+
     arable_land = 5
     arable_resources = { "bg_rice_farms" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 2
         bg_whaling = 4
         bg_fishing = 6
     }
@@ -788,7 +880,7 @@ STATE_SOLOMON_ISLANDS = {
     arable_land = 5
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 2
+        bg_logging = 4
         bg_whaling = 2
         bg_fishing = 3
     }
@@ -806,7 +898,6 @@ STATE_NAURU = {
     arable_land = 5
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 2
         bg_whaling = 3
         bg_fishing = 3
     }
@@ -844,7 +935,6 @@ STATE_VANUATU = {
     arable_land = 5
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 2
         bg_fishing = 3
     }
     naval_exit_id = 3124
@@ -892,15 +982,7 @@ STATE_BOUGAINVILLE = {
 STATE_TAHITI = {
     id = 557
     subsistence_building = "building_subsistence_fishing_villages"
-    provinces = { "xA000B0" "x0181B0" "x998293" "x59885E" "x59885E" "x98C69C" "x5E2464" "xc0f62c" "x102256" "xeaeea9" "xc77b29" "x3ff6a2" "x66501e" #Tahiti
- "x2A4340" "x2C2E13" "x42432A" "x54BB3D" "x643424" "x718885" "x728871" "x7D7D62" "x887771" "x888659" "x98C3C6" "xBA6E55" "xC6B798" "xCBC996" "xDBAE9F" "xF1DBF3" "x055e24" "x7ce1ea" "x77597b" "xe6f817" "x129e8c" "xb8043b" "xf6742c" "x67605d" "x475691" "xd2f006" "xf0a606" "x87eb9e" "x342a65" "x61038c" #Tuamotus
- "xaa0f45" "x4d6752" "xe7fe1d" "x323d51" #Mangareva
- "x786bb1" "x7e7357" #Tupua'i
- "xd5437d" "x1f5410" #Marquesas
- "x0a038c" "xd09d4d" "xed6066" #Bora Bora
- "x9A79DC" "x9fa864" #Rapa Nui	
- "xcf9200" #Pitcairn 
- }
+    provinces = { "xA000B0" "x0181B0" "x998293" "x59885E" "x98C69C" "x5E2464" "xc0f62c" "x102256" "xeaeea9" "xc77b29" "x3ff6a2" "x66501e" "x2A4340" "x2C2E13" "x42432A" "x54BB3D" "x643424" "x718885" "x728871" "x7D7D62" "x887771" "x888659" "x98C3C6" "xBA6E55" "xC6B798" "xCBC996" "xDBAE9F" "xF1DBF3" "x055e24" "x7ce1ea" "x77597b" "xe6f817" "x129e8c" "xb8043b" "xf6742c" "x67605d" "x475691" "xd2f006" "xf0a606" "x87eb9e" "x342a65" "x61038c" "xaa0f45" "x4d6752" "xe7fe1d" "x323d51" "x786bb1" "x7e7357" "xd5437d" "x1f5410" "x0a038c" "xd09d4d" "xed6066" "x9A79DC" "x9fa864" "xcf9200" }
     traits = { "state_trait_severe_malaria" }
     city = "x54BB3D"
     port = "xA000B0"
@@ -910,7 +992,6 @@ STATE_TAHITI = {
     arable_land = 10
     arable_resources = { "bg_rice_farms" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 4
         bg_whaling = 10
         bg_fishing = 18
     }
@@ -920,27 +1001,71 @@ STATE_TAHITI = {
 STATE_TONGA = {
     id = 1020
     subsistence_building = "building_subsistence_fishing_villages"
-    provinces = { "x208030" "xeef198" "xf76494" "xbfaddc" #Tonga
- "xA7F8A1" "xC00010" "xD98CDA" "x555258" #Samoa 
- "x8b868d" "x9fa687" "xa65bc2" "xc0396c" "xef7f1b" "xcb06ad" "x464cbf" "xa7d6a4" "x6b1d0d" #Cook Islands
- "x4b3d31" "x82406c" "x3d5a1b" #Tokelau
- "x7a787a" "xe7b3e6" #Wallis
- }
+    provinces = { "x208030" "xeef198" "xf76494" "xbfaddc" "xA7F8A1" "xC00010" "xD98CDA" "x555258" "x8b868d" "x9fa687" "xa65bc2" "xc0396c" "xef7f1b" "xcb06ad" "x464cbf" "xa7d6a4" "x6b1d0d" "x4b3d31" "x82406c" "x3d5a1b" "x7a787a" "xe7b3e6" }
     traits = { "state_trait_severe_malaria" }
     city = "x208030" #Nukualofa
 
+
+
+
+
+
+
+
+
+
+
     port = "xA7F8A1" #Pago Pago
+
+
+
+
+
+
+
+
+
+
 
     farm = "xC00010" #Apia
 
+
+
+
+
+
+
+
+
+
+
     mine = "xA7F8A1" #Salelologa
 
+
+
+
+
+
+
+
+
+
+
     wood = "x8b868d" #Avarua
+
+
+
+
+
+
+
+
+
+
 
     arable_land = 6
     arable_resources = { "bg_rice_farms" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 3
         bg_whaling = 6
         bg_fishing = 8
     }

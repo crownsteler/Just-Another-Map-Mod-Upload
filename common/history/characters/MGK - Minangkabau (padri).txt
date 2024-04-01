@@ -1,0 +1,19 @@
+﻿CHARACTERS = {
+	c:MGK = {
+		create_character = {
+			first_name = "peto_syarif_ibnu_pandito_buyanudin"
+			last_name = "bonjol" 
+			historical = yes
+			ruler = yes
+			age = 64
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = {
+				charismatic
+				pious
+				demagogue
+				stalwart_defender
+			}
+		}	
+	}
+}

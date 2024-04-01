@@ -1037,7 +1037,7 @@ ai_strategy_default = {
 					NOT = { state_region = s:STATE_FORMOSA }
 				}					
 			}
-			add = 100
+			add = 150
 		}
 
 		if = { #Carving up China

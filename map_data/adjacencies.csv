@@ -170,10 +170,51 @@ xEDDB5F;xF0B767;sea;-1;6891;1413;6891;1405;;Celebes-Buton
 xCED863;x0180F0;sea;-1;6812;1631;6828;1628;;North Borneo-Sulu islands
 x4ebc79;x72c072;sea;-1;2320;2087;2332;2094;;
 x1e761e;x535b49;sea;-1;2244;1957;2314;1933;;
+
+x54A09D;xB6BC0E;sea;-1;7705;1673;7764;1654;;Micronesia
+xB6BC0E;x9F1974;sea;-1;7774;1649;7806;1636;;Micronesia
+x71414d;x54A09D;sea;-1;7561;1682;7695;1675;;Micronesia
 x71414d;xa7f7e3;sea;-1;7541;1683;7520;1709;;Micronesia
-x71414d;x6e4206;sea;-1;7562;1680;7593;1636;;Micronesia
-xf5dbbf;x80c011;sea;-1;7913;1723;7944;1737;;Micronesia
-xf5dbbf;xcd1ea0;sea;-1;7906;1727;7895;1771;;Micronesia
+x71414d;x3aeb4b;sea;-1;7562;1678;7585;1648;;Micronesia
+x71414d;xeb573a;sea;-1;7554;1689;7555;1707;;Micronesia
+x71414d;x5f996e;sea;-1;7543;1681;7497;1669;;Micronesia
+xA7F7E3;x5f996e;sea;-1;7505;1710;7499;1685;;Micronesia
+xA7F7E3;xEB573A;sea;-1;7521;1711;7550;1707;;Micronesia
+x5f996e;x414170;sea;-1;7494;1684;7444;1681;;Micronesia
+
+x414170;x152278;sea;-1;7425;1674;7384;1679;;Micronesia
+x414170;x781530;sea;-1;7427;1684;7406;1724;;Micronesia
+x152278;x781530;sea;-1;7371;1684;7385;1708;;Micronesia
+x152278;xD3EC44;sea;-1;7362;1685;7295;1697;;Micronesia
+xD3EC44;x139322;sea;-1;7291;1700;7284;1738;;Micronesia
+xD3EC44;x6E4206;sea;-1;7290;1700;7227;1706;;Micronesia
+x6E4206;x0FD025;sea;-1;7221;1704;7163;1683;;Micronesia
+x6E4206;x936113;sea;-1;7228;1710;7242;1730;;Micronesia
+x936113;x139322;sea;-1;7245;1735;7276;1740;;Micronesia
+
+x302090;x2BEBD1;sea;-1;7903;997;7922;1013;;New Caladonia
+
+xf5dbbf;x314240;sea;-1;7913;1723;7944;1737;;Marshall Islands
+xf5dbbf;xcd1ea0;sea;-1;7906;1727;7895;1771;;Marshall Islands
+x314240;x7f2e1c;sea;-1;7948;1740;7964;1746;;Marshall Islands
+x7f2e1c;x8fd0a9;sea;-1;7966;1754;7964;1767;;Marshall Islands
+x7f2e1c;xb7c609;sea;-1;7966;1744;7968;1731;;Marshall Islands
+x314240;xb7c609;sea;-1;7950;1735;7960;1733;;Marshall Islands
+xb7c609;x80C011;sea;-1;7968;1716;7987;1714;;Marshall Islands
+x80C011;x5FC9C8;sea;-1;7994;1694;7995;1681;;Marshall Islands
+x5FC9C8;xD912E0;sea;-1;8007;1673;8011;1658;;Marshall Islands
+xD912E0;xC2B527;sea;-1;8004;1652;7961;1650;;Marshall Islands
+xDC5568;xC2B527;sea;-1;7940;1680;7952;1659;;Marshall Islands
+xDC5568;xF5DBBF;sea;-1;7923;1700;7915;1712;;Marshall Islands
+xc2b527;x1d673e;sea;-1;7957;1642;7937;1620;;Marshall Islands
+x8fd0a9;xcd1ea0;sea;-1;7955;1769;7908;1772;;Marshall Islands
+xcd1ea0;x1e6c78;sea;-1;7859;1778;7791;1775;;Marshall Islands
+xcd1ea0;x2a9436;sea;-1;7886;1767;7876;1743;;Marshall Islands
+xf5dbbf;x2a9436;sea;-1;7899;1723;7881;1717;;Marshall Islands
+x8fd0a9;x808011;sea;-1;7963;1772;7970;1793;;Marshall Islands
+x808011;x527f6c;sea;-1;7943;1847;7897;1957;;Marshall Islands
+
+
 x2190A0;xC56452;sea;-1;4696;2450;4690;2434;;Aegean
 xE011A0;xC56452;sea;-1;4711;2395;4707;2399;;Aegean
 xa010a0;x6090a0;sea;-1;4655;2422;4660;2419;;Aegean
@@ -182,18 +223,40 @@ x95abdb;xc56452;sea;-1;4696;2428;4690;2432;;Aegean
 x702020;xedecfb;sea;-1;4657;2494;4658;2500;;Aegean
 x61a3e3;x53fa6e;sea;-1;8155;1107;8163;1118;;Fiji
 x5178bc;x504090;sea;-1;7909;1143;7902;1158;;Vanuatu
+x5178BC;x75A377;sea;-1;7921;1133;7926;1137;;Vanuatu
 x3b8eeb;xd04090;sea;-1;7679;1345;7684;1327;;South Solomon Islands
 xd04090;x2b5e69;sea;-1;7691;1320;7705;1339;;South Solomon Islands
 x2b5e69;x898945;sea;-1;7736;1318;7736;1301;;South Solomon Islands
 x898945;xf5f405;sea;-1;7758;1291;7767;1302;;South Solomon Islands
 x898945;x874589;sea;-1;7760;1287;7778;1274;;South Solomon Islands
+xD04090;x692B64;sea;-1;7686;1321;7682;1317;;South Solomon Islands
+x898945;x692B64;sea;-1;7735;1298;7723;1304;;South Solomon Islands
+x3B8EEB;x2B5E69;sea;-1;7685;1344;7701;1341;;South Solomon Islands
+x2B5E69;xF5F405;sea;-1;7738;1319;7756;1317;;South Solomon Islands
+
+x3B8EEB;x97FBC3;sea;-1;7661;1361;7648;1364;;Bougainville-South Solomon Islands
+x97FBC3;x9bc5ad;sea;-1;7648;1360;7653;1355;;Bougainville
+x97FBC3;x9bc5ad;sea;-1;7648;1360;7653;1355;;Bougainville
+x97FBC3;x692B64;sea;-1;7647;1348;7664;1337;;Bougainville
+
 x769456;x9b6d87;sea;-1;3477;2439;3507;2420;;Azores
 x655491;x20ef01;sea;-1;3720;2172;3737;2165;;Canary Islands
 x20ef01;x64c2b3;sea;-1;3744;2165;3767;2169;;Canary Islands
 x64c2b3;xc2c164;sea;-1;3779;2183;3781;2189;;Canary Islands
 xe8e7a2;xa2e8c5;sea;-1;3542;1855;3556;1858;;Cape Verde
 xa2e8c5;xa2c3e8;sea;-1;3560;1857;3568;1860;;Cape Verde
-xc00010;xa7f8a1;sea;-1;197;1199;211;1193;;Tonga
+xc00010;xA7F8A1;sea;-1;197;1199;211;1193;;Samoa
+xA7F8A1;x555258;sea;-1;221;1196;231;1197;;Samoa
+xc00010;xD98CDA;sea;-1;173;1206;163;1212;;Samoa
+x208030;xEEF198;sea;-1;118;1033;120;1045;;Tonga
+xEEF198;xF76494;sea;-1;130;1068;137;1087;;Tonga
+x82406C;x4B3D31;sea;-1;183;1314;174;1323;;Tokelau
+x82406C;x3D5A1B;sea;-1;188;1310;199;1306;;Tokelau
+x808090;xEDF389;sea;-1;8155;1327;8129;1345;;Ellice Islands
+xE76B71;xB8859C;sea;-1;8071;1486;8067;1493;;Gilbert Islands
+xB8859C;x9EE29C;sea;-1;8033;1533;8033;1540;;Gilbert Islands
+xD5D666;xAF4177;sea;-1;449;1341;416;1368;;Gilbert Islands
+x1F5410;xD5437D;sea;-1;935;1015;914;1045;;Marquesas
 xf0f061;xf0d080;sea;-1;7015;2133;7034;2161;;Ryukyu Islands
 x0181b0;xcbc996;sea;-1;748;885;757;883;;Tahiti
 xcbc996;x888659;sea;-1;759;881;757;876;;Tahiti
@@ -286,6 +349,7 @@ xE020B0;x414325;sea;-1;4993;1379;5001;1387;;South-North Zanzibar
 xE020B0;xE60324;sea;-1;4991;1370;4981;1371;;Zanzibar-Bagamoyo
 x6021AF;x93DC46;sea;-1;4993;1327;5001;1329;;Mafia Island connection
 xF0F061;xBB27F6;sea;-1;6949;2088;6928;2080;;Miyako Islands-Yaeyama Islands
+x1000F0;x733DDF;sea;-1;8077;515;8067;516;;New Zealand North Island-South Island
 
 xC0426B;xD06E0F;sea;-1;7399;1831;7405;1842;;Marianas
 xD06E0F;x0FD013;sea;-1;7408;1853;7411;1860;;Marianas

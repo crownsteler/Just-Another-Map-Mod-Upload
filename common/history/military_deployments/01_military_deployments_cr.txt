@@ -9,8 +9,97 @@
 #
 #			commander_military_formation = {
 #				fully_mobilize_army = yes
-#				teleport_to_front = p:0C1D7F.front
+#				teleport_to_front = p:x0C1D7F.front
 #			}
 #		}
 #	}
+	c:SPA = {
+		random_scope_general = {
+			limit = {
+				has_variable = is_baldomero_espartero
+			}
+
+			commander_military_formation = {
+				fully_mobilize_army = yes
+				teleport_to_front = p:xAC1425.front
+			}
+		}	
+		random_scope_general = {
+			limit = {
+				has_variable = is_jose_ramon_rodil
+			}
+
+			commander_military_formation = {
+				fully_mobilize_army = yes
+				teleport_to_front = p:xE0C020.front
+			}
+		}	
+		random_scope_general = {
+			limit = {
+				has_variable = is_ramon_maria_narvaez
+			}
+
+			commander_military_formation = {
+				fully_mobilize_army = yes
+				teleport_to_front = p:xF841E6.front
+			}
+		}	
+	
+	}
+	c:CSP = {
+		random_scope_general = {
+			limit = {
+				has_variable = is_vicente_gonzalez_moreno
+			}
+
+			commander_military_formation = {
+				fully_mobilize_army = yes
+				teleport_to_front = p:xABE0B3.front
+			}
+		}
+		random_scope_general = {
+			limit = {
+				has_variable = is_rafael_maroto
+			}
+
+			commander_military_formation = {
+				fully_mobilize_army = yes
+				teleport_to_front = p:x2914C3.front
+			}
+		}
+		random_scope_general = {
+			limit = {
+				has_variable = is_ramon_cabrera
+			}
+
+			commander_military_formation = {
+				fully_mobilize_army = yes
+				teleport_to_front = p:x5FB607.front
+			}
+		}
+	}
+	c:DEI = {
+		random_scope_general = {
+			limit = {
+				has_variable = is_cr_michiels
+			}
+
+			commander_military_formation = {
+				fully_mobilize_army = yes
+				teleport_to_front = p:xD2D88C.front
+			}
+		}
+	}
+	c:MGK = {
+		random_scope_general = {
+			limit = {
+				has_variable = is_tambusai
+			}
+
+			commander_military_formation = {
+				fully_mobilize_army = yes
+				teleport_to_front = p:x4E9BC1.front
+			}
+		}
+	}
 }

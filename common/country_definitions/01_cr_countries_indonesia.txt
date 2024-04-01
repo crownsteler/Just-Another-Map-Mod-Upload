@@ -24,7 +24,6 @@ MGK = {
 	
 	capital = STATE_MINANGKABAU
 	cultures = { minangkabau }
-	is_named_from_capital = yes
 
 }
 
@@ -38,7 +37,6 @@ POE = {
 	
 	cultures = { sumatran }
 	capital = STATE_SOUTH_SUMATRA
-	is_named_from_capital = yes
 }
 
 
@@ -91,7 +89,6 @@ DYK = {
 	
 	cultures = { dayak }
 	capital = STATE_EAST_BORNEO
-	is_named_from_capital = yes
 }
 
 LDK= {
@@ -193,18 +190,8 @@ ARU= {
 	
 	cultures = { moluccan }
 	capital = STATE_MOLUCCAS
+	is_named_from_capital = yes
 }
-
-#TDR= {
-#	color = { 227 239 108 }
-#	
-#	country_type = unrecognized
-#	
-#	tier = principality
-#	
-#	cultures = { moluccan }
-#	capital = STATE_MOLUCCAS
-#}
 
 TRT= {
 	color = { 36 203 81 }
@@ -226,6 +213,17 @@ TRT= {
 
 BIM= {
 	color = { 174 66 77 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { moluccan }
+	capital = STATE_SUNDA_ISLANDS
+}
+
+END = {
+	color = { 206 146 85 }
 	
 	country_type = unrecognized
 	
@@ -295,6 +293,7 @@ LZN = {
 	
 	cultures = { filipino }
 	capital = STATE_LUZON
+	is_named_from_capital = yes
 }
 
 MDN = {
@@ -306,6 +305,7 @@ MDN = {
 	
 	cultures = { filipino }
 	capital = STATE_MINDANAO
+	is_named_from_capital = yes
 }
 
 MUI = {
@@ -317,6 +317,7 @@ MUI = {
 	
 	cultures = { bornean }
 	capital = STATE_MINDANAO
+	is_named_from_capital = yes
 }
 
 #############################
@@ -344,5 +345,5 @@ PTU = {
 	tier = principality
 	
 	cultures = { malay }
-	capital = STATE_MALAYA
+	capital = STATE_TAMBRALINGA
 }

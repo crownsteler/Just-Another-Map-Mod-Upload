@@ -26,37 +26,5 @@
                 ambitious
 			}
 		}	
-		
-		create_character = {
-            is_general = yes
-            hq = region_iberia
-			first_name = Miguel
-			last_name = gomez_damas
-			historical = yes
-			birth_date = 1785.6.5
-			culture = cu:spanish
-			interest_group = ig_rural_folk
-			ideology = ideology_traditionalist
-			traits = {
-				persistent
-				basic_defensive_strategist
-				scarred
-			}
-		}
-
-        create_character = {
-            is_general = yes
-            hq = region_iberia
-			first_name = Ramon
-			last_name = Cabrera
-			historical = yes
-			birth_date = 1806.12.27
-			culture = cu:catalan
-			interest_group = ig_armed_forces
-			ideology = ideology_traditionalist
-			traits = {
-				persistent wrathful mountain_commander
-			}
-		}
 	}
 }

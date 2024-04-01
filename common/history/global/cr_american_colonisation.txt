@@ -2,6 +2,11 @@
 	c:USA = {
 		add_journal_entry = { type = je_indian_removal }
 	}
+	s:STATE_NEWFOUNDLAND.region_state:FRA = {
+		add_modifier = {
+			name = cr_vestige_of_empire
+		}
+	}
 	s:STATE_QUEBEC.region_state:QUE = {
 		add_modifier = {
 			name = cr_unceded_territory_95

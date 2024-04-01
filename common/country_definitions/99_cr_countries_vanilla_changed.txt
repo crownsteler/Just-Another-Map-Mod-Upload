@@ -88,6 +88,17 @@ BND = {
 	capital = STATE_GAMBIA
 }
 
+BRD = { #Burundi
+	color = { 21 191 16 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { rundi }
+	capital = STATE_RUANDA_URUNDI
+}
+
 BST = {
 	color = { 137 106 217 }
 	
@@ -153,6 +164,18 @@ KNG = {
 	cultures = { dyula senufo }
 	capital = STATE_WINDWARD_COAST
 }
+
+KRG = {
+	color = { 48 177 169 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { lacustrine_bantu baganda }
+	capital = STATE_RUANDA_URUNDI
+}
+
 
 LNG = {
 	color = { 200 202 85 }
@@ -228,6 +251,17 @@ OYO = {
 	
 	cultures = { yoruba }
 	capital = STATE_YORUBA_STATES
+}
+
+RWD = {
+	color = { 213 160 18 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { ruanda }
+	capital = STATE_RUANDA_URUNDI
 }
 
 SRA = {
@@ -730,7 +764,7 @@ UZH = {
 	tier = principality
 	
 	cultures = { kazak }
-	capital = STATE_AKMOLINSK
+	capital = STATE_JETISY
 	is_named_from_capital = yes
 }
 
@@ -753,6 +787,17 @@ OZH = {
 #############################
 
 
+BHU = {
+	color = { 93  180  76 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { tibetan }
+	capital = STATE_EASTERN_HIMALAYAS
+}
+
 DAI = {
 	color = { 136  117  90 }
 	
@@ -774,6 +819,17 @@ KHN = { # Kachin
 	cultures = { kachin }
 	
 	capital = STATE_KACHIN
+}
+
+SIK = {
+	color = { 139  138  160 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { tibetan }
+	capital = STATE_EASTERN_HIMALAYAS
 }
 
 TUV = {
@@ -847,6 +903,19 @@ TID = {
 	capital = STATE_MOLUCCAS
 }
 
+
+TOB = { # Toba
+	color = { 183 141 1 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { batak }
+	
+	capital = STATE_TAPANULI
+}
+
 # Yogyakarta
 YOG = {
 	color = { 201  28  54 }
@@ -857,6 +926,17 @@ YOG = {
 	
 	cultures = { javan }
 	capital = STATE_CENTRAL_JAVA
+}
+# Siak
+SAK = {
+	color = { 21  196  68 }
+	
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { sumatran }
+	capital = STATE_SOUTH_SUMATRA
 }
 
 # Surakarta

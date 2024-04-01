@@ -124,13 +124,12 @@ company_nederlandse_handelsmaatschappij = {
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_HOLLAND
 			is_incorporated = yes
 			any_scope_building = {
 				OR = {
 					is_building_type = building_trade_center
 				}
-				level >= 10
+				level >= 1
 			}
 		}
 	}
@@ -203,7 +202,7 @@ company_billiton_maatschappij = {
 			state_region = s:STATE_BILLITON
 			any_scope_building = {
 				is_building_type = building_lead_mine
-				level >= 10
+				level >= 5
 			}
 		}
 		has_technology_researched = steelworking
@@ -218,45 +217,45 @@ company_billiton_maatschappij = {
 	}
 }
 
-# Melkinrichting van Grieken
-company_melkinrichting_van_grieken = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_zuivelcooporatie_van_grieken.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
-	
-	flavored_company = yes
-	
-	building_types = {  
-		building_food_industry
-	}
-	
-	potential = {
-		country_has_primary_culture = cu:dutch
-	}
-	
-	possible = {
-		any_scope_state = {
-			OR = {
-				state_region = s:STATE_HOLLAND
-				state_region = s:STATE_FRIESLAND
-			}
-			is_incorporated = yes
-			any_scope_building = {
-				OR = {
-					is_building_type = building_food_industry
-				}
-				level >= 10
-			}
-		}
-	}
-	
-	prosperity_modifier = {
-		building_livestock_ranch_throughput_add = 0.1
-	}	
-	
-	ai_weight = {
-		value = 3 # Higher base value for flavored companies
-	}
-}
+# Melkinrichting van Grieken #Needs something better
+#company_melkinrichting_van_grieken = {
+#	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_zuivelcooporatie_van_grieken.dds"
+#	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+#	
+#	flavored_company = yes
+#	
+#	building_types = {  
+#		building_food_industry
+#	}
+#	
+#	potential = {
+#		country_has_primary_culture = cu:dutch
+#	}
+#	
+#	possible = {
+#		any_scope_state = {
+#			OR = {
+#				state_region = s:STATE_HOLLAND
+#				state_region = s:STATE_FRIESLAND
+#			}
+#			is_incorporated = yes
+#			any_scope_building = {
+#				OR = {
+#					is_building_type = building_food_industry
+#				}
+#				level >= 10
+#			}
+#		}
+#	}
+#	
+#	prosperity_modifier = {
+#		building_livestock_ranch_throughput_add = 0.1
+#	}	
+#	
+#	ai_weight = {
+#		value = 3 # Higher base value for flavored companies
+#	}
+#}
 
 # Maatschappij van Weldadigheid
 company_maatschappij_van_weldadigheid = {
@@ -266,9 +265,8 @@ company_maatschappij_van_weldadigheid = {
 	flavored_company = yes
 	
 	building_types = {
-		building_wheat_farm
-		building_maize_farm
-		building_food_industry
+		building_rye_farm
+		building_livestock_ranch
 	}
 	
 	potential = {
@@ -282,8 +280,8 @@ company_maatschappij_van_weldadigheid = {
 			is_incorporated = yes
 			any_scope_building = {
 				OR = {
-					is_building_type = building_wheat_farm
-					is_building_type = building_maize_farm
+					is_building_type = building_rye_farm
+					is_building_type = building_livestock_ranch
 				}
 				level >= 4
 			}
@@ -293,6 +291,81 @@ company_maatschappij_van_weldadigheid = {
 	
 	prosperity_modifier = {
 		state_radicals_from_sol_change_mult = -0.05
+	}
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#  Petrus Regout De Sphinx
+company_regout_de_sphinx = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_regout_de_sphinx.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	
+	flavored_company = yes
+	
+	building_types = {
+		building_glassworks
+	}
+	
+	potential = {
+		country_has_primary_culture = cu:dutch
+	}
+	
+	possible = {
+		has_law = law_type:law_poor_laws
+		any_scope_state = {
+			state_region = s:STATE_BRABANT
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_glassworks
+				level >= 5
+			}
+			count >= 2
+		}
+	}
+	
+	prosperity_modifier = {
+		building_construction_sector_throughput_add = 0.05 #Exploited a wide variety of industrial enterprises, including a nails and screws factory, and would later focus on sanitation products
+	}
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#  Van Heek en Co.
+company_van_heek_en_co = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_van_heek.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	
+	flavored_company = yes
+	
+	building_types = {
+		building_textile_mills
+		building_cotton_plantation
+	}
+	
+	potential = {
+		country_has_primary_culture = cu:dutch
+	}
+	
+	possible = {
+		has_law = law_type:law_poor_laws
+		any_scope_state = {
+			state_region = s:STATE_GELRE
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_textile_mills
+				level >= 10
+			}
+			count >= 2
+		}
+	}
+	
+	prosperity_modifier = {
+		building_textile_mills_throughput_add = 0.10 #Lead to establishment of the Twentsche Bank, precursos to the ABN AMRO Bank.
 	}
 	
 	ai_weight = {

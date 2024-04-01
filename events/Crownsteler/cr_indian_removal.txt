@@ -68,6 +68,10 @@ cr_indian_removal.1 = { #The Chickasaw Removal
 		name = cr_indian_removal.1.b
 		default_option = yes
 		custom_tooltip = cr_indian_removal.1.b_tt
+		change_relations = {
+			country = c:CSW
+			value = -20
+		}
 		add_radicals = {
 			value = small_radicals
 			culture = cu:yankee
@@ -241,7 +245,7 @@ cr_indian_removal.5 = { #The Intruder Controversy
 	title = cr_indian_removal.5.t
 	desc = cr_indian_removal.5.desc
 	flavor = {
-		first_valid = {
+		random_valid = {
 			triggered_desc = {
 				desc = cr_indian_removal.5.f_1
 				trigger = {
@@ -261,20 +265,29 @@ cr_indian_removal.5 = { #The Intruder Controversy
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	#on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
 
-	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	duration = 3
 
 	trigger = {
+		c:MSC = {
+			is_subject_of = ROOT
+			any_scope_state = {
+				state_region = s:STATE_ALABAMA
+			}
+		}
 		NOT = {
 			has_variable = cr_the_intruder_controversy
-			has_variable = cr_the_intruder_controversy_avoided
 		}
 	}
 	
 	immediate = {
+		set_variable = cr_the_intruder_controversy
+		
+		
+		
+		
 		c:CHE = {
 			save_scope_as = cherokee_nation
 		}
@@ -305,16 +318,32 @@ cr_indian_removal.5 = { #The Intruder Controversy
 		cu:cherokee = {
 			save_scope_as = cherokee_people
 		}
+		cu:muskogean = {
+			save_scope_as = muskogean_people
+		}
+		cu:dixie = {
+			save_scope_as = dixie
+		}
 	}
 	
 	option = {
 		name = cr_indian_removal.5.a
-		custom_tooltip = {
-			text = cr_indian_removal.5.a_tt
-			set_variable = cr_the_intruder_controversy_avoided
-			set_variable = {
-				name = cr_creek_removal_delayed
-				months = 9
+		custom_tooltip = cr_indian_removal.5.a_tt
+		change_relations = {
+			country = c:MSC
+			value = 5
+		}
+		s:STATE_ALABAMA.region_state:MSC={
+			every_scope_pop = {
+				limit = {
+					NOR = {
+						culture = cu:muskogean
+						culture = cu:cherokee
+						culture = cu:caddoan
+						culture = cu:afro_american
+					}
+				}
+				move_pop = s:STATE_ALABAMA.region_state:USA
 			}
 		}
 		s:STATE_ALABAMA.region_state:USA = {
@@ -356,14 +385,14 @@ cr_indian_removal.5 = { #The Intruder Controversy
 				}		
 			}
 		}
-		s:STATE_OKLAHOMA = {
-			set_owner_of_provinces = {
-				country = c:MSC
-				provinces = {
-					x286941 xD6ADF2 xE1CC08
-				}
-			}
-		}
+		#s:STATE_OKLAHOMA = {
+		#	set_owner_of_provinces = {
+		#		country = c:MSC
+		#		provinces = {
+		#			x286941 xD6ADF2 xE1CC08
+		#		}
+		#	}
+		#}
 		ai_chance = {
 			base = 15
 		}
@@ -372,7 +401,20 @@ cr_indian_removal.5 = { #The Intruder Controversy
 	option = {
 		name = cr_indian_removal.5.b
 		default_option = yes
-		set_variable = cr_the_intruder_controversy
+		custom_tooltip = cr_indian_removal.5.b_tt
+		custom_tooltip = {
+			text = cr_indian_removal.5.b_tt2
+			s:STATE_ALABAMA.region_state:MSC = {
+				create_pop = {
+					culture = dixie
+					size = 400 #random number			
+				}
+			}
+		}
+		change_relations = {
+			country = c:MSC
+			value = -10
+		}
 		s:STATE_ALABAMA.region_state:USA = {
 			add_radicals_in_state = {
 				value = large_radicals
@@ -393,7 +435,7 @@ cr_indian_removal.5 = { #The Intruder Controversy
 
 cr_indian_removal.6 = { #The Roanoke Massacre
 	type = country_event
-	placement = p:x40A911
+	placement = p:x98A030
 
 	title = cr_indian_removal.6.t
 	desc = cr_indian_removal.6.desc
@@ -410,8 +452,19 @@ cr_indian_removal.6 = { #The Roanoke Massacre
 
 	duration = 3
 
+	immediate = {
+		set_variable = cr_roanoke_massacre_has_happened
+	}
+
 	trigger = {
-		has_variable = cr_the_intruder_controversy
+		c:MSC = {
+			is_subject_of = ROOT
+			relations:MSC <= relations_threshold:cold
+		}
+		NOT = {
+			has_variable = cr_roanoke_massacre_has_happened
+			has_variable = cr_chickasaw_removal_has_started
+		}
 	}
 	
 	immediate = {
@@ -442,90 +495,37 @@ cr_indian_removal.6 = { #The Roanoke Massacre
 		s:STATE_SOUTH_CAROLINA.region_state:USA = {
 			save_scope_as = state_of_south_caroline
 		}
-		cu:cherokee = {
-			save_scope_as = cherokee_people
-		}
+		remove_diplomatic_pact = {
+			country = c:MSC
+			type = protectorate
+		}		
+		create_diplomatic_play = {
+			name = cr_second_creek_war
+			
+			war = yes
+			
+			type = dp_make_protectorate
+			
+			target_state = s:STATE_ALABAMA.region_state:MSC
+			
+			add_war_goal = {
+				holder = c:MSC
+				type = independence
+				target_state = s:STATE_ALABAMA.region_state:USA
+			}			
+		}	
 	}
 	
 	option = {
 		name = cr_indian_removal.6.a
-		custom_tooltip = {
-			text = cr_indian_removal.6.a_tt
+		custom_tooltip = cr_indian_removal.6.a_tt
+		s:STATE_ALABAMA = {
+			add_devastation = 5
 		}
-		s:STATE_ALABAMA.region_state:USA = {
-			add_radicals_in_state = {
-				value = large_radicals
-				culture = cu:dixie
-			}		
-		}
-		if = {
-			limit = {
-				NOT = { owns_entire_state_region = STATE_GEORGIA }
-			}
-			s:STATE_GEORGIA.region_state:USA = {
-				add_radicals_in_state = {
-					value = small_radicals
-					culture = cu:dixie
-				}		
-			}
-		}
-		if = {
-			limit = {
-				NOT = { owns_entire_state_region = STATE_TENNESSEE }
-			}
-			s:STATE_TENNESSEE.region_state:USA = {
-				add_radicals_in_state = {
-					value = small_radicals
-					culture = cu:dixie
-				}		
-			}
-		}
-		if = {
-			limit = {
-				NOT = { owns_entire_state_region = STATE_MISSISSIPPI }
-			}
-			s:STATE_MISSISSIPPI.region_state:USA = {
-				add_radicals_in_state = {
-					value = small_radicals
-					culture = cu:dixie
-				}		
-			}
-		}
-		s:STATE_OKLAHOMA = {
-			set_owner_of_provinces = {
-				country = c:MSC
-				provinces = {
-					x286941 xD6ADF2 xE1CC08
-				}
-			}
-		}
-		ai_chance = {
-			base = 15
-		}
-	}
-
-	option = {
-		name = cr_indian_removal.6.b
-		custom_tooltip = {
-			text = cr_indian_removal.6.b_tt
+		s:STATE_GEORGIA = {
+			add_devastation = 5
 		}
 		default_option = yes
-		set_variable = cr_the_intruder_controversy
-		s:STATE_ALABAMA.region_state:USA = {
-			add_radicals_in_state = {
-				value = large_radicals
-				culture = cu:muskogean
-			}		
-		}
-		s:STATE_ALABAMA.region_state:MSC = {
-			add_radicals_in_state = {
-				value = large_radicals
-				culture = cu:muskogean
-			}		
-		}
-		ai_chance = {
-			base = 85
-		}
 	}
 }
 
@@ -908,6 +908,252 @@ cr_indian_removal.20 = { #The Fate of the Seminole
 	}
 }
 
+
+
+#################################
+#								#
+#								#
+#  Random pre-Removal Events	#
+#								#
+#								#
+#################################
+
+cr_indian_removal.30 = { #The Intruder Controversy
+	type = country_event
+	placement = p:x40A911
+
+	title = cr_indian_removal.5.t
+	desc = cr_indian_removal.5.desc
+	flavor = {
+		random_valid = {
+			triggered_desc = {
+				desc = cr_indian_removal.5.f_1
+				trigger = {
+					always = yes
+				}
+			}
+			triggered_desc = {
+				desc =  cr_indian_removal.5.f_2
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	trigger = {
+		OR = {
+			c:MSC = {
+				is_subject_of = ROOT
+				any_scope_state = {
+					state_region = s:STATE_ALABAMA
+				}
+			}
+		}
+		OR = {
+			c:CSW = {
+				is_subject_of = ROOT
+				any_scope_state = {
+					state_region = s:STATE_MISSISSIPPI
+				}
+			}
+		}
+		OR = {
+			c:CHE = {
+				is_subject_of = ROOT
+				any_scope_state = {
+					state_region = s:STATE_ALABAMA
+				}
+			}
+		}
+		OR = {
+			c:CHE = {
+				is_subject_of = ROOT
+				any_scope_state = {
+					state_region = s:STATE_GEORGIA
+				}
+			}
+		}
+		OR = {
+			c:CHE = {
+				is_subject_of = ROOT
+				any_scope_state = {
+					state_region = s:STATE_TENNESSEE
+				}
+			}
+		}
+		OR = {
+			c:CHE = {
+				is_subject_of = ROOT
+				any_scope_state = {
+					state_region = s:STATE_NORTH_CAROLINA
+				}
+			}
+		}
+		OR = {
+			c:CTW = {
+				is_subject_of = ROOT
+				any_scope_state = {
+					state_region = s:STATE_MISSISSIPPI
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		c:CHE = {
+			save_scope_as = cherokee_nation
+		}
+		c:MSC = {
+			save_scope_as = creek_nation
+		}
+		c:CSW = {
+			save_scope_as = chickasaw_nation
+		}
+		s:STATE_GEORGIA.region_state:USA = {
+			save_scope_as = state_of_georgia
+		}
+		s:STATE_ALABAMA.region_state:USA = {
+			save_scope_as = state_of_alabama
+		}
+		s:STATE_MISSISSIPPI.region_state:USA = {
+			save_scope_as = state_of_mississippi
+		}
+		s:STATE_TENNESSEE.region_state:USA = {
+			save_scope_as = state_of_tennessee
+		}
+		s:STATE_NORTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_north_caroline
+		}
+		s:STATE_SOUTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_south_caroline
+		}
+		cu:cherokee = {
+			save_scope_as = cherokee_people
+		}
+		cu:muskogean = {
+			save_scope_as = muskogean_people
+		}
+		cu:dixie = {
+			save_scope_as = dixie
+		}
+	}
+	
+	option = {
+		name = cr_indian_removal.5.a
+		custom_tooltip = cr_indian_removal.5.a_tt
+		change_relations = {
+			country = c:MSC
+			value = 5
+		}
+		s:STATE_ALABAMA.region_state:MSC={
+			every_scope_pop = {
+				limit = {
+					NOR = {
+						culture = cu:muskogean
+						culture = cu:cherokee
+						culture = cu:caddoan
+						culture = cu:afro_american
+					}
+				}
+				move_pop = s:STATE_ALABAMA.region_state:USA
+			}
+		}
+		s:STATE_ALABAMA.region_state:USA = {
+			add_radicals_in_state = {
+				value = large_radicals
+				culture = cu:dixie
+			}		
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_GEORGIA }
+			}
+			s:STATE_GEORGIA.region_state:USA = {
+				add_radicals_in_state = {
+					value = small_radicals
+					culture = cu:dixie
+				}		
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_TENNESSEE }
+			}
+			s:STATE_TENNESSEE.region_state:USA = {
+				add_radicals_in_state = {
+					value = small_radicals
+					culture = cu:dixie
+				}		
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_MISSISSIPPI }
+			}
+			s:STATE_MISSISSIPPI.region_state:USA = {
+				add_radicals_in_state = {
+					value = small_radicals
+					culture = cu:dixie
+				}		
+			}
+		}
+		#s:STATE_OKLAHOMA = {
+		#	set_owner_of_provinces = {
+		#		country = c:MSC
+		#		provinces = {
+		#			x286941 xD6ADF2 xE1CC08
+		#		}
+		#	}
+		#}
+		ai_chance = {
+			base = 15
+		}
+	}
+
+	option = {
+		name = cr_indian_removal.5.b
+		default_option = yes
+		custom_tooltip = cr_indian_removal.5.b_tt
+		custom_tooltip = {
+			text = cr_indian_removal.5.b_tt2
+			s:STATE_ALABAMA.region_state:MSC = {
+				create_pop = {
+					culture = dixie
+					size = 400 #random number			
+				}
+			}
+		}
+		change_relations = {
+			country = c:MSC
+			value = -10
+		}
+		s:STATE_ALABAMA.region_state:USA = {
+			add_radicals_in_state = {
+				value = large_radicals
+				culture = cu:muskogean
+			}		
+		}
+		s:STATE_ALABAMA.region_state:MSC = {
+			add_radicals_in_state = {
+				value = large_radicals
+				culture = cu:muskogean
+			}		
+		}
+		ai_chance = {
+			base = 85
+		}
+	}
+}
 
 
 #################################

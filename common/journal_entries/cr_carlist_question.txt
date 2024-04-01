@@ -102,10 +102,10 @@ je_cr_carlist_war_christinos = {
 	should_be_pinned_by_default = yes
 	
 	on_monthly_pulse = {
-		random_events = {
-			1 = 0
-			1 = cr_carlist_events.1 #The Desamortización of the Monastaries
-		}
+		#random_events = {
+		#	1 = 0
+		#	1 = cr_carlist_events.1 #The Desamortización of the Monastaries
+		#}
 	}
 	
 	on_complete = {
@@ -132,8 +132,25 @@ je_cr_ferdinando_po = {
 				THIS = c:CSP
 			}
 		}
+		NOT = { has_variable = cr_carlist_war_ongoing }
+		OR = {
+			AND = {
+				exists = c:GBR
+				p:x902089.owner = c:GBR
+			}
+			AND = {
+				exists = c:ENG
+				p:x902089.owner = c:ENG
+			}
+		}
 		NOT = {
-			p:x902089.owner = ROOT 
+			has_law = law_type:law_slave_trade
+			p:x902089.owner = { 
+				has_law = law_type:law_slave_trade
+			}
+			p:x902089.owner = { 
+				has_technology_researched = civilizing_mission
+			}
 		}
     }
 	
@@ -143,6 +160,15 @@ je_cr_ferdinando_po = {
 	
     possible = {
 		has_interest_marker_in_region = region_biafra
+		NOT = {
+			has_law = law_type:law_slave_trade
+			p:x902089.owner = { 
+				has_law = law_type:law_slave_trade
+			}
+			p:x902089.owner = { 
+				has_technology_researched = civilizing_mission
+			}
+		}
     }
 	
 	immediate = {
@@ -178,6 +204,12 @@ je_cr_ferdinando_po = {
 		sr:region_congo = {
 			save_scope_as = cr_congo
 		}
+		p:x902089.owner = {
+			set_variable = {
+				name = cr_pressed_the_fernando_po_issue
+				value = 0
+			}		
+		}
 	}
 
 	complete = {
@@ -187,7 +219,7 @@ je_cr_ferdinando_po = {
 		}
 	}
 	
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default = no
 	
 	on_complete = {
 		p:x902089.owner = {
@@ -211,7 +243,7 @@ je_cr_ferdinando_po = {
 	fail = {
 		OR = {
 			has_law = law_type:law_slave_trade
-			scope:cr_fernando_po_state.owner = {
+			p:x902089.owner = {
 				OR = {
 					has_law = law_type:law_slave_trade
 					has_technology_researched = civilizing_mission
@@ -257,9 +289,17 @@ je_cr_ferdinando_po = {
 	
 	
 	invalid = {
-		NOR = { 
-			scope:cr_fernando_po_state.owner = c:GBR 
-			scope:cr_fernando_po_state.owner = c:ENG
+		NOT = { 
+			c:GBR = {
+				any_scope_state = {
+					state_region = s:STATE_SAO_TOME_AND_PRINCIPE
+				}
+			}
+			c:ENG = {
+				any_scope_state = {
+					state_region = s:STATE_SAO_TOME_AND_PRINCIPE
+				}
+			}
 		}	
 	}
 	

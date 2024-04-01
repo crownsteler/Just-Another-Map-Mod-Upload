@@ -611,7 +611,7 @@
 		region_state:FRA = {
 			create_pop = {
 				culture = french
-				size = 1608005
+				size = 1498005
 			}
 			create_pop = {
 				culture = french
@@ -620,7 +620,7 @@
 			}
 			create_pop = {
 				culture = flemish
-				size = 70121
+				size = 180121
 			}
 			create_pop = {
 				culture = flemish
@@ -981,12 +981,12 @@
 		region_state:LUX = {
 			create_pop = {
 				culture = wallonian
-				size = 103992
+				size = 21996
 			}
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 71996
+				size = 153992
 			}
 		}
 		region_state:BEL = {
@@ -1616,17 +1616,17 @@
 		}
 		region_state:BAV = {
 			create_pop = {
-				culture = south_german
-				size = 251600
+				culture = north_german
+				size = 151600
 			}
 			create_pop = {
 				culture = ashkenazi
 				size = 1996
 			}
 			create_pop = {
-				culture = south_german
+				culture = north_german
 				religion = protestant
-				size = 303996
+				size = 403996
 			}
 		}
 		region_state:HES = {
@@ -1752,7 +1752,7 @@
 			create_pop = {
 				culture = south_german
 				religion = protestant
-				size = 926509
+				size = 189173
 			}
 			create_pop = {
 				culture = south_german
@@ -1760,12 +1760,12 @@
 			}
 			create_pop = {
 				culture = alemannic
-				size = 189173
+				size = 926509
 			}
 		}
 		region_state:HOH = {
 			create_pop = {
-				culture = south_german
+				culture = alemannic
 				religion = protestant
 				size = 40310
 			}
@@ -1779,7 +1779,7 @@
 		region_state:BAD = {
 			create_pop = {
 				culture = south_german
-				size = 905246
+				size = 143154
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -1793,7 +1793,8 @@
 
 			create_pop = {
 				culture = alemannic
-				size = 143154
+				religion = catholic
+				size = 905246
 			}
 		}
 	}

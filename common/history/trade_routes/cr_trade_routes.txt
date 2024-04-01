@@ -9,7 +9,7 @@
 		}			
 		create_trade_route = {
 			goods = tools
-			level = 2
+			level = 4
 			direction = import
 			target = c:PRU.market
 		}		
@@ -33,10 +33,16 @@
 		}	
 		create_trade_route = {
 			goods = coffee
-			level = 2
+			level = 6
 			direction = export
 			target = c:AUS.market
 		}		
+		create_trade_route = {
+			goods = dye
+			level = 4
+			direction = export
+			target = c:SIC.market
+		}	
 	}
 	c:DEI = {		
 		create_trade_route = {
@@ -81,6 +87,15 @@
 			direction = import
 			target = c:TUR.market
 		}			
+	}
+	# France
+	c:GBR = {
+		create_trade_route = {
+			goods = tools
+			level = 2
+			direction = export
+			target = c:NET.market
+		}		
 	}
 	# Portugal
 	c:POR = {	

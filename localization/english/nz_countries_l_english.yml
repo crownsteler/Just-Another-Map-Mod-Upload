@@ -1,0 +1,37 @@
+﻿l_english:
+
+# Default countries
+
+ TAI:0 "Tainui"
+ TAI_ADJ:0 "Tainui"
+
+ NKU:0 "Ngāti Kahungunu"
+ NKU_ADJ:0 "Ngāti Kahungunu"
+
+ TAR:0 "Taranaki"
+ TAR_ADJ:0 "Taranaki"
+
+ KGI:0 "Tainui"
+ KGI_ADJ:0 "Tainui"
+
+ UNT_ADJ:0 "United Tribes"
+
+ #TUH:0 "Tūhoe"
+ #TUH_ADJ:0 "Tūhoe"
+ 
+ NMS:0 "New Munster"
+ NMS_ADJ:0 "New Munster"
+
+ NZC:0 "New Zealand Company"
+ NZC_ADJ:0 "New Zealand Company"
+
+ SAM:0 "Samoa"
+ SAM_ADJ:0 "Samoan"
+ 
+ RAP:0 "Rapa Nui"
+ RAP_ADJ:0 "Rapa Nui"
+ 
+ nms_releasable_tt:0 "South Island separatism has been proposed"
+ 
+ # Country Descriptions
+ UNT_FLAVOR_TEXT:0 "The United Tribes of New Zealand have declared their sovereign independence, though in truth they are at the mercy of the British Empire. Can the British be trusted to respect their treaties with the Māori?"

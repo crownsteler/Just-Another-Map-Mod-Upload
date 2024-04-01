@@ -1,12 +1,4 @@
 ﻿
-
-cr_mining_permit_denied = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_capitalists_investment_pool_contribution_add = -0.10
-	state_aristocrats_investment_pool_contribution_add = -0.10
-	state_shopkeepers_investment_pool_contribution_add = -0.10
-}
-
 cr_solomonic_dynasty = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	country_prestige_mult = 0.03
@@ -30,6 +22,24 @@ cr_desamortizacion_auctioned = {
 
 
 #North America
+cr_vestige_of_empire = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	state_colony_growth_speed_mult = -1
+}
+
+cr_mining_permit_denied = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_capitalists_investment_pool_contribution_add = -0.10
+	state_aristocrats_investment_pool_contribution_add = -0.10
+	state_shopkeepers_investment_pool_contribution_add = -0.10
+}
+
+cr_lake_superior_copper_rush = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_colony_growth_speed_mult = 0.33
+	building_copper_mine_throughput_add = 0.20
+}
+
 cr_unceded_territory_95 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	state_colony_growth_speed_mult = -0.95
@@ -52,12 +62,17 @@ cr_unceded_territory_30 = {
 
 cr_treaty_annuities = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_tax_income_add = -300
+	country_tax_income_add = -600
+}
+
+cr_native_land_payments_building = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	building_throughput_add = -0.1
 }
 
 cr_eyeing_unceded_land = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
-	country_tension_decay_mult = -0.25
+	country_tension_decay_mult = -0.5
 }
 
 cr_pushing_numbered_treaties = {
@@ -109,7 +124,6 @@ cr_government_removal_agents = {
 	country_bureaucracy_mult = -0.1
 }
 
-
 cr_treaty_of_doaksville = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_tax_income_add = -1500
@@ -120,4 +134,32 @@ cr_indians_removed_modifier = {
 	interest_group_ig_landowners_pol_str_mult = 0.1
 	state_migration_pull_mult = 0.1
 	state_birth_rate_mult = 0.01
+}
+
+cr_colonising_alaska_modifier_rus = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_authority_add = -100
+}
+
+cr_colonising_russia_america_cooldown = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+}
+
+cr_colonising_alaska_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_migration_pull_add = 20
+	state_migration_pull_mult = 0.25
+	state_colony_growth_speed_mult = 0.35
+}
+
+cr_colonising_california_modifier_rus = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_authority_add = -100
+}
+
+cr_colonising_california_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_migration_pull_add = 20
+	state_migration_pull_mult = 0.25
+	state_colony_growth_speed_mult = 0.35
 }

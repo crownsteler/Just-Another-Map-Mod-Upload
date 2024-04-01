@@ -25,8 +25,10 @@
 			any_scope_state = {
 				state_region = s:STATE_ALASKA
 			}
-			c:ASK = {
-				is_subject_of = ROOT
+			any_subject_or_below = {
+				any_scope_state = {
+					state_region = s:STATE_ALASKA
+				}
 			}
 		}
 		custom_tooltip = {
@@ -54,11 +56,27 @@
 		}
 	}
 	immediate = {
-		c:RUS = {
-			save_scope_as = alaska_owner_scope
+		save_scope_as = alaska_owner_scope
+		if = {
+			limit = {
+				c:ASK = {
+					is_subject_of = ROOT
+				}
+			}
+			s:STATE_ALASKA.region_state:ASK = {
+				save_scope_as = alaska_scope
+			}
 		}
-		s:STATE_ALASKA.region_state:ASK = {
-			save_scope_as = alaska_scope
+		else = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_ALASKA
+				}
+				save_scope_as = alaska_scope
+			}
+		}
+		ruler = {
+			save_scope_as = ruler_scope
 		}
 	}
 
@@ -71,7 +89,12 @@
 
 	fail = {
 		NOT = {
-			has_state_in_state_region = STATE_ALASKA
+			OR = {
+				has_state_in_state_region = STATE_ALASKA
+				any_subject_or_below = {
+					has_state_in_state_region = STATE_ALASKA
+				}
+			}
 			custom_tooltip = {
 				text = not_sold_alaska_tt
 				has_variable = successful_sale_of_alaska
@@ -141,15 +164,17 @@ je_alaska = {
 					state_region = s:STATE_ALASKA
 				}
 			}
-		#}
-		#
-		#custom_tooltip = {
-			#text =  je_alaska_tooltip_2
 			NOT = {
 				c:RUS = {
-					any_scope_state = {
-						state_region = s:STATE_ALASKA
-						#owner = c:RUS
+					OR = {
+						any_scope_state = {
+							state_region = s:STATE_ALASKA
+						}
+						any_subject_or_below = {
+							any_scope_state = {
+								state_region = s:STATE_ALASKA
+							}
+						}
 					}
 				}
 			}
@@ -163,25 +188,25 @@ je_alaska = {
 		}
 	}
 	
-	invalid = {
-		OR = {
-			NAND= {
-				c:USA = {
-					any_scope_state = {
-						state_region = s:STATE_ALASKA
-					}
-				}
-				c:RUS = {
-					any_scope_state = {
-						state_region = s:STATE_ALASKA
-					}
-				}
-			}
-			NOT = {
-				exists = c:USA
-			}
-		}
-	}
+	#invalid = {
+	#	OR = {
+	#		NAND= {
+	#			c:USA = {
+	#				any_scope_state = {
+	#					state_region = s:STATE_ALASKA
+	#				}
+	#			}
+	#			c:RUS = {
+	#				any_scope_state = {
+	#					state_region = s:STATE_ALASKA
+	#				}
+	#			}
+	#		}
+	#		NOT = {
+	#			exists = c:USA
+	#		}
+	#	}
+	#}
 
 	timeout = 7300
 

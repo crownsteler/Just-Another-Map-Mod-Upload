@@ -1,13 +1,34 @@
 ﻿# This is executed last among all history
 GLOBAL = {
 	s:STATE_NAVARRA = {
-		add_devastation = 24
+		add_devastation = 26
 	}
 	s:STATE_CATALONIA = {
-		add_devastation = 10
+		add_devastation = 22
 	}
 	s:STATE_ARAGON = {
-		add_devastation = 10
+		add_devastation = 22
+	}
+	s:STATE_ASTURIAS = {
+		add_devastation = 15
+	}
+	s:STATE_GALICIA = {
+		add_devastation = 15
+	}
+	s:STATE_ANDALUSIA = {
+		add_devastation = 12
+	}
+	s:STATE_BADAJOZ = {
+		add_devastation = 8
+	}
+	s:STATE_TOLEDO = {
+		add_devastation = 8
+	}
+	s:STATE_GRANADA = {
+		add_devastation = 8
+	}
+	s:STATE_LEON = {
+		add_devastation = 12
 	}
 	c:SPA = {
 		set_variable = cr_carlist_war_ongoing
@@ -60,6 +81,7 @@ GLOBAL = {
         }	
 	}
 	c:CSP = {
+		set_variable = cr_carlist_war_ongoing
 		add_loyalists = {
 			value = 0.45
 			culture = cu:basque

@@ -4,6 +4,9 @@
  Gideon_Jan:0 "Gideon Jan"
  Jacob_Dirk_Carel:0 "Jacob Dirk Carel"
  Lodewijk_Casper:0 "Lodewijk Casper"
+ hubert_joseph_jean_lambert:0 "Hubert Joseph Jean Lambert"
+ frans_david:0 "Frans David"
+ francois_vincent_henri_antoine:0 "François Vincent Henri Antoine"
  
  #Dutch female first names
 
@@ -24,6 +27,7 @@
  Schimmelpenninck:0 "Schimmelpenninck"
  van_Dam_van_Isselt:0 "van Dam van Isselt"
  van_Voorst_tot_Voorst:0 "van Voorst tot Voorst"
+ de_stuers:0 "de Stuers"
  
  de_Wijkerslooth:0 "de Wijkerslooth"
  van_Heeckeren:0 "van Heeckeren"
@@ -34,6 +38,12 @@
  Huydecoper:0 "Huydecoper"
  Luzac:0 "Luzac"
  Verdam:0 "Verdam"
+ 
+ #Flemish first names
+ charles_pierre:0 "Charles-Pierre"
+ 
+ #Flemish last names
+ schimpf:0 "Schimpf"
  
  #Flemish noble last names
  de_Geloes_d_Elsloo:0  "de Geloes d'Elsloo"
@@ -263,6 +273,8 @@
  #Spanish:
  gomez_damas:0 "Gomez Damas"
  de_Zumalacarregui:0 "de Zumalacarragui"
+ de_zumalacarregui_e_imaz:0 "de Zumalacárregui e Imaz"
+ gonzalez_moreno:0 "González Moreno"
  Cabrera:0 "Cabrera"
  Ramon:0 "Ramón"
  carlos_luis:0 "Carlos Luis"

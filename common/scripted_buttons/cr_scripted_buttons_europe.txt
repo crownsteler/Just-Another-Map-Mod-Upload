@@ -5,91 +5,13 @@
 	visible = { always = yes }
 
 	ai_chance = {
-		base = 99
-		#modifier = {
-		#	trigger = {
-		#		OR = {
-		#			p:x902089.owner = {
-		#				NOR = {
-		#					has_attitude = {
-		#						who = ROOT
-		#						attitude = belligerent
-		#					}
-		#					has_attitude = {
-		#						who = ROOT
-		#						attitude = antagonistic
-		#					}
-		#					has_attitude = {
-		#						who = ROOT
-		#						attitude = domineering
-		#					}	
-		#					has_attitude = {
-		#						who = ROOT
-		#						attitude = rebellious
-		#					}			
-		#				}
-		#			}
-		#		}
-		#	}
-		#	add = -1000
-		#}
-		#modifier = {
-		#	trigger = {
-		#		var:je_fernando_po_ai_count_var >5 #The AI should ask no more than 5 times
-		#	}
-		#	add = -1000
-		#}
-		#modifier = {
-		#	trigger = {
-		#		OR = {
-		#			p:x902089.owner = {
-		#				NOR = {
-		#					has_attitude = {
-		#						who = ROOT
-		#						attitude = conciliatory
-		#					}
-		#					has_attitude = {
-		#						who = ROOT
-		#						attitude = protective
-		#					}
-		#					has_attitude = {
-		#						who = ROOT
-		#						attitude = genial
-		#					}	
-		#					has_attitude = {
-		#						who = ROOT
-		#						attitude = cooperative
-		#					}			
-		#				}
-		#			}
-		#		}
-		#	}
-		#	add = 50
-		#}
-		#modifier = {
-		#	trigger = {
-		#		p:x902089.owner = {
-		#			relations:ROOT >= relations_threshold:cordial
-		#		}
-		#	}
-		#	add = 15
-		#}
-		#modifier = {
-		#	trigger = {
-		#		p:x902089.owner = {
-		#			relations:ROOT >= relations_threshold:amicable
-		#		}
-		#	}
-		#	add = 15
-		#}
-		#modifier = {
-		#	trigger = {
-		#		p:x902089.owner = {
-		#			relations:ROOT >= relations_threshold:friendly
-		#		}
-		#	}
-		#	add = 15
-		#}
+		base = 25
+		modifier = {
+			trigger = {
+				var:je_fernando_po_ai_count_var >5 #The AI should ask no more than 5 times
+			}
+			add = -1000
+		}
 	}
 	
 	possible = {
@@ -127,9 +49,6 @@
 					type = rivalry 
 				}
 			}
-		}
-		custom_tooltip = {
-			text = je_cr_ferdinando_po_button_a_tt
 		}
 	}
 
@@ -207,6 +126,9 @@ je_cr_ferdinando_po_button_b = {
 		p:x902089.owner = {
 			save_scope_as = cr_fernado_po_seller
 			post_notification = cr_fernando_po_reclaimed_obligation
+			trigger_event = {
+				id = cr_europe_events.29 days = 1
+			}
 		}
 		scope:cr_fernado_po_seller = {
 			set_owes_obligation_to = {
@@ -279,7 +201,7 @@ je_cr_ferdinando_po_button_c = {
 	possible = {
 		custom_tooltip = {
 			text = je_cr_ferdinando_po_a_tt
-			NOT = { has_variable = cr_fernando_po_dealt_with_local_var }
+			NOT = { has_variable = cr_fernando_po_appealed_to_treaty }
 		}
 		has_interest_marker_in_region = region_biafra
 		NOT = { owes_obligation_to = p:x902089.owner } 

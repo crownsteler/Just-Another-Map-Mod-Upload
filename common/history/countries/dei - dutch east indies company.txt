@@ -1,20 +1,61 @@
 ﻿COUNTRIES = {
-	c:DEI = {
+	c:DEI ?= {
 		effect_starting_politics_traditional = yes
+		add_technology_researched = corporate_charters
 
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
+			set_interest_group_name = ig_regents
+			set_ig_trait = ig_trait:ig_trait_friendly_faces
+			set_ig_trait = ig_trait:ig_trait_corvee
+			set_ig_trait = ig_trait:ig_trait_helpful_natives
+			#remove_ideology = ideology_patriarchal
+			add_ideology = ideology_colonial_subjects_cr
 		}
 
 		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes
+			set_interest_group_name = ig_knil
+			set_ig_trait = ig_trait:ig_trait_marechaussee_te_voet
+			set_ig_trait = ig_trait:ig_trait_foward_presence
+			set_ig_trait = ig_trait:ig_trait_lax_enforcers
+			remove_ideology = ideology_loyalist
+			add_ideology = ideology_colonial_overlords
+		}
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_ulama
+			set_ig_trait = ig_trait:ig_trait_village_recordkeepers
+			set_ig_trait = ig_trait:ig_trait_keepers_of_the_calendar
+			set_ig_trait = ig_trait:ig_trait_power_of_islam
+			remove_ideology = ideology_moralist
+			add_ideology = ideology_moralist_colonial
+			add_ideology = ideology_colonial_subjects_cr
+		}
+
+		ig:ig_rural_folk = {
+			set_interest_group_name = ig_planters
+			set_ig_trait = ig_trait:ig_trait_benefits_of_civilisation
+			set_ig_trait = ig_trait:ig_trait_kampongs
+			set_ig_trait = ig_trait:ig_trait_oostindisch_doof
+			remove_ideology = ideology_isolationist
+			remove_ideology = ideology_agrarian
+			add_ideology = ideology_agrarian_planters
+			add_ideology = ideology_colonial_subjects_cr
+		}
+
+		ig:ig_petty_bourgeoisie = {
+			set_interest_group_name = ig_local_middlemen
+			set_ig_trait = ig_trait:ig_trait_widely_traveled
+			set_ig_trait = ig_trait:ig_trait_porters
+			set_ig_trait = ig_trait:ig_trait_moneylenders
 		}
 		
 		effect_starting_technology_tier_2_tech = yes
 
 		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_autocracy
-		activate_law = law_type:law_total_separation
+		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_industry_banned
 		activate_law = law_type:law_censorship
@@ -24,6 +65,10 @@
 		activate_law = law_type:law_debt_slavery
 		activate_law = law_type:law_no_colonial_affairs #onthoudingspolitiek ment that no colonial expansion took place
 		activate_law = law_type:law_professional_army
-		activate_law = law_type:law_legacy_slavery
-	}
+		activate_law = law_type:law_debt_slavery
+
+		add_company = company_type:company_nederlandse_handelsmaatschappij
+		company:company_nederlandse_handelsmaatschappij = {
+			set_company_establishment_date = 1824.3.29
+		}
 }

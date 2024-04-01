@@ -1,0 +1,837 @@
+POPS = {  #australian split to 65% british, 35% irish 
+	s:STATE_AUSTRALIAN_CAPITAL_TERRITORY={
+		region_state:I05={
+		  create_pop={
+			culture=aborigine
+			size=2092
+			}
+		}
+		region_state:NSW={
+			create_pop={
+			  culture=aborigine
+			  size=1023
+			  }	
+			  create_pop = {
+				culture = british
+				size = 482
+			}
+			create_pop = {
+				culture = irish
+				size = 649
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = irish
+				size = 1378
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = british
+				size = 524
+			}
+		  }
+	}
+	s:STATE_NEW_SOUTH_WALES = {
+		region_state:NSW = {
+			create_pop = {
+				culture = aborigine
+				size = 13200
+			}
+#			create_pop = {
+#				culture = australian
+#				size = 118642 #+15k
+#			}
+			create_pop = {
+				culture = british
+				size = 77117
+			}
+			create_pop = {
+				culture = irish
+				size = 57604
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = british
+				size = 15062
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = irish
+				size = 6296
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = scottish
+				size = 1910
+			}
+			create_pop = {
+				culture = scottish
+				size = 128
+			}
+		}
+		region_state:I01 = {
+			create_pop = {
+				culture = aborigine
+				size = 1650
+			}
+		}
+		region_state:I02 = {
+			create_pop = {
+				culture = aborigine
+				size = 650
+			}
+		}
+		region_state:I04 = {
+			create_pop = {
+				culture = aborigine
+				size = 3050
+			}
+		}
+		region_state:I05 = {
+			create_pop = {
+				culture = aborigine
+				size = 21921
+			}
+		}
+		region_state:I06 = {
+			create_pop = {
+				culture = aborigine
+				size = 3200
+			}
+		}
+		region_state:I07 = {
+			create_pop = {
+				culture = aborigine
+				size = 4095
+			}
+		}
+		region_state:I08 = {
+			create_pop = {
+				culture = aborigine
+				size = 1090
+			}
+		}
+		region_state:I09 = {
+			create_pop = {
+				culture = aborigine
+				size = 1431
+			}
+		}
+		region_state:I10 = {
+			create_pop = {
+				culture = aborigine
+				size = 1080
+			}
+		}
+		region_state:I11 = {
+			create_pop = {
+				culture = aborigine
+				size = 2041
+			}
+		}
+		region_state:I19 = {
+			create_pop = {
+				culture = aborigine
+				size = 341
+			}
+		}
+		region_state:PAA = {
+			create_pop = {
+				culture = aborigine
+				size = 4290
+			}
+		}
+		region_state:GML = {
+			create_pop = {
+				culture = aborigine
+				size = 24400
+			}
+		}
+	}
+	s:STATE_VICTORIA = {
+		region_state:NSW = {
+			create_pop = {
+				culture = aborigine
+				size = 21783
+			}
+#			create_pop = {
+#				culture = australian
+#				size = 39676 #+15k
+#			}
+			create_pop = {
+				culture = british
+				size = 32824
+			}
+			create_pop = {
+				culture = irish
+				size = 16578
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = british
+				size = 2997
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = irish
+				size = 2578
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = scottish
+				size = 403
+			}
+			create_pop = {
+				culture = scottish
+				size = 52
+			}
+
+		}
+		region_state:I01 = {
+			create_pop = {
+				culture = aborigine
+				size = 20697
+			}
+		}
+		region_state:I02 = {
+			create_pop = {
+				culture = aborigine
+				size = 3109
+			}
+		}
+		region_state:I03 = {
+			create_pop = {
+				culture = aborigine
+				size = 3672
+			}
+		}
+		region_state:I07 = {
+			create_pop = {
+				culture = aborigine
+				size = 2657
+			}
+		}
+	}
+	s:STATE_TASMANIA = {
+		region_state:TAS = {
+			create_pop = {
+				culture = aborigine
+				size = 400
+			}
+#			create_pop = {
+#				culture = australian
+#				size = 28319 #+15k
+#			}
+			create_pop = {
+				culture = british
+				size = 18407
+			}
+			create_pop = {
+				culture = irish
+				size = 9911
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = british
+				size = 3382
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = irish
+				size = 2279
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = scottish
+				size = 498
+			}
+		}
+	}
+	s:STATE_QUEENSLAND = {
+		region_state:NSW = {
+			create_pop = {
+				culture = aborigine
+				size = 3746
+			}
+#			create_pop = {
+#				culture = australian
+#				size = 19000 #+15k
+#			}
+			create_pop = {
+				culture = british
+				size = 10452
+			}
+			create_pop = {
+				culture = irish
+				size = 5628
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = british
+				size = 1702
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = irish
+				size = 789
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = scottish
+				size = 250
+			}
+			create_pop = {
+				culture = scottish
+				size = 34
+			}
+		}
+		region_state:I10 = {
+			create_pop = {
+				culture = aborigine
+				size = 300
+			}
+		}
+		region_state:I11 = {
+			create_pop = {
+				culture = aborigine
+				size = 300
+			}
+		}
+		region_state:I12 = {
+			create_pop = {
+				culture = aborigine
+				size = 11250
+			}
+		}
+		region_state:I13 = {
+			create_pop = {
+				culture = aborigine
+				size = 2700
+			}
+		}
+		region_state:I14 = {
+			create_pop = {
+				culture = aborigine
+				size = 11400
+			}
+		}
+		region_state:I15 = {
+			create_pop = {
+				culture = aborigine
+				size = 3900
+			}
+		}
+		region_state:I09 = {
+			create_pop = {
+				culture = aborigine
+				size = 5004
+			}
+		}
+		region_state:I05 = {
+			create_pop = {
+				culture = aborigine
+				size = 3400
+			}
+		}
+		region_state:I16 = {
+			create_pop = {
+				culture = aborigine
+				size = 3200
+			}
+		}
+		region_state:I17 = {
+			create_pop = {
+				culture = aborigine
+				size = 2100
+			}
+		}
+		region_state:I18 = {
+			create_pop = {
+				culture = aborigine
+				size = 15400
+			}
+		}
+		region_state:I28 = {
+			create_pop = {
+				culture = aborigine
+				size = 3200
+			}
+		}
+		region_state:I29 = {
+			create_pop = {
+				culture = aborigine
+				size = 2100
+			}
+		}
+		region_state:PPU = {
+			create_pop = {
+				culture = melanesian
+				size = 4000
+			}
+		}
+		region_state:PAA = {
+			create_pop = {
+				culture = aborigine
+				size = 290
+			}
+		}
+		region_state:GML = {
+			create_pop = {
+				culture = aborigine
+				size = 3400
+			}
+		}
+	}
+	s:STATE_SOUTH_AUSTRALIA = {
+		region_state:SAS = {
+#			create_pop = {
+#				culture = australian
+#				size = 10103 #+10k
+#			}
+			create_pop = {
+				culture = british
+				size = 6467
+			}
+			create_pop = {
+				culture = irish
+				size = 3436
+			}
+			create_pop = {
+				culture = aborigine
+				size = 32000
+			}
+			create_pop = {
+				culture = scottish
+				size = 300
+			}
+		}
+		region_state:I01 = {
+			create_pop = {
+				culture = aborigine
+				size = 1536
+			}
+		}
+		region_state:I02 = {
+			create_pop = {
+				culture = aborigine
+				size = 403
+			}
+		}
+		region_state:I07 = {
+			create_pop = {
+				culture = aborigine
+				size = 8609
+			}
+		}
+		region_state:I08 = {
+			create_pop = {
+				culture = aborigine
+				size = 1372
+			}
+		}
+		region_state:I06 = {
+			create_pop = {
+				culture = aborigine
+				size = 5420
+			}
+		}
+		region_state:I09 = {
+			create_pop = {
+				culture = aborigine
+				size = 1512
+			}
+		}
+		region_state:I19 = {
+			create_pop = {
+				culture = aborigine
+				size = 10425
+			}
+		}
+		region_state:I20 = {
+			create_pop = {
+				culture = aborigine
+				size = 1518
+			}
+		}
+		region_state:NNG = {
+			create_pop = {
+				culture = aborigine
+				size = 1218
+			}
+		}
+		region_state:I21 = {
+			create_pop = {
+				culture = aborigine
+				size = 1505
+			}
+		}
+		region_state:KAU = {
+			create_pop = {
+				culture = aborigine
+				size = 9505
+			}
+		}
+		region_state:PAA = {
+			create_pop = {
+				culture = aborigine
+				size = 790
+			}
+		}
+	}
+	s:STATE_WESTERN_AUSTRALIA = {
+		region_state:WAS = {
+			create_pop = {
+				culture = aborigine
+				size = 4014
+			}
+#			create_pop = {
+#				culture = australian
+#				size = 18004 #+15k
+#			}
+			create_pop = {
+				culture = british
+				size = 11703
+			}
+			create_pop = {
+				culture = irish
+				size = 6301
+			}
+			create_pop = {
+				culture = scottish
+				size = 484
+			}
+		}
+		region_state:NNG = {
+			create_pop = {
+				culture = aborigine
+				size = 23100
+			}
+		}
+		region_state:I20 = {
+			create_pop = {
+				culture = aborigine
+				size = 4112
+			}
+		}
+		region_state:I21 = {
+			create_pop = {
+				culture = aborigine
+				size = 4044
+			}
+		}
+		region_state:I22 = {
+			create_pop = {
+				culture = aborigine
+				size = 3885
+			}
+		}
+		region_state:I23 = {
+			create_pop = {
+				culture = aborigine
+				size = 3917
+			}
+		}
+		region_state:I24 = {
+			create_pop = {
+				culture = aborigine
+				size = 3981
+			}
+		}
+		region_state:I25 = {
+			create_pop = {
+				culture = aborigine
+				size = 4012
+			}
+		}
+		region_state:I26 = {
+			create_pop = {
+				culture = aborigine
+				size = 3893
+			}
+		}
+		region_state:I39 = {
+			create_pop = {
+				culture = aborigine
+				size = 3892
+			}
+		}
+		region_state:I40 = {
+			create_pop = {
+				culture = aborigine
+				size = 3896
+			}
+		}
+		region_state:I41 = {
+			create_pop = {
+				culture = aborigine
+				size = 4000
+			}
+		}
+		region_state:I42 = {
+			create_pop = {
+				culture = aborigine
+				size = 3854
+			}
+		}
+	}
+	s:STATE_NORTHERN_TERRITORY = {
+		region_state:I09 = {
+			create_pop = {
+				culture = aborigine
+				size = 2192
+			}
+		}
+		region_state:I16 = {
+			create_pop = {
+				culture = aborigine
+				size = 2100
+			}
+		}
+		region_state:I21 = {
+			create_pop = {
+				culture = aborigine
+				size = 2032
+			}
+		}
+		region_state:I26 = {
+			create_pop = {
+				culture = aborigine
+				size = 7051
+			}
+		}
+		region_state:I27 = {
+			create_pop = {
+				culture = aborigine
+				size = 1991
+			}
+		}
+		region_state:I28 = {
+			create_pop = {
+				culture = aborigine
+				size = 2116
+			}
+		}
+		region_state:I29 = {
+			create_pop = {
+				culture = aborigine
+				size = 2289
+			}
+		}
+		region_state:I30 = {
+			create_pop = {
+				culture = aborigine
+				size = 2220
+			}
+		}
+		region_state:I31 = {
+			create_pop = {
+				culture = aborigine
+				size = 2172
+			}
+		}
+		region_state:I32 = {
+			create_pop = {
+				culture = aborigine
+				size = 2200
+			}
+		}
+		region_state:I33 = {
+			create_pop = {
+				culture = aborigine
+				size = 2225
+			}
+		}
+		region_state:I34 = {
+			create_pop = {
+				culture = aborigine
+				size = 2116
+			}
+		}
+		region_state:I35 = {
+			create_pop = {
+				culture = aborigine
+				size = 1818
+			}
+		}
+		region_state:I36 = {
+			create_pop = {
+				culture = aborigine
+				size = 2138
+			}
+		}
+		region_state:I37 = {
+			create_pop = {
+				culture = aborigine
+				size = 2079
+			}
+		}
+		region_state:I39 = {
+			create_pop = {
+				culture = aborigine
+				size = 1180
+			}
+		}
+		region_state:NSW = {
+			create_pop = {
+				culture = aborigine
+				size = 2165
+			}
+			create_pop = {
+				culture = british
+				size = 60
+			}
+		}
+	}
+	# All NZ states population increased by 50% from rough historical numbers
+	s:STATE_NORTH_ISLAND = {
+		region_state:TAI = {
+			create_pop = {
+				culture = maori
+				religion = protestant
+				size = 1788 #1192
+			}
+			create_pop = {
+				culture = maori
+				size = 35926 #23951
+			}
+			create_pop = {
+				culture = british
+				size = 142 #95
+			}
+			create_pop = {
+				pop_type = clergymen
+				culture = british
+				size = 51 #34
+			}
+			create_pop = {
+				pop_type = clergymen
+				culture = french
+				size = 13 #9
+			}
+		}
+	#}
+	#s:STATE_EAST_CAPE = {
+		region_state:NKU = {
+			create_pop = {
+				culture = maori
+				size = 34267 #22845
+			}
+			create_pop = {
+				culture = maori
+				religion = protestant
+				size = 832 #555
+			}
+			create_pop = {
+				culture = british
+				size = 40 #27
+			}
+			create_pop = {
+				pop_type = clergymen
+				culture = british
+				size = 21 #14
+			}
+		}
+	#}
+	#s:STATE_COOK_STRAIT = {
+		region_state:TAR = {
+			create_pop = {
+				culture = maori
+				religion = protestant
+				size = 153 #102
+			}
+			create_pop = {
+				culture = maori
+				size = 9508 #6339
+			}
+			create_pop = {
+				culture = british
+				size = 16 #11
+			}
+			create_pop = {
+				pop_type = clergymen
+				culture = british
+				size = 10 #7
+			}
+			
+		}
+		region_state:NTO = {
+			create_pop = {
+				culture = maori
+				religion = protestant
+				size = 126 #84
+			}
+			create_pop = {
+				culture = maori
+				size = 7821 #5214
+			}
+			create_pop = {
+				culture = british
+				size = 195 #130
+			}
+			create_pop = {
+				pop_type = clergymen
+				culture = british
+				size = 22 #15
+			}
+		}
+	#}
+	#s:STATE_NORTHLAND = {
+		region_state:UNT = {
+			create_pop = {
+				culture = maori
+				religion = protestant
+				size = 21015 #14010
+			}
+			create_pop = {
+				culture = maori
+				size = 14034 #9356
+			}
+			create_pop = {
+				culture = british
+				size = 499 #333
+			}
+			create_pop = {
+				pop_type = clergymen
+				culture = british
+				size = 360 #240
+			}
+			create_pop = {
+				pop_type = clergymen
+				culture = french
+				size = 22 #15
+			}
+		}
+	}
+	s:STATE_SOUTH_ISLAND = {
+		region_state:NTU = {
+			create_pop = {
+				culture = maori
+				size = 2575 #1717
+			}
+			create_pop = {
+				culture = maori
+				religion = protestant
+				size = 25 #17
+			}
+			create_pop = {
+				culture = british
+				size = 19 #13
+			}
+		}
+		region_state:NTO = {
+			create_pop = {
+				culture = maori
+				size = 3871 #2581
+			}
+			create_pop = {
+				culture = maori
+				religion = protestant
+				size = 204 #136
+			}
+			create_pop = {
+				culture = british
+				size = 75 #50
+			}
+		}
+	}
+}

@@ -3,10 +3,50 @@
 	
 	group = je_group_historical_content
 	
+	scripted_button = je_cr_russian_america_colonise_alaska_button
+	scripted_button = je_cr_russian_america_colonise_alaska_stop_button
+	
+	scripted_button = je_cr_russian_america_colonise_california_button
+	scripted_button = je_cr_russian_america_colonise_california_stop_button
+	
+	scripted_button = je_sell_alaska_button
+	scripted_button = je_cr_russian_america_annex_it
+	
+	immediate = {
+		save_scope_as = overlord
+	}
 	
 	on_monthly_pulse = {
 		random_events = {
-			
+			11 = 0
+			1 = cr_russian_alaska_events.1
+		}
+		if= {
+			limit = {
+				has_modifier = cr_colonising_alaska_modifier_rus 
+				NOT = { 
+					c:ASK = { 
+						is_subject_of = ROOT 
+					}
+				}
+			}
+			remove_modifier = cr_colonising_alaska_modifier_rus
+		}
+		if= {
+			limit = {
+				has_modifier = cr_colonising_california_modifier_rus
+				NOR = { 
+					c:ASK = { 
+						is_subject_of = ROOT
+					}
+					c:ASK = { 
+						any_scope_state = {
+							state_region = s:STATE_CALIFORNIA
+						}
+					}
+				}
+			}
+			remove_modifier = cr_colonising_california_modifier_rus
 		}
 	}
 
@@ -17,19 +57,54 @@
 		# Has fully colonised Alaska
 		# Britain does not control Yukon Territory and British Columbia
 		
-		# To prevent sale of Fort Ross needs to have a claim on California, or control San Fransisco
-		institution_investment_level = {
-			institution = institution_colonial_affairs
-			value >= 3
+		OR = {
+			owns_entire_state_region = STATE_ALASKA
+			any_subject_or_below = {
+				owns_entire_state_region = STATE_ALASKA
+			}
 		}
 	}
 	
 	on_complete = {
-		
+		hidden_effect = {
+			remove_modifier = cr_colonising_california_modifier_rus
+			remove_modifier = cr_colonising_alaska_modifier_rus
+		}
+	}
+	
+	fail = {
+		custom_tooltip = {
+			text = je_cr_russian_america_fail_tt
+			NOR = {
+				any_scope_state = {
+					state_region = s:STATE_ALASKA
+				}
+				any_subject_or_below = {
+					any_scope_state = {
+						state_region = s:STATE_ALASKA
+					}
+				}
+			}
+		}
+	
+	}
+	
+	on_fail = {
+		hidden_effect = {
+			remove_modifier = cr_colonising_california_modifier_rus
+			remove_modifier = cr_colonising_alaska_modifier_rus
+		}
 	}
 	
 	invalid = {
 	
+	}
+	
+	on_invalid = {
+		hidden_effect = {
+			remove_modifier = cr_colonising_california_modifier_rus
+			remove_modifier = cr_colonising_alaska_modifier_rus
+		}	
 	}
 	
 	weight = 200
@@ -69,47 +144,60 @@ je_cr_fort_ross = {
 			}
 		}
 		random_events = {
-			11 = 0
-			1 = cr_russian_alaska_events.1
 		}
 	}
 
 	complete = {
-		scope:journal_entry = {
-			is_goal_complete = yes
-		}
-		custom_tooltip = {
-			text = je_cr_fort_ross_goal_complete_tt
-			calc_true_if = {
-				amount >= 1
-				p:x5EF8F5.owner = ROOT
-				p:xAB1AA2.owner = ROOT
-				p:x2A91D8.owner = ROOT
-				p:xC78CD3.owner = ROOT
-				p:xB8F452.owner = ROOT
-				p:x1116AA.owner = ROOT
+		OR = {
+			scope:california_scope = {
+				any_scope_building = {
+					is_building_type = building_wheat_farm
+					occupancy >= 0.85
+				}
+			}
+			custom_tooltip = {
+				text = je_cr_fort_ross_complete_tt_a
+				p:x1116AA.owner = THIS
+			}
+			custom_tooltip = {
+				text = je_cr_fort_ross_complete_tt_b
+				p:x1116AA.owner = c:RUS
 			}
 		}
 	}
 
 	on_complete = {
-		trigger_event = { id = cr_russian_alaska_events.10 } # The Valley of Plenty
+		if = {
+			limit = {
+				scope:california_scope = {
+					any_scope_building = {
+						is_building_type = building_wheat_farm
+						occupancy >= 0.85
+					}
+				}
+			}
+			trigger_event = { id = cr_russian_alaska_events.10 } # The Valley of Plenty
+			c:RUS = {
+				trigger_event = { id = cr_russian_alaska_events.10 } # The Valley of Plenty
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					p:x1116AA.owner = THIS
+					p:x1116AA.owner = c:RUS
+				}
+			}
+			trigger_event = { id = cr_russian_alaska_events.9 } # The Golden Gate
+			c:RUS = {
+				trigger_event = { id = cr_russian_alaska_events.9 } # The Golden Gate
+			}
+		}
 	}
 	
     fail = {
 		scope:journal_entry = {
 			is_goal_complete = yes
-		}
-		custom_tooltip = {
-			text = je_cr_fort_ross_goal_fail_tt
-			calc_true_if = {
-				amount < 1
-				p:x5EF8F5.owner = ROOT
-				p:xAB1AA2.owner = ROOT
-				p:x2A91D8.owner = ROOT
-				p:xC78CD3.owner = ROOT
-				p:xB8F452.owner = ROOT
-			}
 		}
     }
 	
@@ -144,14 +232,14 @@ je_cr_fort_ross = {
 	}
 
 	goal_add_value = {
-		add = 120
+		add = 60
 	}
 
 	progressbar = yes
 
 	weight = 200
 
-	transferable = no
+	transferable = yes
 	
 	
 	should_be_pinned_by_default = yes

@@ -113,11 +113,11 @@
 		region_state:ASK = {
 			create_pop = {
 				culture = athabaskan
-				size = 2541
+				size = 4541
 			}
 			create_pop = {
 				culture = inuit
-				size = 842
+				size = 1842
 			}
 			create_pop = {
 				culture = russian
@@ -127,7 +127,7 @@
 		region_state:ATB = {
 			create_pop = {
 				culture = athabaskan
-				size = 17239
+				size = 27239
 			}
 		}
 		region_state:NNV = {
