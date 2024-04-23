@@ -249,7 +249,12 @@
 			}
 			create_pop = {
 				culture = yemenite
-				size = 29212
+				religion = sunni
+				size = 59212
+			}
+			create_pop = {
+				culture = yemenite
+				size = 9212
 			}
 			create_pop = {
 				culture = sephardic

@@ -31,6 +31,8 @@
  modifier_building_input_copper_add:0 "@copper! Copper input per level"
  modifier_building_input_copper_add_desc:0 "The amount of @copper! Copper consumed by buildings"
  
+ building_copper_mine_discovered_resource:0 "[GetGoods('copper').GetName]"
+ 
  
  #Minor Metals
  bg_minor_metals_mining:0 "Niche Metals Mines"
@@ -63,6 +65,8 @@
  goods_copper_minor_metals_mult_desc:0 "A bonus or penalty for the production of $minor_metals$."
  modifier_building_input_minor_metals_add:0 "@minor_metals! Niche Metals input per level"
  modifier_building_input_minor_metals_add_desc:0 "The amount of @minor_metals! Niche Metals consumed by buildings"
+ 
+ building_minor_metals_mine_discovered_resource:0 "[GetGoods('minor_metals').GetName]"
  
  #Dates
  bg_date_plantations:0 "Date Plantations"

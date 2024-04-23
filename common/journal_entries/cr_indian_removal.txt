@@ -4,11 +4,35 @@
 	group = je_group_historical_content
 	
 	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					has_variable = treaty_of_new_echota_passed
+					NOT = {
+						has_variable = the_trial_of_tears_has_started
+					}
+					NOT = {
+						has_variable = treaty_of_new_echota_rejected
+					}
+				}
+				trigger_event = { id = cr_indian_removal.15 }
+			}
+		}
 		random_events = {
-			#10 = 0 
-			#1 = native_resettlement.2 # john ross
-			#1 = native_resettlement.3 # Preparing for resettlement
-			#1 = native_resettlement.4 # Trail of Tears
+			5 = 0
+			10 = cr_indian_removal.1 #Chickasaw Removal / treaty of doaksville
+			15 = cr_indian_removal.5 #intruder controversy
+			15 = cr_indian_removal.6 #The Roanoke Massacre
+			15 = cr_indian_removal.10 #Treaty of New Echota
+			5 = cr_indian_removal.11 #An Adress to Martin van Buren
+			5 = cr_indian_removal.12 #John Ross' Protest Petition
+			10 = cr_indian_removal.30  #Squatters
+			5 = cr_indian_removal.31  #Newspaper Clippings
+			5 = cr_indian_removal.33  #College Protests
+			5 = cr_indian_removal.34  #Female Missionary Societies
+			5 = cr_indian_removal.35 #Land Patents / Choctaw Scrip
+			5 = cr_indian_removal.40 #The Failure of Indian Policy
+			5 = cr_indian_removal.41 #Indian Improvement Societies 
 		}
 	}
 	
@@ -21,24 +45,32 @@
 	
 	immediate = {
 		set_variable = cr_choctaw_removal_complete
+		save_scope_as = cr_removing_country
 		set_variable = {
-			name = cr_negotiating_with_the_cherokee_var
-			months = short_modifier_time
+			name = cr_indian_removal_startup_cooldown
+			months = 3
+		}
+		ig:ig_landowners = {
+			save_scope_as = planters
 		}
 		c:CHE = {
 			save_scope_as = cherokee_nation
 		}
 		c:CSW = {
 			save_scope_as = chickasaw_nation
+			activate_law = law_type:law_industry_banned
 		}
 		c:CTW = {
 			save_scope_as = choctaw_nation
+			activate_law = law_type:law_industry_banned
 		}
 		c:MSC = {
 			save_scope_as = creek_nation
+			activate_law = law_type:law_industry_banned
 		}
 		c:SMN = {
 			save_scope_as = seminole_nation
+			activate_law = law_type:law_industry_banned
 		}
 		s:STATE_GEORGIA.region_state:USA = {
 			save_scope_as = state_of_georgia
@@ -63,6 +95,9 @@
 		}
 		cu:cherokee = {
 			save_scope_as = cherokee_people
+		}
+		cu:muskogean = {
+			save_scope_as = muskogean_people
 		}
 		cu:yankee = {
 			save_scope_as = yankee_culture
@@ -98,6 +133,7 @@
 	on_complete = {
 		custom_tooltip = {
 			text = je_indian_removal_end_0
+			trigger_event = { id = native_resettlement.5 }
 		}
 		custom_tooltip = {
 			text = je_indian_removal_end_1
@@ -108,10 +144,30 @@
 		#custom_tooltip = {
 		#	text = je_indian_removal_end_3
 		#}
+		hidden_effect = {
+			remove_modifier = cr_creek_removal_cost
+			remove_modifier = cr_chickasaw_removal_cost
+			remove_modifier = cr_cherokee_removal_cost
+		}
+		
 	}
 	
 	fail = {
-		has_law = law_type:law_no_colonial_affairs
+		OR = {
+			has_law = law_type:law_no_colonial_affairs
+			cu:cherokee = {
+				NOT = { culture_is_discriminated_in = ROOT }
+			}
+		}
+	}
+	
+	on_fail = {
+		trigger_event = { id = native_resettlement.6 }
+		hidden_effect = {
+			remove_modifier = cr_creek_removal_cost
+			remove_modifier = cr_chickasaw_removal_cost
+			remove_modifier = cr_cherokee_removal_cost
+		}
 	}
 	
 	invalid = {
@@ -119,6 +175,14 @@
 			exists = c:CHE
 			exists = c:USA
 			c:CHE = { is_subject_of = c:USA }
+		}
+	}
+	
+	on_invalid = {
+		hidden_effect = {
+			remove_modifier = cr_creek_removal_cost
+			remove_modifier = cr_chickasaw_removal_cost
+			remove_modifier = cr_cherokee_removal_cost
 		}
 	}
 	
@@ -137,16 +201,18 @@ je_chickasaw_removal = {
 	on_monthly_pulse = {
 		random_events = {
 			10 = 0
-			25 = cr_indian_removal.49
-			1 = cr_indian_removal.50
-			3 = cr_indian_removal.51
-			1 = cr_indian_removal.55
-			5 = cr_indian_removal.56
-			1 = cr_indian_removal.57
+			40 = cr_indian_removal.49
+			5 = cr_indian_removal.50
+			10 = cr_indian_removal.51
+			5 = cr_indian_removal.55
+			15 = cr_indian_removal.56
+			5 = cr_indian_removal.57
+			5 = cr_indian_removal.60
 		}
 	}
 	
 	immediate = {
+		save_scope_as = cr_removing_country
 		c:CSW = {
 			save_scope_as = target_of_removal
 			random_scope_state = {
@@ -158,6 +224,9 @@ je_chickasaw_removal = {
 		}
 		ig:ig_intelligentsia = {
 			save_scope_as = intellectuals
+		}
+		ig:ig_landowners = {
+			save_scope_as = planters
 		}
 		c:CHE = {
 			save_scope_as = cherokee_nation
@@ -219,30 +288,68 @@ je_chickasaw_removal = {
 	
 	on_complete = {
 		custom_tooltip = {
-			text = cr_chickasaw_removal_complete
+			text = cr_indian_removal_complete
+			set_variable = cr_chickasaw_removal_complete
 		}
 		s:STATE_ALABAMA.region_state:USA = {
-			add_modifier = {
-				name = cr_indians_removed_modifier
-				months = normal_modifier_time
-			}
 			state_region = {
 				add_arable_land = 5
 			}
 		}
 		s:STATE_MISSISSIPPI.region_state:USA = {
-			add_modifier = {
-				name = cr_indians_removed_modifier
-				months = normal_modifier_time
-			}
 			state_region = {
 				add_arable_land = 25
 			}
 		}
+		
+		custom_tooltip = {
+			text = cr_indian_state_removal_complete
+		}
+		show_as_tooltip = {
+			s:STATE_ALABAMA.region_state:USA = {
+				add_modifier = {
+					name = cr_indians_removed_modifier
+					months = normal_modifier_time
+				}
+			}
+			s:STATE_MISSISSIPPI.region_state:USA = {
+				add_modifier = {
+					name = cr_indians_removed_modifier
+					months = normal_modifier_time
+				}
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_ALABAMA
+			}
+			s:STATE_ALABAMA.region_state:USA = {
+				add_modifier = {
+					name = cr_indians_removed_modifier
+					months = normal_modifier_time
+				}
+			}
+		}
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_MISSISSIPPI
+			}
+			s:STATE_MISSISSIPPI.region_state:USA = {
+				add_modifier = {
+					name = cr_indians_removed_modifier
+					months = normal_modifier_time
+				}
+			}
+		}
+		remove_modifier = cr_chickasaw_removal_cost
 	}
 	
 	fail = {
 		has_law = law_type:law_no_colonial_affairs
+	}
+	
+	on_fail = {
+		remove_modifier = cr_chickasaw_removal_cost
 	}
 	
 	invalid = {
@@ -251,6 +358,12 @@ je_chickasaw_removal = {
 		#	exists = c:USA
 		#	c:CSW = { is_subject_of = c:CSW }
 		#}
+	}
+	
+	on_invalid = {
+		hidden_effect = {
+			remove_modifier = cr_chickasaw_removal_cost
+		}
 	}
 	
 	weight = 200
@@ -268,16 +381,18 @@ je_creek_removal = {
 	on_monthly_pulse = {
 		random_events = {
 			10 = 0
-			25 = cr_indian_removal.49
-			1 = cr_indian_removal.50
-			3 = cr_indian_removal.51
-			1 = cr_indian_removal.55
-			5 = cr_indian_removal.56
-			1 = cr_indian_removal.57
+			40 = cr_indian_removal.49
+			5 = cr_indian_removal.50
+			10 = cr_indian_removal.51
+			5 = cr_indian_removal.55
+			15 = cr_indian_removal.56
+			5 = cr_indian_removal.57
+			5 = cr_indian_removal.60
 		}
 	}
 	
 	immediate = {
+		save_scope_as = cr_removing_country
 		c:MSC = {
 			save_scope_as = target_of_removal
 			random_scope_state = {
@@ -289,6 +404,9 @@ je_creek_removal = {
 		}
 		ig:ig_intelligentsia = {
 			save_scope_as = intellectuals
+		}
+		ig:ig_landowners = {
+			save_scope_as = planters
 		}
 		c:CHE = {
 			save_scope_as = cherokee_nation
@@ -330,7 +448,7 @@ je_creek_removal = {
 
 	complete = {
 		custom_tooltip = {
-			text = cr_indian_removal_clear_the_states_complete_tt_chickasaw
+			text = cr_indian_removal_clear_the_states_complete_tt_creek
 			NOT = {
 				c:MSC = {
 					any_scope_state = { 
@@ -343,29 +461,45 @@ je_creek_removal = {
 	
 	on_complete = {
 		custom_tooltip = {
-			text = cr_creek_removal_complete
+			text = cr_indian_removal_complete
+			set_variable = cr_creek_removal_complete
 		}
-		custom_tooltip = {
-			text = cr_creek_removal_complete
-		create_diplomatic_pact = {
-			country = c:MSC
-			type = protectorate
-		}
-		}
-		s:STATE_ALABAMA.region_state:USA = {
-			add_modifier = {
-				name = cr_indians_removed_modifier
-				months = normal_modifier_time
-			}
+		s:STATE_ALABAMA = {
 			state_region = {
 				add_arable_land = 25
+			}		
+		}
+		custom_tooltip = {
+			text = cr_indian_state_removal_complete
+		}
+		show_as_tooltip = {
+			s:STATE_ALABAMA.region_state:USA = {
+				add_modifier = {
+					name = cr_indians_removed_modifier
+					months = normal_modifier_time
+				}
 			}
 		}
-		
+		if = {
+			limit = {
+				owns_entire_state_region = STATE_ALABAMA
+			}
+			s:STATE_ALABAMA.region_state:USA = {
+				add_modifier = {
+					name = cr_indians_removed_modifier
+					months = normal_modifier_time
+				}
+			}
+		}
+		remove_modifier = cr_creek_removal_cost
 	}
 	
 	fail = {
 		has_law = law_type:law_no_colonial_affairs
+	}
+	
+	on_fail = {
+		remove_modifier = cr_creek_removal_cost
 	}
 	
 	invalid = {
@@ -374,6 +508,12 @@ je_creek_removal = {
 		#	exists = c:USA
 		#	c:CSW = { is_subject_of = c:CSW }
 		#}
+	}
+	
+	on_invalid = {
+		hidden_effect = {
+			remove_modifier = cr_creek_removal_cost
+		}
 	}
 	
 	weight = 200
@@ -391,16 +531,29 @@ je_cherokee_removal = {
 	on_monthly_pulse = {
 		random_events = {
 			10 = 0
-			25 = cr_indian_removal.49
-			1 = cr_indian_removal.50
-			3 = cr_indian_removal.51
-			1 = cr_indian_removal.55
-			5 = cr_indian_removal.56
-			1 = cr_indian_removal.57
+			40 = cr_indian_removal.49
+			5 = cr_indian_removal.50
+			10 = cr_indian_removal.51
+			5 = cr_indian_removal.55
+			15 = cr_indian_removal.56
+			5 = cr_indian_removal.57
+			5 = cr_indian_removal.60
 		}
 	}
 	
 	immediate = {
+		save_scope_as = cr_removing_country
+		s:STATE_OKLAHOMA = {
+			set_owner_of_provinces = {
+				country = c:CHE
+				provinces = {
+					x269541 x7A707B xA07F85 x9A9935 x5F2DBA x8BDF6D x94D9C2
+				}
+			}
+		}
+		hidden_effect = {
+			c:CHE = { set_capital = STATE_OKLAHOMA }
+		}
 		c:CHE = {
 			save_scope_as = target_of_removal
 			random_scope_state = {
@@ -412,6 +565,9 @@ je_cherokee_removal = {
 		}
 		ig:ig_intelligentsia = {
 			save_scope_as = intellectuals
+		}
+		ig:ig_landowners = {
+			save_scope_as = planters
 		}
 		c:CHE = {
 			save_scope_as = cherokee_nation
@@ -461,21 +617,21 @@ je_cherokee_removal = {
 					}
 				}
 			}
-			c:CSW = {
+			c:CHE = {
 				NOT = {
 					any_scope_state = { 
 						state_region = s:STATE_ALABAMA
 					}
 				}
 			}
-			c:CSW = {
+			c:CHE = {
 				NOT = {
 					any_scope_state = { 
 						state_region = s:STATE_TENNESSEE
 					}
 				}
 			}
-			c:CSW = {
+			c:CHE = {
 				NOT = {
 					any_scope_state = { 
 						state_region = s:STATE_NORTH_CAROLINA
@@ -487,48 +643,114 @@ je_cherokee_removal = {
 	
 	on_complete = {
 		custom_tooltip = {
-			text = cr_cherokee_removal_complete
+			text = cr_indian_removal_complete
+			set_variable = cr_cherokee_removal_complete
 		}
-		s:STATE_GEORGIA.region_state:USA = {
-			add_modifier = {
-				name = cr_indians_removed_modifier
-				months = normal_modifier_time
-			}
-			state_region = {
-				add_arable_land = 30
-			}
+		custom_tooltip = {
+			text = cr_indian_state_removal_complete
 		}
-		s:STATE_ALABAMA.region_state:USA = {
-			add_modifier = {
-				name = cr_indians_removed_modifier
-				months = normal_modifier_time
-			}
-			state_region = {
-				add_arable_land = 20
-			}
+		s:STATE_GEORGIA = {
+			add_arable_land = 30
 		}
-		s:STATE_TENNESSEE.region_state:USA = {
-			add_modifier = {
-				name = cr_indians_removed_modifier
-				months = normal_modifier_time
-			}
-			state_region = {
-				add_arable_land = 20
+		s:STATE_ALABAMA = {
+			add_arable_land = 20
+		}
+		s:STATE_TENNESSEE = {
+			add_arable_land = 20
+		}
+		s:STATE_NORTH_CAROLINA = {
+			add_arable_land = 5
+		}
+		show_as_tooltip = {
+			s:STATE_GEORGIA.region_state:USA = {
+				add_modifier = {
+					name = cr_indians_removed_modifier
+					months = normal_modifier_time
+				}
 			}
 		}
-		s:STATE_NORTH_CAROLINA.region_state:USA = {
-			add_modifier = {
-				name = cr_indians_removed_modifier
-				months = normal_modifier_time
-			}
-			state_region = {
-				add_arable_land = 5
+		show_as_tooltip = {
+			s:STATE_ALABAMA.region_state:USA = {
+				add_modifier = {
+					name = cr_indians_removed_modifier
+					months = normal_modifier_time
+				}
 			}
 		}
+		show_as_tooltip = {
+			s:STATE_TENNESSEE.region_state:USA = {
+				add_modifier = {
+					name = cr_indians_removed_modifier
+					months = normal_modifier_time
+				}
+			}
+		}
+		show_as_tooltip = {
+			s:STATE_NORTH_CAROLINA.region_state:USA = {
+				add_modifier = {
+					name = cr_indians_removed_modifier
+					months = normal_modifier_time
+				}
+			}
+		}
+		hidden_effect = {
+			scope:target_of_removal = { 
+				activate_law = law_type:law_industry_banned
+			}
+			if = {
+				limit = {
+					owns_entire_state_region = STATE_GEORGIA
+				}
+				s:STATE_GEORGIA.region_state:USA = {
+					add_modifier = {
+						name = cr_indians_removed_modifier
+						months = normal_modifier_time
+					}
+				}
+			}
+			if = {
+				limit = {
+					owns_entire_state_region = STATE_ALABAMA
+				}
+				s:STATE_ALABAMA.region_state:USA = {
+					add_modifier = {
+						name = cr_indians_removed_modifier
+						months = normal_modifier_time
+					}
+				}
+			}
+			if = {
+				limit = {
+					owns_entire_state_region = STATE_TENNESSEE
+				}
+				s:STATE_TENNESSEE.region_state:USA = {
+					add_modifier = {
+						name = cr_indians_removed_modifier
+						months = normal_modifier_time
+					}
+				}
+			}
+			if = {
+				limit = {
+					owns_entire_state_region = STATE_NORTH_CAROLINA
+				}
+				s:STATE_NORTH_CAROLINA.region_state:USA = {
+					add_modifier = {
+						name = cr_indians_removed_modifier
+						months = normal_modifier_time
+					}
+				}
+			}
+		}
+		remove_modifier = cr_cherokee_removal_cost
 	}
 	
 	fail = {
 		has_law = law_type:law_no_colonial_affairs
+	}
+	
+	on_fail = {
+		remove_modifier = cr_cherokee_removal_cost
 	}
 	
 	invalid = {
@@ -537,6 +759,178 @@ je_cherokee_removal = {
 		#	exists = c:USA
 		#	c:CSW = { is_subject_of = c:CSW }
 		#}
+	}
+	
+	on_invalid = {
+		hidden_effect = {
+			remove_modifier = cr_cherokee_removal_cost
+		}
+	}
+	
+	weight = 200
+	
+	should_be_pinned_by_default = yes
+	
+	transferable = no
+}
+
+je_seminole_removal = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_historical_content
+	
+	on_monthly_pulse = {
+		random_events = {
+			10 = 0
+			40 = cr_indian_removal.49
+			5 = cr_indian_removal.50
+			10 = cr_indian_removal.51
+			5 = cr_indian_removal.55
+			15 = cr_indian_removal.56
+			5 = cr_indian_removal.57
+			5 = cr_indian_removal.60
+		}
+	}
+	
+	immediate = {
+		save_scope_as = cr_removing_country
+		c:SMN = {
+			save_scope_as = target_of_removal
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_OKLAHOMA
+				}
+				save_scope_as = oklahoma_state
+			}
+		}
+		ig:ig_intelligentsia = {
+			save_scope_as = intellectuals
+		}
+		ig:ig_landowners = {
+			save_scope_as = planters
+		}
+		c:CHE = {
+			save_scope_as = cherokee_nation
+		}
+		c:MSC = {
+			save_scope_as = creek_nation
+		}
+		c:CSW = {
+			save_scope_as = chickasaw_nation
+		}
+		c:SMN = {
+			save_scope_as = seminole_nation
+		}
+		s:STATE_GEORGIA.region_state:USA = {
+			save_scope_as = state_of_georgia
+		}
+		s:STATE_ALABAMA.region_state:USA = {
+			save_scope_as = state_of_alabama
+		}
+		s:STATE_MISSISSIPPI.region_state:USA = {
+			save_scope_as = state_of_mississippi
+		}
+		s:STATE_TENNESSEE.region_state:USA = {
+			save_scope_as = state_of_tennessee
+		}
+		s:STATE_NORTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_north_caroline
+		}
+		s:STATE_SOUTH_CAROLINA.region_state:USA = {
+			save_scope_as = state_of_south_caroline
+		}
+		cu:cherokee = {
+			save_scope_as = cherokee_people
+		}
+		cu:muskogean = {
+			save_scope_as = muskogean_people
+		}
+		cu:yankee = {
+			save_scope_as = yankee_culture
+		}
+		cu:dixie = {
+			save_scope_as = dixie_culture
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = cr_indian_removal_clear_the_states_complete_tt_seminole
+			c:SMN = {			
+				NOT = {
+					any_scope_state = { 
+						state_region = s:STATE_FLORIDA
+					}
+				}
+			}
+		}
+	}
+	
+	on_complete = {
+		custom_tooltip = {
+			text = cr_indian_removal_complete
+			set_variable = cr_seminole_removal_complete
+		}
+		custom_tooltip = {
+			text = cr_indian_state_removal_complete
+		}
+		show_as_tooltip = {
+			s:STATE_FLORIDA.region_state:USA = {
+				add_modifier = {
+					name = cr_indians_removed_modifier
+					months = normal_modifier_time
+				}
+				state_region = {
+					add_arable_land = 40
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					owns_entire_state_region = STATE_FLORIDA
+				}
+				s:STATE_FLORIDA.region_state:USA = {
+					add_modifier = {
+						name = cr_indians_removed_modifier
+						months = normal_modifier_time
+					}
+					state_region = {
+						add_arable_land = 40
+					}
+				}
+			}
+		}
+		c:STATE_FLORIDA.region_state:USA = {
+			remove_modifier = seminole_war_mod
+		}
+	}
+	
+	fail = {
+		has_law = law_type:law_no_colonial_affairs
+	}
+	
+	on_fail = {
+		c:STATE_FLORIDA.region_state:USA = {
+			remove_modifier = seminole_war_mod
+		}
+	}
+	
+	invalid = {
+		#NAND = {
+		#	exists = c:CSW
+		#	exists = c:USA
+		#	c:CSW = { is_subject_of = c:CSW }
+		#}
+	}
+	
+	
+	on_invalid = {
+		hidden_effect = {
+			c:STATE_FLORIDA.region_state:USA = {
+				remove_modifier = seminole_war_mod
+			}
+		}
 	}
 	
 	weight = 200

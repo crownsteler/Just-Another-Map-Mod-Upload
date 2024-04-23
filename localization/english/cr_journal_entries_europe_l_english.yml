@@ -26,6 +26,12 @@
  je_cr_ferdinando_po_c_desc:0 "We will offer an obligation in exchange for the island."
  je_cr_ferdinando_po_button_c_tt:0 "The attitude of [SCOPE.sCountry('cr_fernado_po_owner').GetName] towards [SCOPE.sCountry('cr_fernado_po_claimant').GetName] is not #N Antagonstic#! nor #N Belligerent#!."
  
- 
- 
  cr_carlist_victory:0 "Carlist Victory"
+ 
+ 
+ #Algeria Update
+ je_conquest_of_algeria_mascara_destroyed:0 "Abdelkader's #variable Emirate of Mascara#! has been destroyed"
+ je_conquest_of_algeria_mascara_captures:0 "We've capture the city of #variable Mascara#!"
+ je_conquest_of_algeria_medea_captures:0 "We've capture the city of #variable Médéa#!"
+ je_conquest_of_algeria_constantine_captures:0 "We've capture the city of #variable Constantine#!"
+ je_conquest_of_algeria_tt_update:0 "Events about large scale raids will occur far less frequently."

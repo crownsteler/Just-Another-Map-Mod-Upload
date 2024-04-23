@@ -682,7 +682,7 @@ TGU = {
 
 TID = {
 	pattern = "pattern_solid.tga"
-	color1 = "siak_yellow"
+	color1 = "yellow"
 	
 	colored_emblem = {
 		texture = "ce_frame_circle.dds"
@@ -826,7 +826,7 @@ TDR_theocracy = {
 
 TRT = {
 	pattern = "pattern_solid.tga"
-	color1 = "siak_yellow"
+	color1 = "yellow"
 
 	colored_emblem = {
 		texture = "ce_frame_circle.dds"

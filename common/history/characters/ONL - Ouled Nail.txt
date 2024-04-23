@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:ONL = {
+		create_character = {
+			first_name = "Moussa"
+			last_name = "Ibn_Hassen_El_Misri"
+			historical = yes
+			ruler = yes
+			age = 43
+			culture = cu:misri #son of Hassan the Egyptian?
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				
+			}
+		}	
+	}
+}

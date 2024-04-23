@@ -122,7 +122,7 @@ cr_europe_events.20 = { #An Issue of Ownership
 	duration = 3
 
 	immediate = {
-		clear_scope = cr_fernado_po_seller
+		clear_saved_scope = cr_fernado_po_seller
 		save_scope_as = cr_fernado_po_seller
 		change_variable = {
 			name = cr_pressed_the_fernando_po_issue
@@ -175,8 +175,8 @@ cr_europe_events.20 = { #An Issue of Ownership
 			post_notification = cr_fernando_po_returned
 		}
 		hidden_effect = {
-			clear_variable = cr_pressed_claimed_offer_obligation
-			clear_variable = cr_pressed_the_fernando_po_issue
+			remove_variable = cr_pressed_claimed_offer_obligation
+			remove_variable = cr_pressed_the_fernando_po_issue
 		}
 		ai_chance = {
 			base = 100
@@ -221,8 +221,8 @@ cr_europe_events.20 = { #An Issue of Ownership
 			post_notification = cr_fernando_po_returned
 		}
 		hidden_effect = {
-			clear_variable = cr_pressed_claimed_offer_obligation
-			clear_variable = cr_pressed_the_fernando_po_issue
+			remove_variable = cr_pressed_claimed_offer_obligation
+			remove_variable = cr_pressed_the_fernando_po_issue
 		}
 		ai_chance = {
 			base = 100
@@ -270,8 +270,8 @@ cr_europe_events.20 = { #An Issue of Ownership
 			post_notification = cr_fernando_po_returned
 		}
 		hidden_effect = {
-			clear_variable = cr_pressed_claimed_offer_obligation
-			clear_variable = cr_pressed_the_fernando_po_issue
+			remove_variable = cr_pressed_claimed_offer_obligation
+			remove_variable = cr_pressed_the_fernando_po_issue
 		}
 		ai_chance = {
 			base = 100
@@ -279,7 +279,7 @@ cr_europe_events.20 = { #An Issue of Ownership
 	}
 	
 	option = { #Cede the island for an obligation not GBR
-		name = cr_europe_events.20.a_obligation_nWAS
+		name = cr_europe_events.20.a_nWAS
 		default_option = yes
 		trigger = {
 			has_variable = cr_pressed_claimed_offer_obligation
@@ -308,8 +308,8 @@ cr_europe_events.20 = { #An Issue of Ownership
 			}
 		}
 		hidden_effect = {
-			clear_variable = cr_pressed_claimed_offer_obligation
-			clear_variable = cr_pressed_the_fernando_po_issue
+			remove_variable = cr_pressed_claimed_offer_obligation
+			remove_variable = cr_pressed_the_fernando_po_issue
 		}	
 		every_country = {
 			limit = {
@@ -360,8 +360,8 @@ cr_europe_events.20 = { #An Issue of Ownership
 		custom_tooltip = cr_europe_events.20.b_tt_consequence
 
 		hidden_effect = {
-			clear_variable = cr_pressed_claimed_offer_obligation
-			#clear_variable = cr_pressed_the_fernando_po_issue
+			remove_variable = cr_pressed_claimed_offer_obligation
+			#remove_variable = cr_pressed_the_fernando_po_issue
 		}
 		ai_chance = {
 			base = 0
@@ -377,8 +377,8 @@ cr_europe_events.20 = { #An Issue of Ownership
 	#		}
 	#	}
 	#	hidden_effect = {
-	#		clear_variable = cr_pressed_claimed_offer_obligation
-	#		clear_variable = cr_pressed_the_fernando_po_issue
+	#		remove_variable = cr_pressed_claimed_offer_obligation
+	#		remove_variable = cr_pressed_the_fernando_po_issue
 	#	}
 	#	ai_chance = {
 	#		base = 5
@@ -392,346 +392,170 @@ cr_europe_events.20 = { #An Issue of Ownership
 	#}
 }
 
-cr_europe_events.21 = { #A Slaving Hub in the Making
-	type = country_event
-	placement = scope:cr_fernado_po_claimant.capital
-
-	title =  cr_europe_events.21.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				desc =  cr_europe_events.21.desc_our_slavery
-				trigger = {
-					has_law = law_type:law_slave_trade
-				}
-			}
-			triggered_desc = {
-				desc =  cr_europe_events.21.desc_their_slavery
-				trigger = {
-					scope:cr_fernado_po_claimant = {
-						has_law = law_type:law_slave_trade
-					}
-				}
-			}
-		}
-	}
-	#flavor =  cr_europe_events.21.f
-
-	event_image = {
-		video = "unspecific_politicians_arguing"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
-
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
-
-	duration = 3
-
-	immediate = {
-		save_scope_as = cr_fernado_po_seller
-	}
-
-	option = { #We have slavery and keep the island
-		name =  cr_europe_events.21.a
-		trigger = {
-			has_law = law_type:law_slave_trade
-		}
-		scope:cr_fernado_po_seller = {
-			set_variable = cr_slavery_return_of_fernando_po
-			trigger_event = {
-				id = cr_europe_events.29
-			}
-		}
-		custom_tooltip = {
-			text = cr_europe_events.21.a_our_slavery_tt
-			state:STATE_SAO_TOME_AND_PRINCIPE  = {
-				set_owner_of_provinces = {
-					country = scope:cr_fernado_po_claimant
-					provinces = {
-						x902089
-					}
-				}
-			}
-		}
-		s:STATE_SAO_TOME_AND_PRINCIPE = {
-			add_claim = scope:cr_fernado_po_claimant
-		}
-		ai_chance = {
-			base = 75
-		}
-	}
-
-	option = { #We have slavery and return the island
-		name =  cr_europe_events.21.b
-		trigger = {
-			has_law = law_type:law_slave_trade
-		}
-		custom_tooltip = {
-			text = cr_europe_events.21.b_our_slavery_tt
-		}
-		scope:cr_fernado_po_claimant = {
-			set_variable = cr_slavery_loss_of_fernando_po
-			trigger_event = {
-				id = cr_europe_events.28
-			}
-		}
-		change_infamy = 3
-		show_as_tooltip = {
-			change_relations = {
-				country = scope:cr_fernado_po_claimant
-				value = -25
-			}
-		}
-		ai_chance = {
-			base = 25
-			modifier = {
-				if = {
-					infamy >= 45
-				}
-				add = -25
-			}
-		}
-	}
-
-	option = { #They have slavery and we keep the island
-		name =  cr_europe_events.22.c_their_slavery
-		trigger = {
-			has_law = law_type:law_slave_trade
-		}
-		custom_tooltip = {
-			text = cr_europe_events.22.c_their_slavery_tt
-		}
-		scope:cr_fernado_po_claimant = {
-			set_variable = cr_slavery_loss_of_fernando_po
-			trigger_event = {
-				id = cr_europe_events.29
-			}
-		}
-		s:STATE_SAO_TOME_AND_PRINCIPE = {
-			add_claim = scope:cr_fernado_po_claimant
-		}
-		ai_chance = {
-			base = 85
-		}
-	}
-
-	option = { #They have slavery and we return the island
-		name =  cr_europe_events.22.d_their_slavery
-		trigger = {
-			has_law = law_type:law_slave_trade
-		}
-		scope:cr_fernado_po_claimant = {
-			set_variable = cr_slavery_return_of_fernando_po
-			trigger_event = {
-				id = cr_europe_events.28
-			}
-		}
-		custom_tooltip = {
-			text = cr_europe_events.22.d_their_slavery_tt
-			state:STATE_SAO_TOME_AND_PRINCIPE  = {
-				set_owner_of_provinces = {
-					country = scope:cr_fernado_po_claimant
-					provinces = {
-						x902089
-					}
-				}
-			}
-		}
-		change_infamy = 3
-		show_as_tooltip = {
-			change_relations = {
-				country = scope:cr_fernado_po_claimant
-				value = -25
-			}
-		}
-		ai_chance = {
-			base = 15
-			modifier = {
-				if = {
-					infamy >= 45
-				}
-				add = -15
-			}
-		}
-	}
-}
-
-cr_europe_events.23 = { #Foreign Office Blunder
-	type = country_event
-	placement = scope:cr_fernado_po_occupier.capital
-
-	title =  cr_europe_events.23.t
-	desc =  cr_europe_events.23.desc
-	#flavor =  cr_europe_events.23.f
-
-	event_image = {
-		video = "unspecific_politicians_arguing"
-	}
-
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
-
-	duration = 3
-
-	immediate = {
-		
-	}
-
-	option = { #Demand return
-		name =  cr_europe_events.23.a
-		scope:cr_fernado_po_occupier = {
-			trigger_event = {
-				id = cr_europe_events.24
-			}
-		}
-		ai_chance = {
-			base = 60
-		}
-	}
-
-	option = { #Never mind
-		name =  cr_europe_events.23.b
-		change_infamy = -3
-		#change_relations = {
-		#	country = scope:cr_fernado_po_owner
-		#	value = -15
-		#}
-		#change_relations = {
-		#	country = scope:cr_fernado_po_occupier
-		#	value = -5
-		#}
-		ai_chance = {
-			base = 40
-			modifier = {
-				if = {
-					infamy >= 45
-				}
-				add = 40
-			}
-		}
-	}
-}
-
-cr_europe_events.24 = { #Foreign Office Blunder
-	type = country_event
-	placement = scope:cr_fernado_po_claimant.capital
-
-	title =  cr_europe_events.24.t
-	desc =  cr_europe_events.24.desc
-	flavor =  cr_europe_events.24.f
-
-	event_image = {
-		video = "unspecific_politicians_arguing"
-	}
-
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
-
-	duration = 3
-
-	immediate = {
-		save_scope_as = cr_fernado_po_seller
-	}
-
-	option = { #Return the island
-		name =  cr_europe_events.26.a
-		scope:cr_fernado_po_claimant = {
-			set_variable = cr_slavery_return_of_fernando_po
-			trigger_event = {
-				id = cr_europe_events.28
-			}
-		}
-		state:STATE_SAO_TOME_AND_PRINCIPE  = {
-			set_owner_of_provinces = {
-				country = scope:cr_fernado_po_claimant
-				provinces = {
-					x902089
-				}
-			}
-		}
-		ai_chance = {
-			base = 55
-		}
-	}
-
-	option = { #Keep the island
-		name =  cr_europe_events.26.b
-		scope:cr_fernado_po_claimant = {
-			set_variable = cr_slavery_loss_of_fernando_po
-			trigger_event = {
-				id = cr_europe_events.29
-			}
-		}
-		change_infamy = 3
-		show_as_tooltip = {
-			change_relations = {
-				country = scope:cr_fernado_po_claimant
-				value = -25
-			}
-		}
-		s:STATE_SAO_TOME_AND_PRINCIPE = {
-			add_claim = scope:cr_fernado_po_claimant
-		}
-		ai_chance = {
-			base = 45
-			modifier = {
-				if = {
-					infamy >= 45
-				}
-				add = -45
-			}
-		}
-	}
-}
-
-cr_europe_events.28 = { #The Return of Fernando Po
-	type = country_event
-	placement = scope:cr_fernado_po_seller.capital
-
-	title =  cr_europe_events.28.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				desc =  cr_europe_events.28.desc_our_slavery
-				trigger = {
-					has_variable = cr_slavery_return_of_fernando_po
-					has_law = law_type:law_slave_trade
-				}
-			}
-			triggered_desc = {
-				desc =  cr_europe_events.28.desc_their_slavery
-				trigger = {
-					has_variable = cr_slavery_return_of_fernando_po
-					NOT = { has_law = law_type:law_slave_trade }
-				}
-			}
-			triggered_desc = {
-				desc = cr_europe_events.28.desc_regular
-				trigger = {
-					always = yes
-				}
-			}
-		}
-	}
-	#flavor =  cr_europe_events.28.f
-
-	event_image = {
-		video = "unspecific_signed_contract"
-	}
-
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
-
-	duration = 3
-
-
-	option = {
-		name =  cr_europe_events.28.a
-		custom_tooltip = cr_europe_events.28.a_tt
-		hidden_effect = {
-			remove_variable = cr_normal_return_of_fernando_po
-			remove_variable = cr_slavery_return_of_fernando_po
-		}
-	}
-}
+#cr_europe_events.21 = { #A Slaving Hub in the Making
+#	type = country_event
+#	placement = scope:cr_fernado_po_claimant.capital
+#
+#	title =  cr_europe_events.21.t
+#	desc = {
+#		first_valid = {
+#			triggered_desc = {
+#				desc =  cr_europe_events.21.desc_our_slavery
+#				trigger = {
+#					has_law = law_type:law_slave_trade
+#				}
+#			}
+#			triggered_desc = {
+#				desc =  cr_europe_events.21.desc_their_slavery
+#				trigger = {
+#					scope:cr_fernado_po_claimant = {
+#						has_law = law_type:law_slave_trade
+#					}
+#				}
+#			}
+#		}
+#	}
+#	#flavor =  cr_europe_events.21.f
+#
+#	event_image = {
+#		video = "unspecific_politicians_arguing"
+#	}
+#
+#	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+#	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
+#
+#	icon = "gfx/interface/icons/event_icons/event_default.dds"
+#
+#	duration = 3
+#
+#	immediate = {
+#		save_scope_as = cr_fernado_po_seller
+#	}
+#
+#	option = { #We have slavery and keep the island
+#		name =  cr_europe_events.21.a
+#		trigger = {
+#			has_law = law_type:law_slave_trade
+#		}
+#		scope:cr_fernado_po_seller = {
+#			set_variable = cr_slavery_return_of_fernando_po
+#			trigger_event = {
+#				id = cr_europe_events.29
+#			}
+#		}
+#		custom_tooltip = {
+#			text = cr_europe_events.21.a_our_slavery_tt
+#			s:STATE_SAO_TOME_AND_PRINCIPE  = {
+#				set_owner_of_provinces = {
+#					country = scope:cr_fernado_po_claimant
+#					provinces = {
+#						x902089
+#					}
+#				}
+#			}
+#		}
+#		s:STATE_SAO_TOME_AND_PRINCIPE = {
+#			add_claim = scope:cr_fernado_po_claimant
+#		}
+#		ai_chance = {
+#			base = 75
+#		}
+#	}
+#
+#	option = { #We have slavery and return the island
+#		name =  cr_europe_events.21.b
+#		trigger = {
+#			has_law = law_type:law_slave_trade
+#		}
+#		custom_tooltip = {
+#			text = cr_europe_events.21.b_our_slavery_tt
+#		}
+#		scope:cr_fernado_po_claimant = {
+#			set_variable = cr_slavery_loss_of_fernando_po
+#			trigger_event = {
+#				id = cr_europe_events.28
+#			}
+#		}
+#		change_infamy = 3
+#		show_as_tooltip = {
+#			change_relations = {
+#				country = scope:cr_fernado_po_claimant
+#				value = -25
+#			}
+#		}
+#		ai_chance = {
+#			base = 25
+#			modifier = {
+#				if = {
+#					infamy >= 45
+#				}
+#				add = -25
+#			}
+#		}
+#	}
+#
+#	option = { #They have slavery and we keep the island
+#		name =  cr_europe_events.22.c_their_slavery
+#		trigger = {
+#			has_law = law_type:law_slave_trade
+#		}
+#		custom_tooltip = {
+#			text = cr_europe_events.22.c_their_slavery_tt
+#		}
+#		scope:cr_fernado_po_claimant = {
+#			set_variable = cr_slavery_loss_of_fernando_po
+#			trigger_event = {
+#				id = cr_europe_events.29
+#			}
+#		}
+#		s:STATE_SAO_TOME_AND_PRINCIPE = {
+#			add_claim = scope:cr_fernado_po_claimant
+#		}
+#		ai_chance = {
+#			base = 85
+#		}
+#	}
+#
+#	option = { #They have slavery and we return the island
+#		name =  cr_europe_events.22.d_their_slavery
+#		trigger = {
+#			has_law = law_type:law_slave_trade
+#		}
+#		scope:cr_fernado_po_claimant = {
+#			set_variable = cr_slavery_return_of_fernando_po
+#			trigger_event = {
+#				id = cr_europe_events.28
+#			}
+#		}
+#		custom_tooltip = {
+#			text = cr_europe_events.22.d_their_slavery_tt
+#			s:STATE_SAO_TOME_AND_PRINCIPE  = {
+#				set_owner_of_provinces = {
+#					country = scope:cr_fernado_po_claimant
+#					provinces = {
+#						x902089
+#					}
+#				}
+#			}
+#		}
+#		change_infamy = 3
+#		show_as_tooltip = {
+#			change_relations = {
+#				country = scope:cr_fernado_po_claimant
+#				value = -25
+#			}
+#		}
+#		ai_chance = {
+#			base = 15
+#			modifier = {
+#				if = {
+#					infamy >= 45
+#				}
+#				add = -15
+#			}
+#		}
+#	}
+#}
 
 cr_europe_events.29 = { #The Loss of Fernando Po
 	type = country_event
@@ -770,7 +594,7 @@ cr_europe_events.29 = { #The Loss of Fernando Po
 	}
 	
 	immediate = {
-		clear_scope = cr_fernado_po_province
+		clear_saved_scope = cr_fernado_po_province
 		random_state = {
 			limit = {
 				state_region = s:STATE_SAO_TOME_AND_PRINCIPE

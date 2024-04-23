@@ -8,8 +8,8 @@
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
 		}
-		add_journal_entry = {
-			type = je_cr_kyrgyz_tribes
-		}
+		#add_journal_entry = {
+		#	type = je_cr_kyrgyz_tribes
+		#}
 	}
 }

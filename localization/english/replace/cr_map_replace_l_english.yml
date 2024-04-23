@@ -96,6 +96,9 @@
  STATE_GALICH:0 "Nizhny Novgorod"
  STATE_TVER:0 "Yaroslavl"
  STATE_HIMALAYAS:0 "Western Himalayas"
+ STATE_SICHUAN:0 "Kham"
+ STATE_CHONGQING:0 "Sichuan"
+ STATE_LHASA:0 "Ü-Tsang"
  
  #Strategic Regions
  region_bosphorus:0 "the Bosphorus"

@@ -11,7 +11,7 @@ region_andes = {
 	graphical_culture = "latin"
 	capital_province = x40E12A
 	map_color = { 0 1 0 }
-	states = { STATE_LIMA STATE_ICA STATE_CAJAMARCA STATE_AREQUIPA  STATE_LA_PAZ STATE_ECUADOR STATE_JUJUY STATE_TARAPACA STATE_ANTOFAGASTA STATE_POTOSI STATE_CAUCA }
+	states = { STATE_LIMA STATE_ICA STATE_CAJAMARCA STATE_AREQUIPA STATE_LA_PAZ STATE_ECUADOR STATE_JUJUY STATE_TARAPACA STATE_ANTOFAGASTA STATE_POTOSI STATE_CAUCA }
 }
 
 region_la_plata = {
@@ -23,7 +23,7 @@ region_la_plata = {
 
 region_gran_colombia = {
 	graphical_culture = "latin"
-	capital_province = xA00111
+	capital_province = x4B48A8
 	map_color = { 0.4 0.3 0.2 }
 	states = { STATE_MIRANDA STATE_ANTIOQUIA STATE_ZULIA STATE_CUNDINAMARCA STATE_LEEWARD_ANTILLES }
 }

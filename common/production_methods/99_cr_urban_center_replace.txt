@@ -58,8 +58,8 @@ pm_hydroelectric_plant = {
 	
 	building_modifiers = { 
 		workforce_scaled = {
-			goods_output_engines_add = 10 # x60 =  600
-			goods_output_copper_add = 15 # x40 =  600
+			goods_input_engines_add = 10 # x60 =  600
+			goods_input_copper_add = 15 # x40 =  600
 			goods_output_electricity_add = 70 # x30 2100 (profit 900)
 		}
 

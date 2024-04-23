@@ -84,15 +84,6 @@ algeria_events.1 = {
 		s:STATE_TUNISIA = {
 			add_claim = c:FRA
 		}
-		s:STATE_TAZA = {
-			add_claim = c:FRA
-		}
-		s:STATE_FEZ = {
-			add_claim = c:FRA
-		}
-		s:STATE_MARRAKECH = {
-			add_claim = c:FRA
-		}
 	}
 	option = { # Focus on migration
 		name = algeria_events.1.b
@@ -140,18 +131,6 @@ algeria_events.1 = {
 			add_claim = c:FRA
 		}
 		s:STATE_LAGHOUAT = {
-			add_claim = c:FRA
-		}
-		s:STATE_TUNISIA = {
-			add_claim = c:FRA
-		}
-		s:STATE_TAZA = {
-			add_claim = c:FRA
-		}
-		s:STATE_FEZ = {
-			add_claim = c:FRA
-		}
-		s:STATE_MARRAKECH = {
 			add_claim = c:FRA
 		}
 	}
@@ -212,18 +191,6 @@ algeria_events.1 = {
 			add_claim = c:FRA
 		}
 		s:STATE_LAGHOUAT = {
-			add_claim = c:FRA
-		}
-		s:STATE_TUNISIA = {
-			add_claim = c:FRA
-		}
-		s:STATE_TAZA = {
-			add_claim = c:FRA
-		}
-		s:STATE_FEZ = {
-			add_claim = c:FRA
-		}
-		s:STATE_MARRAKECH = {
 			add_claim = c:FRA
 		}
 	}
@@ -439,7 +406,7 @@ algeria_events.2 = {
 	}
 }
 
-# Algeira - Fail event
+# Algeria - Fail event
 algeria_events.3 = {
 	type = country_event
 	placement = root
@@ -574,6 +541,18 @@ algeria_events.4 = {
 				months = long_modifier_time
 			}
 		}
+		s:STATE_TUNISIA = {
+			add_claim = c:FRA
+		}
+		s:STATE_TAZA = {
+			add_claim = c:FRA
+		}
+		s:STATE_FEZ = {
+			add_claim = c:FRA
+		}
+		s:STATE_MARRAKECH = {
+			add_claim = c:FRA
+		}
 	}
 	option = {
 		name = algeria_events.4.b
@@ -602,6 +581,18 @@ algeria_events.4 = {
 				months = long_modifier_time
 			}
 		}
+		s:STATE_TUNISIA = {
+			add_claim = c:FRA
+		}
+		s:STATE_TAZA = {
+			add_claim = c:FRA
+		}
+		s:STATE_FEZ = {
+			add_claim = c:FRA
+		}
+		s:STATE_MARRAKECH = {
+			add_claim = c:FRA
+		}
 	}
 	option = {
 		name = algeria_events.4.c
@@ -629,6 +620,18 @@ algeria_events.4 = {
 				name = algerian_industry_focus
 				months = long_modifier_time
 			}
+		}
+		s:STATE_TUNISIA = {
+			add_claim = c:FRA
+		}
+		s:STATE_TAZA = {
+			add_claim = c:FRA
+		}
+		s:STATE_FEZ = {
+			add_claim = c:FRA
+		}
+		s:STATE_MARRAKECH = {
+			add_claim = c:FRA
 		}
 	}
 }

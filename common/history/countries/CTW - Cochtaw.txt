@@ -1,7 +1,15 @@
 ﻿COUNTRIES = {
 	c:CTW ?= {
 		effect_starting_technology_tier_4_tech = yes
-		effect_native_conscription_10 = yes
+		
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_elected_bureaucrats
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_militia
+		
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_legacy_slavery
+		activate_law = law_type:law_closed_borders
 		
 		ig:ig_devout = {
 			set_interest_group_name = ig_evangelical_church

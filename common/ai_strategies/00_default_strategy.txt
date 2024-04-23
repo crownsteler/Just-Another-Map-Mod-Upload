@@ -744,7 +744,7 @@ ai_strategy_default = {
 						OR = {
 							state_region = s:STATE_OUTER_MANCHURIA
 							state_region = s:STATE_JETISY
-							state_region = s:STATE_TOMSK
+							state_region = s:STATE_ALTAI
 							state_region = s:STATE_KIRGHIZIA
 						}
 					}
@@ -755,6 +755,20 @@ ai_strategy_default = {
 			if = {
 				limit = {
 					has_journal_entry = je_conquest_of_algeria
+					scope:target_state = {
+						OR = {
+							state_region = s:STATE_ALGIERS
+							state_region = s:STATE_CONSTANTINE
+							state_region = s:STATE_ORAN
+						}
+					}
+				}
+				add = 100
+			}
+
+			if = {
+				limit = {
+					has_journal_entry = je_the_algerian_departements
 					scope:target_state = {
 						OR = {
 							state_region = s:STATE_ALGIERS
@@ -798,26 +812,26 @@ ai_strategy_default = {
 					country_has_primary_culture = cu:russian
 					has_law = law_type:law_national_supremacy
 					has_technology_researched = nationalism
-					#OR = {
+					OR = {
 						AND = {	
 							exists = c:KZH
 							scope:target_state.owner = {
 								this = c:KZH
 							}
 						}
-					#	AND = {	
-					#		exists = c:UZH
-					#		scope:target_state.owner = {
-					#			this = c:UZH
-					#		}
-					#	}
-					#	AND = {	
-					#		exists = c:OZH
-					#		scope:target_state.owner = {
-					#			this = c:OZH
-					#		}
-					#	}
-					#}
+						AND = {	
+							exists = c:UZH
+							scope:target_state.owner = {
+								this = c:UZH
+							}
+						}
+						AND = {	
+							exists = c:OZH
+							scope:target_state.owner = {
+								this = c:OZH
+							}
+						}
+					}
 				}
 				add = 50
 			}
@@ -1210,32 +1224,65 @@ ai_strategy_default = {
 				
 				if = {
 					limit = {
-						has_secret_goal = {
-							who = scope:target_country
-							secret_goal = protect
-						}						
+						scope:target_country = { is_subject_of = root }
+					}
+				
+					# AI values subjects it already has higher than subjects it might have, and will basically never give away large subjects with a lot of prestige
+					if = {
+						limit = { 
+							scope:target_country = { 
+								prestige >= 100			
+							} 					
+						}
+						multiply = 5.0
+					}
+					else_if = {
+						limit = { 
+							scope:target_country = { 
+								prestige >= 75			
+							} 					
+						}
+						multiply = 4.0
+					}					
+					else_if = {
+						limit = { 
+							scope:target_country = { 
+								prestige >= 50			
+							} 					
+						}
+						multiply = 3.0
+					}
+					else_if = {
+						limit = { 
+							scope:target_country = { 
+								prestige >= 25			
+							} 					
+						}
+						multiply = 2.0
+					}				
+					else = {
+						multiply = 1.5	
+					}			
+				}
+				else = {				
+					if = {
+						limit = {
+							has_secret_goal = {
+								who = scope:target_country
+								secret_goal = protect
+							}						
+						}
+					
+						multiply = 0.5
 					}
 					
-					multiply = 0.5
-				}
-				
-				if = {
-					limit = {
-						NOT = { has_strategic_adjacency = scope:target_country }
+					if = {
+						limit = {
+							NOT = { has_strategic_adjacency = scope:target_country }
+						}
+						multiply = 0.5
 					}
-					multiply = 0.5
 				}
-			}
-			
-			# Special logic for very important subjects like East India Company
-			if = {
-				limit = { 
-					scope:target_country = { 
-						is_subject_of = root
-						prestige >= 250				
-					} 					
-				}
-				add = 100
 			}								
 
 			if = {
@@ -1438,7 +1485,13 @@ ai_strategy_default = {
 		}
 
 		min = 0
-		max = 200
+		if = {
+			limit = { scope:target_country = { is_subject_of = root } }
+			max = 1000			
+		}
+		else = {
+			max = 200
+		}
 	}
 
 	# How much does the AI desire becoming another country's subject
@@ -1863,7 +1916,7 @@ ai_strategy_default = {
 			}
 			add = 2
 		}
-		}
+	}
 		
 	# How likely is the AI to start a diplomatic play against another country if their attitude allows for it
 	# Using this value in other strategies will function additively
@@ -2767,9 +2820,9 @@ ai_strategy_default = {
 	# Which buildings should the AI subsidize
 	# Using a different value in a strategy will override this value
 	subsidies = {
-		building_power_plant = should_have
-		building_railway = should_have
-		building_trade_center = should_have		
+		building_power_plant = must_have
+		building_railway = must_have
+		building_trade_center = must_have		
 	}
 	
 	# Specifying values here will override subsidy priorities while at war
@@ -2989,7 +3042,23 @@ ai_strategy_default = {
 				}
 				add = 1000
 			}
-		}
+		}					
+		region_iraq = {
+			if = {
+				limit = {
+					has_technology_researched = pumpjacks	
+				}
+				add = 100
+			}		
+		}		
+		region_the_persian_gulf = {
+			if = {
+				limit = {
+					has_technology_researched = pumpjacks	
+				}
+				add = 100
+			}		
+		}	
 		region_japan = {	
 			if = {
 				limit = {
@@ -3309,14 +3378,6 @@ ai_strategy_default = {
 				add = 100
 			}
 		}
-		region_baltic = {
-			if = {
-				limit = { 
-					wants_to_solve_schleswig_holstein = yes			
-				}			
-				add = 100
-			}
-		}
 		region_balkans = {
 			if = {
 				limit = {
@@ -3439,7 +3500,7 @@ ai_strategy_default = {
 				limit = {
 					has_variable = monroe_doctrine	
 				}
-				add = 100
+				add = 200
 			}			
 		}
 		region_new_mexico = {
@@ -5444,43 +5505,43 @@ ai_strategy_default = {
 					}
 					add = 25
 				}
+			}
 
-				if = {
-					limit = {
-						scope:target_country = {
-							has_journal_entry = je_peru_bolivia
-						}
-						OR = {
-							country_has_primary_culture = cu:south_andean
-							country_has_primary_culture = cu:north_andean
-							country_has_primary_culture = cu:platinean
-							country_has_primary_culture = cu:argentine
-							country_has_primary_culture = cu:chilean
-							country_has_primary_culture = cu:colombian
-							country_has_primary_culture = cu:ecuadorian
-						}						
+			if = {
+				limit = {
+					scope:target_country = {
+						has_journal_entry = je_peru_bolivia
 					}
-					add = 75
+					OR = {
+						country_has_primary_culture = cu:south_andean
+						country_has_primary_culture = cu:north_andean
+						country_has_primary_culture = cu:platinean
+						country_has_primary_culture = cu:argentine
+						country_has_primary_culture = cu:chilean
+						country_has_primary_culture = cu:colombian
+						country_has_primary_culture = cu:ecuadorian
+					}						
 				}
+				add = 75
+			}
 
-				# Relations with subject
-				multiply = {
-					value = "scope:target_country.relations:root"
-					multiply = 0.01
-					add = 1
-					min = 0.25
-					max = 2.0				
-				}
-				
-				# Ideological opinion of subject
-				multiply = {
-					value = "ai_ideological_opinion(scope:target_country)"
-					multiply = 0.05
-					add = 1
-					min = 0.25
-					max = 2.0
-				}				
-			}	
+			# Relations with subject
+			multiply = {
+				value = "scope:target_country.relations:root"
+				multiply = 0.01
+				add = 1
+				min = 0.25
+				max = 2.0				
+			}
+			
+			# Ideological opinion of subject
+			multiply = {
+				value = "ai_ideological_opinion(scope:target_country)"
+				multiply = 0.05
+				add = 1
+				min = 0.25
+				max = 2.0
+			}				
 
 			min = 0
 			max = 100			
@@ -5511,26 +5572,8 @@ ai_strategy_default = {
 					}
 					add = 25
 				}
-
-				# Relations with target
-				multiply = {
-					value = "scope:target_country.relations:root"
-					multiply = -0.01
-					add = 1
-					min = 0.5
-					max = 2.0				
-				}
-				
-				# Ideological opinion of target
-				multiply = {
-					value = "ai_ideological_opinion(scope:target_country)"
-					multiply = -0.05
-					add = 1
-					min = 0.5
-					max = 2.0
-				}				
 			}
-
+			
 			if = {
 				limit = { 
 					wants_to_solve_schleswig_holstein = yes
@@ -5538,6 +5581,24 @@ ai_strategy_default = {
 					can_reach_target_country = no
 				}
 				add = 100
+			}
+
+			# Relations with target
+			multiply = {
+				value = "scope:target_country.relations:root"
+				multiply = -0.01
+				add = 1
+				min = 0.5
+				max = 2.0				
+			}
+			
+			# Ideological opinion of target
+			multiply = {
+				value = "ai_ideological_opinion(scope:target_country)"
+				multiply = -0.05
+				add = 1
+				min = 0.5
+				max = 2.0
 			}
 
 			min = 0

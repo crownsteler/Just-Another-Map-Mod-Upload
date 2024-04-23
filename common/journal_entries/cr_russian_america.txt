@@ -17,36 +17,49 @@
 	}
 	
 	on_monthly_pulse = {
-		random_events = {
-			11 = 0
-			1 = cr_russian_alaska_events.1
-		}
-		if= {
-			limit = {
-				has_modifier = cr_colonising_alaska_modifier_rus 
-				NOT = { 
-					c:ASK = { 
-						is_subject_of = ROOT 
-					}
-				}
-			}
-			remove_modifier = cr_colonising_alaska_modifier_rus
-		}
-		if= {
-			limit = {
-				has_modifier = cr_colonising_california_modifier_rus
-				NOR = { 
-					c:ASK = { 
-						is_subject_of = ROOT
-					}
-					c:ASK = { 
-						any_scope_state = {
-							state_region = s:STATE_CALIFORNIA
+		effect = {
+			if= {
+				limit = {
+					has_modifier = cr_colonising_alaska_modifier_rus 
+					NOT = { 
+						c:ASK = { 
+							is_subject_of = ROOT 
 						}
 					}
 				}
+				remove_modifier = cr_colonising_alaska_modifier_rus
 			}
-			remove_modifier = cr_colonising_california_modifier_rus
+			if= {
+				limit = {
+					has_modifier = cr_colonising_california_modifier_rus
+					NOR = { 
+						c:ASK = { 
+							is_subject_of = ROOT
+						}
+						c:ASK = { 
+							any_scope_state = {
+								state_region = s:STATE_CALIFORNIA
+							}
+						}
+					}
+				}
+				remove_modifier = cr_colonising_california_modifier_rus
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						state_region = s:STATE_ALASKA
+						NOT = { has_claim_by = c:RUS }
+					}
+				}
+				s:STATE_ALASKA = {
+					add_claim = c:RUS
+				}
+			}
+		}
+		random_events = {
+			11 = 0
+			1 = cr_russian_alaska_events.1
 		}
 	}
 

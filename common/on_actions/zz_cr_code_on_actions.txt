@@ -1,6 +1,11 @@
 ﻿# For on_actions launched by the code itself.
 
 on_wargoal_enforced = {
+	on_actions = {
+		cr_on_wargoal_enforced
+	}
+}
+cr_on_wargoal_enforced = {
 	effect = {
         if = {
         	limit = {
@@ -21,6 +26,38 @@ on_wargoal_enforced = {
         		trigger_event = { id = brazilian_minors.2 days = 0 popup = yes }
         	}
         }	
+        #if = { #For the future, perhaps
+        #	limit = {
+        #		owner = {
+	    #    		c:USA ?= this
+		#			has_variable = cr_roanoke_massacre_has_happened
+		#			NOT = {
+		#				has_variable = cr_creek_removal_has_started
+		#			}
+		#			has_truce_with = c:MSC
+		#			has_subject_relation_with = c:MSC
+		#			NOT = {
+		#				has_journal_entry = je_creek_removal
+		#			}
+		#		}
+        #	}
+        #	owner = {
+        #		set_variable = cr_creek_removal_has_started
+        #		trigger_event = { id = cr_indian_removal.7 days = 0 popup = yes }
+        #	}
+        #}	
 	}
 
+}
+
+on_resource_discovered = {
+	on_actions = {
+		cr_on_resource_discovered
+	}
+}
+
+cr_on_resource_discovered = {
+	events = {
+		cr_canadian_indian_treaties.98
+	}
 }

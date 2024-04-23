@@ -7,7 +7,7 @@
 			
 			war = yes
 			
-			type = dp_annex_war
+			type = dp_make_protectorate
 			
 			add_war_goal = {
 				holder = c:SMN

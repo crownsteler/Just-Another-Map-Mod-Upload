@@ -19,9 +19,31 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
     capped_resources = {
         bg_coal_mining = 32
-        bg_lead_mining = 24 #tin mining
+        bg_lead_mining = 38 #tin mining
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -86,10 +108,14 @@ STATE_NORTH_BORNEO = {
     arable_land = 14
     arable_resources = { "bg_rice_farms" "bg_dye_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_copper_mining = 24
+        #bg_copper_mining = 24
         bg_sulfur_mining = 36
-        bg_logging = 16
+        bg_logging = 12
         bg_fishing = 5
+    }
+    resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 24
     }
     resource = {
         type = "bg_rubber"
@@ -113,14 +139,14 @@ STATE_WEST_BORNEO = {
     arable_land = 28
     arable_resources = { "bg_rice_farms" "bg_tobacco_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 19
+        bg_logging = 24
         bg_fishing = 7
     }
     resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
-        undiscovered_amount = 5
-        discovered_amount = 5
+        undiscovered_amount = 6
+        discovered_amount = 4
     }
     resource = {
         type = "bg_rubber"
@@ -144,9 +170,9 @@ STATE_EAST_BORNEO = {
     arable_resources = {  #Rice, maise, coconuts, pepper, tobacco, coffee, sugar, rubber
 "bg_rice_farms" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_coal_mining = 35
-        bg_logging = 20
-        bg_fishing = 8
+        bg_coal_mining = 42
+        bg_logging = 24
+        bg_fishing = 12
     }
     resource = {
         type = "bg_rubber"
@@ -196,9 +222,9 @@ STATE_EAST_JAVA = {
     arable_land = 95
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_sulfur_mining = 35
-        bg_logging = 10
-        bg_fishing = 10
+        bg_sulfur_mining = 40
+        bg_logging = 7
+        bg_fishing = 8
     }
     resource = {
         type = "bg_oil_extraction"
@@ -221,7 +247,7 @@ STATE_CENTRAL_JAVA = {
     arable_land = 175
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_sulfur_mining = 28
+        bg_sulfur_mining = 32
         bg_fishing = 8
     }
     #resource = {
@@ -313,32 +339,6 @@ STATE_BILLITON = {
     }
     naval_exit_id = 3052
 }
-#STATE_SIAK = { #Merged into STATE_SOUTH_SUMATRA
-#    id = 3942
-#    subsistence_building = "building_subsistence_rice_paddies"
-#    provinces = { "x01317D" "x339E85" "x35213F" "x3F7EA0" "x48428B" "x5BE3D2" "x6021D0" "x677AA6" "x7C7431" "x8171EA" "x87F7B6" "x8B7A14" "x983FEB" "xA0CEED" "xA1341F" "xD3A66E" }
-#    traits = { state_trait_cr_sumatran_alluvial_swamps state_trait_severe_malaria }
-#    city = "x87F7B6"
-#    port = "x01317D"
-#    farm = "x8B7A14"
-#    mine = "x8B7A14"
-#    wood = "x677AA6"
-#    arable_land = 14
-#    arable_resources = { bg_rice_farms bg_dye_plantations bg_banana_plantations }
-#    capped_resources = {
-#        bg_logging = 12
-#        bg_fishing = 8
-#    }
-#    resource = {
-#        type = "bg_rubber"
-#        undiscovered_amount = 12
-#    }
-#    resource = {
-#        type = "bg_oil_extraction"
-#        undiscovered_amount = 15
-#    }
-#    naval_exit_id = 3052
-#}
 STATE_MINANGKABAU = {
     id = 3943
     subsistence_building = "building_subsistence_rice_paddies"
@@ -469,9 +469,13 @@ STATE_WESTERN_NEW_GUINEA = {
     arable_land = 35
     arable_resources = { "bg_rice_farms" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_copper_mining = 65
+        #bg_copper_mining = 65
         bg_logging = 28
         bg_fishing = 9
+    }
+    resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 75
     }
     resource = {
         type = "bg_rubber"
@@ -565,7 +569,7 @@ STATE_EASTERN_NEW_GUINEA = {
     mine = "x26A798"
     wood = "x9ACD2A"
     arable_land = 30
-    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
+    arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_iron_mining = 24
         bg_sulfur_mining = 32
@@ -620,9 +624,12 @@ STATE_TIMOR = {
     arable_resources = { "bg_rice_farms" "bg_vineyard_plantations" "bg_banana_plantations" "bg_coffee_plantations" }
     capped_resources = {
         #fragrances, hardwood, fish, wildlife (birdsnests), iron and copper
-        bg_copper_mining = 15
         bg_logging = 7
         bg_fishing = 5
+    }
+    resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 15
     }
 
     naval_exit_id = 3125
@@ -666,7 +673,7 @@ STATE_MINDANAO = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_iron_mining = 36
-        bg_logging = 8
+        bg_logging = 10
         bg_fishing = 8
     }
     resource = {
@@ -690,7 +697,7 @@ STATE_LUZON = {
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_dye_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_iron_mining = 24
-        bg_logging = 10
+        bg_logging = 14
         bg_fishing = 12
     }
     naval_exit_id = 3056
@@ -709,7 +716,7 @@ STATE_VISAYAS = {
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_iron_mining = 30
-        bg_logging = 8
+        bg_logging = 14
         bg_fishing = 10
         bg_coal_mining = 5
     }
@@ -737,7 +744,49 @@ STATE_WEST_MICRONESIA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     port = "xc0426b" #Agana
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -761,6 +810,27 @@ STATE_WEST_MICRONESIA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     mine = "xc9d00f" #Palau
 
 
@@ -773,7 +843,49 @@ STATE_WEST_MICRONESIA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     wood = "x341aba" #Ponape
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -810,7 +922,49 @@ STATE_EAST_MICRONESIA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     port = "x9ee29c" #Tarawa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -834,6 +988,27 @@ STATE_EAST_MICRONESIA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     mine = "x1e6c78" #Enewetak
 
 
@@ -846,7 +1021,49 @@ STATE_EAST_MICRONESIA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     wood = "x5fc9c8" #Majuro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -907,7 +1124,7 @@ STATE_NAURU = {
 STATE_FIJI = {
     id = 1002
     subsistence_building = "building_subsistence_fishing_villages"
-    provinces = { "x53FA6E" "x61A3E3" "xC04D30" }
+    provinces = { "x53FA6E" "x61A3E3" "xC04D30" "x628491" }
     traits = { "state_trait_severe_malaria" }
     city = "xC04D30"
     port = "x61A3E3"
@@ -1015,7 +1232,49 @@ STATE_TONGA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     port = "xA7F8A1" #Pago Pago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1039,6 +1298,27 @@ STATE_TONGA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     mine = "xA7F8A1" #Salelologa
 
 
@@ -1051,7 +1331,49 @@ STATE_TONGA = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     wood = "x8b868d" #Avarua
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

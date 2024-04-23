@@ -40,16 +40,16 @@ POE = {
 }
 
 
-BTK = {
-	color = { 198 32 32 }
-	
-	country_type = decentralized
-	
-	tier = principality
-	
-	cultures = { batak }
-	capital = STATE_TAPANULI
-}
+#BTK = {
+#	color = { 198 32 32 }
+#	
+#	country_type = decentralized
+#	
+#	tier = principality
+#	
+#	cultures = { batak }
+#	capital = STATE_TAPANULI
+#}
 
 SGK = {
 	color = { 0 182 142 }

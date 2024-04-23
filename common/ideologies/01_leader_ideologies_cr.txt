@@ -12,7 +12,7 @@ ideology_frontier_expansionist_leader_cr = {
 	}
 	
 	possible = {
-		alway = no
+		always = no
 	}
 	
 	leader_weight = {

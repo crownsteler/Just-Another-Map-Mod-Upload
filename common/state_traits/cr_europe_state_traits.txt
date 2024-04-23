@@ -68,6 +68,7 @@ state_trait_porphyry_copper = {
 
 state_trait_minette_ore = {
     icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	disabling_technologies = { "open_hearth_process" }
 	
 	modifier = {
 		building_iron_mine_throughput_add = -0.20

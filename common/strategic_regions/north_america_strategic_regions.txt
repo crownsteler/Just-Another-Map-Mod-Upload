@@ -18,7 +18,7 @@ region_new_england = {
 }
 
 region_pacific_coast = {
-	capital_province = xBD0F03
+	capital_province = xA4DD56
 	map_color = { 0.471 0.824 0.196 }
 	states = { STATE_WASHINGTON STATE_OREGON STATE_IDAHO STATE_ALASKA STATE_YUKON_TERRITORY STATE_BRITISH_COLUMBIA }
 }

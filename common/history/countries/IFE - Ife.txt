@@ -2,8 +2,10 @@
 	c:IFE ?= {
 		effect_starting_technology_tier_5_tech = yes
 		add_technology_researched = international_trade
+		add_technology_researched = urban_planning
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_mercantilism
 	}
 }

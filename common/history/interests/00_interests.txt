@@ -129,6 +129,7 @@
 		add_declared_interest = region_andes
 		add_declared_interest = region_gran_colombia
 		add_declared_interest = region_guayana
+		add_declared_interest = region_la_plata
 	}		
 	c:USA = {
 		add_declared_interest = region_pacific_coast
@@ -192,6 +193,9 @@
 	}
 	c:GRE = {
 		add_declared_interest = region_balkans
+	}
+	c:KOR = {
+		add_declared_interest = region_japan
 	}
 }	
 

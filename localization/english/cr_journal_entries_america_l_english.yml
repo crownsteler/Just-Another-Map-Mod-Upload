@@ -12,7 +12,7 @@
  je_cr_indian_removal_button_a_choctaw_finished:0 "We have finished the Choctaw Removal"
  je_cr_indian_removal_button_b_chickasaw:0 "Start the Chickasaw removal"
  je_cr_indian_removal_button_b_chickasaw_desc:0 "Under the Treaty of Pontotoc Creek the Chickasaw have agreed to sell their remaining lands east of the Mississippi and to remove themselves west, but only when a suitable tract of land to move to has been found."
- je_cr_indian_removal_button_b_chickasaw_tt:0 "The Chickasaw have choosen a suitable piece of land in the west"
+ je_cr_indian_removal_button_b_chickasaw_tt:0 "The Chickasaw have choosen a suitable piece of land in the west.\nThe Chickasaw will have to be #italic suitably motivated#! to find such a piece of land by maintaining relations lower than, or equal to #variable -20#!."
  je_cr_indian_removal_button_b_chickasaw_tt_b:0 "The Chickasaw have #variable not#! yet started their journey west"
  je_cr_indian_removal_button_b_chickasaw_effect:0 "The removal of the Chickasaw Nation will start"
  je_cr_indian_removal_button_c_creek:0 "Start the Creek removal"
@@ -22,10 +22,15 @@
  je_cr_indian_removal_button_d_cherokee_treaty:0 "Sign a removal treaty with the Cherokee"
  je_cr_indian_removal_button_d_cherokee_treaty_desc:0 "Under the Indian Removal Act removal can only be executed through a formal treaty with the Indian tribe. As we currently lack such a treaty we should pursue one before removal can begin."
  je_cr_indian_removal_button_d_cherokee_treaty_tt:0 "We are #variable not#! currently negotiating a treaty."
+ je_cr_indian_removal_button_d_cherokee_time_expired:0 "The grace period granted to the Cherokee has expired"
+ je_cr_indian_removal_button_d_cherokee_violate_treaty:0 "Our [concept_ruler] does #variable not#! have the #variable Pacifist#! ideology"
+ je_cr_indian_removal_button_d_cherokee_violate_treaty_button_tt:0 "Because the #variable 2 year#! grace period has not yet expired:"
  je_cr_indian_removal_button_d_cherokee:0 "Start the Cherokee removal"
  je_cr_indian_removal_button_d_cherokee_desc:0 "Start the Cherokee removal"
  je_cr_indian_removal_button_e_seminole:0 "Start the Seminole removal"
  je_cr_indian_removal_button_e_seminole_desc:0 "Start the removal of the Seminole Nation"
+ cr_seminole_removal_has_started_tt:0 "The Seminole have #variable not#! yet started their journey west"
+ je_cr_indian_removal_button_violate_treaty_button_tt:0 "Because the treaty we have is still in effect:"
  
  je_chickasaw_removal:1 "The Chickasaw Trail of Tears"
  je_chickasaw_removal_reason:1 "With land suitable to their needs choosen beyond the Mississippi the [SCOPE.sCountry('target_of_removal').GetAdjective] are now preparing for the march to their new homes west; a march to their long exile away from the bones of their ancestors."
@@ -36,14 +41,24 @@
  cr_creek_removal_complete:0 "The [SCOPE.sCountry('target_of_removal').GetAdjective] land will be opened up for settlement"
  cr_creek_removal_protectorated:0 "The [SCOPE.sCountry('target_of_removal').GetAdjective] land will be granted internal autonomy as per the treaty."
  
- je_cr_cherokee_removal:1 "The Cherokee Trail of Tears"
- je_cr_cherokee_removal_reason:1 "The Cherokee Trail of Tears"
+ je_cherokee_removal:1 "The Cherokee Trail of Tears"
+ je_cherokee_removal_reason:1 "The [SCOPE.sCountry('target_of_removal').GetName] are now preparing for the march to their new homes west; a march to their long exile away from the bones of their ancestors."
+ 
+ cr_cherokee_removal_complete:0 "The [SCOPE.sCountry('target_of_removal').GetAdjective] land will be opened up for settlement"
+ 
+ je_seminole_removal:1 "The Seminole Trail of Tears"
+ je_seminole_removal_reason:1 "The [SCOPE.sCountry('target_of_removal').GetName] are now preparing for the march to their new homes west; a march to their long exile away from the bones of their ancestors."
+ 
+ cr_indian_removal_complete:0 "The [SCOPE.sCountry('target_of_removal').GetAdjective] land will be opened up for settlement"
+ cr_indian_state_removal_complete:0 "If no Indians remain in the state the following effects will be applied:"
  
  
  je_cr_robinson_treaties:1 "The Lake Superior Copper Rush"
  je_cr_robinson_treaties_reason:0 "Traditional the economy of the shores of Lake Superiour has revolved around fur trading with Ojibwe trappers providing beaver pelts. First to French Voyageurs, and now to the Hudson Bay Company. And while copper deposits have been known for centuries, exploration has so far not amounted to much. This is set to change, however, as large deposits of copper have been found across the lake in Michigan. Hopes are high that similar deposits can found on the northern shore and fortunes can be made.\n\nHigh as the hopes may be, there is the small matter of land ownership to be dealt with: For the local Ojibwe still hold the aboriginal title to the land, and -under the stipulations of the Royal Proclamation of 1763- no development can take place without their consent.\n\nThe $ig_industrialists$ are therefore pressuring the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] to open up the region to economic development by entering into a treaty with the Ojibwe."
  je_cr_robinson_treaties_complete_tt:0 "Triggers the #B The Robinson Treaties#! Event"
  je_cr_robinson_treaties_fail_on_timeout_tt:0 "#variable 10 years#! have passed"
+ je_cr_robinson_treaties_trigger_copper_mines_ontario:0 "@copper! [GetGoods('copper').GetName] has been discovered in #variable Ontario#!"
+ je_cr_robinson_treaties_trigger_copper_mines_michigan:0 "@copper! [GetGoods('copper').GetName] has been discovered in #variable Michigan#!"
  
  je_cr_numbered_treaties:1 "The Numbered Treaties"
  je_cr_numbered_treaties_reason:0 "With the integration of Rupert's Land into [ROOT.GetCountry.GetNameNoFlag] comes the daunting task of administrating the region. For as vast as the region is, so sparse is its population. What population exists consists, by large and far, of Indians who's contribution is minor aside from pelts they supply to the #variable Hudson Bay Company#!.\n\n If we are to turn this vast land to productive use -and we can for it is rich in timber, mineral deposits and especially fertile land- we will need to induce people to settle there. However before any such endeavor we will have convince the Indians already living there to transfer the land to us. For under the Royal Proclamation of 1763, they hold an aboriginal title to the land."

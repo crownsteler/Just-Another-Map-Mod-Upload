@@ -11,8 +11,8 @@ state_trait_cr_ethiopian_highlands = {
 	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
 	modifier = {
 		building_coffee_plantation_throughput_add = 0.2
-		state_infrastructure_mult = -0.15
-		state_construction_mult = -0.15
+		state_infrastructure_mult = -0.1
+		state_construction_mult = -0.1
 	}
 }
 

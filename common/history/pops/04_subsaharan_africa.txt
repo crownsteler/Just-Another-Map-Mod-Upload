@@ -4172,10 +4172,10 @@
 				culture = khoisan
 				size = 20300
 			}
-			create_pop = {
-				culture = griqua
-				size = 13760
-			}
+			#create_pop = {
+			#	culture = griqua
+			#	size = 13760
+			#}
 		}
 		region_state:XHO = {
 			create_pop = {	

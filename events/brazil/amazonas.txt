@@ -85,7 +85,25 @@ amazonas.2 = {
 
 	duration = 3
 
-	title = amazonas.2.t
+	title = {
+		first_valid = {
+			triggered_desc = {
+				desc = amazonas.2.t_2
+				trigger = {
+					OR = {
+						scope:bolivia_border_treaty_country_scope = c:NPU
+						scope:bolivia_border_treaty_country_scope = c:PEU
+					}
+				}
+			}
+			triggered_desc = {
+				desc = amazonas.2.t
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
 	desc = amazonas.2.d
 	flavor = amazonas.2.f
 
@@ -106,9 +124,7 @@ amazonas.2 = {
 			limit = {
 				is_player = no
 				capital = { region = sr:region_andes }
-				s:STATE_AMAZONAS = {
-					has_claim_by = THIS
-				}
+				has_claim = s:STATE_AMAZONAS
 				OR = {
 					relations:root >= relations_threshold:amicable
 					army_size < { # your army is four times as large
@@ -139,27 +155,15 @@ amazonas.2 = {
 			name = amazonic_indemnities_brazil_1
 			months = normal_modifier_time
 		}
-		random_country = {
-			limit = {
-				is_player = no
-				capital = { region = sr:region_andes }
-				any_scope_state = { state_region = s:STATE_AMAZONAS }
-				OR = {
-					relations:root >= relations_threshold:amicable
-					army_size < { # your army is four times as large
-    					value = root.army_size
-    					multiply = 0.25
-					}
-					is_subject_of = root
-					c:BRZ ?= root
-				}
-			}
+		scope:bolivia_border_treaty_country_scope = {
 			random_scope_state = {
 				limit = {
 					state_region = s:STATE_AMAZONAS
 				}
 				set_state_owner = root
-				remove_claim = THIS
+			}
+			s:STATE_AMAZONAS = {
+				remove_claim = scope:bolivia_border_treaty_country_scope
 			}
 			if = {
 				limit = {
@@ -173,7 +177,14 @@ amazonas.2 = {
 					}
 					set_state_owner = root
 				}
-				remove_claim = THIS
+			}
+			if = {
+				limit = {
+					has_claim = s:STATE_MATO_GROSSO
+				}
+				s:STATE_MATO_GROSSO = {
+					remove_claim = scope:bolivia_border_treaty_country_scope
+				}
 			}
 			add_modifier = {
 				name = amazonic_indemnities_recipient_1
@@ -221,7 +232,7 @@ amazonas.3 = {
 			limit = {
 				is_player = no
 				capital = { region = sr:region_gran_colombia }
-				any_scope_state = { state_region = s:STATE_AMAZONAS }
+				has_claim = s:STATE_AMAZONAS
 				OR = {
 					relations:root >= relations_threshold:amicable
 					army_size < { # your army is four times as large
@@ -251,22 +262,7 @@ amazonas.3 = {
 			name = amazonic_indemnities_brazil_2
 			months = normal_modifier_time
 		}
-		random_country = {
-			limit = {
-				is_player = no
-				capital = { region = sr:region_gran_colombia }
-				s:STATE_AMAZONAS = {
-					has_claim_by = THIS
-				}
-				OR = {
-					relations:root >= relations_threshold:amicable
-					root.army_size < { # your army is four times as large
-    					value = army_size
-    					multiply = 0.25
-					}
-					is_subject_of = root
-				}
-			}
+		scope:colombia_border_treaty_country_scope = {
 			random_scope_state = {
 				limit = {
 					state_region = s:STATE_AMAZONAS
@@ -277,6 +273,9 @@ amazonas.3 = {
 				name = amazonic_indemnities_recipient_2
 				months = normal_modifier_time
 			}
+		}
+		s:STATE_AMAZONAS = {
+			remove_claim = scope:colombia_border_treaty_country_scope
 		}
 		every_country = {
 			limit = {

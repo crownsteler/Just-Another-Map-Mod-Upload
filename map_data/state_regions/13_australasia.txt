@@ -13,16 +13,20 @@
     capped_resources = {
         bg_coal_mining = 90
         bg_iron_mining = 28
-        bg_copper_mining = 35
+        #bg_copper_mining = 38
         #bg_lead_mining = 20
         bg_logging = 12
         bg_whaling = 4
         bg_fishing = 8
     }
     resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 38
+    }
+    resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
-        undiscovered_amount = 11
+        undiscovered_amount = 9
     }
     naval_exit_id = 3122
 }
@@ -48,7 +52,7 @@ STATE_VICTORIA = {
     resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
-        undiscovered_amount = 8
+        undiscovered_amount = 7
     }
     naval_exit_id = 3122
 }
@@ -67,11 +71,15 @@ STATE_TASMANIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tea_plantations" "bg_opium_plantations" }
     capped_resources = {
         bg_iron_mining = 15
-        bg_lead_mining = 16
-        bg_copper_mining = 14
+        #bg_lead_mining = 16
+        #bg_copper_mining = 14
         bg_logging = 14
         bg_whaling = 2
         bg_fishing = 10
+    }
+    resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 14
     }
     resource = {
         type = "bg_gold_fields"
@@ -95,12 +103,16 @@ STATE_QUEENSLAND = {
     arable_land = 20
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_copper_mining = 35
+        #bg_copper_mining = 35
         bg_lead_mining = 45
         bg_coal_mining = 80
         bg_logging = 16
         bg_whaling = 3
         bg_fishing = 12
+    }
+    resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 35
     }
     naval_exit_id = 3124
 }
@@ -121,14 +133,8 @@ STATE_SOUTH_AUSTRALIA = {
     capped_resources = {
         bg_iron_mining = 30
         bg_lead_mining = 36
-        bg_copper_mining = 40
+        #bg_copper_mining = 50
         bg_sulfur_mining = 50 #Pyrite
-
-
-
-
-
-
 
 
 
@@ -137,6 +143,11 @@ STATE_SOUTH_AUSTRALIA = {
 
         bg_whaling = 2
         bg_fishing = 6
+    }
+    resource = {
+        type = "bg_copper_mining"
+        discovered_amount = 4
+        undiscovered_amount = 46
     }
     naval_exit_id = 3121
 }
@@ -185,6 +196,24 @@ STATE_NORTHERN_TERRITORY = {
     arable_resources = { "bg_livestock_ranches" "bg_cotton_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_sulfur_mining = 45 #Phosphates
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

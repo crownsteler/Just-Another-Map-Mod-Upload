@@ -52,7 +52,7 @@ cr_central_asia_events.1 = { #The Kazakh Khan / Tailak Baatyr
 		}
 		change_infamy = 5
 		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
-			add_radicals = {
+			add_radicals_in_state = {
 				culture = cu:kirgiz
 				value = large_radicals
 			}
@@ -84,7 +84,7 @@ cr_central_asia_events.1 = { #The Kazakh Khan / Tailak Baatyr
 			value = -50
 		}
 		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
-			add_radicals = {
+			add_radicals_in_state = {
 				culture = cu:kirgiz
 				value = very_large_radicals
 			}
@@ -103,7 +103,7 @@ cr_central_asia_events.1 = { #The Kazakh Khan / Tailak Baatyr
 			set_country_type = unrecognized
 		}
 		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
-			add_radicals = {
+			add_radicals_in_state = {
 				culture = cu:kirgiz
 				value = very_large_radicals
 			}
@@ -149,7 +149,6 @@ cr_central_asia_events.5 = { #On the shores of the Issyk-Kul - Orman Khan's Kuru
 					has_variable = tailak_baatyr
 				}
 				has_variable = cr_omran_is_coming
-				months = normal_modifier_time
 			}
 		}
 	}
@@ -197,7 +196,7 @@ cr_central_asia_events.5 = { #On the shores of the Issyk-Kul - Orman Khan's Kuru
 			value = -25
 		}
 		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
-			add_radicals = {
+			add_radicals_in_state = {
 				culture = cu:kirgiz
 				value = large_radicals
 			}
@@ -227,7 +226,7 @@ cr_central_asia_events.5 = { #On the shores of the Issyk-Kul - Orman Khan's Kuru
 			value = 15
 		}
 		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
-			add_radicals = {
+			add_radicals_in_state = {
 				culture = cu:kirgiz
 				value = medium_radicals
 			}
@@ -261,7 +260,7 @@ cr_central_asia_events.5 = { #On the shores of the Issyk-Kul - Orman Khan's Kuru
 			value = -25
 		}
 		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
-			add_radicals = {
+			add_radicals_in_state = {
 				culture = cu:kirgiz
 				value = medium_radicals
 			}
@@ -286,7 +285,7 @@ cr_central_asia_events.5 = { #On the shores of the Issyk-Kul - Orman Khan's Kuru
 		#}
 		play_as = C:KYZ
 		s:STATE_KIRGHIZIA.region_state:KOK = { #only the northern Kyrgyzs, the southern Kyrgyzs were foundational to the Kokand Khanate
-			add_radicals = {
+			add_radicals_in_state = {
 				culture = cu:kirgiz
 				value = large_radicals
 			}

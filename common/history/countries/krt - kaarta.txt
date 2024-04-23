@@ -1,0 +1,19 @@
+﻿COUNTRIES = {
+	c:KRT	?= {
+		effect_starting_technology_tier_7_tech = yes
+		effect_starting_politics_traditional = yes		
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_mercantilism
+		
+		add_technology_researched = enclosure
+		add_technology_researched = prospecting
+		
+		add_technology_researched = urbanization
+		add_technology_researched = international_trade
+		#add_technology_researched = pharmaceuticals
+		
+		add_technology_researched = mandatory_service
+		
+		#effect_native_conscription_4 = yes
+	}
+}

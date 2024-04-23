@@ -1,7 +1,7 @@
 ﻿# Werkspoor
 company_werkspoor = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_werkspoor.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
 	flavored_company = yes
 	
@@ -19,7 +19,7 @@ company_werkspoor = {
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_motor_industry
-				level >= 10
+				level >= 3
 			}
 		}
 	}
@@ -107,7 +107,7 @@ company_werkspoor = {
 # Nederlandse Handelsmaatschappij
 company_nederlandse_handelsmaatschappij = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_nederlandse_handelsmaatschappij.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 	
 	flavored_company = yes
 	
@@ -147,7 +147,7 @@ company_nederlandse_handelsmaatschappij = {
 # Nederlandse Kunstzijdefabriek
 company_enka = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_enka.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
 	flavored_company = yes
 	
@@ -168,7 +168,7 @@ company_enka = {
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_synthetics_plants
-				level >= 10
+				level >= 3
 			}
 		}
 	}
@@ -185,7 +185,7 @@ company_enka = {
 # Billiton Maatschappij
 company_billiton_maatschappij = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_billiton_maatschappij.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 	
 	flavored_company = yes
 	
@@ -220,7 +220,7 @@ company_billiton_maatschappij = {
 # Melkinrichting van Grieken #Needs something better
 #company_melkinrichting_van_grieken = {
 #	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_zuivelcooporatie_van_grieken.dds"
-#	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+#	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
 #	
 #	flavored_company = yes
 #	
@@ -243,7 +243,7 @@ company_billiton_maatschappij = {
 #				OR = {
 #					is_building_type = building_food_industry
 #				}
-#				level >= 10
+#				level >= 3
 #			}
 #		}
 #	}
@@ -260,7 +260,7 @@ company_billiton_maatschappij = {
 # Maatschappij van Weldadigheid
 company_maatschappij_van_weldadigheid = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_maatschappij_van_weldadigheid.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
 	
 	flavored_company = yes
 	
@@ -301,7 +301,7 @@ company_maatschappij_van_weldadigheid = {
 #  Petrus Regout De Sphinx
 company_regout_de_sphinx = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_regout_de_sphinx.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
 	flavored_company = yes
 	
@@ -314,7 +314,6 @@ company_regout_de_sphinx = {
 	}
 	
 	possible = {
-		has_law = law_type:law_poor_laws
 		any_scope_state = {
 			state_region = s:STATE_BRABANT
 			is_incorporated = yes
@@ -338,7 +337,7 @@ company_regout_de_sphinx = {
 #  Van Heek en Co.
 company_van_heek_en_co = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_van_heek.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
 	flavored_company = yes
 	
@@ -352,15 +351,13 @@ company_van_heek_en_co = {
 	}
 	
 	possible = {
-		has_law = law_type:law_poor_laws
 		any_scope_state = {
 			state_region = s:STATE_GELRE
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_textile_mills
-				level >= 10
+				level >= 3
 			}
-			count >= 2
 		}
 	}
 	
@@ -370,5 +367,153 @@ company_van_heek_en_co = {
 	
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#  Gebr. Stork & Co.
+company_gebr_stork_en_co = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_stork.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	flavored_company = yes
+	
+	building_types = {
+		building_tooling_workshops
+	}
+	
+	potential = {
+		country_has_primary_culture = cu:dutch
+	}
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_GELRE
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_tooling_workshops
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_textile_mills_throughput_add = 0.10 #Build spinning machines amongst others.
+	}
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#  Wilton Scheepswerf
+company_wilton_fijenoord = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_wilton_scheepswerf.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+	
+	flavored_company = yes
+	
+	building_types = {
+		building_shipyards
+		building_military_shipyards
+		building_motor_industry
+	}
+	
+	potential = {
+		country_has_primary_culture = cu:dutch
+	}
+	
+	possible = {		
+		has_technology_researched = atmospheric_engine
+		any_scope_state = {
+			state_region = s:STATE_HOLLAND
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_shipyards
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_navy_defense_mult = 0.05 #specialised in naval repair, but couldn't find a suitable modifier
+		unit_combat_unit_type_submarine_offense_mult = 0.1
+		building_sugar_plantation_throughput_add = 0.1 #Fijenoord used to be specialised in building sugar refining equipment. Weird, right.
+	}
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#  Fokker
+company_fokker = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_fokker.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	flavored_company = yes
+	
+	building_types = {
+		building_war_machine_industry
+	}
+	
+	potential = {
+		country_has_primary_culture = cu:dutch
+	}
+	
+	possible = {
+		has_technology_researched = military_aviation
+		any_scope_state = {
+			region = sr:region_low_countries
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_war_machine_industry
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_army_offense_mult = 0.05 #Should be something more aviation related
+		country_weekly_innovation_mult = 0.05
+	}
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# H. Pander en Zonen
+company_pander_en_zonen = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_pander.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	flavored_company = yes
+	
+	building_types = {
+		building_furniture_manufacturies
+	}
+	
+	potential = {
+		country_has_primary_culture = cu:dutch
+	}
+	
+	possible = {
+		any_scope_state = {
+			region = sr:region_low_countries
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_furniture_manufacturies
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_arts_academy_throughput_add = 0.05 #provided furnishing for, amongst others, the Peace Palace in The Hague, i.e. prestigious projects
+		building_war_machine_industry_throughput_add = 0.05 #build aircrafts. Odd combo right? It makes sense though as early aircraft were build of wood using similar techniques as furniture making
+	}
+	
+	ai_weight = {
+		value = 2 # Higher base value for flavored companies, but this one is a bit of an odd one out.
 	}
 }

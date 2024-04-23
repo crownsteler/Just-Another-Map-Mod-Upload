@@ -798,10 +798,10 @@
 				culture = dixie
 				size = 369604
 			}
-			create_pop = {
-				culture = cherokee
-				size = 7200
-			}
+			#create_pop = {
+			#	culture = cherokee
+			#	size = 7200
+			#}
 			create_pop = {
 				culture = yankee
 				size = 204800

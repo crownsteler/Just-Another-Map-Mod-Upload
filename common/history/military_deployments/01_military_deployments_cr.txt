@@ -102,4 +102,28 @@
 			}
 		}
 	}
+	c:XHO = {
+		random_scope_general = {
+			limit = {
+				has_variable = is_maqoma
+			}
+
+			commander_military_formation = {
+				fully_mobilize_army = yes
+				teleport_to_front = p:xb0dfd0.front
+			}
+		}
+	}
+	c:SAF = {
+		random_scope_general = {
+			limit = {
+				has_variable = is_harry_smith_SAF
+			}
+
+			commander_military_formation = {
+				fully_mobilize_army = yes
+				teleport_to_front = p:x3073ef.front
+			}
+		}
+	}
 }

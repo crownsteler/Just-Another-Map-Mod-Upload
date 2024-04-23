@@ -1,0 +1,19 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:SAF = {
+		create_diplomatic_play = {
+			name = cr_xhosa_war
+		
+			target_state = s:STATE_EASTERN_CAPE.region_state:XHO
+			
+			war = yes
+			
+			type = dp_conquer_state
+			
+			add_war_goal = {
+				holder = c:XHO
+				type = humiliation
+				target_state = s:STATE_EASTERN_CAPE.region_state:SAF
+			}			
+		}	
+	}
+}

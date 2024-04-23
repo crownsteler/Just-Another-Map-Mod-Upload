@@ -1,0 +1,37 @@
+﻿# United States - USA - INTELLIGENTSIA
+
+ecchi_usa_emerson_character_template = {
+    first_name = Ralph_Waldo
+    last_name = emerson
+	historical = yes
+	is_agitator = yes
+    culture = cu:yankee
+    female = no
+    religion = protestant
+    ideology = ideology_abolitionist
+    interest_group = ig_intelligentsia
+    birth_date = 1803.5.25
+	dna = ecchi_dna_ralph_emerson
+    traits = { tactful charismatic romantic }
+    interest_group_leader_usage = {
+        country_trigger = {
+            OR = {
+                AND = {
+                    exists = c:USA
+                    this = c:USA
+                    NOT = { exists = c:NEN }
+                }
+                AND = {
+                    exists = c:NEN
+                    this = c:NEN
+                }
+            }
+        }
+        interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+        }
+        earliest_usage_date = 1836.1.1
+        latest_usage_date = 1882.4.27
+        chance = 50
+    }
+}

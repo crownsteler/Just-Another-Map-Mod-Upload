@@ -44,7 +44,7 @@ goods_output_wood_mult = {
 
 building_vineyard_plantation_throughput_add = {
 	good = yes
-	percent = no
+	percent = yes
 }
 
 goods_fabric_throughput_add = {

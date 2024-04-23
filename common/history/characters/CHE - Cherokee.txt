@@ -13,11 +13,11 @@
 				tactful
 				experienced_political_operator
 			}
-			on_created = {
-				set_variable = {
-					name = john_ross
-				}				
-			}
+			#on_created = {
+			#	set_variable = {
+			#		name = i_am_john_ross
+			#	}				
+			#}
 		}
 		create_character = {
 			first_name = "Major"

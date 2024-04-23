@@ -114,21 +114,21 @@ region_african_lakes = {
 
 region_madagascar = {
 	graphical_culture = "african"
-	capital_province = xC3F681
+	capital_province = xA95FFF
 	map_color = { 0.61 0.65 0.35 }
 	states = { STATE_WEST_MADAGASCAR STATE_EAST_MADAGASCAR STATE_INDIAN_OCEAN_TERRITORY }
 }
 
 region_zambezia = {
 	graphical_culture = "african"
-	capital_province = xC3F681
+	capital_province = xCA8CD6
 	map_color = { 0.73 0.70 0.32 }
 	states = { STATE_LOURENCO_MARQUES STATE_SOFALA STATE_ZAMBEZI STATE_ZAMBIA STATE_BUNDALAND STATE_NYASALAND }
 }
 
 region_south_west_africa = {
 	graphical_culture = "african"
-	capital_province = xC3F681
+	capital_province = xAD1C61
 	map_color = { 0.90 0.51 0.29 }
 	states = { STATE_BENGUELA STATE_HEREROLAND STATE_NAMAQUALAND STATE_BOTSWANA }
 }

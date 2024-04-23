@@ -13,16 +13,16 @@
 		base = 0
 		modifier = {
 			add = 10
-			authority >=450
+			authority >= 450
 		}
 	}
 	
 	possible = {
+		authority >= 125
 		institution_investment_level = {
 			institution = institution_colonial_affairs
-			value >= 2
+			value >= 1
 		}
-		
 	}
 
 	effect = {
@@ -120,6 +120,7 @@ je_cr_russian_america_colonise_california_button = {
 	}
 	
 	possible = {
+		authority >= 150
 		c:ASK = { 
 			is_subject_of = ROOT 
 			any_scope_state = { 
@@ -128,7 +129,7 @@ je_cr_russian_america_colonise_california_button = {
 		}
 		institution_investment_level = {
 			institution = institution_colonial_affairs
-			value >= 3
+			value >= 2
 		}
 	}
 
@@ -237,6 +238,18 @@ je_cr_russian_america_annex_it = {
 
 	effect = {
 		annex = c:ASK
+		if = {
+			limit = {
+				NOT = {
+					s:STATE_ALASKA = {
+						has_claim_by = c:RUS
+					}
+				}
+			}
+			s:STATE_ALASKA = {
+				add_claim = c:RUS
+			}
+		}
 		if = {
 			limit = {
 				has_modifier = cr_colonising_alaska_modifier_rus

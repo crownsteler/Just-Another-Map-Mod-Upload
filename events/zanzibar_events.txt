@@ -86,7 +86,7 @@ zanzibar.1 = {
 			}
 			set_state_owner = c:ZAN
 		}
-		any_state = {
+		every_scope_state = {
 			limit = {
 				OR = {
 					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
@@ -98,6 +98,8 @@ zanzibar.1 = {
 					region = sr:region_southern_africa
 					region = sr:region_south_west_africa
 					region = sr:region_congo
+				}
+				state_region = {
 					has_claim_by = c:OMA
 				}
 			}
@@ -131,7 +133,7 @@ zanzibar.1 = {
 			}
 			set_state_owner = c:ZAN
 		}
-		any_state = {
+		every_scope_state = {
 			limit = {
 				OR = {
 					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
@@ -143,7 +145,9 @@ zanzibar.1 = {
 					region = sr:region_southern_africa
 					region = sr:region_south_west_africa
 					region = sr:region_congo
-					has_claim_by = c:OMA
+					state_region = {
+						has_claim_by = c:OMA
+					}
 				}
 			}
 			add_claim = c:ZAN

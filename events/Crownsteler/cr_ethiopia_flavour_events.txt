@@ -6,7 +6,7 @@ cr_ethiopia_events.1 = { #The Rebirth of an Empire
 
 	title = cr_ethiopia_events.1.t
 	desc = cr_ethiopia_events.1.desc
-	flavor = cr_ethiopia_events.1.f
+	#flavor = cr_ethiopia_events.1.f
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/middleeast/upperclass_party"

@@ -262,7 +262,7 @@
 			save_scope_as = army_of_minangkabau
 		}
 
-		create_character = { #Arrived in the indies 1837, don't know where he served, but needed somebody
+		create_character = {
 			is_general = yes
 			first_name = Tuanku
 			last_name = Tambusai
@@ -287,6 +287,99 @@
 					name = is_tambusai
 				}				
 			}
+		}
+	}
+	
+	c:XHO ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_southern_africa
+			name = "Army of Maqoma"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_EASTERN_CAPE
+				count = 8
+			}
+			save_scope_as = army_of_maqoma
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Jongumsobomvu
+			last_name = Maqoma
+			historical = yes
+			culture = cu:xhosa
+			hq = region_southern_africa
+			commander_rank = commander_rank_1
+			age = 37 #born 1798
+			interest_group = ig_landowners
+			ideology = ideology_theocrat
+			traits = {			
+				pillager
+				persistent
+				stalwart_defender
+			}
+			save_scope_as = cr_maqoma
+			on_created = {
+				set_variable = {
+					name = is_maqoma
+				}				
+			}
+		}
+		scope:cr_maqoma = {
+			transfer_to_formation = scope:army_of_maqoma
+		}
+	}
+	
+	c:SAF ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_southern_africa
+			name = "Army of the Cape Colony"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_EASTERN_CAPE
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CAPE_COLONY
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_CAPE_COLONY
+				count = 3
+			}
+			save_scope_as = army_of_the_cape_colony
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Harry
+			last_name = Smith
+			historical = yes
+			culture = cu:british
+			hq = region_southern_africa
+			commander_rank = commander_rank_1
+			birth_date = 1787.6.28
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			traits = {			
+				persistent
+				stalwart_defender
+			}
+			save_scope_as = cr_harry_smith
+			on_created = {
+				set_variable = {
+					name = is_harry_smith_SAF
+				}				
+			}
+		}
+		scope:cr_harry_smith = {
+			transfer_to_formation = scope:army_of_the_cape_colony
 		}
 	}
 }

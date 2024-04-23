@@ -1,8 +1,38 @@
 ﻿# This is executed last among all history
-#GLOBAL = {
-#	c:EGY = {
-#		add_journal_entry = {
-#			type = je_cr_reinventing_egypt
-#		}
-#	}
-#}
+GLOBAL = {
+	#c:EGY = {
+	#	add_journal_entry = {
+	#		type = je_cr_reinventing_egypt
+	#	}
+	#}
+	cu:maghrebi = {
+		add_cultural_obsession = fruit
+	}
+	cu:misri = {
+		add_cultural_obsession = coffee
+		add_cultural_obsession = fruit
+	}
+	cu:mashriqi = {
+		add_cultural_obsession = sugar
+	}
+	cu:bedouin = {
+		add_cultural_obsession = fruit
+	}
+	cu:berber = {
+		add_cultural_obsession = fruit
+	}
+	cu:persian = {
+		add_cultural_obsession = coffee
+		add_cultural_obsession = tobacco
+	}
+	
+	
+	
+	
+	s:STATE_TAHITI.region_state:GBR = {
+		add_modifier = {
+			name = cr_farflung_corner_of_empire
+			months = 660
+		}
+	}
+}

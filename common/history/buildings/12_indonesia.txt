@@ -595,7 +595,7 @@
 				activate_production_methods={ "pm_anchorage" }
 			}
 		}
-		region_state:TID={
+		region_state:TRT={
 			create_building={
 				building="building_fishing_wharf"
 				level=1

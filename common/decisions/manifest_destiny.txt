@@ -190,12 +190,12 @@
 					any_scope_state = {
 						NOT = {
 							owner = ROOT
-		}
-	}
-	}
+						}
+					}
+			}
 				add_claim = ROOT 
     		} 
-	}
+		}
 		s:STATE_SOUTH_DAKOTA = { 
 			if = {
 				limit = {

@@ -1,7 +1,6 @@
 ﻿CHARACTERS = {
 	c:BKH = {
 		create_character = {
-			#role = politician # Remove this line
 			first_name = "Zhangir"
 			last_name = "Kerei" 
 			historical = yes

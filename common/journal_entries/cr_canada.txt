@@ -5,30 +5,23 @@
 			country_has_primary_culture = cu:franco_canadian
 			country_has_primary_culture = cu:anglo_canadian
 		}
-		#any_scope_state = {
-		#	OR = {
-		#		state_region = s:STATE_QUEBEC
-		#		state_region = s:STATE_ONTARIO
-		#	}
-		#}
-		#any_scope_state = {
-		#	OR = {
-		#		has_modifier = cr_unceded_territory_95
-		#		has_modifier = cr_unceded_territory_75
-		#		has_modifier = cr_unceded_territory_50
-		#		has_modifier = cr_unceded_territory_30
-		#	}
-		#}
-		#c:CTF = {
-		#	any_scope_state = {
-		#		state_region = s:STATE_ONTARIO
-		#	}			
-		#}
+		c:CTF = {
+			any_scope_state = {
+				state_region = s:STATE_ONTARIO
+			}			
+		}
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_QUEBEC
+				state_region = s:STATE_ONTARIO
+			}
+			has_modifier = cr_unceded_territory_95
+		}
     }
     possible = {
-		any_scope_state = {
-			state_region = s:STATE_ONTARIO
-			has_potential_resource = bg_copper_mining
+		custom_tooltip = {
+			text = je_cr_robinson_treaties_trigger_copper_mines_ontario
+			has_variable = cr_lake_superior_rush_has_happened
 		}
     }
 	
@@ -41,7 +34,7 @@
 		}
 		set_variable = {
 			name = cr_lake_superior_cooldown
-			months = 2
+			months = 3
 		}
 		add_modifier = {
 			name = cr_eyeing_unceded_land
@@ -70,12 +63,6 @@
 				save_scope_as = copper_mining_area
 			}
 		}
-		scope:copper_mining_state = {
-			add_modifier = {
-				name = cr_lake_superior_copper_rush
-				months = long_modifier_time
-			}		
-		}
 		cu:franco_canadian ={
 			save_scope_as = ruling_culture
 		}
@@ -91,19 +78,19 @@
 		random_events = {
 			10 = 0
 			10 = cr_canadian_indian_treaties.1 #Mining Permit
-			5 = cr_canadian_indian_treaties.2 #Surveyor Threatened
-			5 = cr_canadian_indian_treaties.3 #Ojibwe Petition
-			10 = cr_canadian_indian_treaties.4 #On Aboriginal Land Titles/Papineau Report
+			10 = cr_canadian_indian_treaties.2 #Surveyor Threatened
+			10 = cr_canadian_indian_treaties.3 #Ojibwe Petition
+			5 = cr_canadian_indian_treaties.4 #On Aboriginal Land Titles/Papineau Report
 			5 = cr_canadian_indian_treaties.5 #Incident at the Copper Mine/Mica Bay Incident
-			5 = cr_canadian_indian_treaties.6 #The Copper Country Rebellion
-			5 = cr_canadian_indian_treaties.8 #The Long Tail of Civilisation / Mining Tailings
-			5 = cr_canadian_indian_treaties.9 #The Tools of the Trade
+			2 = cr_canadian_indian_treaties.6 #The Copper Country Rebellion
+			8 = cr_canadian_indian_treaties.8 #The Long Tail of Civilisation / Mining Tailings
+			10 = cr_canadian_indian_treaties.9 #The Tools of the Trade
 		}
 		effect = {
 			if = {
 				limit = {
 					is_ai = yes
-					global_var:cr_robinson_treaty_var > 7
+					global_var:cr_robinson_treaty_var > 6
 					scope:copper_mining_state = {
 						any_scope_building = {
 							is_building_type = building_copper_mine
@@ -118,19 +105,21 @@
 
 	complete = {
 		OR = {
-			has_law = law_type:law_frontier_colonization
 			has_diplomatic_pact = {
 				who = c:CTF
 				type = colonization_rights 
 			}
-		}
-		scope:copper_mining_state = {
-			any_scope_building = { #don't forget to update the tooltip
-				is_building_type = building_copper_mine
-				level >= 3				
-				cash_reserves_ratio > 0.25
-				weekly_profit > 0
-				occupancy > 0.75
+			AND = {
+				has_law = law_type:law_frontier_colonization
+				scope:copper_mining_state = {
+					any_scope_building = { #don't forget to update the tooltip
+						is_building_type = building_copper_mine
+						level >= 3				
+						cash_reserves_ratio > 0.25
+						weekly_profit > 0
+						occupancy > 0.75
+					}
+				}
 			}
 		}
 	}
@@ -138,15 +127,8 @@
 	on_complete = {
 		custom_tooltip = {
 			text = je_cr_robinson_treaties_complete_tt
-			if = {
-				limit = {
-					has_truce_with = c:CTF
-				}
-				trigger_event = { id = cr_canadian_indian_treaties.10 } # The Robinson Treaties
-			}
-			else_if = {
-				trigger_event = { id = cr_canadian_indian_treaties.99 } #cleanup event
-			}
+			trigger_event = { id = cr_canadian_indian_treaties.10 } # The Robinson Treaties
+			trigger_event = { id = cr_canadian_indian_treaties.99 } #cleanup event
 		}
 		ig:ig_industrialists = {
 			hidden_effect = {
@@ -287,18 +269,6 @@ je_cr_numbered_treaties = {
 			country_has_primary_culture = cu:franco_canadian
 			country_has_primary_culture = cu:anglo_canadian
 		}
-		#any_scope_state = {
-		#	OR = {
-		#		region = sr:region_canada
-		#		region = sr:region_ruperts_land
-		#	}
-		#	OR = {
-		#		has_modifier = cr_unceded_territory_95
-		#		has_modifier = cr_unceded_territory_75
-		#		has_modifier = cr_unceded_territory_50
-		#		has_modifier = cr_unceded_territory_30
-		#	}
-		#}
 		any_scope_state = {
 			OR = {
 				has_modifier = cr_unceded_territory_95
@@ -310,7 +280,7 @@ je_cr_numbered_treaties = {
     }
     possible = {
 		has_technology_researched = civilizing_mission
-		has_law = law_type:law_colonial_resettlement
+		NOT = { has_law = law_type:law_no_colonial_affairs }
     }
 	
 	immediate = {

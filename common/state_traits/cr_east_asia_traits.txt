@@ -6,3 +6,12 @@
 		state_infrastructure_mult = 0.10 #The mines are right on the coast, they shouldn't consume infrastructure. If there is a more elegant solution, I am all ears.
 	}
 }
+
+state_trait_manchurian_plain = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.10
+		building_group_bg_ranching_throughput_add = 0.10
+	}
+}

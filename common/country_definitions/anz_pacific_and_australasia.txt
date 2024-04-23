@@ -1,4 +1,4 @@
-NTO = {
+﻿NTO = {
 	color = { 148 185 190 }
 	
 	country_type = decentralized

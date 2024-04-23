@@ -136,7 +136,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_SICHUAN
+				state_region = s:STATE_CHONGQING
 				count = 20
 			}
 

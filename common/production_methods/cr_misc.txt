@@ -109,12 +109,16 @@ pm_liquor_trading_fur_trading_post = {
 
 pm_traditional_harvesting_ivory_trading_post = {
 	texture = "gfx/interface/icons/production_method_icons/unused/pre_guns.dds"
-		# output goods
-		goods_output_fine_art_add = 7 # x200 = 1400
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_fine_art_add = 7 # x200 = 1400
+		}
 			
 		level_scaled = {
 			building_employment_aristocrats_add = 100
 		}
+	}
 }
 
 pm_intensive_trading_ivory_trading_post = {

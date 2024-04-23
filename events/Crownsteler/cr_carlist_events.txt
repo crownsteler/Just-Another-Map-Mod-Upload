@@ -53,13 +53,13 @@ cr_carlist_events.1 = { #The Desamortización of the Monastaries
 				save_scope_as = cr_spanish_landowners
 			}
 			
-			ig:ig_rural_folk = {
-				add_modifier = cr_carlist_war_ig_rural_folk
-			}
+			#ig:ig_rural_folk = {
+			#	add_modifier = cr_carlist_war_ig_rural_folk
+			#}
 			
-			ig:ig_petty_bourgeoisie = {
-				add_modifier = cr_carlist_war_ig_petty_bourgeoisie
-			}
+			#ig:ig_petty_bourgeoisie = {
+			#	add_modifier = cr_carlist_war_ig_petty_bourgeoisie
+			#}
 		}
 		c:CSP = {
 			save_scope_as = cr_carlists

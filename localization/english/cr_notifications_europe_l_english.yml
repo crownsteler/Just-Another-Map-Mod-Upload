@@ -46,25 +46,25 @@
  
  notification_cr_fort_ross_accepted_name: "Succesful Negotiations"
  notification_cr_fort_ross_accepted_desc: "The [SCOPE.sCountry('buying_country').GetAdjective]s have agreed acquire our possessions along the coast of California."
- notification_cr_fort_ross_accepted_tooltip: "#header $notification_cr_fort_ross_accepted_name$#!\n$TOOLTIP_DELIMITER$\$notification_cr_fort_ross_accepted_desc$"
+ notification_cr_fort_ross_accepted_tooltip: "#header $notification_cr_fort_ross_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_fort_ross_accepted_desc$"
  
  notification_cr_fort_ross_rejected_name: "Failed Negotiations"
  notification_cr_fort_ross_rejected_desc: "The [SCOPE.sCountry('buying_country').GetAdjective]s have declined to acquire our possessions along the coast of California."
- notification_cr_fort_ross_rejected_tooltip: "#header $notification_cr_fort_ross_accepted_name$#!\n$TOOLTIP_DELIMITER$\$notification_cr_fort_ross_accepted_desc$"
+ notification_cr_fort_ross_rejected_tooltip: "#header $notification_cr_fort_ross_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_fort_ross_accepted_desc$"
  
  notification_cr_alaska_colonisation_encouraged_name: "Expanding the Frontier"
  notification_cr_alaska_colonisation_encouraged_desc: "[SCOPE.sCountry('overlord').GetNameNoFlag] has started encouraging the settlement of the Alaskan frontier."
- notification_cr_alaska_colonisation_encouraged_tooltip: "#header $notification_cr_alaska_colonisation_encouraged_name$#!\n$TOOLTIP_DELIMITER$\$notification_cr_alaska_colonisation_encouraged_desc$"
+ notification_cr_alaska_colonisation_encouraged_tooltip: "#header $notification_cr_alaska_colonisation_encouraged_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_alaska_colonisation_encouraged_desc$"
  
  notification_cr_alaska_colonisation_discouraged_name: "Closing the Frontier"
  notification_cr_alaska_colonisation_discouraged_desc: "[SCOPE.sCountry('overlord').GetNameNoFlag] has stoped encouraging the settlement of the Alaskan frontier."
- notification_cr_alaska_colonisation_discouraged_tooltip: "#header $notification_cr_alaska_colonisation_discouraged_name$#!\n$TOOLTIP_DELIMITER$\$notification_cr_alaska_colonisation_discouraged_desc$"
+ notification_cr_alaska_colonisation_discouraged_tooltip: "#header $notification_cr_alaska_colonisation_discouraged_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_alaska_colonisation_discouraged_desc$"
  
  notification_cr_california_colonisation_encouraged_name: "Expanding the Southern Frontier"
  notification_cr_california_colonisation_encouraged_desc: "[SCOPE.sCountry('overlord').GetNameNoFlag] has started encouraging the settlement of the Californian frontier."
- notification_cr_california_colonisation_encouraged_tooltip: "#header $notification_cr_alaska_colonisation_encouraged_name$#!\n$TOOLTIP_DELIMITER$\$notification_cr_alaska_colonisation_encouraged_desc$"
+ notification_cr_california_colonisation_encouraged_tooltip: "#header $notification_cr_alaska_colonisation_encouraged_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_alaska_colonisation_encouraged_desc$"
  
  notification_cr_california_colonisation_discouraged_name: "Closing the Southern Frontier"
  notification_cr_california_colonisation_discouraged_desc: "[SCOPE.sCountry('overlord').GetNameNoFlag] has stoped encouraging the settlement of the Californian frontier."
- notification_cr_california_colonisation_discouraged_tooltip: "#header $notification_cr_alaska_colonisation_discouraged_name$#!\n$TOOLTIP_DELIMITER$\$notification_cr_alaska_colonisation_discouraged_desc$"
+ notification_cr_california_colonisation_discouraged_tooltip: "#header $notification_cr_alaska_colonisation_discouraged_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_alaska_colonisation_discouraged_desc$"
  

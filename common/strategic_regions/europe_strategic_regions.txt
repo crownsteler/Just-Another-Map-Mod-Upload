@@ -7,7 +7,7 @@ region_england = {
 }
 
 region_north_sea_coast = { #region_north_atlantic
-	capital_province = x751934
+	capital_province = xB5D7AC
 	map_color = { 220 215 33 }
 	states = { STATE_ICELAND STATE_GREENLAND }
 }
@@ -67,7 +67,7 @@ region_balkans = {
 }
 
 region_bosphorus = {
-	capital_province = xF0U020
+	capital_province = xF0A020
 	map_color = { 90 105 153 }
 	states = { STATE_PELOPONNESE STATE_IONIAN_ISLANDS STATE_ATTICA STATE_THESSALIA STATE_MACEDONIA STATE_WESTERN_THRACE STATE_CRETE STATE_WEST_AEGEAN_ISLANDS STATE_AYDIN STATE_EAST_AEGEAN_ISLANDS STATE_EASTERN_THRACE STATE_KASTAMONU STATE_HUDAVENDIGAR STATE_TRABZON }
 }
@@ -85,7 +85,7 @@ region_south_germany = {
 }
 
 region_baltic = {
-	capital_province = xF8E400
+	capital_province = x607A9E
 	map_color = { 8 82 165 }
 	states = { STATE_LITHUANIA STATE_LATVIA STATE_ESTONIA STATE_INGRIA STATE_SOUTHERN_FINLAND STATE_OSTROBOTHNIA STATE_ALAND STATE_WEST_KARELIA }
 }
@@ -97,7 +97,7 @@ region_scandinavia = {
 }
 
 region_danubia = {
-	capital_province = x51E0E0
+	capital_province = xD11E19
 	map_color = { 64 145 93 }
 	states = { STATE_WALLACHIA STATE_MOLDAVIA STATE_BESSARABIA STATE_DOBRUDJA STATE_NORTHERN_THRACE STATE_BULGARIA }
 }

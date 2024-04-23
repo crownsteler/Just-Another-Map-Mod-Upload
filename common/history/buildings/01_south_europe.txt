@@ -303,7 +303,7 @@
 			}
 			create_building={
 				building="building_silk_plantation"
-				level=2
+				level=1
 				reserves=1
 				activate_production_methods={ "default_building_silk_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -353,12 +353,12 @@
 				reserves=1
 				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_merchant_guilds_building_food_industry" "pm_manual_dough_processing" "pm_pot_stills" }
 			}
-			create_building={
-				building="building_sugar_plantation"
-				level=2
-				reserves=1
-				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
-			}
+			#create_building={
+			#	building="building_sugar_plantation"
+			#	level=2
+			#	reserves=1
+			#	activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
+			#}
 			create_building={
 				building="building_wheat_farm"
 				level=1
@@ -367,7 +367,7 @@
 			}
 			create_building={
 				building="building_vineyard_plantation"
-				level=1
+				level=2
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -393,12 +393,12 @@
 	}
 	s:STATE_APULIA={
 		region_state:SIC={
-			create_building={
-				building="building_sugar_plantation"
-				level=2
-				reserves=1
-				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
-			}
+			#create_building={
+			#	building="building_sugar_plantation"
+			#	level=2
+			#	reserves=1
+			#	activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
+			#}
 			create_building={
 				building="building_wheat_farm"
 				level=3
@@ -461,12 +461,12 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_privately_owned" "pm_tools" }
 			}
-			create_building={
-				building="building_vineyard_plantation"
-				level=1
-				reserves=1
-				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
-			}
+			#create_building={
+			#	building="building_vineyard_plantation"
+			#	level=1
+			#	reserves=1
+			#	activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
+			#}
 			create_building={
 				building="building_livestock_ranch"
 				level=2
@@ -1337,12 +1337,12 @@
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}			
-			create_building={
-				building="building_livestock_ranch"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
-			}
+			#create_building={
+			#	building="building_livestock_ranch"
+			#	level=2
+			#	reserves=1
+			#	activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+			#}
 			create_building={
 				building="building_port"
 				level=2
@@ -1867,12 +1867,12 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
 			}
-			create_building={
-				building="building_wheat_farm"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" "pm_privately_owned" }
-			}
+			#create_building={
+			#	building="building_wheat_farm"
+			#	level=1
+			#	reserves=1
+			#	activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" "pm_privately_owned" }
+			#}
 			create_building={
 				building="building_vineyard_plantation"
 				level=1
@@ -2029,12 +2029,12 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
-			create_building={
-				building="building_vineyard_plantation"
-				level=1
-				reserves=1
-				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
-			}
+			#create_building={
+			#	building="building_vineyard_plantation"
+			#	level=1
+			#	reserves=1
+			#	activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
+			#}
 		}
 	}
 	s:STATE_SOUTHERN_SERBIA={
@@ -2291,12 +2291,12 @@
 	}
 	s:STATE_IONIAN_ISLANDS={
 		region_state:ION={
-			create_building={
-				building="building_wheat_farm"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
-			}
+			#create_building={
+			#	building="building_wheat_farm"
+			#	level=1
+			#	reserves=1
+			#	activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
+			#}
 			create_building={
 				building="building_vineyard_plantation"
 				level=1

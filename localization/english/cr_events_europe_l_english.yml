@@ -43,6 +43,7 @@
  cr_europe_events.20.c:0 "And allow the odious slave trade to flourish again?"
  cr_europe_events.20.c_tt:0 "We will take permanent possession of [SCOPE.sState('cr_fernado_po_province').GetName], disregarding the [SCOPE.sCountry('cr_fernado_po_claimant').GetAdjective] claim"
  cr_europe_events.20.b_tt_consequence:0 "[SCOPE.sCountry('cr_fernado_po_claimant').GetNameNoFlag] might approach us in the future again to press their claim."
+
  
  cr_europe_events.29.t:0 "The Loss of Port Clarence"
  cr_europe_events.29.desc:0 "The [SCOPE.sCountry('cr_fernado_po_claimant').GetAdjective] have reassumed control over our former outpost of Port Clarence on Fernando Po.\n\nStrategically located in the Bight of [SCOPE.sStrategicRegion('cr_biafra').GetName] on the trade routes between [SCOPE.sStrategicRegion('cr_guinea').GetName] and [SCOPE.sStrategicRegion('cr_congo').GetName], with a good harbour and left abandoned by the [SCOPE.sCountry('cr_fernado_po_claimant').GetAdjectiveNoFormatting], for decades Port Clarence served the West Africa Squadron well as a base to suppress the slave trade from.\n\nLong claiming ownership over the island through a treaty they signed with the Portguese in 1778, they now managed to force our hand by means of an obligation we had granted them earlier."

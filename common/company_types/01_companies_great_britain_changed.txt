@@ -1,7 +1,7 @@
 ﻿# J. & P. Coats
 company_j_p_coats = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/gb_jp_coats.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
 	flavored_company = yes
 	
@@ -46,7 +46,7 @@ company_j_p_coats = {
 # John Brown & Company
 company_john_brown = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/gb_jb_co.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
 	
 	flavored_company = yes
 	
@@ -74,7 +74,7 @@ company_john_brown = {
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_shipyards
-				level >= 10
+				level >= 3
 			}
 		}
 		has_technology_researched = steelworking

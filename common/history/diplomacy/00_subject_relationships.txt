@@ -50,7 +50,7 @@
 	c:CHI = {
 		create_diplomatic_pact = {
 			country = c:TIB
-			type = vassal
+			type = tributary
 		}
 		create_diplomatic_pact = {
 			country = c:KOR
@@ -68,10 +68,10 @@
 		}
 	}
 	c:USA = {
-		create_diplomatic_pact = {
-			country = c:SEQ
-			type = puppet
-		}
+		#create_diplomatic_pact = {
+		#	country = c:SEQ
+		#	type = puppet
+		#}
 		create_diplomatic_pact = {
 			country = c:LIB
 			type = protectorate

@@ -36,13 +36,13 @@
 			}
 			create_building={
 				building="building_sugar_plantation"
-				level=1
+				level=3
 				reserves=1
 				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_cotton_plantation"
-				level=2
+				level=6
 				reserves=1
 				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}		
@@ -615,7 +615,7 @@
 			}
 			create_building={
 				building="building_cotton_plantation"
-				level=10
+				level=6
 				reserves=1
 				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
@@ -698,12 +698,6 @@
 	s:STATE_WEST_VIRGINIA={
 		region_state:USA={
 			create_building={
-				building="building_university"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_scholastic_education" }
-			}
-			create_building={
 				building="building_coal_mine"
 				level=3
 				reserves=1
@@ -724,6 +718,12 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
+			}
+			create_building={
+				building="building_university"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scholastic_education" }
 			}
 			create_building={
 				building="building_glassworks"
@@ -895,7 +895,7 @@
 			}
 			create_building={
 				building="building_copper_mine"
-				level=3
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_copper_mine" }
 			}
@@ -903,7 +903,7 @@
 				building="building_iron_mine"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_privately_owned_building_logging_camp" "pm_no_equipment" "pm_road_carts" "pm_no_hardwood" }
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_privately_owned_building_iron_mine" }
 			}
 		}
 	}
@@ -1111,7 +1111,7 @@
 			}	
 			create_building={
 				building="building_copper_mine"
-				level=2
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_copper_mine" }
 			}			
@@ -1706,12 +1706,12 @@
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}			
-			create_building={
-				building="building_dye_plantation"
-				level=2
-				reserves=1
-				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
-			}
+			#create_building={
+			#	building="building_dye_plantation"
+			#	level=2
+			#	reserves=1
+			#	activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
+			#}
 		}
 	}
 	s:STATE_YUCATAN={
@@ -1881,9 +1881,15 @@
 			}
 			create_building={
 				building="building_sugar_plantation"
-				level=3
+				level=1
 				reserves=1
 				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
+			}
+			create_building={
+				building="building_dye_plantation"
+				level=3
+				reserves=1
+				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 			create_building={
 				building="building_fishing_wharf"
@@ -1947,12 +1953,12 @@
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
-			create_building={
-				building="building_dye_plantation"
-				level=1
-				reserves=1
-				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
-			}
+			#create_building={
+			#	building="building_dye_plantation"
+			#	level=1
+			#	reserves=1
+			#	activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
+			#}
 			create_building={
 				building="building_tooling_workshops"
 				level=1
@@ -1963,12 +1969,6 @@
 	}
 	s:STATE_CHIAPAS={
 		region_state:MEX={
-			create_building={
-				building="building_dye_plantation"
-				level=1
-				reserves=1
-				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
-			}
 			create_building={
 				building="building_banana_plantation"
 				level=1

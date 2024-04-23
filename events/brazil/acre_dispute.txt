@@ -29,36 +29,44 @@ acre_dispute.1 = {
 		if = {
 			limit = {
 				c:AMZ = {
-					owns_entire_state_region = s:STATE_ACRE
+					owns_entire_state_region = STATE_ACRE
 				}
 			}
 			if = {
-				s:STATE_ACRE = {
-					has_claim_by = c:BOL
+				limit = {
+					c:BOL = {
+						has_claim = s:STATE_ACRE
+					}
 				}
 				c:BOL = {
 					save_scope_as = acre_owner				
 				}
 			}
 			else_if = {
-				s:STATE_ACRE = {
-					has_claim_by = c:PEU
+				limit = {
+					c:PEU = {
+						has_claim = s:STATE_ACRE 
+					}
 				}
 				c:PEU = {
 					save_scope_as = acre_owner				
 				}
 			}
 			else_if = {
-				s:STATE_ACRE = {
-					has_claim_by = c:NPU
+				limit = {
+					c:NPU = {
+						has_claim = s:STATE_ACRE
+					}
 				}
 				c:NPU = {
 					save_scope_as = acre_owner				
 				}
 			}
 			else_if = {
-				s:STATE_ACRE = {
-					has_claim_by = c:SPU
+				limit = {
+					c:SPU= {
+						has_claim_by = s:STATE_ACRE 
+					}
 				}
 				c:SPU = {
 					save_scope_as = acre_owner				
@@ -73,6 +81,11 @@ acre_dispute.1 = {
 		else_if = {
 			s:STATE_ACRE = {
 				random_scope_state = {
+					limit = {
+						owner = {
+							is_country_type = recognized
+						}
+					}
 					save_scope_as = acre_state
 				}
 				random_scope_state = {
@@ -184,7 +197,7 @@ acre_dispute.3 = {
 		if = {
 			limit = {
 				c:AMZ = {
-					owns_entire_state_region = s:STATE_ACRE
+					owns_entire_state_region = STATE_ACRE
 				}
 			}
 			s:STATE_ACRE = {
@@ -258,36 +271,44 @@ acre_dispute.4 = {
 		if = {
 			limit = {
 				c:AMZ = {
-					owns_entire_state_region = s:STATE_ACRE
+					owns_entire_state_region = STATE_ACRE
 				}
 			}
 			if = {
-				s:STATE_ACRE = {
-					has_claim_by = c:BOL
+				limit = {
+					c:BOL = {
+						has_claim = s:STATE_ACRE
+					}
 				}
 				c:BOL = {
 					save_scope_as = acre_owner				
 				}
 			}
 			else_if = {
-				s:STATE_ACRE = {
-					has_claim_by = c:PEU
+				limit = {
+					c:PEU = {
+						has_claim = s:STATE_ACRE 
+					}
 				}
 				c:PEU = {
 					save_scope_as = acre_owner				
 				}
 			}
 			else_if = {
-				s:STATE_ACRE = {
-					has_claim_by = c:NPU
+				limit = {
+					c:NPU = {
+						has_claim = s:STATE_ACRE
+					}
 				}
 				c:NPU = {
 					save_scope_as = acre_owner				
 				}
 			}
 			else_if = {
-				s:STATE_ACRE = {
-					has_claim_by = c:SPU
+				limit = {
+					c:SPU= {
+						has_claim_by = s:STATE_ACRE 
+					}
 				}
 				c:SPU = {
 					save_scope_as = acre_owner				

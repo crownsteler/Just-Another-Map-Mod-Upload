@@ -41,18 +41,6 @@ STATE_GUAYANA = {
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #should have cattle for the savanna in the south, but meh
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         bg_logging = 14
         bg_fishing = 3
@@ -64,7 +52,7 @@ STATE_GUAYANA = {
     }
     resource = {
         type = "bg_rubber"
-        undiscovered_amount = 10
+        undiscovered_amount = 8
     }
     naval_exit_id = 3062
 }
@@ -93,7 +81,7 @@ STATE_SURINAME = {
     }
     resource = {
         type = "bg_rubber"
-        undiscovered_amount = 9
+        undiscovered_amount = 6
     }
     naval_exit_id = 3062
 }
@@ -159,27 +147,6 @@ STATE_LEEWARD_ANTILLES = {
     wood = "x3F7774"
     arable_land = 2
     arable_resources = { "bg_cotton_plantations" } #Cotton = sisal
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     capped_resources = {
@@ -253,7 +220,7 @@ STATE_ANTIOQUIA = {
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_cotton_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_coal_mining = 38
-        bg_logging = 12
+        bg_logging = 13
         bg_fishing = 8
     }
     resource = {
@@ -278,7 +245,7 @@ STATE_GUAVIARE = {
     farm = "x17F9D8"
     mine = "x41165C"
     wood = "xE2A23C"
-    arable_land = 90
+    arable_land = 60
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_dye_plantations" "bg_banana_plantations" } #cacao, palmoil
 
 
@@ -287,8 +254,28 @@ STATE_GUAVIARE = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     capped_resources = {
-        bg_logging = 35
+        bg_logging = 32
     }
     resource = {
         type = "bg_rubber"
@@ -311,7 +298,7 @@ STATE_CUNDINAMARCA = {
         bg_coal_mining = 38
         bg_iron_mining = 36
         bg_copper_mining = 15
-        bg_logging = 14
+        bg_logging = 10
     }
 }
 
@@ -330,7 +317,7 @@ STATE_CAUCA = {
     capped_resources = {
         #gold mining
         bg_sulfur_mining = 12
-        bg_logging = 20
+        bg_logging = 16
         bg_fishing = 6
         bg_whaling = 2
     }
@@ -354,11 +341,11 @@ STATE_PASTAZA = {
     arable_resources = { "bg_maize_farms" "bg_dye_plantations" "bg_banana_plantations" }
     capped_resources = {
         #bg_coal_mining = 28 #No coal here, lots of oil though
-        bg_logging = 25
+        bg_logging = 32
     }
     resource = {
         type = "bg_rubber"
-        undiscovered_amount = 16
+        undiscovered_amount = 15
         discovered_amount = 1
     }
     resource = {
@@ -380,10 +367,15 @@ STATE_TARAPACA = {
     arable_land = 10
     arable_resources = {}
     capped_resources = {
-        bg_copper_mining = 30
+        #bg_copper_mining = 30
         bg_sulfur_mining = 24
         bg_whaling = 3
         bg_fishing = 5
+    }
+
+    resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 30
     }
     naval_exit_id = 3152
 }
@@ -401,9 +393,13 @@ STATE_ANTOFAGASTA = {
     arable_land = 10
     arable_resources = {}
     capped_resources = {
-        bg_copper_mining = 65
+        #bg_copper_mining = 65
         bg_sulfur_mining = 48
         bg_fishing = 5
+    }
+    resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 65
     }
     naval_exit_id = 3152
 }
@@ -417,15 +413,15 @@ STATE_SANTA_CRUZ = {
     farm = "x542F50"
     mine = "x64A540"
     wood = "x55B384"
-    arable_land = 100
+    arable_land = 140
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_sugar_plantations" "bg_cotton_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 24
+        bg_logging = 32
     }
     resource = {
         type = "bg_rubber"
-        undiscovered_amount = 22
-        discovered_amount = 8
+        undiscovered_amount = 17
+        discovered_amount = 13
     }
     resource = {
         type = "bg_oil_extraction"
@@ -442,10 +438,10 @@ STATE_LA_PAZ = {
     farm = "x2815D0"
     mine = "x97595D"
     wood = "x678125"
-    arable_land = 120
+    arable_land = 80
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_logging = 12
+        bg_logging = 8
         bg_copper_mining = 25
         bg_gold_mining = 4
     #bg_minor_metals_mining = 20 #Wolfram, Tin
@@ -485,7 +481,7 @@ STATE_CAJAMARCA = {
     mine = "xDC3D44"
     wood = "x8D62E6"
     arable_land = 60
-    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
+    arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_cotton_plantations" "bg_sugar_plantations" }
     capped_resources = {
         bg_coal_mining = 35
         bg_sulfur_mining = 25
@@ -520,6 +516,8 @@ STATE_LIMA = {
         bg_gold_mining = 6
         bg_copper_mining = 50
         bg_lead_mining = 40 #lead/zinc
+
+
         bg_sulfur_mining = 75
         #bg_logging = 11 #Vast majority of state is arid/deforested, this forces wood to be imported from elsewhere
         bg_whaling = 6
@@ -532,7 +530,6 @@ STATE_ICA = {
     id = 368
     subsistence_building = "building_subsistence_farms"
     provinces = { "x08BBBC" "x2E3791" "x3060D7" "x38EE47" "x3B8AB8" "x40E12A" "x68D883" "x72698B" "x7B9FBE" "x807F09" "x89775D" "x923040" "x96AB5D" "x98E058" "xA4CA0B" "xA4DAF3" "xB077B0" "xBB02B0" "xBED190" "xC16B62" "xDF4030" "xE7EB9B" }
-
     traits = { "state_trait_andes" }
     city = "x98E058"
     farm = "xBB02B0"
@@ -543,7 +540,8 @@ STATE_ICA = {
     capped_resources = {
         #bg_copper_mining = 15
         #bg_lead_mining = 20
-        bg_logging = 8 #Around Machu Pichu.
+        bg_logging = 4 #Around Machu Pichu.
+
 
     }
 }
@@ -559,17 +557,17 @@ STATE_AREQUIPA = {
     mine = "x451783"
     wood = "xE5E702" #To serve as road hub
 
-
-
     arable_land = 15
     arable_resources = { "bg_vineyard_plantations" } #"bg_wheat_farms" "bg_livestock_ranches" 
 
 
-
     capped_resources = {
-        bg_copper_mining = 36
         bg_iron_mining = 25
         bg_fishing = 5
+    }
+    resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 36
     }
     naval_exit_id = 3152
 }
@@ -591,7 +589,6 @@ STATE_UCAYALI = {
     resource = {
         type = "bg_rubber"
         undiscovered_amount = 16
-        discovered_amount = 1
     }
 }
 
@@ -607,7 +604,6 @@ STATE_URUGUAY = {
     wood = "xD5325F"
     arable_land = 100
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" "bg_tea_plantations" } #Tea = yerba mate
-
 
 
     capped_resources = {
@@ -672,43 +668,6 @@ STATE_BAJO_PARAGUAY = {
     wood = "x2594A3"
     arable_land = 120
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_tea_plantations" } #tea = yerba mate, coffee is potential, but prefer tea tbh
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     capped_resources = {
         bg_iron_mining = 15
@@ -807,9 +766,11 @@ STATE_SANTA_FE = {
     mine = "x23965B"
     wood = "x3ED92C"
     arable_land = 80
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_dye_plantations" "bg_vineyard_plantations" "bg_tobacco_plantations" }
+    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_vineyard_plantations" "bg_tobacco_plantations" } #Removed  "bg_dye_plantations" to reduce resource to 4, but could be included as Quebracho from the Chaco.
+
+
     capped_resources = {
-        bg_fishing = 2
+    #bg_fishing = 2 #tiny coastline
     }
     resource = {
         type = "bg_oil_extraction"
@@ -829,42 +790,6 @@ STATE_CORRIENTES = {
     wood = "x64BE0D"
     arable_land = 120
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_tobacco_plantations" "bg_tea_plantations" } #Tea = yerba mate
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     capped_resources = {
@@ -888,11 +813,15 @@ STATE_TUCUMAN = {
     arable_land = 60
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_sugar_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_copper_mining = 30
+        #bg_copper_mining = 39
         bg_lead_mining = 15
         bg_gold_mining = 3
         bg_logging = 6
     #bg_minor_metals_mining = 10 #Manganese
+    }
+    resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 39
     }
 }
 
@@ -917,17 +846,17 @@ STATE_SANTIAGO = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x001886" "x1297F8" "x1D4FBD" "x38BE02" "x3B1319" "x423A89" "x42CE23" "x5080D0" "x5DED27" "x5F5835" "x61C0E9" "x6B96A8" "x6F3C8F" "x73C0F8" "x792B0A" "x7CD76E" "x92EAB2" "x94DFAD" "x975852" "x983742" "x9E95B8" "xA53405" "xACD450" "xAFBE09" "xB17E89" "xB57224" "xB6BD11" "xB808E7" "xC3EC7E" "xC6A968" "xCF8B7D" "xD000D0" "xD08050" "xD080D0" "xD3A966" "xE3764F" "xF0147F" "xFEDF06" "xFFF993" }
     impassable = { "xD080D0" "xC6A968" "x94DFAD" }
-    traits = { "state_trait_famous_wine_region" "state_trait_cordillera_de_la_costa" "state_trait_longitudinal_valley" "state_trait_andes" }
+    traits = { "state_trait_famous_wine_region" "state_trait_andes" "state_trait_cordillera_de_la_costa" "state_trait_longitudinal_valley" }
     city = "x73C0F8"
     port = "x5DED27"
     farm = "xFFF993"
     mine = "x001886"
     wood = "xAFBE09"
-    arable_land = 40
+    arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_gold_mining = 5
-        bg_iron_mining = 39
+        bg_iron_mining = 46
         bg_sulfur_mining = 36
         bg_logging = 6
         bg_whaling = 2
@@ -941,21 +870,25 @@ STATE_LOS_RIOS = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x02C052" "x10C050" "x142AEF" "x1A5ED2" "x24D8BD" "x29AFD4" "x304688" "x31F03F" "x3D3ED8" "x427820" "x42A6B5" "x49F9FC" "x83D701" "x8848C6" "x904050" "x9040D0" "x90C050" "x90C0D0" "x9DA2FB" "xA316F5" "xAAA21B" "xB72711" "xCFB481" "xD78C29" "xDAE7CA" "xE70539" "xE855B1" "xF0CA34" "xF2263F" "xF63FA0" "xF68D31" }
     impassable = { "x31F03F" "x24D8BD" "x304688" "xD78C29" }
-    traits = { "state_trait_cordillera_de_la_costa" "state_trait_longitudinal_valley" "state_trait_andes" }
+    traits = { "state_trait_andes" "state_trait_cordillera_de_la_costa" "state_trait_longitudinal_valley" }
     city = "x904050"
     port = "x9040D0"
     farm = "x90C0D0"
     mine = "x427820"
     wood = "x83D701"
-    arable_land = 30
+    arable_land = 70
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_coal_mining = 35
-        bg_copper_mining = 35
+        bg_coal_mining = 60
+        #bg_copper_mining = 35
         bg_sulfur_mining = 32
-        bg_logging = 11
+        bg_logging = 20
         bg_whaling = 3
         bg_fishing = 10
+    }
+    resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 35
     }
     naval_exit_id = 3152
 }
@@ -1018,36 +951,6 @@ STATE_PARA = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     impassable = { x140E36 x2717F9 xA80863 x202AD6 xB306A1 x0A4B09 xE60D23 x12590E xC50FEA x0A5CA3 x60476B xB93B0C x466026 x4E60B2 xB95681 xEC5C04 x9A68C5 x8473D1 x7684AE xD266C5 xE560D3 x03A6E8 xD364FA x9B8499 x4AA845 x04CE13 x26B9C1 x16CD59 x05CF8B xDC9757 x5AD2E6 xE6A9FB x1BEEC7 xB2D30E x4BE6EE x20F3FE xD2C5AD xC5C8DB xF5CC32 x79F381 xD6E2EA xB90B68 x0B0F3C x33102C x550071 x72000B x4D0F16 x082621 x570C6E x7E0544 x5E1149 x680C6A x6C1217 x430FED x790A63 x0A308E x650BF7 x003E6F x49320F x5D391F xE6087E xAB1E72 xD809FC x414A40 x4A40A2 xC92518 xDC0EE4 xC32267 xE50EDA x873D0C xA623EB x8F3A3A xD72252 xD318FE x674F0A x724B34 xF019BF xF41AB0 x8839E0 x35641E xD3350B x4A5B60 x0D770E xFF265C x6D5272 x1B68B0 xEF23E2 x8647C7 xD14114 xDD2CE1 x127760 xDF31C8 xF1319A xC5474F x10871C xD440A4 xBD503D xE336EF x9D57CD x1D7FD2 x1182FD x697461 x4F76AF xCA51A9 x288CA0 x608090 xB660E8 xD9625A xFA50BF x3B9938 x69938A x28B30B x8485F5 x639D5E xD17D5B x67A604 x999716 x888CDB xED6BF1 x32B46C xBE7FEE x819B9B x74A192 x8CA600 xAE92D6 x6EAF9A xBF92E8 xC98FE7 x62AEF6 x8AB059 x5ABF5A xD29F39 x8CABCB xBCAD33 xA6B342 x0FDD9C xF698A3 xC0B27B x16E6AD x47DD6F xCAADC8 x26F024 xE9B391 x54E66A xE1C40F xCAC940 xD6BEFC xE1CD47 xC6D926 xCFC6EC xAADF4E x69EDA5 x7DF409 x70E7F2 x8AE1DE x80F241 x49FCEC xC3E90E x7EF491 xE5DCAD xDFE92A xF8E605 xF0DDD8 xDBF44B xF1FE8F xEF26E3 }
     traits = { "state_trait_amazon_rainforest" "state_trait_serra_dos_carajas" }
     city = "xC413AA"
@@ -1058,18 +961,22 @@ STATE_PARA = {
     arable_land = 30
     arable_resources = { "bg_rice_farms" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 18
+        bg_logging = 28
         bg_fishing = 3
-        bg_iron_mining = 65
+        bg_iron_mining = 78
     }
     resource = {
         type = "bg_rubber"
-        discovered_amount = 4
-        undiscovered_amount = 18
+        discovered_amount = 22
     }
     resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 5
+    }
+    resource = {
+ #iron-oxide copper-gold (IOCG) deposit, included to give brazil some copper
+        type = "bg_copper_mining"
+        undiscovered_amount = 22
     }
     naval_exit_id = 3062
 }
@@ -1085,15 +992,15 @@ STATE_APAMA = {
     farm = "x88F1DE"
     mine = "x554F30"
     wood = "x30A52C"
-    arable_land = 30
+    arable_land = 15
     arable_resources = { "bg_rice_farms" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 7
+        bg_logging = 12
         bg_fishing = 3
     }
     resource = {
         type = "bg_rubber"
-        undiscovered_amount = 9
+        undiscovered_amount = 8
     }
     naval_exit_id = 3062
 }
@@ -1116,8 +1023,7 @@ STATE_MARANHAO = {
     }
     resource = {
         type = "bg_rubber"
-        discovered_amount = 6
-        undiscovered_amount = 10
+        discovered_amount = 16
     }
     naval_exit_id = 3062
 }
@@ -1127,42 +1033,6 @@ STATE_AMAZONAS = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x01084B" "x01FB64" "x03487B" "x038CB0" "x06C624" "x06E0E9" "x073FDE" "x081A73" "x08B908" "x0A49A7" "x0C14D1" "x0C34F7" "x0C80D5" "x0DD209" "x0DE918" "x0E6BAF" "x109595" "x137A16" "x14EE0B" "x18AF1A" "x196415" "x1A3B8F" "x1BCE49" "x1BE381" "x1F175F" "x1F56AE" "x206CC6" "x20B9B2" "x20EFD3" "x210144" "x211F43" "x228F62" "x22964C" "x23699F" "x237C27" "x23EFD7" "x2404C7" "x24AC59" "x2629FF" "x2811A6" "x2906D5" "x2994F2" "x2A5962" "x2B8C6E" "x2C2C20" "x2CA8CA" "x2E7EBF" "x2EE626" "x2F15DF" "x2F2B09" "x2F69F7" "x3116DB" "x31B106" "x328B67" "x328FFE" "x329800" "x333FE5" "x34C294" "x35728C" "x36D9EF" "x36E83E" "x378065" "x379D54" "x3A4B20" "x3B3011" "x3B31BD" "x3C83DF" "x3D6A7B" "x3D7B8F" "x3DCCEA" "x3FA0FB" "x3FF111" "x402E72" "x40AB15" "x40C090" "x41C051" "x4216B3" "x4315D5" "x4370B4" "x43D729" "x446753" "x450DE4" "x45EED6" "x46A9DE" "x46E2D3" "x4751E8" "x47BA4D" "x47D460" "x47D820" "x47ED24" "x48171B" "x48B190" "x48E330" "x49A43E" "x4A16EA" "x4A8664" "x4C2A62" "x4CA6CC" "x4D1CA6" "x4D62D6" "x50FD51" "x5285F9" "x54AC8C" "x54CC99" "x54D63A" "x554D04" "x569250" "x5755E4" "x575E56" "x57DC7A" "x5820C3" "x58BD7A" "x597DD7" "x5A3090" "x5A47CA" "x5A4946" "x5C2AA8" "x5C39FF" "x5DB7DF" "x60FF01" "x610A61" "x62493B" "x6407BA" "x645927" "x64E682" "x67CDD3" "x6809E1" "x681E21" "x682823" "x6831AB" "x69C874" "x6A1760" "x6BE64A" "x6C2ED1" "x6FC2D0" "x6FE8D5" "x702F8B" "x705239" "x717A55" "x71D3B4" "x71E84F" "x72DE57" "x73E176" "x74AF3A" "x74BC05" "x756755" "x75E887" "x7697B7" "x77399A" "x775279" "x79D4B1" "x7A431A" "x7B89C9" "x7CD52C" "x7CDC0B" "x7F0E49" "x7FB6F1" "x8062F4" "x80FA90" "x817AFB" "x831427" "x83B1BA" "x840034" "x84E5E0" "x8653EE" "x87087A" "x871D4A" "x87F2F9" "x8899C3" "x894577" "x8976AD" "x8A52D2" "x8A5A62" "x8B5A01" "x8BD00A" "x8C4707" "x8E80DF" "x8F231D" "x8F6B32" "x8F758B" "x8F7DE4" "x8F7F6F" "x8FFEA0" "x90539F" "x918579" "x91C728" "x929F4C" "x94F9C8" "x950AF3" "x95BF58" "x9752DF" "x9778E0" "x989CB7" "x992895" "x9AE5DE" "x9C3270" "x9DA6FA" "x9DD475" "x9E3C4B" "x9FA745" "x9FC0FE" "xA11526" "xA12EB0" "xA19E99" "xA23B8A" "xA2F845" "xA30817" "xA58C2D" "xA5AF12" "xA837D2" "xA88280" "xA88EBF" "xA8E4E8" "xA92523" "xA9FD52" "xAA5F0C" "xAA63FA" "xAB3298" "xABA7B1" "xACEB79" "xADB7B9" "xAE4F84" "xAFB883" "xB241C1" "xB29291" "xB2C542" "xB374FD" "xB43B72" "xB43F4F" "xB4DB5E" "xB62AF0" "xB711DF" "xB76ECB" "xB8747C" "xB9D5AE" "xBB6578" "xBB7948" "xBC7468" "xBD1800" "xBD9F17" "xBEBFA7" "xBF2FEF" "xBF360F" "xC04090" "xC04151" "xC3136F" "xC45530" "xC46825" "xC49B34" "xC51963" "xC53B26" "xC599F6" "xC5CD94" "xC886E3" "xCC99C2" "xCCF73F" "xCEDA54" "xCF9E9F" "xD068EF" "xD122E9" "xD246CD" "xD34BA0" "xD6AD0C" "xD7092A" "xD740E9" "xD75909" "xD7EC39" "xD9B51B" "xDABCDD" "xDBADFE" "xDBC4C9" "xDBD6CD" "xDBEA3D" "xDC716A" "xDCD7C9" "xDDEE22" "xDE68CB" "xDF91C1" "xE00111" "xE08090" "xE0A9E2" "xE14B14" "xE18840" "xE2754D" "xE2A941" "xE2B050" "xE2B0B7" "xE379B6" "xE3CC7D" "xE3F904" "xE5EF82" "xE60BF7" "xE67742" "xE73BE7" "xE856C1" "xE8D3C3" "xE8E12A" "xE921FB" "xE95326" "xEA0BD4" "xEA0EB1" "xEA326C" "xEA5BE9" "xEC140B" "xED3292" "xEDAC7C" "xEE058F" "xEE6521" "xEECA78" "xF00CED" "xF02823" "xF0A42C" "xF0A6D7" "xF192D6" "xF3946E" "xF3E4CF" "xF47364" "xF5AEBE" "xF62EBB" "xF7FD32" "xF83090" "xF8A947" "xF9125F" "xF97E89" "xFC221C" "xFC29D0" "xFCD456" "xFDC3C4" "xFE1511" "xFE4759" "xFE9E78" "xFF4650" "xFF5E63" "xFF6FE1" "xFFE4C1" "xFFF6EE" }
     prime_land = { x01084B x831427 xA11526 x2629FF x871D4A xBD1800 xB711DF x702F8B x3A4B20 x992895 xEA0BD4 x196415 xBF2FEF xB241C1 x4D62D6 xAE4F84 x3D7B8F x8062F4 xC46825 x08B908 xDE68CB x40AB15 xE08090 x989CB7 x74BC05 x58BD7A xDF91C1 xC599F6 x7FB6F1 x95BF58 xAFB883 xF8A947 x47ED24 x79D4B1 x46E2D3 xC5CD94 x84E5E0 x87F2F9 } #random prime land not to cause most arable land to be within the AMAZON tag at the beginning
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     impassable = { x7F0E49 x87087A x950AF3 xEE058F xA92523 x7A431A x0E6BAF x3D6A7B x90539F x8653EE x9752DF x4370B4 x569250 x2994F2 x24AC59 xB374FD x06C624 x46A9DE x41C051 x47D460 x7CDC0B x75E887 xA9FD52 x0A49A7 xA8E4E8 xDBADFE x48171B x681E21 x4D1CA6 x402E72 x0C34F7 x1A3B8F x073FDE xE60BF7 xF9125F x62493B xBF360F x5A47CA xA23B8A xC53B26 xA837D2 x5755E4 xEA326C xF62EBB x35728C xC45530 xD246CD xFE4759 x228F62 x109595 x22964C xBB6578 x8976AD x8F7F6F x18AF1A xBB7948 x8F7DE4 x8E80DF x49A43E x7B89C9 xA58C2D x7697B7 x4CA6CC x8899C3 x74AF3A xBD9F17 xA19E99 xA5AF12 x43D729 xE2A941 x91C728 x2EE626 xE2B050 x67CDD3 x57DC7A xE0A9E2 x3FF111 x72DE57 x20EFD3 x23EFD7 x6BE64A xDABCDD x6FE8D5 x50FD51 x60FF01 xCEDA54 xDBD6CD xDCD7C9 x80FA90 xD7EC39 xCCF73F xE3F904 xFFE4C1 x1BE381 xB62AF0 x4A16EA xE14B14 x5C2AA8 x45EED6 x717A55 x5820C3 x211F43 x1F56AE xC53B26 x379D54 x0C80D5 xDBD6CD xF192D6 x2811A6 x3116DB x4216B3 x2F2B09 x682823 x3B31BD x5A3090 xFE1511 x5A4946 x9C3270 xA12EB0 x8C4707 x705239 x894577 x575E56 x775279 x137A16 x8B5A01 xF83090 x8A52D2 x756755 xAA5F0C xE73BE7 xD740E9 x378065 xD34BA0 x8F6B32 x038CB0 xD75909 x329800 x3C83DF xAA63FA x8F758B xE856C1 xEE6521 x328FFE xFF5E63 x9778E0 x918579 x31B106 xA88280 x2CA8CA xE379B6 xFF6FE1 x48B190 xC49B34 x34C294 xCC99C2 x9DA6FA x0DE918 xD6AD0C xF0A42C x69C874 x54CC99 x06E0E9 xFE9E78 xB2C542 xF0A6D7 xBEBFA7 x9DD475 xE3CC7D xB9D5AE xEECA78 xA2F845 xDBEA3D xDDEE22 x8FFEA0 xF3E4CF x8F231D xB43B72 x6407BA xDC716A xB76ECB xEA0EB1 x929F4C x2F15DF x7CD52C x83B1BA x645927 x2B8C6E xF7FD32 x14EE0B x36E83E xE2B0B7 x4315D5 xE8D3C3 xABA7B1 x6A1760 xE5EF82 xE8E12A x2404C7 x2F69F7 x6C2ED1 x3FA0FB x5C39FF xF97E89 xC886E3 xFCD456 x40C090 x47D820 x817AFB x4751E8 x9AE5DE xA88EBF xEC140B xF3946E xFC29D0 xF47364 xCF9E9F xBC7468 x8A5A62 x6809E1 x4C2A62 x8BD00A x2A5962 xB29291 x01084B x831427 xA11526 x2629FF x871D4A xBD1800 xB711DF x702F8B x3A4B20 x992895 xEA0BD4 x196415 xBF2FEF xB241C1 x4D62D6 xAE4F84 x3D7B8F x8062F4 xC46825 x08B908 xDE68CB x40AB15 xE08090 x989CB7 x74BC05 x58BD7A xDF91C1 xC599F6 x7FB6F1 x95BF58 xAFB883 xF8A947 x47ED24 x79D4B1 x46E2D3 xC5CD94 x84E5E0 x87F2F9 xFFF6EE }
@@ -1175,48 +1045,13 @@ STATE_AMAZONAS = {
     arable_resources = { "bg_maize_farms" "bg_sugar_plantations" "bg_banana_plantations" } #should actually have bg_livestock_ranches to represent Roraima, but meh
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         bg_logging = 50
     }
     resource = {
         type = "bg_rubber"
-        undiscovered_amount = 25
+        discovered_amount = 12
+        undiscovered_amount = 13
     }
     resource = {
         type = "bg_oil_extraction"
@@ -1261,7 +1096,7 @@ STATE_GOIAS = {
     }
     resource = {
         type = "bg_rubber"
-        undiscovered_amount = 8
+        discovered_amount = 16
     }
 }
 
@@ -1282,8 +1117,7 @@ STATE_MATO_GROSSO = {
     }
     resource = {
         type = "bg_rubber"
-        discovered_amount = 6
-        undiscovered_amount = 20
+        discovered_amount = 26
     }
     resource = {
         type = "bg_oil_extraction"
@@ -1304,11 +1138,8 @@ STATE_RIO_GRANDE_DO_SUL = {
     arable_land = 80
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" "bg_tea_plantations" } #Tea = yerba mate
 
-
-
     capped_resources = {
         bg_coal_mining = 28
-        bg_copper_mining = 20
         bg_logging = 11
         bg_fishing = 6
         bg_whaling = 2
@@ -1333,7 +1164,8 @@ STATE_PARANA = {
     arable_land = 40
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tea_plantations" "bg_sugar_plantations" }
     capped_resources = {
-        #bg_coal_mining = 20 #not relevant
+        bg_coal_mining = 20 #icluded for JE
+
         bg_logging = 30
         bg_fishing = 6
         bg_whaling = 2
@@ -1375,8 +1207,6 @@ STATE_SAO_PAULO = {
     arable_land = 130
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        #bg_coal_mining = 32 #Not relevant
-        #bg_iron_mining = 15
         bg_logging = 22
         bg_fishing = 5
     }
@@ -1460,9 +1290,12 @@ STATE_BAHIA = {
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_cotton_plantations" }
     capped_resources = {
         bg_lead_mining = 15
-        bg_copper_mining = 20
         bg_logging = 18
         bg_fishing = 8
+    }
+    resource = {
+        type = "bg_rubber"
+        discovered_amount = 3
     }
     naval_exit_id = 3063
 }
@@ -1495,7 +1328,7 @@ STATE_CEARA = {
     farm = "xED5CF9"
     mine = "x469A7C"
     wood = "x4C763A"
-    arable_land = 90
+    arable_land = 30
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_iron_mining = 18

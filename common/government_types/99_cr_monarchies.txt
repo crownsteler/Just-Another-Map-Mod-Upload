@@ -548,6 +548,8 @@ gov_sheikhdom = {
 			AND = { exists = c:KWT c:KWT = ROOT }
 			AND = { exists = c:DRU c:DRU = ROOT }
 			AND = { exists = c:MZK c:MZK = ROOT }
+			AND = { exists = c:OSC c:OSC = ROOT } 
+			AND = { exists = c:ONL c:ONL = ROOT } 
 		}	
 	}		
 

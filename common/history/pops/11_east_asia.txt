@@ -50,19 +50,15 @@
 			}
 		}
 	}
-	s:STATE_SICHUAN = {
+	s:STATE_SICHUAN = { #STATE_KHAM, I know confusing
 		region_state:CHI = {
-			create_pop = {
-				culture = han # nanfaren
-				size = 9479900
-			}
+			#create_pop = {
+			#	culture = han # nanfaren
+			#	size = 1149900
+			#}
 			create_pop = {
 				culture = manchu
 				size = 4096
-			}
-			create_pop = {
-				culture = tibetan
-				size = 1703796
 			}
 			create_pop = {
 				culture = yi
@@ -72,6 +68,54 @@
 				culture = han # nanfaren
 				religion = animist
 				size = 1336004
+			}
+			create_pop = {
+				culture = han # nanfaren
+				size = 40158
+			}
+		}
+		region_state:TIB = {
+			create_pop = {
+				culture = tibetan
+				size = 331260
+			}
+			create_pop = {
+				culture = han # nanfaren
+				size = 10158
+			}
+			create_pop = {
+				culture = tibetan
+				size = 603796
+			}
+		}
+		region_state:NYA = {
+			create_pop = {
+				culture = tibetan
+				size = 294512
+			}
+			create_pop = {
+				culture = han # nanfaren
+				size = 13566
+			}
+		}
+		region_state:HOR = {
+			create_pop = {
+				culture = tibetan
+				size = 244512
+			}
+			create_pop = {
+				culture = han # nanfaren
+				size = 13566
+			}
+		}
+		region_state:TKH = {
+			create_pop = {
+				culture = tibetan
+				size = 344512
+			}
+			create_pop = {
+				culture = han # nanfaren
+				size = 23566
 			}
 		}
 	}
@@ -206,7 +250,7 @@
 		region_state:CHI = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 7306504
+				size = 4306504
 			}
 			create_pop = {
 				culture = manchu
@@ -214,11 +258,11 @@
 			}
 			create_pop = {
 				culture = zhuang
-				size = 4212000
+				size = 5212000
 			}
 			create_pop = {
 				culture = yue
-				size = 3051996
+				size = 3551996
 			}
 			create_pop = {
 				culture = miao
@@ -426,11 +470,15 @@
 			}
 		}
 	}
-	s:STATE_CHONGQING = {
+	s:STATE_CHONGQING = { #STATE_SICHUAN, confusing I know
 		region_state:CHI = {
 			create_pop = {
 				culture = han # nanfaren
 				size = 19546404
+			}
+			create_pop = { #From STATE_SICHAUN/STATE_KHAM
+				culture = han # nanfaren
+				size = 8213410 
 			}
 		}
 	}
@@ -703,7 +751,7 @@
 		region_state:CHI = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 12513400
+				size = 14013400
 			}
 			create_pop = {
 				culture = manchu

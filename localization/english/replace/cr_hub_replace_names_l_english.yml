@@ -56,7 +56,7 @@
  HUB_NAME_STATE_AUVERGNE_farm:0 "Limoges"
  HUB_NAME_STATE_AUVERGNE_wood:0 "Aurillac"
  HUB_NAME_STATE_BURGUNDY_city:0 "Dijon"
- HUB_NAME_STATE_BURGUNDY_mine:0 "Mâcon"
+ HUB_NAME_STATE_BURGUNDY_mine:0 "Le Creusot"
  HUB_NAME_STATE_BURGUNDY_farm:0 "Auxerre"
  HUB_NAME_STATE_BURGUNDY_wood:0 "Nevers"
  HUB_NAME_STATE_FRANCHE_COMTE_city:0 "Besançon"
@@ -654,9 +654,9 @@
  HUB_NAME_STATE_TIMBUKTU_wood:0 "Gossi"
  HUB_NAME_STATE_TIMBUKTU_mine:0 "I-n-Tillit"
  HUB_NAME_STATE_GHANA_city:0 "Kumasi"
- HUB_NAME_STATE_GHANA_port:0 "Sekondi"
+ HUB_NAME_STATE_GHANA_port:0 "Accra"
  HUB_NAME_STATE_GHANA_farm:0 "Elmina"
- HUB_NAME_STATE_GHANA_wood:0 "Akim Oda"
+ HUB_NAME_STATE_GHANA_wood:0 "Sekondi"
  HUB_NAME_STATE_GHANA_mine:0 "Obuasi"
  HUB_NAME_STATE_IVORY_COAST_city:0 "Yamoussoukro"
  HUB_NAME_STATE_IVORY_COAST_port:0 "Abidan"
@@ -1075,12 +1075,111 @@
  HUB_NAME_STATE_HINGGAN_wood:0 "Chaoyang"
  HUB_NAME_STATE_HINGGAN_mine:0 "Longhua"
  
+ HUB_NAME_STATE_SOUTHERN_MANCHURIA_farm:0 "Harbin"
+ HUB_NAME_STATE_SOUTHERN_MANCHURIA_wood:0 "Ningguta"
+ 
+ HUB_NAME_STATE_NORTHERN_MANCHURIA_farm:0 "Suihua"
+ HUB_NAME_STATE_NORTHERN_MANCHURIA_wood:0 "Heihe"
+ HUB_NAME_STATE_NORTHERN_MANCHURIA_mine:0 "Daqing"
+ 
  HUB_NAME_STATE_BEIJING_wood:0 "Zhuozhou"
  HUB_NAME_STATE_BEIJING_mine:0 "Tangshan"
  
  HUB_NAME_STATE_SHENGJING_farm:0 "Chinchow"
  HUB_NAME_STATE_SHENGJING_wood:0 "Andong"
  HUB_NAME_STATE_SHENGJING_mine:0 "Anshan"
+ 
+ HUB_NAME_STATE_SHANDONG_city:0 "Jinan"
+ HUB_NAME_STATE_SHANDONG_port:0 "Tsingtao"
+ HUB_NAME_STATE_SHANDONG_farm:0 "Jining"
+ HUB_NAME_STATE_SHANDONG_wood:0 "Yantai"
+ HUB_NAME_STATE_SHANDONG_mine:0 "Rizhao"
+ 
+ HUB_NAME_STATE_ZHILI_farm:0 "Puyang"
+ 
+ HUB_NAME_STATE_JIANGSU_city:0 "Xuzhou"
+ HUB_NAME_STATE_JIANGSU_port:0 "Haichow"
+ HUB_NAME_STATE_JIANGSU_farm:0 "Huaiyin"
+ HUB_NAME_STATE_JIANGSU_wood:0 "Suqian" 
+ HUB_NAME_STATE_JIANGSU_mine:0 "Taizhou"
+ 
+ HUB_NAME_STATE_SUZHOU_city:0 "Suzhou"
+ HUB_NAME_STATE_SUZHOU_port:0 "Shanghai"
+ HUB_NAME_STATE_SUZHOU_farm:0 "Nantong"
+ HUB_NAME_STATE_SUZHOU_wood:0 "Changzhou"
+ HUB_NAME_STATE_SUZHOU_mine:0 "Wixi"
+ 
+ HUB_NAME_STATE_NANJING_city:0 "Nanjing"
+ HUB_NAME_STATE_NANJING_farm:0 "Yangzhou"
+ HUB_NAME_STATE_NANJING_wood:0 "Zhangzhuzhen"
+ HUB_NAME_STATE_NANJING_mine:0 "Zhenjiang"
+ 
+ HUB_NAME_STATE_NORTHERN_ANHUI_city:0 "Suzhou"
+ HUB_NAME_STATE_NORTHERN_ANHUI_farm:0 "Fuyang"
+ HUB_NAME_STATE_NORTHERN_ANHUI_wood:0 "Bozhou" #Because TCM
+ HUB_NAME_STATE_NORTHERN_ANHUI_mine:0 "Hauibei"
+ 
+ HUB_NAME_STATE_SOUTHERN_ANHUI_city:0 "Anqing"
+ HUB_NAME_STATE_SOUTHERN_ANHUI_farm:0 "Luchow"
+ HUB_NAME_STATE_SOUTHERN_ANHUI_wood:0 "Tunxi"
+ HUB_NAME_STATE_SOUTHERN_ANHUI_mine:0 "Huainan"
+ 
+ HUB_NAME_STATE_HENAN_city:0 "Kaifeng"
+ HUB_NAME_STATE_HENAN_farm:0 "Zhoukou"
+ HUB_NAME_STATE_HENAN_wood:0 "Nanyang"
+ HUB_NAME_STATE_HENAN_mine:0 "Jiaozuo"
+ 
+ HUB_NAME_STATE_ZHEJIANG_city:0 "Hangzhou"
+ HUB_NAME_STATE_ZHEJIANG_port:0 "Wenzhou"
+ HUB_NAME_STATE_ZHEJIANG_farm:0 "Ningbo"
+ HUB_NAME_STATE_ZHEJIANG_wood:0 "Jinhau"
+ HUB_NAME_STATE_ZHEJIANG_mine:0 "Taizhou"
+ 
+ HUB_NAME_STATE_FUJIAN_city:0 "Fuzhou"
+ HUB_NAME_STATE_FUJIAN_port:0 "Xiamen"
+ HUB_NAME_STATE_FUJIAN_farm:0 "Zhangzhou"
+ HUB_NAME_STATE_FUJIAN_wood:0 "Longyan"
+ HUB_NAME_STATE_FUJIAN_mine:0 "Quanzhou" 
+ 
+ HUB_NAME_STATE_SHAOZHOU_city:0 "Canton"
+ HUB_NAME_STATE_SHAOZHOU_port:0 "Hong Kong"
+ HUB_NAME_STATE_SHAOZHOU_farm:0 "Shaoguan"
+ HUB_NAME_STATE_SHAOZHOU_wood:0 "Heyuan"
+ HUB_NAME_STATE_SHAOZHOU_mine:0 "Jaijing"
+ 
+ HUB_NAME_STATE_GUANGDONG_city:0 "Foshan"
+ HUB_NAME_STATE_GUANGDONG_port:0 "Macau"
+ HUB_NAME_STATE_GUANGDONG_farm:0 "Tsamkong"
+ HUB_NAME_STATE_GUANGDONG_wood:0 "Haikou"
+ HUB_NAME_STATE_GUANGDONG_mine:0 "Sanya"
+ 
+ HUB_NAME_STATE_GUANGXI_city:0 "Nanning"
+ HUB_NAME_STATE_GUANGXI_farm:0 "Guilin"
+ HUB_NAME_STATE_GUANGXI_wood:0 "Hechi"
+ HUB_NAME_STATE_GUANGXI_mine:0 "Baise"
+ 
+ HUB_NAME_STATE_CHONGQING_city:0 "Chengdu"
+ HUB_NAME_STATE_CHONGQING_farm:0 "Chongqing"
+ HUB_NAME_STATE_CHONGQING_wood:0 "Ya'an"
+ HUB_NAME_STATE_CHONGQING_mine:0 "Guangyuan"
+ 
+ HUB_NAME_STATE_SICHUAN_city:0 "Nyarong"
+ HUB_NAME_STATE_SICHUAN_farm:0 "Derge"
+ HUB_NAME_STATE_SICHUAN_wood:0 "Bathang"
+ HUB_NAME_STATE_SICHUAN_mine:0 "Xichang"
+ 
+ HUB_NAME_STATE_QINGHAI_wood:0 "Barkam"
+ 
+ HUB_NAME_STATE_NGARI_city:0 "Ngari"
+ HUB_NAME_STATE_NGARI_farm:0 "Wumusen"
+ HUB_NAME_STATE_NGARI_wood:0 "Demchok"
+ HUB_NAME_STATE_NGARI_mine:0 "Pegta"
+ 
+ HUB_NAME_STATE_LHASA_city:0 "Lhasa"
+ HUB_NAME_STATE_LHASA_farm:0 "Shigatse"
+ HUB_NAME_STATE_LHASA_wood:0 "Nagqu"
+ HUB_NAME_STATE_LHASA_mine:0 "Drongpa"
+ 
  
  #Australia
  
@@ -1113,3 +1212,19 @@
  #HUB_NAME_STATE_TASMANIA_mine:0 "Burnie"
  #HUB_NAME_STATE_TASMANIA_farm:0 "Launceston"
  #HUB_NAME_STATE_TASMANIA_wood:0 "Strahan"
+ 
+ #Caribbean
+ HUB_NAME_STATE_HAITI_city:0 "Port-au-Prince"
+ HUB_NAME_STATE_HAITI_port:0 "Cap-Haïtien"
+ HUB_NAME_STATE_HAITI_mine:0 "Môle-Saint-Nicolas"
+ HUB_NAME_STATE_HAITI_farm:0 "Jacmel"
+ HUB_NAME_STATE_HAITI_wood:0 "Les Cayes"
+ 
+ HUB_NAME_STATE_SANTO_DOMINGO_city:0 "Santo Domingo"
+ HUB_NAME_STATE_SANTO_DOMINGO_port:0 "Barahona"
+ HUB_NAME_STATE_SANTO_DOMINGO_mine:0 "Neiba"
+ HUB_NAME_STATE_SANTO_DOMINGO_farm:0 "Santiago de los Caballeros"
+ HUB_NAME_STATE_SANTO_DOMINGO_wood:0 "Higüey"
+ 
+ HUB_NAME_STATE_WEST_INDIES_city:0 "Fort-de-France"
+ HUB_NAME_STATE_WEST_INDIES_mine:0 "Port-of-Spain"

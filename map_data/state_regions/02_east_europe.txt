@@ -3,7 +3,7 @@
     subsistence_building = "building_subsistence_farms"
     provinces = { x042A4F xCD164E x065E68 x246095 xB64167 x3266DE xDF3F5C xD14E99 x607A9E x01A0E0 xD7689F x8F79E9 xBB73A3 xE97616 x6F9858 xA981B3 x80A0E0 x57DF51 xAEBDCB xB6C9C3 xE9C671 xD1CBDD xD0DA34 xDED975 x93FBC9 }
     traits = { "state_trait_russian_forest" "state_trait_cold_water_port" }
-    city = "xCD164E"
+    city = "x607A9E"
     port = "xCD164E"
     farm = "x6F9858"
     mine = "xB64167"
@@ -63,7 +63,7 @@ STATE_VOLHYNIA = {
     arable_land = 90
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 40
+        bg_coal_mining = 60
         bg_logging = 11
     }
 }
@@ -86,7 +86,7 @@ STATE_KIEV = {
 }
 
 STATE_POLTAVA = {
-    id = 3135
+    id = 3435
     subsistence_building = "building_subsistence_farms"
     provinces = { xC31716 xA12B5A x9723F8 x1458A6 x2C6090 x0A69A9 xFB1DC5 xDD344F xCB4129 x5F64A2 x675DF4 x387D75 x348364 x817D22 xCD72A1 xC482AD x1CB8D8 xAD965B x34B4C6 x7EAE07 xE682D3 x03D6A7 xF49A18 xE996D1 x3ACCE8 xDAAE11 x36D880 xBCC260 xD0DA95 x85EECF }
     traits = { "state_trait_black_soil" "state_trait_dnieper_river" }
@@ -165,10 +165,14 @@ STATE_EAST_KARELIA = {
     arable_resources = {}
     capped_resources = {
         bg_iron_mining = 33
-        bg_copper_mining = 20
+        #bg_copper_mining = 24
         bg_logging = 24
         bg_fishing = 7
     #bg_minor_metals_mining = 25 #Zinc
+    }
+    resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 24
     }
     naval_exit_id = 3039
 }
@@ -177,7 +181,7 @@ STATE_ARKHANGELSK = {
     id = 140
     subsistence_building = "building_subsistence_farms"
     provinces = { xA082DB x0662C5 x5A9872 x237586 x360D95 x4D2452 x7D80D6 xFE65B5 x6DBE60 xD0FC2C x5F87BA x009EB7 xA57615 x8ED444 x37D5D3 x787542 x35C277 x5539CF x67A6D0 x952880 xCE6ECE x7A608A x835452 xB07CEC xA10EA2 xAB54F1 x8F45AB x78A0D5 x1230DB xCD39E2 xCF8844 x81827E x7FE1CB x6E148E xAA9473 xB4907A xF29885 x1D4E77 x973436 x577ADC x116B4E x6A0C01 x533140 xE587B2 x27923A x7BFAD9 x49C142 xB663D9 xF3672D xBCC48C x90A6D0 x48BC6F xB71DD4 x99B3A6 xD4B959 xBB094C x53C825 x9A6F0B x4A6073 xCF2221 xD6BC8B xEAE9CB x50829A xC86EE7 x257570 x40F1F0 x17C3A9 x125781 x339F71 xE72A8A xB0726B x09201E x461ABA x4A5404 x58F495 xA3F91A x68FEEE xB3E4A8 x1405E0 xE05893 x51742F x4E1756 x45C3AD x5D0C97 x8DA9F9 xEF2B17 x39C3D7 xC280EF x8CA5D6 x848EFC x5943FE x73AE5B x7A00E6 xA51FC9 x475460 x6B4598 xFD14D2 x6145FA x0F63E6 x0D7374 x6F6902 x956021 xD8621E x03B78B x51A54B x24B773 x19C43D x14D961 x28E71E xA4D7E2 xEDE24C x0CD587 x870F18 xCCD447 x34E5AF xDC37B4 x337F2E x943551 x1E81FD xA0A229 xAD41A3 xAE796F x6F4FF3 xAF452A x33C25F x2CFB78 xEA1C7C x61A80E x502052 x2A523B x798F3F x0E40DF xC954DA xE6856E xE60CB2 xDF644E x1D987A x4F3727 x08EA21 x0726F3 xF10872 x0461A8 x20042C x9F8F4B x52330E x05B88D x88085F x0BC9F0 xFD5D34 xE983C0 x13B333 x200B3D x33D247 x465A5E x10421E x15793E x0D3F21 x504650 x79A969 x5C9BC2 xFE07A2 xEF4C89 x395F83 x54BEA0 xBBB59E x794A50 x4A7BEA x076C17 x78F046 x30C7A9 xC6D458 x0938D1 xDA4270 xE78B80 x097E8F x14033F x1A96AF x5CB819 xBD8041 x1BB816 x6249A6 x27B3AF x7CF5A8 x7E8992 x8CFE49 x901791 xE919E4 x69F422 xD5B87E x21DCAA x2FED3C x090AE0 x33EDCD x26482C x50B1CA xAEFB92 xF8FC1C xA38275 xBA61B3 x6A0DC0 x9BA0DD x0CD55A x016ED3 xC7CF5F x6D86C4 x2E64AF xB2F58B xA24D84 x3DFC8F x633D9B x8D8851 x8B0558 xC9F3AE x0F2069 xB3A982 x427269 xCEC72D xE2A08D x327B53 x5293E4 xF0B517 xF63D02 x8EC2F4 xA00040 x2FB7DD x2F97B2 xB4CD19 xBAC7A8 x4329A8 xD151BB x74EA3A x9AF311 xDC42D5 xD0875E x9B119E xB68BC2 x16F163 x336DDE xE53194 xE342C9 x450381 x3D2072 xA9DA3B x57C121 x838310 x218308 x0E45FB xDC750C xBFE4B2 xC6A37F x8583E2 x6DEACB xE2498B x16C690 xB29D30 x7D0500 xA2A043 xD5F356 x9A5B40 xF71A45 xBD1994 xBC1232 xA824CE x675AB2 x324C61 x345C29 xF1FC93 xF2BDF3 x80498F x0ACF83 xB9F7BC x01272B xE7E786 x92CC3F xD56645 xE45CED x47E932 x482567 xB8CE60 xEAA7B7 x91010C xC67065 xB682AF x224D9D xC916FC xAEC9AB x617A8C x4C5B40 x71A859 xE10D62 x9EA5E8 xF663E5 x8AFEA3 xE40995 xA409C0 x60FF25 xD1DEEE xA9E50D x6AFC0F xC34748 x949B67 xB93763 x959D2C xB6D7F9 xFAA187 x290133 xB79F41 x773101 xCFC6CA xEEC8A0 x3CAECB x148F2C xD9841C x735843 xBF985B x33301E xD5002D xBB28DE x9D4CD7 x0683CE xCAA6E2 x143579 x2B00F6 x046432 x9E8DF5 x56AC87 x46B48C x36C073 x871642 xA07AFC x56406D xA92CC9 x660DFC xCC4416 xCE989F xC7EB17 xAC3CC6 xC744A8 x3F32BC x6D69E4 xCDB059 x85A43D x14DCCC xA83616 x3C5887 x094847 x4F0008 x5F5035 xF2CF35 x650814 xD662A8 x92E397 x6C631C x964A65 xD560B0 x65E25D x93C148 xCA1B89 xA8DA11 x2007FA xE8F9A4 xA2A80D x91D285 x014759 x0228EC x4C8F3C x0A481B x36D215 x4DAEAE x5BAD22 x87FEAE x871046 xAC8E89 x38F20C x918387 x799E1B x51E8BE x8C881D x1D0B2C x0A75FF xD19787 xFB0270 x4FF082 x2B0D72 xA26F82 xD6FA07 xBEFAA9 xCD2826 xA01669 x184936 xFF3B52 x8BC648 xBF0692 x417983 x178A5C xC35BA4 xAC7A28 x877BDE xB272FC xC699CC x9AAAF0 x40D3DA x85CE81 x73F31C xA2F602 xA1F4C2 xEDEE19 }
-	impassable = { x0CD587 x870F18 xCCD447 x34E5AF xDC37B4 x337F2E x943551 x1E81FD xA0A229 xAD41A3 xAE796F x6F4FF3 xAF452A x33C25F x2CFB78 xEA1C7C x61A80E x502052 x2A523B x798F3F x0E40DF xC954DA xE6856E xE60CB2 xDF644E x1D987A x4F3727 x08EA21 x0726F3 xF10872 x0461A8 x20042C x9F8F4B x52330E x05B88D x88085F x0BC9F0 xFD5D34 xE983C0 x13B333 x200B3D x33D247 x465A5E x10421E x15793E x0D3F21 x504650 x79A969 x5C9BC2 xFE07A2 xEF4C89 x395F83 x54BEA0 xBBB59E x794A50 x4A7BEA x076C17 x78F046 x30C7A9 xC6D458 x0938D1 xDA4270 xE78B80 x097E8F x14033F x1A96AF x5CB819 xBD8041 x1BB816 x6249A6 x27B3AF x7CF5A8 x7E8992 x8CFE49 x901791 xE919E4 x69F422 xD5B87E x21DCAA x2FED3C x090AE0 x33EDCD x26482C x50B1CA xAEFB92 xF8FC1C xA38275 xBA61B3 x6A0DC0 x9BA0DD x0CD55A x016ED3 xC7CF5F x6D86C4 x2E64AF xB2F58B xA24D84 x3DFC8F x633D9B x8D8851 x8B0558 xC9F3AE x0F2069 xB3A982 x427269 xCEC72D xE2A08D x327B53 x5293E4 xF0B517 xF63D02 x8EC2F4 xA00040 x2FB7DD x2F97B2 xB4CD19 xBAC7A8 x4329A8 xD151BB x74EA3A x9AF311 xDC42D5 xD0875E x9B119E xB68BC2 x16F163 x336DDE xE53194 xE342C9 x450381 x3D2072 xA9DA3B x57C121 x838310 x218308 x0E45FB xDC750C xBFE4B2 xC6A37F x8583E2 x6DEACB xE2498B x16C690 xB29D30 x7D0500 xA2A043 xD5F356 x9A5B40 xF71A45 xBD1994 xBC1232 xA824CE x675AB2 x324C61 x345C29 xF1FC93 xF2BDF3 x80498F x0ACF83 xB9F7BC x01272B xE7E786 x92CC3F xD56645 xE45CED x47E932 x482567 xB8CE60 xEAA7B7 x91010C xC67065 xB682AF x224D9D xC916FC xAEC9AB x617A8C x4C5B40 x71A859 xE10D62 x9EA5E8 xF663E5 x8AFEA3 xE40995 xA409C0 x60FF25 xD1DEEE xA9E50D x6AFC0F xC34748 x949B67 xB93763 x959D2C xB6D7F9 xFAA187 x290133 xB79F41 x773101 xCFC6CA xEEC8A0 x3CAECB x148F2C xD9841C x735843 xBF985B x33301E xD5002D xBB28DE x9D4CD7 x0683CE xCAA6E2 x143579 x2B00F6 x046432 x9E8DF5 x56AC87 x46B48C x36C073 x871642 xA07AFC x56406D xA92CC9 x660DFC xCC4416 xCE989F xC7EB17 xAC3CC6 xC744A8 x3F32BC x6D69E4 xCDB059 x85A43D x14DCCC xA83616 x3C5887 x094847 x4F0008 x5F5035 xF2CF35 x650814 xD662A8 x92E397 x6C631C x964A65 xD560B0 x65E25D x93C148 xCA1B89 xA8DA11 x2007FA xE8F9A4 xA2A80D x91D285 x014759 x0228EC x4C8F3C x0A481B x36D215 x4DAEAE x5BAD22 x87FEAE x871046 xAC8E89 x38F20C x918387 x799E1B x51E8BE x8C881D x1D0B2C x0A75FF xD19787 xFB0270 x4FF082 x2B0D72 xA26F82 xD6FA07 xBEFAA9 xCD2826 xA01669 x184936 xFF3B52 x8BC648 }
+    impassable = { x0CD587 x870F18 xCCD447 x34E5AF xDC37B4 x337F2E x943551 x1E81FD xA0A229 xAD41A3 xAE796F x6F4FF3 xAF452A x33C25F x2CFB78 xEA1C7C x61A80E x502052 x2A523B x798F3F x0E40DF xC954DA xE6856E xE60CB2 xDF644E x1D987A x4F3727 x08EA21 x0726F3 xF10872 x0461A8 x20042C x9F8F4B x52330E x05B88D x88085F x0BC9F0 xFD5D34 xE983C0 x13B333 x200B3D x33D247 x465A5E x10421E x15793E x0D3F21 x504650 x79A969 x5C9BC2 xFE07A2 xEF4C89 x395F83 x54BEA0 xBBB59E x794A50 x4A7BEA x076C17 x78F046 x30C7A9 xC6D458 x0938D1 xDA4270 xE78B80 x097E8F x14033F x1A96AF x5CB819 xBD8041 x1BB816 x6249A6 x27B3AF x7CF5A8 x7E8992 x8CFE49 x901791 xE919E4 x69F422 xD5B87E x21DCAA x2FED3C x090AE0 x33EDCD x26482C x50B1CA xAEFB92 xF8FC1C xA38275 xBA61B3 x6A0DC0 x9BA0DD x0CD55A x016ED3 xC7CF5F x6D86C4 x2E64AF xB2F58B xA24D84 x3DFC8F x633D9B x8D8851 x8B0558 xC9F3AE x0F2069 xB3A982 x427269 xCEC72D xE2A08D x327B53 x5293E4 xF0B517 xF63D02 x8EC2F4 xA00040 x2FB7DD x2F97B2 xB4CD19 xBAC7A8 x4329A8 xD151BB x74EA3A x9AF311 xDC42D5 xD0875E x9B119E xB68BC2 x16F163 x336DDE xE53194 xE342C9 x450381 x3D2072 xA9DA3B x57C121 x838310 x218308 x0E45FB xDC750C xBFE4B2 xC6A37F x8583E2 x6DEACB xE2498B x16C690 xB29D30 x7D0500 xA2A043 xD5F356 x9A5B40 xF71A45 xBD1994 xBC1232 xA824CE x675AB2 x324C61 x345C29 xF1FC93 xF2BDF3 x80498F x0ACF83 xB9F7BC x01272B xE7E786 x92CC3F xD56645 xE45CED x47E932 x482567 xB8CE60 xEAA7B7 x91010C xC67065 xB682AF x224D9D xC916FC xAEC9AB x617A8C x4C5B40 x71A859 xE10D62 x9EA5E8 xF663E5 x8AFEA3 xE40995 xA409C0 x60FF25 xD1DEEE xA9E50D x6AFC0F xC34748 x949B67 xB93763 x959D2C xB6D7F9 xFAA187 x290133 xB79F41 x773101 xCFC6CA xEEC8A0 x3CAECB x148F2C xD9841C x735843 xBF985B x33301E xD5002D xBB28DE x9D4CD7 x0683CE xCAA6E2 x143579 x2B00F6 x046432 x9E8DF5 x56AC87 x46B48C x36C073 x871642 xA07AFC x56406D xA92CC9 x660DFC xCC4416 xCE989F xC7EB17 xAC3CC6 xC744A8 x3F32BC x6D69E4 xCDB059 x85A43D x14DCCC xA83616 x3C5887 x094847 x4F0008 x5F5035 xF2CF35 x650814 xD662A8 x92E397 x6C631C x964A65 xD560B0 x65E25D x93C148 xCA1B89 xA8DA11 x2007FA xE8F9A4 xA2A80D x91D285 x014759 x0228EC x4C8F3C x0A481B x36D215 x4DAEAE x5BAD22 x87FEAE x871046 xAC8E89 x38F20C x918387 x799E1B x51E8BE x8C881D x1D0B2C x0A75FF xD19787 xFB0270 x4FF082 x2B0D72 xA26F82 xD6FA07 xBEFAA9 xCD2826 xA01669 x184936 xFF3B52 x8BC648 }
     traits = { "state_trait_russian_forest" "state_trait_siberian_terrain" "state_trait_cold_water_port" }
     city = "xC86EE7"
     port = "x99B3A6"
@@ -188,8 +192,8 @@ STATE_ARKHANGELSK = {
     arable_resources = {}
     capped_resources = {
         bg_coal_mining = 45
-        bg_logging = 12
-        bg_fishing = 17
+        bg_logging = 10
+        bg_fishing = 15
     }
     naval_exit_id = 3039
 }
@@ -225,7 +229,7 @@ STATE_CRIMEA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" "bg_tobacco_plantations" }
     capped_resources = {
         bg_iron_mining = 18
-        bg_fishing = 18
+        bg_fishing = 16
     }
     naval_exit_id = 3036
 }
@@ -296,7 +300,7 @@ STATE_CHERSON = {
     capped_resources = {
         #bg_coal_mining = 48 #Lignite
         bg_iron_mining = 85
-        bg_fishing = 8
+        bg_fishing = 6
     }
     naval_exit_id = 3036
 }
@@ -364,7 +368,7 @@ STATE_PERM = {
     arable_land = 100
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_copper_mining = 35
+        #bg_copper_mining = 44
         bg_lead_mining = 35
         bg_sulfur_mining = 35 #Potash
 
@@ -381,7 +385,19 @@ STATE_PERM = {
 
 
 
+
+
+
+
+
+
+
         bg_logging = 26
+    }
+    resource = {
+        type = "bg_copper_mining"
+        discovered_amount = 28
+        undiscovered_amount = 16
     }
     resource = {
         type = "bg_oil_extraction"
@@ -417,7 +433,14 @@ STATE_ESTONIA = {
 
 
 
-        bg_fishing = 8
+
+
+
+
+
+
+
+        bg_fishing = 7
     }
     naval_exit_id = 3000
 }
@@ -431,11 +454,11 @@ STATE_LATVIA = {
     farm = "xF8BBB0"
     mine = "xF4B54B"
     wood = "xD51E75"
-    arable_land = 50
+    arable_land = 60
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 18
-        bg_fishing = 10
+        bg_fishing = 7
     }
     naval_exit_id = 3000
 }
@@ -489,11 +512,11 @@ STATE_SILESIA = {
     arable_land = 100
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_coal_mining = 140
+        bg_coal_mining = 145
         bg_iron_mining = 34
         bg_lead_mining = 20
-        bg_copper_mining = 40
-        bg_logging = 14
+        bg_copper_mining = 48
+        bg_logging = 10
     #bg_minor_metals_mining = 15 #Zinc
     }
 }
@@ -526,7 +549,7 @@ STATE_LESSER_POLAND = {
     arable_land = 80
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 50
+        bg_coal_mining = 75
         bg_iron_mining = 36
         bg_sulfur_mining = 20
         bg_logging = 13
@@ -594,7 +617,7 @@ STATE_WEST_GALICIA = {
     farm = "x5F3456"
     mine = "x5F3456"
     wood = "x9061E0"
-    arable_land = 130
+    arable_land = 145
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 17
@@ -613,10 +636,10 @@ STATE_EAST_GALICIA = {
     farm = "xC58E1C"
     mine = "x7EDD9E"
     wood = "x8F9F20"
-    arable_land = 130
+    arable_land = 145
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 75
+        bg_coal_mining = 85
         bg_logging = 9
     }
     resource = {
@@ -638,7 +661,7 @@ STATE_CENTRAL_HUNGARY = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         #bg_coal_mining = 20 #Lignite
-        bg_copper_mining = 15 #Copper/Zinc/Lead
+        bg_copper_mining = 19 #Copper/Zinc/Lead
 
 
 
@@ -653,7 +676,14 @@ STATE_CENTRAL_HUNGARY = {
 
 
 
-        bg_logging = 8
+
+
+
+
+
+
+
+        bg_logging = 6
     #bg_sulfur_mining = 5 #Pyrite
     }
 }
@@ -671,6 +701,13 @@ STATE_BEKES = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 11
+        bg_lead_mining = 20
+    }
+    resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 45 #Roșia Poieni, 65% of Romanian copper apparently, production started in the 1960s using froth floatation technique, maybe not possible to exploit in the game's period?
+
+
     }
 }
 
@@ -683,10 +720,10 @@ STATE_TRANSDANUBIA = {
     farm = "xB02121"
     mine = "x2668FB"
     wood = "x6F8D2A"
-    arable_land = 120
+    arable_land = 125
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_coal_mining = 62
+        bg_coal_mining = 68
         bg_logging = 7
     #bg_minor_metals_mining = 10 #manganese
     }
@@ -703,7 +740,9 @@ STATE_DELVIDEK = {
     wood = "x9E1AD1"
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
-    capped_resources = {}
+    capped_resources = {
+
+    }
     resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 10
@@ -722,7 +761,7 @@ STATE_BANAT = {
     arable_land = 70
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 25
+        bg_iron_mining = 55
         bg_logging = 12
 
     }
@@ -760,22 +799,14 @@ STATE_EAST_SLOVAKIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
         #Slovak Ore Mountains
-        bg_iron_mining = 53 #Szepes-Gomor
+        bg_iron_mining = 63 #Szepes-Gomor
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-        bg_copper_mining = 30
+        bg_copper_mining = 38
         bg_logging = 18
     }
 }
@@ -791,11 +822,10 @@ STATE_SOUTHERN_TRANSYLVANIA = {
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_lead_mining = 20
-        bg_copper_mining = 45
-        bg_iron_mining = 30
+        #bg_lead_mining = 20 #Moved to Bekes
+        #bg_iron_mining = 30 #Merged into Banat
         bg_logging = 24
-        bg_coal_mining = 65
+        bg_coal_mining = 84
     }
 }
 
@@ -810,8 +840,7 @@ STATE_NORTHERN_TRANSYLVANIA = {
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_copper_mining = 25
-        bg_iron_mining = 35
+        bg_iron_mining = 39
         bg_logging = 18
     }
 }
@@ -828,6 +857,9 @@ STATE_MOLDAVIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_logging = 16
+        bg_copper_mining = 32 #Bukovina
+
+
     }
     resource = {
         type = "bg_oil_extraction"
@@ -844,11 +876,11 @@ STATE_WALLACHIA = {
     farm = "x9E90C5"
     mine = "x743F1C"
     wood = "xF9AA0F"
-    arable_land = 60
+    arable_land = 85
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_cotton_plantations" "bg_silk_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         #bg_coal_mining = 68 #Lignite
-        bg_logging = 6
+        bg_logging = 8
     }
     resource = {
         type = "bg_oil_extraction"
