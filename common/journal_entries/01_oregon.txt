@@ -64,25 +64,34 @@ je_oregon = {
 					text = oregon_tt
 					has_global_variable = oregon_trail_mapped
 				}
-				OR = {
-					s:STATE_MONTANA = {
-						any_scope_state = {
-							owner = root
-						}
-					}
-					s:STATE_WYOMING = {
-						any_scope_state = {
-							owner = root
-						}
-					}
-					s:STATE_CALIFORNIA = {
-						any_scope_state = {
-							owner = root
-						}
-					}
-				}
+				#OR = { #Automaticly fulfilled by Oregon Trail
+				#	s:STATE_MONTANA = {
+				#		any_scope_state = {
+				#			owner = root
+				#		}
+				#	}
+				#	s:STATE_WYOMING = {
+				#		any_scope_state = {
+				#			owner = root
+				#		}
+				#	}
+				#	s:STATE_CALIFORNIA = {
+				#		any_scope_state = {
+				#			owner = root
+				#		}
+				#	}
+				#}
 				c:GBR = {
 					relations:ROOT >= relations_threshold:amicable
+				}
+			}
+			AND = {
+				custom_tooltip = {
+					text = california_trail_tt
+					has_global_variable = cr_california_trail_mapped
+				}
+				c:GBR = {
+					relations:ROOT >= relations_threshold:cordial
 				}
 			}
 			AND = {
@@ -93,9 +102,11 @@ je_oregon = {
 					p:xBC0AA9.owner = ROOT
 				}
 			}
-			AND = {
-				year >= 1846
-				is_ai = yes
+			hidden = {
+				AND = {
+					game_date >= 1846.1.1
+					is_ai = yes
+				}
 			}
 		}
 	}

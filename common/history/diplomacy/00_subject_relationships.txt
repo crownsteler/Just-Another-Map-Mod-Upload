@@ -128,6 +128,11 @@
 			country = c:NVS
 			type = puppet
 		}
+		# Prince Edward Island
+		create_diplomatic_pact = {
+			country = c:PEI
+			type = puppet
+		}
 		# Hudson Bay Company has a weird autonomous charter
 		create_diplomatic_pact = {
 			country = c:HBC

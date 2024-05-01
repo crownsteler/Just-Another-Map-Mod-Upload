@@ -42,7 +42,7 @@
 			ideology = ideology_royalist
 			birth_date = 1806.9.24
 			commander_rank = commander_rank_2
-			hq = region_arabic
+			hq = region_levant
 			traits = {
 				meticulous
 				charismatic

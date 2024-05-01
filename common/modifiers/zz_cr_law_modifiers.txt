@@ -280,3 +280,28 @@ cr_laws_indian_removal_improvement_societies = { #Land Patents
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	political_movement_support_add = 5
 }
+
+cr_indian_removal_compromised_bureaucracy_movement = { #Land Patents
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	political_movement_radicalism_add = 5
+}
+
+cr_indian_removal_favoured_choctaw = { #Land Patents
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	political_movement_radicalism_add = -5
+}
+
+cr_indian_removal_favoured_choctaw_opposed = { #Land Patents
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	political_movement_radicalism_add = 5
+}
+
+cr_indian_removal_favoured_settlers_opposed= { #Land Patents
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	political_movement_radicalism_add = 5
+}
+
+cr_indian_removal_favoured_settlers = { #Land Patents
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	political_movement_radicalism_add = -5
+}

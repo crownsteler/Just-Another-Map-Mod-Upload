@@ -78,6 +78,7 @@
  cr_succesful_lobby_normal:1 "Succesful Lobby"
  cr_failed_lobby_normal:0 "Failed Lobby"
  cr_the_nra_ig:0 "The Second Amendment"
+ cr_national_rifle_associations_ig:0 "The Second Amendment"
 
  ### State Modifiers ###
  cr_vestige_of_empire:0 "Vestige of Empire"
@@ -175,6 +176,7 @@
  cr_chateau_clique_modifier:0 "The Château Clique"
  cr_patriote_movement_modifier:0 "Patriote Movement"
  cr_treaty_of_doaksville:0 "Treaty of Doaksville"
+ cr_indian_removal_compromised_bureaucracy:0 "Compromised Bureaucracy"
  
  cr_desamortizacion_auctioned:0 "Desamortización"
  
@@ -238,3 +240,6 @@
  cr_indian_removal_reparations_3:0 "Indian Removal Reparations"
  cr_indian_removal_reparations_4:0 "Indian Removal Reparations"
  cr_indian_removal_reparations_5:0 "Indian Removal Reparations"
+ cr_indian_removal_compromised_bureaucracy_movement:0 "Complicit Bureaucracy"
+ cr_removal_the_benefit_of_free_enterprise:0 "The Benefits of Free Enterprise"
+ cr_removal_the_benefit_of_free_enterprise_denied:0 "Denied The Benefits of Free Enterprise"

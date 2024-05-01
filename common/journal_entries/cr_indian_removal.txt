@@ -27,10 +27,12 @@
 			15 = cr_indian_removal.11 #An Adress to Martin van Buren
 			15 = cr_indian_removal.12 #John Ross' Protest Petition
 			15 = cr_indian_removal.30 #Squatters
-			2 = cr_indian_removal.31  #Newspaper Clippings
-			2 = cr_indian_removal.33  #College Protests
-			2 = cr_indian_removal.34  #Female Missionary Societies
+			1 = cr_indian_removal.31  #Newspaper Clippings
+			1 = cr_indian_removal.33  #College Protests
+			1 = cr_indian_removal.34  #Female Missionary Societies
 			7 = cr_indian_removal.35 #Land Patents / Choctaw Scrip
+			1 = cr_indian_removal.36 #The Missing Pages
+			7 = cr_indian_removal.37 #Choctaw Scrip
 			2 = cr_indian_removal.40 #The Failure of Indian Policy
 			2 = cr_indian_removal.41 #Indian Improvement Societies 
 		}
@@ -212,6 +214,7 @@ je_chickasaw_removal = {
 			5 = cr_indian_removal.55
 			15 = cr_indian_removal.56
 			5 = cr_indian_removal.57
+			1 = cr_indian_removal.58
 			5 = cr_indian_removal.60
 		}
 	}
@@ -359,6 +362,10 @@ je_chickasaw_removal = {
 				}
 			}
 		}
+		if = {
+			limit = {has_modifier = cr_removal_the_benefit_of_free_enterprise }
+			remove_modifier = cr_removal_the_benefit_of_free_enterprise
+		}
 		remove_modifier = cr_chickasaw_removal_cost
 	}
 	
@@ -368,6 +375,10 @@ je_chickasaw_removal = {
 	
 	on_fail = {
 		remove_modifier = cr_chickasaw_removal_cost
+		if = {
+			limit = {has_modifier = cr_removal_the_benefit_of_free_enterprise }
+			remove_modifier = cr_removal_the_benefit_of_free_enterprise
+		}
 	}
 	
 	invalid = {
@@ -381,6 +392,7 @@ je_chickasaw_removal = {
 	on_invalid = {
 		hidden_effect = {
 			remove_modifier = cr_chickasaw_removal_cost
+			remove_modifier = cr_removal_the_benefit_of_free_enterprise
 		}
 	}
 	
@@ -405,6 +417,7 @@ je_creek_removal = {
 			5 = cr_indian_removal.55
 			15 = cr_indian_removal.56
 			5 = cr_indian_removal.57
+			1 = cr_indian_removal.58
 			5 = cr_indian_removal.60
 		}
 	}
@@ -520,6 +533,10 @@ je_creek_removal = {
 				}
 			}
 		}
+		if = {
+			limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
+			remove_modifier = cr_removal_the_benefit_of_free_enterprise
+		}
 		remove_modifier = cr_creek_removal_cost
 	}
 	
@@ -529,6 +546,10 @@ je_creek_removal = {
 	
 	on_fail = {
 		remove_modifier = cr_creek_removal_cost
+		if = {
+			limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
+			remove_modifier = cr_removal_the_benefit_of_free_enterprise
+		}
 	}
 	
 	invalid = {
@@ -542,6 +563,10 @@ je_creek_removal = {
 	on_invalid = {
 		hidden_effect = {
 			remove_modifier = cr_creek_removal_cost
+			if = {
+				limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
+				remove_modifier = cr_removal_the_benefit_of_free_enterprise
+			}
 		}
 	}
 	
@@ -560,12 +585,13 @@ je_cherokee_removal = {
 	on_monthly_pulse = {
 		random_events = {
 			10 = 0
-			40 = cr_indian_removal.49
+			60 = cr_indian_removal.49
 			5 = cr_indian_removal.50
 			10 = cr_indian_removal.51
 			5 = cr_indian_removal.55
 			15 = cr_indian_removal.56
 			5 = cr_indian_removal.57
+			1 = cr_indian_removal.58
 			5 = cr_indian_removal.60
 		}
 	}
@@ -784,6 +810,10 @@ je_cherokee_removal = {
 				}
 			}
 		}
+		if = {
+			limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
+			remove_modifier = cr_removal_the_benefit_of_free_enterprise
+		}
 		remove_modifier = cr_cherokee_removal_cost
 	}
 	
@@ -793,6 +823,10 @@ je_cherokee_removal = {
 	
 	on_fail = {
 		remove_modifier = cr_cherokee_removal_cost
+		if = {
+			limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
+			remove_modifier = cr_removal_the_benefit_of_free_enterprise
+		}
 	}
 	
 	invalid = {
@@ -806,6 +840,10 @@ je_cherokee_removal = {
 	on_invalid = {
 		hidden_effect = {
 			remove_modifier = cr_cherokee_removal_cost
+			if = {
+				limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
+				remove_modifier = cr_removal_the_benefit_of_free_enterprise
+			}
 		}
 	}
 	
@@ -830,6 +868,7 @@ je_seminole_removal = {
 			5 = cr_indian_removal.55
 			15 = cr_indian_removal.56
 			5 = cr_indian_removal.57
+			1 = cr_indian_removal.58
 			5 = cr_indian_removal.60
 		}
 	}
@@ -959,6 +998,10 @@ je_seminole_removal = {
 				}
 			}
 		}
+		if = {
+			limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
+			remove_modifier = cr_removal_the_benefit_of_free_enterprise
+		}
 		s:STATE_FLORIDA.region_state:USA = {
 			remove_modifier = seminole_war_mod
 		}
@@ -971,6 +1014,10 @@ je_seminole_removal = {
 	on_fail = {
 		s:STATE_FLORIDA.region_state:USA = {
 			remove_modifier = seminole_war_mod
+		}
+		if = {
+			limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
+			remove_modifier = cr_removal_the_benefit_of_free_enterprise
 		}
 	}
 	
@@ -987,6 +1034,10 @@ je_seminole_removal = {
 		hidden_effect = {
 			s:STATE_FLORIDA.region_state:USA = {
 				remove_modifier = seminole_war_mod
+			}
+			if = {
+				limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
+				remove_modifier = cr_removal_the_benefit_of_free_enterprise
 			}
 		}
 	}

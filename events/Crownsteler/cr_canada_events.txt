@@ -2771,8 +2771,8 @@ cr_canadian_indian_treaties.50 = { #The Man on the River
 			has_global_variable = cr_north_american_fur_trade_has_ended
 		}
 		OR = {
-			c:ENG = ROOT
-			c:GBR = ROOT
+			AND = { exists = c:GBR c:GBR = ROOT }
+			AND = { exists = c:ENG c:ENG = ROOT }
 		}
 		any_scope_state = {
 			OR = {

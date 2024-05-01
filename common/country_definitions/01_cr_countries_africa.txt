@@ -36,7 +36,7 @@ ONL = { #Ouled Naïl
 	tier = principality
 	
 	cultures = { maghrebi }
-	capital = STATE_ALGIERS
+	capital = STATE_LAGHOUAT
 
 }
 

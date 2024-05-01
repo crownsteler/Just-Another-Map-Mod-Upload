@@ -1,0 +1,663 @@
+﻿namespace = expedition_events
+
+expedition_events.300 = { #Successful expedition - Buenaventura River
+	type = country_event
+    placement = ROOT
+
+    title = expedition_events.300.t
+    desc = expedition_events.300.d
+    flavor = expedition_events.300.f
+
+    event_image = {
+		video = "europenorthamerica_gold_prospectors"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+    duration = 3
+
+	immediate = {
+		west_america_expedition_location = yes
+		remove_variable = on_expedition
+		remove_expedition_events_effect = yes
+		set_global_variable = buenaventura_river_disproven
+		random_scope_character = {
+			limit = {
+				has_variable = expedition_leader_var 
+			}
+			save_scope_as = expedition_leader
+		}
+	}
+
+	option = {
+		name = expedition_events.300.a
+		default_option = yes
+		scope:expedition_leader = {
+			set_character_busy_and_immortal = no
+			add_trait = explorer
+		}
+		add_modifier = {
+			name = modifier_buenaventura_river_disproven
+			months = normal_modifier_time
+		}
+	}
+}
+
+expedition_events.301 = { #Successful expedition - Oregon Trail
+	type = country_event
+    placement = ROOT
+
+    title = expedition_events.301.t
+    desc = expedition_events.301.d
+    flavor = expedition_events.301.f
+
+    event_image = {
+		video = "europenorthamerica_gold_prospectors"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+    duration = 3
+
+	immediate = {
+		west_america_expedition_location = yes
+		remove_variable = on_expedition
+		remove_expedition_events_effect = yes
+		set_global_variable = oregon_trail_mapped
+		random_scope_character = {
+			limit = {
+				has_variable = expedition_leader_var 
+			}
+			save_scope_as = expedition_leader
+		}
+	}
+
+	option = {
+		name = expedition_events.301.a
+		default_option = yes
+		scope:expedition_leader = {
+			set_character_busy_and_immortal = no
+			add_trait = explorer
+		}
+		custom_tooltip = {
+			text = expedition_events.301.a_tt
+			s:STATE_IDAHO = {
+				if = {
+					limit = {
+						p:x06E885.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x06E885
+						}
+					}
+				}
+			}
+			s:STATE_WYOMING = {
+				if = {
+					limit = {
+						p:x2403EF.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x2403EF
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xE387E7.owner = { is_country_type = decentralized }
+						p:x93B583.owner = { is_country_type = recognized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xE387E7
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:x5F141F.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x5F141F
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:x5B70BB.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x5B70BB
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xF3326F.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xF3326F
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:x90C080.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x90C080
+						}
+					}
+				}
+			}
+			s:STATE_NEBRASKA = {
+				if = {
+					limit = {
+						p:x0F6ED8.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x0F6ED8
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xC547CE.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xC547CE
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xABDA2C.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xABDA2C
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xD08040.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xD08040
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:x46C0C9.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x46C0C9
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xF7CF1A.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xF7CF1A
+						}
+					}
+				}
+			}
+		}
+		add_modifier = {
+			name = modifier_oregon_trail_mapped
+			months = normal_modifier_time
+		}
+	}
+}
+
+expedition_events.302 = { #Successful expedition - Great Salt Lake
+	type = country_event
+    placement = ROOT
+
+    title = expedition_events.302.t
+    desc = expedition_events.302.d
+    flavor = expedition_events.302.f
+
+    event_image = {
+		video = "europenorthamerica_gold_prospectors"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+    duration = 3
+
+	immediate = {
+		west_america_expedition_location = yes
+		remove_variable = on_expedition
+		remove_expedition_events_effect = yes
+		set_global_variable = great_salt_lake_mapped
+		set_global_variable = cr_road_to_california_is_open
+		random_scope_character = {
+			limit = {
+				has_variable = expedition_leader_var 
+			}
+			save_scope_as = expedition_leader
+		}
+	}
+
+	option = {
+		name = expedition_events.302.a
+		default_option = yes
+		scope:expedition_leader = {
+			set_character_busy = no
+			add_trait = explorer
+		}
+		custom_tooltip = {
+			text = expedition_events.302.a_tt
+			s:STATE_WYOMING = {
+				if = {
+					limit = {
+						p:x93B583.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x93B583
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:x5B70BB.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x5B70BB
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xF3326F.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xF3326F
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:x90C080.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x90C080
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:x465DC8.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x465DC8
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xE387E7.owner = { is_country_type = decentralized }
+						p:x2403EF.owner = { NOT = { is_country_type = decentralized } }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xE387E7
+						}
+					}
+				}
+			}
+			s:STATE_NEBRASKA = {
+				if = {
+					limit = {
+						p:x0F6ED8.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x0F6ED8
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xC547CE.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xC547CE
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xABDA2C.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xABDA2C
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xD08040.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xD08040
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:x46C0C9.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x46C0C9
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xF7CF1A.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xF7CF1A
+						}
+					}
+				}
+			}
+			s:STATE_UTAH = {
+				if = {
+					limit = {
+						p:xA9B917.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xA9B917
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xA7E6DC.owner = { is_country_type = decentralized }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xA7E6DC
+						}
+					}
+				}
+				if = {
+					limit = {
+						p:xF3B4BA.owner = { is_country_type = decentralized }
+						p:xA7E6DC.owner = { NOT = { is_country_type = decentralized } }
+					}
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xF3B4BA
+						}
+					}
+				}
+			}
+		}
+		add_modifier = {
+			name = modifier_great_salt_lake_mapped
+			months = normal_modifier_time
+		}
+	}
+}
+
+expedition_events.303 = { #Successful expedition - California Trail
+	type = country_event
+    placement = ROOT
+
+    title = expedition_events.303.t
+    desc = expedition_events.303.d
+    flavor = expedition_events.303.f
+
+    event_image = {
+		video = "europenorthamerica_gold_prospectors"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+    duration = 3
+
+	immediate = {
+		west_america_expedition_location = yes
+		remove_variable = on_expedition
+		remove_expedition_events_effect = yes
+		remove_global_variable = cr_road_to_california_is_open
+		set_global_variable = cr_california_trail_mapped
+		random_scope_character = {
+			limit = {
+				has_variable = expedition_leader_var 
+			}
+			save_scope_as = expedition_leader
+		}
+	}
+
+	option = {
+		name = expedition_events.403.a
+		default_option = yes
+		scope:expedition_leader = {
+			set_character_busy = no
+			add_trait = explorer
+		}
+		custom_tooltip = { #Surely there is a better way of doing this
+			text = expedition_events.403.a_tt
+			###Utah
+			if = {
+				limit = {
+					p:x9888F6.owner = { is_country_type = decentralized }
+				}
+				s:STATE_UTAH = {
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x9888F6
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					p:xD4D9A8.owner = { is_country_type = decentralized }
+				}
+				s:STATE_UTAH = {
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xD4D9A8
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					p:xF480A1.owner = { is_country_type = decentralized }
+				}
+				s:STATE_UTAH = {
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xF480A1
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						p:xF3B4BA.owner = { is_country_type = decentralized }
+						p:xA7E6DC.owner = { NOT = { is_country_type = decentralized } }
+					}
+				}
+				s:STATE_UTAH = {
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xF3B4BA
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						p:x5708EE.owner = { is_country_type = decentralized }
+					}
+				}
+				s:STATE_UTAH = {
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x5708EE
+						}
+					}
+				}
+			}
+			
+			####Nevada
+			if = {
+				limit = {
+					AND = {
+						p:xA8DB62.owner = { is_country_type = decentralized }
+					}
+				}
+				s:STATE_NEVADA = {
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xA8DB62
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						p:x9FF17F.owner = { is_country_type = decentralized }
+					}
+				}
+				s:STATE_NEVADA = {
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x9FF17F
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						p:xBB8631.owner = { is_country_type = decentralized }
+					}
+				}
+				s:STATE_NEVADA = {
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xBB8631
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						p:x455838.owner = { is_country_type = decentralized }
+					}
+				}
+				s:STATE_NEVADA = {
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							x455838
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						p:xEF5007.owner = { is_country_type = decentralized }
+					}
+				}
+				s:STATE_NEVADA = {
+					set_owner_of_provinces = {
+						country = ROOT
+						provinces = {
+							xEF5007
+						}
+					}
+				}
+			}
+		}
+		#add_modifier = {
+		#	name = modifier_great_salt_lake_mapped
+		#	months = normal_modifier_time
+		#}
+	}
+}

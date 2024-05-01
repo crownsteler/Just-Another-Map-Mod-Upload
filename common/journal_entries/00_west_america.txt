@@ -78,7 +78,7 @@
 				trigger = { NOT = { has_global_variable = buenaventura_river_disproven } }
 				trigger_event = { id = expedition_events.300 }
 			}
-			80 = {
+			40 = {
 				trigger = { NOT = { has_global_variable = oregon_trail_mapped } }
 				trigger_event = { id = expedition_events.301 }
 			}

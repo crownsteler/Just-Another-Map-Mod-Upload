@@ -495,7 +495,7 @@
  SAY:0 "Say"
  SAY_ADJ:0 "Sayan"
  SPI:0 "Southern Paiute"
- SPI:0 "South Paiutan"
+ SPI_ADJ:0 "South Paiutan"
  SRN:0 "Serrano"
  SRN_ADJ:0 "Serrano"
  SST:0 "Sistan"

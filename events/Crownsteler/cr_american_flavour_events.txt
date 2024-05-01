@@ -6,7 +6,23 @@ cr_american_events.1 = { #The National Rifle Association
 	placement = ROOT
 
 	title = cr_american_events.1.t
-	desc = cr_american_events.1.desc_lost
+	desc = { 
+		random_valid = {
+			triggered_desc = {
+				desc = cr_american_events.1.desc_lost
+				trigger = {
+					has_variable = recently_lost_war
+				}
+			}
+			triggered_desc = {
+				desc = cr_american_events.1.desc_won
+				trigger = {
+					has_variable = recently_won_war
+				}
+			}
+		}
+		
+	}
 	flavor = cr_american_events.1.f
 
 
@@ -58,6 +74,12 @@ cr_american_events.1 = { #The National Rifle Association
 			}
 			save_scope_as = nra_founding_state
 		}
+		random_country = {
+			limit = {
+				has_truce_with = ROOT
+			}
+			save_scope_as = recent_opponent_scope
+		}
 	}
 
 	option = {
@@ -79,7 +101,30 @@ cr_american_events.1 = { #The National Rifle Association
 			add_cultural_obsession = small_arms
 		}
 		ai_chance = {
-			base = 85
+			base = 50
+		}
+	}
+
+	option = {
+		name = cr_american_events.1.b
+		default_option = yes
+		ig:ig_armed_forces = {
+			#custom_tooltip = {
+			#	text = cr_american_events.1.a_tt
+			#	set_interest_group_name = ig_national_rifle_association
+			#}
+			add_modifier = {
+				name = cr_national_rifle_associations_ig
+			}
+		}
+		cu:dixie = {
+			add_cultural_obsession = small_arms
+		}
+		cu:yankee = {
+			add_cultural_obsession = small_arms
+		}
+		ai_chance = {
+			base = 50
 		}
 	}
 }

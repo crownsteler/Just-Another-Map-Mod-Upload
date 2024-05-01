@@ -34,6 +34,12 @@ cr_failed_lobby_normal = {
 cr_the_nra_ig = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	interest_group_pop_attraction_mult = 0.10
+	interest_group_pol_str_mult = 0.5
+}
+
+cr_national_rifle_associations_ig = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	interest_group_pop_attraction_mult = 0.5
 	interest_group_pol_str_mult = 0.10
 }
 
@@ -57,6 +63,11 @@ cr_desamortizacion_denied_ig_devout = {
 
 cr_desamortizacion_denied_ig_liberals = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-		interest_group_pop_attraction_mult = -0.05
+	interest_group_pop_attraction_mult = -0.05
 	interest_group_approval_add = -2
+}
+
+cr_removal_the_benefit_of_free_enterprise_denied = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	interest_group_approval_add = -1
 }

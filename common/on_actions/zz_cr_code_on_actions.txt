@@ -7,9 +7,10 @@ on_monthly_pulse_country = {
 
 cr_on_monthly_pulse_country = {
 	random_events = {
-		24 = 0
+		40 = 0
 		1 = cr_europe_events.5
-		1 = cr_canadian_indian_treaties.50	
+		8 = cr_canadian_indian_treaties.50	
+		2 = cr_american_events.1
 	}
 }
 

@@ -7,7 +7,6 @@
 		add_declared_interest = region_france
 		add_declared_interest = region_low_countries
 		add_declared_interest = region_iberia
-		add_declared_interest = region_caribbean
 	}
 	c:GBR = {
 		add_declared_interest = region_baltic
@@ -47,7 +46,6 @@
 		add_declared_interest = region_south_germany	
 	}		
 	c:TUR = {	
-		add_declared_interest = region_levant
 		add_declared_interest = region_dnieper
 		add_declared_interest = region_nile_basin
 		add_declared_interest = region_red_sea_region
@@ -68,7 +66,6 @@
 		add_declared_interest = region_anatolia
 		add_declared_interest = region_manchuria
 		add_declared_interest = region_japan
-		add_declared_interest = region_rhine
 		add_declared_interest = region_low_countries
 		add_declared_interest = region_iberia
 	}
@@ -84,7 +81,6 @@
 		add_declared_interest = region_north_africa
 		add_declared_interest = region_ethiopia
 		add_declared_interest = region_iraq
-		add_declared_interest = region_arabic
 		add_declared_interest = region_the_persian_gulf
 		add_declared_interest = region_zanj
 	}		
@@ -172,7 +168,6 @@
 		add_declared_interest = region_japan
 	}
 	c:PRU = {
-		add_declared_interest = region_south_germany
 		add_declared_interest = region_france
 		add_declared_interest = region_low_countries
 		add_declared_interest = region_scandinavia

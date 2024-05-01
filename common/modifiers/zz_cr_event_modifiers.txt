@@ -200,9 +200,14 @@ cr_indian_removal_sorting_out_choctaw_land_claims = {
 	country_bureaucracy_mult = -0.05
 }
 
+cr_indian_removal_compromised_bureaucracy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_legitimacy_base_add = -5
+}
+
 cr_choctaw_scrip = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_expenses_add = 1000
+	country_expenses_add = 1500
 }
 
 cr_treaty_of_doaksville = {
@@ -212,17 +217,22 @@ cr_treaty_of_doaksville = {
 
 cr_cherokee_removal_cost = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_expenses_add = 1500
+	country_expenses_add = 2500
 }
 
 cr_creek_removal_cost = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_expenses_add = 1000
+	country_expenses_add = 2000
 }
 
 cr_chickasaw_removal_cost = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_expenses_add = 500
+	country_expenses_add = 1000
+}
+
+cr_removal_the_benefit_of_free_enterprise = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_expenses_add = 1500
 }
 
 cr_colonising_alaska_modifier_rus = {
