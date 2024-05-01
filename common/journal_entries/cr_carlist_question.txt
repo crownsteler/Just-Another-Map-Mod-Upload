@@ -12,7 +12,7 @@
 		}
 	}
 	immediate = {
-		s:STATE_NAVARRA.state_region:CSP = {
+		s:STATE_NAVARRA.region_state:CSP = {
 			save_scope_as = cr_state_navarra
 		}
 		c:SPA = {
@@ -67,7 +67,7 @@ je_cr_carlist_war_christinos = {
 		}	
 	}
 	immediate = {
-		s:STATE_NAVARRA.state_region:CSP = {
+		s:STATE_NAVARRA.region_state:CSP = {
 			save_scope_as = cr_state_navarra
 		}
 		c:SPA = {

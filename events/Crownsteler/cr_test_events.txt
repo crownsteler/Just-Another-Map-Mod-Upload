@@ -1,0 +1,280 @@
+﻿namespace = cr_test_events
+
+cr_test_events.1 = { #Lake Superior Copper Rush
+	type = country_event
+	placement = p:xD6A835
+
+	title = cr_test_events.1.t
+	desc = cr_test_events.1.d
+
+	flavor = cr_test_events.1.f
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/construction_colony"
+
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+
+	event_image = {
+		video = "africa_construction_colony"
+	}
+	
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cr_test_events.1.a
+		random_state = {
+			limit = {
+				state_region = s:STATE_MICHIGAN
+			}
+			force_resource_discovery = bg_copper_mining
+		}
+	}
+
+	option = {
+		name = cr_test_events.1.b
+		random_state = {
+			limit = {
+				state_region = s:STATE_ONTARIO
+			}
+			force_resource_discovery = bg_copper_mining
+		}
+		
+		default_option = yes
+		ai_chance = {
+			base = 99
+		}
+	}
+}
+
+cr_test_events.2 = { #An Incomplete Reconciliation
+	type = country_event
+	placement = p:xD6A835
+
+	title = cr_test_events.1.t
+	desc = cr_test_events.1.d
+
+	flavor = cr_test_events.1.f
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/construction_colony"
+
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+
+	event_image = {
+		video = "africa_construction_colony"
+	}
+	
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cr_test_events.2.a
+		s:STATE_OKLAHOMA = {
+			set_owner_of_provinces = {
+				country = c:CHE
+				provinces = {
+					x269541 x7A707B xA07F85 x9A9935 x5F2DBA x8BDF6D x94D9C2
+				}
+			}
+		}
+		c:CHE = {
+			every_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_ALABAMA
+						state_region = s:STATE_TENNESSEE
+						state_region = s:STATE_NORTH_CAROLINA
+						state_region = s:STATE_GEORGIA
+						state_region = s:STATE_MISSISSIPPI
+					}
+				}
+				set_state_owner = c:USA
+			}
+			set_capital = STATE_OKLAHOMA
+		}
+	}
+
+	option = {
+		name = cr_test_events.2.b
+		s:STATE_OKLAHOMA = {
+			set_owner_of_provinces = {
+				country = c:CSW
+				provinces = {
+					x32D681 xBFD5C4 x4BE9C6
+				}
+			}
+		}	
+		c:CSW = {
+			every_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_ALABAMA
+						state_region = s:STATE_TENNESSEE
+						state_region = s:STATE_NORTH_CAROLINA
+						state_region = s:STATE_GEORGIA
+						state_region = s:STATE_MISSISSIPPI
+					}
+				}
+				set_state_owner = c:USA
+			}
+			set_capital = STATE_OKLAHOMA
+		}
+	}
+
+	option = {
+		name = cr_test_events.2.c
+		s:STATE_OKLAHOMA = {
+			set_owner_of_provinces = {
+				country = c:MSC
+				provinces = {
+					x286941 xD6ADF2 xE1CC08
+				}
+			}
+		}
+		c:MSC = {
+			every_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_ALABAMA
+						state_region = s:STATE_TENNESSEE
+						state_region = s:STATE_NORTH_CAROLINA
+						state_region = s:STATE_GEORGIA
+						state_region = s:STATE_MISSISSIPPI
+					}
+				}
+				set_state_owner = c:USA
+			}
+			set_capital = STATE_OKLAHOMA
+		}
+	}
+
+	option = {
+		name = cr_test_events.2.d
+		s:STATE_OKLAHOMA = {
+			set_owner_of_provinces = {
+				country = c:SMN
+				provinces = {
+					xE0ACB6
+				}
+			}
+		}
+		c:SMN = {
+			every_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_ALABAMA
+						state_region = s:STATE_TENNESSEE
+						state_region = s:STATE_NORTH_CAROLINA
+						state_region = s:STATE_GEORGIA
+						state_region = s:STATE_MISSISSIPPI
+					}
+				}
+				set_state_owner = c:USA
+			}
+			set_capital = STATE_OKLAHOMA
+		}
+	}
+
+	option = {
+		name = cr_test_events.2.e
+		s:STATE_OKLAHOMA = {
+			set_owner_of_provinces = {
+				country = c:CTW
+				provinces = {
+					xC03040 xEF15A7 x32D681 xF6681C xAE0966 x8CD89B x47C329 x49BF7D x158786
+				}
+			}
+		}
+		c:CTW = {
+			every_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_ALABAMA
+						state_region = s:STATE_TENNESSEE
+						state_region = s:STATE_NORTH_CAROLINA
+						state_region = s:STATE_GEORGIA
+						state_region = s:STATE_MISSISSIPPI
+					}
+				}
+				set_state_owner = c:USA
+			}
+			set_capital = STATE_OKLAHOMA
+		}
+	}
+}
+
+
+cr_test_events.3 = { #New Northern Neighbours
+	type = country_event
+	placement = p:xD6A835
+
+	title = cr_test_events.1.t
+	desc = cr_test_events.1.d
+
+	flavor = cr_test_events.1.f
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/construction_colony"
+
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+
+	event_image = {
+		video = "africa_construction_colony"
+	}
+	
+	duration = 3
+
+	trigger = {
+	}
+	
+	hidden = yes
+
+	immediate = {
+		#c:USA = {
+		#	if = {
+		#		limit = {
+		#			c:MEX = {
+		#				any_scope_state = {
+		#					state_region = s:STATE_TEXAS
+		#				}
+		#				NOT = { has_variable = cr_indian_removal_new_northern_neighbours }
+		#			}
+		#		}
+		#		c:MEX = {
+		#			save_scope_as = cr_texas_owner
+		#		}
+		#	}
+		#	else_if = {
+		#		limit = {
+		#			c:TEX = {
+		#				is_country_alive = yes
+		#				NOT = { has_variable = cr_indian_removal_new_northern_neighbours }
+		#			}
+		#		}
+		#		c:TEX = {
+		#			save_scope_as = cr_texas_owner
+		#		}
+		#	}
+		#	100 = {
+		#		scope:cr_texas_owner = {
+		#			trigger_event = {
+		#				id = cr_indian_removal.65
+		#			}
+		#		}
+		#	}
+		#}
+		p:x973B1C.owner = {
+			trigger_event = {
+				id = cr_indian_removal.65
+			}
+		}
+	}
+}

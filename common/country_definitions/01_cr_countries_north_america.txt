@@ -93,17 +93,6 @@ GVT = {
 	capital = STATE_MONTANA
 }
 
-HKI = {
-	color = { 126 161 81 }
-	
-	country_type = decentralized
-	
-	tier = principality
-	
-	cultures = { hokan }
-	capital = STATE_CALIFORNIA
-}
-
 INU = {
 	color = { 160 221 206 }
 	
@@ -223,6 +212,69 @@ YOK = {
 	
 	capital = STATE_CALIFORNIA
 	cultures = { nez_perce }
+}
+
+####adapted from Meriadors work/for Hail Columbia
+
+HOK = {
+	color = { 55 54 113 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	capital = STATE_CALIFORNIA
+	cultures = { hokan }
+}
+
+SHP = {
+	color = { 133 182 231 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	capital = STATE_OREGON
+	cultures = { salish }
+}
+
+SPI = {
+	color = { 255 206 0 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	capital = STATE_NEVADA
+	cultures = { paiute }
+}
+
+SRN = {
+	color = { 133 94 56 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	capital = STATE_CALIFORNIA
+	cultures = { hokan }
+}
+
+#####################
+#					#
+#		Canada		#
+#					#
+#####################
+
+PEI = {
+	color = { 125 180 200 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	capital = STATE_NEW_BRUNSWICK
+	cultures = { anglo_canadian }
 }
 
 #####################

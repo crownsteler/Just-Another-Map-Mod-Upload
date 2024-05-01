@@ -1,32 +1,37 @@
-﻿je_cr_indian_removal_button_a_choctaw = {
-	name = "je_cr_indian_removal_button_a_choctaw"
-	desc = "je_cr_indian_removal_button_a_choctaw_desc"
-
-	visible = { 
-		NOT = {
-			has_variable = cr_choctaw_removal_complete
-		}
-	}
-
-	ai_chance = {
-		base = 50
-	}
-	
-	possible = {
-		c:CTW = {
-			is_subject_of = ROOT
-		}
-		custom_tooltip = {
-			text = je_cr_indian_removal_button_a_choctaw_finished
-			NOT = {
-				has_variable = cr_choctaw_removal_complete
-			}
-		}
-	}
-
-	effect = {
-	}
-}
+﻿#je_cr_indian_removal_button_a_choctaw = {
+#	name = "je_cr_indian_removal_button_a_choctaw"
+#	desc = "je_cr_indian_removal_button_a_choctaw_desc"
+#
+#	visible = { 
+#		NOT = {
+#			has_variable = cr_choctaw_removal_complete
+#		}
+#		c:CTW = {
+#			any_scope_state = {
+#				state_region = s:STATE_MISSISSIPPI
+#			}
+#		}
+#	}
+#
+#	ai_chance = {
+#		base = 50
+#	}
+#	
+#	possible = {
+#		c:CTW = {
+#			is_subject_of = ROOT
+#		}
+#		custom_tooltip = {
+#			text = je_cr_indian_removal_button_a_choctaw_finished
+#			NOT = {
+#				has_variable = cr_choctaw_removal_complete
+#			}
+#		}
+#	}
+#
+#	effect = {
+#	}
+#}
 
 je_cr_indian_removal_button_b_chickasaw = {
 	name = "je_cr_indian_removal_button_b_chickasaw"
@@ -38,6 +43,11 @@ je_cr_indian_removal_button_b_chickasaw = {
 		}
 		NOT = {
 			has_journal_entry = je_chickasaw_removal
+		}
+		c:CSW = {
+			any_scope_state = {
+				state_region = s:STATE_MISSISSIPPI
+			}
 		}
 	}
 
@@ -55,7 +65,7 @@ je_cr_indian_removal_button_b_chickasaw = {
 			}
 			custom_tooltip = {
 				text = je_cr_indian_removal_button_b_chickasaw_tt
-				has_variable = cr_treaty_of_doaksville
+				always = no #Treaty of Doaksville triggers removal on its own
 			}
 		#	custom_tooltip = {
 		#		text = je_cr_indian_removal_button_d_cherokee_violate_treaty
@@ -67,20 +77,20 @@ je_cr_indian_removal_button_b_chickasaw = {
 		}
 		custom_tooltip = {
 			text = je_cr_indian_removal_button_b_chickasaw_tt_b
-			NOT = { has_variable = cr_chickasaw_removal_has_started }
+			NOT = { has_journal_entry = je_chickasaw_removal }
+		}
+		NOT = {
+			is_enacting_law = law_type:law_no_colonial_affairs
 		}
 	}
 
 	effect = {
 		add_journal_entry = { type = je_chickasaw_removal }
-		hidden_effect = {
-			set_variable = cr_chickasaw_removal_has_started
-		}
 		#if = {
 		#	limit = {
 		#		NOR = { 
 		#			has_variable = cr_roanoke_massacre_has_happened 
-		#			has_variable = cr_creek_removal_has_started
+		#			has_journal_entry = je_chickasaw_removal
 		#		}
 		#	}
 		#	custom_tooltip = je_cr_indian_removal_button_violate_treaty_button_tt
@@ -107,6 +117,11 @@ je_cr_indian_removal_button_c_creek = {
 		}
 		NOT = {
 			has_journal_entry = je_creek_removal
+		}
+		c:MSC = {
+			any_scope_state = {
+				state_region = s:STATE_ALABAMA
+			}
 		}
 	}
 	
@@ -140,20 +155,14 @@ je_cr_indian_removal_button_c_creek = {
 		}
 		custom_tooltip = {
 			text = je_cr_indian_removal_button_b_creek_tt_b
-			NOT = { has_variable = cr_creek_removal_has_started }
+			NOT = { has_journal_entry = je_creek_removal }
 		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = je_cr_indian_removal_button_c_creek
-			set_variable = cr_creek_removal_has_started
-			if = {
-				limit = {
-					NOT = { has_journal_entry = je_creek_removal }
-				}
-				add_journal_entry = { type = je_creek_removal }
-			}
+			add_journal_entry = { type = je_creek_removal }
 			s:STATE_OKLAHOMA = {
 				set_owner_of_provinces = {
 					country = c:MSC
@@ -163,12 +172,6 @@ je_cr_indian_removal_button_c_creek = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				has_truce_with = c:MSC
-			}
-			trigger_event = cr_indian_removal.7
-		}
 		add_modifier = {
 			name = cr_creek_removal_cost
 		}
@@ -176,7 +179,7 @@ je_cr_indian_removal_button_c_creek = {
 		#	limit = {
 		#		NOR = { 
 		#			has_variable = cr_roanoke_massacre_has_happened 
-		#			has_variable = cr_creek_removal_has_started
+		#			has_journal_entry = je_chickasaw_removal
 		#		}
 		#	}
 		#	custom_tooltip = je_cr_indian_removal_button_violate_treaty_button_tt
@@ -200,6 +203,11 @@ je_cr_indian_removal_button_d_cherokee_treaty = {
 			has_variable = cr_cherokee_removal_treaty_var 
 			has_variable = cr_cherokee_removal_complete 
 		} 
+		c:CHE = {
+			any_scope_state = {
+				state_region = s:STATE_GEORGIA
+			}
+		}
 	}
 
 	ai_chance = {
@@ -212,12 +220,15 @@ je_cr_indian_removal_button_d_cherokee_treaty = {
 		}
 		custom_tooltip = {
 			text = je_cr_indian_removal_button_d_cherokee_treaty_tt
-			NOT = { has_variable = cr_cherokee_removal_treaty_var }
+			NOT = { has_variable = cr_treaty_of_new_echota_negotiations_ongoing }
 		}
 		c:CHE = {
 			relations:ROOT >= 50
 		}
-		NOT = { has_journal_entry = je_cherokee_removal }		
+		custom_tooltip = {
+			text = je_cr_indian_removal_button_d_e_cherokee_tt_journey_west
+			NOT = { has_journal_entry = je_cherokee_removal }
+		}	
 	}
 
 	effect = {
@@ -256,6 +267,11 @@ je_cr_indian_removal_button_d_cherokee = {
 			has_variable = cr_cherokee_removal_treaty_var
 			has_variable = treaty_of_new_echota_passed
 		}
+		c:CHE = {
+			any_scope_state = {
+				state_region = s:STATE_GEORGIA
+			}
+		}
 	}
 
 	ai_chance = {
@@ -290,7 +306,10 @@ je_cr_indian_removal_button_d_cherokee = {
 		#		}
 		#	}
 		#}
-		NOT = { has_journal_entry = je_cherokee_removal }
+		custom_tooltip = {
+			text = je_cr_indian_removal_button_d_e_cherokee_tt_journey_west
+			NOT = { has_journal_entry = je_cherokee_removal }
+		}
 		NOT = {
 			has_war_with = c:CHE
 		}
@@ -328,7 +347,7 @@ je_cr_indian_removal_button_d_cherokee = {
 
 je_cr_indian_removal_button_e_seminole = {
 	name = "je_cr_indian_removal_button_e_seminole"
-	desc = "je_cr_indian_removal_button_seminole_desc"
+	desc = "je_cr_indian_removal_button_e_seminole_desc"
 
 	visible = { 
 		NOT = {
@@ -341,20 +360,31 @@ je_cr_indian_removal_button_e_seminole = {
 	}
 	
 	possible = {
-		#scope:state_of_florida = {
-		#	NOT = {
-		#		has_modifier = seminole_war_mod
-		#	}
-		#}
+		OR = {
+			scope:state_of_florida = {
+				custom_tooltip = {
+					text = je_cr_indian_removal_tt_seminole_war_ended
+					NOR = {
+						has_modifier = seminole_war_mod
+						has_modifier = seminole_war_mod_1
+						has_modifier = seminole_war_mod_2
+						has_modifier = seminole_war_mod_3
+					}
+				}
+			}
+			c:SMN = {
+				relations:ROOT >= 50
+			}
+		}
 		OR = {
 			c:SMN = {
 				is_subject_of = ROOT
 			}
 			owns_entire_state_region = STATE_FLORIDA
 		}
-		NOT = {
-			has_war_with = c:SMN
-		}
+		#NOT = {
+		#	has_war_with = c:SMN
+		#}
 		custom_tooltip = {
 			text = cr_seminole_removal_has_started_tt
 			NOT = {
@@ -368,7 +398,7 @@ je_cr_indian_removal_button_e_seminole = {
 			limit = {
 				has_truce_with = c:SMN
 			}
-			trigger_event = cr_indian_removal.20 
+			trigger_event = cr_indian_removal.29 
 		}
 		else = {
 			add_journal_entry = { type = je_seminole_removal }

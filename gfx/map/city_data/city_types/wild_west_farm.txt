@@ -22,7 +22,7 @@
 				region = sr:region_great_plains
 				region = sr:region_the_midwest
 				region = sr:region_dixie
-				region = sr:region_new_mexico
+				region = sr:region_california
 			}
 		}
 	}
@@ -87,6 +87,9 @@
 		"european_province_farm_02_mesh"
 	}
 	building_livestock_ranch = {
+		"european_rural_ranch_01_mesh"
+	}
+	building_kashmir_ranch = {
 		"european_rural_ranch_01_mesh"
 	}
 	

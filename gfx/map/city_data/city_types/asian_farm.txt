@@ -55,6 +55,9 @@
 	building_millet_farm = {
 		"asian_farm_farmstead_01_mesh"
 	}
+	building_kashmir_ranch = {
+		"asian_rural_ranch_01_mesh"
+	}
 	building_livestock_ranch = {
 		"asian_rural_ranch_01_mesh"
 	}

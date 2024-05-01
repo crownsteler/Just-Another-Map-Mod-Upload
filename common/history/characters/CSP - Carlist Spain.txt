@@ -1,17 +1,7 @@
 ﻿CHARACTERS = {
 	c:CSP = {
 		create_character = {
-			first_name = Carlos
-			last_name = de_Borbon
-			historical = yes
-			ruler = yes
-			birth_date = 1788.3.29
-			culture = cu:spanish
-			interest_group = ig_landowners
-			ideology = ideology_traditionalist
-			traits = {
-                ambitious
-			}
+			template = ecchi_spa_infante_carlos_character_template
 		}	
 		create_character = {
 			first_name = carlos_luis

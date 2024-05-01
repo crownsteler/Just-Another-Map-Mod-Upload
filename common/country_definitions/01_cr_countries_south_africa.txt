@@ -193,3 +193,35 @@ KLG = {
 	cultures = { shona }
 	capital = STATE_BOTSWANA
 }
+
+
+SWZ= {
+	color = { 255 191 0 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { nguni }
+	capital = STATE_TRANSVAAL
+}
+XHO= {
+	color = { 113 106 156 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { xhosa }
+	capital = STATE_EASTERN_CAPE
+}
+RZW= {
+	color = { 153 25 0 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { shona nguni }
+	capital = STATE_ZAMBEZI
+}

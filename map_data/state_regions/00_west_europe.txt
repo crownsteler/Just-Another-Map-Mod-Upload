@@ -72,9 +72,12 @@ STATE_NORRLAND = {
     arable_land = 22
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 74
         bg_logging = 40
         bg_fishing = 12
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 74
     }
     naval_exit_id = 3000
 }
@@ -151,7 +154,6 @@ STATE_WESTERN_NORWAY = {
 
 
 
-
         bg_logging = 21
         bg_fishing = 15
     }
@@ -172,13 +174,17 @@ STATE_NORTHERN_NORWAY = {
     arable_land = 20
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 28
+        #bg_iron_mining = 28
         #bg_copper_mining = 34 #Copper Sulfide?
         bg_logging = 9
         bg_whaling = 10
         bg_fishing = 10
     }
     naval_exit_id = 3020
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 28
+    }
     resource = {
         type = "bg_copper_mining"
         undiscovered_amount = 34
@@ -199,8 +205,6 @@ STATE_EASTERN_NORWAY = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_iron_mining = 18 #Arendalsfeltet
-
-
 
 
 
@@ -285,9 +289,13 @@ STATE_WEST_KARELIA = {
     arable_land = 10
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 18
+        #bg_iron_mining = 18
         bg_logging = 24
         bg_fishing = 2
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 18
     }
     naval_exit_id = 3000
 }
@@ -321,14 +329,20 @@ STATE_OSTROBOTHNIA = {
     arable_land = 20
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 30
+        #bg_iron_mining = 30
         #bg_copper_mining = 40
         bg_logging = 32
         bg_fishing = 10
     }
     resource = {
         type = "bg_copper_mining"
-        undiscovered_amount = 40
+        discovered_amount = 5
+        undiscovered_amount = 35
+    }
+    resource = {
+        type = "bg_iron_mining"
+        discovered_amount = 5
+        undiscovered_amount = 25
     }
     naval_exit_id = 3000
 }
@@ -346,14 +360,13 @@ STATE_HOME_COUNTIES = {
     arable_land = 30
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 40 #Kent Coal Field, discovered 1890
-
-
-
-
-
+        #bg_coal_mining = 40 #Kent Coal Field, discovered 1890
         bg_fishing = 10
         bg_monuments = 1
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 40
     }
     naval_exit_id = 3028
 }
@@ -567,8 +580,6 @@ STATE_MUNSTER = {
 
 
 
-
-
         #bg_minor_metals_mining = 10
         bg_fishing = 12
     }
@@ -588,8 +599,6 @@ STATE_LEINSTER = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 15 #Deerpark Mines, but also includes Ballingarry Coal Mines and Arigna, which are near the border with Leinster, to simplify the map.
-
-
 
 
 
@@ -778,9 +787,14 @@ STATE_ALSACE_LORRAINE = {
     arable_land = 65
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_iron_mining = 115
+        #bg_iron_mining = 115
         bg_coal_mining = 60
         bg_logging = 18
+    }
+    resource = {
+        type = "bg_iron_mining"
+        discovered_amount = 50
+        undiscovered_amount = 65
     }
 }
 
@@ -847,7 +861,7 @@ STATE_BURGUNDY = {
     arable_land = 80
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_iron_mining = 33
+        bg_iron_mining = 16
         bg_logging = 9
     }
 }
@@ -897,8 +911,12 @@ STATE_LORRAINE = {
     arable_land = 55
     arable_resources = { bg_wheat_farms bg_livestock_ranches }
     capped_resources = {
-        bg_iron_mining = 70
+        #bg_iron_mining = 70 #Only explored once Alsace was lost
         bg_logging = 11
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 70
     }
 }
 
@@ -916,7 +934,11 @@ STATE_AUVERGNE_LIMOUSIN = {
         bg_coal_mining = 56
         bg_lead_mining = 45 #Mercury mine
 
+
+
         bg_sulfur_mining = 40 #? I forgot what this is.
+
+
 
         bg_logging = 19
     }
@@ -1027,8 +1049,10 @@ STATE_BRABANT = {
     wood = "xC0C0A0"
     arable_land = 40
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
-    capped_resources = {
-        bg_coal_mining = 35
+    resource = {
+        type = "bg_coal_mining"
+        discovered_amount = 5
+        undiscovered_amount = 30
     }
 }
 
@@ -1046,7 +1070,10 @@ STATE_WALLONIA = {
     capped_resources = {
         bg_coal_mining = 80
         bg_iron_mining = 40
-        #bg_minor_metals_mining = 25
+        bg_lead_mining = 35 #Zinc at Kelmis / Neutral Moresnet
+
+
+
         bg_logging = 14
     }
 }
@@ -1064,8 +1091,11 @@ STATE_FLANDERS = {
     arable_land = 90
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_dye_plantations" }
     capped_resources = {
-        bg_coal_mining = 30
         bg_fishing = 5
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 30
     }
     naval_exit_id = 3028
 }
@@ -1099,7 +1129,6 @@ STATE_AUSTRIA = {
 
 
 
-
         bg_logging = 7
     }
 }
@@ -1121,24 +1150,17 @@ STATE_BOHEMIA = {
 
 
 
-
         bg_iron_mining = 38 #Also small amount of tin
 
 
 
 
-
-        bg_lead_mining = 20 #Lead/zinc
-
+        bg_lead_mining = 20 #Lead/zinc, Ševčiny mine
 
 
 
 
-        bg_sulfur_mining = 18 #Pyrite
-
-
-
-
+        #bg_sulfur_mining = 18 #Pyrite, removed because 4 resources
 
         bg_logging = 16
     }
@@ -1174,8 +1196,7 @@ STATE_STYRIA = {
     capped_resources = {
         #bg_coal_mining = 32 #Lignite
         bg_iron_mining = 45
-        bg_lead_mining = 24 #and magnesium
-
+        bg_lead_mining = 24 #Bleiberg lead/zinc mine, also magnesium
 
 
 
@@ -1222,7 +1243,6 @@ STATE_SOUTH_TYROL = {
 
 
 
-
     }
 }
 
@@ -1260,27 +1280,11 @@ STATE_ELBE = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_fishing = 5
-        bg_sulfur_mining = 28 #Nordhannoverscher Kalibezirk 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #bg_sulfur_mining = 28 #Nordhannoverscher Kalibezirk 
+    }
+    resource = {
+        type = "bg_sulfur_mining"
+        undiscovered_amount = 28
     }
     resource = {
         type = "bg_oil_extraction"
@@ -1300,23 +1304,7 @@ STATE_EAST_SWITZERLAND = {
     arable_land = 50
     arable_resources = { bg_rye_farms bg_livestock_ranches }
     capped_resources = {
-        bg_lead_mining = 18 #Lead/Zinc mines
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        bg_lead_mining = 18 #Lead/Zinc mines at Valais, should be in Alpes state
 
 
 
@@ -1338,24 +1326,7 @@ STATE_WEST_SWITZERLAND = {
     capped_resources = {
         #bg_minor_metals_mining = 16 #nickel
         bg_logging = 8
-        bg_iron_mining = 22 #"The iron ores of Switzerland are of more interest to the historian than to the economist, for most of the deposits are so situated that they can not be exploited economically" -The Iron-Ore Resources of Europe 1921
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        bg_iron_mining = 14 #"The iron ores of Switzerland are of more interest to the historian than to the economist, for most of the deposits are so situated that they can not be exploited economically" -The Iron-Ore Resources of Europe 1921
 
 
 
@@ -1411,28 +1382,12 @@ STATE_ANHALT = {
     capped_resources = {
         #bg_coal_mining = 44 #Lignite
         #bg_iron_mining = 15 #Elbingrode & Huttenrode
-        bg_sulfur_mining = 22 #Kalisalz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #bg_sulfur_mining = 22 #Kalisalz
         bg_logging = 17
+    }
+    resource = {
+        type = "bg_sulfur_mining"
+        undiscovered_amount = 22
     }
 }
 
@@ -1453,24 +1408,7 @@ STATE_RHINELAND = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        bg_lead_mining = 20
+        #bg_lead_mining = 20 #Wiesloch? Moved to Baden
         bg_logging = 12
     }
 }
@@ -1488,23 +1426,6 @@ STATE_NORTH_RHINE = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_dye_plantations" }
     capped_resources = {
         bg_coal_mining = 35 #lignite not included, 10 to Rhineland (Saar), 20 to Westphalia
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1576,9 +1497,12 @@ STATE_BADEN = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         #bg_coal_mining = 20
+        bg_lead_mining = 20 #Wiesloch/Zinc
+
+
+
         bg_iron_mining = 15
         bg_logging = 18
-    #bg_minor_metals_mining = 15 #Zinc
     }
 }
 
@@ -1596,28 +1520,11 @@ STATE_HANNOVER = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
     capped_resources = {
         bg_fishing = 4
-        bg_iron_mining = 36 #Salzgitter-Ilsede
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #bg_iron_mining = 36 #Salzgitter-Ilsede
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 36
     }
     resource = {
         type = "bg_oil_extraction"
@@ -1639,30 +1546,15 @@ STATE_BRUNSWICK = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         #bg_coal_mining = 25 #Lignite
-        bg_sulfur_mining = 35 #Südhannoverscher Kalibezirk 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #bg_sulfur_mining = 35 #Südhannoverscher Kalibezirk 
 
         bg_copper_mining = 39
         bg_logging = 6
     #bg_minor_metals_mining = 5 #
+    }
+    resource = {
+        type = "bg_sulfur_mining"
+        undiscovered_amount = 35
     }
 }
 
@@ -1742,62 +1634,13 @@ STATE_HESSE = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         bg_sulfur_mining = 35 #Goldgrube/Lahn-Dill
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
         bg_logging = 10
         bg_copper_mining = 30 #Lahn-Dill 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1839,23 +1682,6 @@ STATE_RUHR = {
     capped_resources = {
         bg_coal_mining = 40
         bg_iron_mining = 50 #Siegerland, Bergische Land, Westerwald
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

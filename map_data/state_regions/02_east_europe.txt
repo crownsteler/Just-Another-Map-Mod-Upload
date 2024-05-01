@@ -63,8 +63,12 @@ STATE_VOLHYNIA = {
     arable_land = 90
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 60
+        #bg_coal_mining = 60
         bg_logging = 11
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 60
     }
 }
 
@@ -114,7 +118,12 @@ STATE_BRYANSK = {
     arable_land = 150
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 25
+    #bg_iron_mining = 25
+    }
+    resource = {
+        #Kursk Magnetic Anomaly, discovered 1931 apparently
+        type = "bg_iron_mining"
+        undiscovered_amount = 25
     }
 }
 
@@ -164,11 +173,15 @@ STATE_EAST_KARELIA = {
     arable_land = 10
     arable_resources = {}
     capped_resources = {
-        bg_iron_mining = 33
+        #bg_iron_mining = 33
         #bg_copper_mining = 24
         bg_logging = 24
         bg_fishing = 7
     #bg_minor_metals_mining = 25 #Zinc
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 33
     }
     resource = {
         type = "bg_copper_mining"
@@ -191,9 +204,13 @@ STATE_ARKHANGELSK = {
     arable_land = 10
     arable_resources = {}
     capped_resources = {
-        bg_coal_mining = 45
+        #bg_coal_mining = 45
         bg_logging = 10
         bg_fishing = 15
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 45
     }
     naval_exit_id = 3039
 }
@@ -247,8 +264,13 @@ STATE_LUHANSK = {
     arable_land = 110
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 100
+        #bg_coal_mining = 100
         bg_fishing = 5
+    }
+    resource = {
+        type = "bg_coal_mining"
+        discovered_amount = 30
+        undiscovered_amount = 70
     }
     naval_exit_id = 3036
 }
@@ -265,7 +287,12 @@ STATE_KURSK = {
     arable_land = 170
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 65
+    #bg_iron_mining = 65
+    }
+    resource = {
+        #Kursk Magnetic Anomaly, discovered 1931 apparently
+        type = "bg_iron_mining"
+        undiscovered_amount = 65
     }
 }
 
@@ -299,8 +326,12 @@ STATE_CHERSON = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         #bg_coal_mining = 48 #Lignite
-        bg_iron_mining = 85
+        #bg_iron_mining = 85
         bg_fishing = 6
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 85
     }
     naval_exit_id = 3036
 }
@@ -341,7 +372,7 @@ STATE_ROSTOV = {
     id = 149
     subsistence_building = "building_subsistence_farms"
     provinces = { x00D080 x015080 x1C7933 x25A8D9 x2BC1EA x2C7795 x31FA95 x3B9730 x45A839 x4C684C x540AA7 x5FF764 x6BA92A x7CE092 x805180 x877DBA x8C259F x92B853 xA34CA7 xAFB12B xAFC5AE xBCA729 xC05180 xC8C540 xD9240D xDDE385 xE0A7F7 xE3D4F3 xFEDE19 x2517B5 x1F3466 x282DFB x741AD9 xCF1287 x045D1F xA71AE3 xA526B5 x1B6544 x566420 x5559FD x965A33 xEC3999 x5469A6 xB3584E xFE531B x7C8235 x698B74 x2BA298 x05C86D xA79C89 xD19AC4 xFFA259 xD6ACAE x60DF21 xD1C0D1 xCAE51A xCDEA34 xE0DD8E x85FB7E xB6EB91 }
-    traits = { "state_trait_western_steppe" "state_trait_cold_water_port" "state_trait_black_soil" }
+    traits = { "state_trait_black_soil" "state_trait_cold_water_port" "state_trait_western_steppe" }
     city = "xAFC5AE"
     port = "x25A8D9"
     farm = "x8C259F"
@@ -350,7 +381,12 @@ STATE_ROSTOV = {
     arable_land = 40
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_coal_mining = 72
+    #bg_coal_mining = 72
+    }
+    resource = {
+        type = "bg_coal_mining"
+        discovered_amount = 22
+        undiscovered_amount = 50
     }
     naval_exit_id = 3036
 }
@@ -371,24 +407,6 @@ STATE_PERM = {
         #bg_copper_mining = 44
         bg_lead_mining = 35
         bg_sulfur_mining = 35 #Potash
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -418,29 +436,12 @@ STATE_ESTONIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 16
-        bg_sulfur_mining = 35 #phosporite, exploitation started in 1924
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #bg_sulfur_mining = 35 #phosporite, exploitation started in 1924
         bg_fishing = 7
+    }
+    resource = {
+        type = "bg_sulfur_mining"
+        undiscovered_amount = 35
     }
     naval_exit_id = 3000
 }
@@ -512,12 +513,17 @@ STATE_SILESIA = {
     arable_land = 100
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_coal_mining = 145
+        #bg_coal_mining = 145
         bg_iron_mining = 34
         bg_lead_mining = 20
         bg_copper_mining = 48
         bg_logging = 10
     #bg_minor_metals_mining = 15 #Zinc
+    }
+    resource = {
+        type = "bg_coal_mining"
+        discovered_amount = 80
+        undiscovered_amount = 65
     }
 }
 
@@ -549,10 +555,18 @@ STATE_LESSER_POLAND = {
     arable_land = 80
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 75
+        #bg_coal_mining = 75
         bg_iron_mining = 36
-        bg_sulfur_mining = 20
+        #bg_sulfur_mining = 20
         bg_logging = 13
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 75
+    }
+    resource = {
+        type = "bg_sulfur_mining"
+        undiscovered_amount = 20
     }
 }
 
@@ -570,7 +584,7 @@ STATE_WEST_PRUSSIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 8
-        bg_fishing = 10
+        bg_fishing = 4
     }
     naval_exit_id = 3000
 }
@@ -588,7 +602,7 @@ STATE_EAST_PRUSSIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 17
-        bg_fishing = 10
+        bg_fishing = 6
     }
     naval_exit_id = 3000
 }
@@ -639,8 +653,12 @@ STATE_EAST_GALICIA = {
     arable_land = 145
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 85
+        #bg_coal_mining = 85
         bg_logging = 9
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 85
     }
     resource = {
         type = "bg_oil_extraction"
@@ -662,23 +680,6 @@ STATE_CENTRAL_HUNGARY = {
     capped_resources = {
         #bg_coal_mining = 20 #Lignite
         bg_copper_mining = 19 #Copper/Zinc/Lead
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -708,6 +709,9 @@ STATE_BEKES = {
         undiscovered_amount = 45 #Roșia Poieni, 65% of Romanian copper apparently, production started in the 1960s using froth floatation technique, maybe not possible to exploit in the game's period?
 
 
+
+
+
     }
 }
 
@@ -723,9 +727,13 @@ STATE_TRANSDANUBIA = {
     arable_land = 125
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_coal_mining = 68
+        #bg_coal_mining = 68
         bg_logging = 7
     #bg_minor_metals_mining = 10 #manganese
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 68
     }
 }
 
@@ -761,9 +769,14 @@ STATE_BANAT = {
     arable_land = 70
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 55
+        #bg_iron_mining = 55
         bg_logging = 12
 
+    }
+    resource = {
+        type = "bg_iron_mining"
+        discovered_amount = 14
+        undiscovered_amount = 41
     }
 }
 
@@ -799,15 +812,19 @@ STATE_EAST_SLOVAKIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
         #Slovak Ore Mountains
-        bg_iron_mining = 63 #Szepes-Gomor
-
-
-
-
-
-
-        bg_copper_mining = 38
+        #bg_iron_mining = 63 #Szepes-Gomor
+        #bg_copper_mining = 38
         bg_logging = 18
+    }
+    resource = {
+        type = "bg_iron_mining"
+        discovered_amount = 24
+        undiscovered_amount = 39
+    }
+    resource = {
+        type = "bg_copper_mining"
+        discovered_amount = 24
+        undiscovered_amount = 14
     }
 }
 
@@ -825,7 +842,11 @@ STATE_SOUTHERN_TRANSYLVANIA = {
         #bg_lead_mining = 20 #Moved to Bekes
         #bg_iron_mining = 30 #Merged into Banat
         bg_logging = 24
-        bg_coal_mining = 84
+    #bg_coal_mining = 84
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 84
     }
 }
 
@@ -840,8 +861,13 @@ STATE_NORTHERN_TRANSYLVANIA = {
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 39
+        #bg_iron_mining = 39
         bg_logging = 18
+    }
+    resource = {
+        type = "bg_iron_mining"
+        discovered_amount = 18
+        undiscovered_amount = 21
     }
 }
 
@@ -857,9 +883,15 @@ STATE_MOLDAVIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_logging = 16
-        bg_copper_mining = 32 #Bukovina
+    #bg_copper_mining = 32 #Bukovina
 
 
+    }
+    resource = {
+        #Bukovina
+        type = "bg_copper_mining"
+        discovered_amount = 12
+        undiscovered_amount = 20
     }
     resource = {
         type = "bg_oil_extraction"

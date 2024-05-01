@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:SMN = {
+		create_character = {
+			first_name = "Hulbutta_Hajo"
+			last_name = "Micanopy" 
+			historical = yes
+			ruler = yes
+			birth_date = 1780.8.21 #approx
+			interest_group = ig_petty_bourgeoisie
+			ig_leader = yes
+			ideology = ideology_moderate
+			traits = {
+				tactful
+			}
+		}
+	}
+}

@@ -1,0 +1,289 @@
+﻿cr_canadian_treaty_annuities_effect = {
+	if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_24
+		}
+		
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_23
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_23
+			add_modifier = {
+				name = cr_treaty_annuities_24
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_22
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_22
+			add_modifier = {
+				name = cr_treaty_annuities_23
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_21
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_21
+			add_modifier = {
+				name = cr_treaty_annuities_22
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_20
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_20
+			add_modifier = {
+				name = cr_treaty_annuities_21
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_19
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_19
+			add_modifier = {
+				name = cr_treaty_annuities_20
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_18
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_18
+			add_modifier = {
+				name = cr_treaty_annuities_19
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_17
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_17
+			add_modifier = {
+				name = cr_treaty_annuities_18
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_16
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_16
+			add_modifier = {
+				name = cr_treaty_annuities_17
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_15
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_15
+			add_modifier = {
+				name = cr_treaty_annuities_16
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_14
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_14
+			add_modifier = {
+				name = cr_treaty_annuities_15
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_13
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_13
+			add_modifier = {
+				name = cr_treaty_annuities_14
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_12
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_12
+			add_modifier = {
+				name = cr_treaty_annuities_13
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_11
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_11
+			add_modifier = {
+				name = cr_treaty_annuities_12
+			}
+		}
+	}
+	else_if = {
+			limit = {
+				has_modifier = cr_treaty_annuities_10
+			}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_10
+			add_modifier = {
+				name = cr_treaty_annuities_11
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_9
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_9
+			add_modifier = {
+				name = cr_treaty_annuities_10
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_8
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_8
+			add_modifier = {
+				name = cr_treaty_annuities_9
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_7
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_7
+			add_modifier = {
+				name = cr_treaty_annuities_8
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_6
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_6
+			add_modifier = {
+				name = cr_treaty_annuities_7
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_5
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_5
+			add_modifier = {
+				name = cr_treaty_annuities_6
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities_4
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_4
+			add_modifier = {
+				name = cr_treaty_annuities_5
+			}
+		}
+	}
+	else_if = {
+			limit = {
+				has_modifier = cr_treaty_annuities_3
+			}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_3
+			add_modifier = {
+				name = cr_treaty_annuities_4
+			}
+		}
+	}
+	else_if = {
+			limit = {
+				has_modifier = cr_treaty_annuities_2
+			}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities_2
+			add_modifier = {
+				name = cr_treaty_annuities_3
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = cr_treaty_annuities
+		}
+		custom_tooltip =  {
+			text = cr_treaty_annuities_increased_tt
+			remove_modifier = cr_treaty_annuities
+			add_modifier = {
+				name = cr_treaty_annuities_2
+			}
+		}
+	}
+	else = {
+		add_modifier = {
+			name = cr_treaty_annuities
+		}	
+	}
+}

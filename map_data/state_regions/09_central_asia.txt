@@ -11,27 +11,14 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         bg_logging = 10
-        bg_lead_mining = 22
+    #bg_lead_mining = 22
+    }
+    resource = {
+        type = "bg_lead_mining"
+        discovered_amount = 8
+        undiscovered_amount = 14
     }
     resource = {
         type = "bg_oil_extraction"
@@ -51,24 +38,6 @@ STATE_KUBAN = {
     wood = "x405000"
     arable_land = 80
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" } #Some minor tea production around Sochi, didn't find it to be too relevant.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -95,46 +64,11 @@ STATE_ARMENIA = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     wood = "x3161E0"
     arable_land = 20
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_cotton_plantations" }
     capped_resources = {
         bg_copper_mining = 27 #Kajaran & Alaverdi
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -155,29 +89,12 @@ STATE_AZERBAIJAN = {
     arable_land = 25
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_lead_mining = 18 #Lead/zinc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #bg_lead_mining = 18 #Lead/zinc
         bg_logging = 6
+    }
+    resource = {
+        type = "bg_lead_mining"
+        undiscovered_amount = 18
     }
     resource = {
         type = "bg_oil_extraction"
@@ -198,9 +115,13 @@ STATE_GREATER_CAUCASUS = {
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_copper_mining = 24
+        #bg_copper_mining = 24
         bg_logging = 18
     #bg_minor_metals_mining = 24 #Manganese
+    }
+    resource = {
+        type = "bg_copper_mining"
+        undiscovered_amount = 24
     }
     naval_exit_id = 3036
 }
@@ -234,28 +155,12 @@ STATE_ORENBURG = {
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_copper_mining = 30 #Orenburg (Gaisky Mine Complex), Kargaly
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #bg_copper_mining = 30 #Orenburg (Gaisky Mine Complex), Kargaly
+    }
+    resource = {
+        type = "bg_copper_mining"
+        discovered_amount = 15
+        undiscovered_amount = 15
     }
 }
 
@@ -272,14 +177,13 @@ STATE_KAZAN = {
     arable_land = 165
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 45 #Bashkortostan (Tverdyshevs – Myasnikov)
-
-
-
-
-
-
+        #bg_iron_mining = 45 #Bashkortostan (Tverdyshevs – Myasnikov)
         bg_logging = 16
+    }
+    resource = {
+        type = "bg_iron_mining"
+        discovered_amount = 30
+        undiscovered_amount = 15
     }
     resource = {
         type = "bg_oil_extraction"
@@ -331,24 +235,6 @@ STATE_URALSK = {
     arable_land = 30
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {} #Volcanic hosted massive sulphide (VHMS) copper deposit at 50 Let Oktyabrya/Koktau/Priorskoe/Priorskoye 130 km east of Aktobe
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -445,53 +331,23 @@ STATE_KIRGHIZIA = {
     arable_land = 24
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" }
     capped_resources = {
-        #zinc, lead, gold
-        #bg_minor_metals_mining = 20 #a huge diversity
-        bg_iron_mining = 15
-        bg_lead_mining = 15 #lead/zinc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        bg_coal_mining = 26 #Also coal deep in the mountains
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #zinc, lead, gold
+    #bg_minor_metals_mining = 20 #a huge diversity
+    #bg_iron_mining = 15
+    #bg_lead_mining = 15 #lead/zinc
+    #bg_coal_mining = 26 #Also coal deep in the mountains
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 15
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 26
+    }
+    resource = {
+        type = "bg_lead_mining"
+        undiscovered_amount = 15
     }
 }
 
@@ -538,8 +394,12 @@ STATE_ALAY = {
     arable_land = 10
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_coal_mining = 18
+    #bg_coal_mining = 18
     #bg_minor_metals_mining = 15 #Also aluminium, antimonium and mercury
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 18
     }
 }
 
@@ -556,7 +416,11 @@ STATE_TURKMENIA = {
     arable_land = 35
     arable_resources = { "bg_wheat_farms" "bg_opium_plantations" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_sulfur_mining = 40
+    #bg_sulfur_mining = 40 #From oil?
+    }
+    resource = {
+        type = "bg_sulfur_mining"
+        undiscovered_amount = 40
     }
     resource = {
         type = "bg_oil_extraction"
@@ -578,8 +442,12 @@ STATE_SEMIRECHE = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_opium_plantations" }
     capped_resources = {
         #bg_copper_mining = 25 #Bozshakol? Porphyry copper deposit, Orlovksy mine, Borodulikha, East Kazakhstan? 
-        bg_coal_mining = 32
+        #bg_coal_mining = 32
         bg_logging = 4
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 32
     }
     resource = {
         type = "bg_copper_mining"
@@ -600,14 +468,12 @@ STATE_TURKISTAN = {
     arable_land = 42
     arable_resources = { bg_wheat_farms bg_livestock_ranches bg_cotton_plantations bg_tobacco_plantations }
     capped_resources = {
-        #bg_copper_mining = 25 #copper gold mine #Maleevsky/Maleyevskiy mine?
-        bg_lead_mining = 20 #lead/zinc mine #Maleesky mine?
-
-
-
-
-
-
+    #bg_copper_mining = 25 #copper gold mine #Maleevsky/Maleyevskiy mine?
+    #bg_lead_mining = 20 #lead/zinc mine #Maleesky mine?
+    }
+    resource = {
+        type = "bg_lead_mining"
+        undiscovered_amount = 20
     }
     resource = {
         type = "bg_copper_mining"
@@ -633,8 +499,12 @@ STATE_JETISY = {
     arable_land = 50
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 24
+        #bg_coal_mining = 24
         bg_logging = 4
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 24
     }
 }
 
@@ -650,7 +520,11 @@ STATE_AKMOLINSK = {
     arable_land = 35
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_iron_mining = 31
+    #bg_iron_mining = 31
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 31
     }
 }
 
@@ -666,14 +540,12 @@ STATE_KARAGANDA = {
     arable_land = 22
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
-        bg_lead_mining = 20 #Lead/zinc
-
-
-
-
-
-
+    #bg_lead_mining = 20 #Lead/zinc
     #bg_copper_mining = 60 #Aktogay, porphyry copper deposit
+    }
+    resource = {
+        type = "bg_lead_mining"
+        undiscovered_amount = 20
     }
 }
 
@@ -690,29 +562,12 @@ STATE_PASHTUNISTAN = {
     arable_land = 30
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_opium_plantations" }
     capped_resources = {
-        bg_coal_mining = 20 #Chamalang Coal Mines, high volatile C-A bituminous coal
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #bg_coal_mining = 20 #Chamalang Coal Mines, high volatile C-A bituminous coal
         bg_logging = 7
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 20
     }
 }
 
@@ -732,28 +587,14 @@ STATE_WESTERN_AFGHANISTAN = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
-        bg_iron_mining = 20
+    #bg_iron_mining = 20
     #bg_copper_mining = 20
     #bg_minor_metals_mining = 20 #Tin, thugstun, REE
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 20
     }
 }
 #Kabul
@@ -772,41 +613,18 @@ STATE_EASTERN_AFGHANISTAN = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         bg_copper_mining = 45 #Mes Aynak
 
 
 
-
-
-
-        bg_iron_mining = 25 #Hajigak Mine
-
-
-
-
-
-
+        #bg_iron_mining = 25 #Hajigak Mine
         bg_logging = 4
     #bg_minor_metals_mining = 20 #Berrylium, lithium
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 25
     }
 }
 
@@ -823,29 +641,13 @@ STATE_HERAT = {
     arable_land = 45
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_silk_plantations" }
     capped_resources = {
-        #bg_copper_mining = 30
-        bg_lead_mining = 15 #Lead/zinc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #bg_copper_mining = 30
+    #bg_lead_mining = 15 #Lead/zinc
+    }
+    resource = {
+        type = "bg_lead_mining"
+        discovered_amount = 5
+        undiscovered_amount = 10
     }
 }
 
@@ -864,15 +666,12 @@ STATE_MAZAR_I_SHARIF = {
     arable_land = 45
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_tobacco_plantations" "bg_dye_plantations" }
     capped_resources = {
-        bg_coal_mining = 32 #Shabashak/Dar-I-Suf
-
-
-
-
-
-
-
+    #bg_coal_mining = 32 #Shabashak/Dar-I-Suf
     #bg_copper_mining = 40 #Balkhab copper mine, porphyry deposit
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 32
     }
     resource = {
         type = "bg_oil_extraction"
@@ -895,16 +694,14 @@ STATE_BALUCHISTAN = {
     arable_resources = { "bg_date_plantations" "bg_opium_plantations" }
     capped_resources = {
         #also potentially Disband and Nokkundi deposits
-        bg_coal_mining = 28 #Duki district
-
-
-
-
-
-
+        #bg_coal_mining = 28 #Duki district
         #bg_lead_mining = 12 #Duddar mine
         #bg_copper_mining = 25 #Reko Diq mine, Saindak Copper Gold Project, porphyry deposit
         bg_fishing = 5
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 28
     }
     naval_exit_id = 3048
 }
@@ -923,9 +720,13 @@ STATE_LHASA = {
     arable_land = 100
     arable_resources = { "bg_rye_farms" "bg_kashmir_ranches" }
     capped_resources = {
-        #bg_logging = 11
-        bg_lead_mining = 18
+    #bg_logging = 11
+    #bg_lead_mining = 18
     #bg_copper_mining = 56 #Jiama, also Yulong Mine, ommited because low-grade porphyry
+    }
+    resource = {
+        type = "bg_lead_mining"
+        undiscovered_amount = 18
     }
     resource = {
         type = "bg_copper_mining"
@@ -955,24 +756,6 @@ STATE_HIMALAYAS = {
     subsistence_building = "building_subsistence_rice_paddies"
     provinces = { xBCD18E x29576A x4DE9D5 xC6179B x920B51 xC1C87A x812FBE xAF5B29 x25994F x11C815 x6E233E xE18F72 xAF11F0 x4874D9 x4D5FC1 xC13072 xA2C234 x605021 x833D63 x73C2C6 x23C36A xCE4DAE xA5D1EB x1C3876 xA228F8 x218FFE x515E66 x213060 x1619ED xDA8130 xC1DA32 xE51929 xC6D4A8 x49337F xAD283F xCF1974 x584C9B x037AF5 x03A411 x98BACD x0003C6 x251424 x572FB9 xF202E0 xE60F80 xE31B4E xD52082 x733AB7 x3264B7 x6B646E x607020 xF15B70 xE77282 x45AF2E x59BBCE xFBA109 xE3A5A5 xE0C455 xF4C868 x8FF69F }
     impassable = { x8FF69F x59BBCE xF202E0 xE0C455 } #Himachal Pradesh, don't forget to update 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

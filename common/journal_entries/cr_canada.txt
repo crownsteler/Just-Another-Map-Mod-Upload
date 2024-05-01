@@ -15,7 +15,7 @@
 				state_region = s:STATE_QUEBEC
 				state_region = s:STATE_ONTARIO
 			}
-			has_modifier = cr_unceded_territory_95
+			has_modifier = cr_unceded_territory_100
 		}
     }
     possible = {
@@ -146,6 +146,12 @@
 				}
 				if = {
 					limit = {
+						has_modifier = cr_unceded_territory_100
+					}
+					remove_modifier = cr_unceded_territory_100
+				}
+				if = {
+					limit = {
 						has_modifier = cr_unceded_territory_95
 					}
 					remove_modifier = cr_unceded_territory_95
@@ -264,13 +270,18 @@ je_cr_numbered_treaties = {
 	
 	group = je_group_historical_content
 	
+	scripted_button = cr_canada_numbered_treaties_start
+	scripted_button = cr_canada_numbered_treaties_stop
+	scripted_button = cr_canada_numbered_treaties_abscond
+	
 	is_shown_when_inactive = {
-        OR = {
+		OR = {
 			country_has_primary_culture = cu:franco_canadian
 			country_has_primary_culture = cu:anglo_canadian
 		}
 		any_scope_state = {
 			OR = {
+				has_modifier = cr_unceded_territory_100
 				has_modifier = cr_unceded_territory_95
 				has_modifier = cr_unceded_territory_75
 				has_modifier = cr_unceded_territory_50
@@ -279,35 +290,259 @@ je_cr_numbered_treaties = {
 		}
     }
     possible = {
-		has_technology_researched = civilizing_mission
-		NOT = { has_law = law_type:law_no_colonial_affairs }
+		any_scope_state = {
+			region = sr:region_canada
+		}
+		any_scope_state = {
+			region = sr:region_ruperts_land
+		}
+		has_technology_researched = nationalism
+		country_rank >= rank_value:insignificant_power
     }
 	
 	immediate = {
-		set_global_variable = {
-			name = cr_numbered_treaties_counter
-			value = 0
+		if = {
+			limit = {
+				NOT = { has_global_variable = cr_numbered_treaties_counter }
+			}
+			set_global_variable = {
+				name = cr_numbered_treaties_counter
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_subject_of = c:GBR
+					is_subject_of = c:ENG
+				}
+			}
+			trigger_event = {
+				id = cr_canadian_indian_treaties.22
+			}
 		}
 		add_modifier = {
 			name = cr_eyeing_unceded_land
 			months = long_modifier_time
 		}
+		sr:region_ruperts_land = {
+			save_scope_as = ruperts_land
+		}
+		sr:region_canada = {
+			save_scope_as = canada_region
+		}
 	}
 	
 	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							state_region = s:STATE_NEWFOUNDLAND
+						}
+					}
+					any_scope_state = {
+						state_region = s:STATE_ONTARIO
+						NOT = {
+							has_modifier = cr_unceded_territory_100
+							has_modifier = cr_unceded_territory_95
+							has_modifier = cr_unceded_territory_75
+							has_modifier = cr_unceded_territory_50
+							has_modifier = cr_unceded_territory_30
+						}
+					}
+					any_scope_state = {
+						state_region = s:STATE_QUEBEC
+						NOT = {
+							has_modifier = cr_unceded_territory_100
+							has_modifier = cr_unceded_territory_95
+							has_modifier = cr_unceded_territory_75
+							has_modifier = cr_unceded_territory_50
+							has_modifier = cr_unceded_territory_30
+						}
+					}
+					any_scope_state = {
+						region = sr:region_ruperts_land
+						NOT = {
+							has_modifier = cr_unceded_territory_100
+							has_modifier = cr_unceded_territory_95
+							has_modifier = cr_unceded_territory_75
+							has_modifier = cr_unceded_territory_50
+							has_modifier = cr_unceded_territory_30
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						state_region = s:STATE_NEWFOUNDLAND
+						OR = {
+							has_modifier = cr_unceded_territory_100
+							has_modifier = cr_unceded_territory_95
+							has_modifier = cr_unceded_territory_75
+							has_modifier = cr_unceded_territory_50
+							has_modifier = cr_unceded_territory_30
+						}
+						owner = {
+							is_country_type = recognized
+							NOT = {
+								has_law = law_type:law_no_colonial_affairs
+							}
+						}
+					}
+					owner = {
+						trigger_event = {
+							id = cr_canadian_indian_treaties.21
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = cr_pushing_numbered_treaties
+					has_law = law_type:law_no_colonial_affairs
+				}
+				remove_modifier = cr_pushing_numbered_treaties
+				post_notification = cr_numbered_treaties_switched_to_no_colonial_affairs
+			}
+		}
 		random_events = {
-			12 = 0
+			11 = 0
 			1 = cr_canadian_indian_treaties.20
 		}
 	}
 
 	complete = {
-		NOT = {
+		custom_tooltip = {
+			text = je_cr_numbered_treaties_objective_ontario
 			any_scope_state = {
-				has_modifier = cr_unceded_territory_95
-				has_modifier = cr_unceded_territory_75
-				has_modifier = cr_unceded_territory_50
-				has_modifier = cr_unceded_territory_30
+				state_region = s:STATE_ONTARIO
+				NOT = {
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		custom_tooltip = {
+			text = je_cr_numbered_treaties_objective_quebec
+			any_scope_state = {
+				state_region = s:STATE_QUEBEC
+				NOT = {
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		custom_tooltip = {
+			text = je_cr_numbered_treaties_objective_kenora
+			any_scope_state = {
+				state_region = s:STATE_KENORA
+				NOT = {
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		#custom_tooltip = { #bugged for some odd reason, but not needed anyway
+		#	text = je_cr_numbered_treaties_objective_new_brunswick
+		#	any_scope_state = {
+		#		state_region = s:STATE_NEW_BRUNSWICK
+		#		NOT = {
+		#			has_modifier = cr_unceded_territory_95
+		#			has_modifier = cr_unceded_territory_75
+		#			has_modifier = cr_unceded_territory_50
+		#			has_modifier = cr_unceded_territory_30
+		#		}
+		#	}
+		#}
+		custom_tooltip = {
+			text = je_cr_numbered_treaties_objective_uganva
+			any_scope_state = {
+				state_region = s:STATE_UNGAVA
+				NOT = {
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		custom_tooltip = {
+			text = je_cr_numbered_treaties_objective_newfoundland
+			any_scope_state = {
+				state_region = s:STATE_NEWFOUNDLAND
+				NOT = {
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		custom_tooltip = {
+			text = je_cr_numbered_treaties_objective_alberta
+			any_scope_state = {
+				state_region = s:STATE_ALBERTA
+				NOT = {
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		custom_tooltip = {
+			text = je_cr_numbered_treaties_objective_british_colombia
+			any_scope_state = {
+				state_region = s:STATE_BRITISH_COLUMBIA
+				NOT = {
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		custom_tooltip = {
+			text = je_cr_numbered_treaties_objective_saskatchewan
+			any_scope_state = {
+				state_region = s:STATE_SASKATCHEWAN
+				NOT = {
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		custom_tooltip = {
+			text = je_cr_numbered_treaties_objective_manitoba
+			any_scope_state = {
+				state_region = s:STATE_MANITOBA
+				NOT = {
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		custom_tooltip = {
+			text = je_cr_numbered_treaties_objective_northwest_territory
+			any_scope_state = {
+				state_region = s:STATE_NORTHWEST_TERRITORIES
+				NOT = {
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
 			}
 		}
 	}
@@ -315,8 +550,9 @@ je_cr_numbered_treaties = {
 	on_complete = {
 		hidden_effect = {
 			remove_global_variable = cr_numbered_treaties_counter
-			#remove_global_variable = cr_ojibwe_petition_against_mines_has_happened
-			#remove_global_variable = cr_papineau_report_has_been_published
+		}	
+		hidden_effect = {
+			trigger_event = { id = cr_canadian_indian_treaties.97 } #cleanup event
 		}		
 	}
 	
@@ -328,16 +564,17 @@ je_cr_numbered_treaties = {
 	
 	on_fail = {
 		hidden_effect = {
-			#trigger_event = { id = cr_canadian_indian_treaties.99 } #cleanup event
+			trigger_event = { id = cr_canadian_indian_treaties.97 } #cleanup event
 		}		
 	}
 	
 	invalid = {
+		has_variable = cr_close_numbered_treaties_je
 	}
 	
 	on_invalid = {
 		hidden_effect = {
-			#trigger_event = { id = cr_canadian_indian_treaties.99 } #cleanup event
+			trigger_event = { id = cr_canadian_indian_treaties.97 } #cleanup event
 		}	
 		remove_modifier = cr_pushing_numbered_treaties
 	}

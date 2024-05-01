@@ -59,6 +59,9 @@
 	building_livestock_ranch = {
 		"african_farm_ranch_01_mesh"
 	}
+	building_kashmir_ranch = {
+		"african_farm_ranch_01_mesh"
+	}
 	
 	building_coffee_plantation = {
 		"african_farm_plantation_01_mesh"

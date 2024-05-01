@@ -16,11 +16,14 @@
 	}
 
 	possible = {
-		OR = {
-			country_or_subject_owns_entire_state_region = STATE_AMAZONAS
-			any_country = {
-				has_claim = s:STATE_ACRE
+		any_scope_state = {
+			state_region = s:STATE_AMAZONAS
+			any_neighbouring_state = {
+				state_region = s:STATE_ACRE
 			}
+		}
+		any_country = {
+			has_claim = s:STATE_ACRE
 		}
 	}
 

@@ -68,3 +68,231 @@
 		}		
 	}
 }
+
+cr_canada_numbered_treaties_start = {
+	name = "cr_canada_numbered_treaties_start"
+	desc = "cr_canada_numbered_treaties_start_desc"
+	visible = {
+		NOT = {
+			has_modifier = cr_pushing_numbered_treaties
+		}
+	}
+
+	possible = {
+		influence > 100
+		NOT = {
+			has_law = law_type:law_no_colonial_affairs
+		}
+	}
+	effect = {
+		custom_tooltip = {
+			text = cr_canada_numbered_treaties_start_desc_tt
+			create_character = {
+				interest_group = ig_armed_forces
+				ig_leader = no
+				on_created = {
+					set_variable = cr_i_am_canadian_native_treaty_negotiator
+				}
+				save_scope_as = treaty_commissioner
+			}
+			scope:treaty_commissioner = {
+				place_character_in_void = 1200
+			}
+		}
+		add_modifier = {
+			name = cr_pushing_numbered_treaties
+		}
+	}
+	ai_chance = {
+		base = 15
+		modifier = {
+			factor = 0
+			influence < 150
+		}
+		modifier = { #How does this one work?
+			factor = 0
+			scaled_debt > 0.3
+		}
+		modifier = {
+			factor = 2
+			influence > 300
+		}
+	}
+}
+
+cr_canada_numbered_treaties_stop = {
+	name = "cr_canada_numbered_treaties_stop"
+	desc = "cr_canada_numbered_treaties_stop_desc"
+	visible = {
+		has_modifier = cr_pushing_numbered_treaties
+	}
+
+	possible = {
+	}
+	effect = {
+		custom_tooltip = {
+			text = cr_canada_numbered_treaties_stop_desc_tt
+			random_character = {
+				limit = {
+					has_variable = cr_i_am_canadian_native_treaty_negotiator
+				}
+				kill_character = yes
+			}
+		}
+		remove_modifier = cr_pushing_numbered_treaties
+	}
+	ai_chance = {
+		base = 0
+		modifier = {
+			add = 15
+			influence < 125
+		}
+		modifier = {
+			add = 15
+			scaled_debt >= 0.3
+		}
+	}
+}
+
+cr_canada_numbered_treaties_abscond = {
+	name = "cr_canada_numbered_treaties_abscond"
+	desc = "cr_canada_numbered_treaties_abscond_desc"
+	visible = {
+		always = yes
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = cr_canada_numbered_treaties_abscond_paying_annuities_tt
+			OR = { 
+				has_modifier = cr_treaty_annuities
+				has_modifier = cr_treaty_annuities_2
+				has_modifier = cr_treaty_annuities_3
+				has_modifier = cr_treaty_annuities_4
+				has_modifier = cr_treaty_annuities_5
+				has_modifier = cr_treaty_annuities_6
+				has_modifier = cr_treaty_annuities_7
+				has_modifier = cr_treaty_annuities_8
+				has_modifier = cr_treaty_annuities_9
+				has_modifier = cr_treaty_annuities_10
+				has_modifier = cr_treaty_annuities_11
+				has_modifier = cr_treaty_annuities_12
+				has_modifier = cr_treaty_annuities_13
+				has_modifier = cr_treaty_annuities_14
+				has_modifier = cr_treaty_annuities_15
+				has_modifier = cr_treaty_annuities_16
+				has_modifier = cr_treaty_annuities_17
+				has_modifier = cr_treaty_annuities_18
+				has_modifier = cr_treaty_annuities_19
+				has_modifier = cr_treaty_annuities_20
+				has_modifier = cr_treaty_annuities_21
+				has_modifier = cr_treaty_annuities_22
+				has_modifier = cr_treaty_annuities_23			
+				has_modifier = cr_treaty_annuities_24			
+				has_modifier = cr_treaty_annuities_25			
+				has_modifier = cr_treaty_annuities_26			
+				has_modifier = cr_treaty_annuities_27			
+				has_modifier = cr_treaty_annuities_28			
+				has_modifier = cr_treaty_annuities_29			
+				has_modifier = cr_treaty_annuities_30			
+				has_modifier = cr_treaty_annuities_31			
+				has_modifier = cr_treaty_annuities_32			
+				has_modifier = cr_treaty_annuities_33			
+				has_modifier = cr_treaty_annuities_34			
+				has_modifier = cr_treaty_annuities_35			
+				has_modifier = cr_treaty_annuities_36			
+				has_modifier = cr_treaty_annuities_37			
+				has_modifier = cr_treaty_annuities_38			
+				has_modifier = cr_treaty_annuities_39			
+				has_modifier = cr_treaty_annuities_40			
+			}
+		}
+		ruler = {
+			NOT = {
+				has_trait = honorable
+			}
+		}
+		OR = {
+			is_ai = yes
+			ruler = {
+				OR = {
+					has_trait = bandit
+					has_trait = bigoted
+					has_trait = cruel					
+				}
+			}			
+		}
+		custom_tooltip = {
+			text = cr_canada_numbered_treaties_abscond_cooldown_tt
+			NOT = {
+				has_variable = cr_canada_numbered_treaties_abscond_countdown
+			}
+		}
+	}
+	effect = {
+		set_variable = {
+			name = cr_canada_numbered_treaties_abscond_countdown
+			months = 24
+		}
+		custom_tooltip = {
+			text = cr_canada_numbered_treaties_stop_paying_tt
+			remove_modifier = cr_treaty_annuities
+			remove_modifier = cr_treaty_annuities_2
+			remove_modifier = cr_treaty_annuities_3
+			remove_modifier = cr_treaty_annuities_4
+			remove_modifier = cr_treaty_annuities_5
+			remove_modifier = cr_treaty_annuities_6
+			remove_modifier = cr_treaty_annuities_7
+			remove_modifier = cr_treaty_annuities_8
+			remove_modifier = cr_treaty_annuities_9
+			remove_modifier = cr_treaty_annuities_10
+			remove_modifier = cr_treaty_annuities_11
+			remove_modifier = cr_treaty_annuities_12
+			remove_modifier = cr_treaty_annuities_13
+			remove_modifier = cr_treaty_annuities_14
+			remove_modifier = cr_treaty_annuities_15
+			remove_modifier = cr_treaty_annuities_16
+			remove_modifier = cr_treaty_annuities_17
+			remove_modifier = cr_treaty_annuities_18
+			remove_modifier = cr_treaty_annuities_19
+			remove_modifier = cr_treaty_annuities_20
+			remove_modifier = cr_treaty_annuities_21
+			remove_modifier = cr_treaty_annuities_22
+			remove_modifier = cr_treaty_annuities_23			
+			remove_modifier = cr_treaty_annuities_24			
+			remove_modifier = cr_treaty_annuities_25			
+			remove_modifier = cr_treaty_annuities_26			
+			remove_modifier = cr_treaty_annuities_27			
+			remove_modifier = cr_treaty_annuities_28			
+			remove_modifier = cr_treaty_annuities_29			
+			remove_modifier = cr_treaty_annuities_30			
+			remove_modifier = cr_treaty_annuities_31			
+			remove_modifier = cr_treaty_annuities_32			
+			remove_modifier = cr_treaty_annuities_33			
+			remove_modifier = cr_treaty_annuities_34			
+			remove_modifier = cr_treaty_annuities_35			
+			remove_modifier = cr_treaty_annuities_36			
+			remove_modifier = cr_treaty_annuities_37			
+			remove_modifier = cr_treaty_annuities_38			
+			remove_modifier = cr_treaty_annuities_39			
+			remove_modifier = cr_treaty_annuities_40
+		}
+	}
+	ai_chance = {
+		base = 0 
+		modifier = {
+			add = 15
+			scaled_debt > 0.7
+		}
+		modifier = {
+			add = 15
+			ruler = {
+				OR = {
+					has_trait = bandit
+					has_trait = bigoted
+					has_trait = cruel					
+				}			
+			}
+		}
+	}
+}

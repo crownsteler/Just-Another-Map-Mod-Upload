@@ -1196,12 +1196,12 @@
 		region_state:TIB = {
 			create_pop = {
 				culture = tibetan
-				size = 1820000
+				size = 2220000
 			}
 			create_pop = {
 				culture = han # nanfaren
 				religion = animist
-				size = 100000
+				size = 120000
 			}
 		}
 	}
@@ -1209,16 +1209,22 @@
 		region_state:TIB = {
 			create_pop = {
 				culture = tibetan
-				size = 824000
+				size = 418000
 			}
 			create_pop = {
 				culture = han # nanfaren
 				religion = animist
-				size = 42000
+				size = 22000
 			}
 			create_pop = {
 				culture = kachin
 				size = 24000
+			}
+		}
+		region_state:CHI = {
+			create_pop = {
+				culture = tibetan
+				size = 6421
 			}
 		}
 	}

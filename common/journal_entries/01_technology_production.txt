@@ -435,13 +435,6 @@ je_railroads = {
 			is_building_type = building_railway
 		}
 	}
-	
-	on_monthly_pulse = {
-		random_events = {
-			200 = 0
-			1 = cr_europe_events.1
-		}
-	}
 
 	complete = {
 		trigger_if = {

@@ -1,100 +1,100 @@
 ﻿namespace = cr_europe_events
 
-cr_europe_events.1 = { #Sound of Science
-	type = country_event
-	placement = scope:sound_of_science_state
-
-	title = cr_europe_events.1.t
-	desc = cr_europe_events.1.d
-	flavor = cr_europe_events.1.f
-
-	event_image = {
-		video = "gfx/event_pictures/unspecific_trains.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	duration = 3
-
-	trigger = {
-		NOT = {
-			has_global_variable = sound_of_science_state_variable
-		}
-		year >= 1842
-		any_state = {
-			owner = ROOT
-			is_incorporated = yes
-			has_building = building_railway
-			any_scope_building = {
-				is_building_type = building_university
-				level >= 2
-			}
-		}
-		#has_technology_researched = empiricism
-	}
-
-	immediate = {
-		set_global_variable = sound_of_science_state_variable
-		random_scope_state = {
-			limit = {
-				is_incorporated = yes
-				has_building = building_railway
-				any_scope_building = {
-					is_building_type = building_university
-					level >= 2
-				}
-			}
-			save_scope_as = sound_of_science_state
-		}
-	}
-
-	option = {
-		name = cr_europe_events.1.a
-		if = {
-			limit = {
-				NOT = { has_technology_researched = empiricism }
-			}
-			add_technology_progress = { progress = 3750 technology = empiricism }
-		}
-		else_if = {
-			limit = {
-				can_research = dialectics
-			}
-			add_technology_progress = { progress = 1500 technology = dialectics }
-		}
-		else_if = {
-			limit = {
-				can_research = telephone
-			}
-			add_technology_progress = { progress = 2250 technology = telephone }
-		}
-		else_if = {
-			limit = {
-				can_research = radio
-			}
-			add_technology_progress = { progress = 3750 technology = radio }
-		}
-		else = {
-			#limit = {
-			#	always = yes
-			#}
-			add_modifier = {
-				name = cr_sound_of_science_prestige_modifier
-				months = normal_modifier_time	
-			}
-		}
-	}
-
-	option = {
-		name = cr_europe_events.1.b
-		add_modifier = {
-			name = cr_sound_of_science_tech_spread_modifier
-			months = short_modifier_time	
-		}
-	}
-}
+#cr_europe_events.1 = { #Sound of Science
+#	type = country_event
+#	placement = scope:sound_of_science_state
+#
+#	title = cr_europe_events.1.t
+#	desc = cr_europe_events.1.d
+#	flavor = cr_europe_events.1.f
+#
+#	event_image = {
+#		video = "gfx/event_pictures/unspecific_trains.bk2"
+#	}
+#
+#	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+#
+#	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+#
+#	duration = 3
+#
+#	trigger = {
+#		NOT = {
+#			has_global_variable = sound_of_science_state_variable
+#		}
+#		year >= 1842
+#		any_state = {
+#			owner = ROOT
+#			is_incorporated = yes
+#			has_building = building_railway
+#			any_scope_building = {
+#				is_building_type = building_university
+#				level >= 2
+#			}
+#		}
+#		#has_technology_researched = empiricism
+#	}
+#
+#	immediate = {
+#		set_global_variable = sound_of_science_state_variable
+#		random_scope_state = {
+#			limit = {
+#				is_incorporated = yes
+#				has_building = building_railway
+#				any_scope_building = {
+#					is_building_type = building_university
+#					level >= 2
+#				}
+#			}
+#			save_scope_as = sound_of_science_state
+#		}
+#	}
+#
+#	option = {
+#		name = cr_europe_events.1.a
+#		if = {
+#			limit = {
+#				NOT = { has_technology_researched = empiricism }
+#			}
+#			add_technology_progress = { progress = 3750 technology = empiricism }
+#		}
+#		else_if = {
+#			limit = {
+#				can_research = dialectics
+#			}
+#			add_technology_progress = { progress = 1500 technology = dialectics }
+#		}
+#		else_if = {
+#			limit = {
+#				can_research = telephone
+#			}
+#			add_technology_progress = { progress = 2250 technology = telephone }
+#		}
+#		else_if = {
+#			limit = {
+#				can_research = radio
+#			}
+#			add_technology_progress = { progress = 3750 technology = radio }
+#		}
+#		else = {
+#			#limit = {
+#			#	always = yes
+#			#}
+#			add_modifier = {
+#				name = cr_sound_of_science_prestige_modifier
+#				months = normal_modifier_time	
+#			}
+#		}
+#	}
+#
+#	option = {
+#		name = cr_europe_events.1.b
+#		add_modifier = {
+#			name = cr_sound_of_science_tech_spread_modifier
+#			months = short_modifier_time	
+#		}
+#	}
+#}
 
 cr_europe_events.5 = { #The English Sytt
 	type = country_event
@@ -114,9 +114,10 @@ cr_europe_events.5 = { #The English Sytt
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
 	duration = 3
+	cooldown = { months = 50 }
 
 	trigger = {
-		year < 1840
+		game_date < 1840.1.1
 		NOT = {
 			has_global_variable = LadyHestersDebts
 		}
@@ -134,8 +135,8 @@ cr_europe_events.5 = { #The English Sytt
 			}
 			AND = {
 				p:xA050E0.owner = ROOT #South Lebanon
-				is_subject = NO
-				is_country_type = unrecognized
+				is_subject = no
+				country_has_state_religion = rel:sunni
 			}
 		}
 		OR = {
@@ -454,7 +455,7 @@ cr_europe_events.7 = { #The English Sytt - England doesn't pay
 		default_option = yes
 		custom_tooltip = cr_europe_events.5.c_tt
 		scope:LadyHestersHome = {
-			add_radicals = {
+			add_radicals_in_state = {
 				value = 0.10
 				strata = poor
 			}

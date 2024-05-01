@@ -560,7 +560,7 @@
 	c:DEI ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_indonesia
+			hq_region = sr:region_java
 			name = Koninklijk_Nederlandsch_Indisch_Leger
 
 			combat_unit = { # European Troops

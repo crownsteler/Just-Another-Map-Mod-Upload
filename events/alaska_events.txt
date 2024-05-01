@@ -140,10 +140,10 @@ alaska.2 = {
 				owner = scope:alaska_seller
 			}
 			set_state_owner = scope:alaska_buyer
-		}
-		s:STATE_ALASKA = {
-			remove_claim = scope:alaska_seller
-			add_claim = scope:alaska_buyer
+			state_region = {
+				remove_claim = scope:alaska_seller
+				add_claim = scope:alaska_buyer
+			}
 		}
 		change_relations = {
 			country = scope:alaska_seller

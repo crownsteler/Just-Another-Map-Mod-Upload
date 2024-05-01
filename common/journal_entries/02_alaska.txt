@@ -73,6 +73,9 @@
 					state_region = s:STATE_ALASKA
 				}
 				save_scope_as = alaska_scope
+				owner = {
+					save_scope_as = alaska_owner_scope
+				}
 			}
 		}
 		ruler = {

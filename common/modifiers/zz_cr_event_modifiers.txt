@@ -17,7 +17,7 @@ cr_dealing_with_the_kyrgyz = {
 #Spain
 cr_desamortizacion_auctioned = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_tax_income_add = 7500
+	country_expenses_add = 7500
 }
 
 #Pacific
@@ -52,6 +52,11 @@ cr_lake_superior_copper_rush_michigan = {
 	state_migration_pull_mult = 0.15
 }
 
+cr_unceded_territory_100 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	state_colony_growth_speed_mult = -1
+}
+
 cr_unceded_territory_95 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	state_colony_growth_speed_mult = -0.95
@@ -72,16 +77,6 @@ cr_unceded_territory_30 = {
 	state_colony_growth_speed_mult = -0.30
 }
 
-cr_treaty_annuities = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_tax_income_add = -600
-}
-
-cr_treaty_annuities_robinson_treaty = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_tax_income_add = -1800
-}
-
 cr_native_land_payments_building = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	building_throughput_add = -0.1
@@ -93,8 +88,8 @@ cr_eyeing_unceded_land = {
 }
 
 cr_pushing_numbered_treaties = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_authority_add = -150
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_influence_add = -100
 }
 
 cr_valley_of_plenty_50 = {
@@ -164,6 +159,11 @@ cr_indian_removal_female_missionary_societies = {
 	state_capitalists_investment_pool_contribution_add = -0.05
 }
 
+cr_indian_removal_college_debates = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	interest_group_ig_rural_folk_pop_attraction_mult = 0.05
+}
+
 cr_indian_removal_female_missionary_societies_education = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	state_education_access_add = 0.05
@@ -180,8 +180,15 @@ cr_indians_removed_modifier = {
 cr_indians_removal_failure_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	interest_group_ig_armed_forces_pop_attraction_mult = 0.05
-	state_colony_growth_speed_mult = -0.1
-	state_migration_pull_mult = -0.1
+	state_colony_growth_speed_mult = 0.1
+	state_migration_pull_mult = 0.1
+}
+
+cr_indian_removal_indian_improvement_societies = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_rural_folk_pop_attraction_mult = 0.05
+	state_shopkeepers_investment_pool_contribution_add = -0.01
+	state_capitalists_investment_pool_contribution_add = -0.01
 }
 
 cr_awaiting_cherokee_removal = {
@@ -195,27 +202,27 @@ cr_indian_removal_sorting_out_choctaw_land_claims = {
 
 cr_choctaw_scrip = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_tax_income_add = -1000
+	country_expenses_add = 1000
 }
 
 cr_treaty_of_doaksville = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_tax_income_add = -2500
+	country_expenses_add = 2500
 }
 
 cr_cherokee_removal_cost = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_tax_income_add = -1500
+	country_expenses_add = 1500
 }
 
 cr_creek_removal_cost = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_tax_income_add = -1000
+	country_expenses_add = 1000
 }
 
 cr_chickasaw_removal_cost = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_tax_income_add = -500
+	country_expenses_add = 500
 }
 
 cr_colonising_alaska_modifier_rus = {
@@ -244,4 +251,290 @@ cr_colonising_california_modifier = {
 	state_migration_pull_add = 20
 	state_migration_pull_mult = 0.25
 	state_colony_growth_speed_mult = 0.35
+}
+
+cr_texas_rangers = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	interest_group_ig_armed_forces_pop_attraction_mult = 0.10
+	state_colony_growth_speed_mult = 0.25
+	state_turmoil_effects_mult = -0.10
+}
+
+cr_texas_militia = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	interest_group_ig_armed_forces_pop_attraction_mult = 0.075
+	state_turmoil_effects_mult = -0.075
+}
+
+#Canadian Treaty Payments
+cr_treaty_annuities = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 400
+}
+
+cr_treaty_annuities_2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 550
+}
+
+cr_treaty_annuities_3 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 700
+}
+
+cr_treaty_annuities_4 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 850
+}
+
+cr_treaty_annuities_5 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1000
+}
+
+cr_treaty_annuities_6 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1150
+}
+
+cr_treaty_annuities_7 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1300
+}
+
+cr_treaty_annuities_8 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1450
+}
+
+cr_treaty_annuities_9 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1600
+}
+
+cr_treaty_annuities_10 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1750
+}
+
+cr_treaty_annuities_11 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1900
+}
+
+cr_treaty_annuities_12 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 2050
+}
+
+cr_treaty_annuities_13 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 2300
+}
+
+cr_treaty_annuities_14 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 2450
+}
+
+cr_treaty_annuities_15 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 2600
+}
+
+cr_treaty_annuities_16 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 2750
+}
+
+cr_treaty_annuities_17 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 2900
+}
+
+cr_treaty_annuities_18 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 3150
+}
+
+cr_treaty_annuities_19 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 3300
+}
+
+cr_treaty_annuities_20 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 3350
+}
+
+cr_treaty_annuities_21 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 3500
+}
+
+cr_treaty_annuities_22 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 3650
+}
+
+cr_treaty_annuities_23 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 3800
+}
+
+cr_treaty_annuities_24 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 3950
+}
+
+cr_treaty_annuities_25 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 4100
+}
+
+cr_treaty_annuities_26 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 4250
+}
+
+cr_treaty_annuities_27 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 4400
+}
+
+cr_treaty_annuities_28 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 4550
+}
+
+cr_treaty_annuities_27 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 4700
+}
+
+cr_treaty_annuities_28 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 4850
+}
+
+cr_treaty_annuities_29 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 5000
+}
+
+cr_treaty_annuities_30 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 5150
+}
+
+cr_treaty_annuities_31 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 5300
+}
+
+cr_treaty_annuities_32 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 5450
+}
+
+cr_treaty_annuities_33 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 5600
+}
+
+cr_treaty_annuities_34 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 5750
+}
+
+cr_treaty_annuities_35 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 5900
+}
+
+cr_treaty_annuities_36 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 6150
+}
+
+cr_treaty_annuities_37 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 6300
+}
+
+cr_treaty_annuities_38 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 6450
+}
+
+cr_treaty_annuities_39 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 6600
+}
+
+cr_treaty_annuities_40 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 6750
+}
+
+cr_treaty_annuities_robinson_treaty = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1200
+}
+
+cr_indian_removal_reparations_5 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 7500
+}
+
+cr_indian_removal_reparations_4 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 6000
+}
+
+cr_indian_removal_reparations_3 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 4500
+}
+
+cr_indian_removal_reparations_2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 3000
+}
+
+cr_indian_removal_reparations_1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1500
+}
+
+seminole_war_mod = {
+		icon = gfx/interface/icons/timed_modifier_icons/warrior_bands_negative.dds
+		state_colony_growth_speed_mult = -0.50
+		state_migration_pull_mult = -0.33
+		state_mortality_mult = 0.25
+		unit_supply_consumption_mult = 0.5
+}
+
+seminole_war_mod_1 = {
+		icon = gfx/interface/icons/timed_modifier_icons/warrior_bands_negative.dds
+		state_colony_growth_speed_mult = -0.40
+		state_migration_pull_mult = -0.25
+		state_mortality_mult = 0.15
+		unit_supply_consumption_mult = 0.5
+}
+
+seminole_war_mod_2 = {
+		icon = gfx/interface/icons/timed_modifier_icons/warrior_bands_negative.dds
+		state_colony_growth_speed_mult = -0.25
+		state_migration_pull_mult = -0.15
+		state_mortality_mult = 0.1
+		unit_supply_consumption_mult = 0.35
+}
+
+seminole_war_mod_3 = {
+		icon = gfx/interface/icons/timed_modifier_icons/warrior_bands_negative.dds
+		state_colony_growth_speed_mult = -0.10
+		state_migration_pull_mult = -0.05
+		state_mortality_mult = 0.05
+		unit_supply_consumption_mult = 0.25
 }

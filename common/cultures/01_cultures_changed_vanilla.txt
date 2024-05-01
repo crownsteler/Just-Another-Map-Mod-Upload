@@ -1006,6 +1006,7 @@ muskogean={ # Creek and Seminole
 		Billy
 		Gideon
 		John Joseph Jack
+		Jim
 		Kose
 		Micanopy
 		Peter
@@ -1025,6 +1026,7 @@ muskogean={ # Creek and Seminole
 		#Seminole
 		Asiyahola
 		Holata
+		Hulbutta_Hajo
 		Neha
 		Osceola
 		Sonuk
@@ -1045,6 +1047,7 @@ muskogean={ # Creek and Seminole
 		Checote
 		McIntosh
 		Stedham
+		Micanopy
 	}
 	common_last_names={
 		Anderson Arthur
@@ -1064,6 +1067,7 @@ muskogean={ # Creek and Seminole
 		Cusetaw
 		Emathla
 		Hadjo
+		Jumper
 		Mathla
 		Yohola
 		
@@ -1077,7 +1081,7 @@ muskogean={ # Creek and Seminole
 }
 
 nez_perce={ #renamed to Penutian
-	color= hsv{ 0.06 0.45 0.70 }
+	color= rgb{ 112 120 160 }
 	religion = animist
 	traits = { indigenous_american_heritage north_american_group }
 	male_common_first_names={
@@ -1289,6 +1293,52 @@ caddoan={ # Choctaw
 		1 = native_american
 	}
 	graphics = decentralised_americas
+}
+
+beja={
+	color= rgb{ 205 180 95 }
+	religion = sunni
+	traits = { east_african_culture_group african_heritage }
+	male_common_first_names={
+		Adlan
+		Awkal
+		Badi
+		Hassab
+		Gely
+		Idris
+		Isma_il
+		Nasir
+		Nawwar
+		Nul
+		Rajab
+		Ranfa
+		Tabl
+		Unsa
+	}
+	female_common_first_names = {
+		Fatimah
+		Medina
+	}	
+	noble_last_names = {
+		Aliab
+		Busati
+		Gwelei
+		wad_Muhammad
+	}
+	common_last_names={
+		Ibn_Badi
+		Ibn_Ismail
+		Ibn_Tabl
+		Likaylik
+		Muhammad
+		Rabihi
+		ibn_Nul
+		wad_Rajab
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
 }
 
 xhosa={

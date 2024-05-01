@@ -19,24 +19,24 @@
 			}
 		}
 		random_events = {
-			5 = 0
-			10 = cr_indian_removal.1 #Chickasaw Removal / treaty of doaksville
-			15 = cr_indian_removal.5 #intruder controversy
-			15 = cr_indian_removal.6 #The Roanoke Massacre
-			15 = cr_indian_removal.10 #Treaty of New Echota
-			5 = cr_indian_removal.11 #An Adress to Martin van Buren
-			5 = cr_indian_removal.12 #John Ross' Protest Petition
-			10 = cr_indian_removal.30  #Squatters
-			5 = cr_indian_removal.31  #Newspaper Clippings
-			5 = cr_indian_removal.33  #College Protests
-			5 = cr_indian_removal.34  #Female Missionary Societies
-			5 = cr_indian_removal.35 #Land Patents / Choctaw Scrip
-			5 = cr_indian_removal.40 #The Failure of Indian Policy
-			5 = cr_indian_removal.41 #Indian Improvement Societies 
+			7 = 0
+			15 = cr_indian_removal.1 #Chickasaw Removal / treaty of doaksville
+			22 = cr_indian_removal.5 #intruder controversy
+			22 = cr_indian_removal.6 #The Roanoke Massacre
+			30 = cr_indian_removal.10 #Treaty of New Echota
+			15 = cr_indian_removal.11 #An Adress to Martin van Buren
+			15 = cr_indian_removal.12 #John Ross' Protest Petition
+			15 = cr_indian_removal.30 #Squatters
+			2 = cr_indian_removal.31  #Newspaper Clippings
+			2 = cr_indian_removal.33  #College Protests
+			2 = cr_indian_removal.34  #Female Missionary Societies
+			7 = cr_indian_removal.35 #Land Patents / Choctaw Scrip
+			2 = cr_indian_removal.40 #The Failure of Indian Policy
+			2 = cr_indian_removal.41 #Indian Improvement Societies 
 		}
 	}
 	
-	scripted_button = je_cr_indian_removal_button_a_choctaw
+	#scripted_button = je_cr_indian_removal_button_a_choctaw
 	scripted_button = je_cr_indian_removal_button_b_chickasaw
 	scripted_button = je_cr_indian_removal_button_c_creek
 	scripted_button = je_cr_indian_removal_button_d_cherokee_treaty 
@@ -45,6 +45,8 @@
 	
 	immediate = {
 		set_variable = cr_choctaw_removal_complete
+		set_variable = cr_treaty_of_new_echota_negotiations_ongoing
+		set_variable = cr_seminole_war_micanopy_can_surrender
 		save_scope_as = cr_removing_country
 		set_variable = {
 			name = cr_indian_removal_startup_cooldown
@@ -85,10 +87,10 @@
 			save_scope_as = state_of_tennessee
 		}
 		s:STATE_NORTH_CAROLINA.region_state:USA = {
-			save_scope_as = state_of_north_caroline
+			save_scope_as = state_of_north_carolina
 		}
 		s:STATE_SOUTH_CAROLINA.region_state:USA = {
-			save_scope_as = state_of_south_caroline
+			save_scope_as = state_of_south_carolina
 		}
 		s:STATE_FLORIDA.region_state:USA = {
 			save_scope_as = state_of_florida
@@ -98,6 +100,9 @@
 		}
 		cu:muskogean = {
 			save_scope_as = muskogean_people
+		}
+		cu:caddoan = {
+			save_scope_as = chickasaw_people
 		}
 		cu:yankee = {
 			save_scope_as = yankee_culture
@@ -145,9 +150,10 @@
 		#	text = je_indian_removal_end_3
 		#}
 		hidden_effect = {
-			remove_modifier = cr_creek_removal_cost
-			remove_modifier = cr_chickasaw_removal_cost
-			remove_modifier = cr_cherokee_removal_cost
+			trigger_event = { 
+				id = cr_indian_removal.99
+				days = 100 #So it will trigger after cr_indian_removal.5 has concluded
+			}
 		}
 		
 	}
@@ -162,11 +168,12 @@
 	}
 	
 	on_fail = {
-		trigger_event = { id = native_resettlement.6 }
+		trigger_event = { id = cr_indian_removal.70 }
 		hidden_effect = {
-			remove_modifier = cr_creek_removal_cost
-			remove_modifier = cr_chickasaw_removal_cost
-			remove_modifier = cr_cherokee_removal_cost
+			trigger_event = { 
+				id = cr_indian_removal.99
+				days = 100 #So it will trigger after cr_indian_removal.70 has concluded
+			}
 		}
 	}
 	
@@ -180,9 +187,7 @@
 	
 	on_invalid = {
 		hidden_effect = {
-			remove_modifier = cr_creek_removal_cost
-			remove_modifier = cr_chickasaw_removal_cost
-			remove_modifier = cr_cherokee_removal_cost
+			trigger_event = { id = cr_indian_removal.99	}
 		}
 	}
 	
@@ -250,19 +255,32 @@ je_chickasaw_removal = {
 			save_scope_as = state_of_tennessee
 		}
 		s:STATE_NORTH_CAROLINA.region_state:USA = {
-			save_scope_as = state_of_north_caroline
+			save_scope_as = state_of_north_carolina
 		}
 		s:STATE_SOUTH_CAROLINA.region_state:USA = {
-			save_scope_as = state_of_south_caroline
+			save_scope_as = state_of_south_carolina
 		}
-		cu:cherokee = {
-			save_scope_as = cherokee_people
+		cu:caddoan = {
+			save_scope_as = chickasaw_people
 		}
 		cu:yankee = {
 			save_scope_as = yankee_culture
 		}
 		cu:dixie = {
 			save_scope_as = dixie_culture
+		}
+		
+		### Trigger new northern neighbours for Texas ###
+		random_list = {
+			2 = {
+			}
+			1 = {
+				p:x973B1C.owner = {
+					trigger_event = {
+						id = cr_indian_removal.65
+					}
+				}
+			}
 		}
 	}
 
@@ -430,10 +448,10 @@ je_creek_removal = {
 			save_scope_as = state_of_tennessee
 		}
 		s:STATE_NORTH_CAROLINA.region_state:USA = {
-			save_scope_as = state_of_north_caroline
+			save_scope_as = state_of_north_carolina
 		}
 		s:STATE_SOUTH_CAROLINA.region_state:USA = {
-			save_scope_as = state_of_south_caroline
+			save_scope_as = state_of_south_carolina
 		}
 		cu:cherokee = {
 			save_scope_as = cherokee_people
@@ -443,6 +461,19 @@ je_creek_removal = {
 		}
 		cu:dixie = {
 			save_scope_as = dixie_culture
+		}
+		
+		### Trigger new northern neighbours for Texas ###
+		random_list = {
+			2 = {
+			}
+			1 = {
+				p:x973B1C.owner = {
+					trigger_event = {
+						id = cr_indian_removal.65
+					}
+				}
+			}
 		}
 	}
 
@@ -465,9 +496,7 @@ je_creek_removal = {
 			set_variable = cr_creek_removal_complete
 		}
 		s:STATE_ALABAMA = {
-			state_region = {
-				add_arable_land = 25
-			}		
+			add_arable_land = 25
 		}
 		custom_tooltip = {
 			text = cr_indian_state_removal_complete
@@ -591,10 +620,10 @@ je_cherokee_removal = {
 			save_scope_as = state_of_tennessee
 		}
 		s:STATE_NORTH_CAROLINA.region_state:USA = {
-			save_scope_as = state_of_north_caroline
+			save_scope_as = state_of_north_carolina
 		}
 		s:STATE_SOUTH_CAROLINA.region_state:USA = {
-			save_scope_as = state_of_south_caroline
+			save_scope_as = state_of_south_carolina
 		}
 		cu:cherokee = {
 			save_scope_as = cherokee_people
@@ -604,6 +633,19 @@ je_cherokee_removal = {
 		}
 		cu:dixie = {
 			save_scope_as = dixie_culture
+		}
+		
+		### Trigger new northern neighbours for Texas ###
+		random_list = {
+			2 = {
+			}
+			1 = {
+				p:x973B1C.owner = {
+					trigger_event = {
+						id = cr_indian_removal.65
+					}
+				}
+			}
 		}
 	}
 
@@ -834,10 +876,10 @@ je_seminole_removal = {
 			save_scope_as = state_of_tennessee
 		}
 		s:STATE_NORTH_CAROLINA.region_state:USA = {
-			save_scope_as = state_of_north_caroline
+			save_scope_as = state_of_north_carolina
 		}
 		s:STATE_SOUTH_CAROLINA.region_state:USA = {
-			save_scope_as = state_of_south_caroline
+			save_scope_as = state_of_south_carolina
 		}
 		cu:cherokee = {
 			save_scope_as = cherokee_people
@@ -845,11 +887,27 @@ je_seminole_removal = {
 		cu:muskogean = {
 			save_scope_as = muskogean_people
 		}
+		cu:caddoan = {
+			save_scope_as = chickasaw_people
+		}
 		cu:yankee = {
 			save_scope_as = yankee_culture
 		}
 		cu:dixie = {
 			save_scope_as = dixie_culture
+		}
+		
+		### Trigger new northern neighbours for Texas ###
+		random_list = {
+			2 = {
+			}
+			1 = {
+				p:x973B1C.owner = {
+					trigger_event = {
+						id = cr_indian_removal.65
+					}
+				}
+			}
 		}
 	}
 
@@ -901,7 +959,7 @@ je_seminole_removal = {
 				}
 			}
 		}
-		c:STATE_FLORIDA.region_state:USA = {
+		s:STATE_FLORIDA.region_state:USA = {
 			remove_modifier = seminole_war_mod
 		}
 	}
@@ -911,7 +969,7 @@ je_seminole_removal = {
 	}
 	
 	on_fail = {
-		c:STATE_FLORIDA.region_state:USA = {
+		s:STATE_FLORIDA.region_state:USA = {
 			remove_modifier = seminole_war_mod
 		}
 	}
@@ -927,7 +985,7 @@ je_seminole_removal = {
 	
 	on_invalid = {
 		hidden_effect = {
-			c:STATE_FLORIDA.region_state:USA = {
+			s:STATE_FLORIDA.region_state:USA = {
 				remove_modifier = seminole_war_mod
 			}
 		}

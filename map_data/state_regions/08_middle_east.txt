@@ -12,28 +12,11 @@
     arable_land = 10
     arable_resources = { "bg_date_plantations" }
     capped_resources = {
-        bg_lead_mining = 10 #Silver/Copper/Lead/Zinc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #bg_lead_mining = 10 #Silver/Copper/Lead/Zinc
+    }
+    resource = {
+        type = "bg_lead_mining"
+        undiscovered_amount = 10
     }
     resource = {
         type = "bg_oil_extraction"
@@ -137,23 +120,6 @@ STATE_SOUTH_YEMEN = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         bg_fishing = 8
     }
@@ -246,29 +212,15 @@ STATE_TRANSJORDAN = {
     arable_land = 5
     arable_resources = { "bg_livestock_ranches" "bg_date_plantations" }
     capped_resources = {
-        bg_sulfur_mining = 46
-        bg_iron_mining = 16 #Ajloun
+        #bg_sulfur_mining = 46
+        bg_iron_mining = 12 #Ajloun
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+    resource = {
+        type = "bg_sulfur_mining"
+        undiscovered_amount = 46
     }
     naval_exit_id = 3047
 }
@@ -286,9 +238,13 @@ STATE_PALESTINE = {
     arable_land = 38
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        #bg_iron_mining = 24 #Makhtesh, in desert, should be discoverable. Merged it into Transjordan for now.
+        #bg_iron_mining = 24 #Makhtesh, in desert, should be discoverable. Merged it into Transjordan for now. #Nope, made discoverable
         bg_logging = 6
         bg_fishing = 4
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 24
     }
     naval_exit_id = 3034
 }
@@ -309,69 +265,18 @@ STATE_LEBANON = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
-        bg_coal_mining = 44 #According to Wikipedia Muhammed Ali got some coal from Lebanon
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #bg_coal_mining = 44 #According to Wikipedia Muhammed Ali got some coal from Lebanon
         bg_logging = 9 #Cedars of Lebanon
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         bg_fishing = 5
+    }
+    resource = {
+        type = "bg_coal_mining"
+        discovered_amount = 8
+        undiscovered_amount = 34
     }
     naval_exit_id = 3034
 }
@@ -444,7 +349,11 @@ STATE_MOSUL = {
     arable_land = 35
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_sulfur_mining = 39
+    #bg_sulfur_mining = 39 #From oil?
+    }
+    resource = {
+        type = "bg_sulfur_mining"
+        undiscovered_amount = 39
     }
     resource = {
         type = "bg_oil_extraction"
@@ -524,28 +433,12 @@ STATE_BADIYA = {
     arable_land = 5
     arable_resources = { "bg_date_plantations" }
     capped_resources = {
-        bg_sulfur_mining = 25 #removed from Syria
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #bg_sulfur_mining = 25 #removed from Syria #From oil?
+    }
+    resource = {
+        #From oil?
+        type = "bg_sulfur_mining"
+        undiscovered_amount = 25
     }
 }
 
@@ -578,24 +471,6 @@ STATE_LARISTAN = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     city = "x6DDC3B"
     farm = "xED39D0"
     mine = "x124E6F"
@@ -603,10 +478,24 @@ STATE_LARISTAN = {
     arable_land = 35
     arable_resources = { "bg_wheat_farms" "bg_dye_plantations" "bg_cotton_plantations" "bg_date_plantations" }
     capped_resources = {
-        bg_coal_mining = 28
-        bg_copper_mining = 55
-        bg_sulfur_mining = 32
-        bg_iron_mining = 55
+    #bg_coal_mining = 28
+    #bg_copper_mining = 55
+    #bg_sulfur_mining = 32
+    #bg_iron_mining = 55
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 28
+    }
+    resource = {
+        type = "bg_sulfur_mining"
+        discovered_amount = 20
+        undiscovered_amount = 12
+    }
+    resource = {
+        type = "bg_iron_mining"
+        discovered_amount = 20
+        undiscovered_amount = 35
     }
     resource = {
         type = "bg_copper_mining"
@@ -650,8 +539,16 @@ STATE_KHORASAN = {
     arable_land = 70
     arable_resources = { "bg_wheat_farms" "bg_dye_plantations" "bg_opium_plantations" "bg_cotton_plantations" }
     capped_resources = {
-        bg_iron_mining = 35
-        bg_coal_mining = 20
+    #bg_iron_mining = 35
+    #bg_coal_mining = 20
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 20
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 35
     }
 #resource = { #Single smallish oil field, merged it into Turkmenia
 #    type = "bg_oil_extraction"
@@ -673,8 +570,12 @@ STATE_KHUZESTAN = {
     arable_land = 55
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_sugar_plantations" "bg_date_plantations" }
     capped_resources = {
-        bg_sulfur_mining = 40
+        #bg_sulfur_mining = 40 #From oil?
         bg_fishing = 5
+    }
+    resource = {
+        type = "bg_sulfur_mining"
+        undiscovered_amount = 40
     }
     resource = {
         type = "bg_oil_extraction"
@@ -696,12 +597,12 @@ STATE_ISFAHAN = {
     arable_land = 60
     arable_resources = { "bg_wheat_farms" "bg_silk_plantations" "bg_opium_plantations" "bg_dye_plantations" "bg_cotton_plantations" }
     capped_resources = {
-        bg_lead_mining = 38 #lead/zinc
-
-
-
-
-
+    #bg_lead_mining = 38 #lead/zinc
+    }
+    resource = {
+        type = "bg_lead_mining"
+        discovered_amount = 14
+        undiscovered_amount = 24
     }
 }
 
@@ -717,8 +618,12 @@ STATE_MAZANDARAN = {
     arable_land = 70
     arable_resources = { "bg_rice_farms" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_coal_mining = 48
+        #bg_coal_mining = 48
         bg_logging = 18
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 48
     }
 }
 
@@ -753,24 +658,6 @@ STATE_TABRIZ = {
         bg_logging = 4
         bg_copper_mining = 30
         bg_lead_mining = 25 #Lead/zinc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -832,45 +719,9 @@ STATE_AYDIN = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         #bg_coal_mining = 48 #Lignite
         bg_lead_mining = 20 #chrome, antimony and mercury
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -894,8 +745,6 @@ STATE_KONYA = {
 
 
 
-
-
     capped_resources = {
         #also mercury and chrome
         bg_fishing = 6
@@ -915,9 +764,13 @@ STATE_KASTAMONU = {
     arable_land = 35
     arable_resources = { "bg_wheat_farms" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" }
     capped_resources = {
-        bg_coal_mining = 72
+        #bg_coal_mining = 72
         bg_logging = 18
         bg_fishing = 8
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 72
     }
     naval_exit_id = 3036
 }
@@ -936,13 +789,9 @@ STATE_DIYARBAKIR = {
 
 
 
-
-
     capped_resources = {
         #bg_coal_mining = 32 #Lignite
         bg_copper_mining = 42 #Diyarbakir means land of copper and copper mining dates back millennia
-
-
 
 
 
@@ -991,6 +840,9 @@ STATE_TRABZON = {
         undiscovered_amount = 21 #Potentially #state_trait_porphyry_copper?
 
 
+
+
+
     }
     naval_exit_id = 3036
 }
@@ -1007,14 +859,14 @@ STATE_ERZURUM = {
     arable_land = 40
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 30 #Divrigi
-
-
-
-
-
+        #bg_iron_mining = 30 #Divrigi
         bg_logging = 7
         bg_lead_mining = 36
+    }
+    resource = {
+        #Divrigi
+        type = "bg_iron_mining"
+        undiscovered_amount = 30
     }
 }
 
@@ -1029,7 +881,11 @@ STATE_ANKARA = {
     arable_land = 65
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_opium_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_iron_mining = 30
+    #bg_iron_mining = 30
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 30
     }
 }
 

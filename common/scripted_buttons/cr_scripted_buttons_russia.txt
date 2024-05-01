@@ -240,8 +240,8 @@ je_cr_russian_america_annex_it = {
 		annex = c:ASK
 		if = {
 			limit = {
-				NOT = {
-					s:STATE_ALASKA = {
+				s:STATE_ALASKA = {
+					NOT = {
 						has_claim_by = c:RUS
 					}
 				}

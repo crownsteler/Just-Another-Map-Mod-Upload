@@ -1,6 +1,6 @@
 ﻿namespace = expedition_events
 
-expedition_events.400 = { #Successful expedition - Buenaventura River
+expedition_events.300 = { #Successful expedition - Buenaventura River
 	type = country_event
     placement = ROOT
 
@@ -45,7 +45,7 @@ expedition_events.400 = { #Successful expedition - Buenaventura River
 	}
 }
 
-expedition_events.401 = { #Successful expedition - Oregon Trail
+expedition_events.301 = { #Successful expedition - Oregon Trail
 	type = country_event
     placement = ROOT
 
@@ -91,7 +91,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 						p:x06E885.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x06E885
 						}
@@ -104,7 +104,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 						p:x2403EF.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x2403EF
 						}
@@ -116,7 +116,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 						p:x93B583.owner = { is_country_type = recognized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xE387E7
 						}
@@ -127,7 +127,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 						p:x5F141F.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x5F141F
 						}
@@ -138,7 +138,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 						p:x5B70BB.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x5B70BB
 						}
@@ -149,7 +149,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 						p:xF3326F.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xF3326F
 						}
@@ -160,7 +160,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 						p:x90C080.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x90C080
 						}
@@ -173,7 +173,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 						p:x0F6ED8.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x0F6ED8
 						}
@@ -184,7 +184,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 						p:xC547CE.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xC547CE
 						}
@@ -195,7 +195,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 						p:xABDA2C.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xABDA2C
 						}
@@ -206,7 +206,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 						p:xD08040.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xD08040
 						}
@@ -217,7 +217,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 						p:x46C0C9.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x46C0C9
 						}
@@ -228,7 +228,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 						p:xF7CF1A.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xF7CF1A
 						}
@@ -243,7 +243,7 @@ expedition_events.401 = { #Successful expedition - Oregon Trail
 	}
 }
 
-expedition_events.402 = { #Successful expedition - Great Salt Lake
+expedition_events.302 = { #Successful expedition - Great Salt Lake
 	type = country_event
     placement = ROOT
 
@@ -290,7 +290,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:x93B583.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x93B583
 						}
@@ -301,7 +301,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:x5B70BB.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x5B70BB
 						}
@@ -312,7 +312,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:xF3326F.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xF3326F
 						}
@@ -323,7 +323,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:x90C080.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x90C080
 						}
@@ -334,7 +334,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:x465DC8.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x465DC8
 						}
@@ -346,7 +346,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:x2403EF.owner = { NOT = { is_country_type = decentralized } }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xE387E7
 						}
@@ -359,7 +359,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:x0F6ED8.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x0F6ED8
 						}
@@ -370,7 +370,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:xC547CE.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xC547CE
 						}
@@ -381,7 +381,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:xABDA2C.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xABDA2C
 						}
@@ -392,7 +392,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:xD08040.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xD08040
 						}
@@ -403,7 +403,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:x46C0C9.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x46C0C9
 						}
@@ -414,7 +414,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:xF7CF1A.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xF7CF1A
 						}
@@ -427,7 +427,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:xA9B917.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xA9B917
 						}
@@ -438,7 +438,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:xA7E6DC.owner = { is_country_type = decentralized }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xA7E6DC
 						}
@@ -450,7 +450,7 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 						p:xA7E6DC.owner = { NOT = { is_country_type = decentralized } }
 					}
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xF3B4BA
 						}
@@ -465,13 +465,13 @@ expedition_events.402 = { #Successful expedition - Great Salt Lake
 	}
 }
 
-expedition_events.403 = { #Successful expedition - California Trail
+expedition_events.303 = { #Successful expedition - California Trail
 	type = country_event
     placement = ROOT
 
-    title = expedition_events.403.t
-    desc = expedition_events.403.d
-    flavor = expedition_events.403.f
+    title = expedition_events.303.t
+    desc = expedition_events.303.d
+    flavor = expedition_events.303.f
 
     event_image = {
 		video = "europenorthamerica_gold_prospectors"
@@ -487,7 +487,8 @@ expedition_events.403 = { #Successful expedition - California Trail
 		west_america_expedition_location = yes
 		remove_variable = on_expedition
 		remove_expedition_events_effect = yes
-		remove_variable = cr_road_to_california_is_open
+		remove_global_variable = cr_road_to_california_is_open
+		set_global_variable = cr_california_trail_mapped
 		random_scope_character = {
 			limit = {
 				has_variable = expedition_leader_var 
@@ -512,7 +513,7 @@ expedition_events.403 = { #Successful expedition - California Trail
 				}
 				s:STATE_UTAH = {
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x9888F6
 						}
@@ -525,7 +526,7 @@ expedition_events.403 = { #Successful expedition - California Trail
 				}
 				s:STATE_UTAH = {
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xD4D9A8
 						}
@@ -538,7 +539,7 @@ expedition_events.403 = { #Successful expedition - California Trail
 				}
 				s:STATE_UTAH = {
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xF480A1
 						}
@@ -554,7 +555,7 @@ expedition_events.403 = { #Successful expedition - California Trail
 				}
 				s:STATE_UTAH = {
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xF3B4BA
 						}
@@ -569,7 +570,7 @@ expedition_events.403 = { #Successful expedition - California Trail
 				}
 				s:STATE_UTAH = {
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x5708EE
 						}
@@ -586,7 +587,7 @@ expedition_events.403 = { #Successful expedition - California Trail
 				}
 				s:STATE_NEVADA = {
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xA8DB62
 						}
@@ -601,7 +602,7 @@ expedition_events.403 = { #Successful expedition - California Trail
 				}
 				s:STATE_NEVADA = {
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x9FF17F
 						}
@@ -616,7 +617,7 @@ expedition_events.403 = { #Successful expedition - California Trail
 				}
 				s:STATE_NEVADA = {
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xBB8631
 						}
@@ -631,7 +632,7 @@ expedition_events.403 = { #Successful expedition - California Trail
 				}
 				s:STATE_NEVADA = {
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							x455838
 						}
@@ -646,7 +647,7 @@ expedition_events.403 = { #Successful expedition - California Trail
 				}
 				s:STATE_NEVADA = {
 					set_owner_of_provinces = {
-						country = c:SEQ
+						country = ROOT
 						provinces = {
 							xEF5007
 						}

@@ -37,22 +37,6 @@ STATE_GUATEMALA = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         #bg_minor_metals_mining = 30 #nickel
         bg_logging = 17
@@ -80,47 +64,14 @@ STATE_HONDURAS = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
-        bg_lead_mining = 15 #lead/silver
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #bg_lead_mining = 15 #lead/silver
         bg_logging = 15
         bg_fishing = 8
+    }
+    resource = {
+        type = "bg_lead_mining"
+        undiscovered_amount = 15
     }
     resource = {
         type = "bg_rubber"
@@ -141,23 +92,6 @@ STATE_NICARAGUA = {
     wood = "x9CDB2B"
     arable_land = 50
     arable_resources = { "bg_maize_farms" "bg_coffee_plantations" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #palm oil
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -188,11 +122,14 @@ STATE_COSTA_RICA = {
 
 
 
-
     capped_resources = {
-        bg_coal_mining = 24
+        #bg_coal_mining = 24
         bg_logging = 8
         bg_fishing = 3
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 24
     }
     resource = {
         type = "bg_rubber"
@@ -240,23 +177,6 @@ STATE_HAITI = {
     wood = "x4FE008"
     arable_land = 35
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_cotton_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #banana = cacao
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -309,22 +229,6 @@ STATE_PUERTO_RICO = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         bg_fishing = 4
     }
@@ -345,21 +249,6 @@ STATE_BAHAMAS = {
     wood = "x4EBC79"
     arable_land = 5
     arable_resources = { "bg_rice_farms" "bg_banana_plantations" } #Banana = pineapple
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -407,22 +296,6 @@ STATE_JAMAICA = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         bg_logging = 4
         bg_fishing = 5
@@ -448,10 +321,19 @@ STATE_CUBA = {
     arable_land = 105
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_coal_mining = 16
-        bg_iron_mining = 18
+        #bg_coal_mining = 16
+        #bg_iron_mining = 18
         bg_logging = 15
         bg_fishing = 10
+    }
+    resource = {
+        type = "bg_coal_mining"
+        discovered_amount = 6
+        undiscovered_amount = 10
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 18
     }
     resource = {
         type = "bg_rubber"

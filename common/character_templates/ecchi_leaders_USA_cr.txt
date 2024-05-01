@@ -13,25 +13,25 @@ ecchi_usa_emerson_character_template = {
     birth_date = 1803.5.25
 	dna = ecchi_dna_ralph_emerson
     traits = { tactful charismatic romantic }
-    interest_group_leader_usage = {
-        country_trigger = {
-            OR = {
-                AND = {
-                    exists = c:USA
-                    this = c:USA
-                    NOT = { exists = c:NEN }
-                }
-                AND = {
-                    exists = c:NEN
-                    this = c:NEN
-                }
-            }
-        }
-        interest_group_trigger = {
-			is_interest_group_type = ig_intelligentsia
-        }
-        earliest_usage_date = 1836.1.1
-        latest_usage_date = 1882.4.27
-        chance = 50
-    }
+    #interest_group_leader_usage = { #Spawned by event
+    #    country_trigger = {
+    #        OR = {
+    #            AND = {
+    #                exists = c:USA
+    #                this = c:USA
+    #                NOT = { exists = c:NEN }
+    #            }
+    #            AND = {
+    #                exists = c:NEN
+    #                this = c:NEN
+    #            }
+    #        }
+    #    }
+    #    interest_group_trigger = {
+	#		is_interest_group_type = ig_intelligentsia
+    #    }
+    #    earliest_usage_date = 1836.1.1
+    #    latest_usage_date = 1882.4.27
+    #    chance = 50
+    #}
 }

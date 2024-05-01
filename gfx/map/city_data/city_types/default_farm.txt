@@ -65,6 +65,9 @@
 	building_livestock_ranch = {
 		"european_rural_ranch_01_mesh"
 	}
+	building_kashmir_ranch = {
+		"european_rural_ranch_01_mesh"
+	}
 	
 	building_coffee_plantation = {
 		"european_rural_plantation_01_mesh"

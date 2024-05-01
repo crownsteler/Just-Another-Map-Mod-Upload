@@ -64,6 +64,6 @@
 		"arabic_factory_colonial_01_mesh"
 	}
 	building_copper_mine = {
-		"generic_rural_mining_coaldepo_sandstone_01_mesh"
+		"asian_mining_processing_01_mesh"
 	}
 }

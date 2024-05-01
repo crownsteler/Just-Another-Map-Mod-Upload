@@ -1,4 +1,10 @@
 ﻿l_english:
+ #Discoverable resources
+ building_coal_mine_discovered_resource:0 "[GetGoods('coal').GetName]"
+ building_iron_mine_discovered_resource:0 "[GetGoods('iron').GetName]"
+ building_lead_mine_discovered_resource:0 "[GetGoods('lead').GetName]"
+ building_sulfur_mine_discovered_resource:0 "[GetGoods('sulfur').GetName]"
+ 
  #Copper
  bg_copper_mining:0 "Copper Mines"
  building_copper_mine:0 "Copper Mines"

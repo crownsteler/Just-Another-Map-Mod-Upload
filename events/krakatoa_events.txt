@@ -57,6 +57,7 @@ krakatoa.1 = { #krakatoa erupts and you're the owner
 						region = sr:region_makasser
 						region = sr:region_philippines
 						region = sr:region_south_china
+						region = sr:region_formosa
 						region = sr:region_japan
 						region = sr:region_oceania
 						region = sr:region_melanesia

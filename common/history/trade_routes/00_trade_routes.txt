@@ -55,13 +55,19 @@
 	c:PAN ?= {
 		create_trade_route = {
 			goods = copper
-			level = 3
+			level = 2
 			direction = import
 			target = c:KBL.market
 		}	
 		create_trade_route = {
 			goods = tools
-			level = 4
+			level = 2
+			direction = import
+			target = c:BIC.market
+		}	
+		create_trade_route = {
+			goods = iron
+			level = 3
 			direction = import
 			target = c:BIC.market
 		}	
@@ -109,9 +115,9 @@
 	c:USA ?= {
 		create_trade_route = {
 			goods = sulfur
-			level = 3
+			level = 6
 			direction = import
-			target = c:GBR.market
+			target = c:SPA.market
 		}
 		create_trade_route = {
 			goods = grain
@@ -1010,7 +1016,7 @@
 	c:SIC ?= {
 		create_trade_route = {
 			goods = sulfur
-			level = 8
+			level = 11
 			direction = export
 			target = c:GBR.market
 		}
@@ -1150,6 +1156,12 @@
 			direction = export
 			target = c:SPA.market
 		}	
+		create_trade_route = {
+			goods = hardwood
+			level = 3
+			direction = export
+			target = c:BEL.market
+		}
 	}
 	
 	# Hamburg
@@ -1246,12 +1258,12 @@
 			direction = export
 			target = c:SPA.market
 		}
-		create_trade_route = {
-			goods = iron
-			level = 4
-			direction = export
-			target = c:USA.market
-		}	
+		#create_trade_route = {
+		#	goods = iron
+		#	level = 4
+		#	direction = export
+		#	target = c:USA.market
+		#}	
 		create_trade_route = {
 			goods = fabric
 			level = 14
@@ -1665,7 +1677,7 @@
 			goods = sugar
 			level = 4
 			direction = import
-			target = c:SPA.market
+			target = c:FRA.market
 		}	
 		create_trade_route = {
 			goods = engines
@@ -1689,7 +1701,7 @@
 			goods = manowars
 			level = 1
 			direction = import
-			target = c:POR.market
+			target = c:GBR.market
 		}		
 	}
 	

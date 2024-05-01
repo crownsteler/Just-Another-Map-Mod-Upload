@@ -76,19 +76,19 @@
 		random_list = {
 			15 = {
 				trigger = { NOT = { has_global_variable = buenaventura_river_disproven } }
-				trigger_event = { id = expedition_events.400 }
+				trigger_event = { id = expedition_events.300 }
 			}
 			80 = {
 				trigger = { NOT = { has_global_variable = oregon_trail_mapped } }
-				trigger_event = { id = expedition_events.401 }
+				trigger_event = { id = expedition_events.301 }
 			}
 			5 = {
 				trigger = { NOT = { has_global_variable = great_salt_lake_mapped } }
-				trigger_event = { id = expedition_events.402 }
+				trigger_event = { id = expedition_events.302 }
 			}
 			15 = {
 				trigger = { has_global_variable = cr_road_to_california_is_open }
-				trigger_event = { id = expedition_events.400 }
+				trigger_event = { id = expedition_events.303 }
 			}
 		}
 		remove_variable = on_expedition

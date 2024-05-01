@@ -68,3 +68,7 @@
  notification_cr_california_colonisation_discouraged_desc: "[SCOPE.sCountry('overlord').GetNameNoFlag] has stoped encouraging the settlement of the Californian frontier."
  notification_cr_california_colonisation_discouraged_tooltip: "#header $notification_cr_alaska_colonisation_discouraged_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_alaska_colonisation_discouraged_desc$"
  
+ notification_cr_numbered_treaties_switched_to_no_colonial_affairs_name: "Change in Colonisation Policy"
+ notification_cr_numbered_treaties_switched_to_no_colonial_affairs_desc: "With the recent change to [GetLawType('law_no_colonial_affairs').GetName] we have stopped negotiating Land Cession Treaties with the Indians of [SCOPE.sStrategicRegion('canada_region').GetName] and [SCOPE.sStrategicRegion('ruperts_land').GetName]."
+ notification_cr_numbered_treaties_switched_to_no_colonial_affairs_tooltip: "#header $notification_cr_numbered_treaties_switched_to_no_colonial_affairs_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_cr_numbered_treaties_switched_to_no_colonial_affairs_desc$"
+ 

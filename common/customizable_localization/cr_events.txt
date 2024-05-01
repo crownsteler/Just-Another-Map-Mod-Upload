@@ -15,7 +15,6 @@
 
 cr_ordinal_numbers_localisation = {
 	type = country
-	random_valid = no
 	text = {
 		trigger = {
 			global_var:cr_numbered_treaties_counter = 1
@@ -146,7 +145,6 @@ cr_ordinal_numbers_localisation = {
 
 cr_numbers_localisation = {
 	type = country
-	random_valid = no
 	text = {
 		trigger = {
 			global_var:cr_numbered_treaties_counter = 1

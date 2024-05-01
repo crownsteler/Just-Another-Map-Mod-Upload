@@ -1,67 +1,88 @@
-﻿je_oregon = {
+﻿### Added compatibility with Hail Columbia
+je_oregon = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
 	group = je_group_historical_content
+	
+	scripted_button = west_america_expedition
+
+	#on_monthly_pulse = {
+	#	effect = {
+	#		#if fur trade has declined add strength to USA	
+	#	}
+	#
+	#}
 
 	is_shown_when_inactive = {
-		exists = c:USA
-		exists = c:GBR
-		c:USA = ROOT
-		s:STATE_WASHINGTON = {
-			any_scope_state = {
-				owner = {
-					OR = {
-						c:GBR = THIS
-						is_subject_of = c:GBR
-					}
-				}
-			}
-		}
-		s:STATE_OREGON = {
-			any_scope_state = {
-				owner = {
-					OR = {
-						c:GBR = THIS
-						is_subject_of = c:GBR
-					}
-				}
-			}
-		}
-		s:STATE_IDAHO = {
-			any_scope_state = {
-				owner = {
-					OR = {
-						c:GBR = THIS
-						is_subject_of = c:GBR
-					}
-				}
-			}
-		}
+		#exists = c:USA
+		#exists = c:GBR
+		#c:USA = ROOT
+		#s:STATE_WASHINGTON = {
+		#	any_scope_state = {
+		#		owner = {
+		#			OR = {
+		#				c:GBR = THIS
+		#				is_subject_of = c:GBR
+		#			}
+		#		}
+		#	}
+		#}
+		#s:STATE_OREGON = {
+		#	any_scope_state = {
+		#		owner = {
+		#			OR = {
+		#				c:GBR = THIS
+		#				is_subject_of = c:GBR
+		#			}
+		#		}
+		#	}
+		#}
+		#s:STATE_IDAHO = {
+		#	any_scope_state = {
+		#		owner = {
+		#			OR = {
+		#				c:GBR = THIS
+		#				is_subject_of = c:GBR
+		#			}
+		#		}
+		#	}
+		#}
 	}
 
 	possible = {
-		c:USA = ROOT
-		OR = {
-			is_ai = yes
-			has_interest_marker_in_region = region_pacific_coast
-		}
+		#c:USA = ROOT
+		#OR = {
+		#	is_ai = yes
+		#	has_interest_marker_in_region = region_pacific_coast
+		#}
 	}
 
 	complete = {
 		OR = {
 			AND = {
+				custom_tooltip = {
+					text = oregon_tt
+					has_global_variable = oregon_trail_mapped
+				}
 				OR = {
-					custom_tooltip = {
-						text = oregon_tt
-						has_global_variable = oregon_trail_mapped
+					s:STATE_MONTANA = {
+						any_scope_state = {
+							owner = root
+						}
 					}
-					AND = {
-						year >= 1846
-						is_ai = yes
+					s:STATE_WYOMING = {
+						any_scope_state = {
+							owner = root
+						}
+					}
+					s:STATE_CALIFORNIA = {
+						any_scope_state = {
+							owner = root
+						}
 					}
 				}
 				c:GBR = {
-					relations:ROOT >= relations_threshold:cordial
+					relations:ROOT >= relations_threshold:amicable
 				}
 			}
 			AND = {
@@ -71,6 +92,10 @@
 					p:x87ED27.owner = ROOT
 					p:xBC0AA9.owner = ROOT
 				}
+			}
+			AND = {
+				year >= 1846
+				is_ai = yes
 			}
 		}
 	}
@@ -112,22 +137,74 @@
 			c:GBR = { trigger_event = { id = oregon.2 } }
 		}
 		else = {
+			s:STATE_BRITISH_COLUMBIA = {
+				random_scope_state = {
+					limit = {
+						owner = {
+							is_subject_of = c:GBR
+						}
+					}
+					owner = {
+						save_scope_as = oregon_holder_scope
+					}
+				}
+			}
 			s:STATE_IDAHO = {
 				add_homeland = cu:yankee
+				add_claim = ROOT
+				remove_claim = scope:oregon_holder_scope
 			}
 			s:STATE_WASHINGTON = {
 				add_homeland = cu:yankee
+				add_claim = ROOT
+				remove_claim = scope:oregon_holder_scope
 			}
 			s:STATE_OREGON = {
 				add_homeland = cu:yankee
+				add_claim = ROOT
+				remove_claim = scope:oregon_holder_scope
 			}
 			add_modifier = {
 				name = oregon_resolved
 				months = normal_modifier_time
 			}
 		}
+		if = {
+			limit = { 
+				has_journal_entry = usfp_manifest_destiny_main
+			}
+			usfp_manifest_less_destiny_effect = yes
+		}
 	}
 
+	fail = {
+		c:GBR = {
+			relations:ROOT <= relations_threshold:poor
+   	 	}
+	}
+	
+	on_fail = {
+			add_journal_entry = {
+				type = je_conquer_oregon
+			}
+			s:STATE_OREGON = {
+				add_claim = ROOT
+			}
+			s:STATE_IDAHO = {
+				add_claim = ROOT
+			}
+			s:STATE_WASHINGTON = {
+				add_claim = ROOT
+			}
+			if = {
+				limit = { 
+					has_journal_entry = usfp_manifest_destiny_main
+				}
+				usfp_manifest_more_destiny_effect = yes
+			}
+	}
+
+	should_be_pinned_by_default = yes
 	weight = 100
 }
 

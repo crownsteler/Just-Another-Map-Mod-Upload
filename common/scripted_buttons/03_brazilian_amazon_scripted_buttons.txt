@@ -224,7 +224,7 @@ amazon_border_treaty_button_1 = {
 
 	effect = {
 		set_variable = { 
-			id = treaty_of_ayacucho_var
+			name = treaty_of_ayacucho_var
 			months = 13
 		}
 		trigger_event = { id = amazonas.2 popup = yes}

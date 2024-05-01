@@ -11,9 +11,13 @@
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_dye_plantations" "bg_opium_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" }
 
     capped_resources = {
-        bg_coal_mining = 80
+        #bg_coal_mining = 80 #apparently as of 2024 there is no coal mining in Bihar
         bg_logging = 14
     }
+}
+resource = {
+    type = "bg_coal_mining"
+    undiscovered_amount = 80
 }
 
 STATE_NORTH_BENGAL = {
@@ -31,27 +35,8 @@ STATE_NORTH_BENGAL = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
-        bg_iron_mining = 30
+        #bg_iron_mining = 30 #apparently iron ore was only discovered in 2019
         bg_logging = 8
     }
 }
@@ -72,49 +57,15 @@ STATE_ASSAM = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
-        bg_coal_mining = 56 #Discovered 1825, good quality coal
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #bg_coal_mining = 56 #Discovered 1825, good quality coal
 
         bg_logging = 25
+    }
+    resource = {
+        type = "bg_coal_mining"
+        discovered_amount = 16
+        undiscovered_amount = 40
     }
     resource = {
         type = "bg_oil_extraction"
@@ -134,8 +85,13 @@ STATE_DELHI = {
     arable_land = 780
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_opium_plantations" "bg_sugar_plantations" }
     capped_resources = {
-        bg_iron_mining = 45
+        #bg_iron_mining = 45
         bg_monuments = 1
+    }
+    resource = {
+        #Gorumahisani in Orissa/Odisha were apparently the first iron mines in India in 1910
+        type = "bg_iron_mining"
+        undiscovered_amount = 45
     }
 }
 
@@ -208,24 +164,6 @@ STATE_KASHMIR = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         #bg_coal_mining = 12 #Some coal, not particularly relevant I think
         bg_logging = 14
@@ -258,8 +196,12 @@ STATE_NAGPUR = {
     arable_land = 200
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_sugar_plantations" }
     capped_resources = {
-        bg_iron_mining = 18
+        #bg_iron_mining = 18
         bg_logging = 9
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 18
     }
 }
 
@@ -279,48 +221,15 @@ STATE_SOUTH_BENGAL = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         bg_logging = 7
         bg_fishing = 12
-        bg_coal_mining = 28 #Raniganj Coalfield
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #bg_coal_mining = 28 #Raniganj Coalfield
+    }
+    resource = {
+        type = "bg_coal_mining"
+        discovered_amount = 10
+        undiscovered_amount = 18
     }
     resource = {
         type = "bg_oil_extraction"
@@ -343,8 +252,12 @@ STATE_SINDH = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_sugar_plantations" }
     capped_resources = {
         #Thar coalfield not included because its lignite
-        bg_sulfur_mining = 40
+        #bg_sulfur_mining = 40
         bg_fishing = 6
+    }
+    resource = {
+        type = "bg_sulfur_mining"
+        undiscovered_amount = 40
     }
     naval_exit_id = 3048
 }
@@ -364,68 +277,15 @@ STATE_RAJPUTANA = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        bg_sulfur_mining = 52 #largest source of phosphate rock in India?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #bg_sulfur_mining = 52 #largest source of phosphate rock in India?
         bg_copper_mining = 24 #Kethri, in operation
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+    resource = {
+        type = "bg_sulfur_mining"
+        undiscovered_amount = 52
     }
 }
 
@@ -486,29 +346,20 @@ STATE_ORISSA = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
-        bg_iron_mining = 39
-        bg_lead_mining = 45
+        #bg_iron_mining = 39 #Gorumahisani, started 1910
+        #bg_lead_mining = 45
         bg_fishing = 7
         bg_logging = 8
+    }
+    resource = {
+        #Gorumahisani, started 1910
+        type = "bg_iron_mining"
+        undiscovered_amount = 64
+    }
+    resource = {
+        type = "bg_lead_mining"
+        undiscovered_amount = 45
     }
     naval_exit_id = 3050
 }
@@ -526,10 +377,14 @@ STATE_CIRCARS = {
     arable_land = 250
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" }
     capped_resources = {
-        bg_coal_mining = 40
+        #bg_coal_mining = 40
         #bg_iron_mining = 21 #No iron here?
         bg_logging = 11
         bg_fishing = 14
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 40
     }
     naval_exit_id = 3050
 }
@@ -550,29 +405,15 @@ STATE_MYSORE = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     capped_resources = {
         bg_gold_mining = 4
-        bg_iron_mining = 35
+        #bg_iron_mining = 35
         bg_logging = 14
         bg_fishing = 4
+    }
+    resource = {
+        type = "bg_iron_mining"
+        undiscovered_amount = 35
     }
     naval_exit_id = 3049
 }
@@ -589,24 +430,6 @@ STATE_TRAVANCORE = {
     wood = "xA0A050"
     arable_land = 80
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_tea_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #spices/pepper
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -668,24 +491,6 @@ STATE_BOMBAY = {
     wood = "x40CE40"
     arable_land = 350
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_sugar_plantations" } #spices
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

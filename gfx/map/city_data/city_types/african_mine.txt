@@ -64,6 +64,6 @@
 		"african_colonial_manufactory_01_mesh"
 	}
 	building_copper_mine = {
-		"generic_rural_mining_coaldepo_02_mesh"
+		"african_colonial_manufactory_01_mesh"
 	}
 }

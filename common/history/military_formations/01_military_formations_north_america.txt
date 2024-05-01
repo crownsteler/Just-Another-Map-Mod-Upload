@@ -361,7 +361,7 @@
 			historical = yes
 			birth_date = 1804.4.18 #random date
 			hq = region_dixie
-			#ig_leader = yes # Both general and IG leader
+			ig_leader = yes # Both general and IG leader
 			is_general = yes # Both general and IG leader
 			interest_group = ig_armed_forces
 			ideology = ideology_jingoist
@@ -372,6 +372,11 @@
 				defense_in_depth_specialist
 			}
 			save_scope_as = osceola_gen
+			on_created = {
+				set_variable = {
+					name = i_am_osceola
+				}				
+			}
 		}
 
 		scope:osceola_gen = {

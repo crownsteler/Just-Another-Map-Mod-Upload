@@ -37,14 +37,18 @@ POPS = {
 				size = 3588
 			}
 			create_pop = {
-				culture = amazonian
+				culture = cariban
 				size = 2000
 			}
 		}
 		region_state:AMZ = {
 			create_pop = {
-				culture = amazonian
-				size = 6000
+				culture = cariban
+				size = 5000
+			}
+			create_pop = {
+				culture = cariban
+				size = 1000
 			}
 		}
 	}
@@ -93,14 +97,18 @@ POPS = {
 				size = 200
 			}
 			create_pop = {
-				culture = amazonian
+				culture = cariban
 				size = 2000
 			}
 		}
 		region_state:AMZ = {
 			create_pop = {
+				culture = cariban
+				size = 4978
+			}
+			create_pop = {
 				culture = amazonian
-				size = 5796
+				size = 818
 			}
 			create_pop = {
 				culture = afro_caribbean
@@ -116,7 +124,7 @@ POPS = {
 				size = 1592
 			}
 			create_pop = {
-				culture = amazonian
+				culture = cariban
 				size = 1000
 			}
 			create_pop = {
@@ -126,8 +134,12 @@ POPS = {
 		}
 		region_state:AMZ = {
 			create_pop = {
-				culture = amazonian
+				culture = cariban
 				size = 3000
+			}
+			create_pop = {
+				culture = amazonian
+				size = 800
 			}
 		}
 	}
@@ -242,14 +254,18 @@ POPS = {
 				size = 4630
 			}
 			create_pop = {
-				culture = amazonian
+				culture = cariban
 				size = 1000
 			}
 		}
 		region_state:AMZ = {
 			create_pop = {
+				culture = cariban
+				size = 24000
+			}
+			create_pop = {
 				culture = amazonian
-				size = 27000
+				size = 3000
 			}
 		}
 	}

@@ -712,7 +712,7 @@ SWI = {
 	tier = kingdom
 	
 	capital = STATE_EAST_SWITZERLAND
-	cultures = { alemannic francoprovencal north_italian }
+	cultures = { alemannic francoprovencal } #Removed north_italian for now as it will otherwise trigger the risorgimento events
 }
 
 #############################

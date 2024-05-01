@@ -41,10 +41,10 @@ state_trait_cork_forests = {
 #}
 
 state_trait_famous_wine_region = {
-    icon = "gfx/interface/icons/state_trait_icons/famous_wine.dds"
+    icon = "gfx/interface/icons/state_trait_icons/cr_grapes.dds"
 	
 	modifier = {
-		building_vineyard_plantation_throughput_add = 0.15
+		building_vineyard_plantation_throughput_add = 0.10
 	}
 }
 

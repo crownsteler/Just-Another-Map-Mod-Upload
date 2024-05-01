@@ -1220,6 +1220,20 @@
 				size = 62842
 			}
 		}
+		region_state:DEN = {
+			create_pop = {
+				culture = akan
+				size = 36308
+			}
+			create_pop = {
+				culture = ewe
+				size = 5996
+			}
+			create_pop = {
+				culture = mossi
+				size = 1996
+			}
+		}
 	}
 	s:STATE_LOWER_VOLTA = { #STATE_STATE_VOLTA
 		region_state:GGY = {
@@ -1242,20 +1256,6 @@
 		}	
 	}
 	s:STATE_TOGO = {
-		region_state:DEN = {
-			create_pop = {
-				culture = akan
-				size = 116308
-			}
-			create_pop = {
-				culture = ewe
-				size = 115996
-			}
-			create_pop = {
-				culture = mossi
-				size = 47996
-			}
-		}
 		region_state:EWE = {
 			create_pop = {
 				culture = ewe
@@ -1410,6 +1410,28 @@
 				size = 2000
 			}
 		}
+		region_state:GGO = {
+			create_pop = {
+				culture = lacustrine_bantu
+				size = 45000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = lacustrine_bantu
+				size = 3500
+			}
+		}
+		region_state:SNG = {
+			create_pop = {
+				culture = lacustrine_bantu
+				size = 507000
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = lacustrine_bantu
+				size = 2500
+			}
+		}
 	}
 	s:STATE_ZANZIBAR = {
 		region_state:OMA = {
@@ -1508,7 +1530,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = lacustrine_bantu
-				size = 25000
+				size = 30000
 			}
 		}
 		region_state:MSI = {
@@ -1544,23 +1566,23 @@
 		region_state:GGO = {
 			create_pop = {
 				culture = lacustrine_bantu
-				size = 85000
+				size = 45000
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = lacustrine_bantu
-				size = 7000
+				size = 3500
 			}
 		}
 		region_state:SNG = {
 			create_pop = {
 				culture = lacustrine_bantu
-				size = 107000
+				size = 507000
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = lacustrine_bantu
-				size = 5000
+				size = 2500
 			}
 		}
 	}

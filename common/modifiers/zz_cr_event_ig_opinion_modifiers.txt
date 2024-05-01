@@ -31,6 +31,12 @@ cr_failed_lobby_normal = {
 	interest_group_pol_str_mult = -0.05
 }
 
+cr_the_nra_ig = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	interest_group_pop_attraction_mult = 0.10
+	interest_group_pol_str_mult = 0.10
+}
+
 cr_desamortizacion_ig_devout = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	interest_group_pol_str_factor = -0.15

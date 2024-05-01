@@ -159,7 +159,7 @@ major_railways.2 = {
 		default_option = yes
 		every_scope_state = {
 			limit = {
-				region = sr:region_new_mexico
+				region = sr:region_california
 				has_building = building_railway
 			}
 			add_modifier = {

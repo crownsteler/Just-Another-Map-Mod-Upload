@@ -76,13 +76,13 @@
 	c:BEL ?= {
 		create_trade_route = {
 			goods = copper
-			level = 2
+			level = 4
 			direction = import
 			target = c:SWE.market
 		}		
 		create_trade_route = {
 			goods = sulfur
-			level = 2
+			level = 5
 			direction = import
 			target = c:SIC.market
 		}			

@@ -93,12 +93,17 @@ cr_laws_incident_at_the_copper_mine_positive = { #add to cr_canadian_indian_trea
 
 cr_indian_removal_squatters = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	political_movement_support_add = 5
+	political_movement_radicalism_add = 5
+}
+
+cr_indian_removal_squatters_removed = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	political_movement_support_add = -5
 }
 
 cr_laws_squatters = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	country_law_enactment_success_add = -0.05
+	country_law_enactment_success_add = 0.05
 }
 
 cr_laws_india_removal_roanoke_law = {
@@ -158,7 +163,7 @@ cr_laws_indian_removal_not_paid_chickasaw_movement = {
 
 cr_laws_indian_removal_cholera_on_the_indian_trail = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	political_movement_radicalism_add = 10
+	political_movement_radicalism_add = 5
 }
 
 cr_laws_indian_removal_cholera_on_the_indian_trail_law = {
@@ -201,12 +206,12 @@ cr_laws_female_missionary_societies = { #cr_indian_removal.34
 	political_movement_support_add = 10
 }
 
-cr_laws_indian_removal_woe_to_the_savage_was_funny = { #Woe to the Savage
+cr_laws_indian_removal_newspaper_clippings_positive = { #Newspaper Clippings
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	political_movement_support_add = 5
 }
 
-cr_laws_indian_removal_woe_to_the_savage_was_unfunny = { #Woe to the Savage
+cr_laws_indian_removal_newspaper_clippings_negative = { #Newspaper Clippings
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	political_movement_support_add = -5
 }
@@ -259,4 +264,19 @@ cr_indian_removal_steamboat_disaster = { #Steamboat Disaster
 cr_indian_removal_steamboat_disaster_angry = { #Steamboat Disaster
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	political_movement_radicalism_add = 5
+}
+
+cr_indian_removal_choctaw_land_patents_rejected = { #Land Patents
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	political_movement_radicalism_add = 10
+}
+
+cr_indian_removal_choctaw_land_patents_granted = { #Land Patents
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	political_movement_support_add = -5
+}
+
+cr_laws_indian_removal_improvement_societies = { #Land Patents
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	political_movement_support_add = 5
 }

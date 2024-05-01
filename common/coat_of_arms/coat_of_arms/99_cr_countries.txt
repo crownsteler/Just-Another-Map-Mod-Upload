@@ -2056,6 +2056,173 @@ ASK_sub_RUS  = {
     }
 }
 
+
+PEI = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {		
+		texture = "ce_shield_heater_border.dds"
+		color1 = "white"
+		color2 = "black"
+        instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue"
+		instance = { scale = { 0.4 0.25 } position = { 0.5 0.25 } }				
+	}
+	colored_emblem = {		
+		texture = "ce_fleur_quebec.dds"
+		color1 = "yellow"
+		color2 = "yellow"		
+        instance = { position = { 0.375 0.25 } scale = { 0.27 0.2 } }
+        instance = { position = { 0.5 0.25 } scale = { 0.27 0.2 } }
+        instance = { position = { 0.625 0.25 } scale = { 0.27 0.2 } }		
+	}
+	colored_emblem = {
+		texture = "ce_coa_saf_tree.dds"
+		color1 = "brown_light"
+		color2 = "green"
+		color3 = "brown_light"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.625 } }				
+	}
+	#colored_emblem = {		
+	#	texture = "ce_shield_wave_overlay.dds"
+	#	color1 = "blue"
+	#	color2 = "white"
+    #    instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	#}	
+}
+
+PEI = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+
+	colored_emblem = {
+		texture = "ce_border_compony.dds"
+		color1 = "red"
+		color2 = "white"
+		instance = { scale = { 2.35 1.0 } position = { -0.075 0.5 } }				
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		instance = { scale = { 1.0 0.35 } position = { 0.45 0.270 } }				
+	}
+	colored_emblem = {
+		texture = "ce_lion_passant_guardant_long.dds"
+		color1 = "yellow"
+		color2 = "blue"
+		instance = { scale = { 1.1 0.5 } position = { 0.475 0.275 } }				
+	}
+	colored_emblem = {
+		texture = "ce_coa_saf_tree.dds"
+		color1 = "brown_light"
+		color2 = "green"
+		color3 = "brown_light"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.65 } }				
+	}
+}
+
+PEI_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "black"
+	
+   sub = {
+        parent = "sub_PEI" 
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.25 }  }   
+    }
+}
+
+PEI_subject_FRA = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "yellow"
+	color3 = "black"
+	
+   sub = {
+        parent = "sub_PEI_FRA" 
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.25 }  }   
+    }
+}
+
+sub_PEI = {
+	#pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {		
+		texture = "ce_shield_heater_border.dds"
+		color1 = "white"
+		color2 = "black"
+        instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		instance = { scale = { 0.4 0.25 } position = { 0.5 0.25 } }				
+	}
+	colored_emblem = {
+		texture = "ce_lion_passant_guardant_long.dds"
+		color1 = "yellow"
+		color2 = "blue"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.25 } }				
+	}
+	colored_emblem = {
+		texture = "ce_coa_saf_tree.dds"
+		color1 = "brown_light"
+		color2 = "green"
+		color3 = "brown_light"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.625 } }				
+	}
+	#colored_emblem = {		
+	#	texture = "ce_shield_wave_overlay.dds"
+	#	color1 = "blue"
+	#	color2 = "white"
+    #    instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	#}	
+}
+sub_PEI_FRA = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {		
+		texture = "ce_shield_heater_border.dds"
+		color1 = "white"
+		color2 = "black"
+        instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue"
+		instance = { scale = { 0.4 0.25 } position = { 0.5 0.25 } }				
+	}
+	colored_emblem = {		
+		texture = "ce_fleur_quebec.dds"
+		color1 = "yellow"
+		color2 = "yellow"		
+        instance = { position = { 0.375 0.25 } scale = { 0.27 0.2 } }
+        instance = { position = { 0.5 0.25 } scale = { 0.27 0.2 } }
+        instance = { position = { 0.625 0.25 } scale = { 0.27 0.2 } }		
+	}
+	colored_emblem = {
+		texture = "ce_coa_saf_tree.dds"
+		color1 = "brown_light"
+		color2 = "green"
+		color3 = "brown_light"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.625 } }				
+	}
+	#colored_emblem = {		
+	#	texture = "ce_shield_wave_overlay.dds"
+	#	color1 = "blue"
+	#	color2 = "white"
+    #    instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	#}	
+}
+
 #####################
 #					#
 #	  East Asia		#

@@ -1,7 +1,25 @@
 ﻿l_english:
+ #Test Events
+ cr_test_events.1.a:0 "Trigger Copper for Michigan"
+ cr_test_events.1.b:0 "Trigger Copper for Ontario"
+ cr_test_events.2.a:0 "Cherokee"
+ cr_test_events.2.b:0 "Chickasaw"
+ cr_test_events.2.c:0 "Creek"
+ cr_test_events.2.d:0 "Seminole"
+ cr_test_events.2.e:0 "Cochtaw"
+ 
+ #Random Flavour
+ cr_american_events.1.t:0 "A National Rifle Association"
+ cr_american_events.1.desc_won:0 "A National Rifle Association"
+ cr_american_events.1.desc_lost:0 "Veterans of the recently war lost to [SCOPE.sCountry('recent_opponent_scope').GetName] have gathered at the [SCOPE.sState('nra_founding_state').GetCityHubName] Arsenal under the auspicious of [SCOPE.sCharacter('nra_founding_general').GetFullName] with a single aim: to increase the markmanship skill of our [GetPopType('soldiers').GetName] and make sure such a humilation can never occure once more."
+ cr_american_events.1.f:0 "When ordinary hands can possess such an extraordinary instrument, that symbolizes the full measure of human dignity and liberty. That's why those five words issue an irresistible call to us all, and we muster."
+ cr_american_events.1.a:0 "From my cold, dead hands!"
+ cr_american_events.1.a_tt:0 "The [SCOPE.gsInterestGroup('the_national_rifle_association_scope').GetName] will be renamed to #variable National Rifle Association#!"
+ 
  #Indian Removal
  cr_indian_removal.1.t:0 "The Treaty of Doaksville" #Treaty of Pontotoc Creek
- cr_indian_removal.1.desc:0 "After years of delaying the [SCOPE.sCountry('chickasaw_nation').GetAdjectiveNoFlag] have settle on a tract of land suitable to remove to. With the treaty acquiring the land from the [SCOPE.sCountry('choctaw_nation').GetAdjectiveNoFlag] signed their removal can finally commence.\n\nThe only sticking point left is the financial compensation we agreed to pay for the lands lost in [SCOPE.sState('state_of_mississippi').GetName]. And that bill is reckoning up..."
+ cr_indian_removal.1.desc:0 "With a treaty signed with the [SCOPE.sCountry('choctaw_nation').GetAdjectiveNoFlag] to acquire a tract of land suitable to their needs, it seems that -after years of delaying- the [SCOPE.sCountry('chickasaw_nation').GetAdjectiveNoFlag] are finally prepared to remove themselves west.\n\nThe only sticking point left is the financial compensation we agreed to pay for the lands lost in [SCOPE.sState('state_of_mississippi').GetName]. And that bill is reckoning up..."
+ cr_indian_removal.1.desc_3:0 "After years of delaying the [SCOPE.sCountry('chickasaw_nation').GetAdjectiveNoFlag] have settle on a tract of land suitable to remove to. With the treaty acquiring the land from the [SCOPE.sCountry('choctaw_nation').GetAdjectiveNoFlag] signed their removal can finally commence.\n\nThe only sticking point left is the financial compensation we agreed to pay for the lands lost in [SCOPE.sState('state_of_mississippi').GetName]. And that bill is reckoning up..."
  cr_indian_removal.1.desc_2:0 "The removal treaty negation by the [SCOPE.sCountry('chickasaw_nation').GetAdjectiveNoFlag] has proven to be the most lenient of treaties, granting them the leisure to look for suitable land west of the Mississippi on their own before removal would take place, all the while enjoying Federal protection against the State of [SCOPE.sState('state_of_mississippi').GetName] and individual squatters.\n\nYet this leniency has resulted in delay upon delay upon delay as the [SCOPE.sCountry('chickasaw_nation').GetAdjectiveNoFormatting] have worked to extract more concessions. But now they have finally found that suitable land of theirs and are preparing for their removal. The only sticking point is the financial compensation we agreed to pay for the lands lost in Mississippi. And that bill is reckoning up..."
  cr_indian_removal.1.f:0 "By becoming amalgamated with the whites, your national character will be lost; you will disappear and be forgotten.\n-#italic President Andrew Jackson adressing the [SCOPE.sCountry('chickasaw_nation').GetAdjectiveNoFormatting] nation#!"
  cr_indian_removal.1.a:0 "Pay now"
@@ -39,7 +57,7 @@
  cr_indian_removal.6.b:0 "Intervene eventually"
  cr_indian_removal.6.b_tt:0 "We'll wait and see for the outcome" 
  cr_indian_removal.7.t:0 "The Creek Removal"
- cr_indian_removal.7.desc:0 "With the army sweeping [SCOPE.sState('state_of_alabama').GetName] and the rebellious, and not so rebellious, [SCOPE.sCountry('creek_nation').GetNameNoFlag] leaders captured and put in chains, the first of the [SCOPE.sCountry('creek_nation').GetNameNoFormatting] have started their journey west, away from the bones of their ancestors."
+ cr_indian_removal.7.desc:0 "With the army sweeping [SCOPE.sState('state_of_alabama').GetName] and the rebellious, and not so rebellious, [SCOPE.sCountry('creek_nation').GetNameNoFlag] leaders captured and carried of in chains, the first of the [SCOPE.sCountry('creek_nation').GetNameNoFormatting] have started their journey west, away from the bones of their ancestors."
  cr_indian_removal.7.f:0 "Now, in view of the whole scene, how does the United States government appease a great nation, laying aside her dignity and with thousands of soldiers, and all her great men, and all her mighty men, and all her powerful generals, with all her civil and military force, chasing a little trembling hare in the wilderness, merely to take its skin, and send it off to broil in the scorching deserts of the West. O how Noble! How magnanimous! How warlike the achievement! O what a conquest! What booty! How becoming the glory and grandeur of the United States!\n-#italic Rev. Daniel Sabin Butrick#!"
  cr_indian_removal.7.a:0 "Soon their compatriots will join them..."
  cr_indian_removal.7.a_tt:0 "The [SCOPE.sCountry('creek_nation').GetNameNoFlag] removal has commenced"
@@ -69,6 +87,7 @@
  cr_indian_removal.12.d:1 "Chief [SCOPE.sCountry('cherokee_nation').GetRuler.GetFullName] of the [SCOPE.sCountry('cherokee_nation').GetName] has once again returned to [SCOPE.sCountry('cr_removing_country').GetCapital.GetCityHubName]. This time bringing with him a petition asking Congress to void the #variable Treaty of New Echota#! which compels the [SCOPE.sCountry('cherokee_nation').GetNameNoFormatting] nation to relocate to land west of the Mississippi\n\nHis petition has almost as many signatures as the entire eastern Cherokee population."
  cr_indian_removal.12.f:0 ""By the stipulations of this treaty, we are stripped of every attribute of freedom. Our property may be plundered before our eyes; violence may be committed on our persons, even our lives may be taken away, and there is none to regard our complaints. We are denationalized; we are disfranchised. We are deprived of membership in the human family!""
  cr_indian_removal.12.a:0 "A treaty is a treaty. We cannot rescind what we have signed."
+ cr_indian_removal.12.a_tt:0 "The [SCOPE.sCountry('cherokee_nation').GetNameNoFormatting] Removal will proceed as planned"
  cr_indian_removal.12.b:0 "Our conscience compels us to void the removal treaty."
  cr_indian_removal.12.b_tt:0 "We will be required to negotiate a new removal treaty with the [SCOPE.sCountry('cherokee_nation').GetName]"
  
@@ -79,14 +98,32 @@
  cr_indian_removal.15.a:0 "Move along already"
  cr_indian_removal.15.a_tt:0 "The removal of the [SCOPE.sCountry('cherokee_nation').GetName] will start in earnest"
  
- cr_indian_removal.20.t:0 "The Fate of the [SCOPE.sCountry('seminole_nation').GetNameNoFormatting]"
- cr_indian_removal.20.desc:0 "With the war with the [SCOPE.sCountry('seminole_nation').GetNameNoFlag] winding down and the needless bloodshedding ending, the time has come to decided how we will treat what remains of the Florida [SCOPE.sCulture('muskogean_people').GetName]."
- cr_indian_removal.20.f_1:0 "Should you ... refuse to move, I have then directed the Commanding officer to remove you by force. - #italic President Andrew Jackson adressing the Seminole#!"
- cr_indian_removal.20.a:0 "The goal has always been total removal"
- cr_indian_removal.20.a_tt:0 "The [SCOPE.sCountry('seminole_nation').GetName] will be removed west"
- cr_indian_removal.20.b:0 "Reduced, a few stragglers pose no threat"
- cr_indian_removal.20.b_tt:0 "The majority of the [SCOPE.sCountry('seminole_nation').GetName] will be removed west, but a small population will remain in [SCOPE.sState('state_of_florida').GetName]"
- cr_indian_removal.20.complete_tt:0 "This completes the #variable [SCOPE.sCountry('seminole_nation').GetName] Removal#! objective"
+ cr_indian_removal.20.t:0 "The Dade Masacre"
+ cr_indian_removal.20.desc:0 "Terrible news has reached us from [SCOPE.sState('state_of_florida').GetName] that a military colomn of 100 men was ambushed and nearly mascared to the last man by [SCOPE.sCharacter('miconapy').GetLastName]!\n\nAt the same time, our agent overseeing the removal of the [SCOPE.sCountry('seminole_nation').GetNameNoFlag] was murdered by [SCOPE.sCharacter('osceola').GetLastName]!"
+ cr_indian_removal.20.f_1:0 "The white man shall not make me black. I will make the white man red with blood; and then blacken him in the sun and rain ... and the buzzard live upon his flesh. -#variable Osceola#!"
+ cr_indian_removal.20.f_2:0 "The government is in the wrong, and this is the chief cause of the persevering opposition of the Indians, who have nobly defended their country against our attempt to enforce a fraudulent treaty. The natives used every means to avoid a war, but were forced into it by the tyranny of our government. -#variable Major Ethan Allen Hitchcock#!"
+ cr_indian_removal.20.a:0 "To war! By Jingo!"
+ cr_indian_removal.20.a_tt:0 "War breaks out with the [SCOPE.sCountry('seminole_nation').GetName]"
+ cr_indian_removal.20.b:0 "Perhaps we could have been more tactful?" 
+ cr_indian_removal.20.a_tt:0 "We will not press onward with the removal of the [SCOPE.sCountry('seminole_nation').GetNameNoFormatting]"
+ 
+ cr_indian_removal.21.t:0 "A Fateful Meeting" 
+ cr_indian_removal.21.desc:0 "As the [SCOPE.sCountry('seminole_nation').GetNameNoFlag] falter under the onslaught of our arms and seeing the futility of further resistance, chief [SCOPE.sCharacter('micanopy_scope').GetLastName] has signaled to General [SCOPE.sCharacter('florida_general').GetLastName] his willigness to sign a peace treaty and for him and his band to be removed West."
+ cr_indian_removal.21.f_1:0 "The country can be rid of them only by exterminating them.\n-#italic General Thomas Jesup on the Seminole#!"
+ cr_indian_removal.21.a:0 "Seize him and his band"
+ cr_indian_removal.21.a_tt:0 "[SCOPE.sCharacter('micanopy_scope').GetLastName] stops being the leader of the [SCOPE.sCountry('seminole_nation').GetName]"
+ cr_indian_removal.21.a_tt_2:0 "We seize some land in [SCOPE.sState('state_of_florida').GetName]"
+ cr_indian_removal.21.b:0 "Sign a treaty in good faith"
+ cr_indian_removal.21.b_tt_1:0 "[SCOPE.sCountry('seminole_nation').GetNameNoFormatting] restitance will diminsh, but will last longer"
+ 
+ cr_indian_removal.29.t:0 "The Fate of the [SCOPE.sCountry('seminole_nation').GetNameNoFormatting]"
+ cr_indian_removal.29.desc:0 "With the war with the [SCOPE.sCountry('seminole_nation').GetNameNoFlag] winding down and the needless bloodshedding ending, the time has come to decided how we will treat what remains of the Florida [SCOPE.sCulture('muskogean_people').GetName]."
+ cr_indian_removal.29.f_1:0 "Should you ... refuse to move, I have then directed the Commanding officer to remove you by force. - #italic President Andrew Jackson adressing the Seminole#!"
+ cr_indian_removal.29.a:0 "The goal has always been total removal"
+ cr_indian_removal.29.a_tt:0 "The [SCOPE.sCountry('seminole_nation').GetName] will be removed west"
+ cr_indian_removal.29.b:0 "Reduced, a few stragglers pose no threat"
+ cr_indian_removal.29.b_tt:0 "The majority of the [SCOPE.sCountry('seminole_nation').GetName] will be removed west, but a small population will remain in [SCOPE.sState('state_of_florida').GetName]"
+ cr_indian_removal.29.complete_tt:0 "This completes the #variable [SCOPE.sCountry('seminole_nation').GetName] Removal#! objective"
  
  #Seminole fail --> if USA fails Indian removal trigger event to remove Seminole war modifier from Florida under the guise of reconcilation as the threat of removal has been ended.
  
@@ -102,21 +139,23 @@
 
  cr_indian_removal.31.t:0 "Newspaper Clippings"
  cr_indian_removal.31.desc:0 "A widely publicised debate is ongoing between the [SCOPE.sState('newspaper_state').GetCityHubName] Tribune and [SCOPE.sState('newspaper_state').GetFarmHubName] Gazette on the question of if the [SCOPE.sCountry('cr_noble_savages').GetNameNoFlag] can be considered to truly have civilised."
- cr_indian_removal.31.desc_2:0 "A [SCOPE.sState('newspaper_state').GetCityHubName] newspaper has published an essay counter to Southern claims of the savagery amongst the [SCOPE.sCountry('cr_noble_savages').GetNameNoFlag].\n\nThe satirical account skillfully highlights the aburdity of such claims by detailing the many [SCOPE.sCountry('cr_noble_savages').GetNameNoFormatting] achievements in agriculture, education and governance."
+ cr_indian_removal.31.desc_2:0 "In a skillfully rundown of [SCOPE.sCountry('cr_noble_savages').GetNameNoFlag] achievements in agriculture, education and government, a [SCOPE.sState('newspaper_state').GetCityHubName] newspaper has made a mockery of Southern claims of the savagery amongst the [SCOPE.sCountry('cr_noble_savages').GetNameNoFormatting]."
  cr_indian_removal.31.desc_3:0 "A [SCOPE.sState('newspaper_state').GetName] newspaper has published a scathing attack on our policy of Indian removal."
- cr_indian_removal.31.desc_4:0 "In a widely read series of essays, the [SCOPE.sState('newspaper_state').GetCityHubName] Journal has pledged their support for Indian Removal, seeing it as the only way of preserving their way of life under the continuous encroachment by [SCOPE.sCulture('dixie_culture').GetName] speculators, squators and missionaries."
+ cr_indian_removal.31.desc_4:0 "In a widely read series of essays, the [SCOPE.sState('newspaper_state').GetCityHubName] Journal has pledged their support for Indian Removal, seeing it as the only way of preserving the [SCOPE.sCountry('cr_noble_savages').GetNameNoFlag] way of life under the continuous encroachment by [SCOPE.sCulture('dixie_culture').GetName] speculators, squators and missionaries."
  cr_indian_removal.31.f:0 "Pointing to the preceived lack of agricultural achievement the [SCOPE.sState('newspaper_state').GetFarmHubName] Gazette holds the [SCOPE.sCountry('cr_noble_savages').GetNameNoFormatting] are but children, driven by their primordial emotions and desire and thereby incapable of engaging in complex tasks. The [SCOPE.sState('newspaper_state').GetCityHubName] Tribune, however, ridicules this claim by pointing to the uptake of their children in missionary schools and widespread adoption of Christianity."
  cr_indian_removal.31.f_2:0 "The [SCOPE.sCountry('cr_noble_savages').GetNameNoFormatting] can now count amongst their achievements 80,000 domestic animals — 750 looms — 2500 spinning wheels — 3000 ploughs — 10 sawmills — 31 grist mills — 62 smith shops — 8 cotton gins — 10 schools — 9 turnpikes and 20 public roads. They now have a printing press, a weekly paper and a national academy. Savages indeed!"
  cr_indian_removal.31.f_3:0 "With the state of [SCOPE.sState('landgrab_state').GetNameNoFormatting] engaging in the largest land grab since the Babylonian exile, now is the time when every Christian, every philanthropist and every patriot in the United States ought to be exerting themselves to save a persecuted and defenceless people from ruin. -#italic The [SCOPE.sState('newspaper_state').GetCityHubName] Journal#!"
  cr_indian_removal.31.f_4:0 "If we do not save them by removing them to their own territory East of the Mississippi, there will soon be no [SCOPE.sCountry('cr_noble_savages').GetNameNoFormatting] left. East or West of the Mississippi. -#italic The Missionary Herald#!"
- cr_indian_removal.31.f_5:0 "If a paternal authority is exercised over the aboriginal colonies, and just principles of communication with them, and of intercommunication among them, are established and enforced, we may hope to see that improvement in their condition, for which we have so long and so vainly looked. -#italic Lewis Cass, governor of Michigan#!"
- cr_indian_removal.31.a:0 "It is the White Man's Wrongs"
- cr_indian_removal.31.b:0 "A skillfull mocking of the #italic [SCOPE.sCountry('cr_noble_savages').GetNameNoFormatting]#! indeed"
+ cr_indian_removal.31.f_5:0 "If a paternal authority is exercised over the aboriginal colonies, and just principles of communication with them are established and enforced, we may hope to see that improvement in their condition, for which we have so long and so vainly looked.\n-#italic Lewis Cass, governor of Michigan#!"
+ cr_indian_removal.31.f_5_a:0 "If a paternal authority is exercised over the aboriginal colonies, and just principles of communication with them, and of intercommunication among them, are established and enforced, we may hope to see that improvement in their condition, for which we have so long and so vainly looked. -#italic Lewis Cass, governor of Michigan#!"
+ cr_indian_removal.31.a:0 "Removal is the White Man's Wrongs"
+ cr_indian_removal.31.b:0 "The [SCOPE.sCountry('cr_noble_savages').GetNameNoFormatting] removal is an inevitability regardless"
  cr_indian_removal.31.c:0 "Who cares as long as we are selling papers"
  cr_indian_removal.31.c_tt:0 "This option is available due to the [SCOPE.gsInterestGroup('industrialists').GetName] being in government."
   
  cr_indian_removal.33.t:0 "College Debates"
- cr_indian_removal.33.desc:0 "The matter of Indian Removal has taken centre stage at the [SCOPE.sState('university_state').GetCityHubName] State University graduation debate.\n\nWith both sides equally eloquent and persuasive in the back and forth, the debate is carried by..."
+ cr_indian_removal.33.desc:0 "The debate clubs of [SCOPE.sState('university_state').GetCityHubName] State University have been pre-occupied with one matter, and one matter only, as of late: that of Indian Removal.\n\nAs debate rages between the two sides, equal in number and equal in eloquence and persuasiveness, it seems it all comes down to the closing arguments..."
+ cr_indian_removal.33.desc_2:0 "The matter of Indian Removal has taken centre stage at the [SCOPE.sState('university_state').GetCityHubName] State University graduation debate.\n\nWith both sides equally eloquent and persuasive in the back and forth, the debate is carried by..."
  cr_indian_removal.33.f:0 "Removal vioaltes the sacred and inalienable rights of the Indian and the pledged faith and honor of our nation leaving a stain on the American character which the lapse of time will never efface. The finger of scorn will be turned from the infamous despoilation of Poland and pointed at America ... "
  cr_indian_removal.33.f_2:0 "The Indian is taught to despise death, and during his whole life he regards it with indifference. An Indian seldom commits suicide, not because the grave does not offer him a refuge, hut because patience and  fortitude are the first duties of a warrior, and none but a coward can yield to pain or misfortune ... He learns also to despise labor, to become a warrior and a hunter, to associate the idea of disgrace with any other employment, and to leave to the women all the ordinary duties of life. He is a stern and unbending fatalist. Whatever of good or of evil may happen, he receives it with imperturbable calmness. If misfortunes press upon him, which he cannot resist, he can die; and he dies without a murmur. -#italic Lewis Cass, governor of Michigan#!"
  cr_indian_removal.33.f_3:0 "Rousseau and the disciples of his school, with distempered imaginations and unsettled reason, may persuade themselves of the inferiority of civilized to savage life; but he who looks abroad over the forests of our country, and upon the hapless beings who roam through them, will see how much they endure, that we are spared. It is difficult to conceive that any branch of the human family can he less provident in arrangement, less frugal in enjoyment, less industrious in acquiring, more implacable in their resentments, more ungovernable in their passions, with fewer principles to guide them, with fewer obligations to restrain them, and with less knowledge to improve and instruct them. -#italic Lewis Cass, governor of Michigan#!"
@@ -141,9 +180,10 @@
  cr_indian_removal.34.d_tt:0 "This option is available due to our restrictive Free Speech laws."
 
  cr_indian_removal.35.t:0 "Land Patents"
- cr_indian_removal.35.desc:0 "When the [SCOPE.sCountry('choctaw_nation').GetName] agreed to their removal west a special provision was included in the treaty allowing those [SCOPE.sCountry('choctaw_nation').GetNameNoFormatting] who wished to do so to remain in [SCOPE.sState('state_of_mississippi').GetName], if they accepted American citizenship. After 5 years they would be granted the patent to the land they occupied.\n\nAs the 5 year date has approached and passed many more [SCOPE.sCountry('choctaw_nation').GetNameNoFormatting] then ever have been registered have come forward to put forth a claim to land."
+ cr_indian_removal.35.desc:0 "When the [SCOPE.sCountry('choctaw_nation').GetNameNoFlag] agreed to their removal west the treaty included a provision allowing those who wished to do so to remain in [SCOPE.sState('state_of_mississippi').GetName]. After five years they would be granted a patent to the land they occupied.\n\nAs the five year date has come and passed many more [SCOPE.sCountry('choctaw_nation').GetNameNoFormatting] have come forward to put forth such a claim then ever were registered."
  cr_indian_removal.35.f:0 "It was my understanding Washington wanted as few [SCOPE.sCountry('choctaw_nation').GetNameNoFormatting] registered as possible. -#italic Removal Agent#!"
- cr_indian_removal.35.a:0 "How are we suppose to validate their claims if they aren't in the books?"
+ cr_indian_removal.35.a:0 "If they are not in the books they don't have a claim"
+ cr_indian_removal.35.a_tt:0 "The [SCOPE.sCountry('choctaw_nation').GetNameNoFormatting] remaining in [SCOPE.sState('state_of_mississippi').GetNameNoFormatting] will be removed west."
  cr_indian_removal.35.b:0 "It is going to be quite the headace to clear this up."
  
  cr_indian_removal.36.t:0 "Missing Pages"
@@ -159,26 +199,28 @@
  cr_indian_removal.40.f_1:0 "Many of them were carefully taught at our seminaries of education, in the hope that principles of morality and habits of industry would be acquired, and that they might stimulate their countrymen by precept and example to a better course of life. Missionary stations were established among various tribes, where zealous and pious men devoted themselves with generous ardor to the task of instruction, as well in agriculture and the mechanic arts, as in the principles of morality and religion ... Unfortunately, they are monuments also of unsuccessful and unproductive efforts. What tribe has been civilized by all this expenditure of treasure, and labor, and care? -#italic Lewis Cass, governor of Michigan#!"
  cr_indian_removal.40.f_2:0 "As civilization shed her light upon them, why were they blind to its beams? Hungry or naked, why did they disregard, or retarding, why did they neglect, those arts by which food and clothing could be procured? -#italic Lewis Cass, governor of Michigan#!"
  cr_indian_removal.40.f_3:0 "They are contented as they are; not contented merely, but clinging with a death-grasp to their own institutions. This feeling, inculcated in youth, strengthened in manhood, and nourished in age, renders them inaccessible to argument or remonstrance. To roam the forests at will, to pursue their game, to attack their enemies, to spend the rest of their lives in listless indolence, to eat inordinately when they have food, to suffer patiently when they have none, and to be ready at all times to die; these are the principal occupations of an Indian. -#italic Lewis Cass, governor of Michigan#!"
- cr_indian_removal.40.a:0 "An useful representation for frontier life"
- cr_indian_removal.40.b:0 "We could all benefit from this wisdom"
+ cr_indian_removal.40.a:0 "A wise man indeed"
+ cr_indian_removal.40.b:0 "A sentiment most suitable, #italic to frontier life#!"
  
  
  cr_indian_removal.41.t:0 "Indian Improvement Societies"
- cr_indian_removal.41.desc:0 "With debate raging on about the necessity of Indian Removal various supporters of removal from [SCOPE.sState('indian_society_state').GetName] have formed a society to promote the idea and offer assistence to any Indian who wishes to migrate west."
+ cr_indian_removal.41.desc:0 "With debate raging on about the necessity of Indian Removal, various proponents of removal from [SCOPE.sState('indian_society_state').GetName] have come together to promote the idea.\n\nIn their embrace of the ideal they have promised assistence to any Indian who wishes to migrate west."
  cr_indian_removal.41.f_1:0 "Need I stop to demonstrate how utterly impracticable it is, to remodel the Indian character, and fashion it after the civilized form, situated as those tribes are within our states? Where is the example of a single transformation in a tribe, of this sort? I know of not one. But I know of many, in which, even amidst efforts the most untiring, the Indians have ... disappeared. -#italic Colonel Thomas L. McKenney#!"
  cr_indian_removal.41.f_2:0 "That men, and good men, should differ in their views of what ought to be done for the preservation and improvement of our Indians, is natural. We know there are men, and good men, who are opposed to the emigration of the Indians. We respect them and their motives. They seek to save and civilize these people. We profess to aim at the accomplishment of the same end, and differ only as to the mode. -#italic Colonel Thomas L. McKenney#!"
- cr_indian_removal.41.f_3:0 "We believe, if the Indians do not emigrate, and fly the causes which are fixed in themselves, and which have proved so destructive in the past, #variable they will perish#!. We might distrust our own conclusions, though derived from personal investigation, did not experience confirm them. But alas! it is the admonition of experience, more than anything else, that claims and urges us to employ all honorable means to persuade these hapless people to acquiesce in the policy which is proposed to them. -#italic Colonel Thomas L. McKenney#!"
+ cr_indian_removal.41.f_3:0 "We believe, if the Indians do not emigrate, and fly the causes which are fixed in themselves, and which have proved so destructive in the past, #italic they will perish#!. We might distrust our own conclusions, though derived from personal investigation, did not experience confirm them. But alas! it is the admonition of experience, more than anything else, that claims and urges us to employ all honorable means to persuade these hapless people to acquiesce in the policy which is proposed to them. -#italic Colonel Thomas L. McKenney#!"
  cr_indian_removal.41.f_4:0 "It seems to be thought by some, that the Indians are opposed to removal, and that force is meditated to be employed to compel them to go. In regard to the disposition of the great body of the Indians within our states, we speak advisedly when we say, they are anxious to remove. The present excitement is occasioned, in great part, by the opposition of those persons, whose interest it is to keep the Indians where they are. -#italic Colonel Thomas L. McKenney#!"
+ cr_indian_removal.41.a:0 "They mean well"
+ cr_indian_removal.41.b:0 "A nice #italic local#! initiative"
+ cr_indian_removal.41.b_tt:0 "This option is available due to our restrictive #variable Free Speech#! laws"
  
  # O what a year this has been! O what a sweeping wind has gone over, and carried its thousands to the grave; while thousands have been tortured and scarcely survive, and the whole nation, comparatively thrown out of house and home during this dreary winter. And why? ...For what crime then was this whole nation doomed to perpetual death? -#italic Rev. Daniel Sabin Butrick#!
  # a number of Georgia citizens near New Echota took sixteen Cherokees and drove them to the fort and then requested permission of General Scott to take them out and whip them, though in this they were not gratified -#italic Rev. Daniel Sabin Butrick#! The citizens of Georgia pressured Scott to move with even more expediency.
  #Incredibly, neither Gibson nor the Secretary of War had thought to provide a physician, or even medicine. Armstrong wrote: "I have as yet employed no physician: to-day an Indian broke his leg, and we will of course have to leave him. We have no medicine but what belongs to private individuals: it is now too late to hear from the department, but I consider it very necessary that we should have medical aid: where there are two thousand Indians, with the wagoners, and those attached to the emigration, at least a physician could have been employed. -#italic William Armstrang#!, removal agent
  # "The dark cloud and threatening storm, which, for some time past, have been gathering over my native land, seem now to be full charged and on the eve of exploding. In this awful crisis, we can but resign our destiny into the hands of Him who directs the storm and rides upon the whirlwind. -#italic Letter to the Memphis Enquirer#!"
- 
- #...our village presents a different appearance. The Indians are all gone; it was melancholy to see the poor creatures leaving the land of their birth and the graves of their fathers. A deep sadness was imprinted on their countenances. - A young eyewitness (girl)
+
  
  cr_indian_removal.49.t:0 "The Long March West"
- cr_indian_removal.49.desc:0 "The last of the [SCOPE.sCountry('target_of_removal').GetNameNoFlag] from [SCOPE.sState('removed_from_state').GetName] have start their long journey west.\n\nAs they vanture to their new home, away from the bones of their forefathers, they leave behind an empty land ready to be seized by a new people."
+ cr_indian_removal.49.desc:0 "The last of the [SCOPE.sState('removed_from_state').GetName] [SCOPE.sCountry('target_of_removal').GetNameNoFlag] have start their long journey west, leaving behind an empty land for [SCOPE.sCountry('cr_removing_country').GetAdjectiveNoFormatting] settlement."
  cr_indian_removal.49.f:0 "I saw the helpless Cherokees arrested and dragged from their homes, driven at the bayonet point into the stockade. In the chill of a drizzling rain, I saw them loaded like cattle or sheep into wagons and started toward the west... We encountered a terrific sleet and snow storm with freezing temperatures, from that day until we reach the end of the fateful journey, the sufferings of Cherokees were awful. The trail of the exiles was a trail of death. They had to sleep in the wagons and on the ground without fire. And I've known as many as twenty-two of them to die in one night of pneumonia due to ill treatment, cold and exposure...\n-#italic Private John G. Burnett#!"
  cr_indian_removal.49.f_2:0 "The Cherokees are nearly all prisoners. They have been dragged from their houses and camped at the forts and military posts all over the Nation. In Georgia, especially, the most unfeeling and insulting treatment has been experienced by them, in a general way. Multitudes were not allowed time to take anything with them but the clothes they had on.\n-#italic Rev. Evan Jones#!"
  cr_indian_removal.49.f_3:0 "The Indians had their families with them; and they brought in their train the wounded and the sick, with children newly born, and old men upon the verge of death. They possessed neither tents nor wagons, but only their arms and some provisions. I saw them embark to pass the mighty river, and never will that solemn spectacle fade from my remembrance. No cry, no sob was heard among the assembled crowd: all were silent. Their calamities were of ancient date, and they knew them to be irremediable. The Indians had all stepped into the bark which was to carry them across, but their dogs remained upon the bank. As soon as these animals perceived that their masters were finally leaving the shore, they set up a dismal howl, and, plunging all together into the icy waters of the Mississippi, they swam after the boat.\n-#italic Alexis De Tocqueville#!, Democracy in America"
@@ -187,6 +229,7 @@
  cr_indian_removal.49.f_6:0 "At noon all was in readiness for moving. The teams were stretched out in a line along a road through a heavy forest, groups of persons formed about each wagon...At this very moment a low sound of distant thunder fell on my ear--in almost an exact western direction a dark spiral cloud was rising above the horizon and sent out a murmur I almost thought a voice of divine indignation for the wrong of my poor and unhappy countrymen...the thunder rolled away and seemed hushed in the distance. -#italic William Shorey Coodey#!"
  cr_indian_removal.49.f_7:0 "O what a year this has been! O what a sweeping wind has gone over, and carried its thousands to the grave; while thousands have been tortured and scarcely survive, and the whole nation, comparatively thrown out of house and home during this dreary winter. And why? ...For what crime then was this whole nation doomed to perpetual death? -#italic Rev. Daniel Sabin Butrick#!"
  cr_indian_removal.49.f_8:0 "I do not think that I have ever been a witness of so remarkable a scene…this immense column of moving Indians, several thousand, with the train of Govt wagons, the multitude of horses…the men in complete Indian dress with showy shawls tied in turban fashion round their heads dashing about on their horses, like Arabs, many of them presenting the finest countenances & figures that I ever saw….The young women have remarkably mild & soft countenances & are singularly decorous in their dress & comportment."
+ cr_indian_removal.49.f_9:0 "Your Father has provided a country large enough for all of you, and he advises you to remove to it. There your white brothers will not trouble you: They will have no claim to the land, and you can live upon it you and all your children, as long as the grass grows or the water runs, in peace and plenty. It will be yours forever. -#italic President Andrew Jackson#!"
  
  cr_indian_removal.49.desc_creek_defeated:0 "With their rebellion defeated and their leaders long since carried of West in chains, the last of the [SCOPE.sCountry('target_of_removal').GetNameNoFlag] have now said goodbye to [SCOPE.sState('state_of_alabama').GetName], to build an unknown future in the West, away from the bones of their forefathers."
  
@@ -194,7 +237,7 @@
  cr_indian_removal.49.a_tt:0 "The [SCOPE.sCountry('target_of_removal').GetName] from [SCOPE.sState('indian_removal_state').GetName] have been removed west"
  
  cr_indian_removal.50.t:0 "On the Roads and Swamps of [SCOPE.sState('swampy_state').GetName]"
- cr_indian_removal.50.desc:0 "The swamps of [SCOPE.sState('swampy_state').GetName] have long been held to be an impassible obstacle to swift communications, a situation not helped in the light of the hundreds of [SCOPE.sCountry('target_of_removal').GetNameNoFormatting] Indians passing through them."
+ cr_indian_removal.50.desc:0 "The swamps of [SCOPE.sState('swampy_state').GetName] have long been held to be an impassible obstacle to swift communications, a situation not helped in the light of the hundreds of [SCOPE.sCountry('target_of_removal').GetNameNoFlag] Indians passing through them."
  cr_indian_removal.50.desc_e:0 "The swamps of [SCOPE.sState('swampy_state').GetName] have long been held to be an impassible obstacle to swift communications, yet this claim is being challenged in the light of thousands of Indians passing through them without issue."
  cr_indian_removal.50.desc_2:0 "The state of [SCOPE.sState('swampy_state').GetName]'s roads has long been a nuisance to all travellers, but the movement of thousands of Indians along the roads have caused such degradation that the roads have become barely passable."
  cr_indian_removal.50.f:0 "If a body of Indians (men, women and children), with some 200 ponies, can pass through the Mississippi swamp in the course of two or three days, we can see no good reason why the mail cannot be carried through with regularity.\n-#italic Letter to the Arkansas Gazette#!"
@@ -251,11 +294,12 @@
  cr_indian_removal.56.c_tt_2:0 "This option is available due to our efforts, or the existance of a movement, to enact a $institution_health_system$ [concept_law]"
  
  cr_indian_removal.57.t:0 "Steamboat Disaster!"
- cr_indian_removal.57.desc:0 "A steam boat carrying Indians across the Mississippi to their new lands in the west has collided with another steamer!\n\nVastly overloaded; hundreds are expected to have died in this disaster."
+ cr_indian_removal.57.desc:0 "A steam boat carrying a band of [SCOPE.sCountry('target_of_removal').GetNameNoFlag] across the Mississippi has collided with another steamer!\nVastly overloaded; hundreds are expected to have died in this disaster."
  cr_indian_removal.57.f_1:0 "I have no more land. I am driven away from home, driven up the red waters, let us all go, let us all die together and somewhere upon the banks we will be there. -#italic Song of the survivors#!"
  cr_indian_removal.57.f_2:0 "At the time of sailing, an effort was made to get their consent to go into the boats, but not an individual would agree. The agent then struck a line through the camp, the soldiers rushed in and drove the devoted victims into those loathsome receptacles of disease and death. It is said by eye witnesses that the scene of this distress was agonizing in the extreme. -#italic  Rev. Evan Jones#!"
  cr_indian_removal.57.f_3:0 "The disgusting sight of a vessel loaded with human beings under no control or regularity, leaving their evacuations in every direction through the whole range of the cabins and decks, would create in the mind of any one an additional allowance for the transportation. -#italic  W. S. Colquhoun#!, removal agent"
  cr_indian_removal.57.a:0 "A sad day"
+ cr_indian_removal.57.b:0 "An angry day"
  
  cr_indian_removal.58.t:0 "The Benefits of Free Enterprise"
  cr_indian_removal.58.t_2:0 "Regulations Concerning the Removal of the Indians"
@@ -274,10 +318,10 @@
  cr_indian_removal.59.f:0 "Captain Brown has manifested much displeasure at the mere suggestion of aid from this side of the river... -#italic W.S. Colquhoun#!, removal agent"
  
  cr_indian_removal.60.t:0 "Spoiled Rations!"
- cr_indian_removal.60.desc:0 "Promised support as they prepare for their journey west and abandon their farms, the [SCOPE.sCountry('target_of_removal').GetNameNoFlag] now face starvation as the food rations provided to them have proven to be thoroughly spoiled."
+ cr_indian_removal.60.desc:0 "Promised support as they prepare for their journey west and abandon their farms, the [SCOPE.sCountry('target_of_removal').GetNameNoFlag] from [SCOPE.sState('removed_from_state').GetName] now face starvation as the food rations provided to them have proven to be thoroughly spoiled."
  cr_indian_removal.60.desc_2:0 "Promised support as they move west and left their farms and hunting grounds behind, the [SCOPE.sCountry('target_of_removal').GetNameNoFlag] now face starvation as the food rations provided for their sustainment have proven to be completely spoiled."
- cr_indian_removal.60.f:0 "I am here starving with the [SCOPE.sCountry('target_of_removal').GetNameNoFlag], by gross mismanagement on the part of the contractors; and when our situation will be bettered is hard for me to say, for it is one failure after another without end….I begin to think that we shall have to starve to death or abandon the country. -#italic Government Agent assigned to the [SCOPE.sCountry('target_of_removal').GetNameNoFormatting]#!"
- cr_indian_removal.60.f_2:0 "The situation of the [SCOPE.sCountry('target_of_removal')GetNameNoFormatting] required immediate action to save them from starvation; I saw myself their distress…there is neither cattle or hogs in the country…without either corn or beef, they will starve.-#italic Government Agent assigned to the [SCOPE.sCountry('target_of_removal')GetNameNoFormatting]#!"
+ cr_indian_removal.60.f:0 "I am here starving with the [SCOPE.sCountry('target_of_removal').GetNameNoFormatting], by gross mismanagement on the part of the contractors; and when our situation will be bettered is hard for me to say, for it is one failure after another without end….I begin to think that we shall have to starve to death or abandon the country.\n-#italic Government Agent assigned to the [SCOPE.sCountry('target_of_removal').GetNameNoFormatting]#!"
+ cr_indian_removal.60.f_2:0 "The situation of the [SCOPE.sCountry('target_of_removal').GetNameNoFormatting] required immediate action to save them from starvation; I saw myself their distress…there is neither cattle or hogs in the country…without either corn or beef, they will starve.-#italic Government Agent assigned to the [SCOPE.sCountry('target_of_removal').GetNameNoFormatting]#!"
  cr_indian_removal.60.a:0 "We must do something"
  cr_indian_removal.60.b:0 "Some fat cat got rich of this..."
  cr_indian_removal.60.c:0 "Publicise this disaster for our own purposes"
@@ -290,12 +334,31 @@
  
  
  cr_indian_removal.65.t:0 "The New Northern Neighbours"
- cr_indian_removal.65.desc:0 "The [SCOPE.sCountry('cr_removing_country').GetAdjectiveNoFlag] policy of removing the Indians to the Indian terrority west of the Mississippi frontier is causing quite some consternation amongst the local citizenry on the northern border, fearful of what thousands of hostile Indians might do."
+ cr_indian_removal.65.desc:0 "As the [SCOPE.sCountry('cr_removing_country').GetName] makes haste with their policy of Indian Removal and thousands of [SCOPE.sCountry('target_of_removal').GetNameNoFlag] Indians are settled along our Northern frontier, the consternation this is causing amongst the local citizenry of the northern border, fearful of what thousands of hostile Indians might do, requires a response."
+ cr_indian_removal.65.desc_2:0 "The [SCOPE.sCountry('cr_removing_country').GetAdjectiveNoFlag] policy of removing Indians to the Indian Terrority west of the Mississippi frontier is causing quite some consternation amongst the local citizenry on the northern border, fearful of what thousands of hostile Indians might do."
  cr_indian_removal.65.f:0 "If the Indians east of that river are sufficiently formidable to hold the citizens in dread, in a country, too abundantly furnished with every means of defence, the citizens of Texas and the western states of Mexico surely have reason to apprehend hostilities from all the Indian tribes which have, from time to time, been sent on to their borders -#italic Texas Telegraph#!"
- cr_indian_removal.65.a:0 "We expect the US government to keep them in check"
- cr_indian_removal.65.b_army:0 "We might reinforce our border" #Has professional army
- cr_indian_removal.65.b_militia:0 "It is nothing our militia might not handle" #Has militia
- cr_indian_removal.65.b_texas_rangers:0 "Texas Rangers to the Rescue" #Has militia and is Texas
+ cr_indian_removal.65.a:0 "We expect the [SCOPE.sCountry('cr_removing_country').GetAdjectiveNoFormatting]s to keep them in check"
+ cr_indian_removal.65.b:0 "We might reinforce our border" #Has professional army
+ cr_indian_removal.65.c:0 "It is nothing our militia might not handle" #Has militia
+ cr_indian_removal.65.d:0 "Texas Rangers to the Rescue" #Has militia and is Texas
+ 
+ cr_indian_removal.70.t:0 "An Incomplete Reconcilation"
+ cr_indian_removal.70.desc:0 "With the recent change in political winds the future of the #variable Five Civilised Tribes#! in the South looks a bit brighter, but only for those whose expulsion West had not yet begun, or who -by chance or circumstance- escaped the web spun against them."
+ cr_indian_removal.70.desc_sub_1:0 "\n\nFor the "
+ cr_indian_removal.70.desc_1:0 "[SCOPE.sCountry('cr_removed_country_no_1').GetNameNoFlag]"
+ cr_indian_removal.70.desc_2:0 "[SCOPE.sCountry('cr_removed_country_no_1').GetNameNoFlag] and [SCOPE.sCountry('cr_removed_country_no_2').GetNameNoFlag]"
+ cr_indian_removal.70.desc_3:0 "[SCOPE.sCountry('cr_removed_country_no_1').GetNameNoFlag], [SCOPE.sCountry('cr_removed_country_no_2').GetNameNoFlag] and [SCOPE.sCountry('cr_removed_country_no_3').GetNameNoFlag]"
+ cr_indian_removal.70.desc_4:0 "[SCOPE.sCountry('cr_removed_country_no_1').GetNameNoFlag], [SCOPE.sCountry('cr_removed_country_no_2').GetNameNoFlag], [SCOPE.sCountry('cr_removed_country_no_3').GetNameNoFlag] and [SCOPE.sCountry('cr_removed_country_no_4').GetNameNoFlag]"
+ cr_indian_removal.70.desc_5:0 "[SCOPE.sCountry('cr_removed_country_no_1').GetNameNoFlag], [SCOPE.sCountry('cr_removed_country_no_2').GetNameNoFlag], [SCOPE.sCountry('cr_removed_country_no_3').GetNameNoFlag], [SCOPE.sCountry('cr_removed_country_no_4').GetNameNoFlag] and [SCOPE.sCountry('cr_removed_country_no_5').GetNameNoFlag]"
+ cr_indian_removal.70.desc_sub_2:0 "these changes comes to late, having already fallen victim of removal, no longer calling their ancestoral lands home."
+ cr_indian_removal.70.f:0 " ... our village presents a different appearance. The Indians are all gone; it was melancholy to see the poor creatures leaving the land of their birth and the graves of their fathers. A deep sadness was imprinted on their countenances. -#italic A young eyewitness#!"
+ 
+ cr_indian_removal.70.a:0 "What is done is done"
+ cr_indian_removal.70.b:0 "Perhaps we can make some minor amends?"
+ cr_indian_removal.70.b_tt:0 "All [SCOPE.sCulture('muskogean_people').GetName], [SCOPE.sCulture('cherokee_people').GetName] and [SCOPE.sCulture('chickasaw_people').GetName] [concept_pop]s gain #g 2%#! loyalty"
+ cr_indian_removal.70.c:0 "Justice can only be achieved by undoing the removal act"
+ cr_indian_removal.70.c_tt:0 "The Nations removed to West of the Mississippi will have their ancestoral lands in [SCOPE.sState('state_of_alabama').GetNameNoFormatting], [SCOPE.sState('state_of_georgia').GetNameNoFormatting], [SCOPE.sState('state_of_tennessee').GetNameNoFormatting], [SCOPE.sState('state_of_north_carolina').GetNameNoFormatting] and  [SCOPE.sState('state_of_mississippi').GetNameNoFormatting] restored to them."
+ cr_indian_removal.70.c_tt_2:0 "All [SCOPE.sCulture('muskogean_people').GetName], [SCOPE.sCulture('cherokee_people').GetName] and [SCOPE.sCulture('chickasaw_people').GetName] [concept_pop]s gain #g 20%#! loyalty"
  
  cr_actions_has_consequences_tt:0 "The action has consequences"
  cr_actions_might_have_consequences_tt:0 "The action might have consequences"
@@ -385,9 +448,9 @@
  #Canadian Indian Treaties
  ####
  cr_canadian_indian_treaties.0.t:0 "Rock of the Ages"
- cr_canadian_indian_treaties.0.desc:0 "Pulled from the wilderness of Upper Michigan and brought with great effort to Detroit for a private exhibition, the Ontonagon Boulder -a rare and exceptionally large piece of native copper- has started drawing attention the [GetGoods('copper').GetName] mining potential of Lake Superior.\n\nWhile the occurance of copper and the use of it by native Indians was already reported by the first travellers to the region, the exhibition announces it to the wider world."
+ cr_canadian_indian_treaties.0.desc:0 "Pulled from the wilderness of Upper Michigan and brought to Detroit with great effort, the Ontonagon Boulder -a rare and exceptionally large piece of native copper- is drawing attention the [GetGoods('copper').GetName] mining potential of Lake Superior."
  cr_canadian_indian_treaties.0.desc_2:0 "Pulled from the wilderness of Upper Michigan and brought with great effort to Detroit for a private exhibition, the ontonagon boulder -a rare and exceptionally large piece of native copper in Detroit is drawing attention nation- wide to the [GetGoods('copper').GetName] mining potential of Lake Superior.\n\nWhile the occurance of copper was already reported by the first travellers to the region, the exhibition -featuring a rare and exceptionally large piece of native copper found along the shores of Lake Superiour- offers the first glimps into what could truly be out there."
- cr_canadian_indian_treaties.0.desc_michigan:0 "Pulled from the wilderness of Upper Michigan and brought with great effort to Detroit for a private exhibition, the ontonagon boulder -a rare and exceptionally large piece of native copper- has started drawing attention the [GetGoods('copper').GetName] mining potential of Lake Superior.\n\nWhile the occurance of copper and the use of it by native Indians was already reported by the first travellers to the region, the exhibition announces it to the wider world."
+ cr_canadian_indian_treaties.0.desc_michigan:0 "Pulled from the wilderness of Upper Michigan and brought to Detroit with great effort, the Ontonagon Boulder -a rare and exceptionally large piece of native copper- has started drawing attention the [GetGoods('copper').GetName] mining potential of Lake Superior."
  cr_canadian_indian_treaties.0.desc_michigan_2:0 "A private exhibition in Detroit is drawing attention nation- wide to the [GetGoods('copper').GetName] mining potential of Upper Michigan.\n\nWhile the occurance of copper was already reported by the first travellers to the region, the exhibition -featuring a rare and exceptionally large piece of native found along the shores of Lake Superiour- offers the first glimps into what could truly be out there."
  cr_canadian_indian_treaties.0.desc_3:0 "The discovery of an extraordinary piece of copper in Upper Michigan is drawing attention to the region of prospectors nation wide.\n\nThe discovery, a 3 ton rock of pure native copper, has been bought from local [SCOPE.sCountry('native_state').GetName]"
  cr_canadian_indian_treaties.0.f:0 "Triumphantly they marched through the streets of Detroit, the spectators looking curiously at the wagon behind them and wondering what could be hidden underneat the tarp.\n'A rare specimen,' he teased, 'something you have never seen before.'\n'A great treasure we are hesitant to share,' the next one added, 'but granting a small glimps, perhaps, would not hurt us?'\n 'It is still a risk,' the first one replied, 'but perhaps, for a small price, we could risk it?'"
@@ -468,94 +531,114 @@
  cr_canadian_indian_treaties.10.d:0 "No quarter will be given"
  cr_canadian_indian_treaties.10.e:0 "We will be generous with our terms"
 
-cr_canadian_indian_treaties.20.t:0 "Land Cession Treaty No. [SCOPE.GetRootScope.GetCountry.GetCustom('cr_numbers_localisation')]"
-cr_canadian_indian_treaties.20.desc:0 "[SCOPE.sCountry('native_state').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCharacter('native_ruler').GetFirstName] of the [SCOPE.sCountry('native_state').GetNameNoFlag] has lead a number of [SCOPE.sCountry('native_state').GetRuler.GetPrimaryRoleTitle|l]s to [SCOPE.sState('cr_numbered_treaties_owned_state').GetCityHubName] to discuss the possibility of land cessions.\n\nHaving met with our Commissioner, they have expressed their willingness to sign over title to their land in exchange for annuities and reservation land."
-cr_canadian_indian_treaties.20.f:0 ""
-cr_canadian_indian_treaties.20.a:0 "Wonderful"
-cr_canadian_indian_treaties.20.b:0 "We will aggressively push these treaties"
-cr_canadian_indian_treaties.20.c:0 "This is not in our current interest"
+ cr_canadian_indian_treaties.20.t:0 "Land Cession Treaty No. [SCOPE.GetRootScope.GetCountry.GetCustom('cr_numbers_localisation')]"
+ cr_canadian_indian_treaties.20.desc:0 "At a meeting of [SCOPE.sCountry('native_state').GetRuler.GetPrimaryRoleTitle|l]s called by Commissioner [SCOPE.sCharacter('treaty_negotiator').GetLastName], [SCOPE.sCountry('native_state').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCharacter('native_ruler').GetFirstName] of the [SCOPE.sCountry('native_state').GetNameNoFlag] has agreed to sign over title to their land in exchange for annuities and reservation land."
+ cr_canadian_indian_treaties.20.desc#:0 "Commissioner [SCOPE.sCharacter('treaty_negotiator').GetLastName] has called a meeting of [SCOPE.sCountry('native_state').GetNameNoFlag] [SCOPE.sCountry('native_state').GetRuler.GetPrimaryRoleTitle|l]s at [SCOPE.sState('cr_numbered_treaties_owned_state').GetCityHubName] to discuss a land cession treaty.\n\nLet by [SCOPE.sCountry('native_state').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCharacter('native_ruler').GetFirstName] the [SCOPE.sCountry('native_state').GetNameNoFormatting] [SCOPE.sCountry('native_state').GetRuler.GetPrimaryRoleTitle|l] agree to sign over title to their land in exchange for annuities and reservation land."
+ cr_canadian_indian_treaties.20.desc_2:0 "[SCOPE.sCountry('native_state').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCharacter('native_ruler').GetFirstName] of the [SCOPE.sCountry('native_state').GetNameNoFlag] has lead a number of [SCOPE.sCountry('native_state').GetRuler.GetPrimaryRoleTitle|l]s to [SCOPE.sState('cr_numbered_treaties_owned_state').GetCityHubName] to discuss the possibility of land cessions.\n\nHaving met with Commissioner [SCOPE.sCharacter('treaty_negotiator').GetLastName], they have expressed their willingness to sign over title to their land in exchange for annuities and reservation land."
+ cr_canadian_indian_treaties.20.f:0 ""
+ cr_canadian_indian_treaties.20.a:0 "A fair and equitable deal"
+ cr_canadian_indian_treaties.20.b:0 "A slightly less fair and equitable deal"
+ 
+ cr_canadian_indian_treaties.21.t:0 "Along the Labrador Coast"
+ cr_canadian_indian_treaties.21.desc:0 "As the colonisation of [SCOPE.sStrategicRegion('canada_region').GetName] nears completion and [SCOPE.sStrategicRegion('ruperts_land').GetName] becomes the new frontier, attention is also turning towards [SCOPE.sState('cr_newfoundland').GetName], to what promise the Labrador interiour holds."
+ cr_canadian_indian_treaties.21.f:0 "Maps you say? Maps?! Sure, they show the coast and currents well enough, but human settlements? No... Things change too rapidly here to keep up to date maps on such matters.\n\nAs the ship enters the bay it becomes clear that the reports of settlement had been greatly exeggerated. Sure; somebody is living here, but not enough to make this a profitable venture... But it matters not, if not here, then a few miles up the coast there will be more people. And so the ship pushes further northward, ever northwards... "
+ cr_canadian_indian_treaties.21.a:0 "It's a land of unparalleled opportunities"
+ 
+ cr_canadian_indian_treaties.22.t:0 "The Royal Proclamation"
+ cr_canadian_indian_treaties.22.desc:0 "Ever since its promulgation, the Royal Proclamation of 1763 has served as a formidable barrier to the exploitation of [SCOPE.sStrategicRegion('canada_region').GetName] and [SCOPE.sStrategicRegion('ruperts_land').GetName]'s fertile lands, its presence a stark reminder of imperial control.\n\nHowever, as the sun has sets on colonial rule, the proclamation's once unassailable authority has begun to wane and whispers of dissent have grown louder, challenging the proclamation's validity and emboldening settlers and entrepreneurs to push beyond its confines in pursuit of opportunity and prosperity. "
+ cr_canadian_indian_treaties.22.desc_2:0 "The Royal Proclamation of 1763 has governed our relation with the Indians inhabiting [SCOPE.sStrategicRegion('canada_region').GetName] and [SCOPE.sStrategicRegion('ruperts_land').GetName] for as long as we have existed. Yet as we have freed ourselves from British domination and the lure of the unsettled frontier becoming ever more irresistable, there are those who wonder why we confine ourselves to this piece of tyranny imposed on us."
+ cr_canadian_indian_treaties.22.f:0 "As the ink of the Royal Proclamation of 1763 stains the parchment, so too does it stain our aspirations for prosperity and growth. This decree, cloaked in the guise of imperial control, chained us to the whims of distant rulers and robs us of our rightful claim to the fertile lands that lie beyond its confines. We are not mere subjects to be hemmed in by lines on a map, but pioneers yearning to cultivate the untamed wilderness and unlock its bountiful treasures. Let history mark us not as passive recipients of arbitrary decree, but as bold challengers of unjust restraint, destined to forge our own path amidst the winds of change"
+ cr_canadian_indian_treaties.22.a:0 "The Proclamation Stands!"
+ cr_jingoist_agitator_appears_tt:0 "A #variable Jingost#! character appears in [SCOPE.GetRootScope.GetCountry.GetNameNoFlag]"
+ cr_canadian_indian_treaties.22.a_tt:0 "All #variable Native American#! and #variable First Nation#! [concept_culture]s gain #g 2%#! loyalty"
+ cr_canadian_indian_treaties.22.b:0 "The Proclamation is Revoked!"
+ cr_canadian_indian_treaties.22.b_tt:0 "The #variable Unceded Territory#! modifier is removed from all states"
+ cr_canadian_indian_treaties.22.b_tt_2:0 "All #variable Native American#! and #variable First Nation#! [concept_culture]s have gain #r 20%#! radicalism"
+ cr_canadian_indian_treaties_remove_je:0 "This closes the #variable Numbered Treaties#! [concept_journal_entry]"
+ 
+ cr_canadian_indian_treaties.50.t:0 "The Man on the River"
+ cr_canadian_indian_treaties.50.summary:0 "Furs have long been seen as the epitomy of status and class, but as Chinese silks make their way onto the London markets from [SCOPE.sState('hongkong_scope').GetPortHubName], the heavy and unwieldy fur hats are rapidly being replace by light and airy delicates, reflecting a new era of unbridled optimism.\n\nBut as furs fade from our society, [SCOPE.sStrategicRegion('ruperts_land').GetName], so reliant on the [SCOPE.sCountry('cr_fur_trading_country').GetAdjectiveNoFlag] fur trade, risks fading with it."
+ cr_canadian_indian_treaties.51.summary:0 "As in far away London a new era of change and fashion dawns, an era of wealth and progress fueled by the engines of industry, the certainties of old fade with it. No longer does London high society desire the warm and luxury touch of a fine pelt we provide, no; with the opening of [SCOPE.sState('hongkong_scope').GetPortHubName] fashion has turned to cheap Chinese silks, light and soft of touch, a better reflection of this new era.\n\nBut as times change, so must we change with it as we can no longer rely on the profitably of the [SCOPE.sCountry('cr_fur_trading_country').GetAdjectiveNoFlag] to sustain us."
+ cr_canadian_indian_treaties.51.summary_can:0 "As in far away London a new era dawns, an era of change and progress, an era of unbridled opportunity for those willing to reach for it. So we must change with it or risk fading from history, for the warm and luxury touch of a fine pelt on which [SCOPE.sStrategicRegion('canada_scope').GetName] was build has been traded in for soft and airy Chinese silks brought in from [SCOPE.sState('hongkong_scope').GetPortHubName]."
+ cr_canadian_indian_treaties.50.summary_2:0 "Changing tastes in fashion have let to a decline in the previously profitable [SCOPE.sCountry('cr_fur_trading_country').GetAdjectiveNoFlag] fur trade."
+ cr_canadian_indian_treaties.50.flavour_1:0 "He is a lonely figure who still braves the wilds of [SCOPE.sStrategicRegion('ruperts_land').GetNameNoFormatting] in search of that elusive perfect pelt. Perhaps he does it out of longing for the freedom it provides? Or maybe out of sheer habit? For rich it doesn't make him. Once it might have, perhaps, but where the frontier barely changes, in far away London a new era is dawning. An era of progress, change and unfathomable wealth. An era of celebration where there is no more use for the dank and musky furs our man built his life around. Where there is no more use for him."
+ cr_canadian_indian_treaties.50.flavour_2:0 "He is a relic of a time long passed, that Voyageur making his way along the rivers of [SCOPE.sStrategicRegion('ruperts_land').GetNameNoFormatting]. Traveling, haggling, trading. Day in, day out. The whole season long until the snows and ice make traveling impossible. And then -when spring comes and the rivers are navigable again- he starts over again. His frontier life might never change but the world does. His furs, once in high demand in London society, are now seen as much of a relic of times past as he is. Today it is all silks and cottons they crave. And while this craze will pass and fade in time, today it is his turn to pass and fade from time."
+ cr_canadian_indian_treaties.50.flavour_3:0 "Somewhere, in a far away corner of our Empire, rough men prow the rivers and wilds to make their living. Hunting, traveling, trading. Each day in, each day out, for as long as the weather allows and their bodies can carry them. And then some more. It is a way of life which has existed for centuries and has defined the frontiers. The pelts they bring to market -the finest, softest, warmest, you'll ever find- the backbone of our entire colony. But the trade is drying up. Sure the beavers, otters, foxes are as plentiful as ever and their furs never better, but you'll be hard pressed to find a buyer for them here in London."
+ cr_canadian_indian_treaties.50.a:0 "Tempora mutantur, nos et mutamur in illis"
+ cr_canadian_indian_treaties.50.a_tt:0 "The Fur Trading Posts across [SCOPE.sStrategicRegion('ruperts_land').GetName], the [SCOPE.sCountry('columbia_district').GetNameNoFlag] and [SCOPE.sStrategicRegion('canada_scope').GetName] have been depleted and removed from the map."
+ cr_canadian_indian_treaties.51.a_tt:0 "The [SCOPE.sBuilding('fur_trading_post').GetName]s across [SCOPE.sStrategicRegion('ruperts_land').GetName] will be depleted and removed from the map."
+ 
+ cr_canadian_indian_treaties.52.a_tt:0 "The [SCOPE.sBuilding('fur_trading_post').GetName]s across the [SCOPE.sCountry('fur_declining_country').GetNameNoFlag] will be depleted and removed from the map."
 
-cr_canadian_indian_treaties.50.t:0 "The Man on the River"
-cr_canadian_indian_treaties.50.summary:0 "Changing tastes in fashion have let to a decline in the previously profitable [SCOPE.sCountry('cr_fur_trading_country').GetAdjectiveNoFlag] fur trade."
-cr_canadian_indian_treaties.50.flavour_1:0 "He is a lonely figure who still braves the wilds of [SCOPE.sStrategicRegion('ruperts_land').GetNameNoFormatting] in search of that elusive perfect pelt. Perhaps he does it out of longing for the freedom it provides? Or maybe out of sheer habit? For rich it doesn't make him. Once it might have, perhaps, but where the frontier barely changes, in far away London a new era is dawning. An era of progress, change and unfathomable wealth. An era of celebration where there is no more use for the dank and musky furs our man built his life around. Where there is no more use for him."
-cr_canadian_indian_treaties.50.flavour_2:0 "He is a relic of a time long passed, that Voyageur making his way along the rivers of [SCOPE.sStrategicRegion('ruperts_land').GetNameNoFormatting]. Traveling, haggling, trading. Day in, day out. The whole season long until the snows and ice make traveling impossible. And then -when spring comes and the rivers are navigable again- he starts over again. His frontier life might never change but the world does. His furs, once in high demand in London society, are now seen as much of a relic of times past as he is. Today it is all silks and cottons they crave. And while this craze will pass and fade in time, today it is his turn to pass and fade from time."
-cr_canadian_indian_treaties.50.flavour_3:0 "Somewhere, in a far away corner of our Empire, rough men prow the rivers and wilds to make their living. Hunting, traveling, trading. Each day in, each day out, for as long as the weather allows and their bodies can carry them. And then some more. It is a way of life which has existed for centuries and has defined the frontiers. The pelts they bring to market -the finest, softest, warmest, you'll ever find- the backbone of our entire colony. But the trade is drying up. Sure the beavers, otters, foxes are as plentiful as ever and their furs never better, but you'll be hard pressed to find a buyer for them in London."
-cr_canadian_indian_treaties.50.a:0 "Tempora mutantur, nos et mutamur in illis"
-cr_canadian_indian_treaties.50.a_tt:0 "The [SCOPE.sBuilding('fur_trading_post').GetName]s across [SCOPE.sStrategicRegion('ruperts_land').GetName] will be depleted and removed from the map."
-
-cr_canadian_indian_treaties.51.a_tt:0 "The [SCOPE.sBuilding('fur_trading_post').GetName]s across the [SCOPE.sCountry('fur_declining_country').GetName] will be depleted and removed from the map."
-
-cr_canadian_indian_treaties.52.a_tt:0 "The Fur Trading Posts across [SCOPE.sStrategicRegion('ruperts_land').GetName], the [SCOPE.sCountry('columbia_district').GetName] and [SCOPE.sStrategicRegion('canada').GetName] have been depleted and removed from the map."
-
-################################
-#
-#   Lower Canada Rebellion
-#
-################################
-cr_lower_canada_rebellion.01.t:0 "The Patriote Threat"
-cr_lower_canada_rebellion.01.desc:0 "With the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoIcon] victory in the House of Assembly election, the issuing of the #variable 92 Resolutions#! and the tax revolt they imposed, the increasing militancy of the [SCOPE.sCulture('franco_canadian_culture').GetName]s is becoming worrysome to some of our [SCOPE.sCulture('anglo_canadian_culture').GetName], who fear for the future of the colony under [SCOPE.sCountry('cr_lower_canada_overlord').GetAdjective] rule.\n\nIn the hopes of safeguarding the future of [SCOPE.sCountry('cr_lower_canada_overlord').GetAdjectiveNoFormatting] rule, various [SCOPE.sCulture('anglo_canadian_culture').GetNameNoFormatting]s have started organising into a volunteer militia they have dubbed the #variable British Rifle Corps#!. They stand ready to put down the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoFormatting] threat, should it come to that."
-cr_lower_canada_rebellion.01.flavour:0 "Our aim is to defend the connection which exists between Great Britain and Lower Canada, and to maintain unimpaired the rights and privileges confirmed to us by the Constitution."
-cr_lower_canada_rebellion.01.a:0 "The [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoFormatting] are no real threat"
-cr_lower_canada_rebellion.01.b:0 "It is always useful to have some militants to work with"
-
-cr_lower_canada_rebellion.02.t:0 "A Call to all Loyal British Men"
-cr_lower_canada_rebellion.02.desc:0 "From the tea houses of [ROOT.GetCountry.GetCapital.GetCityHubName] the rumour is spreading that former members of the banned British Rifle Club have banded together into a new 'political association'. This so called $variable Doric Club#! has the stated aim of protecting [SCOPE.sCulture('anglo_canadian_culture').GetName] interest in the colony against the ravages of the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoFormatting].\n\nEarily similiar to the banned British Rifle Club, this new organisation -a militia in all but name- seems to have found a powerful protector in [SCOPE.gsInterestGroup('cr_canadian_armed_forces').GetLeader.GetFullName] and has a suprisingly large contigent of [SCOPE.gsInterestGroup('cr_canadian_armed_forces').GetNameNoIcon] members."
-cr_lower_canada_rebellion.02.flavour:0 "If we are deserted by the British government and the British people, rather than submit to the degradation of being subject of a French-Canadian republic, we are determined by our own right arms to work out our deliverance."
-cr_lower_canada_rebellion.02.a:0 "A lemon by any other name tastes just as sour"
-cr_lower_canada_rebellion.02.b:0 "We appreciate the loyality these men show"
-
-cr_lower_canada_rebellion.03.t:0 "Enlist!"
-cr_lower_canada_rebellion.03.desc:0 "'Enlist to save the Empire!', 'Enlist to save the Church!' 'Enlist to save British Civilisation!'\n\nThe #variable British Rifle Club#! has started an aggressive campaign of recruitment amongst the [SCOPE.sCulture('anglo_canadian_culture').GetName] male youth, building upon the fear that the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoIcon] might seize control and overthrow the old British order of the monarchy, the church and the British way of life."
-cr_lower_canada_rebellion.03.flavour:0 "flavour"
-cr_lower_canada_rebellion.03.a:0 "opt a"
-cr_lower_canada_rebellion.03.b:0 "opt b"
-
-cr_lower_canada_rebellion.04.t:0 "The Flag Parade"
-cr_lower_canada_rebellion.04.desc:0 "Proudly flying the [SCOPE.sCountry('cr_lower_canada_overlord').GetAdjectiveNoFlag] flag as they march to a tune of fife and drum, a group of young men associated with the #variable British Rifle Club#! have taken it upon themselves to organise a flag parade down the streets of [ROOT.GetCountry.GetCapital.GetCityHubName].\n\nThe city, deeply divided between [SCOPE.sCulture('anglo_canadian_culture').GetName]s and [SCOPE.sCulture('franco_canadian_culture').GetName], is a hotbed of political activity for both the Loyalists and the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoFormatting]. And now, with the authorities watching, the men have stated their intention to march into a deeply [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhood."
-cr_lower_canada_rebellion.04.flavour:0 "flavour"
-cr_lower_canada_rebellion.04.a:0 "If only there was something we could do..."
-cr_lower_canada_rebellion.04.a_tt:0 "This option is available because you have no investement into the [concept_institution_police] institution."
-cr_lower_canada_rebellion.04.b:0 "Perhaps they should continue their march elsewhere..."
-cr_lower_canada_rebellion.04.b_tt:0 "This option is available because you have the [GetLawType('law_right_of_assembly').GetName] or [GetLawType('law_protected_speech').GetName] $concept_laws$ active and at least a level 1 investement into the [concept_institution_police] institution."
-cr_lower_canada_rebellion.04.c:0 "Their right to march is protected, by force if necessary"
-cr_lower_canada_rebellion.04.c_tt:0 "This option is available because you have the [GetLawType('law_right_of_assembly').GetName] or [GetLawType('law_protected_speech').GetName] $concept_laws$ active."
-cr_lower_canada_rebellion.04.d:0 "I didn't know they had permission to march in the first place..."
-cr_lower_canada_rebellion.04.d_tt:0 "This option is available because you have the [GetLawType('law_outlawed_dissent').GetName] or [GetLawType('law_censorship').GetName] $concept_laws$ active."
-
-cr_lower_canada_rebellion.05.t:0 "The [TimeKeeper.GetDate.GetString] Montreal Riots"
-cr_lower_canada_rebellion.05.desc:0 "As the #variable British Rifle club#! marched down the [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhood of [ROOT.GetCountry.GetCapital.GetCityHubName], it was not long before they were met by the first jeers from the growing crowd. But while the first jeers were met with a proud stiff upper lip, but -as more and more people gathered- it was not long before the tensions erupted. When the first stone came -who threw it no-one knows- it was a signal for both sides to have at eachother.\n\nFists were thrown, beatings endured and a window smashed here and there."
-cr_lower_canada_rebellion.05.flavour:0 "flavour"
-cr_lower_canada_rebellion.05.a:0 "A sign for things to come"
-
-cr_lower_canada_rebellion.05.desc_b:0 "As the #variable British Rifle Club#! marched down the [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhood of [ROOT.GetCountry.GetCapital.GetCityHubName], it was not long before they were met by the first jeers from the growing crowd. But while the first jeers were met with a proud stiff upper lip, but -as more and more people gathered- it was not long before the tensions erupted. When the first stone came -who threw it no-one knows- it was a signal for both sides to have at eachother.\n\nFists were thrown, beatings endured and a window smashed here and there.\n\nThe constabulary we gathered stood by and watched, too small in number to be able to stand up against the crowds and make a difference."
-cr_lower_canada_rebellion.05.flavour_b:0 "flavour"
-cr_lower_canada_rebellion.05.b:0 "A sign for things to come"
-
-cr_lower_canada_rebellion.06.t:0 "The [TimeKeeper.GetDate.GetString] Montreal Parade"
-cr_lower_canada_rebellion.06.desc:0 "With their path into the [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhoods blocked, the #variable British Rifle Club#! marched down the main streets of [ROOT.GetCountry.GetCapital.GetCityHubName] instead. There, amongst their [SCOPE.sCulture('anglo_canadian_culture').GetName] compatriots, they were met with cheers and laurels from an ever growing crowd, who seemed to appreciate the sense of protection and order the Club brought."
-cr_lower_canada_rebellion.06.flavour:0 "flavour"
-cr_lower_canada_rebellion.06.a:0 "A sign for things to come"
-
-cr_lower_canada_rebellion.06.desc_b:0 "As the #variable British Rifle Club#! marched down the [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhood, the air thick with the oppressive presence of the constabulary lining the street, the occassional jeer drowned out by the fifes and drums, the occasional rock thrower quickly caught, it was inescapable to the gathering crowd who called the tune."
-cr_lower_canada_rebellion.06.flavour_b:0 "flavour"
-cr_lower_canada_rebellion.06.b:0 "A sign for things to come"
-
-cr_lower_canada_rebellion.10.t:0 "The Last [SCOPE.sCulture('franco_canadian_culture').GetNameNoFormatting] in [ROOT.GetCountry.GetCapital.GetCityHubNameNoFormatting]"
-cr_lower_canada_rebellion.10.desc:0 "Every day he stands in his carefully curated out fit -a red toque and sash, a white cotton shirt, his wide-brimmed had adorning a red-white-green cocade- at the Speakers' Corner in the [ROOT.GetCountry.GetCapital.GetCityHubName]. Every day he proclaims his message of times long past. Every day the same people pass him, and every day his message goes unheard. His French tongue an almost lost language. He is the self-proclaimed last [SCOPE.sCulture('franco_canadian_culture').GetName] in [ROOT.GetCountry.GetCapital.GetCityHubName].\n\nWhile it hasn't gotten quite that far yet, [ROOT.GetCountry.GetCapital.GetCityHubNameNoFormatting] stands at a cross road as the influx of [SCOPE.sCulture('anglo_canadian_culture').GetName]s is pushing [SCOPE.sCulture('franco_canadian_culture').GetNameNoFormatting] culture ever more to the periphery."
-cr_lower_canada_rebellion.10.flavour:0 "Flavour"
-cr_lower_canada_rebellion.10.a:0 "Times change and we change with it"
-cr_lower_canada_rebellion.10.b:0 "Something something positive for the franco canadians"
-
-cr_lower_canada_rebellion.11.t:0 "Gateway to America"
-cr_lower_canada_rebellion.11.desc:0 "Busteling and rapidly growing [ROOT.GetCountry.GetCapital.GetCityHubName] is developing itself into the hub of [SCOPE.sCountry('cr_lower_canada_overlord').GetAdjective] North America.  controls all trade to the Great Lakes, and as a result stands to be the Gateway to America, a rival to New York "
-cr_lower_canada_rebellion.11.flavour:0 "Flavour"
-cr_lower_canada_rebellion.11.a:0 "Times change and we change with it"
-cr_lower_canada_rebellion.11.b:0 "Something something positive for the franco canadians"
-
-cr_lower_canada_rebellion.12.t:0 "The Spectre of Revolution"
-cr_lower_canada_rebellion.12.desc:0 ""
-cr_lower_canada_rebellion.12.flavour:0 ""
-cr_lower_canada_rebellion.12.a:0 "A lemon by any other name tastes just as sour"
-cr_lower_canada_rebellion.12.b:0 "We appreciate the loyality these men show"
-
-
+ 
+ ################################
+ #
+ #   Lower Canada Rebellion
+ #
+ ################################
+ cr_lower_canada_rebellion.01.t:0 "The Patriote Threat"
+ cr_lower_canada_rebellion.01.desc:0 "With the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoIcon] victory in the House of Assembly election, the issuing of the #variable 92 Resolutions#! and the tax revolt they imposed, the increasing militancy of the [SCOPE.sCulture('franco_canadian_culture').GetName]s is becoming worrysome to some of our [SCOPE.sCulture('anglo_canadian_culture').GetName], who fear for the future of the colony under [SCOPE.sCountry('cr_lower_canada_overlord').GetAdjective] rule.\n\nIn the hopes of safeguarding the future of [SCOPE.sCountry('cr_lower_canada_overlord').GetAdjectiveNoFormatting] rule, various [SCOPE.sCulture('anglo_canadian_culture').GetNameNoFormatting]s have started organising into a volunteer militia they have dubbed the #variable British Rifle Corps#!. They stand ready to put down the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoFormatting] threat, should it come to that."
+ cr_lower_canada_rebellion.01.flavour:0 "Our aim is to defend the connection which exists between Great Britain and Lower Canada, and to maintain unimpaired the rights and privileges confirmed to us by the Constitution."
+ cr_lower_canada_rebellion.01.a:0 "The [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoFormatting] are no real threat"
+ cr_lower_canada_rebellion.01.b:0 "It is always useful to have some militants to work with"
+ 
+ cr_lower_canada_rebellion.02.t:0 "A Call to all Loyal British Men"
+ cr_lower_canada_rebellion.02.desc:0 "From the tea houses of [ROOT.GetCountry.GetCapital.GetCityHubName] the rumour is spreading that former members of the banned British Rifle Club have banded together into a new 'political association'. This so called $variable Doric Club#! has the stated aim of protecting [SCOPE.sCulture('anglo_canadian_culture').GetName] interest in the colony against the ravages of the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoFormatting].\n\nEarily similiar to the banned British Rifle Club, this new organisation -a militia in all but name- seems to have found a powerful protector in [SCOPE.gsInterestGroup('cr_canadian_armed_forces').GetLeader.GetFullName] and has a suprisingly large contigent of [SCOPE.gsInterestGroup('cr_canadian_armed_forces').GetNameNoIcon] members."
+ cr_lower_canada_rebellion.02.flavour:0 "If we are deserted by the British government and the British people, rather than submit to the degradation of being subject of a French-Canadian republic, we are determined by our own right arms to work out our deliverance."
+ cr_lower_canada_rebellion.02.a:0 "A lemon by any other name tastes just as sour"
+ cr_lower_canada_rebellion.02.b:0 "We appreciate the loyality these men show"
+ 
+ cr_lower_canada_rebellion.03.t:0 "Enlist!"
+ cr_lower_canada_rebellion.03.desc:0 "'Enlist to save the Empire!', 'Enlist to save the Church!' 'Enlist to save British Civilisation!'\n\nThe #variable British Rifle Club#! has started an aggressive campaign of recruitment amongst the [SCOPE.sCulture('anglo_canadian_culture').GetName] male youth, building upon the fear that the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoIcon] might seize control and overthrow the old British order of the monarchy, the church and the British way of life."
+ cr_lower_canada_rebellion.03.flavour:0 "flavour"
+ cr_lower_canada_rebellion.03.a:0 "opt a"
+ cr_lower_canada_rebellion.03.b:0 "opt b"
+ 
+ cr_lower_canada_rebellion.04.t:0 "The Flag Parade"
+ cr_lower_canada_rebellion.04.desc:0 "Proudly flying the [SCOPE.sCountry('cr_lower_canada_overlord').GetAdjectiveNoFlag] flag as they march to a tune of fife and drum, a group of young men associated with the #variable British Rifle Club#! have taken it upon themselves to organise a flag parade down the streets of [ROOT.GetCountry.GetCapital.GetCityHubName].\n\nThe city, deeply divided between [SCOPE.sCulture('anglo_canadian_culture').GetName]s and [SCOPE.sCulture('franco_canadian_culture').GetName], is a hotbed of political activity for both the Loyalists and the [SCOPE.gsInterestGroup('cr_canadian_liberals').GetNameNoFormatting]. And now, with the authorities watching, the men have stated their intention to march into a deeply [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhood."
+ cr_lower_canada_rebellion.04.flavour:0 "flavour"
+ cr_lower_canada_rebellion.04.a:0 "If only there was something we could do..."
+ cr_lower_canada_rebellion.04.a_tt:0 "This option is available because you have no investement into the [concept_institution_police] institution."
+ cr_lower_canada_rebellion.04.b:0 "Perhaps they should continue their march elsewhere..."
+ cr_lower_canada_rebellion.04.b_tt:0 "This option is available because you have the [GetLawType('law_right_of_assembly').GetName] or [GetLawType('law_protected_speech').GetName] $concept_laws$ active and at least a level 1 investement into the [concept_institution_police] institution."
+ cr_lower_canada_rebellion.04.c:0 "Their right to march is protected, by force if necessary"
+ cr_lower_canada_rebellion.04.c_tt:0 "This option is available because you have the [GetLawType('law_right_of_assembly').GetName] or [GetLawType('law_protected_speech').GetName] $concept_laws$ active."
+ cr_lower_canada_rebellion.04.d:0 "I didn't know they had permission to march in the first place..."
+ cr_lower_canada_rebellion.04.d_tt:0 "This option is available because you have the [GetLawType('law_outlawed_dissent').GetName] or [GetLawType('law_censorship').GetName] $concept_laws$ active."
+ 
+ cr_lower_canada_rebellion.05.t:0 "The [TimeKeeper.GetDate.GetString] Montreal Riots"
+ cr_lower_canada_rebellion.05.desc:0 "As the #variable British Rifle club#! marched down the [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhood of [ROOT.GetCountry.GetCapital.GetCityHubName], it was not long before they were met by the first jeers from the growing crowd. But while the first jeers were met with a proud stiff upper lip, but -as more and more people gathered- it was not long before the tensions erupted. When the first stone came -who threw it no-one knows- it was a signal for both sides to have at eachother.\n\nFists were thrown, beatings endured and a window smashed here and there."
+ cr_lower_canada_rebellion.05.flavour:0 "flavour"
+ cr_lower_canada_rebellion.05.a:0 "A sign for things to come"
+ 
+ cr_lower_canada_rebellion.05.desc_b:0 "As the #variable British Rifle Club#! marched down the [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhood of [ROOT.GetCountry.GetCapital.GetCityHubName], it was not long before they were met by the first jeers from the growing crowd. But while the first jeers were met with a proud stiff upper lip, but -as more and more people gathered- it was not long before the tensions erupted. When the first stone came -who threw it no-one knows- it was a signal for both sides to have at eachother.\n\nFists were thrown, beatings endured and a window smashed here and there.\n\nThe constabulary we gathered stood by and watched, too small in number to be able to stand up against the crowds and make a difference."
+ cr_lower_canada_rebellion.05.flavour_b:0 "flavour"
+ cr_lower_canada_rebellion.05.b:0 "A sign for things to come"
+ 
+ cr_lower_canada_rebellion.06.t:0 "The [TimeKeeper.GetDate.GetString] Montreal Parade"
+ cr_lower_canada_rebellion.06.desc:0 "With their path into the [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhoods blocked, the #variable British Rifle Club#! marched down the main streets of [ROOT.GetCountry.GetCapital.GetCityHubName] instead. There, amongst their [SCOPE.sCulture('anglo_canadian_culture').GetName] compatriots, they were met with cheers and laurels from an ever growing crowd, who seemed to appreciate the sense of protection and order the Club brought."
+ cr_lower_canada_rebellion.06.flavour:0 "flavour"
+ cr_lower_canada_rebellion.06.a:0 "A sign for things to come"
+ 
+ cr_lower_canada_rebellion.06.desc_b:0 "As the #variable British Rifle Club#! marched down the [SCOPE.sCulture('franco_canadian_culture').GetName] neighbourhood, the air thick with the oppressive presence of the constabulary lining the street, the occassional jeer drowned out by the fifes and drums, the occasional rock thrower quickly caught, it was inescapable to the gathering crowd who called the tune."
+ cr_lower_canada_rebellion.06.flavour_b:0 "flavour"
+ cr_lower_canada_rebellion.06.b:0 "A sign for things to come"
+ 
+ cr_lower_canada_rebellion.10.t:0 "The Last [SCOPE.sCulture('franco_canadian_culture').GetNameNoFormatting] in [ROOT.GetCountry.GetCapital.GetCityHubNameNoFormatting]"
+ cr_lower_canada_rebellion.10.desc:0 "Every day he stands in his carefully curated out fit -a red toque and sash, a white cotton shirt, his wide-brimmed had adorning a red-white-green cocade- at the Speakers' Corner in the [ROOT.GetCountry.GetCapital.GetCityHubName]. Every day he proclaims his message of times long past. Every day the same people pass him, and every day his message goes unheard. His French tongue an almost lost language. He is the self-proclaimed last [SCOPE.sCulture('franco_canadian_culture').GetName] in [ROOT.GetCountry.GetCapital.GetCityHubName].\n\nWhile it hasn't gotten quite that far yet, [ROOT.GetCountry.GetCapital.GetCityHubNameNoFormatting] stands at a cross road as the influx of [SCOPE.sCulture('anglo_canadian_culture').GetName]s is pushing [SCOPE.sCulture('franco_canadian_culture').GetNameNoFormatting] culture ever more to the periphery."
+ cr_lower_canada_rebellion.10.flavour:0 "Flavour"
+ cr_lower_canada_rebellion.10.a:0 "Times change and we change with it"
+ cr_lower_canada_rebellion.10.b:0 "Something something positive for the franco canadians"
+ 
+ cr_lower_canada_rebellion.11.t:0 "Gateway to America"
+ cr_lower_canada_rebellion.11.desc:0 "Busteling and rapidly growing [ROOT.GetCountry.GetCapital.GetCityHubName] is developing itself into the hub of [SCOPE.sCountry('cr_lower_canada_overlord').GetAdjective] North America.  controls all trade to the Great Lakes, and as a result stands to be the Gateway to America, a rival to New York "
+ cr_lower_canada_rebellion.11.flavour:0 "Flavour"
+ cr_lower_canada_rebellion.11.a:0 "Times change and we change with it"
+ cr_lower_canada_rebellion.11.b:0 "Something something positive for the franco canadians"
+ 
+ cr_lower_canada_rebellion.12.t:0 "The Spectre of Revolution"
+ cr_lower_canada_rebellion.12.desc:0 ""
+ cr_lower_canada_rebellion.12.flavour:0 ""
+ cr_lower_canada_rebellion.12.a:0 "A lemon by any other name tastes just as sour"
+ cr_lower_canada_rebellion.12.b:0 "We appreciate the loyality these men show"
+ 
