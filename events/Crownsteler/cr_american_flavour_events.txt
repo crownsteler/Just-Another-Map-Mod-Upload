@@ -107,7 +107,6 @@ cr_american_events.1 = { #The National Rifle Association
 
 	option = {
 		name = cr_american_events.1.b
-		default_option = yes
 		ig:ig_armed_forces = {
 			#custom_tooltip = {
 			#	text = cr_american_events.1.a_tt

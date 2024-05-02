@@ -1,4 +1,516 @@
-﻿cr_canadian_treaty_annuities_effect = {
+﻿cr_mapping_the_oregon_trail = {
+	s:STATE_IDAHO = {
+		if = {
+			limit = {
+				p:x06E885.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x06E885
+				}
+			}
+		}
+	}
+	s:STATE_WYOMING = {
+		if = {
+			limit = {
+				p:x2403EF.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x2403EF
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xE387E7.owner = { is_country_type = decentralized }
+				p:x93B583.owner = { is_country_type = recognized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xE387E7
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x5F141F.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x5F141F
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x5B70BB.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x5B70BB
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xF3326F.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xF3326F
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x90C080.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x90C080
+				}
+			}
+		}
+	}
+	s:STATE_NEBRASKA = {
+		if = {
+			limit = {
+				p:x0F6ED8.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x0F6ED8
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xC547CE.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xC547CE
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xABDA2C.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xABDA2C
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xD08040.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xD08040
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x46C0C9.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x46C0C9
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xF7CF1A.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xF7CF1A
+				}
+			}
+		}
+	}
+}
+
+cr_map_the_salt_lake = {
+	s:STATE_WYOMING = {
+		if = {
+			limit = {
+				p:x93B583.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x93B583
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x5B70BB.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x5B70BB
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xF3326F.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xF3326F
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x90C080.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x90C080
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x465DC8.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x465DC8
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xE387E7.owner = { is_country_type = decentralized }
+				p:x2403EF.owner = { NOT = { is_country_type = decentralized } }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xE387E7
+				}
+			}
+		}
+	}
+	s:STATE_NEBRASKA = {
+		if = {
+			limit = {
+				p:x0F6ED8.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x0F6ED8
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xC547CE.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xC547CE
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xABDA2C.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xABDA2C
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xD08040.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xD08040
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x46C0C9.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x46C0C9
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xF7CF1A.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xF7CF1A
+				}
+			}
+		}
+	}
+	s:STATE_UTAH = {
+		if = {
+			limit = {
+				p:xA9B917.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xA9B917
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xA7E6DC.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xA7E6DC
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xF3B4BA.owner = { is_country_type = decentralized }
+				p:xA7E6DC.owner = { NOT = { is_country_type = decentralized } }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xF3B4BA
+				}
+			}
+		}
+	}
+}
+
+cr_mapping_the_california_trail = {
+	###Utah
+	if = {
+		limit = {
+			p:x9888F6.owner = { is_country_type = decentralized }
+		}
+		s:STATE_UTAH = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x9888F6
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			p:xD4D9A8.owner = { is_country_type = decentralized }
+		}
+		s:STATE_UTAH = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xD4D9A8
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			p:xF480A1.owner = { is_country_type = decentralized }
+		}
+		s:STATE_UTAH = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xF480A1
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			AND = {
+				p:xF3B4BA.owner = { is_country_type = decentralized }
+				p:xA7E6DC.owner = { NOT = { is_country_type = decentralized } }
+			}
+		}
+		s:STATE_UTAH = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xF3B4BA
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			AND = {
+				p:x5708EE.owner = { is_country_type = decentralized }
+			}
+		}
+		s:STATE_UTAH = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x5708EE
+				}
+			}
+		}
+	}
+	
+	####Nevada
+	if = {
+		limit = {
+			AND = {
+				p:xA8DB62.owner = { is_country_type = decentralized }
+			}
+		}
+		s:STATE_NEVADA = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xA8DB62
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			AND = {
+				p:x9FF17F.owner = { is_country_type = decentralized }
+			}
+		}
+		s:STATE_NEVADA = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x9FF17F
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			AND = {
+				p:xBB8631.owner = { is_country_type = decentralized }
+			}
+		}
+		s:STATE_NEVADA = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xBB8631
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			AND = {
+				p:x455838.owner = { is_country_type = decentralized }
+			}
+		}
+		s:STATE_NEVADA = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x455838
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			AND = {
+				p:xEF5007.owner = { is_country_type = decentralized }
+			}
+		}
+		s:STATE_NEVADA = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xEF5007
+				}
+			}
+		}
+	}
+	#### California
+	if = {
+		limit = {
+			AND = {
+				p:x519529.owner = { is_country_type = decentralized }
+			}
+		}
+		s:STATE_NEVADA = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x519529
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			AND = {
+				p:xf6b075.owner = { is_country_type = decentralized }
+			}
+		}
+		s:STATE_NEVADA = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xF6b075
+				}
+			}
+		}
+	}
+}
+
+
+cr_canadian_treaty_annuities_effect = {
 	if = {
 		limit = {
 			has_modifier = cr_treaty_annuities_24

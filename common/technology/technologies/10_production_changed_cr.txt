@@ -1,0 +1,131 @@
+﻿### ERA 1
+
+shaft_mining = {
+	# Unlocks Coal Mine, Iron Mine, Lead Mine, Sulfur Mine
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/shaft_mining.dds"
+	category = production
+	
+	modifier = {
+		country_resource_discovery_chance_mult = 0.25
+	}
+	
+	unlocking_technologies = {
+		enclosure
+		manufacturies
+	}
+	
+	ai_weight = {
+		value = 2 # Important tech in general
+	}
+}
+
+prospecting = {
+	# Unlocks possibility to discover Gold Fields
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/prospecting_tech.dds"
+	category = production
+	
+	modifier = {
+		country_resource_discovery_chance_mult = 1.0
+	}
+	
+	unlocking_technologies = {
+		shaft_mining
+	}
+	
+	ai_weight = {
+		value = 2 #Important tech due to resource discovery
+	}
+}
+
+nitroglycerin = {
+	# Unlocks Nitroglycerin PM in Coal, Iron, Lead, Sulfur Mines
+	# Unlocks Ammonia-Soda Process PM in Chemical Industries
+	# Countries get a +25% chance of discovering new resources
+	
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/nitroglycerin.dds"
+	category = production
+	
+	modifier = {
+		country_resource_discovery_chance_mult = 0.50
+	}
+	
+	unlocking_technologies = {	
+		intensive_agriculture
+		prospecting
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+baking_powder = {
+	# Unlocks Baking Powder PM in Food Industries
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/baking_powder.dds"
+	category = production
+	
+	unlocking_technologies = {
+		fractional_distillation
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+dynamite = {
+	# Unlocks Vacuum Evaporation PM in Chemical Plants
+	# Unlocks Explosive Shells PM in Munitions Plants
+	# Unlocks Dynamite PM in Coal, Iron, Lean, Sulfur Mines
+	# Countries get a +25% chance of discovering new resources
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/dynamite.dds"
+	category = production
+	
+	modifier = {
+		country_resource_discovery_chance_mult = 1.0
+	}
+	
+	unlocking_technologies = {	
+		nitroglycerin
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+pumpjacks = {
+	# Unlocks possibility to discover Oil (to build Oil Rigs)
+	# Unlocks Oil Rig building
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
+	category = production
+	
+	modifier = {
+		country_resource_discovery_chance_mult = 0.50
+	}
+	
+	unlocking_technologies = {	
+		steam_donkey
+		dynamite
+	}
+	
+	ai_weight = {
+		value = 1
+		
+		if = {
+			limit = { 
+				OR = {
+					 has_strategy = ai_strategy_industrial_expansion
+					 has_strategy = ai_strategy_resource_expansion
+				}
+			}
+			add = 2
+		}	
+	}
+}

@@ -371,17 +371,14 @@ STATE_TOLEDO = {
         bg_logging = 8
         #bg_coal_mining = 4
         bg_lead_mining = 28 #Almadén mercury mine
-
-
-
     }
 }
 STATE_GALICIA = {
     id = 94
     subsistence_building = "building_subsistence_farms"
     provinces = { x0EA604 x167F12 x33F984 x50E040 x583E92 xB85939 xD03554 xD0E040 }
-    city = "xB85939"
-    port = "xD0E040"
+    city = "xD0E040"
+    port = "xB85939"
     farm = "x50E040"
     mine = "x0EA604"
     wood = "x583E92"
@@ -405,7 +402,7 @@ STATE_ASTURIAS = {
     provinces = { x0F84B8 x3E77F9 x5060C0 x525202 xA1037C xBF2564 xF0A000 }
     traits = { "state_trait_cuencas_mineras" }
     city = "x5060C0"
-    port = "x0F84B8"
+    port = "xA1037C"
     farm = "x3E77F9"
     mine = "x525202"
     wood = "x525202"
@@ -621,9 +618,9 @@ STATE_MURCIA = {
     id = 3405
     subsistence_building = "building_subsistence_farms"
     provinces = { x134657 x626878 x6549AD x71158B xA03040 xB03776 xE0BED4 }
-    city = "xB03776"
-    port = "x71158B"
-    farm = "x626878"
+    city = "x626878"
+    port = "xB03776"
+    farm = "x134657"
     mine = "xE0BED4"
     wood = "x134657"
     arable_land = 35

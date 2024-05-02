@@ -17,6 +17,18 @@
 				}
 				trigger_event = { id = cr_indian_removal.15 }
 			}
+			if = {
+				limit = {
+					c:SMN = { is_subject_of = ROOT }
+					NOT = {
+						has_variable = seminole_war_var
+					}
+					NOT = {
+						has_variable = seminole_war_ended_var
+					}
+				}
+				trigger_event = { id = cr_indian_removal.29 }
+			}
 		}
 		random_events = {
 			7 = 0

@@ -9,6 +9,12 @@
 			months = 120
 		}
 	}
+	s:STATE_GREENLAND.region_state:DEN = {
+		add_modifier = {
+			name = cr_the_cold_waste
+			months = 840
+		}
+	}
 	s:STATE_NEWFOUNDLAND.region_state:FRA = {
 		add_modifier = {
 			name = cr_vestige_of_empire

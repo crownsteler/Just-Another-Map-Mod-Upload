@@ -35,14 +35,21 @@ cr_indian_removal.99 = { #cleanup event
 		remove_variable = cr_on_the_failure_of_indian_policy_failure
 		remove_variable = cr_indian_removed_count
 		remove_variable = cr_seminole_war_micanopy_can_surrender
-		
-		
+		remove_varialbe = seminole_war_ended_var
+		remove_varialbe = seminole_war_var
 		
 		c:TEX = {
 			remove_variable = cr_indian_removal_new_northern_neighbours
 		}
 		c:MEX = {
 			remove_variable = cr_indian_removal_new_northern_neighbours
+		}
+		
+		random_scope_character = {
+			limit = {
+				has_variable = i_am_emerson
+			}
+			set_ideology = ideology:ideology_abolitionist
 		}
 		
 	}
@@ -218,6 +225,7 @@ cr_indian_removal.1 = { #The Chickasaw Removal
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_not_paid_chickasaw_movement
+					months = 61
 				}
 			}
 		}
@@ -678,6 +686,7 @@ cr_indian_removal.6 = { #The Roanoke Massacre
 				}
 				add_modifier = {
 					name = cr_laws_india_removal_roanoke_no_colonialism_movement_support
+					months = 61
 				}
 			}
 		}
@@ -690,6 +699,7 @@ cr_indian_removal.6 = { #The Roanoke Massacre
 			}
 			add_enactment_modifier = {
 				name = cr_laws_india_removal_roanoke_law
+				months = 61
 			}
 		}
 		if = {
@@ -703,6 +713,7 @@ cr_indian_removal.6 = { #The Roanoke Massacre
 				}
 				add_modifier = {
 					name = cr_laws_india_removal_roanoke_preserve_colonialism_movement_support
+					months = 61
 				}
 			}
 		}
@@ -1009,6 +1020,7 @@ cr_indian_removal.11 = { #An Address to Martin van Buren
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_paid_high_level_support_movement
+					months = 61
 				}
 			}
 		}
@@ -1032,55 +1044,40 @@ cr_indian_removal.11 = { #An Address to Martin van Buren
 				has_law = law_type:law_censorship
 			}
 		}
+		highlighted_option = yes
 		custom_tooltip = {
 			text = cr_indian_removal.11.option_b_c_tt
 			scope:i_am_emerson = {
 				kill_character = yes
 			}
 		}
-		custom_tooltip =  cr_indian_removal.11.b_tt
 		ai_chance = {
 			base = 75
 		}
 	}
-	#option = {
-	#	name = cr_indian_removal.11.d
-	#	trigger = {
-	#		OR = {
-	#			ruler = {
-	#				has_ideology = ideology_jingoist_leader
-	#			}
-	#			any_interest_group = {
-	#				OR = {
-	#					has_ideology = ideology:ideology_isolationist ##### CHECK THIS - update to be more fitting
-	#					leader = {
-	#						OR = {
-	#							has_trait = bandit
-	#							has_ideology = ideology:ideology_jingoist
-	#							has_ideology = ideology:ideology_slaver
-	#						}				
-	#					}
-	#				}
-	#				is_in_government = yes
-	#			}
-	#		}
-	#	}
-	#	custom_tooltip = {
-	#		text = cr_indian_removal.11.option_b_c_tt
-	#		scope:i_am_emerson = {
-	#			kill_character = yes
-	#		}
-	#	}
-	#	add_radicals = {
-	#		value = small_radicals
-	#		culture = cu:yankee
-	#		interest_group = ig:ig_intelligentsia
-	#	}
-	#	custom_tooltip = cr_indian_removal.11.d_tt
-	#	ai_chance = {
-	#		base = 100
-	#	}
-	#}
+	option = {
+		name = cr_indian_removal.11.d
+		trigger = {
+			ruler = {
+				has_trait = bandit
+			}
+		}
+		highlighted_option = yes
+		custom_tooltip = {
+			text = cr_indian_removal.11.option_b_c_tt
+			scope:i_am_emerson = {
+				kill_character = yes
+			}
+		}
+		add_radicals = {
+			value = small_radicals
+			culture = cu:yankee
+			interest_group = ig:ig_intelligentsia
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
 }
 
 # John Ross' Protest Petition
@@ -1174,6 +1171,7 @@ cr_indian_removal.12 = {
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_rejected_ross_petition
+					months = 61
 				}
 			}
 		}
@@ -1217,6 +1215,7 @@ cr_indian_removal.12 = {
 			}
 			add_enactment_modifier = { # enactment success chance
 				name = john_ross_enactment
+				months = 61
 			}
 		}
 		if = { 
@@ -1441,6 +1440,7 @@ cr_indian_removal.20 = { #The Dade Masacre
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_seminole_stragglers_removed
+					months = 61
 				}
 			}
 		}
@@ -1493,6 +1493,7 @@ cr_indian_removal.20 = { #The Dade Masacre
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_seminole_stragglers_remain
+					months = 61
 				}
 			}
 		}
@@ -1651,8 +1652,13 @@ cr_indian_removal.21 = { #A Fateful Meeting
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_seminole_seized_micanopy
+					months = 61
 				}
 			}
+		}
+		set_variable = {
+			name = seminole_war_var
+			months = 48
 		}
 		ai_chance = {
 			base = 90
@@ -1713,6 +1719,10 @@ cr_indian_removal.21 = { #A Fateful Meeting
 			country = root
 			value = -25
 		}
+		set_variable = {
+			name = seminole_war_var
+			months = 72
+		}
 		ai_chance = {
 			base = 10
 		}
@@ -1761,6 +1771,8 @@ cr_indian_removal.29 = { #The Fate of the Seminole
 	}
 	
 	immediate = {
+		set_variable = seminole_war_ended_var
+		remove_variable = seminole_war_var
 		s:STATE_OKLAHOMA = {
 			set_owner_of_provinces = {
 				country = c:SMN
@@ -1874,6 +1886,7 @@ cr_indian_removal.29 = { #The Fate of the Seminole
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_seminole_stragglers_removed
+					months = 61
 				}
 			}
 		}
@@ -1926,6 +1939,7 @@ cr_indian_removal.29 = { #The Fate of the Seminole
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_seminole_stragglers_remain
+					months = 61
 				}
 			}
 		}
@@ -2080,6 +2094,7 @@ cr_indian_removal.30 = { #Squatters
 				}
 				add_modifier = {
 					name = cr_indian_removal_squatters_removed
+					months = 61
 				}
 			}
 		}
@@ -2092,6 +2107,7 @@ cr_indian_removal.30 = { #Squatters
 			}
 			add_enactment_modifier = {
 				name = cr_laws_squatters
+				months = 61
 			}
 		}
 		scope:cr_squatter_state = {
@@ -2136,6 +2152,7 @@ cr_indian_removal.30 = { #Squatters
 				}
 				add_modifier = {
 					name = cr_indian_removal_squatters
+					months = 61
 				}
 			}
 		}
@@ -2237,18 +2254,18 @@ cr_indian_removal.31 = { #Newspaper Clippings
 		NOT = {
 			has_variable = cr_indian_removal_startup_cooldown
 		}
-		#OR = {
-		#	any_political_movement = {
-		#		is_political_movement_type = movement_to_enact
-		#		desired_law = law_type:law_no_colonial_affairs
-		#		NOT = { has_modifier = cr_laws_indian_removal_newspaper_clippings_negative }
-		#	}
-		#	any_political_movement = {
-		#		is_political_movement_type = movement_to_enact
-		#		desired_law = law_type:law_multicultural
-		#		NOT = { has_modifier = cr_laws_indian_removal_newspaper_clippings_negative }
-		#	}
-		#}
+		OR = {
+			any_political_movement = {
+				is_political_movement_type = movement_to_enact
+				desired_law = law_type:law_no_colonial_affairs
+				NOT = { has_modifier = cr_laws_indian_removal_newspaper_clippings_negative }
+			}
+			any_political_movement = {
+				is_political_movement_type = movement_to_enact
+				desired_law = law_type:law_multicultural
+				NOT = { has_modifier = cr_laws_indian_removal_newspaper_clippings_negative }
+			}
+		}
 	}
 	
 	immediate = {
@@ -2379,6 +2396,7 @@ cr_indian_removal.31 = { #Newspaper Clippings
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_newspaper_clippings_positive
+					months = 61
 				}
 			}
 		}
@@ -2397,6 +2415,7 @@ cr_indian_removal.31 = { #Newspaper Clippings
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_newspaper_clippings_positive
+					months = 61
 				}
 			}
 		}
@@ -2435,6 +2454,7 @@ cr_indian_removal.31 = { #Newspaper Clippings
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_newspaper_clippings_negative
+					months = 61
 				}
 			}
 		}
@@ -2453,6 +2473,7 @@ cr_indian_removal.31 = { #Newspaper Clippings
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_newspaper_clippings_negative
+					months = 61
 				}
 			}
 		}
@@ -2651,6 +2672,7 @@ cr_indian_removal.33 = { #College Debates
 				}
 				add_modifier = {
 					name = cr_indian_removal_debates_against_removal
+					months = 61
 				}
 			}
 		}
@@ -2693,6 +2715,7 @@ cr_indian_removal.33 = { #College Debates
 				}
 				add_modifier = {
 					name = cr_indian_removal_debates_newspaper_agitation
+					months = 61
 				}
 			}
 		}
@@ -2740,6 +2763,7 @@ cr_indian_removal.33 = { #College Debates
 				}
 				add_modifier = {
 					name = cr_indian_removal_debates_for_removal
+					months = 61
 				}
 			}
 		}
@@ -2915,6 +2939,7 @@ cr_indian_removal.34 = { #Female Missionary Societies
 				}
 				add_modifier = {
 					name = cr_laws_female_missionary_societies
+					months = 61
 				}
 			}
 		}
@@ -3040,6 +3065,7 @@ cr_indian_removal.34 = { #Female Missionary Societies
 				}
 				add_modifier = {
 					name = cr_laws_female_missionary_societies
+					months = 61
 				}
 			}		
 		}
@@ -3058,6 +3084,7 @@ cr_indian_removal.34 = { #Female Missionary Societies
 				}
 				add_modifier = {
 					name = cr_laws_female_missionary_societies
+					months = 61
 				}
 			}		
 		}
@@ -3076,6 +3103,7 @@ cr_indian_removal.34 = { #Female Missionary Societies
 				}
 				add_modifier = {
 					name = cr_laws_female_missionary_societies
+					months = 61
 				}
 			}		
 		}
@@ -3182,6 +3210,7 @@ cr_indian_removal.35 = { #Land Patents! / prelude to Choctaw Scrip
 				}
 				add_modifier = {
 					name = cr_indian_removal_choctaw_land_patents_rejected
+					months = 61
 				}
 			}
 		}
@@ -3227,6 +3256,7 @@ cr_indian_removal.35 = { #Land Patents! / prelude to Choctaw Scrip
 				}
 				add_modifier = {
 					name = cr_indian_removal_choctaw_land_patents_granted
+					months = 61
 				}
 			}
 		}
@@ -3300,6 +3330,7 @@ cr_indian_removal.36 = { #The Missing Page
 				}
 				add_modifier = {
 					name = cr_indian_removal_compromised_bureaucracy_movement
+					months = 61
 				}
 			}
 		}
@@ -3395,6 +3426,7 @@ cr_indian_removal.37 = { #Choctaw Scrip
 				}
 				add_modifier = {
 					name = cr_indian_removal_favoured_choctaw
+					months = 61
 				}
 			}
 		}
@@ -3409,6 +3441,7 @@ cr_indian_removal.37 = { #Choctaw Scrip
 				}
 				add_modifier = {
 					name = cr_indian_removal_favoured_choctaw_opposed
+					months = 61
 				}
 			}
 		}
@@ -3481,6 +3514,7 @@ cr_indian_removal.37 = { #Choctaw Scrip
 				}
 				add_modifier = {
 					name = cr_indian_removal_favoured_settlers_opposed
+					months = 61
 				}
 			}
 		}
@@ -3502,6 +3536,7 @@ cr_indian_removal.37 = { #Choctaw Scrip
 				}
 				add_modifier = {
 					name = cr_indian_removal_favoured_settlers
+					months = 61
 				}
 			}
 		}
@@ -3666,6 +3701,7 @@ cr_indian_removal.40 = { #On The Failure of Indian Policy
 				}
 				add_modifier = {
 					name = cr_indian_removal_indian_policy_failed_preserve_support
+					months = 61
 				}
 			}
 		}
@@ -3684,6 +3720,7 @@ cr_indian_removal.40 = { #On The Failure of Indian Policy
 				}
 				add_modifier = {
 					name = cr_indian_removal_indian_policy_failed
+					months = 61
 				}
 			}
 		}
@@ -3803,6 +3840,7 @@ cr_indian_removal.41 = { #Indian Improvement Societies
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_improvement_societies
+					months = 61
 				}
 			}
 		}
@@ -4303,6 +4341,7 @@ cr_indian_removal.51 = { #Stragglers
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_stragglers_removed
+					months = 61
 				}
 			}
 		}
@@ -4417,6 +4456,7 @@ cr_indian_removal.51 = { #Stragglers
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_stragglers_remain
+					months = 61
 				}
 			}
 		}
@@ -4527,6 +4567,7 @@ cr_indian_removal.55 = { #No Step Further
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_indians_settled_arkansas_denied
+					months = 61
 				}
 			}
 		}
@@ -4578,6 +4619,7 @@ cr_indian_removal.55 = { #No Step Further
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_indians_settled_arkansas_approv
+					months = 61
 				}
 			}
 		}
@@ -4713,6 +4755,7 @@ cr_indian_removal.56 = { #Indians hit by Cholera!
 			}
 			add_enactment_modifier = {
 				name = cr_laws_indian_removal_cholera_on_the_indian_trail_law
+				months = 61
 			}
 		}
 		else_if = {
@@ -4731,6 +4774,7 @@ cr_indian_removal.56 = { #Indians hit by Cholera!
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_cholera_on_the_indian_trail
+					months = 61
 				}
 			}
 		}
@@ -4822,6 +4866,7 @@ cr_indian_removal.56 = { #Indians hit by Cholera!
 			}
 			add_enactment_modifier = {
 				name = cr_laws_indian_removal_cholera_on_the_indian_trail_law
+				months = 61
 			}
 		}
 		else_if = {
@@ -4833,6 +4878,7 @@ cr_indian_removal.56 = { #Indians hit by Cholera!
 			}
 			add_enactment_modifier = {
 				name = cr_laws_indian_removal_cholera_on_the_indian_trail_law
+				months = 61
 			}
 		}
 		else_if = {
@@ -4844,6 +4890,7 @@ cr_indian_removal.56 = { #Indians hit by Cholera!
 			}
 			add_enactment_modifier = {
 				name = cr_laws_indian_removal_cholera_on_the_indian_trail_law
+				months = 61
 			}
 		}
 		else_if = {
@@ -5051,6 +5098,7 @@ cr_indian_removal.57 = { #Steamboat Disaster
 				}
 				add_modifier = {
 					name = cr_indian_removal_steamboat_disaster
+					months = 61
 				}
 			}
 		}
@@ -5100,6 +5148,7 @@ cr_indian_removal.57 = { #Steamboat Disaster
 				}
 				add_modifier = {
 					name = cr_indian_removal_steamboat_disaster_angry
+					months = 61
 				}
 			}
 		}
@@ -5407,6 +5456,7 @@ cr_indian_removal.60 = { #Spoiled Rations
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_spoiled_rations
+					months = 61
 				}
 			}
 		}
@@ -5425,6 +5475,7 @@ cr_indian_removal.60 = { #Spoiled Rations
 				}
 				add_modifier = {
 					name = cr_laws_indian_removal_spoiled_rations
+					months = 61
 				}
 			}
 		}
@@ -5509,6 +5560,7 @@ cr_indian_removal.60 = { #Spoiled Rations
 			}
 			add_enactment_modifier = {
 				name = cr_laws_indian_removal_spoiled_rations_law
+				months = 61
 			}
 		}
 		else_if = {
@@ -5520,6 +5572,7 @@ cr_indian_removal.60 = { #Spoiled Rations
 			}
 			add_enactment_modifier = {
 				name = cr_laws_indian_removal_spoiled_rations_law
+				months = 61
 			}
 		}
 		else_if = {
@@ -5531,6 +5584,7 @@ cr_indian_removal.60 = { #Spoiled Rations
 			}
 			add_enactment_modifier = {
 				name = cr_laws_indian_removal_spoiled_rations_law
+				months = 61
 			}
 		}
 		#else_if = {

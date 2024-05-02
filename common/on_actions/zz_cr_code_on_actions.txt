@@ -7,13 +7,25 @@ on_monthly_pulse_country = {
 
 cr_on_monthly_pulse_country = {
 	random_events = {
-		40 = 0
+		48 = 0
 		1 = cr_europe_events.5
-		8 = cr_canadian_indian_treaties.50	
-		2 = cr_american_events.1
+		10 = cr_canadian_indian_treaties.50	
+		1 = cr_american_events.1
 	}
 }
 
+on_half_yearly_pulse_country = {
+	on_actions = {
+		cr_on_monthly_pulse_country
+	}
+}
+
+cr_on_half_yearly_pulse_country = {
+	random_events = {
+		5 = 0
+		1 = cr_canadian_indian_treaties.96
+	}
+}
 
 on_wargoal_enforced = {
 	on_actions = {

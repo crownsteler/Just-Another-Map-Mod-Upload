@@ -118,6 +118,12 @@
 				size = 23566
 			}
 		}
+		region_state:KHN = { #Maybe, maybe not
+			create_pop = {
+				culture = kachin
+				size = 7615
+			}		
+		}
 	}
 	s:STATE_YUNNAN = {
 		region_state:CHI = {

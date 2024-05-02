@@ -1,7 +1,7 @@
 ﻿# Spain
 
 ecchi_spa_infante_carlos_character_template = {
-    first_name = carlos
+    first_name = Carlos
     last_name = de_Borbon
 	historical = yes
 	ruler = yes

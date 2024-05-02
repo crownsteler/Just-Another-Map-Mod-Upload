@@ -36,7 +36,7 @@
  HUB_NAME_STATE_NEW_BRUNSWICK_farm:0 "Charlottetown"
  HUB_NAME_STATE_NEW_BRUNSWICK_wood:0 "Fredericton"
  
- #HUB_NAME_STATE_OHIO_city:0 "Cincinnati"
- #HUB_NAME_STATE_OHIO_mine:0 "Cleveland"
- #HUB_NAME_STATE_OHIO_farm:0 "Toledo"
- #HUB_NAME_STATE_OHIO_wood:0 "Columbus"
+ HUB_NAME_STATE_OHIO_city:0 "Cincinnati"
+ HUB_NAME_STATE_OHIO_mine:0 "Cleveland"
+ HUB_NAME_STATE_OHIO_farm:0 "Columbus"
+ HUB_NAME_STATE_OHIO_wood:0 "Toledo"

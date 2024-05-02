@@ -6,12 +6,7 @@ je_oregon = {
 	
 	scripted_button = west_america_expedition
 
-	#on_monthly_pulse = {
-	#	effect = {
-	#		#if fur trade has declined add strength to USA	
-	#	}
-	#
-	#}
+
 
 	is_shown_when_inactive = {
 		#exists = c:USA
@@ -55,6 +50,82 @@ je_oregon = {
 		#	is_ai = yes
 		#	has_interest_marker_in_region = region_pacific_coast
 		#}
+	}
+	
+	immediate = {
+		set_variable = {
+			name = ai_expedition_cooldown
+			months = 11
+		}
+	}
+	
+	on_monthly_pulse = {
+		effect = {
+			#if fur trade has declined add strength to USA	
+			if = {
+				limit = {
+					is_ai = yes
+					has_interest_marker_in_region = region_pacific_coast
+					is_diplomatic_play_committed_participant = no
+					NOT = { has_variable = ai_expedition_cooldown }	
+					NOT = {	has_strategy = ai_strategy_armed_isolationism }
+					weekly_net_fixed_income > money_amount_multiplier_medium
+					gold_reserves > 0
+				}
+				add_modifier = {
+					name = modifier_large_expedition_cost
+					multiplier = money_amount_multiplier_medium
+					months = 12
+				}
+				random_list = {
+					2 = {
+						
+					}
+					2 = {
+						trigger = { NOT = { has_global_variable = buenaventura_river_disproven } }
+						set_global_variable = buenaventura_river_disproven
+						set_variable = west_america_expedition_success_var
+						add_modifier = {
+							name = modifier_buenaventura_river_disproven
+							months = normal_modifier_time
+						}
+					}
+					1 = {
+						trigger = { NOT = { has_global_variable = oregon_trail_mapped } }
+						set_global_variable = oregon_trail_mapped
+						cr_mapping_the_oregon_trail = yes
+						set_variable = west_america_expedition_success_var
+						add_modifier = {
+							name = modifier_oregon_trail_mapped
+							months = normal_modifier_time
+						}
+					}
+					1 = {
+						trigger = { NOT = { has_global_variable = great_salt_lake_mapped } }
+						set_global_variable = great_salt_lake_mapped
+						set_global_variable = cr_road_to_california_is_open
+						cr_map_the_salt_lake = yes
+						add_modifier = {
+							name = modifier_great_salt_lake_mapped
+							months = normal_modifier_time
+						}
+						set_variable = west_america_expedition_success_var
+					}
+					1 = {
+						trigger = { has_global_variable = cr_road_to_california_is_open } 
+						remove_global_variable = cr_road_to_california_is_open
+						set_global_variable = cr_california_trail_mapped
+						cr_mapping_the_california_trail = yes
+						set_variable = west_america_expedition_success_var
+					}
+				}
+				set_variable = {
+					name = ai_expedition_cooldown
+					value = yes
+					days = 1095
+				}
+			}
+		}
 	}
 
 	complete = {
@@ -105,7 +176,10 @@ je_oregon = {
 			hidden = {
 				AND = {
 					game_date >= 1846.1.1
-					is_ai = yes
+					OR = {
+						has_global_variable = oregon_trail_mapped
+						has_global_variable = cr_california_trail_mapped
+					}
 				}
 			}
 		}

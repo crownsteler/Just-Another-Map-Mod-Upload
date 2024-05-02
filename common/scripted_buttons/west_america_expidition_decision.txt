@@ -2,11 +2,13 @@
 	name = "west_america_expedition"
 	desc = "west_america_expedition_desc"
 	visible = {
-		NAND = { 
-			has_global_variable = buenaventura_river_disproven
-			has_global_variable = oregon_trail_mapped
-			has_global_variable = great_salt_lake_mapped
-			has_global_variable = cr_california_trail_mapped
+		NOT = {
+			AND = { 
+				has_global_variable = buenaventura_river_disproven
+				has_global_variable = oregon_trail_mapped
+				has_global_variable = great_salt_lake_mapped
+				has_global_variable = cr_california_trail_mapped
+			}
 	    }	
 		has_technology_researched = colonization			
 	}
@@ -15,11 +17,11 @@
 		has_interest_marker_in_region = region_pacific_coast	
 		is_at_war = no
 		#has_technology_researched = quinine
-		NOT = {  has_variable = on_expedition }
-		OR = {
+		NOT = { has_variable = on_expedition }
+		#OR = {		#Moved AI logic to the on action
 			is_ai = no
-			NOT = { has_variable = ai_expedition_cooldown }
-		}	
+		#	NOT = { has_variable = ai_expedition_cooldown }
+		#}	
 		any_scope_character = {
 			OR = {
 				has_role = general
@@ -55,31 +57,31 @@
 
 	ai_chance = {
 		base = 0
-		modifier = {
-			trigger = { 
-				weekly_net_fixed_income > money_amount_multiplier_medium
-				gold_reserves > 0
-			}
-			add = 10
-		}
-		modifier = { #new
-			trigger = { 
-				has_interest_marker_in_region = region_pacific_coast
-			}
-			add = 10
-		}
-		modifier = {
-			trigger = {
-				has_strategy = ai_strategy_armed_isolationism
-			}
-			add = -1000
-		}		
-		modifier = {
-			OR = {
-				is_diplomatic_play_committed_participant = yes
-				is_at_war = yes
-			}
-			add = -1000
-		}		
+		#modifier = { #Moved the AI logic to the on action
+		#	trigger = { 
+		#		weekly_net_fixed_income > money_amount_multiplier_medium
+		#		gold_reserves > 0
+		#	}
+		#	add = 10
+		#}
+		#modifier = { #new
+		#	trigger = { 
+		#		has_interest_marker_in_region = region_pacific_coast
+		#	}
+		#	add = 10
+		#}
+		#modifier = {
+		#	trigger = {
+		#		has_strategy = ai_strategy_armed_isolationism
+		#	}
+		#	add = -1000
+		#}		
+		#modifier = {
+		#	OR = {
+		#		is_diplomatic_play_committed_participant = yes
+		#		is_at_war = yes
+		#	}
+		#	add = -1000
+		#}		
 	}
 }

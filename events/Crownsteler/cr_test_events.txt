@@ -278,3 +278,36 @@ cr_test_events.3 = { #New Northern Neighbours
 		}
 	}
 }
+
+
+
+cr_test_events.4 = { #New Northern Neighbours
+	type = country_event
+	placement = p:xD6A835
+
+	title = cr_test_events.4.t
+	desc = cr_test_events.4.d
+
+	flavor = cr_test_events.4.f
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/construction_colony"
+
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+
+	event_image = {
+		video = "africa_construction_colony"
+	}
+	
+	duration = 3
+
+	trigger = {
+	}
+	
+	hidden = yes
+
+	immediate = {
+		c:USA = { 
+			ai_expedition_simulator_start = yes 
+		}
+	}
+}
