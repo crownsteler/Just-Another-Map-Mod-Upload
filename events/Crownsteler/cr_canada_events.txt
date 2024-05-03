@@ -1961,6 +1961,308 @@ cr_canadian_indian_treaties.97 = { #cleanup event
 		#remove_global_variable = cr_robinson_treaty_var #keep the counter intact, who knows
 		remove_modifier = cr_eyeing_unceded_land
 		remove_variable = cr_close_numbered_treaties_je
+		every_scope_state = {
+			remove_variable = negotiating_province
+		}
+	}
+}
+
+cr_canadian_indian_treaties.24 = { #Choosing a Province
+	type = country_event
+	placement = root
+
+	title = cr_canadian_indian_treaties.24.t
+	desc = cr_canadian_indian_treaties.24.desc
+	flavor = cr_canadian_indian_treaties.24.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:treaty_commissioner
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+	immediate = {
+		#change_global_variable = {
+		#	name = cr_numbered_treaties_counter
+		#	add = 1
+		#}
+		random_character = {
+			limit = {
+				has_variable = cr_i_am_canadian_native_treaty_negotiator
+			}
+			save_scope_as = treaty_commissioner
+		}
+	}
+	
+	option = {
+		name = cr_canadian_indian_treaties.24.ontario
+		trigger = {
+			any_scope_state = {
+				state_region = s:STATE_ONTARIO
+				OR = {
+					has_modifier = cr_unceded_territory_100
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ONTARIO
+			}
+			set_variable = negotiating_province
+		}
+		ai_chance = {
+			base = 30
+		}
+	}
+	
+	option = {
+		name = cr_canadian_indian_treaties.24.kenora
+		trigger = {
+			any_scope_state = {
+				state_region = s:STATE_ONTARIO
+				NOT = {
+					has_modifier = cr_unceded_territory_100
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+			any_scope_state = {
+				state_region = s:STATE_KENORA
+				OR = {
+					has_modifier = cr_unceded_territory_100
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_KENORA
+			}
+			set_variable = negotiating_province
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	
+	option = {
+		name = cr_canadian_indian_treaties.24.quebec
+		trigger = {
+			any_scope_state = {
+				state_region = s:STATE_QUEBEC
+				OR = {
+					has_modifier = cr_unceded_territory_100
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_QUEBEC
+			}
+			set_variable = negotiating_province
+		}
+	}
+	
+	option = {
+		name = cr_canadian_indian_treaties.24.ungava
+		trigger = {
+			any_scope_state = {
+				state_region = s:STATE_QUEBEC
+				NOT = {
+					has_modifier = cr_unceded_territory_100
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+			any_scope_state = {
+				state_region = s:STATE_UNGAVA
+				OR = {
+					has_modifier = cr_unceded_territory_100
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_UNGAVA
+			}
+			set_variable = negotiating_province
+		}
+		ai_chance = {
+			base = 25
+		}
+	}
+	
+	option = {
+		name = cr_canadian_indian_treaties.24.manitoba
+		trigger = {
+			any_scope_state = {
+				state_region = s:STATE_MANITOBA
+				OR = {
+					has_modifier = cr_unceded_territory_100
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_MANITOBA
+			}
+			set_variable = negotiating_province
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+	
+	option = {
+		name = cr_canadian_indian_treaties.24.saskatchewan
+		trigger = {
+			any_scope_state = {
+				state_region = s:STATE_SASKATCHEWAN
+				OR = {
+					has_modifier = cr_unceded_territory_100
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_SASKATCHEWAN
+			}
+			set_variable = negotiating_province
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+	
+	option = {
+		name = cr_canadian_indian_treaties.24.alberta
+		trigger = {
+			any_scope_state = {
+				state_region = s:STATE_ALBERTA
+				OR = {
+					has_modifier = cr_unceded_territory_100
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ALBERTA
+			}
+			set_variable = negotiating_province
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+	
+	option = {
+		name = cr_canadian_indian_treaties.24.british_columbia
+		trigger = {
+			any_scope_state = {
+				state_region = s:STATE_BRITISH_COLUMBIA
+				OR = {
+					has_modifier = cr_unceded_territory_100
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_BRITISH_COLUMBIA
+			}
+			set_variable = negotiating_province
+		}
+		ai_chance = {
+			base = 25
+		}
+	}
+	
+	option = {
+		name = cr_canadian_indian_treaties.24.northwest_territory
+		trigger = {
+			any_scope_state = {
+				state_region = s:STATE_NORTHWEST_TERRITORIES
+				OR = {
+					has_modifier = cr_unceded_territory_100
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_NORTHWEST_TERRITORIES
+			}
+			set_variable = negotiating_province
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	
+	option = {
+		name = cr_canadian_indian_treaties.24.nunavut
+		trigger = {
+			any_scope_state = {
+				state_region = s:STATE_NUNAVUT
+				OR = {
+					has_modifier = cr_unceded_territory_100
+					has_modifier = cr_unceded_territory_95
+					has_modifier = cr_unceded_territory_75
+					has_modifier = cr_unceded_territory_50
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_NUNAVUT
+			}
+			set_variable = negotiating_province
+		}
+		ai_chance = {
+			base = 10
+		}
 	}
 }
 
@@ -1982,31 +2284,14 @@ cr_canadian_indian_treaties.20 = { #The Numbered Treaties
 
 	duration = 3
 	#cooldown = {
-	#	months = 7
+	#	months = 3
 	#}
 
 	trigger = {
+		#is_at_war = no
 		has_modifier = cr_pushing_numbered_treaties
-		any_scope_state = { 
-			OR = {
-				region = sr:region_canada
-				region = sr:region_ruperts_land
-			}
-			any_neighbouring_state = {
-				owner = {
-					is_country_type = decentralized
-					NOT = {
-						has_truce_with = ROOT
-					}
-				}
-			}
-			OR = {
-				has_modifier = cr_unceded_territory_100
-				has_modifier = cr_unceded_territory_95
-				has_modifier = cr_unceded_territory_75
-				has_modifier = cr_unceded_territory_50
-				has_modifier = cr_unceded_territory_30
-			}
+		any_scope_state = {
+			has_variable = negotiating_province
 		}
 	}
 
@@ -2017,22 +2302,23 @@ cr_canadian_indian_treaties.20 = { #The Numbered Treaties
 		}
 		random_scope_state = {
 			limit = {
-				OR = {
-					has_modifier = cr_unceded_territory_100
-					has_modifier = cr_unceded_territory_95
-					has_modifier = cr_unceded_territory_75
-					has_modifier = cr_unceded_territory_50
-					has_modifier = cr_unceded_territory_30
-				}
-				any_neighbouring_state = {
-					state_region = prev.state_region
-					owner = {
-						is_country_type = decentralized
-						NOT = {
-							has_truce_with = ROOT
-						}
-					}
-				}
+				has_variable = negotiating_province
+				#OR = {
+				#	has_modifier = cr_unceded_territory_100
+				#	has_modifier = cr_unceded_territory_95
+				#	has_modifier = cr_unceded_territory_75
+				#	has_modifier = cr_unceded_territory_50
+				#	has_modifier = cr_unceded_territory_30
+				#}
+				#any_neighbouring_state = {
+				#	state_region = prev.state_region
+				#	owner = {
+				#		is_country_type = decentralized
+				#		NOT = {
+				#			has_truce_with = ROOT
+				#		}
+				#	}
+				#}
 			}
 			save_scope_as = cr_numbered_treaties_owned_state
 		}
@@ -2083,6 +2369,14 @@ cr_canadian_indian_treaties.20 = { #The Numbered Treaties
 		#	country = scope:native_state
 		#	type = colonization_rights
 		#}
+		remove_modifier = cr_pushing_numbered_treaties
+		custom_tooltip = {
+			text = cr_canadian_indian_treaties.20.a_tt
+			set_variable = {
+				name = cr_canada_numbered_treaties_cooldown
+				months = 8
+			}
+		}
 		scope:cr_numbered_treaties_owned_state = {
 			if = {
 				limit = {
@@ -2160,16 +2454,29 @@ cr_canadian_indian_treaties.20 = { #The Numbered Treaties
 				
 				}
 			}
+			scope:native_ruler = {
+				kill_character = yes
+			}
+			scope:cr_numbered_treaties_owned_state = {
+				remove_variable = negotiating_province
+			}
 		}
 		cr_canadian_treaty_annuities_effect = yes
 	
 		ai_chance = {
-			base = 75
+			base = 85
 		}
 	}
 
 	option = {
 		name = cr_canadian_indian_treaties.20.b
+		trigger = {
+			scope:cr_numbered_treaties_owned_state = {
+				NOT = {
+					has_modifier = cr_unceded_territory_30
+				}
+			}
+		}
 		#create_truce = {
 		#	country = scope:native_state
 		#	months = normal_modifier_time
@@ -2179,20 +2486,12 @@ cr_canadian_indian_treaties.20 = { #The Numbered Treaties
 		#	type = colonization_rights
 		#	#months = normal_modifier_time
 		#}
-		change_infamy = 3
-		add_radicals = {
-			value = small_radicals
-			interest_group = ig:ig_intelligentsia
-		}
-		add_radicals = {
-			value = small_radicals
-			interest_group = ig:ig_devout
-		}
-		
-		scope:native_state = {
-			change_tension = {
-				country = root
-				value = 35
+		remove_modifier = cr_pushing_numbered_treaties
+		custom_tooltip = {
+			text = cr_canadian_indian_treaties.20.b_tt
+			set_variable = {
+				name = cr_canada_numbered_treaties_cooldown
+				months = 4
 			}
 		}
 		scope:cr_numbered_treaties_owned_state = {
@@ -2224,14 +2523,21 @@ cr_canadian_indian_treaties.20 = { #The Numbered Treaties
 				}
 				remove_modifier = cr_unceded_territory_50
 			}
-			else_if = {
-				limit = {
-					has_modifier = cr_unceded_territory_30
-				}
-				remove_modifier = cr_unceded_territory_30
-			}
+			#else_if = {
+			#	limit = {
+			#		has_modifier = cr_unceded_territory_30
+			#	}
+			#	remove_modifier = cr_unceded_territory_30
+			#}
 			else = {
 			
+			}
+		}
+		change_infamy = 3
+		scope:native_state = {
+			change_tension = {
+				country = root
+				value = 35
 			}
 		}
 		hidden_effect = {
@@ -2273,16 +2579,22 @@ cr_canadian_indian_treaties.20 = { #The Numbered Treaties
 				
 				}
 			}
+			scope:native_ruler = {
+				kill_character = yes
+			}
+			scope:cr_numbered_treaties_owned_state = {
+				remove_variable = negotiating_province
+			}
 		}
 		cr_canadian_treaty_annuities_effect = yes
 		ai_chance = {
-			base = 25
+			base = 15
 			modifier = {
-				subtract = 25
+				subtract = 15
 				infamy >= infamy_threshold:infamous
 			}
 			modifier = {
-				subtract = 25
+				subtract = 15
 				any_scope_state = {
 					turmoil >= 0.15
 				}

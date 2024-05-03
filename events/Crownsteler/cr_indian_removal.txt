@@ -1960,7 +1960,7 @@ cr_indian_removal.29 = { #The Fate of the Seminole
 
 cr_indian_removal.30 = { #Squatters
 	type = country_event
-	placement = scope:cr_intruded_country
+	placement = scope:cr_intruding_state
 
 	title = cr_indian_removal.30.t
 	desc = cr_indian_removal.30.desc

@@ -11,6 +11,8 @@
 
 
 
+
+
     capped_resources = {
         bg_logging = 10
     #bg_lead_mining = 22
@@ -41,6 +43,8 @@ STATE_KUBAN = {
 
 
 
+
+
     capped_resources = {
         #bg_coal_mining = 32 #No coal reserves here at all?
         #bg_copper_mining = 18 #Karachay-Cherkessia, 1.51% copper
@@ -64,11 +68,15 @@ STATE_ARMENIA = {
 
 
 
+
+
     wood = "x3161E0"
     arable_land = 20
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_cotton_plantations" }
     capped_resources = {
         bg_copper_mining = 27 #Kajaran & Alaverdi
+
+
 
 
 
@@ -235,6 +243,8 @@ STATE_URALSK = {
     arable_land = 30
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {} #Volcanic hosted massive sulphide (VHMS) copper deposit at 50 Let Oktyabrya/Koktau/Priorskoe/Priorskoye 130 km east of Aktobe
+
+
 
 
 
@@ -587,6 +597,8 @@ STATE_WESTERN_AFGHANISTAN = {
 
 
 
+
+
     capped_resources = {
     #bg_iron_mining = 20
     #bg_copper_mining = 20
@@ -613,8 +625,12 @@ STATE_EASTERN_AFGHANISTAN = {
 
 
 
+
+
     capped_resources = {
         bg_copper_mining = 45 #Mes Aynak
+
+
 
 
 
@@ -756,6 +772,8 @@ STATE_HIMALAYAS = {
     subsistence_building = "building_subsistence_rice_paddies"
     provinces = { xBCD18E x29576A x4DE9D5 xC6179B x920B51 xC1C87A x812FBE xAF5B29 x25994F x11C815 x6E233E xE18F72 xAF11F0 x4874D9 x4D5FC1 xC13072 xA2C234 x605021 x833D63 x73C2C6 x23C36A xCE4DAE xA5D1EB x1C3876 xA228F8 x218FFE x515E66 x213060 x1619ED xDA8130 xC1DA32 xE51929 xC6D4A8 x49337F xAD283F xCF1974 x584C9B x037AF5 x03A411 x98BACD x0003C6 x251424 x572FB9 xF202E0 xE60F80 xE31B4E xD52082 x733AB7 x3264B7 x6B646E x607020 xF15B70 xE77282 x45AF2E x59BBCE xFBA109 xE3A5A5 xE0C455 xF4C868 x8FF69F }
     impassable = { x8FF69F x59BBCE xF202E0 xE0C455 } #Himachal Pradesh, don't forget to update 
+
+
 
 
 

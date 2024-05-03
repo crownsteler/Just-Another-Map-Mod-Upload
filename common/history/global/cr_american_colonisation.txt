@@ -82,43 +82,43 @@
 	}
 	s:STATE_UNGAVA.region_state:HBC = {
 		add_modifier = {
-			name = cr_unceded_territory_50
+			name = cr_unceded_territory_100
 			months = 840
 		}
 	}
 	s:STATE_UNGAVA.region_state:NHW = {
 		add_modifier = {
-			name = cr_unceded_territory_50
+			name = cr_unceded_territory_100
 			months = 840
 		}
 	}
 	s:STATE_UNGAVA.region_state:NNV = {
 		add_modifier = {
-			name = cr_unceded_territory_50
+			name = cr_unceded_territory_100
 			months = 840
 		}
 	}
 	s:STATE_UNGAVA.region_state:INU = {
 		add_modifier = {
-			name = cr_unceded_territory_50
+			name = cr_unceded_territory_100
 			months = 840
 		}
 	}
 	s:STATE_KENORA.region_state:HBC = {
 		add_modifier = {
-			name = cr_unceded_territory_50
+			name = cr_unceded_territory_100
 			months = 840
 		}
 	}
 	s:STATE_KENORA.region_state:NHW = {
 		add_modifier = {
-			name = cr_unceded_territory_50
+			name = cr_unceded_territory_100
 			months = 840
 		}
 	}
 	s:STATE_KENORA.region_state:CTF = {
 		add_modifier = {
-			name = cr_unceded_territory_50
+			name = cr_unceded_territory_100
 			months = 840
 		}
 	}
@@ -214,31 +214,31 @@
 	}
 	s:STATE_NORTHWEST_TERRITORIES.region_state:HBC = {
 		add_modifier = {
-			name = cr_unceded_territory_50
+			name = cr_unceded_territory_100
 			months = 840
 		}
 	}
 	s:STATE_NORTHWEST_TERRITORIES.region_state:NNV = {
 		add_modifier = {
-			name = cr_unceded_territory_50
+			name = cr_unceded_territory_100
 			months = 840
 		}
 	}
 	s:STATE_NORTHWEST_TERRITORIES.region_state:ATB = {
 		add_modifier = {
-			name = cr_unceded_territory_50
+			name = cr_unceded_territory_100
 			months = 840
 		}
 	}
 	s:STATE_YUKON_TERRITORY.region_state:NNV = {
 		add_modifier = {
-			name = cr_unceded_territory_50
+			name = cr_unceded_territory_100
 			months = 840
 		}
 	}
 	s:STATE_YUKON_TERRITORY.region_state:ATB = {
 		add_modifier = {
-			name = cr_unceded_territory_50
+			name = cr_unceded_territory_100
 			months = 840
 		}
 	}

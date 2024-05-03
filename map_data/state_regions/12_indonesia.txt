@@ -13,9 +13,13 @@
 
 
 
+
+
     capped_resources = {
         #bg_coal_mining = 32
         bg_lead_mining = 38 #tin mining
+
+
 
 
 
@@ -530,6 +534,8 @@ bg_rice_farms bg_livestock_ranches bg_coffee_plantations bg_banana_plantations b
 
 
 
+
+
     }
     #resource = {
     #    #lead
@@ -742,7 +748,11 @@ STATE_WEST_MICRONESIA = {
 
 
 
+
+
     port = "xc0426b" #Agana
+
+
 
 
 
@@ -752,12 +762,18 @@ STATE_WEST_MICRONESIA = {
 
 
 
+
+
     mine = "xc9d00f" #Palau
 
 
 
 
+
+
     wood = "x341aba" #Ponape
+
+
 
 
 
@@ -781,7 +797,11 @@ STATE_EAST_MICRONESIA = {
 
 
 
+
+
     port = "x9ee29c" #Tarawa
+
+
 
 
 
@@ -791,12 +811,18 @@ STATE_EAST_MICRONESIA = {
 
 
 
+
+
     mine = "x1e6c78" #Enewetak
 
 
 
 
+
+
     wood = "x5fc9c8" #Majuro
+
+
 
 
 
@@ -987,7 +1013,11 @@ STATE_TONGA = {
 
 
 
+
+
     port = "xA7F8A1" #Pago Pago
+
+
 
 
 
@@ -1059,6 +1089,8 @@ STATE_TONGA = {
 
 
 
+
+
     mine = "xA7F8A1" #Salelologa
 
 
@@ -1095,7 +1127,11 @@ STATE_TONGA = {
 
 
 
+
+
     wood = "x8b868d" #Avarua
+
+
 
 
 

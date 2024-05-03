@@ -39,3 +39,9 @@ cr_numbered_treaties_switched_to_no_colonial_affairs = {
 	texture = "gfx/interface/icons/notification_icons/colonial.dds"
 	notification_type = toast
 }
+
+cr_numbered_treaties_war_makes_negotiations_impossible = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/colonial.dds"
+	notification_type = toast
+}

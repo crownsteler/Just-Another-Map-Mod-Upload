@@ -120,6 +120,8 @@ STATE_SOUTH_YEMEN = {
 
 
 
+
+
     capped_resources = {
         bg_fishing = 8
     }
@@ -217,6 +219,8 @@ STATE_TRANSJORDAN = {
 
 
 
+
+
     }
     resource = {
         type = "bg_sulfur_mining"
@@ -265,9 +269,13 @@ STATE_LEBANON = {
 
 
 
+
+
     capped_resources = {
         #bg_coal_mining = 44 #According to Wikipedia Muhammed Ali got some coal from Lebanon
         bg_logging = 9 #Cedars of Lebanon
+
+
 
 
 
@@ -471,6 +479,8 @@ STATE_LARISTAN = {
 
 
 
+
+
     city = "x6DDC3B"
     farm = "xED39D0"
     mine = "x124E6F"
@@ -661,6 +671,8 @@ STATE_TABRIZ = {
 
 
 
+
+
     }
 }
 
@@ -719,9 +731,13 @@ STATE_AYDIN = {
 
 
 
+
+
     capped_resources = {
         #bg_coal_mining = 48 #Lignite
         bg_lead_mining = 20 #chrome, antimony and mercury
+
+
 
 
 
@@ -742,6 +758,8 @@ STATE_KONYA = {
     wood = "x1D4A61"
     arable_land = 40
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" } #wine sufficiently covered by Aydin, silk removed because to many resources otherwise
+
+
 
 
 
@@ -789,9 +807,13 @@ STATE_DIYARBAKIR = {
 
 
 
+
+
     capped_resources = {
         #bg_coal_mining = 32 #Lignite
         bg_copper_mining = 42 #Diyarbakir means land of copper and copper mining dates back millennia
+
+
 
 
 
@@ -838,6 +860,8 @@ STATE_TRABZON = {
     resource = {
         type = "bg_copper_mining"
         undiscovered_amount = 21 #Potentially #state_trait_porphyry_copper?
+
+
 
 
 

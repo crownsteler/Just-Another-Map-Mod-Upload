@@ -271,8 +271,8 @@ je_cr_numbered_treaties = {
 	group = je_group_historical_content
 	
 	scripted_button = cr_canada_numbered_treaties_start
-	scripted_button = cr_canada_numbered_treaties_stop
-	scripted_button = cr_canada_numbered_treaties_abscond
+	#scripted_button = cr_canada_numbered_treaties_stop #unnecessary due to new setup
+	#scripted_button = cr_canada_numbered_treaties_abscond #need to work on a better punishment before implementing this option
 	
 	is_shown_when_inactive = {
 		OR = {
@@ -297,7 +297,7 @@ je_cr_numbered_treaties = {
 			region = sr:region_ruperts_land
 		}
 		has_technology_researched = nationalism
-		country_rank >= rank_value:insignificant_power
+		country_rank > rank_value:insignificant_power
     }
 	
 	immediate = {
@@ -321,10 +321,6 @@ je_cr_numbered_treaties = {
 				id = cr_canadian_indian_treaties.22
 			}
 		}
-		add_modifier = {
-			name = cr_eyeing_unceded_land
-			months = long_modifier_time
-		}
 		sr:region_ruperts_land = {
 			save_scope_as = ruperts_land
 		}
@@ -344,7 +340,7 @@ je_cr_numbered_treaties = {
 					}
 					any_scope_state = {
 						state_region = s:STATE_ONTARIO
-						NOT = {
+						NOR = {
 							has_modifier = cr_unceded_territory_100
 							has_modifier = cr_unceded_territory_95
 							has_modifier = cr_unceded_territory_75
@@ -354,7 +350,7 @@ je_cr_numbered_treaties = {
 					}
 					any_scope_state = {
 						state_region = s:STATE_QUEBEC
-						NOT = {
+						NOR = {
 							has_modifier = cr_unceded_territory_100
 							has_modifier = cr_unceded_territory_95
 							has_modifier = cr_unceded_territory_75
@@ -364,7 +360,7 @@ je_cr_numbered_treaties = {
 					}
 					any_scope_state = {
 						region = sr:region_ruperts_land
-						NOT = {
+						NOR = {
 							has_modifier = cr_unceded_territory_100
 							has_modifier = cr_unceded_territory_95
 							has_modifier = cr_unceded_territory_75
@@ -405,10 +401,24 @@ je_cr_numbered_treaties = {
 				remove_modifier = cr_pushing_numbered_treaties
 				post_notification = cr_numbered_treaties_switched_to_no_colonial_affairs
 			}
+			if = {
+				limit = {
+					has_modifier = cr_pushing_numbered_treaties
+					is_at_war = yes
+				}
+				post_notification = cr_numbered_treaties_war_makes_negotiations_impossible
+				random_scope_state = {
+					limit = {
+						has_variable = negotiating_province
+					}
+					remove_variable = negotiating_province
+				}
+				remove_modifier = cr_pushing_numbered_treaties
+			}
 		}
 		random_events = {
-			11 = 0
-			1 = cr_canadian_indian_treaties.20
+			8 = 0
+			2 = cr_canadian_indian_treaties.20
 		}
 	}
 
@@ -418,6 +428,7 @@ je_cr_numbered_treaties = {
 			any_scope_state = {
 				state_region = s:STATE_ONTARIO
 				NOT = {
+					has_modifier = cr_unceded_territory_100
 					has_modifier = cr_unceded_territory_95
 					has_modifier = cr_unceded_territory_75
 					has_modifier = cr_unceded_territory_50
@@ -430,6 +441,7 @@ je_cr_numbered_treaties = {
 			any_scope_state = {
 				state_region = s:STATE_QUEBEC
 				NOT = {
+					has_modifier = cr_unceded_territory_100
 					has_modifier = cr_unceded_territory_95
 					has_modifier = cr_unceded_territory_75
 					has_modifier = cr_unceded_territory_50
@@ -442,6 +454,7 @@ je_cr_numbered_treaties = {
 			any_scope_state = {
 				state_region = s:STATE_KENORA
 				NOT = {
+					has_modifier = cr_unceded_territory_100
 					has_modifier = cr_unceded_territory_95
 					has_modifier = cr_unceded_territory_75
 					has_modifier = cr_unceded_territory_50
@@ -454,6 +467,7 @@ je_cr_numbered_treaties = {
 		#	any_scope_state = {
 		#		state_region = s:STATE_NEW_BRUNSWICK
 		#		NOT = {
+		#			has_modifier = cr_unceded_territory_100
 		#			has_modifier = cr_unceded_territory_95
 		#			has_modifier = cr_unceded_territory_75
 		#			has_modifier = cr_unceded_territory_50
@@ -466,6 +480,7 @@ je_cr_numbered_treaties = {
 			any_scope_state = {
 				state_region = s:STATE_UNGAVA
 				NOT = {
+					has_modifier = cr_unceded_territory_100
 					has_modifier = cr_unceded_territory_95
 					has_modifier = cr_unceded_territory_75
 					has_modifier = cr_unceded_territory_50
@@ -478,6 +493,7 @@ je_cr_numbered_treaties = {
 			any_scope_state = {
 				state_region = s:STATE_NEWFOUNDLAND
 				NOT = {
+					has_modifier = cr_unceded_territory_100
 					has_modifier = cr_unceded_territory_95
 					has_modifier = cr_unceded_territory_75
 					has_modifier = cr_unceded_territory_50
@@ -490,6 +506,7 @@ je_cr_numbered_treaties = {
 			any_scope_state = {
 				state_region = s:STATE_ALBERTA
 				NOT = {
+					has_modifier = cr_unceded_territory_100
 					has_modifier = cr_unceded_territory_95
 					has_modifier = cr_unceded_territory_75
 					has_modifier = cr_unceded_territory_50
@@ -502,6 +519,7 @@ je_cr_numbered_treaties = {
 			any_scope_state = {
 				state_region = s:STATE_BRITISH_COLUMBIA
 				NOT = {
+					has_modifier = cr_unceded_territory_100
 					has_modifier = cr_unceded_territory_95
 					has_modifier = cr_unceded_territory_75
 					has_modifier = cr_unceded_territory_50
@@ -514,6 +532,7 @@ je_cr_numbered_treaties = {
 			any_scope_state = {
 				state_region = s:STATE_SASKATCHEWAN
 				NOT = {
+					has_modifier = cr_unceded_territory_100
 					has_modifier = cr_unceded_territory_95
 					has_modifier = cr_unceded_territory_75
 					has_modifier = cr_unceded_territory_50
@@ -526,6 +545,7 @@ je_cr_numbered_treaties = {
 			any_scope_state = {
 				state_region = s:STATE_MANITOBA
 				NOT = {
+					has_modifier = cr_unceded_territory_100
 					has_modifier = cr_unceded_territory_95
 					has_modifier = cr_unceded_territory_75
 					has_modifier = cr_unceded_territory_50
@@ -538,6 +558,7 @@ je_cr_numbered_treaties = {
 			any_scope_state = {
 				state_region = s:STATE_NORTHWEST_TERRITORIES
 				NOT = {
+					has_modifier = cr_unceded_territory_100
 					has_modifier = cr_unceded_territory_95
 					has_modifier = cr_unceded_territory_75
 					has_modifier = cr_unceded_territory_50
@@ -553,7 +574,11 @@ je_cr_numbered_treaties = {
 		}	
 		hidden_effect = {
 			trigger_event = { id = cr_canadian_indian_treaties.97 } #cleanup event
-		}		
+		}	
+		if = {
+			limit = { has_modifier = cr_pushing_numbered_treaties }
+			remove_modifier = cr_pushing_numbered_treaties
+		}	
 	}
 	
     fail = {
@@ -566,17 +591,26 @@ je_cr_numbered_treaties = {
 		hidden_effect = {
 			trigger_event = { id = cr_canadian_indian_treaties.97 } #cleanup event
 		}		
+		if = {
+			limit = { has_modifier = cr_pushing_numbered_treaties }
+			remove_modifier = cr_pushing_numbered_treaties
+		}
 	}
 	
 	invalid = {
-		has_variable = cr_close_numbered_treaties_je
+		hidden = {
+			has_variable = cr_close_numbered_treaties_je
+		}
 	}
 	
 	on_invalid = {
 		hidden_effect = {
 			trigger_event = { id = cr_canadian_indian_treaties.97 } #cleanup event
-		}	
-		remove_modifier = cr_pushing_numbered_treaties
+		}
+		if = {
+			limit = { has_modifier = cr_pushing_numbered_treaties }
+			remove_modifier = cr_pushing_numbered_treaties
+		}
 	}
 	
 	

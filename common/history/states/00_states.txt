@@ -388,7 +388,13 @@ STATES = {
 			owned_provinces = {
 				xBDE344 
 				xECB422 x7F6C55 x6C865B xD83E52 xCBB471 x39BBAC xA0E237 x637BED xF22299 xEE8DD8 xEB2D7C xC8AC77 x0419A4 xC305C5 x0F1D3D xA22631 x75F5D2 x2743B8 x06ADC6 x5E6688 
-				x404E40 x293CFE xF62E1E x45A1A9 
+				x404E40 xF62E1E 
+			}
+		}
+		create_state = {
+			country = c:HKI
+			owned_provinces = {
+				x45A1A9 x293CFE 
 			}
 		}
 		
@@ -3110,7 +3116,7 @@ STATES = {
 			}
 		}
 		create_state = {
-			country = c:SRN
+			country = c:YUM
 			owned_provinces = { 
 				 x2FD5DD x1B31B7 x911882 xDCBAE1 xD29C90 
 			}
@@ -3194,7 +3200,7 @@ STATES = {
 		create_state = {
 			country = c:PIU
 			owned_provinces = {
-				xAF199E x307D50 x9C28A4 x577D08 xF7DB50 xB72458 xD401D0 x56F5CB x519529 xDE208B x441749 x0AE895 x1FE069 xCBA1C9 x209FC3 
+				x307D50 x9C28A4 x577D08 xF7DB50 xB72458 xD401D0 x56F5CB x519529 xDE208B x441749 x0AE895 x1FE069 xCBA1C9 x209FC3 
 			}
 		}
 		create_state = {
@@ -3216,21 +3222,15 @@ STATES = {
 			}
 		}
 		create_state = {
-			country = c:SRN
+			country = c:YUM
 			owned_provinces = {
 				x0E8D26 xB21AB9 x6E6D40 x2B1204 xB881EE xC5390E x914E48 x6CCFDB xCA5813 xD507FA x864B45 xCD0B47 x4160C1 x2A2B04 x2D1B0B xEBF5A0 x4AB8EE xFD4509 x5625EF x995E0F x8A35D2 x032BE2 xCC07D4 
 			}
 		}
 		create_state = {
-			country = c:HOK
+			country = c:HKI
 			owned_provinces = {
-				x5A4650 x33EE3B xBFE3A4 x370658 x607BA8 xC9F623 xA65FC5 xA24DA3 xB8F452 x2A91D8 xE6440D xC78CD3 
-			}
-		}
-		create_state = {
-			country = c:SHP
-			owned_provinces = {
-				x0425B3 xC4A8E9 
+				x5A4650 x33EE3B xBFE3A4 x370658 x607BA8 xC9F623 xA65FC5 xA24DA3 xB8F452 x2A91D8 xE6440D xC78CD3 x0425B3 xC4A8E9 xAF199E 
 			}
 		}
 		create_state = {
@@ -3723,7 +3723,7 @@ STATES = {
 		add_claim = c:BRZ
 		add_claim = c:PRA
 	}
-	s:STATE_APAMA = {
+	s:STATE_AMAPA = {
 		create_state = {
 			country = c:AMZ
 			owned_provinces = { 
@@ -12413,7 +12413,7 @@ STATES = {
 			owned_provinces = { x205040 xBC4223 xC642C3 x1E47C8 x9F7207 x7546F8 x0418C4 xD34672 xDD6E50 x6320AE xF8AB7F x249043 x57EBCB x0D1D9D xB0A278 x21AA9D xBED6FE xA1B232 x657B7B x247143 x90DF58 x11D494 x567116 x5B4ABD xC42EA6 }
 		}
 		create_state = {
-			country = c:SRN
+			country = c:YUM
 			owned_provinces = {
 				xD5E26E  x3FF655 xD4D12E 
 			}

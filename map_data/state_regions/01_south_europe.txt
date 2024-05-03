@@ -38,6 +38,8 @@ STATE_PIEDMONT = {
 
 
 
+
+
         bg_logging = 12
         bg_fishing = 6
     }
@@ -197,6 +199,8 @@ STATE_ABRUZZO = {
 
 
 
+
+
     capped_resources = {
         bg_logging = 12
         bg_fishing = 7
@@ -215,6 +219,8 @@ STATE_SAVOY = {
     wood = "xD000E0"
     arable_land = 20
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" } #about 300 hectares of vineyards, too insignificant to include
+
+
 
 
 
@@ -261,9 +267,13 @@ STATE_TUSCANY = {
 
 
 
+
+
     capped_resources = {
         bg_iron_mining = 68
         bg_sulfur_mining = 25 #Pyrite
+
+
 
 
 
@@ -371,6 +381,8 @@ STATE_TOLEDO = {
         bg_logging = 8
         #bg_coal_mining = 4
         bg_lead_mining = 28 #Almadén mercury mine
+
+
     }
 }
 STATE_GALICIA = {
@@ -453,6 +465,8 @@ STATE_LEON = {
     capped_resources = {
         #bg_coal_mining = 30
         bg_iron_mining = 34 #Ponferrada, Astoria, Valle del Sabero
+
+
 
 
 
@@ -631,6 +645,8 @@ STATE_MURCIA = {
 
 
 
+
+
     #bg_minor_metals_mining = 5 #Chromium
     }
     naval_exit_id = 3032
@@ -667,6 +683,8 @@ STATE_DOURO = {
 
 
 
+
+
     city = "xD0A000"
     port = "xD0A000"
     farm = "xA64B2E"
@@ -678,6 +696,8 @@ STATE_DOURO = {
         bg_logging = 5
         bg_fishing = 5
         bg_iron_mining = 8 #Torre de Moncorvo
+
+
 
 
 
@@ -736,6 +756,8 @@ STATE_ALENTEJO = {
 
 
 
+
+
         bg_fishing = 4
     }
     resource = {
@@ -775,6 +797,8 @@ STATE_CANARY_ISLANDS = {
     wood = "xC2C164"
     arable_land = 7
     arable_resources = { "bg_banana_plantations" "bg_sugar_plantations" "bg_dye_plantations" "bg_vineyard_plantations" } #dyes plantations = roccella tinctoria and cochineal
+
+
 
 
 
@@ -837,6 +861,8 @@ STATE_EASTERN_THRACE = {
 
 
 
+
+
         bg_logging = 4
         bg_fishing = 10
         bg_monuments = 1
@@ -867,6 +893,8 @@ STATE_DOBRUDJA = {
 
 
 
+
+
     }
 
     naval_exit_id = 3036
@@ -888,6 +916,8 @@ STATE_ALBANIA = {
 
 
 
+
+
     capped_resources = {
         #bg_iron_mining = 10 #Iron/nickel deposits
         #bg_copper_mining = 28
@@ -897,6 +927,8 @@ STATE_ALBANIA = {
     resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 35 #Patos-Marinëz, largest onshore oil field in Europe apparently
+
+
 
 
 
@@ -924,6 +956,8 @@ STATE_BOSNIA = {
 
 
 
+
+
         #bg_lead_mining = 39
         bg_logging = 14
     }
@@ -947,6 +981,8 @@ STATE_NORTHERN_THRACE = {
 
         #bg_minor_metals_mining = 10 #Rhodope mountains, tungsten-molybdenum
         bg_lead_mining = 12 #Rhodope mountains, exploited during Crimean war for munitions
+
+
 
 
 
@@ -978,6 +1014,8 @@ STATE_BULGARIA = {
 
 
 
+
+
     #bg_minor_metals_mining = 15 #Manganese
     }
     resource = {
@@ -1003,6 +1041,8 @@ STATE_SLOVENIA = {
         bg_logging = 11
         #bg_minor_metals_mining = 20 #Manganese, mecury (Idrija)
         bg_lead_mining = 15 #Mežica, Lead/Zinc
+
+
 
 
 
@@ -1107,6 +1147,8 @@ STATE_MONTENEGRO = {
 
 
 
+
+
     capped_resources = {
         bg_lead_mining = 24
         bg_logging = 4
@@ -1152,6 +1194,8 @@ STATE_SOUTHERN_SERBIA = {
 
 
 
+
+
         bg_logging = 18
     #bg_minor_metals_mining = 20 #Nickel, Magnesium, Molybdenum 
     }
@@ -1193,6 +1237,8 @@ STATE_WEST_AEGEAN_ISLANDS = {
 
 
 
+
+
     }
     naval_exit_id = 3034
 }
@@ -1207,6 +1253,8 @@ STATE_EAST_AEGEAN_ISLANDS = {
     wood = "xC56452"
     arable_land = 5
     arable_resources = { "bg_livestock_ranches" "bg_dye_plantations" "bg_vineyard_plantations" } #Dye_plantations = mastic
+
+
 
 
 
@@ -1270,6 +1318,8 @@ STATE_SKOPIA = {
 
 
 
+
+
     capped_resources = {
         #bg_iron_mining = 36
         bg_logging = 8
@@ -1295,11 +1345,15 @@ STATE_MACEDONIA = {
 
 
 
+
+
     capped_resources = {
         bg_logging = 9
         bg_fishing = 3
         #bg_coal_mining = 35 #Lignite, Western Macedonia Field
         bg_lead_mining = 10 #Lead/Zinc
+
+
 
 
 
@@ -1318,6 +1372,8 @@ STATE_WESTERN_THRACE = {
     wood = "xBE51B7"
     arable_land = 25
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" } #removed cotton due to the number of resources and cotton potential in the region.
+
+
 
 
 

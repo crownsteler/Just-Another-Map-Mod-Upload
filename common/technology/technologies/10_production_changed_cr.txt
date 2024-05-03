@@ -27,7 +27,7 @@ prospecting = {
 	category = production
 	
 	modifier = {
-		country_resource_discovery_chance_mult = 1.0
+		country_resource_discovery_chance_mult = 0.75
 	}
 	
 	unlocking_technologies = {
@@ -49,7 +49,7 @@ nitroglycerin = {
 	category = production
 	
 	modifier = {
-		country_resource_discovery_chance_mult = 0.50
+		country_resource_discovery_chance_mult = 0.75
 	}
 	
 	unlocking_technologies = {	

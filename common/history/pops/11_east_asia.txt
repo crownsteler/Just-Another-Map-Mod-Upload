@@ -1126,7 +1126,7 @@
 	s:STATE_CHIANG_MAI = { #STATE_LANNA
 		region_state:CMI = {
 			create_pop = {
-				culture = lao
+				culture = thai
 				size = 346096
 			}
 			create_pop = {
@@ -1134,7 +1134,7 @@
 				size = 10504
 			}
 			create_pop = {
-				culture = thai
+				culture = lao
 				size = 54400
 			}
 			create_pop = {

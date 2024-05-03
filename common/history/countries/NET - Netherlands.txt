@@ -42,7 +42,7 @@
 
 		set_institution_investment_level = {
 			institution = institution_schools
-			level = 2
+			level = 1 #There were public schools, just not great.
 		}
 
 		set_institution_investment_level = {
@@ -70,12 +70,12 @@
 		#	set_interest_group_name = ig_catholics
 		#}	
 
-		#add_company = company_type:company_nederlandse_handelsmaatschappij
+		add_company = company_type:company_nederlandse_handelsmaatschappij
 		company:company_nederlandse_handelsmaatschappij = {
 			set_company_establishment_date = 1824.3.29
 		}
 
-		#add_company = company_type:company_maatschappij_van_weldadigheid
+		add_company = company_type:company_maatschappij_van_weldadigheid
 		company:company_maatschappij_van_weldadigheid = {
 			set_company_establishment_date = 1818.4.1
 		}

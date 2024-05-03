@@ -167,6 +167,8 @@ STATE_HINGGAN = {
 
 
 
+
+
     city = "x777A4F"
     farm = "x132B15"
     mine = "x2AD313"
@@ -206,6 +208,8 @@ STATE_BEIJING = {
     wood = "x166F01"
     arable_land = 340
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" } #too far north for tea really
+
+
 
 
 
@@ -318,6 +322,8 @@ STATE_SOUTHERN_MANCHURIA = {
     wood = "xBAD550"
     arable_land = 200
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" } #Cotton = flax
+
+
 
 
 
@@ -476,6 +482,8 @@ STATE_CHONGQING = {
     capped_resources = {
         #bg_coal_mining = 57
         bg_logging = 4 #already mostly deforested
+
+
 
 
 
@@ -1078,6 +1086,8 @@ STATE_CHIANG_MAI = {
 
 
 
+
+
     capped_resources = {
         #bg_coal_mining = 32 #Mae Mo Mine discovered 1917, lignite
         #bg_lead_mining = 26 #Zinc, also Wolfram
@@ -1210,6 +1220,8 @@ STATE_SHAN_STATES = {
 
 
 
+
+
         #bg_iron_mining = 24 #Mount Pinpet, discovered in the 1950s
         bg_logging = 14
     }
@@ -1232,12 +1244,16 @@ STATE_BURMA = {
 
 
 
+
+
     city = "x620442"
     farm = "xCD31D0"
     mine = "xDA0253"
     wood = "xB7E202"
     arable_land = 85
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_opium_plantations" } #Also spices, perhaps in stead of Opium?
+
+
 
 
 
@@ -1424,6 +1440,8 @@ STATE_KANTO = {
 
 
 
+
+
     capped_resources = {
         #bg_iron_mining = 10
         #bg_coal_mining = 15
@@ -1449,8 +1467,12 @@ STATE_CHUBU = {
 
 
 
+
+
     capped_resources = {
         bg_lead_mining = 28 #lead/zinc
+
+
 
 
 
@@ -1620,6 +1642,8 @@ STATE_BUSAN = {
 
 
 
+
+
     capped_resources = {
         #bg_coal_mining = 10 #Lignite
         bg_copper_mining = 18
@@ -1643,6 +1667,8 @@ STATE_YANGHO = {
     wood = "x34B782"
     arable_land = 110
     arable_resources = { "bg_rice_farms" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" } #Tea has been produced here for centuries, but first plantations date to the 20th century according to wikipedia
+
+
 
 
 
@@ -1704,6 +1730,8 @@ STATE_PYONGYANG = {
     wood = "x47D537"
     arable_land = 100
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tobacco_plantations" } #spices / gingseng
+
+
 
 
 

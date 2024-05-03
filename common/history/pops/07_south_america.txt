@@ -1390,7 +1390,7 @@ POPS = {
 			}
 		}
 	}
-	s:STATE_APAMA = {
+	s:STATE_AMAPA = {
 		region_state:AMZ = {
 			create_pop = {
 				culture = brazilian

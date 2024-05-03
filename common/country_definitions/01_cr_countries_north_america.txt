@@ -93,6 +93,17 @@ GVT = {
 	capital = STATE_MONTANA
 }
 
+HKI = {
+	color = { 55 54 113 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	capital = STATE_CALIFORNIA
+	cultures = { hokan }
+}
+
 INU = {
 	color = { 160 221 206 }
 	
@@ -203,6 +214,18 @@ WKS = {
 	cultures = { paiute }
 }
 
+YUM = {
+	color = { 133 94 56 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	capital = STATE_CALIFORNIA
+	cultures = { hokan }
+}
+
+
 YOK = {
 	color = { 213 97 124 }
 	
@@ -215,17 +238,6 @@ YOK = {
 }
 
 ####adapted from Meriadors work/for Hail Columbia
-
-HOK = {
-	color = { 55 54 113 }
-	
-	country_type = decentralized
-	
-	tier = principality
-	
-	capital = STATE_CALIFORNIA
-	cultures = { hokan }
-}
 
 SHP = {
 	color = { 133 182 231 }
@@ -248,18 +260,6 @@ SPI = {
 	capital = STATE_NEVADA
 	cultures = { paiute }
 }
-
-SRN = {
-	color = { 133 94 56 }
-	
-	country_type = decentralized
-	
-	tier = principality
-	
-	capital = STATE_CALIFORNIA
-	cultures = { hokan }
-}
-
 #####################
 #					#
 #		Canada		#

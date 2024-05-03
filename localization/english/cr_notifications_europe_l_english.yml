@@ -70,5 +70,9 @@
  
  notification_cr_numbered_treaties_switched_to_no_colonial_affairs_name: "Change in Colonisation Policy"
  notification_cr_numbered_treaties_switched_to_no_colonial_affairs_desc: "With the recent change to [GetLawType('law_no_colonial_affairs').GetName] we have stopped negotiating Land Cession Treaties with the Indians of [SCOPE.sStrategicRegion('canada_region').GetName] and [SCOPE.sStrategicRegion('ruperts_land').GetName]."
- notification_cr_numbered_treaties_switched_to_no_colonial_affairs_tooltip: "#header $notification_cr_numbered_treaties_switched_to_no_colonial_affairs_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_cr_numbered_treaties_switched_to_no_colonial_affairs_desc$"
+ notification_cr_numbered_treaties_switched_to_no_colonial_affairs_tooltip: "#header $notification_cr_numbered_treaties_switched_to_no_colonial_affairs_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_numbered_treaties_switched_to_no_colonial_affairs_desc$"
+ 
+ notification_cr_numbered_treaties_war_makes_negotiations_impossible_name: "Commissioner Returns Home"
+ notification_cr_numbered_treaties_war_makes_negotiations_impossible_desc: "The outbreak of war has caused the negotiations with the Indians for a land cession treaty to be halted."
+ notification_cr_numbered_treaties_war_makes_negotiations_impossible_tooltip: "#header $notification_cr_numbered_treaties_war_makes_negotiations_impossible_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_numbered_treaties_war_makes_negotiations_impossible_desc$"
  

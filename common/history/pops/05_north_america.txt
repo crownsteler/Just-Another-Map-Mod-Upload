@@ -198,6 +198,12 @@
 				size = 8000
 			}
 		}
+		region_state:HKI = {
+			create_pop = {
+				culture = hokan
+				size = 1200
+			}
+		}
 		region_state:NWP = {
 			create_pop = {
 				culture = nez_perce
@@ -1890,7 +1896,7 @@
 				size = 9000
 			}
 		}
-		region_state:SRN = {
+		region_state:YUM = {
 			create_pop = {
 				culture = hokan
 				size = 1300
@@ -1966,19 +1972,13 @@
 				size = 89950
 			}
 		}
-		region_state:SHP = {
-			create_pop = {
-				culture = nez_perce
-				size = 1200
-			}
-		}
-		region_state:HOK = {
+		region_state:HKI = {
 			create_pop = {
 				culture = hokan
 				size = 6300
 			}
 		}
-		region_state:SRN = {
+		region_state:YUM = {
 			create_pop = {
 				culture = hokan
 				size = 7300
@@ -2308,7 +2308,7 @@
 				size = 1300
 			}
 		}
-		region_state:SRN = {
+		region_state:YUM = {
 			create_pop = {
 				culture = hokan
 				size = 1300

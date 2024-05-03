@@ -83,6 +83,8 @@
  cr_canada_numbered_treaties_start:0 "Start Treaty Negotiations"
  cr_canada_numbered_treaties_start_desc:0 "We will assign a #variable commissioner#! to start negotiating a treaty with an Indian nations. Each treaty negotiated will increase our #variable Treaty Annuities#! by @money!#r 150#! "
  cr_canada_numbered_treaties_start_desc_tt:0 "A commissioner is assigned as treaty negotiator."
+ cr_canada_numbered_treaties_start_event:0 "An event will trigger allowing you to choose which state to target"
+ cr_canada_numbered_treaties_start_possible_tt:0 "We are not currently negotiating a treaty and sufficient time has passed since signing the last one."
  cr_canada_numbered_treaties_stop:0 "Halt Treaty Negotiations"
  cr_canada_numbered_treaties_stop_desc:0 "We will halt further treaty negotiations for the time being."
  cr_canada_numbered_treaties_stop_desc_tt:0 "Our commissioner is removed from his function."

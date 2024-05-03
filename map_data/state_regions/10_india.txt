@@ -35,6 +35,8 @@ STATE_NORTH_BENGAL = {
 
 
 
+
+
     capped_resources = {
         #bg_iron_mining = 30 #apparently iron ore was only discovered in 2019
         bg_logging = 8
@@ -53,6 +55,8 @@ STATE_ASSAM = {
     wood = "xA77996"
     arable_land = 135
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_opium_plantations" "bg_tea_plantations" } #Spices,  medicinal and aromatic plants
+
+
 
 
 
@@ -164,6 +168,8 @@ STATE_KASHMIR = {
 
 
 
+
+
     capped_resources = {
         #bg_coal_mining = 12 #Some coal, not particularly relevant I think
         bg_logging = 14
@@ -217,6 +223,8 @@ STATE_SOUTH_BENGAL = {
     wood = "x3C68C9"
     arable_land = 400
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_dye_plantations" "bg_cotton_plantations" } #Cotton = jute
+
+
 
 
 
@@ -277,8 +285,12 @@ STATE_RAJPUTANA = {
 
 
 
+
+
         #bg_sulfur_mining = 52 #largest source of phosphate rock in India?
         bg_copper_mining = 24 #Kethri, in operation
+
+
 
 
 
@@ -346,6 +358,8 @@ STATE_ORISSA = {
 
 
 
+
+
     capped_resources = {
         #bg_iron_mining = 39 #Gorumahisani, started 1910
         #bg_lead_mining = 45
@@ -405,6 +419,8 @@ STATE_MYSORE = {
 
 
 
+
+
     capped_resources = {
         bg_gold_mining = 4
         #bg_iron_mining = 35
@@ -430,6 +446,8 @@ STATE_TRAVANCORE = {
     wood = "xA0A050"
     arable_land = 80
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_tea_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #spices/pepper
+
+
 
 
 
@@ -491,6 +509,8 @@ STATE_BOMBAY = {
     wood = "x40CE40"
     arable_land = 350
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_sugar_plantations" } #spices
+
+
 
 
 
