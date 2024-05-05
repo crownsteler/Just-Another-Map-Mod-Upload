@@ -1588,6 +1588,12 @@
 			level = 1
 			direction = import
 			target = c:FRA.market
+		}	
+		create_trade_route = {
+			goods = grain
+			level = 5
+			direction = import
+			target = c:FRA.market
 		}			
 	}	
 	

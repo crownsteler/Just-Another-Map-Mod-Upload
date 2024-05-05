@@ -52,7 +52,7 @@
  
  #States
  STATE_KHIVA:0 "Khwarazm"
- STATE_WEST_SWITZERLAND:0 "Romany"
+ STATE_WEST_SWITZERLAND:0 "Romandy"
  STATE_EAST_SWITZERLAND:0 "Deutschschweiz"
  STATE_TIMBUKTU:0 "Niger Bend"
  STATE_SUMATRA:0 "South Sumatra"

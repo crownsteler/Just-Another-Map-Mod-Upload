@@ -27,9 +27,13 @@ cr_russian_alaska_events.1 = { #Two Years Before the Mast
 				p:xD6A835.owner = THIS
 			}
 		}
+		NOT = {
+			has_variable = cr_california_fur_trade_has_declined
+		}
 	}
 
 	immediate = {
+		set_variable = cr_california_fur_trade_has_declined
 		ROOT = {
 			save_scope_as = selling_country
 		}
@@ -89,9 +93,9 @@ cr_russian_alaska_events.1 = { #Two Years Before the Mast
 				limit = {
 					AND = {
 						is_ai = yes
-						ROOT = {
-							is_ai = yes
-						}
+						#ROOT = {
+						#	is_ai = yes
+						#}
 					}
 				}
 				scope:our_california = {

@@ -23,6 +23,10 @@
 			institution = institution_colonial_affairs
 			value >= 1
 		}
+		custom_tooltip = {
+			text = je_cr_russian_america_policy_change_cooldown
+			NOT = { has_modifier = cr_colonising_russia_america_cooldown }
+		}
 	}
 
 	effect = {
@@ -37,7 +41,7 @@
 				}
 				add_modifier = {
 					name = cr_colonising_alaska_modifier
-					#months = short_modifier_time
+					months = short_modifier_time
 				}
 			}
 			if = {
@@ -50,7 +54,7 @@
 		}
 		add_modifier = {
 			name = cr_colonising_russia_america_cooldown
-			months = short_modifier_time
+			months = 6
 		}
 	}
 }
@@ -72,8 +76,9 @@ je_cr_russian_america_colonise_alaska_stop_button = {
 	}
 	
 	possible = {
-		NOT = { 
-			has_modifier = cr_colonising_russia_america_cooldown 
+		custom_tooltip = {
+			text = je_cr_russian_america_policy_change_cooldown
+			NOT = { has_modifier = cr_colonising_russia_america_cooldown }
 		}
 	}
 
@@ -81,7 +86,7 @@ je_cr_russian_america_colonise_alaska_stop_button = {
 		remove_modifier = cr_colonising_alaska_modifier_rus
 		add_modifier = {
 			name = cr_colonising_russia_america_cooldown
-			months = short_modifier_time
+			months = 6
 		}
 		c:ASK = {
 			random_scope_state = {
@@ -127,9 +132,19 @@ je_cr_russian_america_colonise_california_button = {
 				state_region = s:STATE_CALIFORNIA
 			}
 		}
-		institution_investment_level = {
-			institution = institution_colonial_affairs
-			value >= 2
+		OR = {
+			institution_investment_level = {
+				institution = institution_colonial_affairs
+				value >= 2
+			}
+			custom_tooltip = {
+				text = je_cr_russian_america_colonise_california_button_fur_decline_tt
+				has_variable = cr_california_fur_trade_has_declined
+			}
+		}
+		custom_tooltip = {
+			text = je_cr_russian_america_policy_change_cooldown
+			NOT = { has_modifier = cr_colonising_russia_america_cooldown }
 		}
 	}
 
@@ -156,9 +171,12 @@ je_cr_russian_america_colonise_california_button = {
 			}
 			post_notification = cr_california_colonisation_encouraged
 		}
+		s:STATE_CALIFORNIA = {
+			add_claim = c:ASK
+		}
 		add_modifier = {
 			name = cr_colonising_russia_america_cooldown
-			months = short_modifier_time
+			months = 6
 		}
 	}
 }
@@ -185,13 +203,16 @@ je_cr_russian_america_colonise_california_stop_button = {
 	}
 	
 	possible = {
-		not = { has_modifier = cr_colonising_russia_america_cooldown }
+		custom_tooltip = {
+			text = je_cr_russian_america_policy_change_cooldown
+			NOT = { has_modifier = cr_colonising_russia_america_cooldown }
+		}
 	}
 
 	effect = {
 		add_modifier = {
 			name = cr_colonising_russia_america_cooldown
-			months = short_modifier_time
+			months = 6
 		}
 		remove_modifier = cr_colonising_california_modifier_rus
 		c:ASK = {
@@ -202,6 +223,9 @@ je_cr_russian_america_colonise_california_stop_button = {
 				remove_modifier = cr_colonising_california_modifier
 			}
 			post_notification = cr_california_colonisation_discouraged
+		}
+		s:STATE_CALIFORNIA = {
+			remove_claim = c:ASK
 		}
 	}
 }
@@ -233,7 +257,10 @@ je_cr_russian_america_annex_it = {
 			institution = institution_colonial_affairs
 			value >= 4
 		}
-		NOT = { has_modifier = cr_colonising_russia_america_cooldown }
+		custom_tooltip = {
+			text = je_cr_russian_america_policy_change_cooldown
+			NOT = { has_modifier = cr_colonising_russia_america_cooldown }
+		}
 	}
 
 	effect = {

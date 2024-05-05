@@ -2791,9 +2791,9 @@
 			}
 			create_building={
 				building="building_rye_farm"
-				level=1
+				level=4
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_homesteading" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_homesteading" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -2825,7 +2825,7 @@
 			}			
 			create_building={
 				building="building_rye_farm"
-				level=2
+				level=4
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_homesteading" }
 			}

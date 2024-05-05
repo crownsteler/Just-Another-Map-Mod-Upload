@@ -106,6 +106,7 @@ cr_valley_of_plenty_50 = {
 cr_valley_of_plenty_25 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	state_colony_growth_speed_mult = 0.25
+	building_group_bg_agriculture_throughput_add = 0.25
 }
 
 cr_golden_gate_25 = {
@@ -252,7 +253,7 @@ cr_colonising_russia_america_cooldown = {
 cr_colonising_alaska_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	state_migration_pull_add = 20
-	state_migration_pull_mult = 0.25
+	state_migration_pull_mult = 0.20
 	state_colony_growth_speed_mult = 0.35
 }
 
@@ -264,7 +265,7 @@ cr_colonising_california_modifier_rus = {
 cr_colonising_california_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	state_migration_pull_add = 20
-	state_migration_pull_mult = 0.25
+	state_migration_pull_mult = 0.20
 	state_colony_growth_speed_mult = 0.35
 }
 

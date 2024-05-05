@@ -155,6 +155,34 @@ je_cr_fort_ross = {
 				name = cr_russian_california_counter
 				add = 1
 			}
+			random_list = {
+				1 = {
+				
+				}
+				1 = {
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						random_scope_state = {
+							limit = {
+								state_region = s:STATE_CALIFORNIA
+							}
+							if = {
+								limit = {
+									has_modifier = cr_colonising_california_modifier
+								}
+								random_scope_building = {
+									limit = {
+										is_building_type = building_wheat_farm
+									}
+									set_subsidized = yes
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 		random_events = {
 		}
@@ -170,11 +198,17 @@ je_cr_fort_ross = {
 			}
 			custom_tooltip = {
 				text = je_cr_fort_ross_complete_tt_a
-				p:x1116AA.owner = THIS
+				OR = { 
+					p:x1116AA.owner = THIS
+					p:xAB1AA2.owner = c:THIS
+				}
 			}
 			custom_tooltip = {
 				text = je_cr_fort_ross_complete_tt_b
-				p:x1116AA.owner = c:RUS
+				OR = {
+					p:x1116AA.owner = c:RUS
+					p:xAB1AA2.owner = c:RUS
+				}
 			}
 		}
 	}
@@ -199,6 +233,8 @@ je_cr_fort_ross = {
 				OR = {
 					p:x1116AA.owner = THIS
 					p:x1116AA.owner = c:RUS
+					p:xab1aa2.owner = this
+					p:xab1aa2.owner = c:RUS
 				}
 			}
 			trigger_event = { id = cr_russian_alaska_events.9 } # The Golden Gate

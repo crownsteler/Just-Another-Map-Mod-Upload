@@ -1,9 +1,9 @@
 {
-  "name" : "Just Another Map Mod",
+  "name" : "Anno 1836",
   "id" : "",
-  "version" : "0.1.0",
+  "version" : "0.5.0",
   "supported_game_version" : "1.6.*",
-  "short_description" : "A complete overhaul of the game map. Someday",
+  "short_description" : "A complete overhaul of the game map.",
   "tags" : [],
   "relationships" : [],
   "game_custom_data" : {
