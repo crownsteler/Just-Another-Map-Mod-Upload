@@ -35,8 +35,29 @@ cr_indian_removal.99 = { #cleanup event
 		remove_variable = cr_on_the_failure_of_indian_policy_failure
 		remove_variable = cr_indian_removed_count
 		remove_variable = cr_seminole_war_micanopy_can_surrender
-		remove_varialbe = seminole_war_ended_var
-		remove_varialbe = seminole_war_var
+		remove_variable = seminole_war_ended_var
+		remove_variable = seminole_war_var
+		
+		c:CSW = {
+			remove_variable = voluntary_removal
+			set_immune_to_revolutions = no
+		}
+		c:MSC = {
+			remove_variable = voluntary_removal
+			set_immune_to_revolutions = no
+		}
+		c:CHE = {
+			remove_variable = voluntary_removal
+			set_immune_to_revolutions = no
+		}
+		c:SMN = {
+			remove_variable = voluntary_removal
+			set_immune_to_revolutions = no
+		}
+		c:CTW = {
+			remove_variable = voluntary_removal
+			set_immune_to_revolutions = no
+		}
 		
 		c:TEX = {
 			remove_variable = cr_indian_removal_new_northern_neighbours
@@ -49,7 +70,7 @@ cr_indian_removal.99 = { #cleanup event
 			limit = {
 				has_variable = i_am_emerson
 			}
-			set_ideology = ideology:ideology_abolitionist
+        	set_ideology = ideology:ideology_abolitionist
 		}
 		
 	}
@@ -309,6 +330,7 @@ cr_indian_removal.3 = { #The Chickasaw Removal
 	}
 	
 	immediate = {
+		remove_variable = cr_treaty_of_doaksville_debt_to_be_paid
 		c:CSW = {
 			save_scope_as = chickasaw_nation
 		}
@@ -342,7 +364,6 @@ cr_indian_removal.3 = { #The Chickasaw Removal
 	
 	option = {
 		name = cr_indian_removal.3.a
-		remove_variable = cr_treaty_of_doaksville_debt_to_be_paid
 		add_modifier = {
 			name = cr_treaty_of_doaksville
 			months = 73
@@ -372,7 +393,6 @@ cr_indian_removal.3 = { #The Chickasaw Removal
 	option = {
 		name = cr_indian_removal.3.b
 		default_option = yes
-		remove_variable = cr_treaty_of_doaksville_debt_to_be_paid
 		add_radicals = {
 			value = small_radicals
 			culture = cu:yankee
@@ -840,18 +860,21 @@ cr_indian_removal.10 = { #Treaty of New Echota
 
 	duration = 3
 
+
 	trigger = {
 		exists = c:CHE
-		NOT = {
+		NOR = {
 			has_variable = treaty_of_new_echota_passed
-		}
-		NOT = {
 			has_variable = treaty_of_new_echota_rejected
+			has_variable = cr_waiting_for_emerson
 		}
-		game_date > 1836.3.1
 	}
 	
 	immediate = {
+		set_variable = { #To delay triggering and make the description make more sense.
+			name = cr_waiting_for_emerson
+			months = 13
+		}
 	}
 	
 	option = {
@@ -861,10 +884,6 @@ cr_indian_removal.10 = { #Treaty of New Echota
 			text = cr_indian_removal.10.a_tt
 			set_variable = treaty_of_new_echota_passed
 			remove_variable = cr_treaty_of_new_echota_negotiations_ongoing
-			set_variable = { #To delay triggering and make the description make more sense.
-				name = cr_waiting_for_emerson
-				months = 12
-			}
 			add_modifier = {
 				name = cr_awaiting_cherokee_removal
 				months = 25
@@ -947,12 +966,9 @@ cr_indian_removal.11 = { #An Address to Martin van Buren
 	trigger = {
 		has_variable = treaty_of_new_echota_passed
 		NOT = { has_variable = cr_waiting_for_emerson }
-		NOT = {
-			has_journal_entry = je_cherokee_removal
-		}
-		NOT = {
-			has_variable = cr_emerson_has_arrived
-		}
+		NOT = { has_journal_entry = je_cherokee_removal	}
+		NOT = {	has_variable = cr_emerson_has_arrived }
+		exists = c:CHE
 		#possible_political_movements = {
 		#	law_no_colonial_affairs
 		#}
@@ -1107,6 +1123,7 @@ cr_indian_removal.12 = {
 		NOT = { has_variable = john_ross_petition }
 		NOT = { has_journal_entry = je_cherokee_removal }
 		NOT = { has_variable = cr_cherokee_removal_treaty_john_ross_must_wait }
+		exists = c:CHE
 	}
 
 	immediate = {
@@ -1578,6 +1595,10 @@ cr_indian_removal.21 = { #A Fateful Meeting
 				}
 			}
 		}
+		set_variable = {
+			name = seminole_war_var
+			months = 4
+		}
 	}
 	
 	option = {
@@ -1591,7 +1612,7 @@ cr_indian_removal.21 = { #A Fateful Meeting
 			}
 		}
 		change_relations = {
-			country = root
+			country = c:SMN
 			value = -50
 		}
 		#custom_tooltip = cr_indian_removal.21.a_tt_2
@@ -1656,6 +1677,7 @@ cr_indian_removal.21 = { #A Fateful Meeting
 				}
 			}
 		}
+		remove_variable = seminole_war_var
 		set_variable = {
 			name = seminole_war_var
 			months = 48
@@ -1716,9 +1738,10 @@ cr_indian_removal.21 = { #A Fateful Meeting
 			}
 		}
 		change_relations = {
-			country = root
+			country = c:SMN
 			value = -25
-		}
+		} 
+		remove_variable = seminole_war_var
 		set_variable = {
 			name = seminole_war_var
 			months = 72
@@ -2254,6 +2277,14 @@ cr_indian_removal.31 = { #Newspaper Clippings
 		NOT = {
 			has_variable = cr_indian_removal_startup_cooldown
 		}
+		NOT = {
+			AND = {
+				has_variable = cr_cherokee_removal_complete
+				has_variable = cr_chickasaw_removal_complete
+				has_variable = cr_choctaw_removal_complete
+				has_variable = cr_creek_removal_complete
+			}
+		}
 		OR = {
 			any_political_movement = {
 				is_political_movement_type = movement_to_enact
@@ -2562,6 +2593,20 @@ cr_indian_removal.33 = { #College Debates
 			}
 		}
 		OR = {
+			is_enacting_law = law_type:law_no_colonial_affairs
+			is_enacting_law = law_type:law_multicultural
+			any_political_movement = {
+				is_political_movement_type = movement_to_enact
+				desired_law = law_type:law_no_colonial_affairs
+				NOT = { has_modifier = cr_laws_indian_removal_newspaper_clippings_negative }
+			}
+			any_political_movement = {
+				is_political_movement_type = movement_to_enact
+				desired_law = law_type:law_multicultural
+				NOT = { has_modifier = cr_laws_indian_removal_newspaper_clippings_negative }
+			}
+		}
+		OR = {
 			AND = {
 				game_date >= 1836.5.1
 				game_date <= 1837.8.15
@@ -2622,21 +2667,6 @@ cr_indian_removal.33 = { #College Debates
 				game_date >= 1856.5.1
 				game_date <= 1857.8.15
 			}
-			OR = {
-				is_enacting_law = law_type:law_no_colonial_affairs
-				is_enacting_law = law_type:law_multicultural
-				any_political_movement = {
-					is_political_movement_type = movement_to_enact
-					desired_law = law_type:law_no_colonial_affairs
-					NOT = { has_modifier = cr_laws_indian_removal_newspaper_clippings_negative }
-				}
-				any_political_movement = {
-					is_political_movement_type = movement_to_enact
-					desired_law = law_type:law_multicultural
-					NOT = { has_modifier = cr_laws_indian_removal_newspaper_clippings_negative }
-				}
-			}
-		
 		}
 		any_scope_state ={
 			has_building = building_university
@@ -2706,12 +2736,23 @@ cr_indian_removal.33 = { #College Debates
 			limit = {
 				any_political_movement = {
 					is_political_movement_type = movement_to_enact
+					OR = {
+						desired_law = law_type:law_multicultural
+						desired_law = law_type:law_no_colonial_affairs
+					}
 					NOT = { has_modifier = cr_indian_removal_debates_newspaper_agitation }
 				}
 			}
 			random_political_movement = {
 				limit = {
 					is_political_movement_type = movement_to_enact
+					OR = {
+						desired_law = law_type:law_multicultural
+						desired_law = law_type:law_no_colonial_affairs
+					}
+					NOT = {
+						has_modifier = cr_indian_removal_debates_newspaper_agitation
+					}
 				}
 				add_modifier = {
 					name = cr_indian_removal_debates_newspaper_agitation
@@ -3155,6 +3196,7 @@ cr_indian_removal.35 = { #Land Patents! / prelude to Choctaw Scrip
 	#}
 
 	trigger = {
+		exists = c:CTW
 		NOT = {
 			has_variable = cr_indian_removal_startup_cooldown
 		}
@@ -3290,6 +3332,7 @@ cr_indian_removal.36 = { #The Missing Page
 	}
 
 	trigger = {
+		exists = c:CTW
 		has_modifier = cr_indian_removal_sorting_out_choctaw_land_claims
 	}
 	
@@ -3390,6 +3433,7 @@ cr_indian_removal.37 = { #Choctaw Scrip
 	}
 
 	trigger = {
+		exists = c:CTW
 		has_modifier = cr_indian_removal_sorting_out_choctaw_land_claims
 	}
 	
@@ -3884,7 +3928,24 @@ cr_indian_removal.49 = { #The Move West
 	type = country_event
 	placement = scope:indian_removal_state
 
-	title = cr_indian_removal.49.t
+	title = {
+		first_valid = {
+			triggered_desc = { #Voluntary Removal
+				desc = cr_indian_removal.49.t_2
+				trigger = {
+					scope:target_of_removal = {
+						has_variable = voluntary_removal
+					}
+				}
+			}
+			triggered_desc = { #fallback
+				desc = cr_indian_removal.49.t
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -3892,6 +3953,14 @@ cr_indian_removal.49 = { #The Move West
 				trigger = {
 					scope:target_of_removal = c:MSC
 					has_truce_with = c:MSC
+				}
+			}
+			triggered_desc = { #Voluntary Removal
+				desc = cr_indian_removal.49.desc_2
+				trigger = {
+					scope:target_of_removal = {
+						has_variable = voluntary_removal
+					}
 				}
 			}
 			triggered_desc = { #fallback
@@ -5737,6 +5806,9 @@ cr_indian_removal.65 = { #The New Northern Neighbours
 		ai_chance = {
 			base = 5
 		}
+		ai_chance = {
+			base = 15
+		}
 	}
 	
 	option = {
@@ -5756,6 +5828,9 @@ cr_indian_removal.65 = { #The New Northern Neighbours
 			add_loyalists_in_state = {
 				value = medium_radicals
 			}
+		}
+		ai_chance = {
+			base = 15
 		}
 		
 	}

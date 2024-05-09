@@ -193,7 +193,7 @@ je_cr_fort_ross = {
 			scope:california_scope = {
 				any_scope_building = {
 					is_building_type = building_wheat_farm
-					occupancy >= 0.85
+					occupancy >= 0.33
 				}
 			}
 			custom_tooltip = {
@@ -219,7 +219,7 @@ je_cr_fort_ross = {
 				scope:california_scope = {
 					any_scope_building = {
 						is_building_type = building_wheat_farm
-						occupancy >= 0.85
+						occupancy >= 0.33
 					}
 				}
 			}

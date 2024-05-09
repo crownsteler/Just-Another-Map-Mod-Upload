@@ -20,22 +20,41 @@
 			if = {
 				limit = {
 					c:SMN = { is_subject_of = ROOT }
-					NOT = {
-						has_variable = seminole_war_var
-					}
-					NOT = {
-						has_variable = seminole_war_ended_var
-					}
+					NOT = { has_variable = seminole_war_var }
+					NOT = {	has_variable = seminole_war_ended_var }
 				}
 				trigger_event = { id = cr_indian_removal.29 }
 			}
+			if = {
+				limit = {
+					NOT = { exists = c:CSW }
+				}
+				set_variable = cr_chickasaw_removal_complete
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:CHE }
+				}
+				set_variable = cr_cherokee_removal_complete
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:MSC }
+				}
+				set_variable = cr_creek_removal_complete
+			}
+			if = {
+				limit = {
+					NOT = { exists = c:SMN }
+				}
+				set_variable = cr_seminole_removal_complete
+			}
 		}
 		random_events = {
-			7 = 0
+			15 = 0
 			15 = cr_indian_removal.1 #Chickasaw Removal / treaty of doaksville
 			22 = cr_indian_removal.5 #intruder controversy
 			22 = cr_indian_removal.6 #The Roanoke Massacre
-			30 = cr_indian_removal.10 #Treaty of New Echota
 			15 = cr_indian_removal.11 #An Adress to Martin van Buren
 			15 = cr_indian_removal.12 #John Ross' Protest Petition
 			15 = cr_indian_removal.30 #Squatters
@@ -124,6 +143,7 @@
 		cu:dixie = {
 			save_scope_as = dixie_culture
 		}
+		trigger_event = { id = cr_indian_removal.10 days = { 90 240 } }
 	}
 
 	complete = {
@@ -192,11 +212,12 @@
 	}
 	
 	invalid = {
-		NAND = {
-			exists = c:CHE
-			exists = c:USA
-			c:CHE = { is_subject_of = c:USA }
-		}
+		#NAND = {
+		#	c:CHE = { is_subject_of = c:USA }
+		#	c:CTW = { is_subject_of = c:USA }
+		#	c:CSW = { is_subject_of = c:USA }
+		#	c:MSC = { is_subject_of = c:USA }
+		#}
 	}
 	
 	on_invalid = {
@@ -216,18 +237,80 @@ je_chickasaw_removal = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
 	group = je_group_historical_content
-	
+		
 	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					scope:target_of_removal = {
+						has_variable = voluntary_removal
+					}
+				}
+				random_list = {
+					10 = 0
+					80 = { 
+						trigger_event = { id = cr_indian_removal.49 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.50 }
+					}
+					3 = { 
+						trigger_event = { id = cr_indian_removal.51 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.55 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.56 }
+					}
+					3 = { 
+						trigger_event = { id = cr_indian_removal.57 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.60 }
+					}
+				}
+			}
+			else = {
+				random_list = {
+					10 = 0
+					60 = { 
+						trigger_event = { id = cr_indian_removal.49 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.50 }
+					}
+					10 = { 
+						trigger_event = { id = cr_indian_removal.51 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.55 }
+					}
+					15 = { 
+						trigger_event = { id = cr_indian_removal.56 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.57 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.58 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.60 }
+					}
+				}
+			}
+		}
 		random_events = {
-			10 = 0
-			40 = cr_indian_removal.49
-			5 = cr_indian_removal.50
-			10 = cr_indian_removal.51
-			5 = cr_indian_removal.55
-			15 = cr_indian_removal.56
-			5 = cr_indian_removal.57
-			1 = cr_indian_removal.58
-			5 = cr_indian_removal.60
+			#10 = 0
+			#60 = cr_indian_removal.49
+			#5 = cr_indian_removal.50
+			#10 = cr_indian_removal.51
+			#5 = cr_indian_removal.55
+			#15 = cr_indian_removal.56
+			#5 = cr_indian_removal.57
+			#1 = cr_indian_removal.58
+			#5 = cr_indian_removal.60
 		}
 	}
 	
@@ -283,6 +366,43 @@ je_chickasaw_removal = {
 		}
 		cu:dixie = {
 			save_scope_as = dixie_culture
+		}
+		### Fallback for manual trigger ###
+		if = {
+			NOT = {
+				any_scope_state = {
+					state_region = s:STATE_OKLAHOMA
+				}
+			}
+			s:STATE_OKLAHOMA = {
+				set_owner_of_provinces = {
+					country = c:CSW
+					provinces = {
+						x32D681 xBFD5C4 x4BE9C6
+					}
+				}
+			}	
+			c:CSW = { set_capital = STATE_OKLAHOMA }
+			s:STATE_OKLAHOMA.region_state:CSW = {
+				every_scope_pop = {
+					limit = {
+						OR = {
+							culture = cu:comanche							
+							culture = cu:caddoan						
+							culture = cu:afro_american						
+						}
+					}
+					move_pop = s:STATE_OKLAHOMA.region_state:COM 
+				}
+			}
+			s:STATE_OKLAHOMA.region_state:CSW = {
+				every_scope_pop = {
+					limit = {	
+						culture = cu:caddoan	
+					}
+					move_pop = s:STATE_OKLAHOMA.region_state:OSA
+				}
+			}
 		}
 		
 		### Trigger new northern neighbours for Texas ###
@@ -379,6 +499,9 @@ je_chickasaw_removal = {
 			remove_modifier = cr_removal_the_benefit_of_free_enterprise
 		}
 		remove_modifier = cr_chickasaw_removal_cost
+		c:CSW = {
+			set_immune_to_revolutions = no
+		}
 	}
 	
 	fail = {
@@ -391,20 +514,33 @@ je_chickasaw_removal = {
 			limit = {has_modifier = cr_removal_the_benefit_of_free_enterprise }
 			remove_modifier = cr_removal_the_benefit_of_free_enterprise
 		}
+		c:CSW = {
+			set_immune_to_revolutions = no
+		}
 	}
 	
 	invalid = {
-		#NAND = {
-		#	exists = c:CSW
-		#	exists = c:USA
-		#	c:CSW = { is_subject_of = c:CSW }
-		#}
+		OR = {
+			NAND = {
+				exists = c:CSW
+				exists = c:USA
+				c:CSW = { is_subject_of = c:CSW }
+			}
+			c:CSW = {
+				NOT = {
+					any_scope_state = { state_region = s:STATE_OKLAHOMA }
+				}
+			}
+		}
 	}
 	
 	on_invalid = {
 		hidden_effect = {
 			remove_modifier = cr_chickasaw_removal_cost
 			remove_modifier = cr_removal_the_benefit_of_free_enterprise
+			c:CSW = {
+				set_immune_to_revolutions = no
+			}
 		}
 	}
 	
@@ -420,22 +556,117 @@ je_creek_removal = {
 
 	group = je_group_historical_content
 	
+	
 	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					scope:target_of_removal = {
+						has_variable = voluntary_removal
+					}
+				}
+				random_list = {
+					10 = 0
+					80 = { 
+						trigger_event = { id = cr_indian_removal.49 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.50 }
+					}
+					3 = { 
+						trigger_event = { id = cr_indian_removal.51 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.55 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.56 }
+					}
+					3 = { 
+						trigger_event = { id = cr_indian_removal.57 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.60 }
+					}
+				}
+			}
+			else = {
+				random_list = {
+					10 = 0
+					60 = { 
+						trigger_event = { id = cr_indian_removal.49 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.50 }
+					}
+					10 = { 
+						trigger_event = { id = cr_indian_removal.51 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.55 }
+					}
+					15 = { 
+						trigger_event = { id = cr_indian_removal.56 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.57 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.58 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.60 }
+					}
+				}
+			}
+		}
 		random_events = {
-			10 = 0
-			40 = cr_indian_removal.49
-			5 = cr_indian_removal.50
-			10 = cr_indian_removal.51
-			5 = cr_indian_removal.55
-			15 = cr_indian_removal.56
-			5 = cr_indian_removal.57
-			1 = cr_indian_removal.58
-			5 = cr_indian_removal.60
+			#10 = 0
+			#60 = cr_indian_removal.49
+			#5 = cr_indian_removal.50
+			#10 = cr_indian_removal.51
+			#5 = cr_indian_removal.55
+			#15 = cr_indian_removal.56
+			#5 = cr_indian_removal.57
+			#1 = cr_indian_removal.58
+			#5 = cr_indian_removal.60
 		}
 	}
 	
 	immediate = {
 		save_scope_as = cr_removing_country
+		##Fallback Trigger
+		if = {
+			limit = {
+				c:MSC = {
+					NOT = {
+						any_scope_state = {
+							state_region = s:STATE_OKLAHOMA
+						}
+					}
+				}
+			}
+			s:STATE_OKLAHOMA = {
+				set_owner_of_provinces = {
+					country = c:MSC
+					provinces = {
+						x286941 xD6ADF2 xE1CC08
+					}
+				}
+			}
+			s:STATE_OKLAHOMA.region_state:MSC = {
+				every_scope_pop = {
+					limit = {
+						OR = {
+							culture = cu:comanche							
+							culture = cu:caddoan						
+							culture = cu:afro_american						
+						}
+					}
+					move_pop = s:STATE_OKLAHOMA.region_state:COM 
+				}
+			}
+		}
 		c:MSC = {
 			save_scope_as = target_of_removal
 			random_scope_state = {
@@ -488,6 +719,7 @@ je_creek_removal = {
 			save_scope_as = dixie_culture
 		}
 		
+		
 		### Trigger new northern neighbours for Texas ###
 		random_list = {
 			2 = {
@@ -505,11 +737,16 @@ je_creek_removal = {
 	complete = {
 		custom_tooltip = {
 			text = cr_indian_removal_clear_the_states_complete_tt_creek
-			NOT = {
-				c:MSC = {
-					any_scope_state = { 
-						state_region = s:STATE_ALABAMA 
+			OR = {
+				NOT = {
+					c:MSC = {
+						any_scope_state = { 
+							state_region = s:STATE_ALABAMA 
+						}
 					}
+				}
+				NOT = {
+					exists = c:MSC
 				}
 			}
 		}
@@ -550,6 +787,9 @@ je_creek_removal = {
 			remove_modifier = cr_removal_the_benefit_of_free_enterprise
 		}
 		remove_modifier = cr_creek_removal_cost
+		c:MSC = {
+			set_immune_to_revolutions = no
+		}
 	}
 	
 	fail = {
@@ -562,14 +802,24 @@ je_creek_removal = {
 			limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
 			remove_modifier = cr_removal_the_benefit_of_free_enterprise
 		}
+		c:MSC = {
+			set_immune_to_revolutions = no
+		}
 	}
 	
 	invalid = {
-		#NAND = {
-		#	exists = c:CSW
-		#	exists = c:USA
-		#	c:CSW = { is_subject_of = c:CSW }
-		#}
+		OR = {
+			NAND = {
+				exists = c:MSC
+				exists = c:USA
+				c:MSC = { is_subject_of = ROOT }
+			}
+			c:MSC = {
+				NOT = {
+					any_scope_state = { state_region = s:STATE_OKLAHOMA }
+				}
+			}
+		}
 	}
 	
 	on_invalid = {
@@ -579,7 +829,11 @@ je_creek_removal = {
 				limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
 				remove_modifier = cr_removal_the_benefit_of_free_enterprise
 			}
+			c:MSC = {
+				set_immune_to_revolutions = no
+			}
 		}
+
 	}
 	
 	weight = 200
@@ -595,16 +849,78 @@ je_cherokee_removal = {
 	group = je_group_historical_content
 	
 	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					scope:target_of_removal = {
+						has_variable = voluntary_removal
+					}
+				}
+				random_list = {
+					10 = 0
+					80 = { 
+						trigger_event = { id = cr_indian_removal.49 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.50 }
+					}
+					3 = { 
+						trigger_event = { id = cr_indian_removal.51 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.55 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.56 }
+					}
+					3 = { 
+						trigger_event = { id = cr_indian_removal.57 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.60 }
+					}
+				}
+			}
+			else = {
+				random_list = {
+					10 = 0
+					60 = { 
+						trigger_event = { id = cr_indian_removal.49 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.50 }
+					}
+					10 = { 
+						trigger_event = { id = cr_indian_removal.51 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.55 }
+					}
+					15 = { 
+						trigger_event = { id = cr_indian_removal.56 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.57 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.58 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.60 }
+					}
+				}
+			}
+		}
 		random_events = {
-			10 = 0
-			60 = cr_indian_removal.49
-			5 = cr_indian_removal.50
-			10 = cr_indian_removal.51
-			5 = cr_indian_removal.55
-			15 = cr_indian_removal.56
-			5 = cr_indian_removal.57
-			1 = cr_indian_removal.58
-			5 = cr_indian_removal.60
+			#10 = 0
+			#60 = cr_indian_removal.49
+			#5 = cr_indian_removal.50
+			#10 = cr_indian_removal.51
+			#5 = cr_indian_removal.55
+			#15 = cr_indian_removal.56
+			#5 = cr_indian_removal.57
+			#1 = cr_indian_removal.58
+			#5 = cr_indian_removal.60
 		}
 	}
 	
@@ -671,7 +987,7 @@ je_cherokee_removal = {
 		}
 		cu:dixie = {
 			save_scope_as = dixie_culture
-		}
+		}		
 		
 		### Trigger new northern neighbours for Texas ###
 		random_list = {
@@ -690,32 +1006,39 @@ je_cherokee_removal = {
 	complete = {
 		custom_tooltip = {
 			text = cr_indian_removal_clear_the_states_complete_tt_cherokee
-			c:CHE = {			
-				NOT = {
-					any_scope_state = { 
-						state_region = s:STATE_GEORGIA 
+			OR = {
+				AND = {
+					c:CHE = {			
+						NOT = {
+							any_scope_state = { 
+								state_region = s:STATE_GEORGIA 
+							}
+						}
+					}
+					c:CHE = {
+						NOT = {
+							any_scope_state = { 
+								state_region = s:STATE_ALABAMA
+							}
+						}
+					}
+					c:CHE = {
+						NOT = {
+							any_scope_state = { 
+								state_region = s:STATE_TENNESSEE
+							}
+						}
+					}
+					c:CHE = {
+						NOT = {
+							any_scope_state = { 
+								state_region = s:STATE_NORTH_CAROLINA
+							}
+						}
 					}
 				}
-			}
-			c:CHE = {
 				NOT = {
-					any_scope_state = { 
-						state_region = s:STATE_ALABAMA
-					}
-				}
-			}
-			c:CHE = {
-				NOT = {
-					any_scope_state = { 
-						state_region = s:STATE_TENNESSEE
-					}
-				}
-			}
-			c:CHE = {
-				NOT = {
-					any_scope_state = { 
-						state_region = s:STATE_NORTH_CAROLINA
-					}
+					exists = c:CHE
 				}
 			}
 		}
@@ -827,6 +1150,9 @@ je_cherokee_removal = {
 			remove_modifier = cr_removal_the_benefit_of_free_enterprise
 		}
 		remove_modifier = cr_cherokee_removal_cost
+		c:CHE = {
+			set_immune_to_revolutions = no
+		}
 	}
 	
 	fail = {
@@ -839,14 +1165,24 @@ je_cherokee_removal = {
 			limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
 			remove_modifier = cr_removal_the_benefit_of_free_enterprise
 		}
+		c:CHE = {
+			set_immune_to_revolutions = no
+		}
 	}
 	
 	invalid = {
-		#NAND = {
-		#	exists = c:CSW
-		#	exists = c:USA
-		#	c:CSW = { is_subject_of = c:CSW }
-		#}
+		OR = {
+			NAND = {
+				exists = c:CHE
+				exists = c:USA
+				c:CSW = { is_subject_of = c:CHE }
+			}
+			c:CHE = {
+				NOT = {
+					any_scope_state = { state_region = s:STATE_OKLAHOMA }
+				}
+			}
+		}
 	}
 	
 	on_invalid = {
@@ -855,6 +1191,9 @@ je_cherokee_removal = {
 			if = {
 				limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
 				remove_modifier = cr_removal_the_benefit_of_free_enterprise
+			}
+			c:CHE = {
+				set_immune_to_revolutions = no
 			}
 		}
 	}
@@ -872,21 +1211,117 @@ je_seminole_removal = {
 	group = je_group_historical_content
 	
 	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					scope:target_of_removal = {
+						has_variable = voluntary_removal
+					}
+				}
+				random_list = {
+					10 = 0
+					80 = { 
+						trigger_event = { id = cr_indian_removal.49 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.50 }
+					}
+					3 = { 
+						trigger_event = { id = cr_indian_removal.51 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.55 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.56 }
+					}
+					3 = { 
+						trigger_event = { id = cr_indian_removal.57 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.60 }
+					}
+				}
+			}
+			else = {
+				random_list = {
+					10 = 0
+					60 = { 
+						trigger_event = { id = cr_indian_removal.49 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.50 }
+					}
+					10 = { 
+						trigger_event = { id = cr_indian_removal.51 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.55 }
+					}
+					15 = { 
+						trigger_event = { id = cr_indian_removal.56 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.57 }
+					}
+					1 = { 
+						trigger_event = { id = cr_indian_removal.58 }
+					}
+					5 = { 
+						trigger_event = { id = cr_indian_removal.60 }
+					}
+				}
+			}
+		}
 		random_events = {
-			10 = 0
-			40 = cr_indian_removal.49
-			5 = cr_indian_removal.50
-			10 = cr_indian_removal.51
-			5 = cr_indian_removal.55
-			15 = cr_indian_removal.56
-			5 = cr_indian_removal.57
-			1 = cr_indian_removal.58
-			5 = cr_indian_removal.60
+			#10 = 0
+			#40 = cr_indian_removal.49
+			#5 = cr_indian_removal.50
+			#10 = cr_indian_removal.51
+			#5 = cr_indian_removal.55
+			#15 = cr_indian_removal.56
+			#5 = cr_indian_removal.57
+			#1 = cr_indian_removal.58
+			#5 = cr_indian_removal.60
 		}
 	}
 	
 	immediate = {
 		save_scope_as = cr_removing_country
+		if = {
+			limit = {
+				NOT = {
+					c:SMN = {
+						any_scope_state = {
+							state_region = s:STATE_OKLAHOMA
+						}
+					}
+				}
+			}
+			s:STATE_OKLAHOMA = {
+				set_owner_of_provinces = {
+					country = c:SMN
+					provinces = {
+						xE0ACB6
+					}
+				}
+			}
+			s:STATE_OKLAHOMA.region_state:SMN = {
+				every_scope_pop = {
+					limit = {
+						OR = {
+							culture = cu:comanche							
+							culture = cu:caddoan						
+							culture = cu:afro_american						
+						}
+					}
+					move_pop = s:STATE_OKLAHOMA.region_state:COM 
+				}
+			}
+			s:STATE_OKLAHOMA.region_state:SMN = {
+				save_scope_as = oklahoma_state
+			}			
+		}
 		c:SMN = {
 			save_scope_as = target_of_removal
 			random_scope_state = {
@@ -965,13 +1400,19 @@ je_seminole_removal = {
 	complete = {
 		custom_tooltip = {
 			text = cr_indian_removal_clear_the_states_complete_tt_seminole
-			c:SMN = {			
-				NOT = {
-					any_scope_state = { 
-						state_region = s:STATE_FLORIDA
+			OR = {
+				c:SMN = {			
+					NOT = {
+						any_scope_state = { 
+							state_region = s:STATE_FLORIDA
+						}
 					}
 				}
+				NOT = {
+					exists = c:SMN
+				}
 			}
+			
 		}
 	}
 	
@@ -1014,8 +1455,48 @@ je_seminole_removal = {
 			limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
 			remove_modifier = cr_removal_the_benefit_of_free_enterprise
 		}
-		s:STATE_FLORIDA.region_state:USA = {
-			remove_modifier = seminole_war_mod
+		if = {
+			limit = {
+				scope:state_of_florida = {
+					has_modifier = seminole_war_mod
+				}
+			}
+			scope:state_of_florida = {
+				remove_modifier = seminole_war_mod
+			}
+		}
+		if = {
+			limit = {
+				scope:state_of_florida = {
+					has_modifier = seminole_war_mod_1
+				}
+			}
+			scope:state_of_florida = {
+				remove_modifier = seminole_war_mod_1
+			}
+		}
+		if = {
+			limit = {
+				scope:state_of_florida = {
+					has_modifier = seminole_war_mod_2
+				}
+			}
+			scope:state_of_florida = {
+				remove_modifier = seminole_war_mod_2
+			}
+		}
+		if = {
+			limit = {
+				scope:state_of_florida = {
+					has_modifier = seminole_war_mod_3
+				}
+			}
+			scope:state_of_florida = {
+				remove_modifier = seminole_war_mod_3
+			}
+		}
+		c:SMN = {
+			set_immune_to_revolutions = no
 		}
 	}
 	
@@ -1031,6 +1512,49 @@ je_seminole_removal = {
 			limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
 			remove_modifier = cr_removal_the_benefit_of_free_enterprise
 		}
+		if = {
+			limit = {
+				scope:state_of_florida = {
+					has_modifier = seminole_war_mod
+				}
+			}
+			scope:state_of_florida = {
+				remove_modifier = seminole_war_mod
+			}
+		}
+		if = {
+			limit = {
+				scope:state_of_florida = {
+					has_modifier = seminole_war_mod_1
+				}
+			}
+			scope:state_of_florida = {
+				remove_modifier = seminole_war_mod_1
+			}
+		}
+		if = {
+			limit = {
+				scope:state_of_florida = {
+					has_modifier = seminole_war_mod_2
+				}
+			}
+			scope:state_of_florida = {
+				remove_modifier = seminole_war_mod_2
+			}
+		}
+		if = {
+			limit = {
+				scope:state_of_florida = {
+					has_modifier = seminole_war_mod_3
+				}
+			}
+			scope:state_of_florida = {
+				remove_modifier = seminole_war_mod_3
+			}
+		}
+		c:SMN = {
+			set_immune_to_revolutions = no
+		}
 	}
 	
 	invalid = {
@@ -1039,6 +1563,11 @@ je_seminole_removal = {
 		#	exists = c:USA
 		#	c:CSW = { is_subject_of = c:CSW }
 		#}
+		c:SMN = {
+			NOT = {
+				any_scope_state = { state_region = s:STATE_OKLAHOMA }
+			}
+		}
 	}
 	
 	
@@ -1051,6 +1580,49 @@ je_seminole_removal = {
 				limit = { has_modifier = cr_removal_the_benefit_of_free_enterprise }
 				remove_modifier = cr_removal_the_benefit_of_free_enterprise
 			}
+			if = {
+				limit = {
+					scope:state_of_florida = {
+						has_modifier = seminole_war_mod
+					}
+				}
+				scope:state_of_florida = {
+					remove_modifier = seminole_war_mod
+				}
+			}
+			if = {
+				limit = {
+					scope:state_of_florida = {
+						has_modifier = seminole_war_mod_1
+					}
+				}
+				scope:state_of_florida = {
+					remove_modifier = seminole_war_mod_1
+				}
+			}
+			if = {
+				limit = {
+					scope:state_of_florida = {
+						has_modifier = seminole_war_mod_2
+					}
+				}
+				scope:state_of_florida = {
+					remove_modifier = seminole_war_mod_2
+				}
+			}
+			if = {
+				limit = {
+					scope:state_of_florida = {
+						has_modifier = seminole_war_mod_3
+					}
+				}
+				scope:state_of_florida = {
+					remove_modifier = seminole_war_mod_3
+				}
+			}
+		}
+		c:SMN = {
+			set_immune_to_revolutions = no
 		}
 	}
 	

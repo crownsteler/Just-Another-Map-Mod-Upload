@@ -58,6 +58,7 @@ je_cr_indian_removal_button_b_chickasaw = {
 	possible = {
 		c:CSW = {
 			is_subject_of = ROOT
+			is_at_war = no
 		}
 		OR = {
 			c:CSW = {
@@ -101,6 +102,10 @@ je_cr_indian_removal_button_b_chickasaw = {
 		#		interest_group = ig:ig_intelligentsia
 		#	}
 		#}
+		c:CSW = {
+			set_immune_to_revolutions = yes
+			set_variable = voluntary_removal
+		}
 		add_modifier = {
 			name = cr_chickasaw_removal_cost
 		}
@@ -136,6 +141,7 @@ je_cr_indian_removal_button_c_creek = {
 	possible = {
 		c:MSC = {
 			is_subject_of = ROOT
+			is_at_war = no
 		}
 		OR = {
 			custom_tooltip = {
@@ -171,6 +177,10 @@ je_cr_indian_removal_button_c_creek = {
 					}
 				}
 			}
+		}
+		c:MSC = {
+			set_variable = voluntary_removal
+			set_immune_to_revolutions = yes
 		}
 		add_modifier = {
 			name = cr_creek_removal_cost
@@ -217,6 +227,7 @@ je_cr_indian_removal_button_d_cherokee_treaty = {
 	possible = {
 		c:CHE = {
 			is_subject_of = ROOT
+			is_at_war = no
 		}
 		custom_tooltip = {
 			text = je_cr_indian_removal_button_d_cherokee_treaty_tt
@@ -245,6 +256,10 @@ je_cr_indian_removal_button_d_cherokee_treaty = {
 		}
 		add_modifier = {
 			name = cr_cherokee_removal_cost
+		}
+		c:CHE = {
+			set_immune_to_revolutions = yes
+			set_variable = voluntary_removal
 		}
 	}
 }
@@ -342,6 +357,10 @@ je_cr_indian_removal_button_d_cherokee = {
 				name = the_trial_of_tears_has_started
 			}
 		}
+		c:CHE = {
+			set_immune_to_revolutions = yes
+			set_variable = voluntary_removal
+		}
 	}
 }
 
@@ -372,24 +391,16 @@ je_cr_indian_removal_button_e_seminole = {
 					}
 				}
 			}
-			c:SMN = {
-				relations:ROOT >= 50
-			}
+			c:SMN = { relations:ROOT >= 50 }
 		}
 		OR = {
-			c:SMN = {
-				is_subject_of = ROOT
-			}
+			c:SMN = { is_subject_of = ROOT }
 			owns_entire_state_region = STATE_FLORIDA
 		}
-		#NOT = {
-		#	has_war_with = c:SMN
-		#}
+		c:SMN = { is_at_war = no }
 		custom_tooltip = {
 			text = cr_seminole_removal_has_started_tt
-			NOT = {
-				has_variable = cr_seminole_removal_has_started
-			}
+			NOT = {	has_variable = cr_seminole_removal_has_started }
 		}
 	}
 
@@ -411,6 +422,10 @@ je_cr_indian_removal_button_e_seminole = {
 		
 		hidden_effect = {
 			set_variable = cr_seminole_removal_has_started
+		}
+		c:SMN = {
+			set_variable = voluntary_removal
+			set_immune_to_revolutions = yes
 		}
 	}
 }
