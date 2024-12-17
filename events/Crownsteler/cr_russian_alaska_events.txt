@@ -65,7 +65,7 @@ cr_russian_alaska_events.1 = { #Two Years Before the Mast
 		s:STATE_ALASKA = {
 			random_scope_state = {
 				limit = {
-					owner = c:ASK
+					owner = c:ALK
 				}
 				save_scope_as = alaska
 			}
@@ -85,7 +85,7 @@ cr_russian_alaska_events.1 = { #Two Years Before the Mast
 				force_resource_depletion = bg_fur_trading_post
 			}
 		}
-		c:ASK = {
+		c:ALK = {
 			add_journal_entry = {
 				type = je_cr_fort_ross
 			}
@@ -166,7 +166,7 @@ cr_russian_alaska_events.2 = { #The Future of Russian California
 		scope:selling_country = {
 			post_notification = cr_fort_ross_accepted 		
 		}
-		c:ASK = {
+		c:ALK = {
 			if= {
 				limit = {
 					is_subject_of = scope:selling_country
@@ -305,7 +305,7 @@ cr_russian_alaska_events.6 = { #The End of Russian America
 		trigger = {
 			this = scope:buying_country
 		}
-		s:STATE_CALIFORNIA.region_state:ASK = {
+		s:STATE_CALIFORNIA.region_state:ALK = {
 			set_state_owner = scope:buying_country
 		}
 		default_option = yes
@@ -351,7 +351,7 @@ cr_russian_alaska_events.9 = { #The Golden Gate
 		p:x1116AA.owner = {
 			save_scope_as = buying_country
 		}
-		s:STATE_CALIFORNIA.region_state:ASK = {
+		s:STATE_CALIFORNIA.region_state:ALK = {
 			save_scope_as = california
 		}
 	}
@@ -396,7 +396,7 @@ cr_russian_alaska_events.10 = { #The Inland Empire
 	duration = 3
 
 	trigger = {
-		#s:STATE_CALIFORNIA.region_state:ASK = {
+		#s:STATE_CALIFORNIA.region_state:ALK = {
 		#	OR = {
 		#		any_scope_building = {
 		#			is_building_type = building_wheat_farm

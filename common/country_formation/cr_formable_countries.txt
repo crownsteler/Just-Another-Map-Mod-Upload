@@ -1,24 +1,4 @@
-﻿PLC = {
-	states = {
-		STATE_BREST
-		STATE_EAST_GALICIA
-		STATE_GREATER_POLAND
-		STATE_LESSER_POLAND
-		STATE_LITHUANIA
-		STATE_MAZOVIA
-		STATE_POSEN
-		STATE_VOLHYNIA
-		STATE_WEST_GALICIA
-		STATE_WEST_PRUSSIA
-	}
-
-	required_states_fraction = 1
-	
-	ai_will_do = { always = yes }
-}
-
-
-ETH = {
+﻿ETH = {
 	use_culture_states = yes
 
 	required_states_fraction = 0.60
@@ -62,25 +42,6 @@ ARA = {
 	}
 }
 
-AFG = {
-	states = {
-		STATE_WESTERN_AFGHANISTAN
-		STATE_EASTERN_AFGHANISTAN
-		STATE_MAZAR_I_SHARIF
-		STATE_SISTAN
-		STATE_BALUCHISTAN
-		STATE_PASHTUNISTAN
-	}
-
-	required_states_fraction = 0.6
-	
-	ai_will_do = { always = yes }
-
-	#possible = {
-	#	has_technology_researched = pan-nationalism
-	#}
-}
-
 TRH = {
 	states = { 
 		STATE_UZBEKIA
@@ -95,12 +56,12 @@ TRH = {
 		STATE_DZUNGARIA
 		STATE_JETISY
 		
-		STATE_TURKISTAN
+		STATE_SYRDARYA
 		STATE_KARAGANDA
 		STATE_TASHKENT
 		STATE_FERGANA
 		STATE_ALAY
-		STATE_KHUDZHAND
+		STATE_BADAKHSHAN
 	}
 
 	required_states_fraction = 0.5
@@ -161,30 +122,13 @@ YEM = {
 	ai_will_do = { always = yes }
 }
 
-CAU = {
-	states = {
-		STATE_GREATER_CAUCASUS
-		STATE_ARMENIA
-		STATE_AZERBAIJAN
-		STATE_KARS
-	}
-
-	required_states_fraction = 0.75	
-	
-	ai_will_do = { always = yes }
-
-	possible = {
-		has_technology_researched = pan-nationalism
-	}
-}
-
 KAZ = {
 	states = {
 		STATE_SEMIRECHE
 		STATE_AKMOLINSK
 		STATE_JETISY
 		STATE_URALSK
-		STATE_TURKISTAN
+		STATE_SYRDARYA
 		STATE_KARAGANDA
 	}
 
@@ -243,6 +187,8 @@ PLT = {
 		STATE_TUCUMAN
 		STATE_JUJUY
 		STATE_CORRIENTES
+		STATE_MISIONES
+		STATE_CUYO
 	}
 
 	required_states_fraction = 0.85

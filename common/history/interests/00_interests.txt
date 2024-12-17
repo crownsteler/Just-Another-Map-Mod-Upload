@@ -86,12 +86,14 @@
 	}		
 	c:CHL = {	
 		add_declared_interest = region_andes		
+		add_declared_interest = region_patagonia		
 	}	
 	c:PER = {	
 		add_declared_interest = region_afghanistan
 	}	
 	c:ARG = {	
-		add_declared_interest = region_brazil
+		add_declared_interest = region_brazil	
+		add_declared_interest = region_patagonia
 	}
 	c:SPA = {	
 		add_declared_interest = region_occitania

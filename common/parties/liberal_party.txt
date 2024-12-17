@@ -215,7 +215,20 @@ liberal_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_english_party
+				desc = party_constitutional_party
+				trigger = {
+					exists = c:GRE
+					THIS = c:GRE
+					has_law = law_type:law_monarchy
+					ruler = {
+						culture = {
+							has_discrimination_trait = german_speaking
+						}
+					}
+				}
+			}
+			triggered_desc = {
+				desc = party_neoteristikon_komma
 				trigger = {
 					exists = c:GRE
 					THIS = c:GRE
@@ -307,16 +320,6 @@ liberal_party = {
 				is_marginal = no
 			}
 		}
-		OR = {
-	     	NOT = {
-	         	owner = {
-	         		has_variable = only_valid_party
-	         	}
-	        }
-	        owner.var:only_valid_party = {
-	        	is_party_type = liberal_party
-	        }
-	    }
 		leader = { # far right and far left won't join liberal parties
 			NOR = {
 				has_ideology = ideology:ideology_fascist
@@ -335,6 +338,26 @@ liberal_party = {
 		value = {
 			value = -5
 			desc = "base_value"
+		}
+		if = {
+			limit = {
+				owner = {
+					c:BIC ?= this
+					is_subject = yes
+					OR = {
+						has_modifier = modifier_india_crown_rule
+						has_modifier = modifier_india_company_rule
+					}
+				}
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			add = {
+				value = -100
+				desc = "india_colonial_government"
+			}
 		}
 		if = { # liberals love liberalism
 			limit = {
@@ -356,6 +379,7 @@ liberal_party = {
 			limit = {
 				OR = {
 					has_ideology = ideology:ideology_liberal
+					has_ideology = ideology:ideology_liberal_modern
 					has_ideology = ideology:ideology_laissez_faire
 				}
 			}
@@ -462,7 +486,9 @@ liberal_party = {
 						has_ideology = ideology:ideology_feminist
 					}
 					has_ideology = ideology:ideology_liberal
+					has_ideology = ideology:ideology_liberal_modern
 					has_ideology = ideology:ideology_egalitarian
+					has_ideology = ideology:ideology_egalitarian_modern
 				}
 				owner = {
 					has_law = law_type:law_no_womens_rights
@@ -484,6 +510,7 @@ liberal_party = {
 						}
 					}
 					has_ideology = ideology:ideology_liberal
+					has_ideology = ideology:ideology_liberal_modern
 				}
 				owner = {
 					OR = {
@@ -502,7 +529,9 @@ liberal_party = {
 			limit = {
 				OR = {
 					has_ideology = ideology:ideology_liberal
+					has_ideology = ideology:ideology_liberal_modern
 					has_ideology = ideology:ideology_egalitarian
+					has_ideology = ideology:ideology_egalitarian_modern
 					leader = {
 						has_ideology = ideology:ideology_humanitarian
 						has_ideology = ideology:ideology_humanitarian_royalist
@@ -521,6 +550,7 @@ liberal_party = {
 			limit = {
 				OR = {
 					has_ideology = ideology:ideology_liberal
+					has_ideology = ideology:ideology_liberal_modern
 					has_ideology = ideology:ideology_particularist
 				}
 				owner = {
@@ -621,6 +651,7 @@ liberal_party = {
 				}
 				OR = {
 					has_ideology = ideology:ideology_egalitarian
+					has_ideology = ideology:ideology_egalitarian_modern
 					has_ideology = ideology:ideology_anti_slavery
 					has_ideology = ideology:ideology_laissez_faire
 					has_ideology = ideology:ideology_particularist
@@ -643,6 +674,19 @@ liberal_party = {
 			add = {
 				value = 10
 				desc = "from_modernizer"
+			}
+		}
+		if = { # early Trade Unions
+			limit = {
+				is_interest_group_type = ig_trade_unions
+				is_powerful = no
+				NOT = {
+					has_ideology = ideology:ideology_socialist
+				}
+			}
+			add = {
+				value = 5
+				desc = "from_early_trade_unions"
 			}
 		}
 		# Special weights for ACW
@@ -908,21 +952,6 @@ liberal_party = {
 		}
 		if = {
 			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	NOT = {
-			        owner.var:only_valid_party = {
-			        	is_party_type = liberal_party
-			        }
-			    }
-			}
-			multiply = {
-				value = 0
-			}
-		}
-		if = {
-			limit = {
 				leader = {
 					has_variable = caudillo_liberal
 				}
@@ -932,36 +961,5 @@ liberal_party = {
 				desc = "caudillo_support"
 			}
 		}
-		if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-				owner.var:only_valid_party = {
-		        	is_party_type = liberal_party
-		        }
-	         	owner.ruler = {
-					this.interest_group = prev
-				}
-			}
-			add = {
-				value = 1000
-				desc = "from_only_legal_party"
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	 owner.var:only_valid_party = {
-		        	is_party_type = liberal_party
-		        }
-			}
-			add = {
-				value = 3
-				desc = "from_only_legal_party"
-			}
-		}	
 	}
 }

@@ -9,3 +9,5 @@
  
  gov_sunanatesub:0 "Vorstenland"
  gov_sunanatesub_desc:0 "This is a [concept_government_type] type [concept_subject] to the Dutch East Indies in which the [Concept('concept_ruler','$RULER_TITLE_SUSUHUNAN$')] has, due to their relation to Sultans of Mataram of old, been granted the priviledge of self rule.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+ company_john_cockerill:0 "John Cockerill & Cie"

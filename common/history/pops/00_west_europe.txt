@@ -103,17 +103,34 @@
 		region_state:NOR = {
 			create_pop = {
 				culture = norwegian
-				size = 284860
+				size = 262604
 			}
 			create_pop = {
 				culture = sami
-				size = 40000
+				size = 18000
 			}
 			create_pop = {
 				culture = finnish
 				size = 12400
 			}
 		}
+	}
+	s:STATE_FINNMARK = {
+		region_state:NOR = { #1835 population: Troms 26.818, Finnmark 10.838
+			create_pop = {
+				culture = norwegian
+				size = 25256
+			}
+			create_pop = {
+				culture = sami
+				size = 22000
+			}
+			create_pop = {
+				culture = finnish
+				size = 12400
+			}
+		}
+	
 	}
 	s:STATE_EASTERN_NORWAY = {
 		region_state:NOR = {
@@ -156,75 +173,6 @@
 				culture = inuit
 				religion = animist
 				size = 3510
-			}
-		}
-	}
-	s:STATE_SOUTHERN_FINLAND = {
-		region_state:FIN = {
-			create_pop = {
-				culture = swedish
-				size = 154900
-			}
-			create_pop = {
-				culture = finnish
-				size = 690000
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 400
-			}
-			create_pop = {
-				culture = russian
-				size = 300
-			}
-		}
-	}
-	s:STATE_WEST_KARELIA = {
-		region_state:FIN = {
-			create_pop = {
-				culture = finnish
-				size = 177000
-			}
-			create_pop = {
-				culture = finnish
-				religion = orthodox
-				size = 10000
-			}
-			create_pop = {
-				culture = swedish
-				size = 1200
-			}
-			create_pop = {
-				culture = russian
-				size = 700
-			}
-		}
-	}
-	s:STATE_ALAND = {
-		region_state:FIN = {
-			create_pop = {
-				culture = swedish
-				size = 12000
-			}
-			create_pop = {
-				culture = finnish
-				size = 500
-			}
-		}
-	}
-	s:STATE_OSTROBOTHNIA = {
-		region_state:FIN = {
-			create_pop = {
-				culture = finnish
-				size = 360000
-			}
-			create_pop = {
-				culture = swedish
-				size = 47000
-			}
-			create_pop = {
-				culture = sami
-				size = 18000
 			}
 		}
 	}
@@ -555,7 +503,7 @@
 			create_pop = {
 				culture = occitan
 				size = 1994848
-		}
+			}
 			create_pop = {
 				culture = occitan
 				religion = protestant
@@ -573,8 +521,6 @@
 				culture = sephardic
 				size = 895
 			}
-		}
-		region_state:FRA = {
 		}
 	}
 	s:STATE_RHONE = {
@@ -900,28 +846,43 @@
 			}
 		}
 	}
+	# Zuidholland, Noordholland, Zeeland, and Utrecht
 	s:STATE_HOLLAND = {
 		region_state:NET = {
 			create_pop = {
 				culture = dutch
-				size = 842461
+				size = 835719
 			}
 			create_pop = {
 				culture = dutch
 				religion = catholic
-				size = 371452
+				size = 344921
+			}
+			create_pop = {
+				culture = flemish
+				size = 26531
+			}
+			create_pop = {
+				culture = wallonian # French or Walloon Reformed
+				religion = protestant
+				size = 6542
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 34943
+				size = 32035
+			}
+			create_pop = {
+				culture = sephardic # "Portuguese" Jews
+				size = 2908
 			}
 		}
 	}
+	# Friesland,  Groningen, and Drenthe
 	s:STATE_FRIESLAND = {
 		region_state:NET = {
 			create_pop = {
 				culture = dutch
-				size = 215771
+				size = 215346
 			}
 			create_pop = {
 				culture = dutch
@@ -938,21 +899,37 @@
 				size = 19280
 			}
 			create_pop = {
+				culture = wallonian # French or Walloon Reformed
+				religion = protestant
+				size = 425
+			}
+			create_pop = {
 				culture = ashkenazi
 				size = 5954
 			}
 		}
 	}
+	# Gelderland, and Overijssel
 	s:STATE_GELRE = {
 		region_state:NET = {
 			create_pop = {
 				culture = dutch
-				size = 322612
+				size = 321838
 			}
 			create_pop = {
 				culture = dutch
 				religion = catholic
-				size = 186768
+				size = 171667
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 15101
+			}
+			create_pop = {
+				culture = wallonian # French or Walloon Reformed
+				religion = protestant
+				size = 774
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -960,20 +937,41 @@
 			}
 		}
 	}
+	# Noord Brabant, and Limburg
 	s:STATE_BRABANT = {
 		region_state:NET = {
 			create_pop = {
 				culture = flemish
-				size = 317094
+				size = 128800
 			}
 			create_pop = {
 				culture = flemish
 				religion = protestant
-				size = 44688
+				size = 39512
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 1714
+				size = 654
+			}
+		}
+		region_state:BEL = {
+			create_pop = {
+				culture = flemish
+				size = 184194
+			}
+			create_pop = {
+				culture = flemish
+				religion = protestant
+				size = 5176
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 4100
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 1060
 			}
 		}
 	}
@@ -981,50 +979,80 @@
 		region_state:LUX = {
 			create_pop = {
 				culture = wallonian
-				size = 21996
+				size = 103992
 			}
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 153992
-			}
-		}
-		region_state:BEL = {
-			create_pop = {
-				culture = wallonian
-				size = 1426294
+				size = 71996
 			}
 			create_pop = {
 				culture = north_german
-				size = 36000
-			}
-			create_pop = {
-				culture = flemish
-				size = 132800
-			}
-		}
-	}
-	s:STATE_FLANDERS = {
-		region_state:BEL = {
-			create_pop = {
-				culture = flemish
-				size = 2070917
-			}
-			create_pop = {
-				culture = wallonian
-				size = 100404
+				size = 572
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 14000
+				size = 210
 			}
-			create_pop = { #Brussels
+		}
+		# Hainaut, Liège, Luxembourg, and Namur
+		region_state:BEL = { # 
+			create_pop = {
+				culture = wallonian # 'Walloon & French' in census data.
+				size = 1413476
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 27847
+			}
+			create_pop = {
+				culture = flemish # 'Flemish & Dutch' in census data.
+				size = 40207
+			}
+			create_pop = {
 				culture = flemish
-				size = 108301
+				religion = protestant
+				size = 1355
 			}
-			create_pop = { #Brussels
-				culture = wallonian
-				size = 55792
+			create_pop = {
+				culture = british
+				size = 317
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 205
+			}
+		}
+	}
+	# Antwerp, Brabant, West Flanders, East Flanders, and Limburg
+	s:STATE_FLANDERS = {
+		region_state:BEL = {
+			create_pop = {
+				culture = flemish # 'Flemish & Dutch' in census data.
+				size = 2224197
+			}
+			create_pop = {
+				culture = flemish
+				religion = protestant
+				size = 6013
+			}
+			create_pop = {
+				culture = wallonian # 'Walloon & French' in census data.
+				size = 260733
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 3361
+			}
+			create_pop = {
+				culture = british
+				size = 3185
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 1131
 			}
 		}
 	}
@@ -1617,7 +1645,8 @@
 		region_state:BAV = {
 			create_pop = {
 				culture = north_german
-				size = 151600
+				religion = catholic
+				size = 251600
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -1626,7 +1655,7 @@
 			create_pop = {
 				culture = north_german
 				religion = protestant
-				size = 403996
+				size = 303996
 			}
 		}
 		region_state:HES = {
@@ -1779,6 +1808,7 @@
 		region_state:BAD = {
 			create_pop = {
 				culture = south_german
+				religion = protestant
 				size = 143154
 			}
 			create_pop = {
@@ -1845,7 +1875,7 @@
 		region_state:HAN = {
 			create_pop = {
 				culture = north_german
-				size = 174000
+				size = 180000
 			}
 			create_pop = {
 				culture = north_german
@@ -1915,7 +1945,7 @@
 		region_state:SAX = {
 			create_pop = {
 				culture = north_german
-				size = 1397212
+				size = 1453212
 			}
 			create_pop = {
 				culture = north_german
@@ -2031,16 +2061,16 @@
 		region_state:HES = {
 			create_pop = {
 				culture = north_german
-				size = 483308
+				size = 583308
 			}
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 80800
+				size = 140800
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 4000
+				size = 5000
 			}
 		}
 		region_state:HEK = {

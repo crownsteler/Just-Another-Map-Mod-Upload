@@ -24,14 +24,14 @@
 		set_tax_level = medium
 		
 		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_landed_voting 				#Actually law_wealth_voting, but this allows for better representation of the expansion of the voting francise; 1815: indirect elections by the aristocracy, urban notables, rural notables. 1848: direct elections, officially by census voting 1887: Caoutchouc article expanding the francise (census elections). 1817: universal voting for men. 1919: women's suffrage
 		activate_law = law_type:law_per_capita_based_taxation
-		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_freedom_of_conscience 		#officially freedom of conscience, but in reality king head of the church and discrimination of catholics
 		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_mercantilism 				#Or protectionism
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_colonial_exploitation
-		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_local_police				#Various police forces; Marechaussée (gendarms), urban police, rural police and military police. All could fit, but the fragmented nature of the police makes local fit better I guess.
 		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_appointed_bureaucrats
@@ -70,14 +70,16 @@
 		#	set_interest_group_name = ig_catholics
 		#}	
 
-		add_company = company_type:company_nederlandse_handelsmaatschappij
-		company:company_nederlandse_handelsmaatschappij = {
-			set_company_establishment_date = 1824.3.29
-		}
-
 		add_company = company_type:company_maatschappij_van_weldadigheid
 		company:company_maatschappij_van_weldadigheid = {
 			set_company_establishment_date = 1818.4.1
+			set_company_state_region = s:STATE_FRIESLAND
+		}
+
+		add_company = company_type:company_nederlandse_handelsmaatschappij
+		company:company_nederlandse_handelsmaatschappij = {
+			set_company_establishment_date = 1824.3.29
+			set_company_state_region = s:STATE_HOLLAND
 		}
 	}
 }

@@ -3,7 +3,7 @@
 	desc = "je_cr_russian_america_colonise_alaska_button_desc"
 
 	visible = {   
-		c:ASK = { is_subject_of = ROOT }
+		c:ALK = { is_subject_of = ROOT }
 		NOT = { 
 			has_modifier = cr_colonising_alaska_modifier_rus 			
 		}
@@ -34,7 +34,7 @@
 			name = cr_colonising_alaska_modifier_rus
 			#months = short_modifier_time
 		}
-		c:ASK = {
+		c:ALK = {
 			random_scope_state = {
 				limit = {
 					state_region = s:STATE_ALASKA
@@ -63,7 +63,7 @@ je_cr_russian_america_colonise_alaska_stop_button = {
 	desc = "je_cr_russian_america_colonise_alaska_stop_button_desc"
 
 	visible = {  
-		c:ASK = { is_subject_of = ROOT }
+		c:ALK = { is_subject_of = ROOT }
 		has_modifier = cr_colonising_alaska_modifier_rus
 	}
 
@@ -88,7 +88,7 @@ je_cr_russian_america_colonise_alaska_stop_button = {
 			name = cr_colonising_russia_america_cooldown
 			months = 6
 		}
-		c:ASK = {
+		c:ALK = {
 			random_scope_state = {
 				limit = {
 					state_region = s:STATE_ALASKA
@@ -105,7 +105,7 @@ je_cr_russian_america_colonise_california_button = {
 	desc = "je_cr_russian_america_colonise_california_button_desc"
 
 	visible = {   
-		c:ASK = { 
+		c:ALK = { 
 			is_subject_of = ROOT 
 			#any_scope_state = { 
 			#	state_region = s:STATE_CALIFORNIA
@@ -126,7 +126,7 @@ je_cr_russian_america_colonise_california_button = {
 	
 	possible = {
 		authority >= 150
-		c:ASK = { 
+		c:ALK = { 
 			is_subject_of = ROOT 
 			any_scope_state = { 
 				state_region = s:STATE_CALIFORNIA
@@ -153,7 +153,7 @@ je_cr_russian_america_colonise_california_button = {
 			name = cr_colonising_california_modifier_rus
 			#months = short_modifier_time
 		}
-		c:ASK = {
+		c:ALK = {
 			random_scope_state = {
 				limit = {
 					state_region = s:STATE_CALIFORNIA
@@ -172,7 +172,7 @@ je_cr_russian_america_colonise_california_button = {
 			post_notification = cr_california_colonisation_encouraged
 		}
 		s:STATE_CALIFORNIA = {
-			add_claim = c:ASK
+			add_claim = c:ALK
 		}
 		add_modifier = {
 			name = cr_colonising_russia_america_cooldown
@@ -185,7 +185,7 @@ je_cr_russian_america_colonise_california_stop_button = {
 	desc = "je_cr_russian_america_colonise_california_stop_button_desc"
 
 	visible = {   
-		c:ASK = { 
+		c:ALK = { 
 			is_subject_of = ROOT 
 			any_scope_state = {
 				state_region = s:STATE_CALIFORNIA
@@ -215,7 +215,7 @@ je_cr_russian_america_colonise_california_stop_button = {
 			months = 6
 		}
 		remove_modifier = cr_colonising_california_modifier_rus
-		c:ASK = {
+		c:ALK = {
 			random_scope_state = {
 				limit = {
 					state_region = s:STATE_CALIFORNIA
@@ -225,7 +225,7 @@ je_cr_russian_america_colonise_california_stop_button = {
 			post_notification = cr_california_colonisation_discouraged
 		}
 		s:STATE_CALIFORNIA = {
-			remove_claim = c:ASK
+			remove_claim = c:ALK
 		}
 	}
 }
@@ -235,7 +235,7 @@ je_cr_russian_america_annex_it = {
 	desc = "je_cr_russian_america_annex_it_button_desc"
 
 	visible = {   
-		c:ASK = { 
+		c:ALK = { 
 			is_subject_of = ROOT 
 		}
 	}
@@ -244,12 +244,12 @@ je_cr_russian_america_annex_it = {
 		base = 0
 		modifier = {
 			add = 10
-			c:ASK = { is_ai = yes } 
+			c:ALK = { is_ai = yes } 
 		}
 	}
 	
 	possible = {  
-		c:ASK = { 
+		c:ALK = { 
 			is_subject_of = ROOT 
 		}
 		has_law = law_type:law_colonial_resettlement
@@ -264,7 +264,7 @@ je_cr_russian_america_annex_it = {
 	}
 
 	effect = {
-		annex = c:ASK
+		annex = c:ALK
 		if = {
 			limit = {
 				s:STATE_ALASKA = {
@@ -289,7 +289,7 @@ je_cr_russian_america_annex_it = {
 			}
 			remove_modifier = cr_colonising_california_modifier_rus
 		}
-		c:ASK = {
+		c:ALK = {
 			random_scope_state = {
 				limit = {
 					state_region = s:STATE_ALASKA

@@ -1546,11 +1546,11 @@ cr_indian_removal.21 = { #A Fateful Meeting
 
 	gui_window = event_window_2char
 
-	left_icon = scope:florida_general
-	right_icon = scope:micanopy_scope
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/misc/2Characters"
+	#left_icon = scope:florida_general
+	#right_icon = scope:micanopy_scope
+	#
+	#on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	#on_opened_soundeffect = "event:/SFX/Events/misc/2Characters"
 
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 

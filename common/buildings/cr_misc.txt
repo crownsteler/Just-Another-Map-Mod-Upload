@@ -1,6 +1,6 @@
 ﻿building_fur_trading_post = {
 	building_group = bg_fur_trading_post
-	texture = "gfx/interface/icons/building_icons/fur_trading_post.dds"
+	icon = "gfx/interface/icons/building_icons/fur_trading_post.dds"
 	city_type = wood
 	required_construction = construction_cost_low
 	terrain_manipulator = forestry
@@ -15,11 +15,14 @@
 		pmg_weapon_trading_building_fur_trading_post
 		pmg_liquor_trading_fur_trading_post
 	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
 
 building_ivory_trading_post = {
 	building_group = bg_ivory_trading_post
-	texture = "gfx/interface/icons/building_icons/ivory_trade_post.dds"
+	icon = "gfx/interface/icons/building_icons/ivory_trade_post.dds"
 	
 	city_type = city
 	required_construction = construction_cost_low
@@ -31,4 +34,7 @@ building_ivory_trading_post = {
 		pmg_processing_building_ivory_trading_post #artisinal carving, carving workshops
 		pmg_transportation_building_ivory_trading_post #Slave portage, Regular Portage, 
 	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }

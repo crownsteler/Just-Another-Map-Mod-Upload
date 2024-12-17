@@ -4,17 +4,6 @@
 #							#
 #############################			
 
-CHH = {
-	color = { 251 161 34 }
-	
-	country_type = decentralized
-	
-	tier = principality
-	
-	cultures = { kachin }	
-	capital = STATE_KACHIN
-}
-
 HSW = {
 	color = { 138 193 120 }
 	

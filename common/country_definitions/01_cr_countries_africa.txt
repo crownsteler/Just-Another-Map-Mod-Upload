@@ -19,7 +19,7 @@ CAO = { #Chaoui
 FZN = { #Fezzan
 	color = { 110 175 171 }
 	
-	country_type = unrecognized
+	country_type = decentralized
 	
 	tier = principality
 	
@@ -159,7 +159,7 @@ ADA = {
 	
 	cultures = { fulbe }
 	religion = sunni
-	capital = STATE_NIGERIA
+	capital = STATE_FOMBINA
 	is_named_from_capital = yes
 }
 
@@ -276,7 +276,7 @@ BID = {
 	
 	cultures = { yoruba }
 	religion = sunni
-	capital = STATE_EAST_HAUSALAND
+	capital = STATE_NIGERIA
 }
 
 DAK = {
@@ -490,7 +490,7 @@ JOS = {
 	
 	cultures = { hausa }
 	religion = animist
-	capital = STATE_NIGERIA
+	capital = STATE_FOMBINA
 
 }
 
@@ -741,7 +741,7 @@ WKR = {
 	
 	cultures = { hausa }
 	religion = animist
-	capital = STATE_NIGERIA
+	capital = STATE_FOMBINA
 }
 
 WLA = {

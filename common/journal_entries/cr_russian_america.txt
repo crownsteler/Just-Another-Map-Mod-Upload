@@ -22,7 +22,7 @@
 				limit = {
 					has_modifier = cr_colonising_alaska_modifier_rus 
 					NOT = { 
-						c:ASK = { 
+						c:ALK = { 
 							is_subject_of = ROOT 
 						}
 					}
@@ -33,10 +33,10 @@
 				limit = {
 					has_modifier = cr_colonising_california_modifier_rus
 					NOR = { 
-						c:ASK = { 
+						c:ALK = { 
 							is_subject_of = ROOT
 						}
-						c:ASK = { 
+						c:ALK = { 
 							any_scope_state = {
 								state_region = s:STATE_CALIFORNIA
 							}
@@ -137,10 +137,10 @@ je_cr_fort_ross = {
 		c:RUS = {
 			save_scope_as = russia_scope
 		}
-		s:STATE_ALASKA.region_state:ASK = {
+		s:STATE_ALASKA.region_state:ALK = {
 			save_scope_as = alaska_scope
 		}
-		s:STATE_CALIFORNIA.region_state:ASK = {
+		s:STATE_CALIFORNIA.region_state:ALK = {
 			save_scope_as = california_scope
 		}
 		set_variable = {

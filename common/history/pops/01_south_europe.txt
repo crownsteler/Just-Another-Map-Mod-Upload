@@ -203,21 +203,27 @@
 	}
 	s:STATE_TOLEDO = {
 		region_state:SPA = {
-			create_pop = { #New Castile
+			create_pop = {
 				culture = spanish
-				size = 1615000
+				size = 1268400
 			}
 		}
 	}
 	s:STATE_GALICIA = {
+		# 840792
 		region_state:SPA = {
-			create_pop = { #Galicia
+			create_pop = {
 				culture = galician
-				size = 1801000
+				size = 828528
+			}
+			create_pop = {
+				culture = spanish
+				size = 12264
 			}
 		}
 	}
 	s:STATE_ASTURIAS = {
+		# please don't ask for a source
 		region_state:SPA = { 
 			create_pop = { #Asturias
 				culture = spanish
@@ -231,7 +237,7 @@
 	}
 	s:STATE_CASTILE = {
 		region_state:SPA = {
-			create_pop = { #Old Castile
+			create_pop = {
 				culture = spanish
 				size = 1060000
 			}
@@ -247,9 +253,9 @@
 	}
 	s:STATE_LEON = {
 		region_state:SPA = {
-			create_pop = { #LEon
+			create_pop = { #Leon
 				culture = spanish
-				size = 1077000
+				size = 370000
 			}
 		}
 	}
@@ -265,7 +271,7 @@
 			#}
 			create_pop = { #Biscay, Guipuscoa
 				culture = basque
-				size = 345000
+				size = 700060
 			}
 			create_pop = { #Navarre
 				culture = catalan
@@ -277,11 +283,11 @@
 		region_state:SPA = {
 			create_pop = { #Aragon
 				culture = spanish
-				size = 449553
+				size = 258449
 			}
 			create_pop = {
 				culture = basque
-				size = 50004
+				size = 40004
 			}
 			create_pop = {
 				culture = catalan
@@ -295,7 +301,7 @@
 			}
 			create_pop = {
 				culture = basque
-				size = 50004
+				size = 60004
 			}
 			create_pop = {
 				culture = catalan
@@ -307,7 +313,7 @@
 		region_state:SPA = {
 			create_pop = { #Catalonia
 				culture = catalan
-				size = 597738
+				size = 497738
 			}
 			create_pop = {
 				culture = spanish
@@ -339,21 +345,17 @@
 	}
 	s:STATE_ANDALUSIA = {
 		region_state:SPA = {
-			#create_pop = {
-			#	culture = spanish
-			#	size = 1057592
-			#}
-			create_pop = { #53,5328% of Andalusia population
+			create_pop = {
 				culture = spanish
-				size = 716989
+				size = 1057592
 			}
 		}
 	}
 	s:STATE_GRANADA = {
 		region_state:SPA = {
-			create_pop = { #46,4672% of Andalusia population
+			create_pop = {
 				culture = spanish
-				size = 826011
+				size = 1218404
 			}
 		}
 		region_state:GBR = { #1834 census
@@ -383,32 +385,19 @@
 		region_state:SPA = {
 			create_pop = { #Extramadura
 				culture = spanish
-				size = 670000
+				size = 579992
 			}
 		}
 	}
-	
 	s:STATE_VALENCIA = {
 		region_state:SPA = {
-			#create_pop = {
-			#	culture = spanish
-			#	size = 989604
-			#}
 			create_pop = {
-				culture = catalan
-				size = 646396
-			}
-			create_pop = {
-				culture = catalan
+				culture = spanish
 				size = 431604
 			}
-		}
-	}
-	s:STATE_MURCIA = {
-		region_state:SPA = {
-			create_pop = {#Murcia
-				culture = spanish
-				size = 458000
+			create_pop = {
+				culture = catalan
+				size = 490392
 			}
 		}
 	}

@@ -1,42 +1,17 @@
 ﻿COUNTRIES = {
 	c:SOK ?= {
-		effect_starting_technology_tier_6_tech = yes
+		effect_starting_technology_west_africa_urban = yes
+		effect_west_african_jihadi_state = yes
+		effect_west_african_centre_of_learning = yes
+		effect_west_african_slave_trader = yes
 		
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_theocracy
-		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_child_labor_allowed
-		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_traditionalism
-		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_charitable_health_system
 		activate_law = law_type:law_no_womens_rights
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_slave_trade	
 		
-		add_technology_researched = enclosure
-		add_technology_researched = manufacturies
-		add_technology_researched = prospecting
 		add_technology_researched = distillation
-		
-		add_technology_researched = standing_army
-		add_technology_researched = mandatory_service
-		add_technology_researched = military_drill
-		
-		add_technology_researched = urban_planning
-		add_technology_researched = international_trade
-		add_technology_researched = international_relations
-		add_technology_researched = rationalism
-
-		ig:ig_devout = {
-			set_interest_group_name = ig_sunni_madrasahs
-			add_ruling_interest_group = yes
-		}
-
-		ig:ig_landowners = {
-			add_ruling_interest_group = yes
-		}
 	}
 }

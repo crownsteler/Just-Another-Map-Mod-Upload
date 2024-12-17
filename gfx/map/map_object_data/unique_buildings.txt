@@ -74,6 +74,27 @@ game_object_locator={
 	}
 }
 game_object_locator={
+	name="chhatrapati_shivaji_terminus_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=0
+			position={ 5758.364258 0.000000 1950.097900 }
+			rotation={ -0.000000 -0.691578 -0.000000 0.722302 }
+			scale={ 1.000000 1.000000 1.000000 }
+		}
+		{
+			id=1
+			position={ 5757.289551 0.000000 1951.637695 }
+			rotation={ -0.000000 -0.591956 -0.000000 0.805970 }
+			scale={ 1.000000 1.000000 1.000000 }
+		}
+	}
+}
+game_object_locator={
 	name="chichen_itza_locator"
 	clamp_to_water_level=no
 	render_under_water=no
@@ -179,6 +200,21 @@ game_object_locator={
 	}
 }
 game_object_locator={
+	name="halloween_castledracula_locator"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=no
+	layer="static"
+	instances={
+		{
+			id=1
+			position={ 4642.506348 0.000000 2678.339355 }
+			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
+			scale={ 1.000000 1.000000 1.000000 }
+		}
+	}
+}
+game_object_locator={
 	name="khaju_bridge_locator"
 	clamp_to_water_level=no
 	render_under_water=no
@@ -277,9 +313,9 @@ game_object_locator={
 	instances={
 		{
 			id=1
-			position={ 5869.939941 0.000000 2137.639893 }
+			position={ 5871.070312 0.000000 2155.649414 }
 			rotation={ -0.000000 -0.000000 -0.000000 0.000000 }
-			scale={ 1.500000 1.500000 1.500000 }
+			scale={ 0.624783 0.624783 0.624783 }
 		}
 	}
 }

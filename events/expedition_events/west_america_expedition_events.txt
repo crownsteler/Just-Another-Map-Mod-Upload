@@ -98,14 +98,6 @@ expedition_events.201 = { #Choose commander
 			save_scope_as = expedition_leader_3
 		}
 		set_variable = west_america_expedition_var
-		set_variable = {
-			name = expedition_progress
-			value = 1
-		}
-		set_variable = {
-			name = expedition_peril
-			value = 1
-		}
 		west_america_expedition_location = yes
 	}
 
@@ -165,7 +157,7 @@ expedition_events.201 = { #Choose commander
 	}
 }
 
-expedition_events.300 = { #Successful expedition - Buenaventura River
+expedition_events.300 = { #Sucessful expedition - Buenaventura River
 	type = country_event
     placement = ROOT
 
@@ -210,7 +202,7 @@ expedition_events.300 = { #Successful expedition - Buenaventura River
 	}
 }
 
-expedition_events.301 = { #Successful expedition - Oregon Trail
+expedition_events.301 = { #Sucessful expedition - Oregon Trail
 	type = country_event
     placement = ROOT
 
@@ -259,7 +251,7 @@ expedition_events.301 = { #Successful expedition - Oregon Trail
 	}
 }
 
-expedition_events.302 = { #Successful expedition - Great Salt Lake
+expedition_events.302 = { #Sucessful expedition - Great Salt Lake
 	type = country_event
     placement = ROOT
 
@@ -306,6 +298,48 @@ expedition_events.302 = { #Successful expedition - Great Salt Lake
 			name = modifier_great_salt_lake_mapped
 			months = normal_modifier_time
 		}
+	}
+}
+
+expedition_events.205 = { #Failed expedition
+	type = country_event
+    placement = ROOT
+
+    title = expedition_events.205.t
+    desc = expedition_events.205.d
+    flavor = expedition_events.205.f
+
+    event_image = {
+		video = "europenorthamerica_gold_prospectors"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+    duration = 3
+
+    immediate = {
+		random_scope_character = {
+			limit = { has_variable = expedition_leader_var }
+			save_scope_as = expedition_leader
+		}
+		remove_expedition_events_effect = yes
+    }
+
+	option = {
+		name = expedition_events.205.a
+		default_option = yes
+		scope:expedition_leader = {
+			add_trait = explorer
+			set_character_busy_and_immortal = no
+		}
+		add_modifier = {
+			name = modifier_failed_expedition
+			months = normal_modifier_time
+			is_decaying	= yes
+		}
+
 	}
 }
 
@@ -381,6 +415,10 @@ expedition_events.220 = { #crossing a river
 		NOT = { has_variable = river_crossing }
 	}
 
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
+
     immediate = {
     	set_variable = river_crossing
 		west_america_expedition_location = yes
@@ -450,6 +488,10 @@ expedition_events.221 = { #crossing a river success
 
     duration = 3
 
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
+
 	option = {
 		name = expedition_events.221.a
 		if = {
@@ -481,6 +523,10 @@ expedition_events.222 = { #crossing a river fail
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
     duration = 3
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
 
 	option = {
 		name = expedition_events.222.a
@@ -517,6 +563,10 @@ expedition_events.230 = { #Bear sighted
 	
 	trigger = {
 		NOT = { has_variable = bear_sighting }
+	}
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
 	}
 
     immediate = {
@@ -568,6 +618,10 @@ expedition_events.231 = { #Bear Hunt success
 
     duration = 3
 
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
+
 	option = {
 		name = expedition_events.231.a
 		expedition_minor_progress_effect = yes
@@ -591,6 +645,10 @@ expedition_events.232 = { #Bear Hunt Failure
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
     duration = 3
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
 
 	option = {
 		name = expedition_events.232.a
@@ -616,6 +674,10 @@ expedition_events.233 = { #Bear Attacks
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
     duration = 3
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
 
 	option = {
 		name = expedition_events.233.a
@@ -645,6 +707,10 @@ expedition_events.240 = { #Expedition Photographs
 	trigger = {
 		has_technology_researched = camera
 		NOT = { has_variable = wildlife_photography }
+	}
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
 	}
 
     immediate = {
@@ -689,6 +755,10 @@ expedition_events.250 = { #Mountain spotted
 	
 	trigger = {
 		NOT = { has_variable = mountain_spotted }
+	}
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
 	}
 
     immediate = {
@@ -744,6 +814,10 @@ expedition_events.251 = { #Mountain already discovered
 
     duration = 3
 	
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
+	
 	immediate = {
 		random_country = {
 			limit = { has_variable = mountain_claim_country_var }
@@ -776,6 +850,10 @@ expedition_events.252 = { #Mountain discovered
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
     duration = 3
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
 
     immediate = {
     	set_global_variable = mountain_discovered
@@ -813,6 +891,10 @@ expedition_events.253 = { #Failed mountain climb
 
     duration = 3
 
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
+
 	option = {
 		name = expedition_events.253.a
 		add_medium_peril_effect = yes
@@ -840,6 +922,10 @@ expedition_events.260 = { #Snow Falls
 	
 	trigger = {
 		NOT = { has_variable = snow_falls }
+	}
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
 	}
 
     immediate = {
@@ -887,6 +973,10 @@ expedition_events.261 = { #No problems
 
     duration = 3
 
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
+
 	option = { #
 		name = expedition_events.261.a
 		default_option = yes
@@ -903,7 +993,7 @@ expedition_events.262 = { #Problems
     flavor = expedition_events.262.f
 
     event_image = {
-		video = "europenorthamerica_gold_prospectors"
+		video = "unspecific_iceberg"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -911,6 +1001,10 @@ expedition_events.262 = { #Problems
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
     duration = 3
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
 
 	option = {
 		name = expedition_events.262.a
@@ -939,6 +1033,10 @@ expedition_events.263 = { #Snow clears
 
     duration = 3
 
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
+
 	option = {
 		name = expedition_events.263.a
 		default_option = yes
@@ -956,13 +1054,17 @@ expedition_events.270 = { #Gather plants
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					var:expedition_peril >= 7
+					je:je_west_america_expedition ?= {
+						"scripted_bar_progress(expedition_peril_progress_bar)" >= 7
+					}
 				}
 				desc = expedition_events.270.f2
 			}
 			triggered_desc = {
 				trigger = {
-					var:expedition_peril < 7
+					je:je_west_america_expedition ?= {
+						"scripted_bar_progress(expedition_peril_progress_bar)" < 7
+					}
 				}
 				desc = expedition_events.270.f
 			}
@@ -981,6 +1083,10 @@ expedition_events.270 = { #Gather plants
 	
 	trigger = {
 		NOT = { has_variable = plant_gathering }
+	}
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
 	}
 
     immediate = {
@@ -1016,13 +1122,17 @@ expedition_events.280 = { #Lost
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					var:expedition_peril >= 7
+					je:je_west_america_expedition ?= {
+						"scripted_bar_progress(expedition_peril_progress_bar)" >= 7
+					}
 				}
 				desc = expedition_events.280.f2
 			}
 			triggered_desc = {
 				trigger = {
-					var:expedition_peril < 7
+					je:je_west_america_expedition ?= {
+						"scripted_bar_progress(expedition_peril_progress_bar)" < 7
+					}
 				}
 				desc = expedition_events.280.f
 			}
@@ -1044,6 +1154,10 @@ expedition_events.280 = { #Lost
     		limit = { exists = var:expedition_lost }
 			NOT = { var:expedition_lost > 3 }
 		}
+	}
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
 	}
 
     immediate = {
@@ -1104,6 +1218,10 @@ expedition_events.281 = { #More Lost
 
     duration = 3
 
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
+
 	option = { #Wait for night
 		name = expedition_events.281.a
 		default_option = yes
@@ -1128,6 +1246,10 @@ expedition_events.282 = { #Progress
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
     duration = 3
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
 
 	option = { #
 		name = expedition_events.282.a
@@ -1171,7 +1293,13 @@ expedition_events.290 = { #Build a fort
 	
 	trigger = {
 		NOT = { has_variable = build_a_fort_var }
-		var:expedition_progress >= 3
+		je:je_west_america_expedition ?= {
+			"scripted_bar_progress(expedition_progress_bar)" >= 3
+		}
+	}
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
 	}
 	
 	immediate = {
@@ -1252,6 +1380,10 @@ expedition_events.291 = { #Pregnant Woman
 		NOT = { has_variable = expedition_baby_var }
 	}
 	
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
+	
 	immediate = {
 		west_america_expedition_location = yes
 		set_variable = expedition_baby_var
@@ -1304,7 +1436,13 @@ expedition_events.292 = { #your team disobbeys you (went to a liquor shop)
 	
 	trigger = {
 		NOT = { has_variable = team_disobeys_var }
-		var:expedition_progress <= 3
+		je:je_west_america_expedition ?= {
+			"scripted_bar_progress(expedition_progress_bar)" <= 3
+		}
+	}
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
 	}
 	
 	immediate = {
@@ -1375,6 +1513,10 @@ expedition_events.293 = { #give these men a quest
     		limit = { exists = var:expedition_quest_var }
 			NOT = { var:expedition_quest_var >= 3 }
 		}
+	}
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
 	}
 
 	immediate = {
@@ -1477,6 +1619,10 @@ expedition_events.294 = { #found a native settlement
 
     duration = 3
 
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
+
 	option = { #barter
 		name = expedition_events.294.a
 		default_option = yes
@@ -1526,6 +1672,10 @@ expedition_events.295 = { #hunting party
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
     duration = 3
+
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
 
 	option = { #go for a small animal
 		name = expedition_events.295.a
@@ -1589,6 +1739,10 @@ expedition_events.296 = { #listen to your guide
 
     duration = 3
 	
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
+	
 	trigger = {
 		NOT = { has_variable = guide_advice_var }
 	}
@@ -1651,8 +1805,14 @@ expedition_events.297 = { #cabin fever
 	
     duration = 3
     
+	cancellation_trigger = {
+		NOT = { has_variable = on_expedition }
+	}
+    
     trigger = {
-        var:expedition_peril >= 7
+        je:je_west_america_expedition ?= {
+			"scripted_bar_progress(expedition_peril_progress_bar)" >= 7
+		}
     }
 	
     immediate = {

@@ -12,18 +12,18 @@
 		set_relations = { country = c:OMA value = -20 } #Bandar Abbas Lease 	
 		set_relations = { country = c:ABU value = -20 } #Presence on the Persian Gulf coast	
 		set_relations = { country = c:MZK value = -20 } #Presence on the Persian Gulf coast	
-		set_relations = { country = c:RBS value = 20 } #Autonomous vassel which didn't cause trouble as long as Persia didn't try to exert influence
+		set_relations = { country = c:ARB value = 20 } #Autonomous vassel which didn't cause trouble as long as Persia didn't try to exert influence
 		set_relations = { country = c:KHS value = -40 } #The ruler of Kohistan didn't quite like the Persians
-		set_relations = { country = c:HRT value = -60 } #Persia really wanted to rule Herat, and Herat really didn't want that in return
+		set_relations = { country = c:HER value = -60 } #Persia really wanted to rule Herat, and Herat really didn't want that in return
 	}
-	c:HRT = {
-		set_relations = { country = c:QDR value = -50 } #Kamran Shah wanted to conquer Kandahar
+	c:HER = {
+		set_relations = { country = c:KAN value = -50 } #Kamran Shah wanted to conquer Kandahar
 	}
-	c:KBL = {
-		set_relations = { country = c:QDR value = 40 } #Half-brothers of Dorst Mohammed Khan ruled Kandahar
-		set_relations = { country = c:HRT value = -40 } #Herat is remnant of Durrani Empire
-		set_relations = { country = c:KDZ value = -20 } #Troubles following fall of Durrani Empire
-		set_relations = { country = c:MMN value = -20 } #Troubles following fall of Durrani Empire
+	c:KAB = {
+		set_relations = { country = c:KAN value = 40 } #Half-brothers of Dorst Mohammed Khan ruled Kandahar
+		set_relations = { country = c:HER value = -40 } #Herat is remnant of Durrani Empire
+		set_relations = { country = c:KUN value = -20 } #Troubles following fall of Durrani Empire
+		set_relations = { country = c:MAI value = -20 } #Troubles following fall of Durrani Empire
 	}
 	c:NEJ = {
 		set_relations = { country = c:EGY value = -60 } #Wahhabi War which would soon erupt again
@@ -96,6 +96,13 @@
 	}
 	c:DEN = {
 		set_relations = { country = c:BAL value = 30 } #Mads Johansen Lange
+	}
+	c:NET = {
+		set_relations = { country = c:USA value = 35 } #Historic friendship
+		set_relations = { country = c:RUS value = 25 } #Financers of the Tsars
+	}
+	c:USA = {
+		set_relations = { country = c:MOR value = 40 } #Historic friendship
 	}
 	c:MDA = {
 		set_relations = { country = c:ADA value = -50 } #Due tot Fulani Jihad

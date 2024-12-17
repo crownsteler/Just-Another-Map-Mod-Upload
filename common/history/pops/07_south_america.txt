@@ -17,7 +17,7 @@ POPS = {
 			}
 			create_pop = {
 				culture = amazonian
-				size = 11000
+				size = 12000
 			}
 			create_pop = {
 				pop_type = slaves
@@ -638,7 +638,7 @@ POPS = {
 				size = 19996
 			}
 			create_pop = {
-				culture = brazilian
+				culture = sulista
 				size = 16000
 			}
 			create_pop = {
@@ -679,6 +679,7 @@ POPS = {
 				size = 1500
 			}		
 		}
+
 	}
 	s:STATE_ALTO_PARAGUAY = {
 		region_state:GNI = {
@@ -692,6 +693,7 @@ POPS = {
 			}
 		}
 	}
+	# Population estaimates comes from a mix of estimates by Rengger and Longcharaps and the Paraguayan census of 1839-40.
 	s:STATE_BAJO_PARAGUAY = {
 		region_state:PRG = {
 			create_pop = { # Creoles + Mixed (~3/4)
@@ -773,10 +775,22 @@ POPS = {
 		}
 	}
 	s:STATE_RIO_NEGRO = {
+		region_state:PAT = {
+			create_pop = {
+				culture = patagonian
+				size = 12000
+			}
+			create_pop = {
+				culture = platinean
+				size = 400
+			}
+		}
+	}
+	s:STATE_CUYO = {
 		region_state:ARG = {
 			create_pop = {
 				culture = patagonian
-				size = 6880
+				size = 33880
 			}
 			create_pop = {
 				culture = platinean
@@ -795,11 +809,7 @@ POPS = {
 		region_state:PAT = {
 			create_pop = {
 				culture = patagonian
-				size = 17000
-			}
-			create_pop = {
-				culture = platinean
-				size = 13900
+				size = 3880
 			}
 		}
 	}
@@ -807,7 +817,7 @@ POPS = {
 		region_state:ARG = {
 			create_pop = {
 				culture = platinean
-				size = 159740
+				size = 129740
 			}
 			create_pop = {
 				culture = afro_caribeno
@@ -820,7 +830,13 @@ POPS = {
 			}
 			create_pop = {
 				culture = patagonian
-				size = 16000
+				size = 5000
+			}
+		}
+		region_state:PAT = {
+			create_pop = {
+				culture = patagonian
+				size = 11000
 			}
 		}
 	}
@@ -846,6 +862,12 @@ POPS = {
 				size = 8000
 			}		
 		}
+		region_state:PAT = {
+			create_pop = {
+				culture = patagonian
+				size = 400
+			}
+		}
 	}
 	s:STATE_CORRIENTES = {
 		region_state:ARG = {
@@ -854,16 +876,41 @@ POPS = {
 				size = 101462
 			}
 			create_pop = {
-				culture = brazilian
-				size = 16004
+				culture = sulista
+				size = 15409
 			}
 			create_pop = {
 				culture = guarani
-				size = 35996
+				size = 5684
 			}
 			create_pop = {
 				culture = afro_caribeno
 				size = 2100
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno
+				size = 630
+			}
+		}
+	}
+	s:STATE_MISIONES = {
+		region_state:ARG = {
+			create_pop = {
+				culture = platinean
+				size = 1462
+			}
+			create_pop = {
+				culture = sulista
+				size = 604
+			}
+			create_pop = {
+				culture = guarani
+				size = 32996
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 100
 			}
 			create_pop = {
 				pop_type = slaves
@@ -890,6 +937,16 @@ POPS = {
 			create_pop = {
 				culture = quechua
 				size = 2600
+			}
+		}
+		region_state:PAT = {
+			create_pop = {
+				culture = patagonian
+				size = 8000
+			}
+			create_pop = {
+				culture = platinean
+				size = 240
 			}
 		}
 	}
@@ -923,11 +980,29 @@ POPS = {
 		region_state:CHL = {
 			create_pop = {
 				culture = south_andean
-				size = 655608
+				size = 633677
 			}
 			create_pop = {
 				culture = afro_caribeno	# Afro Chileans
-				size = 1200
+				size = 1600
+			}
+		}
+		region_state:PAT = {
+			create_pop = {
+				culture = patagonian
+				size = 7000
+			}
+		}
+	}
+	s:STATE_ATACAMA = {
+		region_state:CHL = {
+			create_pop = {
+				culture = south_andean
+				size = 146886
+			}
+			create_pop = {
+				culture = afro_caribeno	# Afro Chileans
+				size = 300
 			}
 		}
 	}
@@ -935,25 +1010,34 @@ POPS = {
 		region_state:CHL = {
 			create_pop = {
 				culture = south_andean
-				size = 204892
+				size = 185608
 			}
 			create_pop = {
 				culture = patagonian
-				size = 48000
+				size = 4000
 			}
-		}
-	}
-	s:STATE_ARAUCANIA = {
-		region_state:CHL = {
+			##Chiloé
 			create_pop = {
 				culture = south_andean
-				size = 52004
+				size = 42285
 			}
 			create_pop = {
 				culture = patagonian
 				size = 3200
 			}
 		}
+		region_state:PAT = {
+			create_pop = {
+				culture = south_andean
+				size = 892
+			}
+			create_pop = {
+				culture = patagonian
+				size = 44000
+			}
+		}
+	}
+	s:STATE_ARAUCANIA = {
 		region_state:THL = {
 			create_pop = {
 				culture = patagonian
@@ -966,6 +1050,12 @@ POPS = {
 				size = 12000
 			}
 		}
+		region_state:PAT = {
+			create_pop = {
+				culture = patagonian
+				size = 3200
+			}
+		}
 	}
 	s:STATE_SOUTH_ATLANTIC_ISLANDS = {
 		region_state:GBR = {
@@ -976,12 +1066,12 @@ POPS = {
 		}
 	}
 	s:STATE_ACRE={
-		region_state:AMZ = {
+		region_state:AMZ = { # sources indicate existence of small numbers of both peruvians and brazilians
 			create_pop = {
 				culture = amazonian
-				size = 15750
+				size = 16100
 			}
-			create_pop = {			# sources indicate existence of small numbers of both peruvians and brazilians
+			create_pop = {			
 				culture = south_andean
 				size = 160
 			}

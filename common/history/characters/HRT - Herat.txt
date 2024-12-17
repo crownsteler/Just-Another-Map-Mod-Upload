@@ -1,18 +1,1 @@
-﻿CHARACTERS = {
-	c:HRT = {
-		create_character = {
-			first_name = "Kamran"
-			last_name = "Durrani"
-			historical = yes
-			ruler = yes
-			age = 37
-			ideology = ideology_jingoist_leader
-			interest_group = ig_landowners
-			traits = {
-				hedonist
-				alcoholic
-				basic_political_operator
-				basic_defensive_strategist
-			}
-		}	
-}
+﻿

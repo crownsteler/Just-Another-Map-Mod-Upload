@@ -992,7 +992,7 @@ SMN = {
 #					#
 #####################
 
-HZJ = { # Anazzah
+HZJ = { # Hazarajat
 	pattern = "pattern_solid.tga"
 	color1 = "blue_light"
 	
@@ -1147,39 +1147,6 @@ HDJ = { # Mecca Sharifate
 }
 
 
-KAT = { # Kathiri
-	pattern = "pattern_solid.tga"
-	color1 = "yellow"
-	
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "green"
-		color2 = "yellow"
-		instance = { scale = { 1.00 1.00 } position = { 0.5 0.5 } }			
-	}
-	
-	colored_emblem = {
-		texture = "ce_rhombus.dds"
-		color1 = "red"
-		instance = { scale = { 1.15 1.00 } position = { 0.0 0.5 } }			
-	}	
-	colored_emblem = {
-		texture = "ce_star_05.dds"
-		color1 = "white"
-		instance = { scale = { 0.18 0.18 } position = { 0.30 0.5 } }			
-	}	
-	colored_emblem = {
-		texture = "ce_star_05.dds"
-		color1 = "white"
-		instance = { scale = { 0.18 0.18 } position = { 0.15 0.33 } }			
-	}	
-	colored_emblem = {
-		texture = "ce_star_05.dds"
-		color1 = "white"
-		instance = { scale = { 0.18 0.18 } position = { 0.15 0.67 } }			
-	}	
-}
-
 KWT = { # Kuwait
 	pattern = "pattern_solid.tga"
 	color1 = "red"
@@ -1188,24 +1155,6 @@ KWT = { # Kuwait
 		texture = "ce_bicolor_left_third_indented.dds"
 		color1 = "white"
 		instance = { scale = { 1.25 1.00 } position = { 0.25 0.5 } }			
-	}	
-}
-
-MAH = { # Mahra
-	pattern = "pattern_solid.tga"
-	color1 = "green"
-	
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "white"
-		color2 = "red"
-		instance = { scale = { 1.00 1.00 } position = { 0.5 0.5 } }			
-	}
-	
-	colored_emblem = {
-		texture = "ce_crescent_star_turkey.dds"
-		color1 = "black"
-		instance = { scale = { 0.20 0.20 } position = { 0.5 0.5 } }			
 	}	
 }
 
@@ -1234,17 +1183,17 @@ NJR = { # Najran
 	color1 = "green"
 }
 
-RBS = { #Arabistan / Muhammara, based on some random design found of /r/vexillology
-	pattern = "pattern_border_of_4.dds"
-	color1 = "white"
-	color2 = "red"
-	
-	colored_emblem = {
-		texture = "ce_crescent_star_08.dds"
-		color1 = "black"
-		instance = { scale = { 0.45 0.45 } position = { 0.275 0.325 } }			
-	}	
-}
+#RBS = { #Arabistan / Muhammara, based on some random design found of /r/vexillology
+#	pattern = "pattern_border_of_4.dds"
+#	color1 = "white"
+#	color2 = "red"
+#	
+#	colored_emblem = {
+#		texture = "ce_crescent_star_08.dds"
+#		color1 = "black"
+#		instance = { scale = { 0.45 0.45 } position = { 0.275 0.325 } }			
+#	}	
+#}
 
 RUB = { #Rub al-Khali
 	pattern = "pattern_solid.tga"
@@ -1254,6 +1203,61 @@ RUB = { #Rub al-Khali
 		texture = "ce_crescent.dds"
 		color1 = "anazzah_red"
 		instance = { scale = { 0.5 0.5 } position = { 0.25 0.3 } }			
+	}	
+}
+
+ARL = { #Ardalan, fictional inspired by google reddit result
+	pattern = "pattern_per_bend.dds"
+	color1 = "green_light"
+	color2 = "red_faint"
+	
+	#colored_emblem = {
+	#	texture = "ce_frame_circle_roundel_triangles.dds"
+	#	color1 = "red_dark"	
+	#	color2 = "golden"	
+	#	color3 = "green_dark"	
+	#}
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"	
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
+	}	
+	
+	colored_emblem = {
+		texture = "ce_lion_persia.dds"
+		color1 = "golden"	
+		color2 = "golden"	
+		color3 = "golden"	
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 } }
+	}	
+}
+
+BYD = { #fictional inspired by google reddit result
+	pattern = "pattern_two_stripes_fimbriated.dds"
+	color1 = "red"
+	color2 = "golden"
+	color3 = "green_dark"
+	
+	#colored_emblem = {
+	#	texture = "ce_frame_circle_roundel_triangles.dds"
+	#	color1 = "red_dark"	
+	#	color2 = "gold"	
+	#	color3 = "green_dark"	
+	#}
+	
+	colored_emblem = {
+		texture = "ce_sun_radiant.dds"
+		color1 = "golden"	
+		color2 = "green_dark"	
+		color3 = "green_dark"	
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
+	}	
+	
+	colored_emblem = {
+		texture = "ce_crescent_star_turkey.dds"
+		color1 = "white"	
+		instance = { scale = { 0.25 0.25 } position = { 0.5 0.5 } }
 	}	
 }
 
@@ -1347,20 +1351,7 @@ HRB = { #Hiraab
 	}
 }
 
-HRT = { # Herat
-	
-	pattern = "pattern_solid.tga"
-	color1 = "herat_green"
-	
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "white"
-		color2 = "herat_green"
-		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }			
-	}	
-}
-
-KBL = { # Kabul
+KAB = { # Kabul
 	pattern = "pattern_solid.tga"
 	color1 = "black"
 	
@@ -1381,7 +1372,7 @@ KBL = { # Kabul
 	}
 }
 
-ARO = { #Shilluk
+ARO = { #Aro
 	pattern = "pattern_solid.tga"
 	color1 = "black"
 	
@@ -1526,47 +1517,41 @@ BHW = { #Bahawalpur
 	}		
 }
 
-GHW= { #Surguja 
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-	
-	colored_emblem = {
-		texture = "ce_bicolor_bottom.dds"
-		color1 = "green"	
-	}	
-}
+#GHW= {
+#	pattern = "pattern_solid.tga"
+#	color1 = "white"
+#	
+#	colored_emblem = {
+#		texture = "ce_bicolor_bottom.dds"
+#		color1 = "green"	
+#	}	
+#}
 
-JHS = { #Jhansi 
-	pattern = "pattern_per_bend.dds"
-	color1 = "white"
-	color2 = "orange"
-}
+#KHP = { #Kolhapur
+#	pattern = "pattern_solid.tga"
+#	color1 = "orange"
+#	
+#	colored_emblem = {
+#		texture = "ce_rhombus.dds"
+#		color1 = "white"
+#		instance = { scale = { 0.8 1.0 } position = { 1.0 0.5 } }	
+#	}	
+#}
 
-KHP = { #Kolhapur
-	pattern = "pattern_solid.tga"
-	color1 = "orange"
-	
-	colored_emblem = {
-		texture = "ce_rhombus.dds"
-		color1 = "white"
-		instance = { scale = { 0.8 1.0 } position = { 1.0 0.5 } }	
-	}	
-}
+#KOT = { #Kota
+#	pattern = "pattern_solid.tga"
+#	color1 = "orange"
+#	
+#	colored_emblem = {
+#		texture = "ce_gandaberunda.dds"
+#		color1 = "brown"
+#		color2 = "white"
+#		color3 = "white"
+#		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }	
+#	}	
+#}
 
-KTA = { #Kota
-	pattern = "pattern_solid.tga"
-	color1 = "orange"
-	
-	colored_emblem = {
-		texture = "ce_gandaberunda.dds"
-		color1 = "brown"
-		color2 = "white"
-		color3 = "white"
-		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }	
-	}	
-}
-
-KSM = { #Jammu
+KAM = { #Jammu
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"
 	
@@ -1583,16 +1568,16 @@ KSM = { #Jammu
 	}	
 }
 
-KSM_republic = { #Kashmir Republic
-	pattern = "pattern_solid.tga"
-	color1 = "red"
-	
-	colored_emblem = {
-		texture = "ce_kashmir_coat.dds"
-		color1 = "white"
-		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }	
-	}	
-}
+#KAM_republic = { #Kashmir Republic
+#	pattern = "pattern_solid.tga"
+#	color1 = "red"
+#	
+#	colored_emblem = {
+#		texture = "ce_kashmir_coat.dds"
+#		color1 = "white"
+#		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }	
+#	}	
+#}
 
 LAS = { #Las Bela
 	pattern = "pattern_horizontal_split_01.tga"
@@ -1618,74 +1603,30 @@ LAS = { #Las Bela
 	}
 }
 
-LDH = { #Based on the Ladakh nationalist flag for lack of anything better
-	pattern = "pattern_solid.tga"
-	color1 = "light_blue"
-	
-	colored_emblem = {
-		texture = "ce_border_decor_india.dds"
-		color1 = "light_blue"
-		color2 = "saffron"
-		color3 = "blue"
-		instance = { scale = { -1.0 1.0 } position = { 0.5 0.5 } }	
-	}	
-	
-	colored_emblem = {
-		texture = "ce_dharmachakra.dds"
-		color1 = "yellow"
-		instance = { scale = { 0.5 0.5 } position = { 0.5 0.375 } }	
-	}	
-	
-	colored_emblem = {
-		texture = "ce_crescent_nepal.dds"
-		color1 = "yellow"
-		instance = { scale = { 0.75 0.75 } position = { 0.5 0.50 } }	
-	}	
-}
-
-
-MPU = { #Using vanilla assets isn't brilliant
-	pattern = "pattern_solid.tga"
-	color1 = "roman_red"
-	
-	colored_emblem = {
-		texture = "ce_eternal_knot.dds"
-		color1 = "white"
-		instance = { scale = { 0.75 0.75 } position = { 0.50 0.50 } }
-	}	
-}
-
-
-NGL = { #Based on the Unofficial flag of Nagaland on Wikipedia
-	pattern = "pattern_solid.tga"
-	color1 = "light_blue"
-	
-	colored_emblem = {
-		texture = "ce_star_06.dds"
-		color1 = "white"
-		instance = { scale = { 0.33 0.33 } position = { 0.200 0.225 } }
-	}
-	colored_emblem = {
-		texture = "ce_bend_sinister.dds"
-		color1 = "red"
-		instance = { scale = { 1.00 1.00 } position = { 0.40 0.50 } }
-	}
-	colored_emblem = {
-		texture = "ce_bend_sinister.dds"
-		color1 = "yellow"
-		instance = { scale = { 1.15 1.15 } position = { 0.55 0.55 } }
-	}	
-	colored_emblem = {
-		texture = "ce_bend_sinister.dds"
-		color1 = "green"
-		instance = { scale = { 1.15 1.15 } position = { 0.675 0.6 } }
-	}
-	colored_emblem = {
-		texture = "ce_bend_sinister.dds"
-		color1 = "light_blue"
-		instance = { scale = { 1.15 1.15 } position = { 0.70 0.75 } }
-	}
-}
+#LAD = { #Based on the Ladakh nationalist flag for lack of anything better
+#	pattern = "pattern_solid.tga"
+#	color1 = "light_blue"
+#	
+#	colored_emblem = {
+#		texture = "ce_border_decor_india.dds"
+#		color1 = "light_blue"
+#		color2 = "saffron"
+#		color3 = "blue"
+#		instance = { scale = { -1.0 1.0 } position = { 0.5 0.5 } }	
+#	}	
+#	
+#	colored_emblem = {
+#		texture = "ce_dharmachakra.dds"
+#		color1 = "yellow"
+#		instance = { scale = { 0.5 0.5 } position = { 0.5 0.375 } }	
+#	}	
+#	
+#	colored_emblem = {
+#		texture = "ce_crescent_nepal.dds"
+#		color1 = "yellow"
+#		instance = { scale = { 0.75 0.75 } position = { 0.5 0.50 } }	
+#	}	
+#}
 
 PTA = { #Patiala
 	pattern = "pattern_solid.tga"
@@ -1743,21 +1684,6 @@ SIN = { #Sindh - based on the flag the Talpur rulers of Khairpur
 		texture = "ce_crescent_star_05.dds"
 		color1 = "red"
 		instance = { scale = { 0.35 0.35 } position = { 0.5 0.5 } }
-	}	
-}
-
-SGJ = { #Surguja 
-	pattern = "pattern_solid.tga"
-	color1 = "light_green"
-	
-	colored_emblem = {
-		texture = "ce_bicolor_bottom.dds"
-		color1 = "yellow"	
-	}	
-	colored_emblem = {
-		texture = "ce_rhombus.dds"
-		color1 = "white"	
-		instance = { scale = { 0.5 1.0 } position = { 1.0 0.5 } }
 	}	
 }
 
@@ -2012,50 +1938,6 @@ YKA = { #fictional
 #					#
 #####################
 
-ASK = {
-	pattern = "pattern_solid.tga"
-	color1 = "blue"
-	
-
-	colored_emblem = {
-		texture = "ce_star_05.dds"
-		color1 = "yellow"
-		instance = { scale = { 0.18 0.18 } position = { 0.78 0.22 } }				
-	}
-	colored_emblem = {
-		texture = "ce_star_05.dds"
-		color1 = "yellow"
-		instance = { scale = { 0.10 0.10 } position = { 0.52 0.77 } }	
-		instance = { scale = { 0.10 0.10 } position = { 0.58 0.67 } }	
-		instance = { scale = { 0.10 0.10 } position = { 0.42 0.72 } }		
-		instance = { scale = { 0.10 0.10 } position = { 0.43 0.59 } }		
-		instance = { scale = { 0.10 0.10 } position = { 0.37 0.49 } }		
-		instance = { scale = { 0.10 0.10 } position = { 0.30 0.41 } }		
-		instance = { scale = { 0.10 0.10 } position = { 0.20 0.36 } }		
-	}
-
-}
-
-ASK_sub_RUS  = {
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-	
-	colored_emblem = {
-		texture = "ce_solid.dds"
-		color1 = "red"	
-		instance = { scale = { 1.0 0.25 } position = { 0.5 0.875 } }			
-	}
-	colored_emblem = {
-		texture = "ce_solid.dds"
-		color1 = "blue"	
-		instance = { scale = { 1.0 0.25 } position = { 0.5 0.625 } }			
-	}
-    sub = {
-        parent = "sub_RUS_coa" 
-        instance = { scale = { 0.5 0.5 } offset = { 0.025 0.025 } }
-    }
-}
-
 PEI = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -2190,7 +2072,7 @@ sub_PEI_FRA = {
 #					#
 #####################
 
-CHH = { #Based on the flag of Chin State
+KKI_republic = { #Based on the flag of Chin State
 	pattern = "pattern_solid.tga"
 	color1 = "revolutionary_blue"
 	

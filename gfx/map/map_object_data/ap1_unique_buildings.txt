@@ -28,7 +28,6 @@ game_object_locator={
 		}
 	}
 }
-
 game_object_locator={
 	name="templeofposeidon_locator"
 	clamp_to_water_level=no
@@ -44,7 +43,6 @@ game_object_locator={
 		}
 	}
 }
-
 game_object_locator={
 	name="wat_arun_locator"
 	clamp_to_water_level=no

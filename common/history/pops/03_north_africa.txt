@@ -363,7 +363,12 @@
 		region_state:NBA = {
 			create_pop = {
 				culture = nuba
-				size = 75608
+				size = 42806
+			}
+			create_pop = {
+				culture = nuba
+				religion = sunni
+				size = 32608
 			}
 			create_pop = {
 				pop_type = slaves
@@ -374,7 +379,12 @@
 		region_state:TAQ = {
 			create_pop = {
 				culture = nuba
-				size = 105608
+				size = 45608
+			}
+			create_pop = {
+				culture = nuba
+				religion = sunni
+				size = 60608
 			}
 			create_pop = {
 				pop_type = slaves
@@ -1267,7 +1277,12 @@
 			}
 			create_pop = {
 				culture = mande
-				size = 65440
+				size = 53440
+			}
+			create_pop = {
+				culture = mande
+				religion = animist
+				size = 12000
 			}
 			create_pop = {
 				culture = fulbe
@@ -1282,7 +1297,12 @@
 		region_state:MDK = {
 			create_pop = {
 				culture = mande
-				size = 98430
+				size = 49430
+			}
+			create_pop = {
+				culture = mande
+				religion = animist
+				size = 49000
 			}
 		}
 		region_state:KDG = {
@@ -1352,7 +1372,11 @@
 		region_state:MDK = {
 			create_pop = {
 				culture = mande
-				size = 99430
+				size = 61430
+			}
+			create_pop = {
+				culture = mande
+				size = 38000
 			}
 			create_pop = {
 				culture = mande

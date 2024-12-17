@@ -56,7 +56,7 @@
 		Marius
 		Matthijs
 		Maurits
-		Maximiliaam
+		Maximiliaan
 		Merkus
 		Moritz
 		Nikolaas
@@ -986,8 +986,7 @@ kirgiz={
 	common_last_names={
 		Boryak
 		Ibraimov
-		Kutebar
-		
+		Kutebar	
 		Begum
 		Soltonoy
 	}
@@ -996,6 +995,7 @@ kirgiz={
 	}
 	graphics = east_asian
 }
+
 
 muskogean={ # Creek and Seminole
 	color= hsv{ 0.27 0.2 0.67 }
@@ -1186,8 +1186,7 @@ nez_perce={ #renamed to Penutian
 		#vanilla Nez Perce
 		Claudia
 		Heyoon_Yoyikt
-		Khapkhaponimi
-		
+		Khapkhaponimi		
 	}
 	noble_last_names = {
 	
@@ -1208,8 +1207,7 @@ nez_perce={ #renamed to Penutian
 		Alpowai
 		Lamatta
 		Pikunin
-		Wallowa
-		
+		Wallowa	
 	}
 	common_last_names={
 		

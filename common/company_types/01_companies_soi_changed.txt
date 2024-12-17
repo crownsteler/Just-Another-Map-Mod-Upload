@@ -1,0 +1,287 @@
+﻿# Də Afḡān Nasājī Šerkat
+company_da_afghan_nassaji_sherkat = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/da_afghan_nassaji_sherkat.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+
+	building_types = {
+		building_textile_mills
+	}
+
+	potential = {
+		has_dlc_feature = ep1_content
+		has_interest_marker_in_region = region_afghanistan
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_BALKH
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_BALKH
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_textile_mills
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		market_land_trade_capacity_add = 5
+		building_cotton_plantation_throughput_add = 0.1
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# Šerkat-e Etteḥādīya-ye Welāyat-e Šemālī
+company_sherkat_shemali = {
+	icon = "gfx/interface/icons/company_icons/basic_colonial_plantations_2.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+
+	building_types = {
+		building_cotton_plantation
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_afghanistan
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_BALKH
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_BALKH
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_cotton_plantation
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_opium_plantation_throughput_add = 0.2
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# MM. Nicolas Portalis et Cie.
+company_nicolas_portalis = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/historical_mm_nicolas_portalis_et_cie.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	building_types = {
+		building_silk_plantation
+	}
+
+	potential = {
+		has_dlc_feature = ep1_content
+		has_interest_marker_in_region = region_levant
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_LEBANON
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_LEBANON
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_silk_plantation
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		country_prestige_mult = 0.1
+		state_radicals_from_discrimination_mult = -0.05
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# Moscow Irrigation Company
+company_moscow_irrigation_company = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/historical_moscow_irrigation_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	building_types = {
+		building_cotton_plantation
+		building_rice_farm
+	}
+
+	potential = {
+		has_dlc_feature = ep1_content
+		has_interest_marker_in_region = region_afghanistan
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_FERGANA
+			}
+			any_scope_state = {
+				state_region = s:STATE_MOSCOW
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_FERGANA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_cotton_plantation
+				level >= 8
+			}
+		}
+		OR = {
+			any_scope_state = {
+				state_region = s:STATE_MOSCOW
+				any_scope_building = {
+					is_building_type = building_university
+					level >= 2
+				}
+			}
+			any_scope_ally = {
+				any_scope_state = {
+					state_region = s:STATE_MOSCOW
+				}
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_cotton_plantation_throughput_add = 0.2
+		interest_group_ig_industrialists_pop_attraction_mult = 0.05
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# Arthur Guinness Son & Co. Ltd
+company_guinness = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/arthur_guinness_son.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_wheat.dds"
+
+	flavored_company = yes
+
+	building_types = {
+		building_food_industry
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_ireland
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_LEINSTER
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_LEINSTER
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_food_industry
+				level >= 6
+			}
+		}
+		has_technology_researched = corporate_charters
+	}
+
+	prosperity_modifier = {
+		state_radicals_from_sol_change_mult = -0.1
+		state_radicals_from_discrimination_mult = -0.1
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# Turkish Petroleum Company
+company_turkish_petroleum = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/turkish_petroleum_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
+
+	flavored_company = yes
+
+	building_types = {
+		building_oil_rig
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_iraq
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_BAGHDAD
+					state_region = s:STATE_BASRA
+					state_region = s:STATE_ERBIL
+					#state_region = s:STATE_MOSUL
+				}
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_BAGHDAD
+				state_region = s:STATE_BASRA
+				state_region = s:STATE_ERBIL
+				#state_region = s:STATE_MOSUL
+			}
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_oil_rig
+				level >= 7
+			}
+		}
+		has_technology_researched = pumpjacks
+	}
+
+	prosperity_modifier = {
+		market_land_trade_capacity_add = 5
+		building_railway_throughput_add = 0.05
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}

@@ -5,14 +5,14 @@ xF0B481;x4070C0;sea;-1;2254;2102;2249;2097;;None
 x20E000;x37518E;sea;-1;4065;3084;4025;3041;;None
 x137263;x20E080;sea;-1;3995;2890;3995;2902;;None
 x4040DF;xA67CC8;sea;-1;-1;-1;4468;2970;;None
-xE041E0;x33CFEC;sea;-1;4583;3088;4591;3092;;None
-xE04161;xE041E0;sea;-1;4560;3082;4583;3088;;None
+xE041E0;x33CFEC;sea;-1;4583;3088;4591;3092;;Finnish Archipelago - Finnish mainland
+xE04161;xE041E0;sea;-1;4560;3082;4583;3088;;Aland - Finnish Archipelago
 x6040E0;x80A021;sea;-1;4621;3034;4633;3034;;None
 xB78E54;x6060C0;sea;-1;4037;2741;4040;2777;;None
 x60F080;x7D3FD7;sea;-1;4131;2449;4153;2463;;None
 x405060;x4B79CA;sea;-1;4562;2428;4550;2460;;None
 xA060DF;x168DF4;sea;-1;7652;2777;7670;2790;;None
-x0170A0;xaaa21c;sea;-1;5367;2138;5363;2143;;Laristan
+x0170A0;xaaa21c;sea;-1;5367;2138;5363;2143;;Hormuz Bander Langeh-Qeshm Island
 x958E99;x9F6BAC;sea;-1;6335;1758;6341;1758;;Tenasserim
 xD77765;xD31590;sea;-1;5704;2044;5697;2048;;Kathiawar-Kutch
 xF64FA2;x5B6745;sea;-1;5681;2067;5678;2072;;Kutch-Sindh
@@ -76,7 +76,7 @@ xB0B469;xC16C09;sea;-1;4317;2927;4320;2926;;Sealand-Funen/Odense
 x951AF2;x770871;sea;-1;4320;2974;4322;2979;;Aalborg-North Jutlandic Island
 xC16C09;x78B203;sea;-1;4324;2919;4313;2918;;None
 x99B424;x8D6FA8;sea;-1;5915;1748;5921;1734;;None
-xE04161;x45B6EF;sea;-1;4547;3078;4524;3074;;None
+xE04161;x45B6EF;sea;-1;4547;3078;4524;3074;;Aland - Sweden
 x3e101e;x7a3b01;sea;-1;-1;-1;1916;3512;;None
 x59b5a5;xa5e93e;sea;-1;-1;-1;-1;-1;;None
 x34b2eb;xf3698c;sea;-1;602;3001;580;3015;;None
@@ -138,7 +138,7 @@ x484a09;x70c040;sea;-1;2634;2641;2638;2654;;New Brunswick
 x46c8fa;x4fdcfa;canal_suez;-1;4838;2251;4838;2209;;Sinai Canal
 x1fc9e5;x2bdefc;canal_panama;-1;2270;1725;2281;1712;;Panama Canal
 x706060;x708c99;sea;-1;4921;2618;4938;2618;;Crimea/Kuban
-xA090C0;xBC2AFE;sea;-1;7291;2515;7296;2505;;Hokkaido/Tohoku
+xF17C01;xBC2AFE;sea;-1;7291;2515;7296;2505;;Hokkaido/Tohoku
 x70C55B;x7F67EF;sea;-1;7402;2579;7411;2579;;Hokkaido-Kunashiri
 x7F67EF;x1E5261;sea;-1;7430;2595;7450;2601;;Kunashiri-Etorofu
 x1E5261;x601140;sea;-1;7489;2626;7506;2632;;Etorofu-Urup
@@ -356,6 +356,7 @@ xE020B0;xE60324;sea;-1;4991;1370;4981;1371;;Zanzibar-Bagamoyo
 x6021AF;x93DC46;sea;-1;4993;1327;5001;1329;;Mafia Island connection
 xF0F061;xBB27F6;sea;-1;6949;2088;6928;2080;;Miyako Islands-Yaeyama Islands
 x1000F0;x733DDF;sea;-1;8077;515;8067;516;;New Zealand North Island-South Island
+xEFB409;xC42462;sea;-1;2422;503;2419;498;Chile-Chiloé
 
 xC0426B;xD06E0F;sea;-1;7399;1831;7405;1842;;Marianas
 xD06E0F;x0FD013;sea;-1;7408;1853;7411;1860;;Marianas

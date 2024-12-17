@@ -12,7 +12,7 @@ ARL = {
 	
 	cultures = { kurdish }
 	religion = sunni
-	capital = STATE_LURISTAN
+	capital = STATE_PERSIAN_KURDISTAN
 }
 
 ASR = {
@@ -253,18 +253,6 @@ OTB = {
 	cultures = { bedouin }
 	religion = sunni
 	capital = STATE_HEDJAZ
-}
-
-RBS = {
-	color = { 201 112 61 }
-	
-	country_type = unrecognized
-	
-	tier = principality
-	
-	cultures = { mashriqi }
-	religion = sunni
-	capital = STATE_NEJD
 }
 
 RUB = {

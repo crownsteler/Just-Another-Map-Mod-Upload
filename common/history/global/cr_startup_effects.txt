@@ -25,25 +25,7 @@ GLOBAL = {
 		add_cultural_obsession = coffee
 		add_cultural_obsession = tobacco
 	}
-	
-	#### Fix in state_region files for next version, but this keeps savegame compatibility ###
-	s:STATE_SAMARA = {
-		add_state_trait = state_trait_volga_river 
-	}
-	
-	s:STATE_GALICH = {
-		add_state_trait = state_trait_volga_river 
-	}
-	
-	s:STATE_ORSHA = {
-		add_state_trait = state_trait_dnieper_river 
-	}
-	
-	s:STATE_SMOLENSK = {
-		add_state_trait = state_trait_dnieper_river 
-	}
-	
-	
+		
 	
 	s:STATE_TAHITI.region_state:GBR = {
 		add_modifier = {

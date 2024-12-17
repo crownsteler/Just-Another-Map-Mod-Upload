@@ -27,10 +27,6 @@ cr_farflung_corner_of_empire = {
 }
 
 #North America
-cr_vestige_of_empire = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	state_colony_growth_speed_mult = -1
-}
 
 cr_the_cold_waste = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds

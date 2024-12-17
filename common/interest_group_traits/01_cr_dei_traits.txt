@@ -4,7 +4,7 @@ ig_trait_friendly_faces = {
 	min_approval = loyal
 	
 	modifier = {
-		state_radicals_from_discrimination_mult = -0.1
+		state_bureaucracy_population_base_cost_factor_mult = -0.1
 	}
 }
 
@@ -22,7 +22,7 @@ ig_trait_helpful_natives = {
 	max_approval = unhappy
 	
 	modifier = {
-		state_radicals_from_sol_change_mult = 0.15
+		state_radicals_from_political_movements_mult = 0.10
 	}
 }
 
@@ -81,7 +81,7 @@ ig_trait_power_of_islam = {
 	max_approval = unhappy
 	
 	modifier = {
-		state_radicals_from_discrimination_mult = 0.2
+		state_radicals_from_political_movements_mult = 0.10
 	}
 }
 
@@ -122,7 +122,7 @@ ig_trait_widely_traveled = {
 	min_approval = loyal
 	
 	modifier = {
-			country_tech_spread_mult = 0.1
+		country_tech_spread_mult = 0.1
 	}
 }
 

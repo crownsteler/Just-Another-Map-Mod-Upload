@@ -1,0 +1,49 @@
+﻿# Werkspoor
+company_solvay = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/belgium_solvay_modern.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_explosives_factory
+		building_synthetics_plants
+		building_chemical_plants
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_low_countries
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			has_technology_researched = nitroglycerin
+		}
+	}	
+	
+	possible = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_WALLONIA
+				state_region = s:STATE_FLANDERS			
+			}
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_explosives_factory
+					is_building_type = building_chemical_plants				
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_paper_mills_throughput_add = 0.1
+		building_glassworks_throughput_add = 0.1
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}

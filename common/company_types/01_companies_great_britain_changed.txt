@@ -27,7 +27,7 @@ company_j_p_coats = {
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_textile_mills
-				level >= 10
+				level >= 3
 			}
 		}
 		has_technology_researched = cotton_gin

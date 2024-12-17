@@ -26,7 +26,6 @@
 
 	possible = {
 		is_subject = no
-		is_at_war = no
 	}
 
 	complete = {

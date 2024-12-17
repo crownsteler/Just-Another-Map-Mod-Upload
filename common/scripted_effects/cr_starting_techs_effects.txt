@@ -1,0 +1,84 @@
+﻿effect_starting_technology_west_africa_primitive = {
+		add_technology_researched = prospecting
+		add_technology_researched = mandatory_service
+}
+
+effect_starting_technology_west_africa_rural = {
+	add_technology_researched = enclosure
+	add_technology_researched = prospecting
+	
+	add_technology_researched = mandatory_service
+}
+
+effect_starting_technology_west_africa_transition = {
+	add_technology_researched = enclosure
+	add_technology_researched = prospecting
+	
+	add_technology_researched = urbanization
+	
+	add_technology_researched = standing_army
+	add_technology_researched = mandatory_service
+}
+
+effect_starting_technology_west_africa_urban = {
+		add_technology_researched = enclosure
+		add_technology_researched = manufacturies
+		add_technology_researched = prospecting
+		
+		add_technology_researched = urbanization
+		add_technology_researched = international_trade
+		add_technology_researched = tech_bureaucracy
+		
+		add_technology_researched = standing_army
+		add_technology_researched = mandatory_service
+}
+
+effect_starting_technology_west_africa_high_development = {
+		add_technology_researched = enclosure
+		add_technology_researched = shaft_mining
+		add_technology_researched = manufacturies
+		add_technology_researched = prospecting
+		
+		add_technology_researched = urbanization
+		add_technology_researched = tech_bureaucracy
+		add_technology_researched = centralization
+		add_technology_researched = central_archives
+		add_technology_researched = international_trade
+		add_technology_researched = currency_standards
+		add_technology_researched = urban_planning
+		add_technology_researched = modern_sewerage
+		add_technology_researched = pharmaceuticals
+		
+		add_technology_researched = standing_army
+		add_technology_researched = mandatory_service
+		add_technology_researched = military_drill
+	
+}
+
+effect_west_african_centre_of_learning = {
+	add_technology_researched = rationalism
+	activate_law = law_type:law_religious_schools
+}
+
+effect_west_african_jihadi_state = {
+	activate_law = law_type:law_state_religion
+	activate_law = law_type:law_theocracy
+	activate_law = law_type:law_oligarchy
+	activate_law = law_type:law_appointed_bureaucrats
+	
+	ig:ig_devout = {
+		add_ruling_interest_group = yes
+	}
+}
+
+effect_west_african_slavery = {
+	activate_law = law_type:law_debt_slavery
+}
+
+effect_west_african_slave_trader = {
+	activate_law = law_type:law_slave_trade
+}
+
+effects_slave_armies = {
+	
+}

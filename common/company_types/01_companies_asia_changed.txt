@@ -19,9 +19,11 @@ company_east_india_company = {
 		c:BIC ?= this
 		any_scope_state = {
 			OR = {
-				region = sr:region_north_india
-				region = sr:region_south_india
+				region = sr:region_madras
+				region = sr:region_bombay
 				region = sr:region_bengal
+				region = sr:region_central_india
+				region = sr:region_punjab
 			}
 			any_scope_building = {
 				OR = {
@@ -92,45 +94,6 @@ company_imperial_arsenal = {
 	}
 }
 
-# Ottoman Tobacco Company, later Tekel
-company_ottoman_tobacco_regie = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/ottoman_tobacco_regie.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
-	
-	flavored_company = yes
-	
-	building_types = {  
-		building_tobacco_plantation
-	}
-	
-	potential = {
-		country_has_primary_culture = cu:turkish
-	}
-	
-	possible = {
-		any_scope_state = {
-			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_tobacco_plantation
-				level >= 5
-			}
-			count >= 4
-		}
-		NOR = {
-			has_modifier = sick_man_of_europe
-			is_country_type = unrecognized
-		}
-	}
-	
-	prosperity_modifier = {
-		country_production_tech_spread_mult = 0.1
-	}	
-	
-	ai_weight = {
-		value = 3 # Higher base value for flavored companies
-	}
-}
-
 # Chemins de fer Orientaux
 company_orient_express = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/chemins_de_fer_orientaux.dds"
@@ -188,9 +151,11 @@ company_great_indian_railway = {
 	
 	potential = {
 		OR = {
-			has_interest_marker_in_region = region_south_india
-			has_interest_marker_in_region = region_north_india
+			has_interest_marker_in_region = region_madras
+			has_interest_marker_in_region = region_bombay
 			has_interest_marker_in_region = region_bengal
+			has_interest_marker_in_region = region_central_india
+			has_interest_marker_in_region = region_punjab
 		}
 	}
 	
@@ -198,9 +163,11 @@ company_great_indian_railway = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
 				OR = {
-					region = sr:region_south_india
-					region = sr:region_north_india
+					region = sr:region_madras
+					region = sr:region_bombay
 					region = sr:region_bengal
+					region = sr:region_central_india
+					region = sr:region_punjab
 				}
 			}
 		}
@@ -209,11 +176,13 @@ company_great_indian_railway = {
 	possible = {
 		any_scope_state = {
 			OR = {
-				region = sr:region_south_india
-				region = sr:region_north_india
+				region = sr:region_madras
+				region = sr:region_bombay
 				region = sr:region_bengal
+				region = sr:region_central_india
+				region = sr:region_punjab
 			}
-			is_incorporated = yes
+			#is_incorporated = yes
 			has_building = building_railway
 			count >= 6
 		}

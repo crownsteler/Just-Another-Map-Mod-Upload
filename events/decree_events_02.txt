@@ -769,7 +769,7 @@ type = country_event
 			months = short_modifier_time
 		}
 		scope:decree_enlistment = {
-			add_radicals = {
+			add_radicals_in_state = {
 				pop_type = soldiers
 				value = large_radicals
 			}
@@ -784,7 +784,7 @@ type = country_event
 			}
 			add_loyalists_in_state = {
 				pop_type = soldiers
-				value = large_radicals
+				value = medium_radicals
 			}
 		}
 	}
@@ -953,8 +953,8 @@ type = country_event
 				has_decree = decree_violent_suppression 
 			}
 			any_scope_pop = {
-				culture = {
-					culture_is_discriminated_in = ROOT
+				ROOT = {
+					cultural_acceptance_base = { target = prev.culture value < acceptance_status_5 }
 				}
 			}
 		}
@@ -977,16 +977,16 @@ type = country_event
 					has_decree = decree_violent_suppression
 				}
 				any_scope_pop = {
-					culture = {
-						culture_is_discriminated_in = ROOT
+					ROOT = {
+						cultural_acceptance_base = { target = prev.culture value < acceptance_status_5 }
 					}
 				}
 			}
 			save_scope_as = decree_increased_violence
 			random_scope_pop = {
 				limit = { 
-					culture = {
-						culture_is_discriminated_in = ROOT
+					ROOT = {
+						cultural_acceptance_base = { target = prev.culture value < acceptance_status_5 }
 					}
 				}
 				culture = { save_scope_as = violent_suppression_discriminated }

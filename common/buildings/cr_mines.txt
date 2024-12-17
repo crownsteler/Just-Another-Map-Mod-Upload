@@ -1,6 +1,6 @@
 ﻿building_copper_mine = {
 	building_group = bg_copper_mining
-	texture = "gfx/interface/icons/building_icons/copper_mine.dds"
+	icon = "gfx/interface/icons/building_icons/copper_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
@@ -14,13 +14,15 @@
 		pmg_explosives_building_copper_mine
 		pmg_steam_automation_building_copper_mine
 		pmg_train_automation_building_copper_mine
-		pmg_ownership_capital_building_copper_mine
 	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
 }
 
 building_minor_metals_mine = {
 	building_group = bg_minor_metals_mining
-	texture = "gfx/interface/icons/building_icons/lead_mine.dds"
+	icon = "gfx/interface/icons/building_icons/lead_mine.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
@@ -34,6 +36,8 @@ building_minor_metals_mine = {
 		pmg_explosives_building_minor_metals_mine
 		pmg_steam_automation_building_minor_metals_mine
 		pmg_train_automation_building_minor_metals_mine
-		pmg_ownership_capital_building_minor_metals_mine
 	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
 }

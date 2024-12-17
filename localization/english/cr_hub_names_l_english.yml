@@ -1,6 +1,6 @@
 ﻿l_english:
  HUB_NAME_STATE_DOURO_city:0 "Porto"
- HUB_NAME_STATE_DOURO_port:0 "Porto"
+ HUB_NAME_STATE_DOURO_port:0 "Gaia"
  HUB_NAME_STATE_DOURO_farm:0 "Braga"
  HUB_NAME_STATE_DOURO_mine:0 "Bragança"
  HUB_NAME_STATE_DOURO_wood:0 "Vila Real"
@@ -31,25 +31,15 @@
  HUB_NAME_STATE_TASHKENT_mine:0 "Baxt"
  HUB_NAME_STATE_TASHKENT_wood:0 "Angren"
  
- HUB_NAME_STATE_KHUDZHAND_city:0 "Khudzhand"
- HUB_NAME_STATE_KHUDZHAND_farm:0 "Istarawshan"
- HUB_NAME_STATE_KHUDZHAND_mine:0 "Auchi"
- HUB_NAME_STATE_KHUDZHAND_wood:0 "Basmanda"
+ HUB_NAME_STATE_BADAKHSHAN_city:0 "Khudzhand"
+ HUB_NAME_STATE_BADAKHSHAN_farm:0 "Istarawshan"
+ HUB_NAME_STATE_BADAKHSHAN_mine:0 "Auchi"
+ HUB_NAME_STATE_BADAKHSHAN_wood:0 "Basmanda"
  
  HUB_NAME_STATE_ALAY_city:0 "Osh"
  HUB_NAME_STATE_ALAY_farm:0 "Uzgen"
  HUB_NAME_STATE_ALAY_mine:0 "Gulcha"
  HUB_NAME_STATE_ALAY_wood:0 "Kan"
- 
- HUB_NAME_STATE_MAZAR_I_SHARIF_city:0 "Mazar-i Sharif"
- HUB_NAME_STATE_MAZAR_I_SHARIF_farm:0 "Kunduz"
- HUB_NAME_STATE_MAZAR_I_SHARIF_mine:0 "Balkhab"
- HUB_NAME_STATE_MAZAR_I_SHARIF_wood:0 "Maymana"
- 
- HUB_NAME_STATE_HERAT_city:0 "Herat"
- HUB_NAME_STATE_HERAT_farm:0 "Farah"
- HUB_NAME_STATE_HERAT_mine:0 "Gurian"
- HUB_NAME_STATE_HERAT_wood:0 "Shindand"
  
  HUB_NAME_STATE_BRUSSELS_city:0 "Brussels"
  HUB_NAME_STATE_BRUSSELS_farm:0 "Brussels"
@@ -72,10 +62,15 @@
  HUB_NAME_STATE_MURCIA_wood:0 "Albacete"
  HUB_NAME_STATE_MURCIA_port:0 "Águilas"
  
- HUB_NAME_STATE_KURDISTAN_IRAQ_city:0 "Erbil"
- HUB_NAME_STATE_KURDISTAN_IRAQ_farm:0 "Sulaymaniyah"
- HUB_NAME_STATE_KURDISTAN_IRAQ_mine:0 "Kirkuk"
- HUB_NAME_STATE_KURDISTAN_IRAQ_wood:0 "Barzan"
+ HUB_NAME_STATE_BUKOVINA_city:0 "Chernivtsi"
+ HUB_NAME_STATE_BUKOVINA_farm:0 "Suceava"
+ HUB_NAME_STATE_BUKOVINA_wood:0 ""
+ HUB_NAME_STATE_BUKOVINA_mine:0 "Vatra Dornei"
+ 
+ HUB_NAME_STATE_ERBIL_city:0 "Erbil"
+ HUB_NAME_STATE_ERBIL_farm:0 "Sulaymaniyah"
+ HUB_NAME_STATE_ERBIL_mine:0 "Kirkuk"
+ HUB_NAME_STATE_ERBIL_wood:0 "Barzan"
 
  HUB_NAME_STATE_TAZA_city:0 "Taza"
  HUB_NAME_STATE_TAZA_port:0 "Saïdia"
@@ -266,6 +261,17 @@
  HUB_NAME_STATE_UCAYALI_mine:0 "Huepethue"
  HUB_NAME_STATE_UCAYALI_wood:0 "Puerto Maldonado"
  
+ HUB_NAME_STATE_MISIONES_city:0 "Posadas"
+ HUB_NAME_STATE_MISIONES_farm:0 "Oberá"
+ HUB_NAME_STATE_MISIONES_mine:0 "Bernardo de Irigoyen"
+ HUB_NAME_STATE_MISIONES_wood:0 "Puerto Iguazú"
+ 
+ HUB_NAME_STATE_ATACAMA_city:0 "La Serena"
+ HUB_NAME_STATE_ATACAMA_port:0 "Caldera"
+ HUB_NAME_STATE_ATACAMA_farm:0 "Coquimbo"
+ HUB_NAME_STATE_ATACAMA_mine:0 "Copiapó "
+ HUB_NAME_STATE_ATACAMA_wood:0 "Illapel"
+ 
  HUB_NAME_STATE_SARAWAK_city:0 "Kota Batu"
  HUB_NAME_STATE_SARAWAK_port:0 "Kuching"
  HUB_NAME_STATE_SARAWAK_farm:0 "Bintulu"
@@ -314,10 +320,11 @@
  HUB_NAME_STATE_SOUTH_CELEBES_wood:0 "Bau-Bau"
  HUB_NAME_STATE_SOUTH_CELEBES_mine:0 "Sorowako" 
  
- HUB_NAME_STATE_POLTAVA_city:0 "Poltava"
- HUB_NAME_STATE_POLTAVA_farm:0 "Sumy"
- HUB_NAME_STATE_POLTAVA_wood:0 "Chernihiv"
- HUB_NAME_STATE_POLTAVA_mine:0 "Kremenchuk"
+ HUB_NAME_STATE_FINNMARK_city:0 "Tromsø"
+ HUB_NAME_STATE_FINNMARK_port:0 "Hammerfest"
+ HUB_NAME_STATE_FINNMARK_farm:0 "Alta"
+ HUB_NAME_STATE_FINNMARK_wood:0 "Vadsø"
+ HUB_NAME_STATE_FINNMARK_mine:0 "Kirkenes"
  
  HUB_NAME_STATE_ORENBURG_city:0 "Orenburg"
  HUB_NAME_STATE_ORENBURG_farm:0 "Orsk"
@@ -356,3 +363,8 @@
  HUB_NAME_STATE_EASTERN_HIMALAYAS_farm:0 "Gangtok"
  HUB_NAME_STATE_EASTERN_HIMALAYAS_wood:0 "Tassisudon"
  HUB_NAME_STATE_EASTERN_HIMALAYAS_mine:0 "Itanagar"
+ 
+ HUB_NAME_STATE_WESTERN_HIMALAYAS_city:0 "Shimla"
+ HUB_NAME_STATE_WESTERN_HIMALAYAS_farm:0 "Dehra Doon"
+ HUB_NAME_STATE_WESTERN_HIMALAYAS_wood:0 "Sarahan"
+ HUB_NAME_STATE_WESTERN_HIMALAYAS_mine:0 "Itanagar"

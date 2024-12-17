@@ -51,42 +51,6 @@ DST = {
 	capital = STATE_TURKMENIA
 }
 
-HRT = {
-	color = { 53 102 76 }
-	
-	country_type = unrecognized
-	
-	tier = principality
-	
-	cultures = { persian }
-	religion = sunni
-	capital = STATE_WESTERN_AFGHANISTAN
-}
-
-KBL = {
-	color = { 53 102 76 }
-	
-	country_type = unrecognized
-	
-	tier = principality
-	
-	cultures = { pashtun }
-	religion = sunni
-	capital = STATE_EASTERN_AFGHANISTAN
-}
-
-KDZ = {
-	color = { 100 184 95  }
-	
-	country_type = unrecognized
-	
-	tier = principality
-	
-	cultures = { uzbek }
-	religion = sunni
-	capital = STATE_WESTERN_AFGHANISTAN
-}
-
 KRK = {
 	color = { 200 210 215 }
 	
@@ -135,19 +99,7 @@ KZK = {
 	capital = STATE_UZBEKIA
 }
 
-MMN = {
-	color = { 185 140 102 }
-	
-	country_type = unrecognized
-	
-	tier = principality
-	
-	cultures = { uzbek }
-	religion = sunni
-	capital = STATE_WESTERN_AFGHANISTAN
-}
-
-QDR = {
+KAN = {
 	color = { 221 206 107 }
 	
 	country_type = unrecognized
@@ -156,7 +108,7 @@ QDR = {
 	
 	cultures = { persian }
 	religion = sunni
-	capital = STATE_WESTERN_AFGHANISTAN
+	capital = STATE_KANDAHAR
 }
 
 SST = {
@@ -168,7 +120,7 @@ SST = {
 	
 	cultures = { persian }
 	religion = sunni
-	capital = STATE_SISTAN
+	capital = STATE_NORTHERN_BALUCHISTAN
 }
 
 TBJ = {

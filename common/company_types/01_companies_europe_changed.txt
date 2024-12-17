@@ -160,14 +160,20 @@ company_philips = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_BRABANT
+				OR = {
+					state_region = s:STATE_HOLLAND
+					state_region = s:STATE_BRABANT
+				}
 			}
 		}
 	}		
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_BRABANT
+			OR = {
+				state_region = s:STATE_HOLLAND
+				state_region = s:STATE_BRABANT
+			}
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_electrics_industry
@@ -323,7 +329,7 @@ company_ericsson = {
 	
 	prosperity_modifier = {
 		country_weekly_innovation_mult = 0.1
-		state_education_access_wealth_add = 0.05
+		state_education_access_wealth_add = 0.005
 	}	
 	
 	ai_weight = {

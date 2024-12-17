@@ -1,6 +1,6 @@
 ﻿building_date_plantation = {
 	building_group = bg_date_plantations
-	texture = "gfx/interface/icons/building_icons/date_plantation.dds"
+	icon = "gfx/interface/icons/building_icons/date_plantation.dds"
 	required_construction = construction_cost_low
 	
 	unlocking_technologies = {
@@ -13,14 +13,16 @@
 	production_method_groups = {
 		pmg_irrigation_building_date_plantation
 		pmg_harvest_building_date_plantation
-		pmg_ownership_land_building_date_plantation
 	}
+	ownership_type = self	
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_plantations.dds"
 }
 
 building_kashmir_ranch = {
 	building_group = bg_kashmir_ranches
 
-	texture = "gfx/interface/icons/building_icons/cattle_ranch.dds"
+	icon = "gfx/interface/icons/building_icons/cattle_ranch.dds"
 	
 	city_type = farm
 	levels_per_mesh = 5
@@ -34,10 +36,12 @@ building_kashmir_ranch = {
 		pmg_kashmir_ranch
 		pmg_fencing
 		pmg_refrigeration_building_livestock_ranch
-		pmg_ownership_land_building_livestock_ranch
 	}
 
 	required_construction = construction_cost_low
 
 	terrain_manipulator = pasture
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }

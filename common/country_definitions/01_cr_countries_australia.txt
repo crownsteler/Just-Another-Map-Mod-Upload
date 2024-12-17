@@ -82,16 +82,16 @@ I19 = { # Yura - was YUR
 	capital = STATE_SOUTH_AUSTRALIA
 }
 
-I21 = { # Wati - was WTI
-	color = { 176 81 41 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
+#I21 = { # Wati, Replaced by vanilla Wati Tag -> WTI
+#	color = { 176 81 41 }
+#
+#	country_type = decentralized
+#
+#	tier = principality
+#
+#	cultures = { aborigine }
+#	capital = STATE_WESTERN_AUSTRALIA
+#}
 
 I24 = { # Ngayarda - was NGT
 	color = { 70 16 219 }

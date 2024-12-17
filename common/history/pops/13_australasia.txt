@@ -453,13 +453,13 @@ POPS = {  #australian split to 65% british, 35% irish
 				size = 1518
 			}
 		}
-		region_state:NNG = {
+		region_state:MRN = {
 			create_pop = {
 				culture = aborigine
 				size = 1218
 			}
 		}
-		region_state:I21 = {
+		region_state:WTI = {
 			create_pop = {
 				culture = aborigine
 				size = 1505
@@ -504,7 +504,13 @@ POPS = {  #australian split to 65% british, 35% irish
 		region_state:NNG = {
 			create_pop = {
 				culture = aborigine
-				size = 23100
+				size = 19100
+			}
+		}
+		region_state:MRN = {
+			create_pop = {
+				culture = aborigine
+				size = 3100
 			}
 		}
 		region_state:I20 = {
@@ -513,7 +519,7 @@ POPS = {  #australian split to 65% british, 35% irish
 				size = 4112
 			}
 		}
-		region_state:I21 = {
+		region_state:WTI = {
 			create_pop = {
 				culture = aborigine
 				size = 4044
@@ -587,7 +593,7 @@ POPS = {  #australian split to 65% british, 35% irish
 				size = 2100
 			}
 		}
-		region_state:I21 = {
+		region_state:WTI = {
 			create_pop = {
 				culture = aborigine
 				size = 2032

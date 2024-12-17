@@ -44,8 +44,6 @@ bg_date_plantations = {
 bg_copper_mining = {
 	parent_group = bg_mining
 	
-	capped_by_resources = yes
-	
 	default_building = building_copper_mine
 
 	discoverable_resource = yes
@@ -55,8 +53,6 @@ bg_copper_mining = {
 
 bg_minor_metals_mining = {
 	parent_group = bg_mining
-	
-	capped_by_resources = yes
 	
 	default_building = building_minor_metals_mine
 
@@ -82,8 +78,6 @@ bg_minor_metals_mining = {
 bg_fur_trading_post = {
 	category = rural
 	lens = forestry	
-	
-	capped_by_resources = yes
 		
 	parent_group = bg_mining
 	
@@ -101,8 +95,6 @@ bg_ivory_trading_post = {
 	lens = forestry	
 	
 	parent_group = bg_mining
-	
-	capped_by_resources = yes
 	
 	default_building = building_ivory_trading_post
 	can_use_slaves = yes

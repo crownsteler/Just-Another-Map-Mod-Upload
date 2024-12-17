@@ -81,7 +81,7 @@
 				culture = iroquoian
 				size = 8000
 			}
-			create_pop = { #55.000 is 1790
+			create_pop = { #55.000 in 1790
 				culture = dutch
 				size = 73000
 			}
@@ -110,7 +110,7 @@
 		}
 	}
 	s:STATE_ALASKA = {
-		region_state:ASK = {
+		region_state:ALK = {
 			create_pop = {
 				culture = athabaskan
 				size = 4541
@@ -1528,12 +1528,6 @@
 				size = 39996
 			}
 		}
-		region_state:FRA = {
-			create_pop = {
-				culture = french
-				size = 4200
-			}
-		}
 		region_state:NNV = {
 			create_pop = {
 				culture = inuit
@@ -1990,7 +1984,7 @@
 				size = 8300
 			}
 		}
-		region_state:ASK = {
+		region_state:ALK = {
 			create_pop = {
 				culture = russian
 				size = 80
@@ -2001,6 +1995,8 @@
 			}
 		}
 	}
+	# 97864 in 1830, 127586 in 1840
+	# working total of 112724
 	s:STATE_SONORA = {
 		region_state:MEX = {
 			create_pop = {
@@ -2025,7 +2021,7 @@
 			}
 		}
 	}
-	s:STATE_CHIHUAHUA = {
+	s:STATE_CHIHUAHUA = { # total population: 132189 (1830), 147600 (1840)
 		region_state:MEX = {
 			create_pop = {
 				culture = mexican
@@ -2312,6 +2308,14 @@
 			create_pop = {
 				culture = hokan
 				size = 1300
+			}
+		}
+	}
+	s:STATE_SAINT_PIERRE_AND_MIQUELON = {
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 4200
 			}
 		}
 	}

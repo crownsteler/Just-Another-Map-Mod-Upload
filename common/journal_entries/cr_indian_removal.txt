@@ -195,9 +195,9 @@
 	fail = {
 		OR = {
 			has_law = law_type:law_no_colonial_affairs
-			cu:cherokee = {
-				NOT = { culture_is_discriminated_in = ROOT }
-			}
+			#cu:cherokee = {
+			#	NOT = { culture_is_discriminated_in = ROOT }
+			#}
 		}
 	}
 	
@@ -524,7 +524,7 @@ je_chickasaw_removal = {
 			NAND = {
 				exists = c:CSW
 				exists = c:USA
-				c:CSW = { is_subject_of = c:CSW }
+				c:CSW = { is_subject_of = c:USA }
 			}
 			c:CSW = {
 				NOT = {
@@ -1563,11 +1563,11 @@ je_seminole_removal = {
 		#	exists = c:USA
 		#	c:CSW = { is_subject_of = c:CSW }
 		#}
-		c:SMN = {
-			NOT = {
-				any_scope_state = { state_region = s:STATE_OKLAHOMA }
-			}
-		}
+		#c:SMN = {
+		#	NOT = {
+		#		any_scope_state = { state_region = s:STATE_OKLAHOMA }
+		#	}
+		#}
 	}
 	
 	

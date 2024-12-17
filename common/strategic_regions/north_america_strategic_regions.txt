@@ -3,7 +3,7 @@
 region_canada = {
 	capital_province = xB000C0
 	map_color = { 0.21 0.81 0.82 }
-	states = { STATE_ONTARIO STATE_QUEBEC STATE_NEWFOUNDLAND }
+	states = { STATE_ONTARIO STATE_QUEBEC STATE_NEWFOUNDLAND STATE_SAINT_PIERRE_AND_MIQUELON }
 }
 region_ruperts_land = {
 	capital_province = xED0D09

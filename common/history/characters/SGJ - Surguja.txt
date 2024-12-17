@@ -1,14 +1,1 @@
-﻿CHARACTERS = {
-	c:SGJ = {
-		create_character = {
-			first_name = "Lal_Amar"
-			last_name = "Singh_Deo"
-			historical = yes
-			ruler = yes
-			age = 18
-			interest_group = ig_landowners
-			traits = {
-			}
-		}
-	}
-}
+﻿
