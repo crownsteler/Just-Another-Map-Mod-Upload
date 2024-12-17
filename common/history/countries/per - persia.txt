@@ -11,7 +11,7 @@
 		effect_starting_politics_conservative = yes
 
 		add_technology_researched = enclosure
-		add_technology_researched = manufactories
+		add_technology_researched = manufacturies
 		add_technology_researched = distillation
 		add_technology_researched = shaft_mining
 		add_technology_researched = steelworking
