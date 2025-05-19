@@ -97,6 +97,10 @@
 	c:DEN = {
 		set_relations = { country = c:BAL value = 30 } #Mads Johansen Lange
 	}
+	c:SPA = {
+		set_relations = { country = c:FRA value = -15 }	
+		set_relations = { country = c:GBR value = -18 }	
+	}
 	c:NET = {
 		set_relations = { country = c:USA value = 35 } #Historic friendship
 		set_relations = { country = c:RUS value = 25 } #Financers of the Tsars

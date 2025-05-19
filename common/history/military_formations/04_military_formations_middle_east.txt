@@ -368,7 +368,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_PASHTUNISTAN
+				state_region = s:STATE_KABUL #was STATE_PASHTUNISTAN
 				count = 4
 			}
 		}

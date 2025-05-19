@@ -1,0 +1,164 @@
+﻿je_cr_minette_ores = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	
+	group = je_group_technology
+	complete = {
+		#OR = {
+		#	custom_tooltip = {
+		#		text = minette_tech_tt
+		#		has_variable = pebrine_cure
+		#	}
+		#}
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_complete = {
+		#trigger_event = { id = silkworm_diseases.9 }
+		any_scope_state = {
+			limit = {
+				has_state_trait = state_trait_minette_ore
+			}
+			remove_state_trait = state_trait_minette_ore
+			add_state_trait = state_trait_minette_ore_2
+		}
+	}
+
+	fail = {
+		#NOT = {
+		#	any_scope_state = {
+		#		is_incorporated = yes
+		#		has_building = building_silk_plantation
+		#	}
+		#}
+	}
+
+	on_fail = {
+		custom_tooltip = {
+			text = minette_je_fail_tt
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					has_technology_researched =	bessemer_process
+					#any_scope_state = {
+					#	filter = {
+					#		has_modifier = modifier_pebrine_state_modifier
+					#		owner = ROOT
+					#	}
+					#	has_decree = decree_encourage_agricultural_industry
+					#	percent > 0.75
+					#}
+				}
+				change_variable = {
+					name = minette_progress_var
+					add = 1
+				}
+			}
+			#random_list = {
+			#	80 = {
+			#
+			#	}
+			#	20 = {
+			#		random_country = {
+			#			limit = {
+			#				any_scope_state = {
+			#					is_incorporated = yes
+			#					any_scope_building = { 
+			#			            is_building_type = building_silk_plantation
+			#			            level >= 2
+			#			        }
+			#				}
+			#				OR = {
+			#					any_country = {
+			#						NOT = { THIS = PREV }
+			#						market = ROOT.market
+			#						any_scope_state = {
+			#							has_modifier = modifier_pebrine_state_modifier
+			#						}
+			#					}
+			#					any_neighbouring_state = { #Why? Africa.
+			#						is_incorporated = yes
+			#						owner = {
+			#							any_scope_state = {
+			#								is_incorporated = yes
+			#								has_modifier = modifier_pebrine_state_modifier
+			#							}
+			#						}
+			#					}
+			#				}
+			#				OR = {	
+			#					country_is_in_europe = yes
+			#					country_is_in_north_america = yes
+			#				}
+			#				NOT = {
+			#					has_variable = pebrine_outbreak_event
+			#				}
+			#			}
+			#			trigger_event = { id = silkworm_diseases.3 weeks = 1 }
+			#		}
+			#	}
+			#}
+		}
+		random_events = {
+			#150 = 0
+			#40 = silkworm_diseases.2
+			#20 = silkworm_diseases.4
+			#20 = silkworm_diseases.5
+			#20 = silkworm_diseases.6
+			#150 = silkworm_diseases.7
+		}
+	}
+
+	invalid = {
+		NOT = {
+			any_scope_state = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+		}
+	}
+	
+	on_invalid = {
+		random_country = {
+			limit = {
+				any_scope_state = {
+					state_region = state:STATE_ALSACE_LORRAINE
+				}
+			}
+			add_journal_entry = { type = je_cr_minette_ores }
+		}
+	}
+
+	immediate = {
+		set_variable = {
+			name = minette_progress_var
+			value = 0
+		}
+		ROOT = {
+			save_scope_as = minette_country_scope
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			save_scope_as = minette_ore_state
+		}
+	}
+
+	current_value = {
+		value = root.var:minette_progress_var
+	}
+
+	goal_add_value = {
+		add = 48
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = no
+}
+

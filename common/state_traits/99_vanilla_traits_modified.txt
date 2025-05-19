@@ -23,7 +23,7 @@ state_trait_burmese_teak = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
 	
 	modifier = {
-		goods_output_hardwood_mult = 0.25
+		goods_output_hardwood_mult = 0.20
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.10
 		state_colony_growth_speed_mult = -0.25
@@ -34,9 +34,9 @@ state_trait_indochinese_forest = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
 
 	modifier = {
-		building_group_bg_logging_throughput_add = 0.1
+		goods_output_hardwood_mult = 0.1
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
-		state_colony_growth_speed_mult = -0.50
+		state_colony_growth_speed_mult = -0.45
 	}
 }

@@ -112,7 +112,23 @@
 				activate_production_methods={ "pm_no_organization" }
 			}
 		}
-		
+	}
+	s:STATE_BADIYA = {
+		region_state:AZA = {
+			create_building={
+				building="building_date_plantation"
+				add_ownership={
+					building={
+						type="building_date_plantation"
+						country="c:AZA"
+						levels=1
+						region="STATE_BADIYA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_flood_irrigation_date_plantation" "pm_tamar_harvest_date_plantation" }
+			}		
+		}
 	}
 	s:STATE_OMAN={
 		region_state:OMA={
@@ -149,7 +165,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_military_shipbuilding_wooden" "pm_merchant_guilds_building_military_shipyards" }
+				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
 			}
 			create_building={
 				building="building_date_plantation"
@@ -194,7 +210,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_copper_mine" }
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 			create_building={
 				building="building_barracks"
@@ -288,7 +304,7 @@
 	s:STATE_YEMEN={
 		region_state:ZAI={
 			create_building={
-				building="building_wheat_farm"
+				building="building_millet_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
@@ -298,7 +314,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -361,16 +377,18 @@
 	s:STATE_SOUTH_YEMEN={
 		region_state:LAH={
 			create_building={
-				building="building_port"
+				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:LAH"
 						levels=1
+						region="STATE_SOUTH_YEMEN"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_anchorage" }
-			}	
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+			}
 		}
 		region_state:MAH={
 		}
@@ -416,6 +434,19 @@
 	s:STATE_ASIR={
 		region_state:ASR={
 			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:ASR"
+						levels=1
+						region="STATE_ASIR"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
 					building={
@@ -441,6 +472,19 @@
 			}
 		}
 		region_state:NJR={
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NJR"
+						levels=1
+						region="STATE_ASIR"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
 			create_building={
 				building="building_barracks"
 				add_ownership={
@@ -829,7 +873,7 @@
 			#		}
 			#	}
 			#	reserves=1
-			#	activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
+			#	activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
 			#}
 			create_building={
 				building="building_port"
@@ -901,7 +945,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PER"
-						levels=2
+						levels=1
 						region="STATE_FARS"
 					}
 				}
@@ -921,20 +965,6 @@
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" }
 			}		
-		}
-		region_state:OMA={
-			create_building={
-				building="building_fishing_wharf"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
-			}
-			create_building={
-				building="building_port"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_anchorage" }
-			}			
 		}
 	}
 	s:STATE_KERMAN={
@@ -1021,9 +1051,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:PER"
-						levels=2
-						region="STATE_IRAKAJEMI"
+						country="c:OMA"
+						levels=1
+						region="STATE_OMAN"
 					}
 				}
 				reserves=1
@@ -1176,21 +1206,6 @@
 			#	activate_production_methods={ "pm_no_organization" }
 			#}
 		}
-		region_state:MZK={
-			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					building={
-						type="building_fishing_wharf"
-						country="c:MZK"
-						levels=1
-						region="STATE_KHUZESTAN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
-			}		
-		}
 	}
 	s:STATE_ISFAHAN={
 		region_state:PER={
@@ -1222,7 +1237,7 @@
 				building="building_cotton_plantation"
 				level=2
 				reserves=1
-				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
+				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_opium_plantation"
@@ -1275,9 +1290,9 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_manor_house"
+						type="building_logging_camp"
 						country="c:PER"
-						levels=1
+						levels=2
 						region="STATE_MAZANDARAN"
 					}
 				}
@@ -1463,21 +1478,21 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
-			create_building={
-				building="building_iron_mine"
-				add_ownership={
-					building={
-						type="building_iron_mine"
-						country="c:PER"
-						levels=1
-						region="STATE_SEMNAN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
-			}
+			#create_building={
+			#	building="building_iron_mine"
+			#	add_ownership={
+			#		building={
+			#			type="building_iron_mine"
+			#			country="c:PER"
+			#			levels=1
+			#			region="STATE_SEMNAN"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			#}
 		}
 	}
 	s:STATE_LURISTAN={
@@ -1537,6 +1552,21 @@
 				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}	
 		}
+		region_state:PER={
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:PER"
+						levels=1
+						region="STATE_PERSIAN_KURDISTAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}		
+		}
 	}
 	s:STATE_HUDAVENDIGAR={
 		region_state:TUR={
@@ -1551,26 +1581,26 @@
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
-			create_building={
-				building="building_textile_mills"
+			create_building={ #Ceremaic glass workshops, Bursa
+				building="building_glassworks"
 				add_ownership={
 					building={
-						type="building_textile_mills"
+						type="building_glassworks"
 						country="c:TUR"
 						levels=1
 						region="STATE_HUDAVENDIGAR"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes"  "pm_traditional_looms" "pm_no_luxury_clothes" }
+				activate_production_methods={ "pm_forest_glass"  "pm_manual_glassblowing" "pm_ceramics" }
 			}
-			create_building={
+			create_building={ #Yolava Kagit Fabrikas, Bursa
 				building="building_paper_mills"
 				add_ownership={
 					building={
 						type="building_paper_mills"
 						country="c:TUR"
-						levels=2
+						levels=1
 						region="STATE_HUDAVENDIGAR"
 					}
 					country={

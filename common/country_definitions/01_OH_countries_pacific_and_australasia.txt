@@ -7,7 +7,7 @@ SAM = { #Samoa
 	tier = principality
 	
 	cultures = { polynesian }
-	capital = STATE_TONGA
+	capital = STATE_SAMOA
 }
 
 CKI = { #Cook Islands
@@ -29,7 +29,7 @@ TOK = { #Tokelau
 	tier = principality
 	
 	cultures = { polynesian }
-	capital = STATE_TONGA
+	capital = STATE_EAST_MICRONESIA
 }
 
 WFU = { #Wallis & Futuna
@@ -73,7 +73,7 @@ RAP = { #Rapa Nui
 	tier = principality
 	
 	cultures = { polynesian }
-	capital = STATE_TAHITI
+	capital = STATE_TUAMOTES
 }
 
 MGR = { #Mangareva
@@ -84,7 +84,7 @@ MGR = { #Mangareva
 	tier = principality
 	
 	cultures = { polynesian }
-	capital = STATE_TAHITI
+	capital = STATE_TUAMOTES
 }
 
 TUP = { #Tupua'i
@@ -106,7 +106,7 @@ MQS = { #Marquesas
 	tier = principality
 	
 	cultures = { polynesian }
-	capital = STATE_TAHITI
+	capital = STATE_TUAMOTES
 }
 
 BOA = { #Bora-Bora
@@ -128,7 +128,7 @@ TUM = { #Tuamotus
 	tier = principality
 	
 	cultures = { polynesian }
-	capital = STATE_TAHITI
+	capital = STATE_TUAMOTES
 }
 
 CRL = { #Carolines

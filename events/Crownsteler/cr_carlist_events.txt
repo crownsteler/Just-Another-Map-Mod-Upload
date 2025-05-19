@@ -12,6 +12,43 @@ cr_carlist_events.99 = { #cleanup event
 		}
 	}
 }
+cr_carlist_events.98 = { #France ideology selector for testing purposes
+	type = country_event
+
+	title = cr_carlist_events.98.t
+	desc = cr_carlist_events.98.desc
+	flavor = cr_carlist_events.98.flavour
+	
+	immediate = {
+	}
+	option = {
+		name = cr_carlist_events.1.orleanist
+		custom_tooltip = cr_carlist_events.1.a_tt
+		default_option = yes
+		ruler = {
+			set_ideology = ideology:ideology_orleanist
+		}
+	}
+	option = {
+		name = cr_carlist_events.1.legitimist
+		custom_tooltip = cr_carlist_events.1.a_tt
+		ruler = {
+			set_ideology = ideology:ideology_legitimist
+		}
+	}
+	option = {
+		name = cr_carlist_events.1.bonapartist
+		custom_tooltip = cr_carlist_events.1.a_tt
+		ruler = {
+			set_ideology = ideology:ideology_bonapartist
+		}
+	}
+	option = {
+		name = cr_carlist_events.1.republic
+		custom_tooltip = cr_carlist_events.1.a_tt
+		activate_law = law_type:law_presidential_republic
+	}
+}
 
 cr_carlist_events.1 = { #The Desamortización of the Monastaries
 	type = country_event
@@ -22,7 +59,7 @@ cr_carlist_events.1 = { #The Desamortización of the Monastaries
 	flavor = cr_carlist_events.1.flavour
 
 	event_image = {
-		video = "unspecific_signed_contract"
+		video = "rp1_social_banditry"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -53,19 +90,16 @@ cr_carlist_events.1 = { #The Desamortización of the Monastaries
 				save_scope_as = cr_spanish_landowners
 			}
 			
-			#ig:ig_rural_folk = {
-			#	add_modifier = cr_carlist_war_ig_rural_folk
-			#}
+			ig:ig_rural_folk = {
+				save_scope_as = cr_carlist_war_ig_rural_folk
+			}
 			
-			#ig:ig_petty_bourgeoisie = {
-			#	add_modifier = cr_carlist_war_ig_petty_bourgeoisie
-			#}
+			ig:ig_petty_bourgeoisie = {
+				save_scope_as = cr_carlist_war_ig_petty_bourgeoisie
+			}
 		}
 		c:CSP = {
 			save_scope_as = cr_carlists
-		}
-		c:GBR = {
-			save_scope_as = cr_britain
 		}
 		cu:basque = {
 			save_scope_as = cr_basque_culture
@@ -81,6 +115,10 @@ cr_carlist_events.1 = { #The Desamortización of the Monastaries
 				has_technology_researched = mutual_funds
 			}
 			activate_law = law_type:law_commercialized_agriculture
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.1.a_tt2
+			set_variable = cr_desamortizacions_upper
 		}
 		add_loyalists = {
 			pop_type = aristocrats
@@ -117,6 +155,10 @@ cr_carlist_events.1 = { #The Desamortización of the Monastaries
 		name = cr_carlist_events.1.b
 		custom_tooltip = cr_carlist_events.1.b_tt
 		activate_law = law_type:law_homesteading
+		custom_tooltip = {
+			text = cr_carlist_events.1.b_tt2
+			set_variable = cr_desamortizacions_lower
+		}
 		add_loyalists = {
 			pop_type = farmers
 			value = medium_radicals
@@ -147,6 +189,10 @@ cr_carlist_events.1 = { #The Desamortización of the Monastaries
 	option = {
 		name = cr_carlist_events.1.c
 		custom_tooltip = cr_carlist_events.1.c_tt
+		custom_tooltip = {
+			text = cr_carlist_events.1.c_tt2
+			set_variable = cr_desamortizacions_halted
+		}
 		activate_law = law_type:law_tenant_farmers
 		add_loyalists = {
 			pop_type = clergymen
@@ -196,28 +242,94 @@ cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
 
 	immediate = {
 		s:STATE_NAVARRA.region_state:SPA = { save_scope_as = cr_state_navarra }
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_carlists
+			}
+			save_scope_as = carlist_movement
+		}
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_christinos
+			}
+			save_scope_as = christinos_movement
+		}
+        remove_variable = cr_carlist_war_ongoing
+        c:CSP = { remove_variable = cr_carlist_war_ongoing }
 		create_country = {
 			origin = this
 			tag = NAV
 			state = s:STATE_NAVARRA.region_state:SPA
-		}
-		c:NAV = {
-			activate_law = law_type:law_monarchy
-			activate_law = law_type:law_oligarchy
-			activate_law = law_type:law_ethnostate
-			activate_law = law_type:law_state_religion
-			activate_law = law_type:law_hereditary_bureaucrats
-			activate_law = law_type:law_national_militia
-			activate_law = law_type:law_free_trade
-			activate_law = law_type:law_traditionalism
-			activate_law = law_type:law_homesteading
-		}
-		create_diplomatic_pact = {
-			country = c:NAV
-			type = personal_union
+			on_created = {
+				c:SPA = {
+					create_diplomatic_pact = {
+						country = c:NAV
+						type = personal_union
+					}
+				}
+				activate_law = law_type:law_monarchy
+				activate_law = law_type:law_oligarchy
+				activate_law = law_type:law_ethnostate
+				activate_law = law_type:law_state_religion
+				activate_law = law_type:law_hereditary_bureaucrats
+				activate_law = law_type:law_national_militia
+				activate_law = law_type:law_free_trade
+				activate_law = law_type:law_traditionalism
+				activate_law = law_type:law_homesteading
+			}
 		}
 		c:NAV = {
 			save_scope_as = cr_kingdom_of_navarra
+		}
+		create_country = {
+			origin = this
+			tag = CAT
+			state = s:STATE_CATALONIA.region_state:SPA
+			#state = s:STATE_ARAGON.region_state:SPA
+			#state = s:STATE_VALENCIA.region_state:SPA
+			#state = s:STATE_BALEARES.region_state:SPA
+			on_created = {
+				c:SPA = {
+					create_diplomatic_pact = {
+						country = c:CAT
+						type = personal_union
+					}
+				}
+			}
+		}
+		c:CAT = {
+			save_scope_as = cr_kingdom_of_aragon
+		}
+		s:STATE_NAVARRA.region_state:NAV = {
+			save_scope_as = cr_state_navarra
+		}
+		c:SPA = {
+			save_scope_as = cr_christinos
+			ig:ig_intelligentsia = {
+				save_scope_as = cr_spanish_liberals
+			}
+			ig:ig_devout = {
+				save_scope_as = cr_spanish_catholic_church
+			}
+			ig:ig_landowners = {
+				save_scope_as = cr_spanish_landowners
+			}
+			
+			ig:ig_rural_folk = {
+			}
+			
+			ig:ig_petty_bourgeoisie = {
+			}
+			save_scope_as = spain
+		}
+		c:CSP = {
+			save_scope_as = cr_carlists
+		}
+		cu:basque = {
+			save_scope_as = cr_basque_culture
+		}
+		cu:catalan = {
+			save_scope_as = cr_catalan_culture
 		}
 	}
 
@@ -225,31 +337,43 @@ cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
 		name = cr_carlist_events.10.a
 		custom_tooltip = {
 			text = cr_carlist_events.10.a_tt
-			annex = c:NAV
+			annex_with_incorporation = c:NAV
 		}
-		
+		custom_tooltip = {
+			text = cr_carlist_events.10.a_tt2
+			annex_with_incorporation = c:CAT
+		}
+		#custom_tooltip = {
+		#	text = cr_carlist_events.10.a_tt2
+		#}
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_embrace_of_vergara	
+			}
+		}
 		add_loyalists = {
 			value = 0.15
 			culture = cu:spanish
 		}
 		add_loyalists = {
-			value = 0.05
+			value = 0.1
 			culture = cu:catalan
 		}
 		add_loyalists = {
-			value = 0.05
+			value = 0.1
 			culture = cu:galician
 		}
 		add_radicals = {
-			value = 0.4
+			value = 0.3
 			culture = cu:basque
 		}
 		hidden_effect = {
 			trigger_event = { id = cr_carlist_events.99 days = 0 }
 		}
+		don_carlos_exile_country_selector = yes
 		
 		ai_chance = {
-			base = 95
+			base = 80
 		}
 		default_option = yes
 	}
@@ -259,16 +383,28 @@ cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
 		custom_tooltip = {
 			text = cr_carlist_events.10.b_tt
 		}
+		custom_tooltip = {
+			text = cr_carlist_events.10.a_tt2
+			annex_with_incorporation = c:CAT
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.10.b_tt2
+		}
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_embrace_of_vergara	
+			}
+		}
 		add_loyalists = {
-			value = 0.10
+			value = 0.05
 			culture = cu:spanish
 		}
 		add_loyalists = {
-			value = 0.1
+			value = 0.05
 			culture = cu:catalan
 		}
 		add_loyalists = {
-			value = 0.1
+			value = 0.05
 			culture = cu:galician
 		}
 		add_loyalists = {
@@ -284,13 +420,1509 @@ cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
 				}
 			}
 		}
+		don_carlos_exile_country_selector = yes
+		ai_chance = {
+			base = 15
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.10.c
+		custom_tooltip = {
+			text = cr_carlist_events.10.b_tt
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.10.c_tt
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.10.c_tt2
+		}
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_embrace_of_vergara	
+			}
+		}
+		add_radicals = {
+			value = 0.05
+			culture = cu:spanish
+		}
+		add_loyalists = {
+			value = 0.25
+			culture = cu:catalan
+		}
+		add_loyalists = {
+			value = 0.10
+			culture = cu:galician
+		}
+		add_loyalists = {
+			value = 0.25
+			culture = cu:basque
+		}
+		hidden_effect = {
+			trigger_event = { id = cr_carlist_events.99 days = 0 }
+			c:NAV = {
+				add_loyalists = {
+					value = 0.5
+					culture = cu:basque
+				}
+			}
+			c:CAT = {
+				add_loyalists = {
+					value = 0.5
+					culture = cu:basque
+				}
+				add_loyalists = {
+					value = 0.5
+					culture = cu:catalan
+				}
+				add_radicals = {
+					value = 0.15
+					culture = cu:spanish
+				}
+			}
+		}
+		don_carlos_exile_country_selector = yes
 		ai_chance = {
 			base = 5
 		}
 	}
 }
 
-cr_carlist_events.25 = { #The Future of the Fueros (Carlist Victory)
+cr_carlist_events.15 = { #The Spanish Pretender / The King without a Country
+	type = country_event
+	placement = p:xBBF036
+
+	title = cr_carlist_events.15.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = cr_carlist_events.15.desc_orleanist
+				trigger = {
+					has_law = law_type:law_monarchy
+					ruler = {
+						has_ideology = ideology:ideology_orleanist
+					}
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.15.desc_legitimist_absolutist
+				trigger = {
+					has_law = law_type:law_autocracy
+					has_law = law_type:law_monarchy
+					ruler = {
+						has_ideology = ideology:ideology_legitimist
+					}
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.15.desc_legitimist
+				trigger = {
+					has_law = law_type:law_monarchy
+					ruler = {
+						has_ideology = ideology:ideology_legitimist
+					}
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.15.desc_bonapartist_absolutist
+				trigger = {
+					has_law = law_type:law_autocracy
+					has_law = law_type:law_monarchy
+					ruler = {
+						has_ideology = ideology:ideology_bonapartist
+					}
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.15.desc_bonapartist
+				trigger = {
+					has_law = law_type:law_monarchy
+					ruler = {
+						has_ideology = ideology:ideology_bonapartist
+					}
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.15.desc_republic
+				trigger = {
+					OR = {
+						has_law = law_type:law_presidential_republic
+						has_law = law_type:law_parliamentary_republic
+					}
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.15.desc_fallback
+			}
+		}
+	}
+	flavor = {
+		first_valid = {
+			triggered_desc = {
+				desc = cr_carlist_events.15.desc_orleanist_flavour
+				trigger = {
+					has_law = law_type:law_monarchy
+					ruler = {
+						has_ideology = ideology:ideology_orleanist
+					}
+				}
+			}
+			#triggered_desc = {
+			#	desc = cr_carlist_events.15.desc_legitimist_absolutist_flavour
+			#	trigger = {
+			#		has_law = law_type:law_autocracy
+			#		has_law = law_type:law_monarchy
+			#		ruler = {
+			#			has_ideology = ideology:ideology_legitimist
+			#		}
+			#	}
+			#}
+			triggered_desc = {
+				desc = cr_carlist_events.15.desc_legitimist_flavour
+				trigger = {
+					has_law = law_type:law_monarchy
+					ruler = {
+						has_ideology = ideology:ideology_legitimist
+					}
+				}
+			}
+			#triggered_desc = {
+			#	desc = cr_carlist_events.15.desc_bonapartist_absolutist_flavour
+			#	trigger = {
+			#		has_law = law_type:law_autocracy
+			#		has_law = law_type:law_monarchy
+			#		ruler = {
+			#			has_ideology = ideology:ideology_bonapartist
+			#		}
+			#	}
+			#}
+			triggered_desc = {
+				desc = cr_carlist_events.15.desc_bonapartist_flavour
+				trigger = {
+					has_law = law_type:law_monarchy
+					ruler = {
+						has_ideology = ideology:ideology_bonapartist
+					}
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.15.desc_republic_flavour
+				trigger = {
+					OR = {
+						has_law = law_type:law_presidential_republic
+						has_law = law_type:law_parliamentary_republic
+					}
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.15.flavour
+			}
+		}
+	} 
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		save_scope_as = don_carlos_exile_country
+		set_variable = cr_don_carlos_has_visited
+		c:SPA = {
+			save_scope_as = spain
+			random_political_movement = {
+				limit = {
+					is_political_movement_type = movement_carlists
+				}
+				save_scope_as = carlist_movement
+			}
+			random_political_movement = {
+				limit = {
+					is_political_movement_type = movement_christinos
+				}
+				save_scope_as = christinos_movement
+			}
+			set_variable = cr_don_carlos_exiled_bourges
+		}
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_legitimist
+			}
+			save_scope_as = legitimist_movement
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_ORLEANS
+				}
+			}
+			p:xF6A48C = { # Bourges, or s:STATE_ORLEANS.region_state:FRA
+				save_scope_as = don_carlos_exile_location
+			}
+			s:STATE_ORLEANS.region_state:FRA = {
+				save_scope_as = don_carlos_exile_state
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					is_incorporated = yes
+				}
+			}
+			save_scope_as = don_carlos_exile_location
+			save_scope_as = don_carlos_exile_state
+		}
+	}
+
+	#########################
+	#   Orleanist Options   #
+	#########################
+
+	#option = {	#Grant Asylum—Help Restore a Constitutional Bourbon Monarchy - Not implementend. Should allow for a shift in Carlist ideology to more moderate absolutism
+	#	name = cr_carlist_events.15.a.orleanist
+	#	custom_tooltip = cr_carlist_events.15.a.orleanist_tt
+	#	save_scope_as = don_carlos_exile_country
+	#	trigger = {
+	#		ruler = {
+	#			has_ideology = ideology:ideology_orleanist
+	#		}
+	#		has_law = law_type:law_monarchy
+	#	}
+	#			
+	#	ai_chance = {
+	#		base = 85
+	#	}
+	#}
+	option = {	#Grant Asylum, and Allow Him to Fade Into Obscurity (exile of Bourges)
+		trigger = {
+			ruler = {
+				has_ideology = ideology:ideology_orleanist
+			}
+			has_law = law_type:law_monarchy
+		}
+		name = cr_carlist_events.15.b.orleanist
+		custom_tooltip = cr_carlist_events.15.b.orleanist_tt
+		custom_tooltip = cr_carlist_events.15.spain_likely_approves
+		save_scope_as = don_carlos_exile_country
+		
+		don_carlos_granted_asylum_effect = yes
+		c:SPA = { set_variable = don_carlist_orleanist_refuge }
+		
+		default_option = yes
+		
+		ai_chance = {
+			base = 85
+		}
+	}
+	option = { #Refuse Asylum—Don Carlos’ Rebellion Has Failed
+		trigger = {
+			ruler = {
+				has_ideology = ideology:ideology_orleanist
+			}
+			has_law = law_type:law_monarchy
+		}
+		name = cr_carlist_events.15.c.orleanist
+		custom_tooltip = cr_carlist_events.15.c.orleanist_tt
+		don_carlos_reject_asylum_effect = yes
+		
+		ai_chance = {
+			base = 85
+		}
+	}
+	option = { #Support His Cause for the Rightful Bourbon Throne
+		name = cr_carlist_events.15.d.orleanist
+		custom_tooltip = cr_carlist_events.15.d.orleanist_tt
+		custom_tooltip = cr_carlist_events.15.spain_likely_disapproves
+		trigger = {
+			ruler = {
+				has_ideology = ideology:ideology_orleanist
+			}
+			has_law = law_type:law_monarchy
+		}
+		don_carlos_support_claim_effect = yes
+		c:SPA = { set_variable = don_carlist_orleanist_support }
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					is_at_war = yes
+				}
+				add = -5
+			}
+			modifier = {
+				trigger = {
+					has_law = law_type:law_autocracy
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					infamy >= infamy_threshold:infamous
+				}
+				add = -50
+			}
+		}
+	}
+
+	#########################
+	#   Legitimist Options  #
+	#########################
+
+	option = { #Offer Asylum and Support His Claim
+		trigger = {
+			ruler = {
+				has_ideology = ideology:ideology_legitimist
+			}
+			has_law = law_type:law_monarchy
+		}
+		name = cr_carlist_events.15.a.legitimist
+		custom_tooltip = cr_carlist_events.15.a.legitimist_tt
+		custom_tooltip = cr_carlist_events.15.spain_likely_disapproves
+		don_carlos_support_claim_effect = yes
+
+		c:SPA = { set_variable = don_carlist_legitimist_support }
+		
+		ai_chance = {
+			base = 95
+		}
+	}
+	option = { #Grant Asylum, but Remain Neutral
+		trigger = {
+			ruler = {
+				has_ideology = ideology:ideology_legitimist
+			}
+			has_law = law_type:law_monarchy
+		}
+		name = cr_carlist_events.15.b.legitimist
+		custom_tooltip = cr_carlist_events.15.b.legitimist_tt
+		custom_tooltip = cr_carlist_events.15.spain_likely_approves
+		don_carlos_granted_asylum_effect = yes
+		c:SPA = { set_variable = don_carlist_legitimist_refuge }
+		
+		default_option = yes
+		
+		ai_chance = {
+			base = 95
+		}
+	}
+	option = { #Use His Presence to Embarrass the Spanish Government
+		trigger = {
+			ruler = {
+				has_ideology = ideology:ideology_legitimist
+			}
+			has_law = law_type:law_monarchy
+		}
+		name = cr_carlist_events.15.c.legitimist
+		custom_tooltip = cr_carlist_events.15.c.legitimist_tt
+		c:SPA = { set_variable = don_carlist_legitimist_legitimacy_undermined }
+		don_carlos_undermine_legitimacy_effect = yes
+		
+		ai_chance = {
+			base = 95
+		}
+	}
+	option = { #Refuse Asylum—He is a Failed Prince
+		trigger = {
+			ruler = {
+				has_ideology = ideology:ideology_legitimist
+			}
+			has_law = law_type:law_monarchy
+		}
+		name = cr_carlist_events.15.d.legitimist
+		custom_tooltip = cr_carlist_events.15.d.legitimist_tt
+		don_carlos_reject_asylum_effect = yes
+		
+		ai_chance = {
+			base = 95
+		}
+	}
+	
+	##########################
+	#   Bonapartist Options  #
+	##########################
+	
+	#Regular
+	option = { #Grant Asylum, But No Support for His Cause
+		trigger = {
+			ruler = {
+				has_ideology = ideology:ideology_bonapartist
+			}
+			has_law = law_type:law_monarchy
+		}
+		name = cr_carlist_events.15.a.bonapartist
+		custom_tooltip = cr_carlist_events.15.a.bonapartist_tt
+		custom_tooltip = cr_carlist_events.15.spain_likely_approves
+		don_carlos_granted_asylum_effect = yes
+		
+		ai_chance = {
+			base = 40
+		}
+	}
+	option = { #Use His Presence to Embarrass the Old Monarchies
+		trigger = {
+			ruler = {
+				has_ideology = ideology:ideology_bonapartist
+			}
+			has_law = law_type:law_monarchy
+		}
+		name = cr_carlist_events.15.b.bonapartist
+		custom_tooltip = cr_carlist_events.15.b.bonapartist_tt
+		custom_tooltip = cr_carlist_events.15.spain_likely_disapproves
+		don_carlos_undermine_legitimacy_effect = yes
+		c:SPA = { set_variable = don_carlist_bonapartist_legitimacy_undermined }
+		
+		ai_chance = {
+			base = 20
+		}
+	}
+	option = { #Refuse Him—No Room for Royalist Plots
+		trigger = {
+			ruler = {
+				has_ideology = ideology:ideology_bonapartist
+			}
+			has_law = law_type:law_monarchy
+		}
+		name = cr_carlist_events.15.d.bonapartist
+		custom_tooltip = cr_carlist_events.15.d.bonapartist_tt
+		don_carlos_reject_asylum_effect = yes
+		default_option = yes
+		
+		ai_chance = {
+			base = 40
+		}
+	}
+	
+	##########################
+	#    Republic Options 	 #
+	##########################
+	
+	option = {
+		name = cr_carlist_events.15.a.fallback
+		trigger = {
+			OR = {
+				has_law = law_type:law_presidential_republic
+				has_law = law_type:law_parliamentary_republic
+			}
+		}
+		c:SPA = {
+			trigger_event = { id =  cr_carlist_events.20 days = 5 }
+		}
+		show_as_tooltip = {
+			c:SPA = {
+				change_relations = {
+					country = ROOT
+					value = -25
+				}
+			}
+		}
+		if = {
+			limit = {
+				c:SIC = {
+					has_law = law_type:law_monarchy
+				}
+			}
+			c:SIC = {
+				change_relations = {
+					country = ROOT
+					value = 10
+				}
+			}
+		}
+		show_as_tooltip = {
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_exile_of_bourges	
+				}
+			}
+		}
+		default_option = yes
+		
+		ai_chance = {
+			base = 40
+		}
+	}
+	
+	#option = {
+	#	name = cr_carlist_events.15.b
+	#	trigger = {
+	#		OR = {
+	#			has_law = law_type:law_presidential_republic
+	#			has_law = law_type:law_parliamentary_republic
+	#		}
+	#	}
+	#	c:SPA = {
+	#		trigger_event = { id =  cr_carlist_events.20 days = 5 }
+	#	}
+	#	show_as_tooltip = {
+	#		c:SPA = {
+	#			change_relations = {
+	#				country = ROOT
+	#				value = -50
+	#			}
+	#		}
+	#	}
+	#	if = {
+	#		limit = {
+	#			c:SIC = {
+	#				has_law = law_type:law_monarchy
+	#			}
+	#		}
+	#		c:SIC = {
+	#			change_relations = {
+	#				country = ROOT
+	#				value = 15
+	#			}
+	#		}
+	#	}
+	#	show_as_tooltip = {
+	#		scope:carlist_movement = {
+	#			add_modifier = {
+	#				name = cr_don_carlos_absolutist_support	
+	#			}
+	#		}
+	#	}
+	#	default_option = yes
+	#	
+	#	ai_chance = {
+	#		base = 70
+	#	}
+	#}
+	
+	option = {
+		name = cr_carlist_events.15.c
+		trigger = {
+			OR = {
+				has_law = law_type:law_presidential_republic
+				has_law = law_type:law_parliamentary_republic
+			}
+		}
+		don_carlos_reject_asylum_effect = yes
+		scope:legitimist_movement = {
+			add_modifier = {
+				name = cr_denied_carlos_france_legitimists	
+				months = long_modifier_time
+				is_decaying = yes
+			}
+		}
+		default_option = yes
+		ai_chance = {
+			base = 60
+		}
+	}
+}
+
+cr_carlist_events.16 = { #The Spanish Pretender / The King without a Country - Britain
+	type = country_event
+	placement = scope:don_carlos_arrival_location
+
+	title = cr_carlist_events.16.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = cr_carlist_events.16.desc_legitimist_or_orleanist_1_monarchy
+				trigger = {
+					has_law = law_type:law_monarchy
+					scope:don_carlos_exile_rejected = {
+						has_law = law_type:law_monarchy
+						ruler = {
+							OR = {
+								has_ideology = ideology:ideology_orleanist
+								has_ideology = ideology:ideology_legitimist
+							}
+						}
+					}
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.16.desc_monarchy_first_visit
+				trigger = {
+					has_law = law_type:law_monarchy
+					scope:don_carlos_exile_rejected = {
+						exists = yes
+					}
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.16.desc_monarchy_first_visit
+				trigger = {
+					has_law = law_type:law_monarchy
+					scope:don_carlos_exile_rejected = {
+						exists = no
+					}
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.16.desc_neutral_1_republic
+				trigger = {
+					NOT = { has_law = law_type:law_monarchy }
+					scope:don_carlos_exile_rejected = {
+						exists = yes
+					}
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.16.desc_neutral_republic
+				trigger = {
+					NOT = { has_law = law_type:law_monarchy } 
+					scope:don_carlos_exile_rejected = {
+						exists = no
+					}
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.16.desc_fallback
+				trigger = {
+					fallback = yes
+				}
+			}
+		}
+	}
+	flavor = cr_carlist_events.16.flavour
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		save_scope_as = don_carlos_exile_country
+		if = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_WEST_COUNTRY
+				}
+			}
+			p:x63EF7E = {
+				save_scope_as = don_carlos_arrival_location
+			}
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_WEST_COUNTRY
+				}
+				save_scope_as = carlos_arrival_state
+			}
+			random_scope_state = {
+				limit = {
+					is_incorporated = yes
+				}
+				save_scope_as = don_carlos_exile_location
+				save_scope_as = don_carlos_exile_state
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					is_incorporated = yes
+					is_coastal = yes
+				}
+				save_scope_as = don_carlos_arrival_location
+				save_scope_as = carlos_arrival_state
+				save_scope_as = don_carlos_exile_state
+			}
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.16.a
+		don_carlos_reject_asylum_effect = yes
+		default_option = yes
+		
+		ai_chance = {
+			base = 75
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.16.b
+		don_carlos_granted_asylum_effect = yes
+		
+		ai_chance = {
+			base = 5
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.16.c
+		clear_saved_scope = don_carlos_exile_location
+		clear_saved_scope = don_carlos_exile_state
+		clear_saved_scope = carlos_arrival_state
+		trigger = {
+			any_subject_or_below = {
+				any_scope_state = {
+					region = sr:region_oceania
+				}
+				is_subject_type = subject_type_colony
+			}
+		}
+		random_subject_or_below = {
+			limit = {
+				any_scope_state = {
+					region = sr:region_oceania
+				}
+				is_subject_type = subject_type_colony
+			}
+			trigger_event = {
+				id = cr_carlist_events.1699
+				days = 7
+			}
+		}
+		show_as_tooltip = {
+			c:SPA = {
+				change_relations = {
+					country = ROOT
+					value = -5
+				}
+			}
+		}
+		c:SPA = {
+		
+		}
+		if = {
+			limit = {
+				c:SIC = {
+					has_law = law_type:law_monarchy
+				}
+			}
+			c:SIC = {
+				change_relations = {
+					country = ROOT
+					value = -5
+				}
+			}
+		}
+		
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+
+cr_carlist_events.1699 = { #The Spanish Pretender / An Unwelcome Guest - Exile to Australia
+	type = country_event
+	placement = scope:don_carlos_exile_location
+
+	title = cr_carlist_events.1699.t
+	desc = cr_carlist_events.1699.desc
+	flavor = cr_carlist_events.1699.flavour
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		save_scope_as = australia
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+			}
+			save_scope_as = don_carlos_exile_location
+			save_scope_as = don_carlos_exile_state
+		}
+		c:SPA = { 
+			save_scope_as = spain 
+			set_variable = cr_don_carlos_exiled_australia
+		}
+		top_overlord = { save_scope_as = don_carlos_exile_country }
+	}
+
+	option = {
+		name = cr_carlist_events.1699.a
+		custom_tooltip = {
+			text = cr_carlist_events.1699.a_tt
+			top_overlord = {
+				save_scope_as = don_carlos_exile_country
+			}
+		}
+		show_as_tooltip = {
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_distant_exile	
+				}
+			}
+		}
+		c:SPA = {
+			trigger_event = { id = cr_carlist_events.20 days = 5 }
+		}
+		add_modifier = {
+			name = cr_royal_exile
+			months = long_modifier_time
+		}
+		default_option = yes
+		ai_chance = {
+			base = 70
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.1699.b
+		custom_tooltip = {
+			text = cr_carlist_events.1699.b_tt
+			top_overlord = {
+				save_scope_as = don_carlos_exile_country
+			}
+		}
+		c:SPA = {
+			trigger_event = { id = cr_carlist_events.20 days = 5 }
+		}
+		show_as_tooltip = {
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_distant_exile	
+				}
+			}
+		}
+		capital = {
+			add_modifier = {
+				name = cr_free_royal_exile
+				months = long_modifier_time
+			}
+		}
+		scope:don_carlos_exile_state = {
+			add_modifier = {
+				name = cr_carlos_exiled_state	
+				months = 24
+			}
+		}
+		#Chance of a minor Carlist support event later (e.g., a group of settlers advocating for him)
+		ai_chance = {
+			base = 30
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.1699.c
+		custom_tooltip = {
+			text = cr_carlist_events.1699.c_tt
+		}
+		clear_saved_scope = don_carlos_exile_location
+		clear_saved_scope = don_carlos_exile_state
+		top_overlord = {
+			change_relations = {
+				country = ROOT
+				value = -5
+			}
+			random_subject_or_below = {
+				limit = {
+					any_scope_state = {
+						region = sr:region_oceania
+					}
+					NOT = { this = ROOT }
+					is_subject_type = subject_type_colony
+				}
+				trigger_event = {
+					id = cr_carlist_events.1699
+					days = 3
+				}
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+cr_carlist_events.20 = { #The Exile of [Bourges] - Spain reaction event to Carlos having been granted asylum somewhere
+	type = country_event
+	placement = scope:don_carlos_exile_location
+	
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_don_carlos_exiled_australia
+				}
+				desc = cr_carlist_events.20.t_australia
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.20.t_bourges
+				trigger = {
+					has_variable = cr_don_carlos_exiled_bourges
+				}
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_carlist_events.20.t
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = cr_carlist_events.20.desc_australia
+				trigger = {
+					has_variable = cr_don_carlos_exiled_australia
+				}
+			}
+			#Orleanist action text
+			triggered_desc = { 
+				trigger = {
+					has_variable = don_carlist_orleanist_refuge
+					has_variable = cr_don_carlos_exiled_bourges
+				}
+				desc = cr_carlist_events.20.desc_france_orleanist_bourges
+			}
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_orleanist_refuge
+				}
+				desc = cr_carlist_events.20.desc_france_orleanist_generic
+			}
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_orleanist_support
+				}
+				desc = cr_carlist_events.20.desc_france_orleanist_support
+			}
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_don_carlos_exiled_bourges
+					has_variable = don_carlist_legitimist_support
+				}
+				desc = cr_carlist_events.20.desc_france_legitimist_support
+			}
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_legitimist_support
+				}
+				desc = cr_carlist_events.20.desc_france_legitimist_support
+			}
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_legitimist_refuge
+				}
+				desc = cr_carlist_events.20.desc_france_legitimist_refuge
+			}
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_legitimist_legitimacy_undermined
+				}
+				desc = cr_carlist_events.20.desc_france_legitimist_undermine_legitimacy
+			}
+			#Bonapartist descriptions
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_bonapartist_refuge
+				}
+				desc = cr_carlist_events.20.desc_france_bonapartist_refuge
+			}
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_bonapartist_legitimacy_undermined
+				}
+				desc = cr_carlist_events.20.desc_france_bonapartist_legitimacy_undermined
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_carlist_events.20.desc_neutral
+			}
+		}
+	}
+	
+	flavor = { 
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_don_carlos_exiled_australia
+				}
+				desc = cr_carlist_events.20.flavour_australia
+			}
+			#Orleanist flavour text
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_orleanist_refuge
+					has_variable = cr_don_carlos_exiled_bourges
+				}
+				desc = cr_carlist_events.20.desc_france_orleanist_bourges_flavour
+			}
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_orleanist_refuge
+				}
+				desc = cr_carlist_events.20.desc_france_orleanist_generic_flavour
+			}
+			#Legitimist flavour
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_legitimist_refuge
+					has_variable = cr_don_carlos_exiled_bourges
+				}
+				desc = cr_carlist_events.20.desc_france_legitimist_bourges_flavour
+			}
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_legitimist_refuge
+				}
+				desc = cr_carlist_events.20.desc_france_legitimist_generic_flavour
+			}
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_orleanist_support
+				}
+				desc = cr_carlist_events.20.desc_france_orleanist_support_flavour
+			}
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_legitimist_support
+				}
+				desc = cr_carlist_events.20.desc_france_legitimist_support_flavour
+			}
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_legitimist_legitimacy_undermined
+				}
+				desc = cr_carlist_events.20.desc_france_legitimist_undermine_legitimacy_flavour
+			}
+			#Bonapartist Flavour
+			triggered_desc = {
+				trigger = {
+					has_variable = don_carlist_bonapartist_refuge
+				}
+				desc = cr_carlist_events.20.desc_france_bonapartist_refuge_flavour
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_carlist_events.20.flavour
+			}
+		}
+	}
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		clear_saved_scope = carlist_movement
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_carlists
+			}
+			save_scope_as = carlist_movement
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.20.a
+		if = {
+			limit = {
+				has_variable = cr_don_carlos_exiled_australia
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_distant_exile	
+				}
+			}
+			change_relations = {
+				country = scope:don_carlos_exile_country
+				value = 5
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = don_carlos_portugal_exile_var
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_don_carlos_exiled_but_supported	
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = don_carlist_orleanist_refuge
+			}
+			change_relations = {
+				country = c:FRA
+				value = 5
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_exile_of_bourges	
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = don_carlist_orleanist_support
+			}
+			change_relations = {
+				country = c:FRA
+				value = -5
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_don_carlos_exiled_but_supported	
+				}
+			}
+			show_as_tooltip = {
+				c:FRA = {
+					change_infamy = 5
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_variable = don_carlist_legitimist_refuge
+					has_variable = don_carlist_legitimist_absolutist_refuge
+				}
+			}
+			change_relations = {
+				country = c:FRA
+				value = 5
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_exile_of_bourges	
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_variable = don_carlist_legitimist_support
+					has_variable = don_carlist_legitimist_absolutist_support
+				}
+			}
+			change_relations = {
+				country = c:FRA
+				value = 5
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_don_carlos_exiled_but_supported	
+				}
+			}
+			show_as_tooltip = {
+				c:FRA = {
+					change_infamy = 5
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = don_carlist_legitimist_legitimacy_undermined
+			}
+			change_relations = {
+				country = c:FRA
+				value = -5
+			}
+			add_modifier = {
+				name = cr_don_carlos_legitimacy_undermined_country	
+			}
+			show_as_tooltip = {
+				c:FRA = {
+					change_infamy = 3
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_variable = don_carlist_bonapartist_refuge
+					has_variable = don_carlist_bonapartist_absolutist_refuge
+				}
+			}
+			change_relations = {
+				country = c:FRA
+				value = 5
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_exile_of_bourges
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_variable = don_carlist_bonapartist_support
+					has_variable = don_carlist_bonapartist_absolutist_support
+				}
+			}
+			change_relations = {
+				country = c:FRA
+				value = 5
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_don_carlos_exiled_but_supported
+				}
+			}
+			show_as_tooltip = {
+				c:FRA = {
+					change_infamy = 5
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = don_carlist_bonapartist_legitimacy_undermined
+			}
+			change_relations = {
+				country = c:FRA
+				value = -5
+			}
+			add_modifier = {
+				name = cr_don_carlos_legitimacy_undermined_country	
+			}
+			show_as_tooltip = {
+				c:FRA = {
+					change_infamy = 3
+				}
+			}
+		}
+		scope:don_carlos_exile_country = {
+			post_notification = cr_don_carlos_exile_positive_reaction
+		}
+		default_option = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				trigger = {
+					has_variable = don_carlist_orleanist_refuge
+				}
+				add = 30
+			}
+			modifier = {
+				trigger = {
+					OR = {
+						has_variable = don_carlist_orleanist_support
+						has_variable = don_carlist_legitimist_absolutist_support
+						has_variable = don_carlist_legitimist_support
+						has_variable = don_carlist_bonapartist_absolutist_support
+						has_variable = don_carlist_bonapartist_support
+						has_variable = don_carlist_bonapartist_absolutist_support
+						has_variable = don_carlist_republic_support
+						has_variable = don_carlist_generic_support
+					}	
+				}
+				add = -50
+			}
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.20.b
+		if = {
+			limit = {
+				has_variable = cr_don_carlos_exiled_australia
+			}
+			change_relations = {
+				country = scope:cr_exile_of_bourges
+				value = -5
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = don_carlist_orleanist_refuge
+			}
+			change_relations = {
+				country = c:FRA
+				value = -5
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_exile_of_bourges	
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = don_carlist_orleanist_support
+			}
+			change_relations = {
+				country = c:FRA
+				value = -25
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_don_carlos_exiled_but_supported	
+				}
+			}
+			show_as_tooltip = {
+				c:FRA = {
+					change_infamy = 5
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = don_carlist_legitimist_refuge
+			}
+			change_relations = {
+				country = c:FRA
+				value = -5
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_exile_of_bourges	
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = don_carlist_legitimist_support
+			}
+			change_relations = {
+				country = c:FRA
+				value = -25
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_don_carlos_exiled_but_supported	
+				}
+			}
+			show_as_tooltip = {
+				c:FRA = {
+					change_infamy = 5
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = don_carlist_legitimist_legitimacy_undermined
+			}
+			change_relations = {
+				country = c:FRA
+				value = -30
+			}
+			add_modifier = {
+				name = cr_don_carlos_legitimacy_undermined_country	
+			}
+			show_as_tooltip = {
+				c:FRA = {
+					change_infamy = 3
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_variable = don_carlist_bonapartist_refuge
+					has_variable = don_carlist_bonapartist_absolutist_refuge
+				}
+			}
+			change_relations = {
+				country = c:FRA
+				value = -25
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_exile_of_bourges
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_variable = don_carlist_bonapartist_support
+					has_variable = don_carlist_bonapartist_absolutist_support
+				}
+			}
+			change_relations = {
+				country = c:FRA
+				value = -25
+			}
+			scope:carlist_movement = {
+				add_modifier = {
+					name = cr_don_carlos_exiled_but_supported	
+				}
+			}
+			show_as_tooltip = {
+				c:FRA = {
+					change_infamy = 5
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = don_carlist_bonapartist_legitimacy_undermined
+			}
+			change_relations = {
+				country = c:FRA
+				value = -30
+			}
+			add_modifier = {
+				name = cr_don_carlos_legitimacy_undermined_country	
+			}
+			show_as_tooltip = {
+				c:FRA = {
+					change_infamy = 3
+				}
+			}
+		}
+		scope:don_carlos_exile_country = {
+			post_notification = cr_don_carlos_exile_negative_reaction
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				trigger = {
+					has_variable = don_carlist_orleanist_refuge
+				}
+				add = -30
+			}
+			modifier = {
+				trigger = {
+					OR = {
+						has_variable = don_carlist_orleanist_support
+						has_variable = don_carlist_legitimist_absolutist_support
+						has_variable = don_carlist_legitimist_support
+						has_variable = don_carlist_bonapartist_absolutist_support
+						has_variable = don_carlist_bonapartist_support
+						has_variable = don_carlist_bonapartist_absolutist_support
+						has_variable = don_carlist_republic_support
+						has_variable = don_carlist_generic_support
+					}	
+				}
+				add = 50
+			}
+		}
+	}
+}
+
+cr_carlist_events.25 = { #The Triumph of the Old Order
 	type = country_event
 	placement = p:xABE0B3
 
@@ -313,7 +1945,8 @@ cr_carlist_events.25 = { #The Future of the Fueros (Carlist Victory)
 	}
 
 	immediate = {
-		s:STATE_NAVARRA.region_state:SPA = { save_scope_as = cr_state_navarra }
+        remove_variable = cr_carlist_war_ongoing
+        c:SPA = { remove_variable = cr_carlist_war_ongoing }
 		create_country = {
 			origin = this
 			tag = NAV
@@ -336,6 +1969,36 @@ cr_carlist_events.25 = { #The Future of the Fueros (Carlist Victory)
 		}
 		c:NAV = {
 			save_scope_as = cr_kingdom_of_navarra
+		}
+		s:STATE_NAVARRA.region_state:NAV = {
+			save_scope_as = cr_state_navarra
+		}
+		c:SPA = {
+			save_scope_as = cr_christinos
+			ig:ig_intelligentsia = {
+				save_scope_as = cr_spanish_liberals
+			}
+			ig:ig_devout = {
+				save_scope_as = cr_spanish_catholic_church
+			}
+			ig:ig_landowners = {
+				save_scope_as = cr_spanish_landowners
+			}
+			
+			ig:ig_rural_folk = {
+			}
+			
+			ig:ig_petty_bourgeoisie = {
+			}
+		}
+		c:CSP = {
+			save_scope_as = cr_carlists
+		}
+		cu:basque = {
+			save_scope_as = cr_basque_culture
+		}
+		cu:catalan = {
+			save_scope_as = cr_catalan_culture
 		}
 	}
 
@@ -399,5 +2062,505 @@ cr_carlist_events.25 = { #The Future of the Fueros (Carlist Victory)
 		ai_chance = {
 			base = 40
 		}
+	}
+}
+
+
+#############################
+#							#
+# Carlos to Portugal branch	#
+#							#
+#############################
+cr_carlist_events.80 = { #The Cause of Absolutism
+	type = country_event
+	placement = scope:don_carlos_arrival_location
+
+	title = cr_carlist_events.80.t
+	desc = cr_carlist_events.80.desc
+	flavor = cr_carlist_events.80.flavour
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		save_scope_as = don_carlos_exile_country
+		capital = {
+			save_scope_as = don_carlos_arrival_location
+			save_scope_as = carlos_arrival_state
+			save_scope_as = don_carlos_exile_location
+			save_scope_as = don_carlos_exile_state
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.80.a
+		don_carlos_support_claim_effect = yes
+		
+		ai_chance = {
+			base = 40
+			modifier = {
+				trigger = {
+					infamy >= infamy_threshold:infamous
+				}
+				add = -20
+			}
+			modifier = {
+				trigger = {
+					infamy >= infamy_threshold:notorious
+				}
+				add = -100
+			}
+			modifier = {
+				trigger = {
+					authority < 300
+				}
+				add = -20
+			}
+			modifier = {
+				trigger = {
+					authority < 200
+				}
+				add = -20
+			}
+			modifier = {
+				trigger = {
+					"relations(scope:spain)" >= relations_threshold:cordial
+				}
+				add = -10
+			}
+			modifier = {
+				trigger = {
+					"relations(scope:spain)" >= relations_threshold:amicable
+				}
+				add = -20
+			}
+			modifier = {
+				trigger = {
+					"relations(scope:spain)" >= relations_threshold:friendly
+				}
+				add = -20
+			}
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.80.b
+		don_carlos_granted_asylum_effect = yes
+		default_option = yes
+		
+		ai_chance = {
+			base = 40
+			modifier = {
+				trigger = {
+					"relations(scope:spain)" >= relations_threshold:cordial
+				}
+				add = -10
+			}
+			modifier = {
+				trigger = {
+					"relations(scope:spain)" >= relations_threshold:amicable
+				}
+				add = -10
+			}
+			modifier = {
+				trigger = {
+					"relations(scope:spain)" >= relations_threshold:friendly
+				}
+				add = -20
+			}
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.80.c
+		don_carlos_reject_asylum_effect = yes
+		ai_chance = {
+			base = 20
+			modifier = {
+				trigger = {
+					"relations(scope:spain)" >= relations_threshold:amicable
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					"relations(scope:spain)" >= relations_threshold:friendly
+				}
+				add = 10
+			}
+		}
+	}
+}
+cr_carlist_events.81 = { #Aiding the Enemies of Spain - Spain reaction event to Miguelist Portugal supporting Carlos
+	type = country_event
+	placement = scope:don_carlos_exile_location
+	
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_carlist_events.81.t
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = cr_carlist_events.81.desc_support
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
+	
+	flavor = { 
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					always = yes	
+				}
+				desc = cr_carlist_events.81.flavour
+			}
+		}
+	}
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		clear_saved_scope = carlist_movement
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_carlists
+			}
+			save_scope_as = carlist_movement
+		}
+		c:POR = {
+			if = {
+				limit = {
+					NOT = {
+						any_political_movement = {
+							is_political_movement_type = movement_liberal
+						}
+					}
+				}
+				create_political_movement = { type = movement_liberal }
+			}
+			random_political_movement = {
+				limit = {
+					is_political_movement_type = movement_liberal
+				}
+				save_scope_as = liberal_movement
+			}
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.81.a
+		scope:don_carlos_exile_country = {
+			post_notification = cr_don_carlos_support_negative_reaction
+		}
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_don_carlos_absolutist_support	
+			}
+		}
+		change_relations = {
+			country = scope:don_carlos_exile_country
+			value = -50
+		}
+		default_option = yes
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.81.b
+		scope:don_carlos_exile_country = {
+			post_notification = cr_don_carlos_exile_support_liberalism
+		}
+		set_variable = cr_carlos_supporting_liberalism_in_portugal_var
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_don_carlos_absolutist_support	
+			}
+		}
+		scope:liberal_movement = {
+			add_modifier = {
+				name = cr_don_carlos_liberal_support	
+			}		
+		}
+		add_modifier = {
+			name = cr_carlos_supporting_liberalism
+		}
+		change_relations = {
+			country = c:POR
+			value = -75
+		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				trigger = {
+					infamy >= infamy_threshold:infamous
+				}
+				add = -20
+			}
+			modifier = {
+				trigger = {
+					infamy >= infamy_threshold:notorious
+				}
+				add = -100
+			}
+			modifier = {
+				trigger = {
+					authority < 300
+				}
+				add = -20
+			}
+			modifier = {
+				trigger = {
+					authority < 200
+				}
+				add = -20
+			}
+		}
+	}
+}
+
+
+#############################
+#							#
+#	 Carlos to US branch	#
+#							#
+#############################
+
+
+cr_carlist_events.90 = { #The Spanish Pretender / The King without a Country - USA #Fallback / End of chain
+	type = country_event
+	placement = scope:don_carlos_arrival_location
+
+	title = cr_carlist_events.90.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = cr_carlist_events.90.desc
+				trigger = {
+					has_law = law_type:law_presidential_republic
+					country_has_voting_franchise = yes
+				}
+			}
+			triggered_desc = {
+				desc = cr_carlist_events.90.desc_no_republic
+				trigger = {
+					fallback = yes
+				}
+			}
+		}
+	}
+	flavor = cr_carlist_events.90.flavour
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		save_scope_as = don_carlos_exile_country
+		random_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_VIRGINIA
+					state_region = s:STATE_NORTH_CAROLINA
+					state_region = s:STATE_SOUTH_CAROLINA
+					state_region = s:STATE_GEORGIA
+					state_region = s:STATE_MARYLAND
+					state_region = s:STATE_NEW_YORK
+					state_region = s:STATE_MASSACHUSETTS
+				}
+			}
+			save_scope_as = carlos_arrival_state
+			save_scope_as = don_carlos_exile_location
+			save_scope_as = don_carlos_exile_state
+		}
+		if = {
+			limit = {
+				scope:carlos_arrival_state = { state_region = s:STATE_VIRGINIA }
+			}
+			p:x40B0C0 = {
+				save_scope_as = don_carlos_arrival_location
+			}
+		}
+		else_if = {
+			limit = {
+				scope:carlos_arrival_state = { state_region = s:STATE_NORTH_CAROLINA }
+			}
+			p:x00F040 = {
+				save_scope_as = don_carlos_arrival_location
+			}
+		}
+		else_if = {
+			limit = {
+				scope:carlos_arrival_state = { state_region = s:STATE_SOUTH_CAROLINA }
+			}
+			p:xAF8C38 = {
+				save_scope_as = don_carlos_arrival_location
+			}
+		}
+		else_if = {
+			limit = {
+				scope:carlos_arrival_state = { state_region = s:STATE_GEORGIA }
+			}
+			p:x13B302 = {
+				save_scope_as = don_carlos_arrival_location
+			}
+		}
+		else_if = {
+			limit = {
+				scope:carlos_arrival_state = { state_region = s:STATE_MARYLAND }
+			}
+			p:x3CC08F = {
+				save_scope_as = don_carlos_arrival_location
+			}
+		}
+		else_if = {
+			limit = {
+				scope:carlos_arrival_state = { state_region = s:STATE_NEW_YORK }
+			}
+			p:x644426 = {
+				save_scope_as = don_carlos_arrival_location
+			}
+		}
+		else_if = {
+			limit = {
+				scope:carlos_arrival_state = { state_region = s:STATE_MASSACHUSETTS }
+			}
+			p:x13444D = {
+				save_scope_as = don_carlos_arrival_location
+			}
+		}
+		else = {
+			s:random_scope_state = {
+				save_scope_as = carlos_arrival_state
+				save_scope_as = don_carlos_exile_location
+				save_scope_as = don_carlos_arrival_location
+				save_scope_as = don_carlos_exile_state
+			}
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.90.a
+		custom_tooltip = cr_carlist_events.90.a_tt
+		show_as_tooltip = {
+			scope:don_carlos_exile_state = {
+				add_modifier = {
+					name = cr_carlos_exiled_state	
+					months = 180
+				}
+			}
+		}
+		don_carlos_granted_asylum_effect = yes
+		
+		default_option = yes
+		
+		ai_chance = {
+			base = 95
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.90.b
+		custom_tooltip = cr_carlist_events.90.b_tt
+		add_modifier = {
+			name = cr_beacon_of_liberty	
+			months = 120
+		}
+		don_carlos_granted_asylum_effect = yes
+		every_country = {
+			limit = {
+				country_is_in_europe = yes
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_autocracy
+				country_rank >= rank_value:major_power
+			}
+			change_relations = {
+				country = ROOT
+				value = -10
+			}
+		}		
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+cr_carlist_events.91 = { #The Spanish Pretender / The King without a Country - Britain
+	type = country_event
+	placement = scope:carlos_arrival_state
+
+	title = cr_carlist_events.91.t
+	desc = cr_carlist_events.91.desc
+	flavor = cr_carlist_events.90.flavour
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cr_carlist_events.91.a
+		custom_tooltip = cr_carlist_events.91.a_tt
+		change_relations = {
+			country = scope:don_carlos_exile_country
+			value = 5
+		}
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_distant_exile	
+			}
+		}
+		default_option = yes
 	}
 }

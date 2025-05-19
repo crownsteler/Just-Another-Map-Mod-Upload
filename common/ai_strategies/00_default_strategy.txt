@@ -2988,13 +2988,13 @@ ai_strategy_default = {
 				has_journal_entry = je_conquest_of_algeria
 				scope:target_country = {
 					OR = {
-						has_state_in_state_region = s:STATE_ALGIERS
-						has_state_in_state_region = s:STATE_CONSTANTINE
-						has_state_in_state_region = s:STATE_ORAN
-						has_state_in_state_region = s:STATE_TOUGGOURT
-						has_state_in_state_region = s:STATE_LAGHOUAT
-						has_state_in_state_region = s:STATE_SAHARA
-						has_state_in_state_region = s:STATE_EAST_SAHARA
+						has_state_in_state_region = STATE_ALGIERS
+						has_state_in_state_region = STATE_CONSTANTINE
+						has_state_in_state_region = STATE_ORAN
+						has_state_in_state_region = STATE_TOUGGOURT
+						has_state_in_state_region = STATE_LAGHOUAT
+						has_state_in_state_region = STATE_SAHARA
+						has_state_in_state_region = STATE_EAST_SAHARA
 					}
 				}
 			}
@@ -3065,10 +3065,10 @@ ai_strategy_default = {
                 has_journal_entry = je_expanding_paraguay
                 scope:target_country = {
                     OR = {
-                        has_state_in_state_region = s:STATE_SANTA_FE
-                        has_state_in_state_region = s:STATE_PARANA
-                        has_state_in_state_region = s:STATE_RIO_GRANDE_DO_SUL
-                        has_state_in_state_region = s:STATE_MISIONES
+                        has_state_in_state_region = STATE_SANTA_FE
+                        has_state_in_state_region = STATE_PARANA
+                        has_state_in_state_region = STATE_RIO_GRANDE_DO_SUL
+                        has_state_in_state_region = STATE_MISIONES
                     }
                 }
             }
@@ -4288,7 +4288,7 @@ ai_strategy_default = {
 							country_rank = rank_value:great_power
 							has_technology_researched = malaria_prevention
 						}
-						has_journal_entry = scramble_for_africa
+						has_journal_entry = je_scramble_for_africa
 					}		
 				}
 				add = 150
@@ -4417,7 +4417,7 @@ ai_strategy_default = {
 				add = 100
 			}
 		}
-		region_scandinavia = {
+		region_baltic = {
 			if = {
 				limit = { 
 					wants_to_solve_schleswig_holstein = yes			

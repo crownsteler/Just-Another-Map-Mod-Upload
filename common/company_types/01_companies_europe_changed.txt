@@ -303,7 +303,7 @@ company_ericsson = {
 	}
 	
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
+		has_interest_marker_in_region = region_baltic
 	}
 	
 	attainable = {
@@ -349,7 +349,7 @@ company_lkab = {
 	}
 	
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
+		has_interest_marker_in_region = region_baltic
 	}
 	
 	attainable = {
@@ -396,7 +396,7 @@ company_gotaverken = {
 	}
 	
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
+		has_interest_marker_in_region = region_baltic
 	}
 	
 	attainable = {
@@ -445,7 +445,7 @@ company_aker_mek = {
 	}
 	
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
+		has_interest_marker_in_region = region_baltic
 	}
 	
 	attainable = {
@@ -514,7 +514,7 @@ company_mozambique_company = {
 	
 	prosperity_modifier = {
 		state_colony_growth_speed_mult = 0.1
-		state_colony_growth_creation_mult = 0.1
+		state_colony_growth_creation_factor = 0.1
 	}	
 	
 	ai_weight = {
@@ -536,7 +536,7 @@ company_chr_hansens = {
 	}
 	
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
+		has_interest_marker_in_region = region_baltic
 	}
 	
 	attainable = {
@@ -583,7 +583,7 @@ company_ap_moller = {
 	}
 	
 	potential = {
-		has_interest_marker_in_region = region_scandinavia
+		has_interest_marker_in_region = region_baltic
 	}
 	
 	attainable = {

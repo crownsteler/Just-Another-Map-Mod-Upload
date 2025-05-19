@@ -30,6 +30,7 @@ STATE_WINDWARD_COAST = {
     traits = { "state_trait_severe_malaria" }
     prime_land = { }
     city = "x2040D0"
+    port = "x6D828F"
     farm = "xE04050"
     mine = "xEBEEEF"
     wood = "x8A1594"
@@ -47,6 +48,7 @@ STATE_WINDWARD_COAST = {
         type = "bg_rubber"
         undiscovered_amount = 24
     }
+    naval_exit_id = 3091
 }
 
 STATE_KONG = {
@@ -494,7 +496,7 @@ STATE_MANDINKA = {
     prime_land = {}
     city = "x380214"
     farm = "xA04050"
-    mine = "x366D0F"
+    mine = "x8F0D6B"
     wood = "x380214"
     arable_land = 34
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_tobacco_plantations" }
@@ -694,23 +696,16 @@ STATE_RUANDA_URUNDI = {
     subsistence_building = "building_subsistence_farms"
     provinces = { x0E2596 x662B31 x585D0C x5954AA x16915A x4C93A2 x5093DF x51AA49 xDF9923 x83BED8 xDFB528 xD8B2ED x80DF50 x34EFF0 }
     traits = { "state_trait_malaria" "state_trait_lake_victoria" }
+	prime_land = { x34EFF0 x80DF50 x5093DF x16915A } 
     city = "x34EFF0"
     farm = "x5093DF"
     mine = "x80DF50"
     wood = "x0E2596"
-    arable_land = 75
+    arable_land = 82
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_banana_plantations" "bg_tea_plantations" } #palm oil
-
-
-
-
     capped_resources = {
         bg_logging = 12
         bg_lead_mining = 18 #tin, tantalum, tungstun, nickel
-
-
-
-
     }
     resource = {
         type = "bg_rubber"

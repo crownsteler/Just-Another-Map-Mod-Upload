@@ -311,3 +311,281 @@ cr_test_events.4 = { #New Northern Neighbours
 		}
 	}
 }
+
+
+
+cr_test_events.5 = { #East Asia Treaty Ports
+	type = country_event
+	placement = p:xD6A835
+
+	title = cr_test_events.4.t
+	desc = cr_test_events.4.d
+
+	flavor = cr_test_events.4.f
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/construction_colony"
+
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+
+	event_image = {
+		video = "africa_construction_colony"
+	}
+	
+	duration = 3
+
+	trigger = {
+	}
+	
+	hidden = yes
+
+	immediate = {
+		s:STATE_PYONGYANG = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x096D79
+				}
+			}
+		}
+		s:STATE_SARIWON = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x21D080
+				}
+			}
+		}
+		s:STATE_YANGHO = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x8ACAAA
+				}
+			}
+		}
+		s:STATE_BUSAN = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xC3F34F
+				}
+			}
+		}
+		s:STATE_SEOUL = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xB05000
+				}
+			}
+		}
+		s:STATE_SHIKOKU = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x9B7469
+				}
+			}
+		}
+		s:STATE_CHUGOKU = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x1151C0
+				}
+			}
+		}
+		s:STATE_KYUSHU = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xAE5874
+				}
+			}
+		}
+		s:STATE_KANSAI = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x70D040
+				}
+			}
+		}
+		s:STATE_CHUBU = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xE76E8F
+				}
+			}
+		}
+		s:STATE_KANTO = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x7010C0
+				}
+			}
+		}
+		s:STATE_TOHOKU = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xE22202
+				}
+			}
+		}
+		s:STATE_HOKKAIDO = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xA090C0
+				}
+			}
+		}
+		s:STATE_TAMBRALINGA = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xBE9208
+				}
+			}
+		}
+		s:STATE_MEKONG = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x00C0B0
+				}
+			}
+		}
+		s:STATE_ANNAM = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xA01EF1
+				}
+			}
+		}
+		s:STATE_TONKIN = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x64BE62
+				}
+			}
+		}
+		s:STATE_BANGKOK = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x9030DF
+				}
+			}
+		}
+		s:STATE_CAMBODIA = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x7A5B5E
+				}
+			}
+		}
+		s:STATE_SUZHOU = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xE9E92E
+				}
+			}
+		}
+		s:STATE_SHANDONG = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xAC24A6
+				}
+			}
+		}
+		s:STATE_FORMOSA = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x9A5066
+				}
+			}
+		}
+		s:STATE_ZHILI = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x43043A
+				}
+			}
+		}
+		s:STATE_JIANGSU = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x2C1D6B
+				}
+			}
+		}
+		s:STATE_ZHEJIANG = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x6F9BC4
+				}
+			}
+		}
+		s:STATE_FUJIAN = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xF07060
+				}
+			}
+		}
+		s:STATE_GUANGDONG = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xB031E0
+				}
+			}
+		}
+		s:STATE_OUTER_MANCHURIA = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x79F88A
+				}
+			}
+		}
+		s:STATE_SHENGJING = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					x709001
+				}
+			}
+		}
+		s:STATE_BEIJING = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xB00D9D
+				}
+			}
+		}
+		s:STATE_SHAOZHOU = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = {
+					xB03161
+				}
+			}
+		}
+	}
+}

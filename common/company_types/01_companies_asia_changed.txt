@@ -234,7 +234,7 @@ company_san_miguel = {
 	}
 	
 	prosperity_modifier = {
-		state_radicals_from_sol_change_mult = -0.1
+		state_radicals_from_political_movements_mult = -0.1
 	}	
 	
 	ai_weight = {

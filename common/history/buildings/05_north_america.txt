@@ -123,7 +123,7 @@
 				building="building_iron_mine"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_iron_mine"
 						country="c:USA"
 						levels=1
 						region="STATE_NEW_YORK"
@@ -136,7 +136,7 @@
 				building="building_paper_mills"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_paper_mills"
 						country="c:USA"
 						levels=1
 						region="STATE_NEW_YORK"
@@ -155,7 +155,7 @@
 					building={
 						type="building_financial_district"
 						country="c:USA"
-						levels=3
+						levels=4
 						region="STATE_NEW_YORK"
 					}
 					building={
@@ -167,7 +167,7 @@
 					building={
 						type="building_financial_district"
 						country="c:NET"
-						levels=2
+						levels=1
 						region="STATE_HOLLAND"
 					}
 				}
@@ -210,7 +210,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:USA"
 						levels=2
 						region="STATE_NEW_YORK"
@@ -254,7 +254,7 @@
 						region="STATE_NEW_YORK"
 					}
 					building={
-						type="building_financial_district"
+						type="building_vineyard_plantation"
 						country="c:USA"
 						levels=1
 						region="STATE_NEW_YORK"
@@ -321,12 +321,12 @@
 					building={
 						type="building_financial_district"
 						country="c:USA"
-						levels=2
+						levels=1
 						region="STATE_VIRGINIA"
 					}
 					country={
 						country="c:USA"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -523,20 +523,14 @@
 		}
 		region_state:UTE={
 		}
-		region_state:USA={
-		}
 	}
 	s:STATE_WYOMING={
-		region_state:USA={
-		}
 		region_state:LKT={
 		}
 		region_state:ARP={
 		}
 	}
 	s:STATE_MONTANA={
-		region_state:USA={
-		}
 		region_state:ABS={
 		}
 		region_state:LKT={
@@ -545,20 +539,14 @@
 		}
 	}
 	s:STATE_NORTH_DAKOTA={
-		region_state:USA={
-		}
 		region_state:LKT={
 		}
 	}
 	s:STATE_SOUTH_DAKOTA={
 		region_state:LKT={
 		}
-		region_state:USA={
-		}
 	}
 	s:STATE_NEBRASKA={
-		region_state:USA={
-		}
 		region_state:LKT={
 		}
 		region_state:PWN={
@@ -585,7 +573,7 @@
 		#			}
 		#		}
 		#		reserves=1
-		#		activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts" "pm_privately_owned" }
+		#		activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts" }
 		#	}
 		#}
 		region_state:COM={
@@ -641,7 +629,7 @@
 						type="building_financial_district"
 						country="c:GBR"
 						levels=1
-						region="STATE_YORKSHIRE"
+						region="STATE_LANCASHIRE" #Because Barings
 					}
 				}
 				reserves=1
@@ -682,19 +670,14 @@
 		}
 	}
 	s:STATE_IOWA={
-		region_state:USA={
-		}
 	}
 	s:STATE_MINNESOTA={
-		region_state:USA={
-		}
 		region_state:LKT={
 		}
 	}
 	s:STATE_WISCONSIN={
-		region_state:USA={
-		}
 	}
+	
 	s:STATE_INDIANA={
 		region_state:USA={
 			create_building={
@@ -727,13 +710,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:USA"
-						levels=1
-						region="STATE_INDIANA"
-					}
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=1
+						levels=2
 						region="STATE_INDIANA"
 					}
 				}
@@ -773,7 +750,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:USA"
 						levels=1
 						region="STATE_MICHIGAN"
@@ -786,7 +763,7 @@
 			#	building="building_sulfur_mine"
 			#	add_ownership={
 			#		building={
-			#			type="building_financial_district"
+			#			type="building_sulfur_mine"
 			#			country="c:USA"
 			#			levels=4
 			#			region="STATE_MICHIGAN"
@@ -838,7 +815,7 @@
 				building="building_glassworks"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_glassworks"
 						country="c:USA"
 						levels=1
 						region="STATE_OHIO"
@@ -851,15 +828,9 @@
 				building="building_furniture_manufacturies"
 				add_ownership={
 					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=1
-						region="STATE_OHIO"
-					}
-					building={
 						type="building_furniture_manufacturies"
 						country="c:USA"
-						levels=1
+						levels=2
 						region="STATE_OHIO"
 					}
 				}
@@ -883,7 +854,7 @@
 				building="building_coal_mine"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_coal_mine"
 						country="c:USA"
 						levels=2
 						region="STATE_OHIO"
@@ -981,7 +952,7 @@
 				building="building_coal_mine"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_coal_mine"
 						country="c:USA"
 						levels=1
 						region="STATE_KENTUCKY"
@@ -1139,7 +1110,7 @@
 						type="building_financial_district"
 						country="c:GBR"
 						levels=1
-						region="STATE_YORKSHIRE"
+						region="STATE_LANCASHIRE" #Because Barings
 					}
 				}
 				reserves=1
@@ -1316,6 +1287,7 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
 			}
+		}
 		region_state:CHE={
 		}
 		region_state:MSC={
@@ -1449,7 +1421,7 @@
 				building="building_coal_mine"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_coal_mine"
 						country="c:USA"
 						levels=2
 						region="STATE_WEST_VIRGINIA"
@@ -1510,7 +1482,7 @@
 						type="building_financial_district"
 						country="c:USA"
 						levels=1
-						region="STATE_MARYLAND"
+						region="STATE_PENNSYLVANIA"
 					}
 				}
 				reserves=1
@@ -1765,7 +1737,7 @@
 						type="building_financial_district"
 						country="c:NET"
 						levels=1
-						region="STATE_HOLL"
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -1890,7 +1862,7 @@
 						type="building_financial_district"
 						country="c:USA"
 						levels=1
-						region="STATE_NEW_JERSEY"
+						region="STATE_PENNSYLVANIA"
 					}
 					country={
 						country="c:USA"
@@ -1963,7 +1935,7 @@
 						type="building_financial_district"
 						country="c:USA"
 						levels=1
-						region="STATE_NEW_JERSEY"
+						region="STATE_NEW_YORK"
 					}
 				}
 				reserves=1
@@ -1977,7 +1949,7 @@
 				building="building_lead_mine"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_lead_mine"
 						country="c:USA"
 						levels=2
 						region="STATE_ILLINOIS"
@@ -2091,13 +2063,13 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_muskets" "pm_merchant_guilds_building_arms_industry" }
+				activate_production_methods={ "pm_muskets"  }
 			}	
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_tooling_workshops"
 						country="c:USA"
 						levels=1
 						region="STATE_CONNECTICUT"
@@ -2110,7 +2082,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_steel" "pm_automation_disabled" "pm_privately_owned_building_tooling_workshops" }
+				activate_production_methods={ "pm_steel" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_iron_mine"
@@ -2119,7 +2091,7 @@
 						type="building_financial_district"
 						country="c:USA"
 						levels=1
-						region="STATE_CONNECTICUT"
+						region="STATE_NEW_YORK"
 					}
 				}
 				reserves=1
@@ -2297,7 +2269,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:USA"
 						levels=1
 						region="STATE_MASSACHUSETTS"
@@ -2325,7 +2297,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:USA"
 						levels=1
 						region="STATE_NEW_HAMPSHIRE"
@@ -2374,7 +2346,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:USA"
 						levels=1
 						region="STATE_VERMONT"
@@ -2400,7 +2372,7 @@
 				building="building_copper_mine"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_copper_mine"
 						country="c:USA"
 						levels=1
 						region="STATE_VERMONT"
@@ -2441,7 +2413,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:USA"
 						levels=2
 						region="STATE_MAINE"
@@ -2460,7 +2432,7 @@
 				building="building_shipyards"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_shipyards"
 						country="c:USA"
 						levels=1
 						region="STATE_MAINE"
@@ -2534,7 +2506,7 @@
 						type="building_financial_district"
 						country="c:GBR"
 						levels=2
-						region="STATE_YORKSHIRE"
+						region="STATE_LANCASHIRE" #Because Barings
 					}
 				}
 				reserves=1
@@ -2544,7 +2516,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:USA"
 						levels=1
 						region="STATE_NORTH_CAROLINA"
@@ -2637,7 +2609,7 @@
 					building={
 						type="building_manor_house"
 						country="c:USA"
-						levels=8
+						levels=7
 						region="STATE_SOUTH_CAROLINA"
 					}
 					building={
@@ -2649,7 +2621,7 @@
 					building={
 						type="building_financial_district"
 						country="c:NET"
-						levels=1
+						levels=2
 						region="STATE_HOLLAND"
 					}
 				}
@@ -2776,7 +2748,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:HAW"
 						levels=1
 						region="STATE_HAWAIIAN_ISLANDS"
@@ -2894,7 +2866,7 @@
 				building="building_lead_mine"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_lead_mine"
 						country="c:NBS"
 						levels=2
 						region="STATE_NEW_BRUNSWICK"
@@ -2907,7 +2879,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:NBS"
 						levels=1
 						region="STATE_NEW_BRUNSWICK"
@@ -2988,7 +2960,7 @@
 					}
 				}
 				reserves=6
-				activate_production_methods={ "pm_privately_owned" "pm_soil_enriching_farming" "pm_tools_disabled" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_port"
@@ -3015,6 +2987,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
+			}
+			create_building={ #Molson Coors Beverage Comp by anglo-canadian John Molson
+				building="building_food_industry"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:QUE"
+						levels=1
+						region="STATE_QUEBEC"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
 			}
 			create_building={
 				building="building_shipyards"
@@ -3058,7 +3043,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_manor_house"
 						country="c:QUE"
 						levels=1
 						region="STATE_QUEBEC"
@@ -3118,7 +3103,7 @@
 				building="building_fur_trading_post"
 				add_ownership={
 					country={
-						country="c:QHBCUE"
+						country="c:HBC"
 						levels=1
 					}
 				}
@@ -3142,7 +3127,6 @@
 				reserves=1
 				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
 			}
-		}
 			create_building={
 				building="building_port"
 				add_ownership={
@@ -3155,7 +3139,8 @@
 				activate_production_methods={ "pm_basic_port" }
 			}
 		}
-
+	}
+	s:STATE_SAINT_PIERRE_AND_MIQUELON={
 		region_state:FRA={
 			create_building={
 				building="building_port"
@@ -3175,7 +3160,7 @@
 						type="building_fishing_wharf"
 						country="c:FRA"
 						levels=1
-						region="STATE_NEWFOUNDLAND"
+						region="STATE_SAINT_PIERRE_AND_MIQUELON"
 					}
 				}
 				reserves=1
@@ -3272,8 +3257,6 @@
 		}
 	}
 	s:STATE_YUKON_TERRITORY={
-		region_state:HBC={
-		}
 	}
 	s:STATE_NORTHWEST_TERRITORIES={
 		region_state:HBC={
@@ -3291,8 +3274,6 @@
 		}
 	}
 	s:STATE_NUNAVUT={
-		region_state:HBC={
-		}
 	}
 	s:STATE_BERMUDA={
 		region_state:GBR={
@@ -3523,25 +3504,12 @@
 					building={
 						type="building_manor_house"
 						country="c:MEX"
-						levels=1
-						region="STATE_BAJIO"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
-			}
-			create_building={
-				building="building_vineyard_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:MEX"
 						levels=2
 						region="STATE_BAJIO"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_tobacco_plantation"
@@ -3724,7 +3692,7 @@
 				building="building_iron_mine"
 				add_ownership={
 					building={	#Mineral del Monte, operated by Cornish miners. Is actually a gold and silver mine, but since I didn't include that one...
-						type="building_financial_district"
+						type="building_manor_house"
 						country="c:GBR"
 						levels=1
 						region="STATE_WEST_COUNTRY"
@@ -3861,7 +3829,7 @@
 						type="building_financial_district"
 						country="c:MEX"
 						levels=1
-						region="STATE_MEXICO"
+						region="STATE_GUERRERO"
 					}
 				}
 				reserves=1
@@ -3964,10 +3932,10 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:MEX"
 						levels=2
-						region="STATE_MEXICO"
+						region="STATE_JALISCO"
 					}
 				}
 				reserves=1
@@ -4003,7 +3971,7 @@
 			#	building="building_iron_mine"
 			#	add_ownership={
 			#		building={
-			#			type="building_financial_district"
+			#			type="building_iron_mine"
 			#			country="c:MEX"
 			#			levels=1
 			#			region="STATE_JALISCO"
@@ -4022,7 +3990,7 @@
 					building={
 						type="building_maize_farm"
 						country="c:MEX"
-						levels=1
+						levels=2
 						region="STATE_ZACATECAS"
 					}
 				}
@@ -4030,25 +3998,12 @@
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
-				building="building_vineyard_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:MEX"
-						levels=3
-						region="STATE_ZACATECAS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
-			}
-			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
 						country="c:MEX"
-						levels=1
+						levels=2
 						region="STATE_ZACATECAS"
 					}
 				}

@@ -76,3 +76,27 @@
  notification_cr_numbered_treaties_war_makes_negotiations_impossible_desc: "The outbreak of war has caused the negotiations with the Indians for a land cession treaty to be halted."
  notification_cr_numbered_treaties_war_makes_negotiations_impossible_tooltip: "#header $notification_cr_numbered_treaties_war_makes_negotiations_impossible_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_numbered_treaties_war_makes_negotiations_impossible_desc$"
  
+ notification_cr_don_carlos_exile_positive_reaction_name: "Spain Reacts Positively"
+ notification_cr_don_carlos_exile_positive_reaction_desc: "[SCOPE.sCountry('spain').GetName] has reacted positively to our decision to provide refuge to Don Carlos, improving our relations."
+ notification_cr_don_carlos_exile_positive_reaction_tooltip: "#header $notification_cr_don_carlos_exile_positive_reaction_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_don_carlos_exile_positive_reaction_desc$" 
+ notification_cr_don_carlos_exile_negative_reaction_name: "Spain Reacts Poorly"
+ notification_cr_don_carlos_exile_negative_reaction_desc: "[SCOPE.sCountry('spain').GetName] has reacted negatively to our decision to provide refuge to Don Carlos, decreasing our relations."
+ notification_cr_don_carlos_exile_negative_reaction_tooltip: "#header $notification_cr_don_carlos_exile_negative_reaction_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_don_carlos_exile_negative_reaction_desc$"
+ 
+ notification_cr_don_carlos_support_negative_reaction_name: "Spain Reacts Poorly"
+ notification_cr_don_carlos_support_negative_reaction_desc: "[SCOPE.sCountry('spain').GetName] has reacted negatively to our decision to provide support to Don Carlos' claim to their throne, decreasing our relations."
+ notification_cr_don_carlos_support_negative_reaction_tooltip: "#header $notification_cr_don_carlos_support_negative_reaction_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_don_carlos_support_negative_reaction_desc$"
+ 
+ notification_cr_don_carlos_exile_support_liberalism_name: "Spain Supporting for Liberalism"
+ notification_cr_don_carlos_exile_support_liberalism_desc: "In response to our support of Don Carlos' claim to the [SCOPE.sCountry('spain').GetAdjective] throne, [SCOPE.sCountry('spain').GetNameNoFormatting] has decided to support the [SCOPE.sCountry('don_carlos_exile_country').GetAdjectiveNoFormatting] [SCOPE.sPoliticalMovement('liberal_movement').GetName]."
+ notification_cr_don_carlos_exile_support_liberalism_tooltip: "#header $notification_cr_don_carlos_support_negative_reaction_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_don_carlos_support_negative_reaction_desc$"
+ 
+ notification_cr_don_carlos_exile_provided_name: "Spanish Pretender Finds Home"
+ notification_cr_don_carlos_exile_provided_desc: "[SCOPE.sCountry('don_carlos_exile_country').GetName] has decided to provide refugee to Don Carlos, the [SCOPE.sCountry('spain').GetName] pretender, after he lost his was for the throne."
+ notification_cr_don_carlos_exile_provided_tooltip: "#header $notification_cr_don_carlos_exile_provided_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_don_carlos_exile_provided_desc$"
+ notification_cr_don_carlos_exile_refused_name: "Spanish Pretender Rejected"
+ notification_cr_don_carlos_exile_refused_desc: "[SCOPE.sCountry('don_carlos_exile_country').GetName] has decided to refuse to provide refugee to Don Carlos, the [SCOPE.sCountry('spain').GetName] pretender, after he lost his was for the throne."
+ notification_cr_don_carlos_exile_refused_tooltip: "#header $notification_cr_don_carlos_exile_refused_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_don_carlos_exile_rejected_desc$"
+ notification_cr_don_carlos_exile_supported_name: "Spanish Pretender Finds Support"
+ notification_cr_don_carlos_exile_supported_desc: "Despite losing his was for the throne, [SCOPE.sCountry('don_carlos_exile_country').GetName] has decided to provide refuge and support to Don Carlos, the absolutist [SCOPE.sCountry('spain').GetName] pretender."
+ notification_cr_don_carlos_exile_supported_tooltip: "#header $notification_cr_don_carlos_exile_supported_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_don_carlos_exile_supported_desc$"

@@ -48,6 +48,12 @@
 			level = 8
 			direction = import
 			target = c:BRZ.market
+		}	
+		create_trade_route = {
+			goods = clothes
+			level = 4
+			direction = export
+			target = c:CHL.market
 		}		
 	}	
 
@@ -102,13 +108,7 @@
 	}	
 	
 	# Khiva
-	c:KHI ?= {
-		create_trade_route = {
-			goods = tea
-			level = 1
-			direction = import
-			target = c:BUK.market
-		}		
+	c:KHI ?= {		
 	}
 	
 	# USA
@@ -516,6 +516,18 @@
 			direction = export
 			target = c:HER.market
 		}	
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 2
+			direction = export
+			target = c:OMA.market
+		}
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 2
+			direction = export
+			target = c:KHI.market
+		}	
 	}
 	
 	# Haiti
@@ -732,8 +744,8 @@
 			target = c:EGY.market
 		}
 		create_trade_route = {
-			goods = tea
-			level = 4
+			goods = tools
+			level = 1
 			direction = import
 			target = c:TUR.market
 		}			
@@ -853,9 +865,15 @@
 	c:PAP ?= {
 		create_trade_route = {
 			goods = small_arms
-			level = 1
+			level = 2
 			direction = import
 			target = c:SIC.market
+		}
+		create_trade_route = {
+			goods = small_arms
+			level = 2
+			direction = import
+			target = c:FRA.market
 		}
 		create_trade_route = {
 			goods = luxury_furniture
@@ -951,12 +969,6 @@
 			level = 2
 			direction = export
 			target = c:AUS.market
-		}
-		create_trade_route = {
-			goods = dye
-			level = 6
-			direction = import
-			target = c:GBR.market
 		}
 		create_trade_route = {
 			goods = grain
@@ -1313,6 +1325,12 @@
 			level = 2
 			direction = import
 			target = c:GBR.market
+		}		
+		create_trade_route = {
+			goods = artillery
+			level = 1
+			direction = import
+			target = c:GBR.market
 		}
 		create_trade_route = {
 			goods = tools
@@ -1491,6 +1509,12 @@
 			direction = export
 			target = c:TUR.market
 		}
+		create_trade_route = {
+			goods = copper
+			level = 4
+			direction = import
+			target = c:BAV.market
+		}
 	}
 	
 	# Sardinia
@@ -1638,6 +1662,12 @@
 			level = 9
 			direction = import
 			target = c:NET.market
+		}				
+		create_trade_route = {
+			goods = lead
+			level = 2
+			direction = import
+			target = c:BEL.market
 		}		
 	}	
 	
@@ -1765,12 +1795,12 @@
 			direction = import
 			target = c:GBR.market
 		}
-		#create_trade_route = {
-		#	goods = hardwood
-		#	level = 2
-		#	direction = import
-		#	target = c:SWE.market
-		#}		
+		create_trade_route = {
+			goods = hardwood
+			level = 2
+			direction = import
+			target = c:SWE.market
+		}		
 		create_trade_route = {
 			goods = wood
 			level = 9
@@ -1789,12 +1819,30 @@
 			direction = import
 			target = c:CHI.market
 		}			
+		create_trade_route = {
+			goods = iron
+			level = 4
+			direction = import
+			target = c:SWE.market
+		}				
+		create_trade_route = {
+			goods = lead
+			level = 2
+			direction = export
+			target = c:PRU.market
+		}				
 		#create_trade_route = {
-		#	goods = iron
+		#	goods = tools
 		#	level = 2
-		#	direction = import
-		#	target = c:SWE.market
-		#}			
+		#	direction = export
+		#	target = c:JAP.market
+		#}					
+		create_trade_route = {
+			goods = lead
+			level = 2
+			direction = export
+			target = c:PRU.market
+		}		
 	}
 
 	# Burma

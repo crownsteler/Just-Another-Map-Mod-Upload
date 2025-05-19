@@ -17,8 +17,46 @@ cr_dealing_with_the_kyrgyz = {
 #Spain
 cr_desamortizacion_auctioned = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_expenses_add = 7500
+	country_tax_income_add = 7500
 }
+
+cr_don_carlos_legitimacy_undermined_country = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_legitimacy_base_add = -10
+}
+
+cr_denied_dynasty_member_asylum = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_legitimacy_base_add = -5
+}
+
+cr_royal_exile = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_prestige_mult = 0.03
+}
+
+cr_free_royal_exile = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_migration_pull_mult = 0.03
+}
+
+cr_carlos_exiled_state = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_landowners_pop_attraction_mult = 0.02
+	state_migration_pull_mult = 0.025
+}
+
+cr_carlos_supporting_absolutism = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_authority_add = -100
+}
+
+cr_carlos_supporting_liberalism = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_authority_add = -100
+}
+
+
 
 #Pacific
 cr_farflung_corner_of_empire = {

@@ -31,7 +31,7 @@ state_trait_sahara_desert = {
 state_trait_cr_copperbelt = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
 	modifier = {
-		building_copper_mine_throughput_add = 0.15
+		building_copper_mine_output_add = 0.10
 	}
 }
 
@@ -53,12 +53,12 @@ state_trait_cr_the_rif = {
 state_trait_cr_the_sudd = {
 	icon = "gfx/interface/icons/state_trait_icons/swamp.dds"
 	modifier = {
-        building_group_bg_ranching_throughput_add = -0.1
+        bg_livestock_ranches_output_add = -0.1
 		building_group_bg_agriculture_throughput_add = -0.1
 		building_group_bg_plantations_throughput_add = -0.1
 		state_construction_mult = -0.15
 		state_infrastructure_mult = -0.15
-		state_colony_growth_speed_mult = -0.25
+		state_colony_growth_speed_mult = -0.40
 	}
 }
 
@@ -67,9 +67,9 @@ state_trait_namib_desert = {
 	required_techs_for_colonization = { "civilizing_mission" } 
 	
 	modifier = {
-		building_group_bg_agriculture_throughput_add = -0.15
-		building_group_bg_plantations_throughput_add = -0.15
+		#building_group_bg_agriculture_throughput_add = -0.15
+		bg_ranching_output_add = -0.15
 		state_construction_mult = -0.15
-		state_infrastructure_mult = -0.15
+		state_infrastructure_mult = -0.10
     }
 }

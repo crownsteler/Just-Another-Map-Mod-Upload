@@ -19,49 +19,6 @@
 		}
 
 		create_character = {
-			is_general = yes
-			first_name = Baldomero
-			last_name = Espartero
-			historical = yes
-			hq = region_iberia
-			birth_date = 1793.2.27
-			ig_leader = yes
-			interest_group = ig_petty_bourgeoisie
-			ideology = ideology_radical
-			traits = {
-				basic_diplomat
-				ambitious
-			}
-			save_scope_as = cr_baldomero_espartero_general
-			on_created = {
-				set_variable = {
-					name = is_baldomero_espartero
-				}				
-			}
-		}
-		
-
-		create_character = {
-			first_name = "Ramon_Maria"
-			last_name = Narvaez
-			historical = yes
-			birth_date = 1800.8.5
-			ig_leader = yes
-			is_general = yes
-			interest_group = ig_armed_forces
-			ideology = ideology_moderate
-			traits = {
-				ambitious
-			}
-			save_scope_as = cr_ramon_maria_narvaez_general
-			on_created = {
-				set_variable = {
-					name = is_ramon_maria_narvaez
-				}				
-			}
-		}
-
-		create_character = {
 			first_name = VI_ctor
 			last_name = Saez
 			historical = yes

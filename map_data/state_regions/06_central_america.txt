@@ -150,6 +150,7 @@ STATE_PANAMA = {
     id = 343
     subsistence_building = "building_subsistence_farms"
     provinces = { "x30B080" "x357099" "x47C5F8" "x50C29C" "x717275" "x8537FE" "x8A8A20" "x910E14" "xB0A911" "xB0B080" "xBB820B" "xC650E1" "xD0EF40" "xEE835F" }
+	impassible = { xB0B080 xB0A911 xEE835F } #Darian Gap
     city = "x8A8A20"
     port = "xD0EF40"
     farm = "x30B080"
@@ -233,14 +234,8 @@ STATE_PUERTO_RICO = {
     city = "x2160B9"
     port = "xB07080"
     farm = "xB07080"
-    arable_land = 15
-    arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_cotton_plantations" "bg_banana_plantations" } #spices, cacao
-
-
-
-
-
-
+    arable_land = 22
+    arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #spices, cacao
     capped_resources = {
         bg_fishing = 4
     }
@@ -339,7 +334,7 @@ STATE_CUBA = {
     capped_resources = {
         #bg_coal_mining = 16
         #bg_iron_mining = 18
-        bg_logging = 15
+        bg_logging = 9
         bg_fishing = 10
     }
     resource = {

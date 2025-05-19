@@ -129,7 +129,7 @@ JLF = {
 	tier = principality
 	
 	cultures = { wolof }
-	religon = animist	#Strong religious tensions in 1860s, and jihadi invasion in 1865 after the king refused conversion
+	religion = animist	#Strong religious tensions in 1860s, and jihadi invasion in 1865 after the king refused conversion
 	capital = STATE_SENEGAL
 }
 
@@ -738,6 +738,18 @@ BEL = {
 	#capital = STATE_BRUSSELS
 }
 
+CAT = {
+	color = { 213  132  76 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { catalan }
+	capital = STATE_CATALONIA
+	#is_named_from_capital = yes
+}
+
 
 SWI = {
 	color = { 165 45 38 }
@@ -843,6 +855,39 @@ DAI = {
 	capital = STATE_ANNAM
 }
 
+LAO = {
+	color = { 188 15 45 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { lao }
+	capital = STATE_VIENTIANE
+}
+
+CHP = {
+	color = { 75 112 99 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { lao }
+	capital = STATE_VIENTIANE
+}
+
+VIE = {
+	color = { 151 174 28 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { lao }
+	capital = STATE_VIENTIANE
+}
+
 KHN = { # Kachin
 	color = { 130 186 198 }
 	
@@ -872,7 +917,6 @@ TUV = {
 	tier = principality
 	cultures = { tuvan }
 	capital = STATE_TUVA
-
 }
 
 

@@ -269,7 +269,7 @@ SPI = {
 PEI = {
 	color = { 125 180 200 }
 	
-	country_type = recognized
+	country_type = colonial
 	
 	tier = principality
 	

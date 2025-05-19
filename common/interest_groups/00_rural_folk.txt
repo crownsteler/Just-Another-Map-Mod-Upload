@@ -184,7 +184,7 @@
 				}
 			}
 			cultures = {
-				javan sundanese
+				javan sundanese minangkabau moluccan bornean sumatran melanesian
 			}
 		}
 	}

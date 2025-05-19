@@ -1424,7 +1424,7 @@
 	c:RUS ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_baltic
+			hq_region = sr:region_russia
 			name = Otdelniy_Gvardeyskiy_Korpus
 
 			combat_unit = { # L.-Gds. Preobrazhenskii and Semenovskii regiments, L.-Gds. Izmailovskii and Jäger regiments, Livgardets 3:e finska skarpskyttebataljon (Finland)
@@ -1508,7 +1508,7 @@
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_baltic
+			hq_region = sr:region_russia
 			name = 1y_Pekhotniy_Korpus
 
 			combat_unit = { # Neva and Sofiya Infantry, Narva and Kopore Jägers, Prince Wilhelm of Prussia’s and Prince Karl of Prussia’s Infantry, Old Ingermanland and New Ingermanland Infantry
@@ -1561,7 +1561,7 @@
 			# 1st Reserve Cavalry Corps
 			combat_unit = { # Yekaterinoslav and His Imperial Highness the Grand Duke Michael Pavlovich’s Cuirassier Regiments
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_LUHANSK
+				state_region = s:STATE_KHARKOV
 				count = 1
 			}
 			combat_unit = { # Astrakhan and Pskov Cuirassier Regments
@@ -1676,12 +1676,12 @@
 			# 2nd Light Cavalry Division
 			combat_unit = { # Yelisavetgrad and Lubny Hussar Regiments
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_LUHANSK
+				state_region = s:STATE_KHARKOV
 				count = 2
 			}
 			combat_unit = { # Smolensk and Kharkov Lancer Regiments
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_LUHANSK
+				state_region = s:STATE_KHARKOV
 				count = 2
 			}
 
@@ -1700,7 +1700,7 @@
 			# 2nd Reserve Cavalry Corps
 			combat_unit = { # Order and Starodub Cuirassier Regiments, Prince Albert of Prussia’s and Her Imperial Highness the Grand Duchess Helen Pavlovna’s Cuirassier Regments
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_BRYANSK
+				state_region = s:STATE_ORYOL
 				count = 3
 			}
 
@@ -1728,7 +1728,7 @@
 
 			combat_unit = { # Field Marshal the Duke of Wellington’s and Mogilev Infantry, Vitebsk and Polotsk Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ORSHA
+				state_region = s:STATE_MOGILEV
 				count = 4
 			}
 
@@ -1746,7 +1746,7 @@
 
 			combat_unit = { # Bryansk Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BRYANSK
+				state_region = s:STATE_ORYOL
 				count = 1
 			}
 
@@ -1758,7 +1758,7 @@
 			}
 			combat_unit = { # Lithuania and Volhynia Lancer Regiments.
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_LITHUANIA
+				state_region = s:STATE_KAUNAS
 				count = 2
 			}
 
@@ -1853,7 +1853,7 @@
 
 			combat_unit = { # Azov and Dnieper Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_LUHANSK
+				state_region = s:STATE_KHARKOV
 				count = 2
 			}
 
@@ -1866,7 +1866,7 @@
 			# 4th Light Cavalry Division
 			combat_unit = { # Pavlograd and Archduke Ferdinand’s Hussar Regiments.
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_LUHANSK
+				state_region = s:STATE_KHARKOV
 				count = 2
 			}
 			combat_unit = { # Voznesensk and Olviopol Lancer Regiments.
@@ -1878,12 +1878,12 @@
 			# 4th Artillery Division
 			combat_unit = { # 10th, 11th, and 12th Field Artillery Brigades
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_LUHANSK
+				state_region = s:STATE_KHARKOV
 				count = 3
 			}
 			combat_unit = { # 4th Horse-Artillery Brigade
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_LUHANSK
+				state_region = s:STATE_KHARKOV
 				count = 1
 			}
 
@@ -2062,14 +2062,14 @@
 			# 1st Reserve Cavalry Corps
 			combat_unit = { # Yekaterinoslav and His Imperial Highness the Grand Duke Michael Pavlovich’s Cuirassier Regiments
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_LUHANSK
+				state_region = s:STATE_KHARKOV
 				count = 1
 		}
 
 			# 2nd Reserve Cavalry Corps
 			combat_unit = { # Order and Starodub Cuirassier Regiments, Prince Albert of Prussia’s and Her Imperial Highness the Grand Duchess Helen Pavlovna’s Cuirassier Regments
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_BRYANSK
+				state_region = s:STATE_ORYOL
 				count = 1
 			}
 
@@ -2099,7 +2099,7 @@
 #			# Don Cossacks
 #			combat_unit = {
 #				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_LUHANSK
+#				state_region = s:STATE_KHARKOV
 #				count = 5
 #			}
 #			# Don Cossacks
@@ -2142,7 +2142,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_baltic
+			hq_region = sr:region_russia
 			name = Baltiyskiy_Flot
 		
 			combat_unit = {
@@ -2225,7 +2225,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LUHANSK
+				state_region = s:STATE_TAURIDA
 				count = 1
 			}
 			save_scope_as = rus_black_sea_fleet
@@ -2324,13 +2324,7 @@
 			combat_unit = { # 
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_NORTH_CAUCASUS
-				count = 1
-			}
-			
-			combat_unit = { # 
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_DAGESTAN
-				count = 5
+				count = 6
 			}
 		}
 	}
@@ -2790,7 +2784,7 @@
 	c:SWE ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_scandinavia
+			hq_region = sr:region_baltic
 			name = Kungliga_Svenska_Armn
 
 			combat_unit = { # Första Livgrenadjärregementet, Andra livgrenadjärregementet, Dalregementet, Kronobergs regemente, Närkes regemente, Södermanlands regemente, Upplands regemente, Västmanlands regemente, Svea livgarde, Livbeväringsregementet
@@ -2880,7 +2874,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_scandinavia
+			hq_region = sr:region_baltic
 			name = Hgsjflottan
 
 			combat_unit = { # Carl XIII, Carl Johan, Försigtigheten, Stockholm
@@ -2930,7 +2924,7 @@
 	c:DEN ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_scandinavia
+			hq_region = sr:region_baltic
 			name = Hren
 
 			combat_unit = { # 1. Livregiment til Fods, 2. Livregiment til Fods, 3. Livregiment til Fods, Kronens Regiment, Fyenske Infanteriregiment
@@ -2991,7 +2985,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_scandinavia
+			hq_region = sr:region_baltic
 			name = Kongelige_Danske_Marine
 
 			combat_unit = { # Dronning Maria, Waldemar, Frederik VI, Skiold, Danmark
@@ -3069,7 +3063,7 @@
 	c:NOR ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_scandinavia
+			hq_region = sr:region_baltic
 			name = Hren
 
 			combat_unit = { # 1. Akershusiske brigade, 2. Akershusiske brigade
@@ -3105,7 +3099,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_scandinavia
+			hq_region = sr:region_baltic
 			name = Kongelige_Norske_Marine
 
 			combat_unit = { # Freia
@@ -3119,7 +3113,7 @@
 	c:FIN ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_baltic
+			hq_region = sr:region_finland
 			name = 19e_Infanteridivision
 
 			combat_unit = { # Viborg and Petrovsk Infantry
@@ -3130,24 +3124,24 @@
 
 			combat_unit = { # Nyslott and Villmanstrand Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SOUTHERN_FINLAND
+				state_region = s:STATE_UUSIMAA
 				count = 2
 			}
 			combat_unit = { # 19th Field Artillery Brigade
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_SOUTHERN_FINLAND
+				state_region = s:STATE_UUSIMAA
 				count = 1
 			}
 		}
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_baltic
+			hq_region = sr:region_finland
 			name = Finska_SjEquipaget # Suomen Meriekipaasi - Swedish was the sole offical language of the Grand Duchy in 1836
 
 			combat_unit = { # Nothing the size of a frigate at this point in history
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_SOUTHERN_FINLAND
+				state_region = s:STATE_UUSIMAA
 				count = 1
 			}
 		}
@@ -3896,7 +3890,7 @@
 		}
 	}
 
-	c:SPA ?= {
+	c:SPA ?= {		
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_iberia
@@ -3905,13 +3899,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_TOLEDO
-				count = 4
+				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_CASTILE
-				count = 4
+				count = 2
 			}
 
 			combat_unit = {
@@ -3921,26 +3915,41 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_CASTILE
-				count = 1
-			}
-
-			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_TOLEDO
 				count = 1
 			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_BADAJOZ
-				count = 1
-			}
 			save_scope_as = ejercito_guardia_real
 		}
+		create_character = {
+			is_general = yes
+			first_name = vincente_genaro
+			last_name = de_quesada
+			historical = yes
+			hq = region_iberia
+			birth_date = 1782.9.19
+			ig_leader = no
+			interest_group = ig_armed_forces
+			ideology = ideology_traditionalist
+			traits = {
+				compliant
+			}
+			save_scope_as = cr_vincente_genaro_de_quesada_general
+			on_created = {
+				set_variable = {
+					name = is_vincente_genaro_de_quesada
+				}				
+			}
+		}
 		
-		scope:cr_jose_ramon_rodil_general = {
+		#scope:cr_vincente_genaro_de_quesada_general = {
+		#	transfer_to_formation = scope:ejercito_guardia_real
+		#}
+		
+		random_scope_character = {
+			limit = {
+				has_variable = is_vincente_genaro_de_quesada
+			}
 			transfer_to_formation = scope:ejercito_guardia_real
 		}
 
@@ -3952,13 +3961,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_GALICIA
-				count = 4
+				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ANDALUSIA
-				count = 5
+				count = 6
 			}
 
 			combat_unit = {
@@ -3976,7 +3985,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_VALENCIA
-				count = 4
+				count = 3
 			}
 
 			combat_unit = { # Húsares de la Princesa
@@ -4012,7 +4021,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
 				state_region = s:STATE_BADAJOZ
-				count = 3
+				count = 2
 			}
 
 			combat_unit = {
@@ -4026,18 +4035,72 @@
 				state_region = s:STATE_GALICIA
 				count = 2
 			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CATALONIA
-				count = 1
-			}
 			save_scope_as = ejercito_del_norte
 		}
+
+		create_character = {
+			is_general = yes
+			first_name = luis_fernandez
+			last_name = de_cordova
+			historical = yes
+			hq = region_iberia
+			birth_date = 1798.8.2
+			ig_leader = no
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				imperious
+			}
+			save_scope_as = cr_luis_fernandex_de_cordova_general
+			on_created = {
+				set_variable = {
+					name = is_luis_fernandex_de_cordova
+				}				
+			}
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Baldomero
+			last_name = Espartero
+			historical = yes
+			hq = region_iberia
+			birth_date = 1793.2.27
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_radical
+			traits = {
+				ambitious
+			}
+			save_scope_as = cr_baldomero_espartero_general
+			on_created = {
+				set_variable = {
+					name = is_baldomero_espartero
+				}				
+			}
+		}
 		
-		scope:cr_baldomero_espartero_general = {
+		#scope:cr_luis_fernandex_de_cordova_general = { #was replaced by Baldomero Espartero after the Mutiny of La Granja
+		#	transfer_to_formation = scope:ejercito_del_norte
+		#}
+		#scope:cr_baldomero_espartero_general = { #Replaced Luis Fernández de Córdova after the Mutiny of La Granja, but commanded the right flank at Mendigorría early 1836 besides Luis Fernández
+		#	transfer_to_formation = scope:ejercito_del_norte
+		#}
+		
+		random_scope_character = {
+			limit = {
+				has_variable = is_luis_fernandex_de_cordova
+			}
 			transfer_to_formation = scope:ejercito_del_norte
 		}
+		
+		random_scope_character = {
+			limit = {
+				has_variable = is_baldomero_espartero
+			}
+			transfer_to_formation = scope:ejercito_del_norte
+		}
+
 
 		create_military_formation = {
 			type = army
@@ -4047,13 +4110,62 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_CATALONIA
-				count = 7
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_TOLEDO
+				count = 1
+			}
+			save_scope_as = ejercito_del_centro
+		}
+		
+		create_character = {
+			first_name = "Ramon_Maria"
+			last_name = Narvaez
+			historical = yes
+			birth_date = 1800.8.5
+			ig_leader = yes
+			is_general = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			traits = {
+				ambitious
+			}
+			save_scope_as = cr_ramon_maria_narvaez_general
+			on_created = {
+				set_variable = {
+					name = is_ramon_maria_narvaez
+				}				
+			}
+		}
+		
+		scope:cr_ramon_maria_narvaez_general = {
+			transfer_to_formation = scope:ejercito_del_centro
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_iberia
+			name = Ejercito_del_Catalunya
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CATALONIA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CASTILE
+				count = 2
 			}
 			
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
 				state_region = s:STATE_ANDALUSIA
-				count = 2
+				count = 1
 			}
 
 			combat_unit = {
@@ -4065,13 +4177,20 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_GRANADA
-				count = 2
+				count = 1
 			}
-			save_scope_as = ejercito_del_centro
+			save_scope_as = ejercito_del_catalunya
 		}
 		
-		scope:cr_ramon_maria_narvaez_general = {
-			transfer_to_formation = scope:ejercito_del_centro
+		#scope:cr_jose_ramon_rodil_general = {
+		#	transfer_to_formation = scope:ejercito_del_catalunya
+		#}
+		
+		random_scope_character = {
+			limit = {
+				has_variable = is_jose_ramon_rodil
+			}
+			transfer_to_formation = scope:ejercito_del_norte
 		}
 
 		create_military_formation = {
@@ -4116,6 +4235,35 @@
 			}
 		}
 	}
+	c:UBD ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_baltic_states
+
+			combat_unit = { # Reval and Estonia Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_TALINN
+				count = 2
+			}
+
+			combat_unit = { # Uncertain
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_RIGA
+				count = 2
+			}
+
+			combat_unit = { # Courland Lancer Regiment
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_COURLAND
+				count = 1
+			}
+			combat_unit = { # Narva Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_TALINN
+				count = 1
+			}
+		}
+	}
 	
 	c:CSP ?= {
 		create_military_formation = {
@@ -4132,7 +4280,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_NAVARRA
-				count = 4
+				count = 8
 			}
 
 			combat_unit = {
@@ -4149,7 +4297,7 @@
 			save_scope_as = ejercito_del_navarrra
 		}
 
-		create_character = { #died 1835
+		create_character = {
 			is_general = yes
 			first_name = vicente
 			last_name = gonzalez_moreno
@@ -4209,7 +4357,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_CATALONIA
-				count = 6
+				count = 5
 			}
 
 			combat_unit = {
@@ -4261,12 +4409,6 @@
 				state_region = s:STATE_ARAGON
 				count = 2
 			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_ARAGON
-				count = 1
-			}
 			save_scope_as = ejercito_del_aragon
 		}
 
@@ -4286,7 +4428,7 @@
 				brave
 				wrathful
 				pillager
-				defense_in_depth_specialist
+				stalwart_defender
 			}
 			save_scope_as = cr_ramon_general
 			on_created = {

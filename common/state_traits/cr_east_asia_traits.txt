@@ -15,3 +15,14 @@ state_trait_manchurian_plain = {
 		building_group_bg_ranching_throughput_add = 0.10
 	}
 }
+
+state_trait_indochinese_dry_forest = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+
+	modifier = {
+		goods_output_wood_mult = 0.1
+		state_construction_mult = -0.05
+		state_infrastructure_mult = -0.05
+		state_colony_growth_speed_mult = -0.35
+	}
+}

@@ -18,7 +18,7 @@
 		add_technology_researched = prospecting
 		
 		add_technology_researched = urbanization
-		add_technology_researched = bureaucracy
+		add_technology_researched = tech_bureaucracy
 		add_technology_researched = international_relations
 		add_technology_researched = rationalism
 

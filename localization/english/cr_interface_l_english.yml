@@ -1,0 +1,6 @@
+﻿l_english:
+ POP_CULTURE_CATALAN:0 "$Catalan$ [concept_culture]"
+ POP_CULTURE_BASQUE:0 "$Basque$ [concept_culture]"
+ POP_CULTURE_GALICIAN:0 "$Galician$ [concept_culture]"
+ RULER_IMPOPULARITY:0 "[concept_ruler] (im)[concept_popularity]"
+ DESAMORTIZACIONS:0 "Desamortizacións"

@@ -62,7 +62,7 @@ PPU = {
 	tier = principality
 	
 	cultures = { melanesian }
-	capital = STATE_SOUTHEASTERN_NEW_GUINEA
+	capital = STATE_EASTERN_NEW_GUINEA
 }
 
 AOT = { # Aotearoa

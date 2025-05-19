@@ -29,13 +29,13 @@
 					building={
 						type="building_textile_mills"
 						country="c:AUS"
-						levels=3
+						levels=4
 						region="STATE_LOMBARDY"
 					}
 					building={
 						type="building_financial_district"
 						country="c:AUS"
-						levels=2
+						levels=1
 						region="STATE_LOMBARDY"
 					}
 				}
@@ -180,9 +180,15 @@
 				building="building_textile_mills"
 				add_ownership={
 					building={
+						type="building_textile_mills"
+						country="c:SAR"
+						levels=1
+						region="STATE_PIEDMONT"
+					}
+					building={
 						type="building_financial_district"
 						country="c:SAR"
-						levels=2
+						levels=1
 						region="STATE_PIEDMONT"
 					}
 				}
@@ -245,7 +251,7 @@
 				building="building_shipyards"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_shipyards"
 						country="c:SAR"
 						levels=1
 						region="STATE_PIEDMONT"
@@ -308,7 +314,7 @@
 				building="building_iron_mine"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_iron_mine"
 						country="c:SAR"
 						levels=2
 						region="STATE_SARDINIA"
@@ -321,7 +327,7 @@
 				building="building_copper_mine"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_copper_mine"
 						country="c:SAR"
 						levels=1
 						region="STATE_SARDINIA"
@@ -336,11 +342,11 @@
 					building={
 						type="building_logging_camp"
 						country="c:SAR"
-						levels=3
+						levels=2
 						region="STATE_SARDINIA"
 					}
 					building={
-						type="building_financial_district"
+						type="building_manor_house"
 						country="c:SAR"
 						levels=2
 						region="STATE_SARDINIA"
@@ -377,7 +383,7 @@
 				building="building_shipyards"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_shipyards"
 						country="c:SAR"
 						levels=1
 						region="STATE_SARDINIA"
@@ -567,13 +573,7 @@
 					building={
 						type="building_tooling_workshops"
 						country="c:SIC"
-						levels=2
-						region="STATE_CAMPANIA"
-					}
-					building={
-						type="building_tooling_workshops"
-						country="c:SIC"
-						levels=1
+						levels=3
 						region="STATE_CAMPANIA"
 					}
 				}
@@ -666,7 +666,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_manor_house"
 						country="c:SIC"
 						levels=2
 						region="STATE_CAMPANIA"
@@ -707,13 +707,7 @@
 					building={
 						type="building_food_industry"
 						country="c:SIC"
-						levels=1
-						region="STATE_CALABRIA"
-					}
-					building={
-						type="building_financial_district"
-						country="c:SIC"
-						levels=1
+						levels=2
 						region="STATE_CALABRIA"
 					}
 				}
@@ -873,9 +867,15 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:SIC"
-						levels=3
+						levels=2
+						region="STATE_ABRUZZO"
+					}
+					building={
+						type="building_manor_house"
+						country="c:SIC"
+						levels=1
 						region="STATE_ABRUZZO"
 					}
 				}
@@ -968,10 +968,18 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:SAR"
-						levels=2
+						levels=1
 						region="STATE_SAVOY"
+					}
+				}
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:SAR"
+						levels=1
+						region="STATE_PIEDMONT"
 					}
 				}
 				reserves=1
@@ -1219,9 +1227,15 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:TUS"
-						levels=3
+						levels=2
+						region="STATE_TUSCANY"
+					}
+					building={
+						type="building_manor_house"
+						country="c:TUS"
+						levels=1
 						region="STATE_TUSCANY"
 					}
 				}
@@ -1247,13 +1261,7 @@
 					building={
 						type="building_iron_mine"
 						country="c:TUS"
-						levels=2
-						region="STATE_TUSCANY"
-					}
-					building={
-						type="building_financial_district"
-						country="c:TUS"
-						levels=2
+						levels=4
 						region="STATE_TUSCANY"
 					}
 				}
@@ -1411,7 +1419,13 @@
 					building={
 						type="building_logging_camp"
 						country="c:PAP"
-						levels=2
+						levels=1
+						region="STATE_LAZIO"
+					}
+					building={
+						type="building_manor_house"
+						country="c:PAP"
+						levels=1
 						region="STATE_LAZIO"
 					}
 				}
@@ -1471,13 +1485,13 @@
 					building={
 						type="building_glassworks"
 						country="c:AUS"
-						levels=3
+						levels=4
 						region="STATE_VENETIA"
 					}
 					building={
 						type="building_financial_district"
 						country="c:AUS"
-						levels=2
+						levels=1
 						region="STATE_AUSTRIA"
 					}
 				}
@@ -1490,19 +1504,19 @@
 					building={
 						type="building_textile_mills"
 						country="c:AUS"
-						levels=4
+						levels=6
 						region="STATE_VENETIA"
 					}
 					building={
 						type="building_financial_district"
 						country="c:AUS"
-						levels=2
+						levels=1
 						region="STATE_VENETIA"
 					}
 					building={
 						type="building_financial_district"
 						country="c:AUS"
-						levels=2
+						levels=1
 						region="STATE_AUSTRIA"
 					}
 				}
@@ -1599,14 +1613,14 @@
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
-			create_building={
+			create_building={ 
 				building="building_sulfur_mine"
 				add_ownership={
 					building={
-						type="building_financial_district"
-						country="c:SIC"
+						type="building_manor_house" #largely controlled by French merchants. From 1836 in negotiations to grant the sulfur monopoly to Amato Taix and Arsene Aycard, which was granted in 1838 and let to the sulfur crisis of 1840 
+						country="c:FRA"
 						levels=5
-						region="STATE_SICILY"
+						region="STATE_PROVENCE"
 					}
 				}
 				reserves=1
@@ -1616,7 +1630,7 @@
 				building="building_wheat_farm"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_manor_house"
 						country="c:SIC"
 						levels=5
 						region="STATE_SICILY"
@@ -1686,13 +1700,13 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_atmospheric_engine_pump_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+				activate_production_methods={ "pm_hardwood" "pm_saw_mills" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_paper_mills"
 						country="c:SPA"
 						levels=2
 						region="STATE_TOLEDO"
@@ -1707,16 +1721,9 @@
 					building={
 						type="building_furniture_manufacturies"
 						country="c:SPA"
-						levels=3
+						levels=4
 						region="STATE_TOLEDO"
 					}
-					
-					building={
-						type="building_financial_district"
-						country="c:SPA"
-						levels=1
-						region="STATE_TOLEDO"
-					} 
 					
 					building={ #COMPAÑÍA LA ESTRELLA PARA LA FABRICACIÓN DE BUJÍAS ESTEÁRICAS, actually a candle manufactorer founded in 1839, but added to represent French investment around the period.
 						type="building_financial_district"
@@ -1793,7 +1800,7 @@
 				add_ownership={
 					country={
 						country="c:SPA"
-						levels=6
+						levels=1
 					}
 				}
 				reserves=1
@@ -1803,7 +1810,7 @@
 				building="building_glassworks"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_glassworks"
 						country="c:SPA"
 						levels=1
 						region="STATE_GALICIA"
@@ -1872,7 +1879,7 @@
 						region="STATE_GALICIA"
 					}
 					building={
-						type="building_financial_district"
+						type="building_manor_house"
 						country="c:SPA"
 						levels=1
 						region="STATE_GALICIA"
@@ -1895,14 +1902,14 @@
 						region="STATE_ASTURIAS"
 					}
 					building={
-						type="building_financial_district"
+						type="building_manor_house"
 						country="c:SPA"
 						levels=1
 						region="STATE_ASTURIAS"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
 			create_building={
 				building="building_gold_mine"
@@ -1993,7 +2000,7 @@
 				add_ownership={
 					country={
 						country="c:SPA"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -2081,7 +2088,7 @@
 				building="building_iron_mine"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_iron_mine"
 						country="c:SPA"
 						levels=1
 						region="STATE_LEON"
@@ -2094,7 +2101,7 @@
 				building="building_tooling_workshops"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_tooling_workshops"
 						country="c:SPA"
 						levels=1
 						region="STATE_LEON"
@@ -2107,14 +2114,14 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:SPA"
 						levels=1
 						region="STATE_LEON"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}	
 			create_building={
 				building="building_wheat_farm"
@@ -2193,7 +2200,7 @@
 					building={
 						type="building_iron_mine"
 						country="c:CSP"
-						levels=2
+						levels=3
 						region="STATE_NAVARRA"
 					}
 				}
@@ -2206,7 +2213,7 @@
 					building={
 						type="building_manor_house"
 						country="c:CSP"
-						levels=1
+						levels=3
 						region="STATE_NAVARRA"
 					}
 				}
@@ -2245,11 +2252,13 @@
 					building={
 						type="building_logging_camp"
 						country="c:CSP"
-						levels=3
+						levels=2
 						region="STATE_NAVARRA"
 					}
+				}
+				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_manor_house"
 						country="c:CSP"
 						levels=2
 						region="STATE_NAVARRA"
@@ -2292,14 +2301,8 @@
 					building={
 						type="building_food_industry"
 						country="c:SPA"
-						levels=1
+						levels=2
 						region="STATE_ARAGON"
-					}
-					building={
-						type="building_financial_district"
-						country="c:SPA"
-						levels=1
-						region="STATE_TOLEDO"
 					}
 				}
 				reserves=1
@@ -2309,7 +2312,7 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:SPA"
 						levels=1
 						region="STATE_ARAGON"
@@ -2370,7 +2373,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_privately_owned_building_logging_camp" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -2394,7 +2397,7 @@
 				add_ownership={
 					country={
 						country="c:SPA"
-						levels=1
+						levels=4
 					}
 				}
 				reserves=1
@@ -2462,13 +2465,7 @@
 					building={
 						type="building_textile_mills"
 						country="c:SPA"
-						levels=4
-						region="STATE_CATALONIA"
-					}
-					building={
-						type="building_financial_district"
-						country="c:SPA"
-						levels=2
+						levels=6
 						region="STATE_CATALONIA"
 					}
 				}
@@ -2482,7 +2479,7 @@
 						type="building_financial_district"
 						country="c:GBR"
 						levels=1
-						region="STATE_WEST_COUNTRY" #Because William Patterson Shipbuilders
+						region="STATE_HOME_COUNTIES" #Because William Patterson Shipbuilders edit: nvm
 					}
 				}
 				reserves=1
@@ -2513,6 +2510,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:CSP"
+						levels=2
+						region="STATE_CATALONIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 		}
 	}
@@ -2551,7 +2561,7 @@
 				add_ownership={
 					country={
 						country="c:SPA"
-						levels=2
+						levels=3
 					}
 				}
 				reserves=1
@@ -2572,7 +2582,7 @@
 				building="building_shipyards"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_shipyards"
 						country="c:SPA"
 						levels=1
 						region="STATE_ANDALUSIA"
@@ -2852,7 +2862,7 @@
 				building="building_paper_mills"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_paper_mills"
 						country="c:SPA"
 						levels=2
 						region="STATE_VALENCIA"
@@ -3033,13 +3043,7 @@
 					building={
 						type="building_textile_mills"
 						country="c:POR"
-						levels=1
-						region="STATE_BEIRA"
-					}
-					building={
-						type="building_financial_district"
-						country="c:POR"
-						levels=1
+						levels=2
 						region="STATE_BEIRA"
 					}
 				}
@@ -3089,14 +3093,20 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:POR"
-						levels=2
+						levels=1
+						region="STATE_BEIRA"
+					}
+					building={
+						type="building_manor_house"
+						country="c:POR"
+						levels=1
 						region="STATE_BEIRA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 		}
 	}
@@ -3153,6 +3163,19 @@
 				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
 			}
 			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:POR"
+						levels=1
+						region="STATE_DOURO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
 				building="building_port"
 				add_ownership={
 					country={
@@ -3192,7 +3215,7 @@
 				building="building_glassworks"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_glassworks"
 						country="c:POR"
 						levels=1
 						region="STATE_ESTREMADURA"
@@ -3241,10 +3264,29 @@
 				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:POR"
+						levels=1
+						region="STATE_ESTREMADURA"
+					}
+					building={
+						type="building_manor_house"
+						country="c:POR"
+						levels=1
+						region="STATE_ESTREMADURA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
 				building="building_shipyards"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_shipyards"
 						country="c:POR"
 						levels=1
 						region="STATE_ESTREMADURA"
@@ -3296,7 +3338,7 @@
 				building="building_copper_mine"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_copper_mine"
 						country="c:POR"
 						levels=1
 						region="STATE_ALENTEJO"
@@ -3578,7 +3620,7 @@
 				reserves=1
 				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
 			}
-			create_building={
+			create_building={ #Imperial spinning mill in Eyup, Imperial Fex Factory Istanbul, Beykoz Leather and Footware Company
 				building="building_textile_mills"
 				add_ownership={
 					building={
@@ -3722,7 +3764,7 @@
 				building="building_textile_mills"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_textile_mills"
 						country="c:TUR"
 						levels=1
 						region="STATE_ALBANIA"
@@ -3749,12 +3791,6 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:TUR"
-						levels=1
-						region="STATE_ALBANIA"
-					}
-					building={
-						type="building_financial_district"
 						country="c:TUR"
 						levels=1
 						region="STATE_ALBANIA"
@@ -3822,12 +3858,6 @@
 						levels=3
 						region="STATE_BOSNIA"
 					}
-					building={
-						type="building_financial_district"
-						country="c:TUR"
-						levels=1
-						region="STATE_BOSNIA"
-					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
@@ -3836,9 +3866,15 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:TUR"
-						levels=2
+						levels=1
+						region="STATE_BOSNIA"
+					}
+					building={
+						type="building_manor_house"
+						country="c:TUR"
+						levels=1
 						region="STATE_BOSNIA"
 					}
 				}
@@ -3866,9 +3902,9 @@
 				building="building_furniture_manufacturies"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_furniture_manufacturies"
 						country="c:TUR"
-						levels=2
+						levels=1
 						region="STATE_NORTHERN_THRACE"
 					}
 				}
@@ -3879,7 +3915,7 @@
 				building="building_textile_mills"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_textile_mills"
 						country="c:TUR"
 						levels=1
 						region="STATE_NORTHERN_THRACE"
@@ -3918,9 +3954,15 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:TUR"
-						levels=3
+						levels=1
+						region="STATE_NORTHERN_THRACE"
+					}
+					building={
+						type="building_manor_house"
+						country="c:TUR"
+						levels=2
 						region="STATE_NORTHERN_THRACE"
 					}
 				}
@@ -3935,7 +3977,7 @@
 				building="building_furniture_manufacturies"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_furniture_manufacturies"
 						country="c:TUR"
 						levels=3
 						region="STATE_BULGARIA"
@@ -3961,9 +4003,15 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:TUR"
-						levels=4
+						levels=2
+						region="STATE_BULGARIA"
+					}
+					building={
+						type="building_manor_house"
+						country="c:TUR"
+						levels=2
 						region="STATE_BULGARIA"
 					}
 				}
@@ -4010,9 +4058,15 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:AUS"
-						levels=2
+						levels=1
+						region="STATE_AUSTRIA"
+					}
+					building={
+						type="building_manor_house"
+						country="c:AUS"
+						levels=1
 						region="STATE_AUSTRIA"
 					}
 				}
@@ -4137,15 +4191,21 @@
 				building="building_logging_camp"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_logging_camp"
 						country="c:AUS"
 						levels=1
 						region="STATE_CROATIA"
 					}
 					building={
-						type="building_financial_district"
+						type="building_manor_house"
 						country="c:AUS"
-						levels=2
+						levels=1
+						region="STATE_CROATIA"
+					}
+					building={
+						type="building_manor_house"
+						country="c:AUS"
+						levels=1
 						region="STATE_AUSTRIA"
 					}
 				}
@@ -4225,7 +4285,7 @@
 				building="building_tooling_workshops"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_tooling_workshops"
 						country="c:AUS"
 						levels=1
 						region="STATE_ISTRIA"
@@ -4247,7 +4307,7 @@
 						type="building_financial_district"
 						country="c:AUS"
 						levels=1
-						region="STATE_ISTRIA"
+						region="STATE_AUSTRIA"
 					}
 				}
 				reserves=1
@@ -4303,7 +4363,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 		}
 		region_state:MON={
@@ -4506,7 +4566,7 @@
 				building="building_shipyards"
 				add_ownership={
 					building={
-						type="building_financial_district"
+						type="building_shipyards"
 						country="c:GRE"
 						levels=1
 						region="STATE_ATTICA"
@@ -4573,13 +4633,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:GRE"
-						levels=1
-						region="STATE_ATTICA"
-					}
-					building={
-						type="building_financial_district"
-						country="c:GRE"
-						levels=1
+						levels=2
 						region="STATE_ATTICA"
 					}
 				}
@@ -4821,44 +4875,19 @@
 			#	reserves=1
 			#	activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			#}	
-			create_building={
-				building="building_textile_mills"
-				add_ownership={
-					building={
-						type="building_textile_mills"
-						country="c:TUR"
-						levels=1
-						region="STATE_WESTERN_THRACE"
-					}
-					building={
-						type="building_financial_district"
-						country="c:TUR"
-						levels=1
-						region="STATE_WESTERN_THRACE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes"  "pm_traditional_looms" "pm_craftsman_sewing" }
-			}
-			create_building={
-				building="building_glassworks"
-				add_ownership={
-					building={
-						type="building_glassworks"
-						country="c:TUR"
-						levels=3
-						region="STATE_WESTERN_THRACE"
-					}
-					building={
-						type="building_financial_district"
-						country="c:TUR"
-						levels=1
-						region="STATE_WESTERN_THRACE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_forest_glass"  "pm_manual_glassblowing" "pm_ceramics" }
-			}
+			#create_building={
+			#	building="building_textile_mills"
+			#	add_ownership={
+			#		building={
+			#			type="building_textile_mills"
+			#			country="c:TUR"
+			#			levels=2
+			#			region="STATE_WESTERN_THRACE"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_handsewn_clothes"  "pm_traditional_looms" "pm_craftsman_sewing" }
+			#}
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={

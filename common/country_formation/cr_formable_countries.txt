@@ -5,6 +5,20 @@
 	
 	ai_will_do = { always = yes }
 }
+
+AFG = {
+	states = {
+		STATE_HERAT
+		STATE_KANDAHAR
+		STATE_KABUL 
+		#STATE_CENTRAL_HIGHLANDS
+	}
+	
+	required_states_fraction = 1
+
+	ai_will_do = { always = yes }
+}
+
 ARA = {
 	states = {
 		STATE_YEMEN
@@ -62,6 +76,8 @@ TRH = {
 		STATE_FERGANA
 		STATE_ALAY
 		STATE_BADAKHSHAN
+		STATE_MERZ
+		STATE_TRANSOXIANA
 	}
 
 	required_states_fraction = 0.5
@@ -80,7 +96,6 @@ IDN = {
 		STATE_CENTRAL_JAVA
 		STATE_EAST_JAVA
 		STATE_ACEH
-		STATE_SIAK
 		STATE_TAPANULI
 		STATE_MINANGKABAU
 		STATE_THE_LAMPONGS
@@ -238,4 +253,15 @@ OYO = {
 	possible = {
 		has_technology_researched = nationalism
 	}
+}
+
+LAO = {
+	states = {
+		STATE_LAOS
+		STATE_VIENTIANE
+	}
+
+	required_states_fraction = 1.0
+	
+	ai_will_do = { always = yes }
 }

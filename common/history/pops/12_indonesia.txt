@@ -1269,7 +1269,23 @@
 		region_state:PPU = {
 			create_pop = {
 				culture = melanesian
-				size = 400102
+				size = 231092
+			}
+		}
+	}
+	s:STATE_BISMARCK_ARCHIPELAGO = {
+		region_state:PPU = {
+			create_pop = {
+				culture = melanesian
+				size = 86710
+			}
+		}
+	}
+	s:STATE_PAPUA = {
+		region_state:PPU = {
+			create_pop = {
+				culture = melanesian
+				size = 102000
 			}
 		}
 	}
@@ -1640,17 +1656,22 @@
 				size = 10000
 			}
 		}
-
 		region_state:GIL = { #Gilbert Islands
 			create_pop = {
 				culture = micronesian
 				size = 20000
 			}
-			}
+		}
 		region_state:ELL = {
 			create_pop = {
 				culture = micronesian
 				size = 2750
+			}
+		}
+		region_state:TOK = {
+			create_pop = {
+				culture = polynesian
+				size = 1500
 			}
 		}
 	}
@@ -1749,45 +1770,50 @@
 				size = 400
 			}
 		}
-		region_state:MGR = { #Mangareva
-			create_pop = {
-				culture = polynesian
-				size = 7500
-			}
-		}
 		region_state:TUP = { #Tupuai
 			create_pop = {
 				culture = polynesian
 				size = 3500
 			}
 		}
-		region_state:MQS = { #Marquesas
-			create_pop = {
-				culture = polynesian
-				size = 25000
-			}
-		}
-
 		region_state:BOA = { #Bora-Bora
 			create_pop = {
 				culture = polynesian
 				size = 6500
 			}
 		}
-
-		region_state:TUM = { #Tuamotu
+	}
+	s:STATE_TUAMOTES = {
+		region_state:PLY = {
 			create_pop = {
 				culture = polynesian
 				size = 3500
 			}
 		}
-
+		region_state:MGR = { #Mangareva
+			create_pop = {
+				culture = polynesian
+				size = 2500
+			}
+		}
+		region_state:MQS = { #Marquesas
+			create_pop = {
+				culture = polynesian
+				size = 2500
+			}
+		}
+		region_state:TUM = { #Tuamotu
+			create_pop = {
+				culture = polynesian
+				size = 4500
+			}
+		}
 		region_state:RAP = { #Rapa Nui
 			create_pop = {
 				culture = polynesian
 				size = 2000
 			}
-	}
+		}
 		region_state:GBR = { #Pitcairn
 			create_pop = {
 				culture = british
@@ -1795,20 +1821,13 @@
 				size = 250
 			}
 		}
-}
+	}
 
 	s:STATE_TONGA = {
 		region_state:TNG = {
 			create_pop = {
 				culture = polynesian
 				size = 20000
-			}
-		}
-
-		region_state:SAM = {
-			create_pop = {
-				culture = polynesian
-				size = 47000
 			}
 		}
 
@@ -1819,17 +1838,19 @@
 			}
 		}
 
-		region_state:TOK = {
-			create_pop = {
-				culture = polynesian
-				size = 1500
-			}
-		}
-
 		region_state:WFU = {
 			create_pop = {
 				culture = polynesian
 				size = 4500
+			}
+		}
+	}
+
+	s:STATE_SAMOA = {
+		region_state:SAM = {
+			create_pop = {
+				culture = polynesian
+				size = 47000
 			}
 		}
 	}

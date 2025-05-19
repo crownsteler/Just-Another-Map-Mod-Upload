@@ -4,7 +4,7 @@ region_indochina = {
 	graphical_culture = "asian"
 	capital_province = x5C3070
 	map_color = { 0.9 0.1 0.1 }
-	states = { STATE_CAMBODIA STATE_MEKONG STATE_TONKIN STATE_ANNAM STATE_LAOS STATE_CHIANG_MAI STATE_NAKHON_RATCHASIMA STATE_BANGKOK }
+	states = { STATE_CAMBODIA STATE_MEKONG STATE_TONKIN STATE_ANNAM STATE_LAOS STATE_CHIANG_MAI STATE_NAKHON_RATCHASIMA STATE_BANGKOK STATE_VIENTIANE }
 }
 
 region_burma = {
@@ -14,12 +14,12 @@ region_burma = {
 	states = { STATE_TENASSERIM STATE_KACHIN STATE_SHAN_STATES STATE_MANDALAY STATE_PEGU }
 }
 
-region_indonesia = {
-	graphical_culture = "asian"
-	capital_province = x6ED39E
-	map_color = { 0.204 0.651 0.308 }
-	states = { }
-}
+#region_indonesia = {
+#	graphical_culture = "asian"
+#	capital_province = x6ED39E
+#	map_color = { 0.204 0.651 0.308 }
+#	states = { }
+#}
 
 region_malacca = {
 	graphical_culture = "asian"
@@ -60,7 +60,7 @@ region_south_china = {
 	graphical_culture = "asian"
 	capital_province = x2BDE7B
 	map_color = { 0.8 0.8 0.9 }
-	states = { STATE_GUIZHOU STATE_CHONGQING STATE_SOUTHERN_ANHUI STATE_SHAOZHOU STATE_GUANGDONG STATE_FUJIAN STATE_GUANGXI STATE_ZHEJIANG STATE_SUZHOU STATE_NANJING STATE_HUNAN STATE_JIANGXI STATE_YUNNAN STATE_EASTERN_HUBEI STATE_WESTERN_HUBEI } 
+	states = { STATE_GUIZHOU STATE_SICHUAN STATE_CHONGQING STATE_SOUTHERN_ANHUI STATE_SHAOZHOU STATE_GUANGDONG STATE_FUJIAN STATE_GUANGXI STATE_ZHEJIANG STATE_SUZHOU STATE_NANJING STATE_HUNAN STATE_JIANGXI STATE_YUNNAN STATE_EASTERN_HUBEI STATE_WESTERN_HUBEI STATE_LIANGSHAN } 
 }
 
 region_north_china = {
@@ -120,7 +120,7 @@ region_melanesia = {
 	graphical_culture = "asian"
 	capital_province = x0C7820
 	map_color = { 0.16 0.40 0.33 } 
-	states = { STATE_EASTERN_NEW_GUINEA STATE_SOLOMON_ISLANDS STATE_BOUGAINVILLE STATE_FIJI STATE_VANUATU STATE_KANAK }
+	states = { STATE_EASTERN_NEW_GUINEA STATE_BISMARCK_ARCHIPELAGO STATE_PAPUA STATE_SOLOMON_ISLANDS STATE_BOUGAINVILLE STATE_FIJI STATE_VANUATU STATE_KANAK }
 }
 
 region_micronesia = {
@@ -134,5 +134,5 @@ region_polynesia = {
 	graphical_culture = "asian"
 	capital_province = xC00010
 	map_color = { 0.23 0.19 0.0 }
-	states = { STATE_HAWAIIAN_ISLANDS STATE_TONGA STATE_TAHITI }
+	states = { STATE_HAWAIIAN_ISLANDS STATE_TONGA STATE_SAMOA STATE_TAHITI STATE_TUAMOTES }
 }

@@ -55,34 +55,34 @@
 			direction = export
 			target = c:AUS.market
 		}	
+		create_trade_route = {
+			goods = artillery
+			level = 2
+			direction = import
+			target = c:PRU.market
+		}	
 	}
 	c:DEI ?= {		
 		create_trade_route = {
 			goods = grain
-			level = 2
+			level = 4
 			direction = import
 			target = c:BAL.market
 		}	
-		create_trade_route = {
-			goods = tools
-			level = 1
-			direction = export
-			target = c:JAP.market
-		}		
-		create_trade_route = {
-			goods = tools
-			level = 1
-			direction = import
-			target = c:GBR.market
-		}		
+		#create_trade_route = {
+		#	goods = copper
+		#	level = 2
+		#	direction = import
+		#	target = c:JAP.market
+		#}				
 	}
 	c:JAP ?= {		
-		create_trade_route = {
-			goods = copper
-			level = 1
-			direction = export
-			target = c:CHI.market
-		}		
+		#create_trade_route = {
+		#	goods = copper
+		#	level = 1
+		#	direction = export
+		#	target = c:CHI.market
+		#}		
 	}
 	# Belgium
 	c:BEL ?= {
@@ -130,13 +130,13 @@
 			level = 15
 			direction = export
 			target = c:BEL.market
-		}				
+		}					
 	}
 	# Great Britain
 	c:GBR ?= {
 		create_trade_route = {
 			goods = tools
-			level = 2
+			level = 3
 			direction = export
 			target = c:NET.market
 		}	
@@ -169,22 +169,55 @@
 		}
 		create_trade_route = {
 			goods = tools
-			level = 1
+			level = 2
 			direction = import
 			target = c:GBR.market
 		}	
 		create_trade_route = {
 			goods = copper
+			level = 2
+			direction = import
+			target = c:KON.market
+		}	
+		create_trade_route = {
+			goods = tools
 			level = 1
+			direction = export
+			target = c:KON.market
+		}		
+		create_trade_route = {
+			goods = meat
+			level = 1
+			direction = export
+			target = c:KON.market
+		}		
+		create_trade_route = {
+			goods = fruit
+			level = 1
+			direction = export
+			target = c:KON.market
+		}	
+		create_trade_route = {
+			goods = wood
+			level = 5
 			direction = import
 			target = c:KON.market
 		}	
 		create_trade_route = {
 			goods = copper
-			level = 1
+			level = 3
 			direction = export
 			target = c:BRZ.market
 		}			
+	}
+	# Saxony
+	c:SAX ?= {
+		create_trade_route = {
+			goods = copper
+			level = 4
+			direction = export
+			target = c:AUS.market
+		}	
 	}
 	# Ottomans
 	c:TUR ?= {
@@ -268,12 +301,13 @@
 			target = c:AIT.market
 		}		
 	}
-	c:ENG ?= {
+	c:CSP ?= {
 		create_trade_route = {
-			goods = tools
-			level = 1
-			direction = export
-			target = c:KON.market
-		}	
+			goods = grain
+			level = 5
+			direction = import
+			target = c:FRA.market
+		}
+	
 	}
 }

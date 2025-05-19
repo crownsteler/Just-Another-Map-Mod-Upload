@@ -1,0 +1,41 @@
+﻿cr_don_carlos_exile_positive_reaction = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/diplomatic_play.dds"
+	notification_type = toast
+}
+
+cr_don_carlos_exile_negative_reaction = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/diplomatic_play.dds"
+	notification_type = toast
+}
+
+cr_don_carlos_exile_provided = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/diplomatic_play.dds"
+	notification_type = feed
+}
+
+cr_don_carlos_exile_refused = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/diplomatic_play.dds"
+	notification_type = feed
+}
+
+cr_don_carlos_exile_supported = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/diplomatic_play.dds"
+	notification_type = feed
+}
+
+cr_don_carlos_support_negative_reaction = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/diplomatic_play.dds"
+	notification_type = toast
+}
+
+cr_don_carlos_exile_support_liberalism = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/diplomatic_play.dds"
+	notification_type = toast
+}

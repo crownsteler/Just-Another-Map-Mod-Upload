@@ -11,3 +11,18 @@
  
  ideology_frontier_expansionist_leader_cr:0 "Frontier Expansionist"
  ideology_frontier_expansionist_leader_cr_desc:0 "This leader seeks to expand the borders of the state to include land currently 'unsettled'."
+ 
+ ideology_carlist:0 "Carlist Cause"
+ ideology_carlist_desc:0 "Carlist"
+ ideology_carlist_movement:0 "Carlism"
+ ideology_carlist_movement_desc:0 "Carlism is a political and dynastic movement arising in the early 19th century, rooted in unwavering loyalty to the legitimate line of the House of Bourbon which its adherents claim was unjustly deprived of the throne. Emerging in opposition to the liberal reforms introduced under Isabella II, the Carlists rally behind Don Carlos, the brother of Ferdinand VII, and his descendants. Upholding the principles of tradition, Catholicism, and regional fueros (privileges), the Carlists fiercely oppose to the encroachments of liberalism and centralization, striving to restore a Spain governed by piety, monarchy, and the ancestral laws of its provinces."
+ 
+ movement_carlists:0 "Carlist movement"
+ movement_carlists_name:0 "Carlist Movement"
+ movement_carlists_desc:0 "Carlist Movement"
+ 
+ movement_christinos:0 "Christino movement"
+ movement_christinos_name:0 "Christinos"
+ movement_christinos_desc:0 "Christinos"
+ ideology_christinos_movement:0 "Christino movement"
+ ideology_christinos_movement_desc:0 "The Christinos are the defenders of Queen Isabella II and the constitutional order, emerging in the early 19th century to uphold the legitimacy of the Pragmatic Sanction issued by Ferdinand VII. In the face of Carlist rebellion, they champion a Spain united under law and progress, resisting the forces of absolutism and feudal privilege.\n\nRooted in liberal constitutionalism and national unity, the Christinos seek to modernize Spain by curbing the influence of the clergy, abolishing outdated fueros, and ensuring a centralized state under a legitimate constitutional monarchy. Though divided between moderates and progressives, their common cause is the defense of Queen, Nation, and Reform, opposing the reactionary forces that would return Spain to an era of clerical dominance and fragmented rule."

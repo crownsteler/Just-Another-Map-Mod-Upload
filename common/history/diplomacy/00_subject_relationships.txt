@@ -8,6 +8,14 @@
 			country = c:PHI
 			type = colony
 		}	
+		every_subject_or_below = {
+			prev = {
+				create_diplomatic_pact = {
+					country = prev
+					type = exempt_from_service
+				}
+			}
+		}
 	}
 	c:NET ?= {
 		create_diplomatic_pact = {
@@ -749,21 +757,21 @@
 		add_liberty_desire = 10
 	}
 	
-	c:OZH = {
-		add_liberty_desire = 10
-	}
+	#c:OZH = {
+	#	add_liberty_desire = 10
+	#}
+	#
+	#c:KZH = {
+	#	add_liberty_desire = 10
+	#}
+	#
+	#c:UZH = {
+	#	add_liberty_desire = 10
+	#}	
 
-	c:KZH = {
-		add_liberty_desire = 10
-	}
-
-	c:UZH = {
-		add_liberty_desire = 10
-	}	
-
-	c:SEQ = {
-		add_liberty_desire = 10
-	}
+	#c:SEQ = {
+	#	add_liberty_desire = 10
+	#}
 
 	c:SER = {
 		add_liberty_desire = 20

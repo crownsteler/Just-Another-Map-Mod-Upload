@@ -14,34 +14,34 @@
 #		}
 #	}
 	c:SPA = {
-		random_scope_general = {
+		random_scope_general = { #Army of the North
 			limit = {
-				has_variable = is_baldomero_espartero
+				has_variable = is_luis_fernandex_de_cordova
 			}
 
 			commander_military_formation = {
 				fully_mobilize_army = yes
-				teleport_to_front = p:xAC1425.front
+				teleport_to_front = p:xAC1425.front #Biscay front
 			}
 		}	
-		random_scope_general = {
-			limit = {
-				has_variable = is_jose_ramon_rodil
-			}
-
-			commander_military_formation = {
-				fully_mobilize_army = yes
-				teleport_to_front = p:xE0C020.front
-			}
-		}	
-		random_scope_general = {
+		random_scope_general = { #Centre
 			limit = {
 				has_variable = is_ramon_maria_narvaez
 			}
 
 			commander_military_formation = {
 				fully_mobilize_army = yes
-				teleport_to_front = p:xF841E6.front
+				teleport_to_front = p:xF841E6.front #Aragon/centre front
+			}
+		}	
+		random_scope_general = { #Catalonia
+			limit = {
+				has_variable = is_jose_ramon_rodil
+			}
+
+			commander_military_formation = {
+				fully_mobilize_army = yes
+				teleport_to_front = p:xE0C020.front #Catalonia front
 			}
 		}	
 	

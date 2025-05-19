@@ -491,7 +491,7 @@ STATE_POTOSI = {
     provinces = { "x0900B4" "x0AD269" "x0D59CE" "x250074" "x270774" "x32B79C" "x3778CC" "x39CC32" "x47733E" "x496AE7" "x50379F" "x540F3D" "x5AD6BE" "x6080F0" "x6955EB" "x6E0801" "x7084E0" "x77DD69" "x81F86A" "x82F7D6" "x9AB55F" "xA040B0" "xA08070" xA78878 xAF5843 xB6774C xCDAB17 xCEB68F xE56E10 xEE24B4 xEF3699 xF0A4ED xF2F873 xF6C024 }
     traits = { "state_trait_andes" }
     city = "xF0A4ED"
-    farm = "x97595D"
+    farm = "x270774"
     mine = "x5AD6BE"
     wood = "xF0A4ED"
     arable_land = 20
@@ -801,7 +801,7 @@ STATE_RIO_NEGRO = {
     subsistence_building = "building_subsistence_pastures"
     provinces = { x0F1339 x4A0914 x3002FF x2D0CA4 x3F05E8 x471938 x2B18E0 x8018A3 x6D25DC x443E92 x105BA8 x435071 x374BEF x5B5500 x644D92 x625917 x3C651C x5D6A63 x745CF8 x35839B x708011 x627AEA x19A814 x788B48 xA37A79 x97865C x08B647 x828DDF xF2801B x939F2A x8AA282 xD2956F xD4ABBA xCBC752 xBFD046 x6CF948 xE7CCBD x90FE7E xFDEBB0 }
     traits = { "state_trait_pampas" }
-    city = "x78901C"
+    city = "x939F2A"
     farm = "x105BA8"
     mine = "x828DDF"
     wood = "x3C651C"
@@ -855,7 +855,7 @@ STATE_LA_PAMPA = {
     arable_land = 160
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_dye_plantations" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_logging = 13
+        #bg_logging = 13 #doesn't seem to have a particularly large potential for wood.
     }
 }
 
@@ -895,7 +895,7 @@ STATE_CORRIENTES = {
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" } #Tea = yerba mate, removed as Misiones was added
 
     capped_resources = {
-        bg_logging = 6
+        bg_logging = 9
     }
     #resource = { #No important oil sources here?
     #    type = "bg_oil_extraction"
@@ -917,7 +917,7 @@ STATE_MISIONES = {
     arable_resources = { "bg_maize_farms" "bg_sugar_plantations" "bg_tobacco_plantations" "bg_tea_plantations" } #Tea = yerba mate
 
     capped_resources = {
-        bg_logging = 12
+        bg_logging = 18
     }
 }
 
@@ -1024,13 +1024,13 @@ STATE_LOS_RIOS = {
     id = 383
     subsistence_building = "building_subsistence_farms"
     provinces = { x45155F x521B0A x142AEF xE70539 x592AB4 x144683 x553B3F x3D3ED8 xC42462 x904050 xF2263F x1A5ED2 x9040D0 x8848C6 x4A805F xE855B1 x02C052 x42A6B5 xB79F3F xF68D31 x90C050 x90C0D0 xEFB409 xCFB481 x83D701 xF0CA34 x49F9FC x9EF738 }
-    impassable = { "x31F03F" "x24D8BD" "x304688" "xD78C29" x3D3ED8 }
+    impassable = { x3D3ED8 }
     traits = { "state_trait_andes" "state_trait_cordillera_de_la_costa" "state_trait_longitudinal_valley" }
     city = "x904050"
     port = "x9040D0"
     farm = "x90C0D0"
-    mine = "x427820"
-    wood = "x83D701"
+    mine = "x521B0A"
+    wood = "x142AEF"
     arable_land = 70
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
@@ -1121,13 +1121,6 @@ STATE_PARA = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x003E6F" "x03A6E8" "x04CE13" "x05CF8B" "x082621" "x0A308E" "x0A4B09" "x0A5CA3" "x0B0F3C" "x0C517C" "x0D770E" "x0EEAC1" "x0FDD9C" "x10871C" "x1182FD" "x12590E" "x127760" "x140E36" "x147984" "x16CD59" "x16E6AD" "x1B68B0" "x1BEEC7" "x1D7FD2" "x1E5CF7" "x1F2DE0" "x202AD6" "x20F3FE" "x21F625" "x229F7E" "x26A1DE" "x26B9C1" "x26F024" "x2717F9" "x288CA0" "x28B30B" "x2ECB28" "x32B46C" "x33102C" "x35641E" "x38B846" "x399A1B" "x3B9938" "x3C43BC" "x3DD891" "x3E918E" "x3FA31D" "x414A40" "x430FED" "x466026" "x47DD6F" "x49320F" "x49FCEC" "x4A40A2" "x4A5B60" "x4A7D5B" "x4AA845" "x4B0F3A" "x4BE6EE" "x4D0F16" "x4DCA73" "x4E60B2" "x4F76AF" "x4F98A6" "x52102E" "x52D9E9" "x54E66A" "x550071" "x570C6E" "x5ABF5A" "x5AD2E6" "x5D391F" "x5E1149" "x60476B" "x608090" "x62AEF6" "x639D5E" "x646762" "x650BF7" "x674F0A" "x67A604" "x680C6A" "x697461" "x69938A" "x69EDA5" "x6C1217" "x6D5272" "x6D5915" "x6EAF9A" "x70E7F2" "x72000B" "x724B34" "x73D4D4" "x74A192" "x755A1F" "x7684AE" "x790A63" "x79F381" "x7DF409" "x7E0544" "x7EF491" "x80F241" "x819B9B" "x8473D1" "x8485F5" "x8647C7" "x873D0C" "x8839E0" "x888CDB" "x8AB059" "x8AE1DE" "x8C8A64" "x8CA600" "x8CABCB" "x8F3A3A" "x90594E" "x960A35" "x96700F" "x981656" "x999716" "x9A68C5" "x9B8499" "x9CF266" "x9D57CD" "xA04111" "xA08090" "xA0CFE1" "xA623EB" "xA6B342" "xA80863" "xA85C4A" "xA8BCF5" "xA970CF" "xAADF4E" "xAB1E72" "xAB933C" "xAE92D6" "xAF6776" "xB1CCEE" "xB2D30E" "xB306A1" "xB60E46" "xB660E8" "xB86D09" "xB8B087" "xB90B68" "xB93B0C" "xB95681" "xB9E4B1" "xBA338A" "xBCAD33" "xBD503D" "xBDAF9D" "xBE7FEE" "xBEC87E" "xBF92E8" "xC0B27B" "xC32267" "xC3E90E" "xC413AA" "xC50FEA" "xC5474F" "xC5C8DB" "xC6D926" "xC92518" "xC98FE7" "xCA51A9" "xCAADC8" "xCAC940" "xCD65EB" "xCDB699" "xCFC6EC" "xCFCE1D" "xD14114" "xD17D5B" "xD266C5" "xD29F39" "xD2C5AD" "xD318FE" "xD3350B" "xD364FA" "xD388EA" "xD440A4" "xD52D37" "xD6BEFC" "xD6E2EA" "xD72252" "xD809FC" "xD9625A" "xDBA900" "xDBF44B" "xDC0EE4" "xDC49C1" "xDC9757" "xDD2CE1" "xDF31C8" "xDFE92A" "xE00190" "xE1C40F" "xE1CD47" "xE336EF" "xE4212F" "xE499EF" "xE50EDA" "xE560D3" "xE5DCAD" "xE6087E" "xE60D23" "xE6A9FB" "xE6D232" "xE8A10B" "xE8BA13" "xE9B391" "xEBB90E" "xEC5C04" "xED6BF1" "xEF23E2" "xEF26E3" "xF019BF" "xF0345C" "xF0DDD8" "xF1319A" "xF1FE8F" "xF2704E" "xF41AB0" "xF5CC32" "xF66408" "xF698A3" "xF777F8" "xF8E605" xFA50BF xFC8C93 xFDFD80 xFF0F6F xFF265C }
     prime_land = { x16CD59 x05CF8B xDC9757 x5AD2E6 xE6A9FB x1BEEC7 xB2D30E x4BE6EE x20F3FE xD2C5AD xC5C8DB xF5CC32 x79F381 xD6E2EA xB90B68 } #random prime land not to cause all arable land to be within the tag PARA at the beginning
-
-
-
-
-
-
-
 
     impassable = { x140E36 x2717F9 xA80863 x202AD6 xB306A1 x0A4B09 xE60D23 x12590E xC50FEA x0A5CA3 x60476B xB93B0C x466026 x4E60B2 xB95681 xEC5C04 x9A68C5 x8473D1 x7684AE xD266C5 xE560D3 x03A6E8 xD364FA x9B8499 x4AA845 x04CE13 x26B9C1 x16CD59 x05CF8B xDC9757 x5AD2E6 xE6A9FB x1BEEC7 xB2D30E x4BE6EE x20F3FE xD2C5AD xC5C8DB xF5CC32 x79F381 xD6E2EA xB90B68 x0B0F3C x33102C x550071 x72000B x4D0F16 x082621 x570C6E x7E0544 x5E1149 x680C6A x6C1217 x430FED x790A63 x0A308E x650BF7 x003E6F x49320F x5D391F xE6087E xAB1E72 xD809FC x414A40 x4A40A2 xC92518 xDC0EE4 xC32267 xE50EDA x873D0C xA623EB x8F3A3A xD72252 xD318FE x674F0A x724B34 xF019BF xF41AB0 x8839E0 x35641E xD3350B x4A5B60 x0D770E xFF265C x6D5272 x1B68B0 xEF23E2 x8647C7 xD14114 xDD2CE1 x127760 xDF31C8 xF1319A xC5474F x10871C xD440A4 xBD503D xE336EF x9D57CD x1D7FD2 x1182FD x697461 x4F76AF xCA51A9 x288CA0 x608090 xB660E8 xD9625A xFA50BF x3B9938 x69938A x28B30B x8485F5 x639D5E xD17D5B x67A604 x999716 x888CDB xED6BF1 x32B46C xBE7FEE x819B9B x74A192 x8CA600 xAE92D6 x6EAF9A xBF92E8 xC98FE7 x62AEF6 x8AB059 x5ABF5A xD29F39 x8CABCB xBCAD33 xA6B342 x0FDD9C xF698A3 xC0B27B x16E6AD x47DD6F xCAADC8 x26F024 xE9B391 x54E66A xE1C40F xCAC940 xD6BEFC xE1CD47 xC6D926 xCFC6EC xAADF4E x69EDA5 x7DF409 x70E7F2 x8AE1DE x80F241 x49FCEC xC3E90E x7EF491 xE5DCAD xDFE92A xF8E605 xF0DDD8 xDBF44B xF1FE8F xEF26E3 }
     traits = { "state_trait_amazon_rainforest" "state_trait_serra_dos_carajas" }
@@ -1263,16 +1256,15 @@ STATE_GOIAS = {
     id = 666
     subsistence_building = "building_subsistence_farms"
     provinces = { "x030718" "x0335B6" "x045CE0" "x087FD3" "x0A9917" "x12E97B" "x14A9B7" "x184B61" "x1D51EE" "x204F5F" "x22CF25" "x266D5E" "x2694E0" "x26A74D" "x28361D" "x28B344" "x28C4BB" "x29DE5E" "x2A7D3A" "x2C715A" "x2EDF1D" "x2F75E0" "x30692A" "x353CC4" "x35B9A6" "x364382" "x37E1AD" "x3A3D31" "x3F707A" "x409F30" "x424959" "x47CAD2" "x48E459" "x4C4DCE" "x5022D9" "x537644" "x5433F8" "x5592E6" "x57B1CF" "x57F295" "x593E5A" "x5C0902" "x5C3AFC" "x5F1A82" "x5F8837" "x63E255" "x6526AF" "x65A627" "x66894C" "x66F3B6" "x687432" "x68CC1F" "x695BDD" "x6D14BD" "x75C440" "x774C4A" "x7C0E6D" "x7CD983" "x7DEBF8" "x7EE37D" "x807EC6" "x881C3F" "x891E70" "x8985ED" "x8A7AE1" "x8B2ADA" "x8CB3DA" "x8D3998" "x8ED5C9" "x92BC48" "x93C71F" "x94E0A3" "x9732AB" "x990CED" "xA02D57" "xA04190" "xA2A177" "xA59A91" "xB222D4" "xB518E9" "xB7A07A" "xB914E5" "xBB0697" "xBB5AB2" "xBD890D" "xBE2D5E" "xBE9939" "xBFE7B6" "xC0126C" "xC2B97E" "xC42C8F" "xC4B006" "xC7D39A" "xC8814C" "xC8AD6E" "xC9A5A3" "xD4E7CE" "xD5ADF0" "xD6276C" "xD8EFD5" "xDD0A20" "xDD4517" "xDDAD82" "xDF0733" "xE40A29" "xE4A7DA" "xE4F5E4" "xEB754C" "xEDC084" "xEE4885" "xEE95C4" "xF01E32" "xF41C9C" "xF75947" "xF7FAF1" "xFF81EE" }
-    traits = { "state_trait_amazon_rainforest" }
+    traits = { "state_trait_amazon_rainforest" "state_trait_cr_cerrado" }
     city = "xC2B97E"
     farm = "x57B1CF"
     mine = "x68CC1F"
     wood = "xF01E32"
-    arable_land = 40
-    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_sugar_plantations" "bg_banana_plantations" }
+    arable_land = 25
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" } #Soil conditions in the Cerrado made cultivation very hard
     capped_resources = {
         bg_logging = 16
-    #bg_fishing = 7 #???
     }
     resource = {
         type = "bg_rubber"
@@ -1346,8 +1338,8 @@ STATE_PARANA = {
     provinces = { "x003689" "x01887B" "x1340B9" "x1CF076" "x1D2749" "x32FF03" "x38FE72" "x3A6B08" "x3B0630" "x44FB4A" "x492CDF" "x535BBC" "x53CD15" "x5A3B50" "x5CDB1F" "x666C0F" "x6806EF" "x6A63A4" "x6B95AD" "x7B795B" "x859E23" "x8A1D55" "x946DFF" "x966EB0" "x9A966C" "xA30827" "xA7D75D" "xAAF4D8" "xB6F7AD" "xB989FC" "xB9F1A1" "xBACBB5" "xC4A130" "xC550D6" "xDB9540" "xDF9E45" "xE122FE" "xE80B69" "xE9A1A3" "xF98F63" }
     traits = { "state_trait_parana_river" state_trait_terra_roxa }
     city = "x003689"
-    port = "xC550DC"
-    farm = "x8A1D55"
+    port = "x8A1D55"
+    farm = "x003689"
     mine = "x38FE72"
     wood = "x492CDF"
     arable_land = 40
@@ -1538,6 +1530,7 @@ STATE_CEARA = {
     id = 661
     subsistence_building = "building_subsistence_farms"
     provinces = { "x032EA0" "x0A925F" "x0CB7A9" "x0DFF9A" "x140E0C" "x23A1AB" "x2B8A36" "x3AE396" "x469A7C" "x4C763A" "x50BC85" "x510F08" "x67D67F" "x72A418" "x835C1F" "x85E12F" "x915F53" "x9C9F0B" "xA202FC" "xA28EF1" "xA6BA83" "xBE1280" "xCB19E2" "xD54255" "xD95159" "xE04111" "xE29237" "xED5CF9" }
+	traits = { state_trait_sertao } 
     city = "x140E0C"
     port = "xA6BA83"
     farm = "xED5CF9"

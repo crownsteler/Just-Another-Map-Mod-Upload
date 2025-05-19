@@ -5,6 +5,9 @@ GLOBAL = {
 	#		type = je_cr_reinventing_egypt
 	#	}
 	#}
+	c:FRA = {
+		add_journal_entry = { type = je_cr_minette_ores }
+	}
 	cu:maghrebi = {
 		add_cultural_obsession = fruit
 	}
@@ -27,10 +30,10 @@ GLOBAL = {
 	}
 		
 	
-	s:STATE_TAHITI.region_state:GBR = {
+	s:STATE_TUAMOTES.region_state:GBR = {
 		add_modifier = {
 			name = cr_farflung_corner_of_empire
-			months = 660
+			months = 588
 		}
 	}
 }

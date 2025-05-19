@@ -87,6 +87,30 @@ cr_on_wargoal_enforced = {
         		remove_variable = cr_seminole_war_micanopy_can_surrender
         		trigger_event = { id = cr_indian_removal.21 days = 0 popup = no }
         	}
+        }
+        if = { 
+        	limit = {
+        		owner = {
+					game_date < 1850.1.1 # Just in case.
+	        		c:SPA ?= this
+					has_variable = cr_carlist_war_ongoing
+				}
+        	}
+        	owner = {
+        		trigger_event = { id = cr_carlist_events.10 days = 0 popup = no }
+        	}
+        }	
+        if = { 
+        	limit = {
+        		owner = {
+					game_date < 1850.1.1 # Just in case.
+	        		c:CSP ?= this
+					has_variable = cr_carlist_war_ongoing
+				}
+        	}
+        	owner = {
+        		trigger_event = { id = cr_carlist_events.25 days = 0 popup = mo }
+        	}
         }	
 	}
 

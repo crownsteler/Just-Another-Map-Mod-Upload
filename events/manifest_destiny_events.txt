@@ -560,7 +560,7 @@ manifest_destiny.3 = {
 		}
 		any_scope_state = {
 			OR = {
-				region = sr:region_new_mexico
+				region = sr:region_california
 				region = sr:region_great_plains
 				region = sr:region_the_midwest
 				region = sr:region_dixie
@@ -587,7 +587,7 @@ manifest_destiny.3 = {
 		random_scope_state = {
 			limit = {
 				OR = {
-					region = sr:region_new_mexico
+					region = sr:region_california
 					region = sr:region_great_plains
 					region = sr:region_the_midwest
 					region = sr:region_dixie

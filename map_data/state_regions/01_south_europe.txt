@@ -442,7 +442,7 @@ STATE_CASTILE = {
     provinces = { x0543B8 x10C4E5 x22193A x24A9D6 x3A3528 x4D18FC x50E0C0 x590C75 x5DB702 x702000 x70A000 x9EC9B8 xAC1425 xC3ED38 xCA2220 xD7A4DE xDC8B19 xF02000 xF44AAA }
     traits = { "state_trait_famous_wine_region" }
     city = "x70A000"
-    farm = "x38C557"
+    farm = "xAC1425"
     mine = "x0D5242"
     wood = "x0543B8"
     arable_land = 60
@@ -478,7 +478,7 @@ STATE_NAVARRA = {
     subsistence_building = "building_subsistence_farms"
     provinces = { x10E0C0 x48868C x702080 xABE0B3 xCB3245 }
     traits = { "state_trait_basque_iron_ore" }
-    city = "xAC1425"
+    city = "xABE0B3"
     port = "x48868C"
     farm = "x10E0C0"
     mine = "xCB3245"
@@ -679,12 +679,6 @@ STATE_DOURO = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0EF845" "x37ADD8" "x641376" "xA64B2E" "xD0A000" "xD0E0C0" }
     traits = { "state_trait_famous_wine_region" } #"state_trait_port_of_porto"
-
-
-
-
-
-
     city = "xD0A000"
     port = "x0EF845"
     farm = "xA64B2E"
@@ -696,17 +690,6 @@ STATE_DOURO = {
         bg_logging = 5
         bg_fishing = 5
         bg_iron_mining = 8 #Torre de Moncorvo
-
-
-
-
-
-
-
-
-
-
-
     #bg_minor_metals_mining = 10 #Paredes
     }
     #resource = {
@@ -857,12 +840,6 @@ STATE_EASTERN_THRACE = {
     capped_resources = {
         #bg_coal_mining = 20 #Lignite, Tekirdağ
         bg_iron_mining = 18 #deposit of Cam Dagi moved here to make industrialising Istanbul slightly easier 
-
-
-
-
-
-
         bg_logging = 4
         bg_fishing = 10
         bg_monuments = 1
@@ -981,11 +958,6 @@ STATE_NORTHERN_THRACE = {
 
         #bg_minor_metals_mining = 10 #Rhodope mountains, tungsten-molybdenum
         bg_lead_mining = 12 #Rhodope mountains, exploited during Crimean war for munitions
-
-
-
-
-
     }
     resource = {
         type = "bg_copper_mining"
@@ -1010,17 +982,16 @@ STATE_BULGARIA = {
         bg_logging = 14
         bg_fishing = 2
         #bg_coal_mining = 25
-        bg_iron_mining = 33 #Kremikovtsi deposit
-
-
-
-
-
+        #bg_iron_mining = 33 #Kremikovtsi deposit
     #bg_minor_metals_mining = 15 #Manganese
     }
     resource = {
         type = "bg_coal_mining"
         undiscovered_amount = 25
+    }
+    resource = { #Kremikovtsi deposit, exploitation only started in the 1950s
+        type = "bg_iron_mining"
+        undiscovered_amount = 33
     }
     naval_exit_id = 3036
 }
@@ -1074,7 +1045,7 @@ STATE_CROATIA = {
     traits = { "state_trait_drava_river" "state_trait_terra_rossa" }
     city = "x71A041"
     port = "xF021C0"
-    farm = "x6D8BC6"
+    farm = "x70DF00"
     mine = "xF021C0"
     wood = "x70DF00"
     arable_land = 35
@@ -1278,7 +1249,7 @@ STATE_ATTICA = {
     arable_land = 25
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_iron_mining = 22
+        bg_iron_mining = 12
         bg_logging = 4
         bg_fishing = 8
     }
@@ -1299,7 +1270,7 @@ STATE_THESSALIA = {
     capped_resources = {
         bg_logging = 9
         bg_fishing = 5
-        bg_sulfur_mining = 20
+        bg_sulfur_mining = 20 #???
     }
     naval_exit_id = 3034
 }
@@ -1312,21 +1283,15 @@ STATE_SKOPIA = {
     farm = "x11E0A0"
     mine = "x596DE2"
     wood = "x494421"
-    arable_land = 30
+    arable_land = 33
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_opium_plantations" } #removed vinyards to reduce resources to 4
-
-
-
-
-
-
     capped_resources = {
         #bg_iron_mining = 36
         bg_logging = 8
     }
     resource = {
         type = "bg_iron_mining"
-        undiscovered_amount = 36
+        undiscovered_amount = 8
     }
 }
 
@@ -1341,22 +1306,11 @@ STATE_MACEDONIA = {
     wood = "x90E0A0"
     arable_land = 20
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" } #removed vineyards to reduce resources to 4
-
-
-
-
-
-
     capped_resources = {
         bg_logging = 9
         bg_fishing = 3
         #bg_coal_mining = 35 #Lignite, Western Macedonia Field
         bg_lead_mining = 10 #Lead/Zinc
-
-
-
-
-
     }
     naval_exit_id = 3034
 }
@@ -1393,7 +1347,7 @@ STATE_IONIAN_ISLANDS = {
     city = "x4B79CA"
     port = "x405060"
     farm = "x405060"
-    arable_land = 4
+    arable_land = 8
     arable_resources = { "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_fishing = 3

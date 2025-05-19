@@ -4,6 +4,9 @@
  building_iron_mine_discovered_resource:0 "[GetGoods('iron').GetName]"
  building_lead_mine_discovered_resource:0 "[GetGoods('lead').GetName]"
  building_sulfur_mine_discovered_resource:0 "[GetGoods('sulfur').GetName]"
+ building_copper_mine_discovered_resource:0 "[GetGoods('copper').GetName]"
+ building_minor_metals_mine_discovered_resource:0 "[GetGoods('minor_metals').GetName]"
+ building_fur_trading_post_discovered_resource:0 "Pelts"
  
  #Copper
  bg_copper_mining:0 "Copper Mines"
@@ -27,18 +30,17 @@
  pm_publicly_traded_building_copper_mine:0 "$pm_publicly_traded$"
  pm_government_run_building_copper_mine:0 "$pm_government_run$"
  pm_worker_cooperative_building_copper_mine:1 "$pm_worker_cooperative$"
- modifier_building_output_copper_add:0 "@copper! Copper output per level"
- modifier_building_output_copper_add_desc:0 "The amount of @copper! Copper produced by buildings"
- modifier_building_copper_mine_throughput_add:0 "$building_copper_mine$ building [concept_throughput]"
- modifier_building_copper_mine_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_copper_mine$"
- modifier_building_output_copper_mult:0 "Building @copper! Copper output"
- modifier_building_output_copper_mult_desc:0 "A bonus or penalty to the amount of @copper! Copper produced by buildings"
+ building_output_copper_add:0 "@copper! Copper output per level"
+ building_output_copper_add_desc:0 "The amount of @copper! Copper produced by buildings"
+ building_copper_mine_throughput_add:0 "$building_copper_mine$ building [concept_throughput]"
+ building_copper_mine_throughput_add_desc:0 "A bonus or penalty to both input and output of $building_copper_mine$"
+ building_copper_mine_output_add:0 "$building_copper_mine$ building output"
+ building_copper_mine_output_add_desc:0 "A bonus or penalty to output of $building_copper_mine$"
+ building_output_copper_mult:0 "Building @copper! Copper output"
+ building_output_copper_mult_desc:0 "A bonus or penalty to the amount of @copper! Copper produced by buildings"
  goods_copper_output_mult_desc:0 "A bonus or penalty for the production of $copper$."
- modifier_building_input_copper_add:0 "@copper! Copper input per level"
- modifier_building_input_copper_add_desc:0 "The amount of @copper! Copper consumed by buildings"
- 
- building_copper_mine_discovered_resource:0 "[GetGoods('copper').GetName]"
- 
+ building_input_copper_add:0 "@copper! Copper input per level"
+ building_input_copper_add_desc:0 "The amount of @copper! Copper consumed by buildings"
  
  #Minor Metals
  bg_minor_metals_mining:0 "Niche Metals Mines"
@@ -62,17 +64,18 @@
  pm_publicly_traded_building_minor_metals_mine:0 "$pm_publicly_traded$"
  pm_government_run_building_minor_metals_mine:0 "$pm_government_run$"
  pm_worker_cooperative_building_minor_metals_mine:1 "$pm_worker_cooperative$"
- modifier_building_output_minor_metals_add:0 "@minor_metals! Niche Metals output per level"
- modifier_building_output_minor_metals_add_desc:0 "The amount of @minor_metals! Niche Metals produced by buildings"
- modifier_building_minor_metals_mine_throughput_mult:0 "$building_minor_metals_mine$ building [concept_throughput]"
- modifier_building_minor_metals_mine_throughput_mult_desc:0 "A bonus or penalty to both input and output of $building_minor_metals_mine$"
- modifier_building_output_minor_metals_mult:0 "Building @minor_metals! Niche Metals output"
- modifier_building_output_minor_metals_mult_desc:0 "A bonus or penalty to the amount of @minor_metals! Niche Metals produced by buildings"
+ building_output_minor_metals_add:0 "@minor_metals! Niche Metals output per level"
+ building_output_minor_metals_add_desc:0 "The amount of @minor_metals! Niche Metals produced by buildings"
+ building_minor_metals_mine_throughput_mult:0 "$building_minor_metals_mine$ building [concept_throughput]"
+ building_minor_metals_mine_throughput_mult_desc:0 "A bonus or penalty to both input and output of $building_minor_metals_mine$"
+ building_minor_metals_output_mult:0 "$building_minor_metals_mine$ building output"
+ building_minor_metals_output_mult_desc:0 "A bonus or penalty to output of $building_minor_metals_mine$"
+ building_output_minor_metals_mult:0 "Building @minor_metals! Niche Metals output"
+ building_output_minor_metals_mult_desc:0 "A bonus or penalty to the amount of @minor_metals! Niche Metals produced by buildings"
  goods_copper_minor_metals_mult_desc:0 "A bonus or penalty for the production of $minor_metals$."
- modifier_building_input_minor_metals_add:0 "@minor_metals! Niche Metals input per level"
- modifier_building_input_minor_metals_add_desc:0 "The amount of @minor_metals! Niche Metals consumed by buildings"
+ building_input_minor_metals_add:0 "@minor_metals! Niche Metals input per level"
+ building_input_minor_metals_add_desc:0 "The amount of @minor_metals! Niche Metals consumed by buildings"
  
- building_minor_metals_mine_discovered_resource:0 "[GetGoods('minor_metals').GetName]"
  
  #Dates
  bg_date_plantations:0 "Date Plantations"
@@ -102,7 +105,6 @@
  pmg_liquor_trading_fur_trading_post:0 "Liquor Trading"
  pm_trading_fur_trading_post_no_liquor:0 "No Liquor Trading"
  pm_liquor_trading_fur_trading_post:0 "Liquor Trading"
- building_fur_trading_post_discovered_resource:0 "Pelts"
  
  #Ivory trading post
  bg_ivory_trading_post:0 "Ivory Trading"
@@ -120,8 +122,6 @@
  pm_slave_portage_ivory_trading_post:0 "Enslaved Porters"
  pm_manual_portage_ivory_trading_post:0 "Manual Portage"
  pm_modern_portage_ivory_trading_post:0 "Motorised Portage"
- modifier_goods_output_wood_mult:0 "Building @wood! Wood output"
- modifier_goods_output_wood_mult_desc:0 "A bonus or penalty to the amount of @wood! Wood produced by buildings"
  
  #Kashmir Ranches
  bg_kashmir_ranches:0 "Kashmir Ranches"
@@ -131,3 +131,32 @@
  pm_kashmir_ranch:0 "Kashmir Wool Ranch"
  pm_kasmir_farms:0 "Kashmir Wool Farms"
  pm_intensive_kashmir_ranch:0 "Intensive Kashmir Wool Farms"
+ 
+ #Goods Modifiers
+ goods_output_wood_mult:0 "Building @wood! Wood output"
+ goods_output_wood_mult_desc:0 "A bonus or penalty to the amount of @wood! Wood produced by buildings"
+ goods_output_grain_mult:0 "Building @grain! Grain output"
+ goods_output_grain_mult_desc:0 "A bonus or penalty to the amount of @grain! Grain produced by buildings"
+ goods_output_fish_mult:0 "Building @fish! Fish output"
+ goods_output_fish_mult_desc:0 "A bonus or penalty to the amount of @fish! Fish produced by buildings"
+ goods_output_sulfur_mult:0 "Building @sulfur! Sulfur output"
+ goods_output_sulfur_mult_desc:0 "A bonus or penalty to the amount of @sulfur! Sulfur produced by buildings"
+ 
+ goods_output_iron_mult:0 "Building @iron! Iron output"
+ goods_output_iron_mult_desc:0 "A bonus or penalty to the amount of @iron! Iron produced by buildings"
+ 
+ #Buildings Output Modifiers
+ building_group_bg_agriculture_output_add:0 "$bg_agriculture$ output"
+ building_group_bg_agriculture_output_add_desc:0 "A bonus or penalty to the output of $bg_agriculture$"
+ 
+ bg_ranching_output_add:0 "$bg_ranching$ output"
+ bg_ranching_output_add_desc:0 "A bonus or penalty to the output of $bg_ranching$"
+ bg_livestock_ranches_output_add:0 "$bg_livestock_ranches$ output"
+ bg_livestock_ranches_output_add_desc:0 "A bonus or penalty to the output of $bg_livestock_ranches$"
+ 
+ building_livestock_ranch_output_add:0 "$building_livestock_ranch$ output"
+ building_livestock_ranch_output_add_desc:0 "A bonus or penalty to the output of $building_livestock_ranch$"
+ 
+ building_sulfur_mine_output_add:0 "$building_sulfur_mine$ output"
+ building_sulfur_mine_output_add_desc:0 "A bonus or penalty to the output of $building_sulfur_mine$"
+ 

@@ -105,7 +105,7 @@ HOR = {
 	tier = principality
 	
 	cultures = { tibetan }	
-	capital = STATE_SICHUAN
+	capital = STATE_KHAM
 }
 
 TKH = {
@@ -116,7 +116,7 @@ TKH = {
 	tier = principality
 	
 	cultures = { tibetan }	
-	capital = STATE_SICHUAN
+	capital = STATE_KHAM
 }
 
 NYA = {
@@ -127,5 +127,5 @@ NYA = {
 	tier = principality
 	
 	cultures = { tibetan }	
-	capital = STATE_SICHUAN
+	capital = STATE_KHAM
 }

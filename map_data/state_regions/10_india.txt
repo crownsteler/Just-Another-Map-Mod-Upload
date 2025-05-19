@@ -33,6 +33,7 @@ STATE_EAST_BENGAL = {
         bg_logging = 18
         bg_fishing = 12
     }
+    naval_exit_id = 3050
 }
 
 STATE_WEST_BENGAL = {
@@ -370,7 +371,7 @@ STATE_ORISSA = {
     id = 471
     subsistence_building = building_subsistence_rice_paddies
     provinces = { x0CE6EA x11D169 x1504AD x1622F2 x22B96B x30C2D5 x323B8A x38A6E6 x404EEA x5031A0 x597E99 x5BC5C8 xA0A8E0 xA15F01 xA2EF24 xB07FDD xB6E5C1 xBAE4B3 xBB9552 xCCE5B7 xE1911A xF8BB81 xFBF096 xFFBC41 }
-    prime_land = { xD031A0 x597E99 xA2EF24 xFFBC41 x38A6E6 xBB9552 }
+    prime_land = { x597E99 xA2EF24 xFFBC41 x38A6E6 xBB9552 }
     city = x597E99
     port = xBB9552
     farm = x404EEA
@@ -566,7 +567,7 @@ STATE_TENASSERIM = {
     city = x94B7B9
     port = xB36203
     farm = x9381F1
-    mine = x2160CF
+    mine = x98384C
     wood = x3F4145
     arable_land = 20
     arable_resources = { bg_rice_farms bg_dye_plantations bg_banana_plantations }
@@ -595,7 +596,7 @@ STATE_KACHIN = {
     impassable = { xB51155 x7D320E x077F7F x695CD8 xF84302 x0F9164 xE0645B x9AA00A x47B561 xECACD2 x6CF865 x9DE9F6 x47C5A9 x234C64 xFB1A2B xB316F6 x634D79 }
     city = x3002EA
     farm = x0BDB4D
-    mine = xCD31D0
+    mine = xD18BAA
     wood = x077F7F
     arable_land = 55
     arable_resources = { bg_rice_farms bg_tea_plantations bg_sugar_plantations bg_banana_plantations }

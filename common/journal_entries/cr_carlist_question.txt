@@ -30,6 +30,9 @@
 		cu:basque = {
 			save_scope_as = cr_basque_culture
 		}
+		cu:catalan = {
+			save_scope_as = cr_catalan_culture
+		}
 		c:GBR = {
 			save_scope_as = cr_britain
 		}
@@ -45,9 +48,6 @@
 			c:SPA = {
 				set_variable = cr_carlist_victory
 			}
-		}
-		trigger_event = {
-			id = cr_carlist_events.25
 		}
 	}
 }
@@ -97,21 +97,22 @@ je_cr_carlist_war_christinos = {
 		cu:basque = {
 			save_scope_as = cr_basque_culture
 		}
+		cu:catalan = {
+			save_scope_as = cr_catalan_culture
+		}
 	}
 	
 	should_be_pinned_by_default = yes
 	
 	on_monthly_pulse = {
-		#random_events = {
-		#	1 = 0
-		#	1 = cr_carlist_events.1 #The Desamortización of the Monastaries
-		#}
+		random_events = {
+			3 = 0
+			1 = cr_carlist_events.1 #The Desamortización of the Monastaries
+		}
 	}
 	
 	on_complete = {
-		trigger_event = {
-			id = cr_carlist_events.10
-		}
+		annex = c:CSP
 	}
 }
 

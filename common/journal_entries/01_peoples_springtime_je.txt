@@ -21,7 +21,7 @@
 				region = sr:region_north_germany
 				region = sr:region_south_germany
 				region = sr:region_hungary
-				region = sr:region_scandinavia
+				region = sr:region_baltic
 				region = sr:region_danubia
 				region = sr:region_poland
 				state_region = s:STATE_ATTICA
@@ -32,10 +32,6 @@
 				state_region = s:STATE_MACEDONIA
 				state_region = s:STATE_WESTERN_THRACE
 				state_region = s:STATE_WEST_AEGEAN_ISLANDS
-				state_region = s:STATE_SOUTHERN_FINLAND
-				state_region = s:STATE_OSTROBOTHNIA
-				state_region = s:STATE_ALAND
-				state_region = s:STATE_WEST_KARELIA
 				#region = sr:region_bosphorus #skip Ottomans and Samos
 				#region = sr:region_russia #skip Russia and Russian minors
 				#region = sr:region_dnieper

@@ -1,0 +1,62 @@
+﻿
+#################
+#	CULTURES	#
+#################
+frisian_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_frisian_standard_of_living_add = 1
+}
+frisian_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_frisian_standard_of_living_add = 1
+}
+
+minangkabau_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_minangkabau_standard_of_living_add = 1
+}
+minangkabau_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_minangkabau_standard_of_living_add = 1
+}
+
+dhivehin_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_minangkabau_standard_of_living_add = 1
+}
+dhivehin_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_minangkabau_standard_of_living_add = 1
+}
+
+sundanese_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_minangkabau_standard_of_living_add = 1
+}
+sundanese_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_minangkabau_standard_of_living_add = 1
+}
+
+#################
+#	RELIGIONS	#
+#################
+#ibadi_standard_of_living_modifier_positive = {
+#	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+#	state_ibadi_standard_of_living_add = 1
+#}
+#
+#ibadi_standard_of_living_modifier_negative = {
+#	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+#	state_ibadi_standard_of_living_add = 1
+#}
+#
+#bahai_standard_of_living_modifier_positive = {
+#	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+#	state_bahai_standard_of_living_add = 1
+#}
+#
+#bahai_standard_of_living_modifier_negative = {
+#	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+#	state_bahai_standard_of_living_add = 1
+#}

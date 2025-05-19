@@ -70,11 +70,11 @@
 		#	set_interest_group_name = ig_catholics
 		#}	
 
-		add_company = company_type:company_maatschappij_van_weldadigheid
-		company:company_maatschappij_van_weldadigheid = {
-			set_company_establishment_date = 1818.4.1
-			set_company_state_region = s:STATE_FRIESLAND
-		}
+		#add_company = company_type:company_maatschappij_van_weldadigheid
+		#company:company_maatschappij_van_weldadigheid = {
+		#	set_company_establishment_date = 1818.4.1
+		#	set_company_state_region = s:STATE_FRIESLAND
+		#}
 
 		add_company = company_type:company_nederlandse_handelsmaatschappij
 		company:company_nederlandse_handelsmaatschappij = {

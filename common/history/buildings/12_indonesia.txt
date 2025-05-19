@@ -161,6 +161,17 @@
 				reserves=1
 				activate_production_methods={ "pm_anchorage" }
 			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:SUL"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
 		}
 	}
 	s:STATE_WEST_BORNEO={
@@ -187,8 +198,6 @@
 				reserves=1
 				activate_production_methods={ "pm_anchorage" }
 			}			
-		}
-		region_state:DEI={
 		}
 		region_state:SMB={
 			create_building={
@@ -296,19 +305,6 @@
 	s:STATE_EAST_BORNEO={
 		region_state:DEI={
 			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:DEI"
-						levels=1
-						region="STATE_EAST_BORNEO"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm"  "pm_tools_disabled" "pm_fig_orchards_building_rice_farm" }
-			}
-			create_building={
 				building="building_port"
 				add_ownership={
 					country={
@@ -378,7 +374,7 @@
 				add_ownership={
 					country={
 						country="c:BNJ"
-						levels=4
+						levels=2
 					}
 				}
 				reserves=1
@@ -1034,6 +1030,7 @@
 	s:STATE_MOLUCCAS={
 		region_state:DEI={
 			create_building={ #Don't forget to update trade routes
+				building="building_tea_plantation"
 				add_ownership={
 					building={	#Owned by the Dutch Planters living in the area
 						type="building_manor_house"
@@ -1095,7 +1092,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
+				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_port"
@@ -1123,6 +1120,7 @@
 				reserves=1
 				activate_production_methods={ "pm_anchorage" }
 			}
+		}
 		region_state:TRT={
 			create_building={
 				building="building_fishing_wharf"
@@ -1302,7 +1300,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_merchant_guilds_building_logging_camp" }
+				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
 			create_building={
 				building="building_port"
@@ -1674,22 +1672,37 @@
 				level = 1
 			}
 		}
-		region_state:RAP={ #Rapa Nui
-		}
-		region_state:GBR={ #Pitcairn Islands
-		}
-		region_state:MGR={ #Mangareva
-		}
 		region_state:TUP={ #Tupua'i
-		}
-		region_state:MQS={ #Marquesas
 		}
 		region_state:BOA={ #Bora-Bora
 		}
+	}
+	s:STATE_TUAMOTES={
+		region_state:RAP={ #Rapa Nui
+		}
+		region_state:GBR={ #Pitcairn Islands
+			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					building={
+						type="building_fishing_wharf"
+						country="c:GBR"
+						levels=1
+						region="STATE_TUAMOTES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+			}
+		}
 		region_state:TUM={ #Tuamotus
 		}
-
+		region_state:MGR={ #Mangareva
+		}
+		region_state:MQS={ #Marquesas
+		}
 	}
+	
 	s:STATE_TONGA={
 		region_state:TNG={ #Tonga
 		}

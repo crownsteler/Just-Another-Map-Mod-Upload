@@ -16,8 +16,14 @@ company_solvay = {
 	}
 	
 	attainable = {
+		has_technology_researched = nitroglycerin
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-			has_technology_researched = nitroglycerin
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_WALLONIA
+					state_region = s:STATE_FLANDERS			
+				}
+			}
 		}
 	}	
 	

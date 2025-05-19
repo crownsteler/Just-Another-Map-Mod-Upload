@@ -1426,12 +1426,6 @@
 				size = 4200
 			}				
 		}
-		region_state:DST = {
-			create_pop = {
-				culture = persian
-				size = 300
-			}
-		}
 	}
 	s:STATE_MAZANDARAN = {
 		region_state:PER = {

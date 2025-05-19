@@ -10,6 +10,8 @@
  state_trait_cr_barisan_mountains:0 "Barisan Mountains"
  state_trait_cr_billiton:0 "Koolit-Kollong"
  state_trait_cr_sandalwood_forests:0 "Sandalwood Islands"
+ #State traits Indochina
+ state_trait_indochinese_dry_forest:0 "Indochinese Dry Forests"
  #State traits India
  state_trait_true_indigo:0 "True Indigo"
  state_trait_kashmir_wool:0 "Cashmere Wool"
@@ -42,6 +44,7 @@
  state_trait_bordeaux_red:0 "Bordeaux Wine"
  state_trait_famous_wine_region:0 "Famous Wine Region"
  state_trait_minette_ore:0 "Minette Ores"
+ state_trait_minette_ore_2:0 "Minette Ores"
  state_trait_polders:0 "Polders"
  state_trait_erzberg:0 "Erzberg"
  state_trait_slovak_ore_mountains:0 "Slovak Ore Mountains" #Gömör–Szepesi
@@ -57,6 +60,7 @@
  state_trait_cr_the_great_north:0 "The Great North"
  state_trait_cr_humboldt_current:0 "Humboldt Current"
  state_trait_cr_gateway_to_the_mississippi:0 "The Mississippi Gateway"
+ state_trait_cr_cerrado:0 "Cerrado"
  
  cr_desamortizacion_ig_devout:0 "Desamortización"
  cr_desamortizacion_ig_liberals:0 "Desamortización"
@@ -175,7 +179,6 @@
  cr_eyeing_unceded_land:0 "Eyeing Unceded Land"
  cr_chateau_clique_modifier:0 "The Château Clique"
  cr_patriote_movement_modifier:0 "Patriote Movement"
- cr_treaty_of_doaksville:0 "Treaty of Doaksville"
  cr_indian_removal_compromised_bureaucracy:0 "Compromised Bureaucracy"
  
  cr_desamortizacion_auctioned:0 "Desamortización"
@@ -243,3 +246,28 @@
  cr_indian_removal_compromised_bureaucracy_movement:0 "Complicit Bureaucracy"
  cr_removal_the_benefit_of_free_enterprise:0 "The Benefits of Free Enterprise"
  cr_removal_the_benefit_of_free_enterprise_denied:0 "Denied The Benefits of Free Enterprise"
+ 
+ #Carlist wars Modifiers
+ cr_embrace_of_vergara:0 "Embrace of Vergara"
+ cr_exile_of_bourges:0 "Don Carlos his Exile"
+ cr_don_carlos_exiled:0 "Don Carlos his Exile"
+ cr_don_carlos_exiled_but_supported:0 "Tacit foreign support"
+ cr_don_carlos_legitimacy_undermined_movement:0 "Country legitimacy undermined"
+ cr_don_carlos_legitimacy_undermined_country:0 "Don Carlos"
+ cr_don_carlos_absolutist_support:0 "Foreign Support"
+ cr_don_carlos_liberal_support:0 "Foreign Support"
+ cr_don_carlos_absolutist_support_backlash:0 "Supporting absolutism abroad"
+ cr_supporting_absolutism_abroad:0 "Supporting absolutism abroad"
+ cr_denied_carlos_france_legitimists:0 "Don Carlos of Bourbon asylum denied"
+ cr_granted_carlos_asylum_france_bonapartist:0 "Granted the absolutist Don Carlos asylum"
+ cr_denied_dynasty_member_asylum:0 "Denied dynasty member asylum" 
+ cr_denied_carlos_british_royalist:0 "Denied a royal asylum"
+ cr_royal_denied_asylum_royalist_ig:0 "Denied a royal asylum"
+ cr_royal_exile_ig:0 "Royal Exile"
+ cr_royal_exile:0 "Royal Exile"
+ cr_free_royal_exile:0 "Royal Exile"
+ cr_carlos_exiled_state:0 "Home of an exiled royal"
+ cr_distant_exile:0 "Distant Exile"
+ cr_beacon_of_liberty:0 "Beacon of Liberty"
+ cr_carlos_supporting_absolutism:0 "Supporting absolutism abroad"
+ cr_carlos_supporting_liberalism:0 "Supporting liberalism abroad"

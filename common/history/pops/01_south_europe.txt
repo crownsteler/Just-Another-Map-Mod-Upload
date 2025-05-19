@@ -393,11 +393,19 @@
 		region_state:SPA = {
 			create_pop = {
 				culture = spanish
-				size = 431604
+				size = 381604
 			}
 			create_pop = {
 				culture = catalan
-				size = 490392
+				size = 290392
+			}
+		}
+	}
+	s:STATE_MURCIA = {
+		region_state:SPA = {
+			create_pop = {#Murcia
+				culture = spanish
+				size = 458000
 			}
 		}
 	}
@@ -841,7 +849,12 @@
 		region_state:GRE = {
 			create_pop = {
 				culture = greek
-				size = 80404
+				size = 78904
+			}
+			create_pop = { # Albanian/Arvanite, estimated at 16-25% of the population of Greece mid 19th century. Used 25% for the Peloponnese and 16% for Attica, and some for Andros
+				culture = albanian
+				religion = orthodox
+				size = 1500
 			}
 		}
 	}
@@ -866,7 +879,12 @@
 		region_state:GRE = {
 			create_pop = {
 				culture = greek
-				size = 637592
+				size = 535577
+			}
+			create_pop = { # Albanian/Arvanite, estimated at 16-25% of the population of Greece mid 19th century. Used 25% for the Peloponnese and 16% for Attica
+				culture = albanian
+				religion = orthodox
+				size = 102015
 			}
 		}
 	}
@@ -996,7 +1014,12 @@
 		region_state:GRE = {
 			create_pop = {
 				culture = greek
-				size = 221996
+				size = 166497
+			}
+			create_pop = { # Albanian/Arvanite, estimated at 16-25% of the population of Greece mid 19th century. Used 25% for the Peloponnese and 16% for Attica
+				culture = albanian
+				religion = orthodox
+				size = 55499
 			}
 		}
 	}

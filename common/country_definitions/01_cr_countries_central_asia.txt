@@ -6,13 +6,13 @@
 BDK = {
 	color = { 154 251 36 }
 	
-	country_type = unrecognized
+	country_type = decentralized
 	
 	tier = principality
 	
-	cultures = { uzbek }
+	cultures = { tajik }
 	religion = sunni
-	capital = STATE_TAJIKISTAN
+	capital = STATE_BADAKHSHAN
 }
 
 BKH = {
@@ -37,6 +37,18 @@ BRK = {
 	cultures = { pashtun }
 	religion = sunni
 	capital = STATE_PASHTUNISTAN
+}
+
+DRV = {
+	color = { 151 55 75 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { tajik }
+	religion = sunni
+	capital = STATE_BADAKHSHAN
 }
 
 DST = {
@@ -111,6 +123,30 @@ KAN = {
 	capital = STATE_KANDAHAR
 }
 
+MZS = {
+	color = { 70 105 150 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { uzbek }
+	religion = sunni
+	capital = STATE_BALKH
+}
+
+SGN = {
+	color = { 86 76 157 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { tajik }
+	religion = sunni
+	capital = STATE_BADAKHSHAN
+}
+
 SST = {
 	color = { 220 220 195 }
 	
@@ -133,6 +169,18 @@ TBJ = {
 	cultures = { persian }
 	religion = sunni
 	capital = STATE_KHORASAN
+}
+
+WKN = {
+	color = { 163 82 68 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { tajik }
+	religion = sunni
+	capital = STATE_BADAKHSHAN
 }
 
 ZHB = {

@@ -234,7 +234,7 @@ pm_slave_portage_ivory_trading_post = {
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_slave_import_mult = 0.15
+			state_slave_import_mult = 0.25
 		}
 	}	
 }
@@ -266,7 +266,7 @@ pm_manual_portage_ivory_trading_post = {
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_slave_import_mult = 0.25
+			state_slave_import_mult = 0.15
 		}
 	}	
 }

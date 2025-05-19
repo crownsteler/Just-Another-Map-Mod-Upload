@@ -1,47 +1,47 @@
-﻿gov_cr_khanate = {
-	transfer_of_power = hereditary
+﻿#gov_cr_khanate = {
+#	transfer_of_power = hereditary
+#
+#	male_ruler = "RULER_TITLE_KHAN"
+#	female_ruler = "RULER_TITLE_KHATUN"
+#	
+#	male_heir = "RULER_TITLE_PRINCE"
+#	female_heir = "RULER_TITLE_PRINCESS"
+#	
+#	possible = {
+#		AND = { exists = c:KYZ c:KYZ = ROOT is_country_type = decentralized }
+#
+#	}
+#
+#	on_government_type_change = {
+#		change_to_hereditary = yes
+#	}
+#	on_post_government_type_change = {
+#		post_change_to_hereditary = yes
+#	}
+#}
 
-	male_ruler = "RULER_TITLE_KHAN"
-	female_ruler = "RULER_TITLE_KHATUN"
-	
-	male_heir = "RULER_TITLE_PRINCE"
-	female_heir = "RULER_TITLE_PRINCESS"
-	
-	possible = {
-		AND = { exists = c:KYZ c:KYZ = ROOT is_country_type = decentralized }
-
-	}
-
-	on_government_type_change = {
-		change_to_hereditary = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_hereditary = yes
-	}
-}
-
-gov_zz_cr_ethiopian_empire = {
-	transfer_of_power = hereditary
-
-	male_ruler = "RULER_TITLE_NEGUSA_NAGAST"
-	female_ruler = "RULER_TITLE_NEGESTA_NAGASTAT"
-
-	male_heir = "RULER_TITLE_LEUL"
-	female_heir = "RULER_TITLE_LEELT"
-	
-	possible = {
-		has_law = law_type:law_monarchy
-		country_tier = empire
-		AND = { exists = c:ETH c:ETH = ROOT }
-	}
-
-	on_government_type_change = {
-		change_to_hereditary = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_hereditary = yes
-	}
-}
+#gov_zz_cr_ethiopian_empire = {
+#	transfer_of_power = hereditary
+#
+#	male_ruler = "RULER_TITLE_NEGUSA_NAGAST"
+#	female_ruler = "RULER_TITLE_NEGESTA_NAGASTAT"
+#
+#	male_heir = "RULER_TITLE_LEUL"
+#	female_heir = "RULER_TITLE_LEELT"
+#	
+#	possible = {
+#		has_law = law_type:law_monarchy
+#		country_tier = empire
+#		AND = { exists = c:ETH c:ETH = ROOT }
+#	}
+#
+#	on_government_type_change = {
+#		change_to_hereditary = yes
+#	}
+#	on_post_government_type_change = {
+#		post_change_to_hereditary = yes
+#	}
+#}
 
 gov_zz_cr_ethiopian_kingdom = {
 	transfer_of_power = hereditary
@@ -99,32 +99,6 @@ gov_zz_cr_ethiopian_principality = {
 			AND = { exists = c:TGR c:TGR = ROOT }
 			AND = { exists = c:BGM c:BGM = ROOT }
 		}
-	}
-
-	on_government_type_change = {
-		change_to_hereditary = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_hereditary = yes
-	}
-}
-
-gov_caliphate = {
-	transfer_of_power = hereditary
-	
-	male_ruler = "RULER_TITLE_CALIPH"
-	female_ruler = "RULER_TITLE_CALIPHA" # Empty on purpose
-
-	male_heir = "RULER_TITLE_PRINCE"
-	female_heir = "" # Empty on purpose
-	
-	possible = {
-		OR = {
-			has_law = law_type:law_monarchy
-			has_law = law_type:law_theocracy
-		}
-		exists = c:SOK
-		c:SOK = ROOT
 	}
 
 	on_government_type_change = {
@@ -251,8 +225,13 @@ gov_khanate = {
 			AND = { exists = c:KOK c:KOK = ROOT }
 			AND = { exists = c:KAZ c:KAZ = ROOT }
 			AND = { exists = c:KAL c:KAL = ROOT }
+			AND = { exists = c:MAI c:MAI = ROOT }
+			AND = { exists = c:KUN c:KUN = ROOT }
+			AND = { exists = c:MAZ c:MAZ = ROOT }
+			AND = { exists = c:DIR c:DIR = ROOT }
 			AND = { exists = c:KYZ c:KYZ = ROOT }
 			AND = { exists = c:BKH c:BKH = ROOT }
+			AND = { exists = c:DRV c:DRV = ROOT }
 		}
 	}
 

@@ -30,7 +30,12 @@ POPS = {
 		region_state:GBR = {
 			create_pop = {
 				culture = afro_caribbean
-				size = 92000
+				size = 25000
+			}
+			create_pop = {
+				culture = afro_caribbean
+				religion = animist
+				size = 67000
 			}
 			create_pop = {
 				culture = british
@@ -129,7 +134,12 @@ POPS = {
 			}
 			create_pop = {
 				culture = afro_antillean
-				size = 14400
+				size = 6400
+			}
+			create_pop = {
+				culture = afro_antillean
+				religion = animist
+				size = 8400
 			}
 		}
 		region_state:AMZ = {
@@ -939,16 +949,6 @@ POPS = {
 				size = 2600
 			}
 		}
-		region_state:PAT = {
-			create_pop = {
-				culture = patagonian
-				size = 8000
-			}
-			create_pop = {
-				culture = platinean
-				size = 240
-			}
-		}
 	}
 	s:STATE_CHACO = {
 		region_state:GNI = {
@@ -1440,7 +1440,7 @@ POPS = {
 		region_state:AMZ = {
 			create_pop = {
 				culture = tupinamba
-				size = 994 # 1825 estimate
+				size = 3976 # 1825 estimate is 994, but increased for gameplay reasons
 			}
 		}
 	}

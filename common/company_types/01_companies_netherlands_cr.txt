@@ -120,6 +120,7 @@ company_nederlandse_handelsmaatschappij = {
 	
 	potential = {
 		country_has_primary_culture = cu:dutch
+		country_is_in_europe = yes
 	}
 	
 	possible = {
@@ -174,7 +175,7 @@ company_enka = {
 	}
 	
 	prosperity_modifier = {		
-		building_textile_mills_throughput_add = 0.05
+		building_textile_mills_throughput_add = 0.10
 	}	
 	
 	ai_weight = {
@@ -191,6 +192,8 @@ company_billiton_maatschappij = {
 	
 	building_types = {  
 		building_lead_mine #building_minor/speciality_metals_mine
+		building_iron_mine
+		building_copper_mine
 	}
 	
 	potential = {
@@ -202,14 +205,15 @@ company_billiton_maatschappij = {
 			state_region = s:STATE_BILLITON
 			any_scope_building = {
 				is_building_type = building_lead_mine
-				level >= 5
+				level >= 3
 			}
 		}
 		has_technology_researched = steelworking
 	}
 	
 	prosperity_modifier = {
-		building_food_industry_throughput_add = 0.1 #Tin for canning!
+		building_food_industry_throughput_add = 0.05 #Tin for canning!
+		building_steel_mills_throughput_add = 0.075
 	}	
 	
 	ai_weight = {
@@ -261,10 +265,10 @@ company_billiton_maatschappij = {
 company_maatschappij_van_weldadigheid = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_maatschappij_van_weldadigheid.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
-	
 	flavored_company = yes
 	
-	building_types = {
+	building_types = {  
+		building_wheat_farm
 		building_rye_farm
 		building_livestock_ranch
 	}
@@ -274,27 +278,25 @@ company_maatschappij_van_weldadigheid = {
 	}
 	
 	possible = {
-		has_law = law_type:law_poor_laws
 		any_scope_state = {
-			region = sr:region_low_countries
 			is_incorporated = yes
 			any_scope_building = {
 				OR = {
+					is_building_type = building_wheat_farm
 					is_building_type = building_rye_farm
 					is_building_type = building_livestock_ranch
 				}
-				level >= 4
+				level >= 3
 			}
-			count >= 2
 		}
 	}
 	
 	prosperity_modifier = {
-		state_radicals_from_sol_change_mult = -0.05
+		state_radicals_from_political_movements_mult = -0.1
 	}
 	
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 2 # Higher base value for flavored companies
 	}
 }
 
@@ -319,14 +321,13 @@ company_regout_de_sphinx = {
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_glassworks
-				level >= 5
+				level >= 3
 			}
-			count >= 2
 		}
 	}
 	
 	prosperity_modifier = {
-		building_construction_sector_throughput_add = 0.05 #Exploited a wide variety of industrial enterprises, including a nails and screws factory, and would later focus on sanitation products
+		building_construction_sector_throughput_add = 0.1 #Exploited a wide variety of industrial enterprises, including a nails and screws factory, and would later focus on sanitation products
 	}
 	
 	ai_weight = {

@@ -18,8 +18,9 @@ xD77765;xD31590;sea;-1;5704;2044;5697;2048;;Kathiawar-Kutch
 xF64FA2;x5B6745;sea;-1;5681;2067;5678;2072;;Kutch-Sindh
 x217F68;xE5A4DA;sea;-1;6528;1746;6532;1750;;None
 xA92B88;xF0B061;sea;-1;6607;1972;6607;1981;;None
-xB0D080;x8ACAAA;sea;-1;-1;-1;6972;2329;;None
+xB0D080;xc81c12;sea;-1;6978;2304;6979;2328;;Korea-Jeju-do
 xF0D080;x70D080;sea;-1;7050;2177;7070;2223;;None
+x70D080;x5C7980;sea;-1;7079;2246;7081;2232;;Kyushu-Tanegashima
 x438029;x21A090;sea;-1;4991;1378;4980;1382;;None
 x606060;xAB37B5;sea;-1;2625;1936;2657;1935;;Tortola/British Virgin Islands-Anguila
 xECC061;xAB37B5;sea;-1;2661;1932;2660;1936;;Saint Martin-Anguila
@@ -30,6 +31,7 @@ x5299CA;x446c63;sea;-1;2706;1828;2702;1816;;None
 xF0F001;x446c63;sea;-1;2695;1797;2701;1814;;
 xD496B1;x707080;sea;-1;2713;1768;2704;1757;;Tobago-Trinidad
 x446C63;x445B6C;sea;-1;2702;1815;2739;1813;;None
+x543388;xE888D6;sea;-1;2769;2883;2767;2887;;None
 x543388;xE888D6;sea;-1;2769;2883;2767;2887;;None
 x5E9DB3;x3020D0;sea;-1;2745;224;2749;223;;None
 x290133;x871642;sea;-1;5470;3437;5479;3431;;None
@@ -105,8 +107,10 @@ x5cc6b6;xDBE794;sea;-1;6513;1375;6506;1382;;Java-Sumatra
 x2060ef;xa0e070;sea;-1;6667;1345;6672;1348;;Java-Madura
 xa8b603;xd91a27;sea;-1;6701;1324;6706;1324;;Java-Bali
 x309985;x100090;sea;-1;6743;1316;6729;1320;;Bali-Lombok
-xd2799b;xf8fbac;sea;-1;7577;1413;7567;1411;;Eastern New Guinea
-x61f645;x10c090;sea;-1;7478;1383;7469;1382;;Eastern New Guinea
+xD2799B;xF8FBAC;sea;-1;7577;1413;7567;1411;;New Britain-New Ireland
+xD2799B;x468B34;sea;-1;7532;1453;7519;1455;;New Ireland-New Hanover
+x468B34;xA66435;sea;-1;7514;1454;7449;1463;;New Hanover-Manus Island
+x61f645;x10c090;sea;-1;7477;1383;7466;1384;;Eastern New Guinea
 x5779b1;x686a28;sea;-1;7422;1405;7416;1399;;Eastern New Guinea
 xab408f;x10c090;sea;-1;7457;1372;7466;1383;;Eastern New Guinea
 xb9e7df;x719040;sea;-1;7523;1276;7537;1282;;Eastern New Guinea
@@ -171,7 +175,6 @@ xEDDB5F;xF0B767;sea;-1;6891;1413;6891;1405;;Celebes-Buton
 xCED863;x0180F0;sea;-1;6812;1631;6828;1628;;North Borneo-Sulu islands
 x4ebc79;x72c072;sea;-1;2320;2087;2332;2094;;
 x1e761e;x535b49;sea;-1;2244;1957;2314;1933;;
-
 x54A09D;xB6BC0E;sea;-1;7705;1673;7764;1654;;Micronesia
 xB6BC0E;x9F1974;sea;-1;7774;1649;7806;1636;;Micronesia
 x71414d;x54A09D;sea;-1;7561;1682;7695;1675;;Micronesia
@@ -182,7 +185,6 @@ x71414d;x5f996e;sea;-1;7543;1681;7497;1669;;Micronesia
 xA7F7E3;x5f996e;sea;-1;7505;1710;7499;1685;;Micronesia
 xA7F7E3;xEB573A;sea;-1;7521;1711;7550;1707;;Micronesia
 x5f996e;x414170;sea;-1;7494;1684;7444;1681;;Micronesia
-
 x414170;x152278;sea;-1;7425;1674;7384;1679;;Micronesia
 x414170;x781530;sea;-1;7427;1684;7406;1724;;Micronesia
 x152278;x781530;sea;-1;7371;1684;7385;1708;;Micronesia
@@ -192,9 +194,7 @@ xD3EC44;x6E4206;sea;-1;7290;1700;7227;1706;;Micronesia
 x6E4206;x0FD025;sea;-1;7221;1704;7163;1683;;Micronesia
 x6E4206;x936113;sea;-1;7228;1710;7242;1730;;Micronesia
 x936113;x139322;sea;-1;7245;1735;7276;1740;;Micronesia
-
-x302090;x2BEBD1;sea;-1;7903;997;7922;1013;;New Caladonia
-
+x302090;x2BEBD1;sea;-1;7903;997;7926;1013;;New Caladonia
 xf5dbbf;x314240;sea;-1;7913;1723;7944;1737;;Marshall Islands
 xf5dbbf;xcd1ea0;sea;-1;7906;1727;7895;1771;;Marshall Islands
 x314240;x7f2e1c;sea;-1;7948;1740;7964;1746;;Marshall Islands
@@ -214,78 +214,126 @@ xcd1ea0;x2a9436;sea;-1;7886;1767;7876;1743;;Marshall Islands
 xf5dbbf;x2a9436;sea;-1;7899;1723;7881;1717;;Marshall Islands
 x8fd0a9;x808011;sea;-1;7963;1772;7970;1793;;Marshall Islands
 x808011;x527f6c;sea;-1;7943;1847;7897;1957;;Marshall Islands
-
-
 x2190A0;xC56452;sea;-1;4696;2450;4690;2434;;Aegean
 xE011A0;xC56452;sea;-1;4711;2395;4707;2399;;Aegean
 xa010a0;x6090a0;sea;-1;4655;2422;4660;2419;;Aegean
 x6960a0;x6090a0;sea;-1;4675;2380;4670;2396;;Aegean
 x95abdb;xc56452;sea;-1;4696;2428;4690;2432;;Aegean
 x702020;xedecfb;sea;-1;4657;2494;4658;2500;;Aegean
-
-xc04d30;x628491;sea;-1;8155;1107;8163;1118;;FIJI Viti Levu-Vanua Levu
-x628491;x53fa6e;sea;-1;8187;1116;18;1106;;FIJI Vanua Levu-Lau Islands
-xc04d30;x61a3e3;sea;-1;8153;1094;8163;1076;;FIJI Viti Levu-Moala Group
-xc04d30;x53fa6e;sea;-1;8163;1097;19;1077;;FIJI Viti Levu- Lau Islands
-x61a3e3;x53fa6e;sea;-1;8187;1063;9;1049;;FIJI Moala Group - Lau Islands
-
-x5178bc;x504090;sea;-1;7909;1143;7902;1158;;Vanuatu
-x5178BC;x75A377;sea;-1;7921;1133;7926;1137;;Vanuatu
+xC04D30;x617A5F;sea;-1;8150;1093;8154;1077;;FIJI Viti Levu-Kandavu
+xC04D30;xC03076;sea;-1;8158;1104;8164;1105;;FIJI Viti Levu-Ovalau
+xAED14B;x637EC6;sea;-1;8151;1111;8163;1120;;FIJI Viti Levu-Vanua Levu
+xC03076;x61A3E3;sea;-1;8173;1097;8181;1074;;FIJI Ovalau-Moala Group
+xC03076;x628491;sea;-1;8174;1113;8176;1123;;FIJI Ovalau-Vanua Levu
+xC03076;x53FA6E;sea;-1;8176;1102;7;1099;;FIJI Ovalau-Lau Islands
+x1B9621;x504090;sea;-1;7911;1184;7900;1167;;Vanuatu
+x1B9621;x756A20;sea;-1;7913;1185;7927;1166;;Vanuatu
+x504090;x756A20;sea;-1;7904;1157;7919;1157;;Vanuatu
+x756A20;x75A377;sea;-1;7930;1146;7929;1139;;Vanuatu
+x5178bc;x504090;sea;-1;7907;1143;7903;1156;;Vanuatu
+x5178BC;x75A377;sea;-1;7918;1134;7924;1138;;Vanuatu
+x5178BC;x376481;sea;-1;7915;1132;7931;1106;;Vanuatu
+x75A377;x376481;sea;-1;7930;1125;7934;1105;;Vanuatu
+x376481;xAF6A35;sea;-1;7937;1101;7951;1078;Vanuatu
 x3b8eeb;xd04090;sea;-1;7679;1345;7684;1327;;South Solomon Islands
 xd04090;x2b5e69;sea;-1;7691;1320;7705;1339;;South Solomon Islands
-x2b5e69;x898945;sea;-1;7736;1318;7736;1301;;South Solomon Islands
-x898945;xf5f405;sea;-1;7758;1291;7767;1302;;South Solomon Islands
-x898945;x874589;sea;-1;7760;1287;7778;1274;;South Solomon Islands
-xD04090;x692B64;sea;-1;7686;1321;7682;1317;;South Solomon Islands
-x898945;x692B64;sea;-1;7735;1298;7723;1304;;South Solomon Islands
+x2b5e69;xf5f405;sea;-1;7738;1321;7760;1318;;Solomon Islands
+x2B5E69;x6A5477;sea;-1;7736;1318;7745;1307;;South Solomon Islands
+x6A5477;x898945;sea;-1;7752;1302;7751;1294;;South Solomon Islands
+x874589;xf5f405;sea;-1;7779;1276;7779;1289;;South Solomon Islands
+x898945;x874589;sea;-1;7762;1286;7776;1276;;South Solomon Islands
+xD04090;x692B64;sea;-1;7688;1321;7682;1317;;South Solomon Islands
+x898945;x692B64;sea;-1;7737;1296;7724;1304;;South Solomon Islands
 x3B8EEB;x2B5E69;sea;-1;7685;1344;7701;1341;;South Solomon Islands
-x2B5E69;xF5F405;sea;-1;7738;1319;7756;1317;;South Solomon Islands
-
-x3B8EEB;x97FBC3;sea;-1;7661;1361;7648;1364;;Bougainville-South Solomon Islands
-x97FBC3;x9bc5ad;sea;-1;7648;1360;7653;1355;;Bougainville
-x97FBC3;x9bc5ad;sea;-1;7648;1360;7653;1355;;Bougainville
-x97FBC3;x692B64;sea;-1;7647;1348;7664;1337;;Bougainville
-
+x6A5477;xF5F405;sea;-1;7752;1303;7764;1305;;South Solomon Islands
+x3B8EEB;xA25396;sea;-1;7645;1363;7663;1358;;Bougainville-South Solomon Islands
+x97FBC3;x9bc5ad;sea;-1;7642;1356;7644;1349;;Bougainville
+x97FBC3;x692B64;sea;-1;7644;1349;7664;1337;;Bougainville
 x769456;x9b6d87;sea;-1;3477;2439;3507;2420;;Azores
 x655491;x20ef01;sea;-1;3720;2172;3737;2165;;Canary Islands
 x20ef01;x64c2b3;sea;-1;3744;2165;3767;2169;;Canary Islands
 x64c2b3;xc2c164;sea;-1;3779;2183;3781;2189;;Canary Islands
 xe8e7a2;xa2e8c5;sea;-1;3542;1855;3556;1858;;Cape Verde
 xa2e8c5;xa2c3e8;sea;-1;3560;1857;3568;1860;;Cape Verde
-xc00010;xA7F8A1;sea;-1;197;1199;211;1193;;Samoa
-xA7F8A1;x555258;sea;-1;221;1196;231;1197;;Samoa
-xc00010;xD98CDA;sea;-1;173;1206;163;1212;;Samoa
+xc00010;xA7F8A1;sea;-1;191;1202;212;1193;;Samoa
+xA7F8A1;x555258;sea;-1;221;1193;250;1197;;Samoa
+x1F5F22;xD98CDA;sea;-1;172;1208;165;1212;;Samoa
 x208030;xEEF198;sea;-1;118;1033;120;1045;;Tonga
 xEEF198;xF76494;sea;-1;130;1068;137;1087;;Tonga
+xBFADDC;xF76494;sea;-1;134;1105;101;1161;;Tonga-Niuatoputapu
 x82406C;x4B3D31;sea;-1;183;1314;174;1323;;Tokelau
 x82406C;x3D5A1B;sea;-1;188;1310;199;1306;;Tokelau
+x7A787A;xE7B3E6;sea;-1;88;1215;25;1181;;Wallis and Fortuna
 x808090;xEDF389;sea;-1;8155;1327;8129;1345;;Ellice Islands
 xE76B71;xB8859C;sea;-1;8071;1486;8067;1493;;Gilbert Islands
 xB8859C;x9EE29C;sea;-1;8033;1533;8033;1540;;Gilbert Islands
 xD5D666;xAF4177;sea;-1;449;1341;416;1368;;Gilbert Islands
 x1F5410;xD5437D;sea;-1;935;1015;914;1045;;Marquesas
 xf0f061;xf0d080;sea;-1;7015;2133;7034;2161;;Ryukyu Islands
-x0181b0;xcbc996;sea;-1;748;885;757;883;;Tahiti
-xcbc996;x888659;sea;-1;759;881;757;876;;Tahiti
-xcbc996;x998293;sea;-1;760;882;766;882;;Tahiti
+xd09d4d;x0a038c;sea;-1;632;858;579;856;;Maupiti-Maupihaa
+xd09d4d;xED6066;sea;-1;644;855;650;855;;Maupihaa-Bora Bora
+xED6066;x102256;sea;-1;662;848;668;833;;Huahine-Moorea
+x102256;xC77B29;sea;-1;675;832;687;828;;Moorea-Tahiti
+xA000B0;x66501E;sea;-1;695;836;695;845;;Tahiti-Tetiaroa
+xEAEEA9;x3FF6A2;sea;-1;708;824;725;822;;Tahiti-Mehetia
+x786BB1;x7E7357;sea;-1;658;705;696;692;;Rurutu-Tubuai
+x0181b0;xcbc996;sea;-1;748;886;764;901;;Tahiti
+
+x0181b0;x998293;sea;-1;750;885;757;884;;Tahiti
+x5e2464;xC0F62C;sea;-1;792;848;787;835;;Tahiti
+xba6e55;x055E24;sea;-1;814;852;813;847;;Tuamotus
+x055E24;xf1dbf3;sea;-1;820;848;826;853;;Tuamotus
+xf1dbf3;x887771;sea;-1;845;859;854;865;;Tuamotus
+xdbae9f;x887771;sea;-1;853;865;846;860;;Tuamotus
+xdbae9f;x2a4340;sea;-1;855;861;850;853;;Tuamotus
+x887771;x2a4340;sea;-1;846;858;847;853;;Tuamotus
+xf1dbf3;x2a4340;sea;-1;837;852;846;852;;Tuamotus
+x728871;x2a4340;sea;-1;842;844;846;849;;Tuamotus
+x728871;xf1dbf3;sea;-1;838;845;831;850;;Tuamotus
+x728871;x129e8C;sea;-1;842;838;835;833;;Tuamotus
+x129e8C;x718885;sea;-1;843;827;851;830;;Tuamotus
+x728871;x718885;sea;-1;843;841;850;832;;Tuamotus
+x2a4340;x718885;sea;-1;852;848;852;838;;Tuamotus
+xb8043b;x2a4340;sea;-1;865;848;852;848;;Tuamotus
+xb8043b;xdbae9f;sea;-1;867;849;857;861;;Tuamotus
+xb8043b;x54bb3d;sea;-1;878;835;883;822;;Tuamotus
+x54bb3d;x2c2e13;sea;-1;890;819;894;825;;Tuamotus
+x54bb3d;x42432a;sea;-1;879;820;860;822;;Tuamotus
+x54bb3d;x67605d;sea;-1;899;804;899;796;;Tuamotus
+x54bb3d;xd2f006;sea;-1;909;804;928;809;;Tuamotus
+x718885;x42432a;sea;-1;854;829;856;822;;Tuamotus
+x129e8C;x42432a;sea;-1;843;824;853;821;;Tuamotus
+x42432a;x7d7d62;sea;-1;858;819;861;813;;Tuamotus
+x7d7d62;xf6742c;sea;-1;863;810;870;802;;Tuamotus
+xf6742c;x67605d;sea;-1;886;792;895;795;;Tuamotus
+x67605d;x475691;sea;-1;900;794;925;787;;Tuamotus
+x475691;xd2f006;sea;-1;931;791;935;800;;Tuamotus
+xd2f006;xf0a606;sea;-1;943;803;978;811;;Tuamotus
+xf0a606;x87eb9e;sea;-1;977;816;954;835;;Tuamotus
+x87eb9e;x2c2e13;sea;-1;947;835;900;832;;Tuamotus
+x87eb9e;x342a65;sea;-1;948;836;911;867;;Tuamotus
+x2c2e13;x342a65;sea;-1;900;833;907;869;;Tuamotus
+xdbae9f;x342a65;sea;-1;868;876;888;872;;Tuamotus
+x342a65;x77597b;sea;-1;893;875;886;907;;Tahiti
+x342a65;x61038c;sea;-1;913;870;938;894;;Tuamotus
+x129e8C;x055E24;sea;-1;831;834;814;839;;Tuamotus
+
+xcbc996;x7ce1ea;sea;-1;781;905;793;900;;Tuamotus
+x7ce1ea;xe6f817;sea;-1;807;893;805;877;;Tuamotus
+xe6f817;xc6b798;sea;-1;805;873;801;866;;Tuamotus
 x998293;x59885e;sea;-1;770;878;772;873;;Tahiti
 x59885e;x98c69c;sea;-1;777;869;782;865;;Tahiti
 x59885e;x98c3c6;sea;-1;776;870;782;877;;Tahiti
 x98c69c;x5e2464;sea;-1;789;856;791;849;;Tahiti
-x98c3c6;xc6b798;sea;-1;787;878;793;873;;Tahiti
+x98c3c6;xc6b798;sea;-1;787;879;793;874;;Tahiti
+xc6b798;xe6f817;sea;-1;802;865;805;872;;Tahiti
+xc6b798;xba6e55;sea;-1;801;863;809;861;;Tahiti
 x5e2464;x643424;sea;-1;794;849;801;847;;Tahiti
-xc6b798;xba6e55;sea;-1;802;860;809;858;;Tahiti
-x643424;xba6e55;sea;-1;806;850;810;857;;Tahiti
+x055e24;x643424;sea;-1;812;841;808;845;;Tahiti
 xba6e55;xf1dbf3;sea;-1;813;857;821;857;;Tahiti
-xf1dbf3;x887771;sea;-1;835;852;839;859;;Tahiti
-xf1dbf3;x728871;sea;-1;833;850;836;844;;Tahiti
-x887771;xdbae9f;sea;-1;844;859;854;864;;Tahiti
-x887771;x2a4340;sea;-1;845;858;847;852;;Tahiti
-x728871;x718885;sea;-1;843;837;851;831;;Tahiti
-x718885;x42432a;sea;-1;853;829;855;822;;Tahiti
-x42432a;x7d7d62;sea;-1;859;818;861;813;;Tahiti
-x7d7d62;x54bb3d;sea;-1;862;811;878;820;;Tahiti
-x54bb3d;x2c2e13;sea;-1;891;818;894;824;;Tahiti
+
+x643424;xba6e55;sea;-1;806;850;810;857;;Tahiti
+
 x37058f;xb19fd2;sea;-1;5286;1791;5261;1780;;
 x1b9953;xb0f0b0;sea;-1;6819;1769;6830;1780;;
 x99d030;xf0014a;sea;-1;6878;1664;6879;1671;;
@@ -305,11 +353,11 @@ x72c072;x7a6fa3;sea;-1;2437;2029;2448;2016;;Bahamas
 x30f080;x606060;sea;-1;2619;1920;2622;1934;;West Indies
 xc7d17e;x5691e1;sea;-1;1020;2991;1021;2985;;Alaska
 x505ae0;x2768f8;sea;-1;5249;2116;5259;2111;;Abu Dhabi
-x8911a4;x904090;sea;-1;7342;1305;7341;1287;;
+x8911a4;x904090;sea;-1;7342;1301;7335;1280;;Torres Strait Islands
 x45ad0b;xc00000;sea;-1;341;2893;324;2885;;
 x015121;x3a8b51;sea;-1;4424;2366;4420;2370;;Malta
 xf05001;x70cf00;sea;-1;7081;2319;7080;2314;;Kyushu
-x7c9beb;x1151c0;sea;-1;7149;2324;7146;2331;;Shikoku
+x7c9beb;x89FD28;sea;-1;7149;2324;7144;2331;;Shikoku
 x31968A;x74BF34;special;-1;3911;3487;4392;3363;;Jan Mayen
 xF0A020;x30A060;sea;-1;4752;2504;4760;2504;;Constantinople
 x76CD59;x277AC6;sea;-1;1231;2760;1227;2774;;None
@@ -357,8 +405,15 @@ x6021AF;x93DC46;sea;-1;4993;1327;5001;1329;;Mafia Island connection
 xF0F061;xBB27F6;sea;-1;6949;2088;6928;2080;;Miyako Islands-Yaeyama Islands
 x1000F0;x733DDF;sea;-1;8077;515;8067;516;;New Zealand North Island-South Island
 xEFB409;xC42462;sea;-1;2422;503;2419;498;Chile-Chiloé
-
 xC0426B;xD06E0F;sea;-1;7399;1831;7405;1842;;Marianas
 xD06E0F;x0FD013;sea;-1;7408;1853;7411;1860;;Marianas
 x0FD013;xC0D00F;sea;-1;7411;1866;7418;1873;;Marianas
 xC0D00F;xEF50C0;sea;-1;7421;1880;7415;1896;;Marianas
+xC0310F;xEB6009;sea;-1;5704;2064;5707;2059;;Rann of Kutch
+xCB06AD;x464CBF;sea;-1;482;789;509;777;;Cook Islands
+x464CBF;x9FA687;sea;-1;499;770;461;746;;Cook Islands
+x464CBF;xA7D6A4;sea;-1;510;774;504;728;;Cook Islands
+xCB06AD;xEF7F1B;sea;-1;460;801;379;824;;Cook Islands
+xEF7F1B;x8B868D;sea;-1;380;827;387;928;;Cook Islands
+x8B868D;xC0396C;sea;-1;389;932;435;999;;Cook Islands
+x8B868D;xA65BC2;sea;-1;386;932;336;969;;Cook Islands
