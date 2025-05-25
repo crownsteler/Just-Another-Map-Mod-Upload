@@ -1,4 +1,4 @@
-﻿cr_royal_denied_asylum_royalist_ig = {
+﻿cr_denied_royal_exile_royalist_backlash_ig = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	interest_group_approval_add = -1
 }
@@ -8,10 +8,22 @@ cr_royal_exile_ig = {
 	interest_group_pop_attraction_mult = 0.1
 }
 
-cr_supporting_absolutism_abroad = {
+cr_carlos_ig_strengthend = {
+	interest_group_approval_add = 1
+	interest_group_pol_str_mult = 0.05
+}
+
+cr_supporting_absolutism_abroad_2 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	interest_group_approval_add = -2
 }
+
+cr_supporting_absolutism_abroad = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_approval_add = -1
+}
+
+
 
 cr_approved_mining_permits = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds

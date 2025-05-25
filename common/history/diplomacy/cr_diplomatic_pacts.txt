@@ -68,13 +68,17 @@
 				type = foreign_investment_rights
 			}
 			create_diplomatic_pact = {
-				country = c:HOL
+				country = c:DEN
 				type = foreign_investment_rights
 			}
-			create_diplomatic_pact = {
-				country = c:HAN
-				type = foreign_investment_rights
-			}
+			#create_diplomatic_pact = {
+			#	country = c:HOL
+			#	type = foreign_investment_rights
+			#}
+			#create_diplomatic_pact = {
+			#	country = c:HAN
+			#	type = foreign_investment_rights
+			#}
 			create_diplomatic_pact = {
 				country = c:OLD
 				type = foreign_investment_rights
@@ -83,10 +87,10 @@
 				country = c:MEC
 				type = foreign_investment_rights
 			}
-			create_diplomatic_pact = {
-				country = c:SCH
-				type = foreign_investment_rights
-			}
+			#create_diplomatic_pact = {
+			#	country = c:SCH
+			#	type = foreign_investment_rights
+			#}
 		}
 		c:FRM = {
 			create_diplomatic_pact = {

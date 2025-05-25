@@ -621,7 +621,7 @@
 	c:GAR ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_punjab
+			hq_region = sr:region_himalayas
 			name = GarhwalArmy
 
 			combat_unit = {

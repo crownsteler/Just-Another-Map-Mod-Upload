@@ -3027,7 +3027,6 @@
 			}
 			create_building={
 				building="building_fishing_wharf"
-				level=1
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
@@ -3481,7 +3480,7 @@
 				add_ownership={
 					country={
 						country="c:MEX"
-						levels=3
+						levels=1
 					}
 				}
 				reserves=1
@@ -3492,7 +3491,7 @@
 				add_ownership={
 					country={
 						country="c:MEX"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
@@ -3511,19 +3510,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
-			create_building={
-				building="building_tobacco_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:MEX"
-						levels=3
-						region="STATE_BAJIO"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
-			}	
+			#create_building={	#The Spanish royal tobacco monopoly had limited the growing of tobacco to Veracruz, the system would be privatised in 1830, but returned to government control -after the fall of Santa Anna- in 1837 by the Law of januari 12, 1837 controlled by the Banco Nacional de Amortización. The decrees of April 15, 1837 returned the monopoly fully to Veracruz. The Compañía Empressia (de los Scis Departementos) took control over most distribution. Refounded after in 1839 as Empresa del Tobaco. Felipe Neri del Barrio was the largest shareholder, but was bared from being part of the board. Director was Manuel Montúfar, an experienced administrator
+			#	building="building_tobacco_plantation"
+			#	add_ownership={
+			#		building={
+			#			type="building_manor_house"
+			#			country="c:MEX"
+			#			levels=3
+			#			region="STATE_BAJIO"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
+			#}	
 			#create_building={
 			#	building="building_dye_plantation"
 			#	add_ownership={
@@ -3642,46 +3641,33 @@
 					building={
 						type="building_manor_house"
 						country="c:MEX"
-						levels=1
+						levels=4
 						region="STATE_MEXICO"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_livestock_ranch"
-						country="c:MEX"
-						levels=1
-						region="STATE_MEXICO"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
-			}
-			create_building={
-				building="building_tobacco_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:MEX"
-						levels=2
-						region="STATE_MEXICO"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
-			}
+			#create_building={
+			#	building="building_tobacco_plantation"
+			#	add_ownership={
+			#		building={
+			#			type="building_manor_house"
+			#			country="c:MEX"
+			#			levels=2
+			#			region="STATE_MEXICO"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
+			#}
 			create_building={
 				building="building_dye_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
 						country="c:MEX"
-						levels=3
+						levels=1
 						region="STATE_MEXICO"
 					}
 				}
@@ -3689,9 +3675,9 @@
 				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_iron_mine"
+				building="building_gold_mine"
 				add_ownership={
-					building={	#Mineral del Monte, operated by Cornish miners. Is actually a gold and silver mine, but since I didn't include that one...
+					building={	#Mineral del Monte, operated by Cornish miners. Is a gold and silver mine
 						type="building_manor_house"
 						country="c:GBR"
 						levels=1
@@ -3699,12 +3685,23 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 		}
 	}
 	s:STATE_VERACRUZ={
-		region_state:MEX={				
+		region_state:MEX={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:MEX"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
@@ -3737,13 +3734,39 @@
 					building={
 						type="building_manor_house"
 						country="c:MEX"
-						levels=1
+						levels=4
 						region="STATE_VERACRUZ"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
-			}			
+			}	
+			create_building={ #On limited scale coffee production started here in the 18th century.
+				building="building_coffee_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MEX"
+						levels=1
+						region="STATE_VERACRUZ"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts"  }
+			}	
+			create_building={
+				building="building_sugar_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:MEX"
+						levels=1
+						region="STATE_VERACRUZ"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts"  }
+			}	
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
@@ -3851,38 +3874,12 @@
 			#	activate_production_methods={ "pm_simple_organization" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			#}	
 			create_building={
-				building="building_maize_farm"
-				add_ownership={
-					building={
-						type="building_maize_farm"
-						country="c:MEX"
-						levels=1
-						region="STATE_OAXACA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
-			}
-			create_building={
-				building="building_sugar_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:MEX"
-						levels=3
-						region="STATE_OAXACA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts"  }
-			}
-			create_building={
 				building="building_dye_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
 						country="c:MEX"
-						levels=3
+						levels=2
 						region="STATE_OAXACA"
 					}
 				}
@@ -3911,7 +3908,7 @@
 				add_ownership={
 					country={
 						country="c:MEX"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
@@ -3990,26 +3987,26 @@
 					building={
 						type="building_maize_farm"
 						country="c:MEX"
-						levels=2
+						levels=1
 						region="STATE_ZACATECAS"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
-			create_building={
-				building="building_tobacco_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:MEX"
-						levels=2
-						region="STATE_ZACATECAS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
-			}
+			#create_building={
+			#	building="building_tobacco_plantation"
+			#	add_ownership={
+			#		building={
+			#			type="building_manor_house"
+			#			country="c:MEX"
+			#			levels=2
+			#			region="STATE_ZACATECAS"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
+			#}
 			#create_building={
 			#	building="building_dye_plantation"
 			#	add_ownership={

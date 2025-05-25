@@ -33,12 +33,6 @@ GLOBAL = {
 	c:SPA = {
 		set_variable = cr_carlist_war_ongoing
 		add_treasury = -600000
-		movement_type:movement_carlists = {
-			set_suppression = yes
-			add_modifier = {
-				name = cr_distant_exile	
-			}
-		}
 		
 		add_radicals = {
 			value = 0.45

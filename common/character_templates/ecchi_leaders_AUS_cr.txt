@@ -1,0 +1,33 @@
+﻿
+## Klemens von Metternich
+
+ecchi_aus_metternich_character_template = {
+	first_name = Klemens
+	last_name = von_Metternich
+    historical = yes
+    culture = cu:south_german
+
+    religion = rel:catholic
+    ideology = ideology_moderate
+    interest_group = ig_landowners
+    dna = ecchi_dna_klemens_von_metternich
+    birth_date = 1773.5.15
+	ig_leader = yes
+    traits = { imperious meticulous experienced_diplomat }
+    #interest_group_leader_usage = {
+    #    country_trigger = {
+    #        OR = {
+    #            AND = {
+    #                exists = c:AUS
+    #                this = c:AUS
+    #            }
+    #        }
+    #    }
+    #    interest_group_trigger = {
+    #        is_interest_group_type = ig_landowners
+    #    }
+    #    earliest_usage_date = 1809.1.1
+    #    latest_usage_date = 1859.6.11
+    #    chance = 65
+    #}
+}

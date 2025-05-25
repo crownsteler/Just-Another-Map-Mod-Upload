@@ -1,0 +1,297 @@
+﻿oman_cede_east_african_holdings_to_zanzibar = {
+	every_scope_state = {
+		limit = {
+			OR = {
+				state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
+				state_region = s:STATE_KENYA #Oman keeps Ethiopia
+				state_region = s:STATE_OGADEN #Oman keeps Ethiopia
+				region = sr:region_african_lakes #Great Lakes
+				region = sr:region_zanj
+				region = sr:region_zambezia
+				region = sr:region_madagascar
+				region = sr:region_southern_africa
+				region = sr:region_south_west_africa
+				region = sr:region_congo
+			}
+		}
+		set_state_owner = c:ZAN
+	}
+}
+
+oman_cede_east_african_claims_to_zanzibar = {
+	every_scope_state = {
+		limit = {
+			OR = {
+				state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
+				state_region = s:STATE_KENYA #Oman keeps Ethiopia
+				state_region = s:STATE_OGADEN #Oman keeps Ethiopia
+				region = sr:region_african_lakes #Great Lakes
+				region = sr:region_zanj
+				region = sr:region_zambezia
+				region = sr:region_madagascar
+				region = sr:region_southern_africa
+				region = sr:region_south_west_africa
+				region = sr:region_congo
+			}
+			state_region = {
+				any_state = {
+					has_claim_by = c:OMA
+				}
+			}
+		}
+		state_region = {
+			remove_claim = c:OMA
+			add_claim = c:ZAN
+		}
+	}
+}
+
+oman_transfer_east_african_subjects_to_zanzibar = {
+	every_subject_or_below = {
+		limit = {
+			is_subject_type = subject_type_protectorate
+			capital = {
+				OR = {
+					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
+					state_region = s:STATE_KENYA #Oman keeps Ethiopia
+					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
+					region = sr:region_african_lakes #Great Lakes
+					region = sr:region_zanj
+					region = sr:region_zambezia
+					region = sr:region_madagascar
+					region = sr:region_southern_africa
+					region = sr:region_south_west_africa
+					region = sr:region_congo
+				}
+			}			
+		}
+		scope:sultanate_of_zanzibar = {
+			create_diplomatic_pact = {
+				country = PREV
+				type = protectorate
+			}
+		}
+	}
+	every_subject_or_below = {
+		limit = {
+			is_subject_type = subject_type_puppet
+			capital = {
+				OR = {
+					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
+					state_region = s:STATE_KENYA #Oman keeps Ethiopia
+					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
+					region = sr:region_african_lakes #Great Lakes
+					region = sr:region_zanj
+					region = sr:region_zambezia
+					region = sr:region_madagascar
+					region = sr:region_southern_africa
+					region = sr:region_south_west_africa
+					region = sr:region_congo
+				}
+			}			
+		}
+		scope:sultanate_of_zanzibar = {
+			create_diplomatic_pact = {
+				country = PREV
+				type = puppet
+			}
+		}
+	}
+	every_subject_or_below = {
+		limit = {
+			is_subject_type = subject_type_tributary
+			capital = {
+				OR = {
+					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
+					state_region = s:STATE_KENYA #Oman keeps Ethiopia
+					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
+					region = sr:region_african_lakes #Great Lakes
+					region = sr:region_zanj
+					region = sr:region_zambezia
+					region = sr:region_madagascar
+					region = sr:region_southern_africa
+					region = sr:region_south_west_africa
+					region = sr:region_congo
+				}
+			}			
+		}	
+		scope:sultanate_of_zanzibar = {
+			create_diplomatic_pact = {
+				country = PREV
+				type = tributary
+			}
+		}
+	}
+	every_subject_or_below = {
+		limit = {
+			is_subject_type = subject_type_vassal
+			capital = {
+				OR = {
+					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
+					state_region = s:STATE_KENYA #Oman keeps Ethiopia
+					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
+					region = sr:region_african_lakes #Great Lakes
+					region = sr:region_zanj
+					region = sr:region_zambezia
+					region = sr:region_madagascar
+					region = sr:region_southern_africa
+					region = sr:region_south_west_africa
+					region = sr:region_congo
+				}
+			}			
+		}
+		scope:sultanate_of_zanzibar = {
+			create_diplomatic_pact = {
+				country = PREV
+				type = vassal
+			}
+		}
+	}
+	every_subject_or_below = {
+		limit = {
+			is_subject_type = subject_type_personal_union
+			capital = {
+				OR = {
+					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
+					state_region = s:STATE_KENYA #Oman keeps Ethiopia
+					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
+					region = sr:region_african_lakes #Great Lakes
+					region = sr:region_zanj
+					region = sr:region_zambezia
+					region = sr:region_madagascar
+					region = sr:region_southern_africa
+					region = sr:region_south_west_africa
+					region = sr:region_congo
+				}
+			}			
+		}
+		scope:sultanate_of_zanzibar = {
+			create_diplomatic_pact = {
+				country = PREV
+				type = personal_union
+			}
+		}
+	}
+	every_subject_or_below = {
+		limit = {
+			is_subject_type = subject_type_dominion
+			capital = {
+				OR = {
+					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
+					state_region = s:STATE_KENYA #Oman keeps Ethiopia
+					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
+					region = sr:region_african_lakes #Great Lakes
+					region = sr:region_zanj
+					region = sr:region_zambezia
+					region = sr:region_madagascar
+					region = sr:region_southern_africa
+					region = sr:region_south_west_africa
+					region = sr:region_congo
+				}
+			}			
+		}
+		
+		scope:sultanate_of_zanzibar = {
+			create_diplomatic_pact = {
+				country = PREV
+				type = dominion
+			}
+		}
+	}
+	every_subject_or_below = {
+		limit = {
+			is_subject_type = subject_type_colony
+			capital = {
+				OR = {
+					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
+					state_region = s:STATE_KENYA #Oman keeps Ethiopia
+					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
+					region = sr:region_african_lakes #Great Lakes
+					region = sr:region_zanj
+					region = sr:region_zambezia
+					region = sr:region_madagascar
+					region = sr:region_southern_africa
+					region = sr:region_south_west_africa
+					region = sr:region_congo
+				}
+			}			
+		}
+		
+		scope:sultanate_of_zanzibar = {
+			create_diplomatic_pact = {
+				country = PREV
+				type = colony
+			}
+		}
+	}
+	every_subject_or_below = {
+		limit = {
+			is_subject_type = subject_type_chartered_company
+			capital = {
+				OR = {
+					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
+					state_region = s:STATE_KENYA #Oman keeps Ethiopia
+					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
+					region = sr:region_african_lakes #Great Lakes
+					region = sr:region_zanj
+					region = sr:region_zambezia
+					region = sr:region_madagascar
+					region = sr:region_southern_africa
+					region = sr:region_south_west_africa
+					region = sr:region_congo
+				}
+			}			
+		}
+		
+		scope:sultanate_of_zanzibar = {
+			create_diplomatic_pact = {
+				country = PREV
+				type = chartered_company
+			}
+		}
+	}
+}
+
+zanzibar_add_claims_to_east_african_oman = {
+	every_scope_state = {
+		limit = {
+			OR = {
+				state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
+				state_region = s:STATE_KENYA #Oman keeps Ethiopia
+				state_region = s:STATE_OGADEN #Oman keeps Ethiopia
+				region = sr:region_african_lakes #Great Lakes
+				region = sr:region_zanj
+				region = sr:region_zambezia
+				region = sr:region_madagascar
+				region = sr:region_southern_africa
+				region = sr:region_south_west_africa
+				region = sr:region_congo
+			}
+		}
+		state_region = {
+			add_claim = c:ZAN
+		}
+	}
+}
+
+oman_make_all_subjects_in_east_africa_independent = {
+	every_subject_or_below = {
+		limit = {
+			capital = {
+				OR = {
+					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
+					state_region = s:STATE_KENYA #Oman keeps Ethiopia
+					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
+					region = sr:region_african_lakes #Great Lakes
+					region = sr:region_zanj
+					region = sr:region_zambezia
+					region = sr:region_madagascar
+					region = sr:region_southern_africa
+					region = sr:region_south_west_africa
+					region = sr:region_congo
+				}
+			}			
+		}
+		make_independent = yes
+	}
+}

@@ -1646,7 +1646,7 @@ ai_strategy_default = {
 					add = 5
 				}
 				
-				if = {d
+				if = {
 					limit = {
 						has_strategic_adjacency = scope:target_state		
 					}

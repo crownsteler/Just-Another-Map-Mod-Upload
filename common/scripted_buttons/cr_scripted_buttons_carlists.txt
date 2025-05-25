@@ -1,0 +1,147 @@
+﻿je_cr_don_carlos_stop_supporting_portugese_liberals_button = {
+	name = "je_cr_don_carlos_stop_supporting_portugese_liberals_button"
+	desc = "je_cr_don_carlos_stop_supporting_portugese_liberals_button_desc"
+
+	visible = { has_variable = cr_carlos_supporting_liberalism_in_portugal_var }
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = {
+				infamy >= infamy_threshold:infamous
+			}
+			add = 5
+		}
+		modifier = {
+			trigger = {
+				infamy >= infamy_threshold:notorious
+			}
+			add = 15
+		}
+		modifier = {
+			trigger = {
+				authority > 50
+			}
+			add = -3
+		}
+		modifier = {
+			trigger = {
+				authority > 150
+			}
+			add = -5
+		}
+		modifier = {
+			trigger = {
+				authority > 250
+			}
+			add = -10
+		}
+		modifier = {
+			trigger = {
+				authority < 0
+			}
+			add = 1
+		}
+		modifier = {
+			trigger = {
+				authority < -100
+			}
+			add = 10
+		}
+		modifier = {
+			trigger = {
+				authority < -150
+			}
+			add = 10
+		}
+		modifier = {
+			trigger = {
+				scope:don_carlos_exile_country = { relations:root <= relations_threshold:poor }
+			}
+			add = -1
+		}
+		modifier = {
+			trigger = {
+				scope:don_carlos_exile_country = { relations:root <= relations_threshold:cold }
+			}
+			add = -5
+		}
+		modifier = {
+			trigger = {
+				scope:don_carlos_exile_country = { relations:root <= relations_threshold:hostile }
+			}
+			add = -10
+		}
+		modifier = {
+			trigger = {
+				scope:don_carlos_exile_country = { relations:root > relations_threshold:neutral }
+			}
+			add = 1
+		}
+		modifier = {
+			trigger = {
+				scope:don_carlos_exile_country = { relations:root >= relations_threshold:cordial }
+			}
+			add = 5
+		}
+		modifier = {
+			trigger = {
+				scope:don_carlos_exile_country = { relations:root >= relations_threshold:amicable }
+			}
+			add = 10
+		}
+		modifier = {
+			trigger = {
+				scope:don_carlos_exile_country = {
+					has_variable = cr_carlos_supporting_absolutism_in_spain_var
+				}
+			}
+			add = -20
+		}
+		modifier = {
+			trigger = {
+				has_diplomatic_pact = {
+					who = c:POR
+					type = rivalry 
+				}
+			}
+			add = -5
+		}
+		modifier = {
+			trigger = {
+				has_modifier = declared_bankruptcy
+			}
+			add = 10
+		}
+	}
+	
+	possible = {
+		custom_tooltip = {
+			text = je_cr_don_carlos_stop_supporting_portugese_liberals_tt
+			has_variable = cr_carlos_supporting_liberalism_in_portugal_var
+		}
+		NOT = {
+			has_war_with = scope:don_carlos_exile_country
+		}
+	}
+
+	effect = {
+		save_scope_as = stopping_support_country
+		change_infamy = -3
+		remove_modifier = cr_carlos_supporting_liberalism
+		scope:don_carlos_exile_country = {
+			random_political_movement = {
+				limit = {
+					has_modifier = cr_don_carlos_liberal_support
+				}
+				save_scope_as = supported_movement
+				remove_modifier = cr_don_carlos_liberal_support
+			}
+			post_notification = cr_stop_support_for_movement
+		}
+		change_relations = {
+			country = scope:don_carlos_exile_country
+			value = 10
+		}
+	}
+}

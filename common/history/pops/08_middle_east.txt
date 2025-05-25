@@ -26,7 +26,7 @@
 		region_state:OTB = {
 			create_pop = {
 				culture = bedouin
-				size = 26642
+				size = 21242
 			}
 		}
 	}
@@ -386,7 +386,7 @@
 			create_pop = {
 				culture = bedouin
 				religion = sunni
-				size = 24612
+				size = 20012
 			}
 			create_pop = {
 				pop_type = slaves
@@ -428,7 +428,7 @@
 			create_pop = {
 				culture = bedouin
 				religion = sunni
-				size = 10612
+				size = 19712
 			}
 			create_pop = {
 				pop_type = slaves
@@ -602,7 +602,7 @@
 			create_pop = {
 				culture = bedouin
 				religion = sunni
-				size = 9400
+				size = 10400
 			}
 			create_pop = {
 				culture = bedouin
@@ -638,7 +638,7 @@
 		region_state:HOW = {
 			create_pop = {
 				culture = bedouin
-				size = 22846 
+				size = 20846 
 			}
 		}
 	}
@@ -1004,11 +1004,11 @@
 			}
 			create_pop = {
 				culture = kurdish
-				size = 49600
+				size = 45600
 			}
 			create_pop = {
 				culture = bedouin
-				size = 16000
+				size = 11000
 			}
 			create_pop = {
 				pop_type = slaves
@@ -1024,13 +1024,13 @@
 		region_state:BKT = {
 			create_pop = {
 				culture = kurdish
-				size = 16671
+				size = 20671
 			}
 		}
 		region_state:AZA = {
 			create_pop = {
 				culture = bedouin
-				size = 11809
+				size = 16809
 			}
 		}
 	}

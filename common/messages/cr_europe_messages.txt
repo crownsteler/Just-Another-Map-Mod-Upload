@@ -39,3 +39,9 @@ cr_don_carlos_exile_support_liberalism = {
 	texture = "gfx/interface/icons/notification_icons/diplomatic_play.dds"
 	notification_type = toast
 }
+
+cr_stop_support_for_movement = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/diplomatic_play.dds"
+	notification_type = toast
+}

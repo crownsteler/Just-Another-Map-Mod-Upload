@@ -39,6 +39,12 @@ STATE_TOMSK = {
     capped_resources = {
         #bg_coal_mining = 78
         bg_logging = 28
+		bg_gold_mining = 4	#Altai Gold, Bernaul as hub, but alas.
+    }
+    resource = {	#Altai Gold
+        type = "bg_gold_fields"
+        depleted_type = "bg_gold_mining"
+        undiscovered_amount = 4
     }
     resource = {
         type = "bg_coal_mining"
@@ -153,11 +159,11 @@ STATE_CHUKOTKA = {
         bg_whaling = 2
         bg_fishing = 9
     }
-    resource = {
-        type = "bg_gold_fields"
-        depleted_type = "bg_gold_mining"
-        undiscovered_amount = 4
-    }
+    #resource = { #Removed because Kolyma Gold Rush
+    #    type = "bg_gold_fields"
+    #    depleted_type = "bg_gold_mining"
+    #    undiscovered_amount = 4
+    #}
     naval_exit_id = 3128
 }
 
@@ -246,7 +252,7 @@ STATE_TRANS_BAIKAL = {
     wood = "x0193EB"
     arable_land = 60
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
-    capped_resources = {
+    capped_resources = { #Established silver mining near Nerchinsk
         #bg_copper_mining = 55
         #bg_iron_mining = 33
         #bg_sulfur_mining = 44

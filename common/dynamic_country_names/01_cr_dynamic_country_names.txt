@@ -1,5 +1,20 @@
 ﻿### Try to keep tags in alphabetical order if it's not too far gone, please.
 
+PER = {
+	dynamic_country_name = {
+		name = dyn_c_iran
+		adjective = dyn_c_iran_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor = {
+				is_country_type = recognized
+			}
+		}
+	}
+}
 
 HDJ = {
 	dynamic_country_name = {
@@ -103,23 +118,6 @@ SPA = {
 		}
 	}
 }
-
-#MON = {
-#	dynamic_country_name = {
-#		name = MON
-#		adjective = MON_ADJ
-#		
-#		is_main_tag_only = yes
-#		priority = 0
-#		
-#		trigger = {
-#			scope:actor = {
-#				coa_def_theocracy_flag_trigger = yes
-#				has_law = law_type:law_theocracy
-#			}
-#		}
-#	}
-#}
 
 NEJ = { # Nejd
 	dynamic_country_name = {

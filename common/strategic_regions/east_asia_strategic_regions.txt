@@ -51,7 +51,7 @@ region_moluccas = {
 
 region_philippines = {
 	graphical_culture = "asian"
-	capital_province = x6ED39E
+	capital_province = x0D8236
 	map_color = { 0.204 0.651 0.308 }
 	states = { STATE_MINDANAO STATE_LUZON STATE_VISAYAS STATE_NORTH_BORNEO }
 }
@@ -118,7 +118,7 @@ region_oceania = {
 
 region_melanesia = {
 	graphical_culture = "asian"
-	capital_province = x0C7820
+	capital_province = xAB408F
 	map_color = { 0.16 0.40 0.33 } 
 	states = { STATE_EASTERN_NEW_GUINEA STATE_BISMARCK_ARCHIPELAGO STATE_PAPUA STATE_SOLOMON_ISLANDS STATE_BOUGAINVILLE STATE_FIJI STATE_VANUATU STATE_KANAK }
 }

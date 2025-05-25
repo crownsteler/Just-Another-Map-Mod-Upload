@@ -109,7 +109,7 @@ STATE_VILNIUS = {
 
 STATE_KUOPIO = {
     id = 803
-    subsistence_building = "building_subsistence_farms"
+    subsistence_building = "building_subsistence_pastures"
     provinces = { x2401AE x5D1467 x932418 xB81268 xD105A8 x0D3DF3 x523560 xD516FA x8C31CF x7B45A5 x4753CB x7753B6 x467F2F xFF4B4C xE761B2 x969608 xA789AE xCC8E28 x40C040 xED8DC6 x51CC44 x8DCF76 } 
     city = "x8DCF76"
     farm = "xB81268"
@@ -209,7 +209,7 @@ STATE_OSTROBOTHNIA = {
 
 STATE_OULU = {
     id = 804
-    subsistence_building = "building_subsistence_farms"
+    subsistence_building = "building_subsistence_pastures"
     provinces = { x003DC2 x0193AC x04ACCE x05C9D5 x06CB86 x098AD4 x09ACC3 x09E7C8 x100DE3 x12D5CC x14E25A x15D36E x193FE3 x199FCA x1ADDF7 x1D75EA x1DCF7F x1F98EC x22A760 x25E6DB x2A9B33 x2C00E3 x2D6585 x2DCFFF x31A599 x31BE08 x31F14B x326999 x331F4E x35660F x35F442 x39FFFD x3CF11A x3DE2C5 x3DFFE2 x407CB4 x40B01E x40C69F x40EC6F x41B925 x41D99D x420121 x45734E x45C196 x4C423D x4C8DA2 x4FFAB9 x511691 x51D315 x55FBB0 x56D667 x58107D x582BE1 x58DADD x5A2E3F x5BA0C6 x5D6094 x6073DE x634F6A x657C52 x6B44F2 x6E6888 x73B0EE x73B911 x743757 x75CD93 x76BD66 x7BFD0A x81EB90 x827FC4 x84C17D x84C20E x870682 x8EC6E7 x8FABCB x90A5A7 x917130 x938C81 x96B319 x9AB681 x9AE86E x9BB647 x9E4B4E xA0C000 xA29D5A xA40B1E xA52381 xA8B626 xA8D2B9 xA9BAEB xAB98EE xAD5504 xAD8817 xAD965E xB16417 xB29B34 xB36B8F xB3923B xB84B48 xBCEB2E xBF4702 xC0F405 xC15DED xC21442 xC38A5B xCAEF23 xCB04BB xCCDC03 xCEC631 xCEEBD6 xD249FD xD70C51 xDAADD6 xDB0F8C xE08080 xE0C6EC xE30145 xE37E57 xE4FD8C xE798B3 xE7E8FB xE803B4 xEA6156 xEC1FAF xEDB9FD xEE71BD xF5DEDB xF82995 xF99D80 xFB8899 xFD8980 xFDCD89 xFE27F7 xFEF24A }
     impassable = {}
     traits = { "state_trait_scandinavian_forests" }
@@ -238,7 +238,7 @@ STATE_OULU = {
 
 STATE_EAST_KARELIA = {
     id = 139
-    subsistence_building = "building_subsistence_farms"
+    subsistence_building = "building_subsistence_pastures"
     provinces = { x0247D2 x0293D4 x033057 x0560D2 x0C5FD4 x196314 x1B7C62 x21C080 x22D727 x2D67C8 x35B533 x368E4E  x3A0477 x3AC4C7 x3F226D x3FC5D1 x443B00 x453179 x474459 x4B4532 x4F103B x51278D x513767 x522642 x52CA86 x571684 x5EB463 x62BDE9 x645723 x6D5719 x7B9CDF x7BF1F2 x7C4884 x7FA4E9 x8BFEB5 x8D3928 x8DCB5A x92EA54 x95B2B5 x971B98 x99E798 x9C07EC x9E0C5D xA094F1 xA0C080 xA53780 xA857F6 xAD9554 xAE6EB5 xB0D6F8 xB3AEF5 xB835D3 xBAB783 xC080D2 xC16D56 xC1710E xC20756 xC37E5B xC3FB6E xC3FDFD xC9CF88 xCB465E xCDCF37 xCF1FC1 xD4F727 xD6546C xD8B025 xD8B610 xDE65CD xDF49EB xDFC586 xE1F130 xE5B844 xE6B3AA xE760E6 xE8E9FB xEE749A xEF7F4A xF90B99 xFC0072 xFE82B9 x6122C5 }  
     traits = { "state_trait_scandinavian_forests" }
     city = "x474459"
@@ -247,7 +247,7 @@ STATE_EAST_KARELIA = {
     mine = "xA857F6"
     wood = "xE6B3AA"
     arable_land = 7
-    arable_resources = { "bg_livestock_ranches" }
+    arable_resources = { } #"bg_livestock_ranches", I know reindeer herds, but better represented as subsistence
     capped_resources = {
         #bg_iron_mining = 25
         bg_logging = 30
@@ -262,7 +262,7 @@ STATE_EAST_KARELIA = {
 
 STATE_KOLA = {
     id = 805
-    subsistence_building = "building_subsistence_farms"
+    subsistence_building = "building_subsistence_pastures"
     provinces = { x0066B6 x038388 x042B4C x118D75 x1390FF x13F6B8 x1453D6 x149AC1 x14D2FF x157479 x183954 x1859FC x187B70 x1ACA0E x1AD735 x1B744E x1D3DC6 x21D9DE x237C68 x2BC8DE x2FBF05 x2FD568 x31D1C2 x330917 x335F68 x33F3E9 x3499C5 x39271C x3A92CB x3DE633 x427893 x524940 x526537 x534146 x57190F x5728CF x58F3E7 x59ACFE x5A43E7 x5A4AAB x5BC5FF x5FEE86 x63FFF5 x65167C x70D145 x70D1FB x71CC9D x73FFD0 x772BFF x77C525 x78B65B x7E97C8 x7F3B28 x7F854D x8969D9 x8A9DB3 x8D7FEC x8FC731 x91984B x9281D4 x93E684 x95A9E4 x96AD41 xA04000 xA09A15 xA1F95E xA2AAB3 xA36134 xA46459 xA6AFFD xA7D0B4 xAD410A xAF87D1 xB42A73 xB6A456 xB85907 xB904C3 xBA39B1 xBD6B78 xC571B7 xC575FD xC5C353 xC6A932 xC6D9A5 xCB15D6 xCB5F10 xCB6CAD xCCB3A0 xCD5877 xCF26A1 xD0C711 xD98ED6 xDBED6F xDCBC28 xDF1F54 xE01B42 xE229D5 xEDCD34 xEF00EC xF2B11C xF2B2C8 xF2BD0B xF42377 xF475D7 xF7D6E2 xF7F846 xFAD2A2 xFC6114 xFD1CCF xFF66FF }
     impassable = { x70D145 xC575FD x335F68 x5728CF x2FD568 xCB5F10 xA04000 xFC6114 x772BFF }
     traits = { "state_trait_scandinavian_forests" }
@@ -436,7 +436,7 @@ STATE_MOGILEV = {
 
 STATE_ARKHANGELSK = {
     id = 140
-    subsistence_building = "building_subsistence_farms"
+    subsistence_building = "building_subsistence_pastures"
     provinces = { xA082DB x0662C5 x5A9872 x237586 x360D95 x4D2452 x7D80D6 xFE65B5 x6DBE60 xD0FC2C x5F87BA x009EB7 xA57615 x8ED444 x37D5D3 x787542 x35C277 x5539CF x67A6D0 x952880 xCE6ECE x7A608A x835452 xB07CEC xA10EA2 xAB54F1 x8F45AB x78A0D5 x1230DB xCD39E2 xCF8844 x81827E x7FE1CB x6E148E xAA9473 xB4907A xF29885 x1D4E77 x973436 x577ADC x116B4E x6A0C01 x533140 xE587B2 x27923A x7BFAD9 x49C142 xB663D9 xF3672D xBCC48C x90A6D0 x48BC6F xB71DD4 x99B3A6 xD4B959 xBB094C x53C825 x9A6F0B x4A6073 xCF2221 xD6BC8B xEAE9CB x50829A xC86EE7 x257570 x40F1F0 x17C3A9 x125781 x339F71 xE72A8A xB0726B x09201E x461ABA x4A5404 x58F495 xA3F91A x68FEEE xB3E4A8 x1405E0 xE05893 x51742F x4E1756 x45C3AD x5D0C97 x8DA9F9 xEF2B17 x39C3D7 xC280EF x8CA5D6 x848EFC x5943FE x73AE5B x7A00E6 xA51FC9 x475460 x6B4598 xFD14D2 x6145FA x0F63E6 x0D7374 x6F6902 x956021 xD8621E x03B78B x51A54B x24B773 x19C43D x14D961 x28E71E xA4D7E2 xEDE24C xBF0692 x417983 x178A5C xC35BA4 xAC7A28 x877BDE xB272FC xC699CC x9AAAF0 x40D3DA x85CE81 x73F31C xA2F602 xA1F4C2 xEDEE19 x0C1A92 x690072 x1B18AC x4512FF xE3121F xB7363A xE53818 xE04000 x6A6057 xD2482D x2283E5 x638C43 xA08000 x749824 x779735 x7A98A2 x0AD9DF x16DE9A xA3B1C8 x39F701 xE3FB9C }
     traits = { "state_trait_russian_forest" }
     city = "xC86EE7"
@@ -447,15 +447,15 @@ STATE_ARKHANGELSK = {
     arable_land = 15
     arable_resources = { }
     capped_resources = {
-        bg_gold_mining = 2
+        #bg_gold_mining = 2 #No noteworthy goldrushes? Altai and Yenisey River are far more relevant
         bg_logging = 12
         bg_fishing = 10
     }
-    resource = {
-        type = "bg_gold_fields"
-        depleted_type = "bg_gold_mining"
-        undiscovered_amount = 8
-    }
+    #resource = {	#No noteworthy goldrushes? Altai and Yenisey River are far more relevant
+    #    type = "bg_gold_fields"
+    #    depleted_type = "bg_gold_mining"
+    #    undiscovered_amount = 8
+    #}
     naval_exit_id = 3039
 }
 
@@ -958,11 +958,11 @@ STATE_KRASNOYARSK = {
         type = "bg_coal_mining"
         undiscovered_amount = 28
     }
-    #resource = {
-    #    type = "bg_gold_fields"
-    #    depleted_type = "bg_gold_mining"
-    #    undiscovered_amount = 12
-    #}
+    resource = { #Yenisey River
+        type = "bg_gold_fields"
+        depleted_type = "bg_gold_mining"
+        undiscovered_amount = 10
+    }
 }
 
 STATE_ALTAI = {
@@ -976,7 +976,7 @@ STATE_ALTAI = {
     wood = "x57140E"
     arable_land = 15
     arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {
+    capped_resources = { #Not bg_gold_fields because they are in the Altai Kraj region, and not the Altai Republic
         bg_logging = 8
     }
     resource = {
@@ -1023,15 +1023,18 @@ STATE_KOLYMA = {
     wood = "x627310"
     arable_land = 4
     traits = { "state_trait_siberian_terrain" }
-    arable_resources = { "bg_livestock_ranches" }
+    arable_resources = { }
     capped_resources = {
         bg_logging = 10
-        bg_coal_mining = 8
+    }
+    resource = {
+        type = "bg_coal_mining"
+        undiscovered_amount = 8
     }
     resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
-        undiscovered_amount = 16
+        undiscovered_amount = 4
     }
 }
 
@@ -1053,7 +1056,7 @@ STATE_AMUR = {
     resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
-        undiscovered_amount = 6
+        undiscovered_amount = 4
     }
     resource = {
         type = "bg_iron_mining"
@@ -1082,12 +1085,12 @@ STATE_CHELYABINSK = {
         bg_iron_mining = 95
         bg_coal_mining = 25
         bg_logging = 16
-        bg_gold_mining = 3
+        bg_gold_mining = 2
     }
     resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
-        undiscovered_amount = 9
+        undiscovered_amount = 5
     }
 }
 

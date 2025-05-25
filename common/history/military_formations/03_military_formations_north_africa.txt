@@ -100,7 +100,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_royalist
 			birth_date = 1798.1.22 # Complete guesswork, but was old enough to be colonial governor of Sudan in 1838
-			hq = region_arabic
+			hq = region_levant
 			commander_rank = commander_rank_2
 			traits = {
 				basic_offensive_planner
@@ -123,7 +123,7 @@
 			culture = cu:french
 			religion = sunni
 			age = 48
-			hq = region_anatolia
+			hq = region_levant
 			traits = {	
 			}
 			save_scope_as = soliman_gen
@@ -135,7 +135,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_levant
+			hq_region = sr:region_arabic
 			name = Bahriat_alKhidywyat_alMisria
 
 		

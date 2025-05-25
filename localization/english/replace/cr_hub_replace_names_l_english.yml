@@ -837,8 +837,8 @@
  HUB_NAME_STATE_WINDWARD_COAST_wood:0 "Duékoué"
  HUB_NAME_STATE_WINDWARD_COAST_mine:0 "Nouon"
  
- HUB_NAME_STATE_KONG_city:0 "Korhogo"
- HUB_NAME_STATE_KONG_farm:0 "Kong"
+ HUB_NAME_STATE_KONG_city:0 "Kong"
+ HUB_NAME_STATE_KONG_farm:0 "Korhogo"
  HUB_NAME_STATE_KONG_wood:0 "Bouna"
  HUB_NAME_STATE_KONG_mine:0 "Odienne"
  
@@ -848,10 +848,10 @@
  HUB_NAME_STATE_BORGU_mine:0 "Kandi"
  
  HUB_NAME_STATE_DAHOMEY_city:0 "Abomey"
- HUB_NAME_STATE_DAHOMEY_port:0 "Kutonou"
- HUB_NAME_STATE_DAHOMEY_farm:0 "Porto Novo"
+ HUB_NAME_STATE_DAHOMEY_port:0 "Porto Novo"
+ HUB_NAME_STATE_DAHOMEY_farm:0 "Lomé"
  HUB_NAME_STATE_DAHOMEY_wood:0 "Pobe"
- HUB_NAME_STATE_DAHOMEY_mine:0 "TBD"
+ HUB_NAME_STATE_DAHOMEY_mine:0 "Atakpamé"
  
  HUB_NAME_STATE_TOGO_city:0 "Atakpamé"
  HUB_NAME_STATE_TOGO_port:0 "Lomé"
@@ -974,6 +974,12 @@
  HUB_NAME_STATE_ALBERTA_mine:0 "Calgary" 
  
  #Mexico
+ HUB_NAME_STATE_VERACRUZ_city:0 "Orizaba"
+ HUB_NAME_STATE_VERACRUZ_port:0 "Veracruz"
+ HUB_NAME_STATE_VERACRUZ_mine:0 "Coatzacoalcos"
+ 
+ HUB_NAME_STATE_CHIAPAS_farm:0 "San Cristóbal"
+ 
  HUB_NAME_STATE_RIO_GRANDE_mine:0 "Sabinas"
  
  HUB_NAME_STATE_ZACATECAS_farm:0 "Aguascalientes"
@@ -1061,6 +1067,12 @@
  HUB_NAME_STATE_SANTIAGO_farm:0 "Curicó"
  HUB_NAME_STATE_SANTIAGO_wood:0 "Constitución"
  HUB_NAME_STATE_SANTIAGO_mine:0 "Talca"
+ 
+ HUB_NAME_STATE_ARAUCANIA_city:0 "Ushuaia"
+ HUB_NAME_STATE_ARAUCANIA_port:0 "Punta Arenas"
+ HUB_NAME_STATE_ARAUCANIA_farm:0 "Río Grande"
+ HUB_NAME_STATE_ARAUCANIA_wood:0 "Chaitén"
+ HUB_NAME_STATE_ARAUCANIA_mine:0 "El Trebol"
  
  #Argentina
  HUB_NAME_STATE_BUENOS_AIRES_city:0 "Buenos Aires"
@@ -1477,14 +1489,14 @@
  HUB_NAME_STATE_GUANGXI_mine:0 "Baise"
  
  HUB_NAME_STATE_SICHUAN_city:0 "Chengdu"
- HUB_NAME_STATE_SICHUAN_farm:0 "Chongqing"
+ HUB_NAME_STATE_SICHUAN_farm:0 "Luzhou"
  HUB_NAME_STATE_SICHUAN_wood:0 "Ya'an"
  HUB_NAME_STATE_SICHUAN_mine:0 "Guangyuan"
  
- HUB_NAME_STATE_KHAM_city:0 "Nyarong"
- HUB_NAME_STATE_KHAM_farm:0 "Derge"
- HUB_NAME_STATE_KHAM_wood:0 "Bathang"
- HUB_NAME_STATE_KHAM_mine:0 "Xichang"
+ HUB_NAME_STATE_CHONGQING_city:0 "Chongqing"
+ HUB_NAME_STATE_CHONGQING_farm:0 "Fuling" 
+ HUB_NAME_STATE_CHONGQING_wood:0 "Wushan"
+ HUB_NAME_STATE_CHONGQING_mine:0 "Pengshui"
  
  HUB_NAME_STATE_QINGHAI_wood:0 "Barkam"
  

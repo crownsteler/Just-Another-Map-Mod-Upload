@@ -1,178 +1,288 @@
-﻿don_carlos_exile_country_selector = {
-	hidden_effect = {
-		#c:FRA = {
-		#	trigger_event = { id = cr_carlist_events.15 days = 4 }
-		#}
-		#c:GBR = {
-		#	trigger_event = { id = cr_carlist_events.16 days = 4 }
-		#}
-		c:POR = {
-			trigger_event = { id = cr_carlist_events.80 days = 4 }
+﻿don_carlos_cleanup_exile_vars = {
+	every_country ={
+		limit = {
+			OR = {
+				this ?= c:FRA
+				this ?= c:GBR
+				this ?= c:POR
+				this ?= c:USA
+				this ?= c:SIC
+				this ?= c:AUS
+				this ?= c:RUS
+			}
 		}
-		#c:USA = {
-		#	trigger_event = { id = cr_carlist_events.90 days = 4 }
-		#}
+		remove_variable = don_carlos_exile_rejected_var
+	}
+	remove_variable = don_carlist_orleanist_refuge
+	remove_variable = don_carlist_orleanist_support
+	remove_variable = don_carlist_legitimist_support
+	remove_variable = don_carlist_legitimist_support
+	remove_variable = don_carlist_legitimist_refuge
+	remove_variable = don_carlist_legitimist_legitimacy_undermined
+	remove_variable = don_carlist_bonapartist_refuge
+	remove_variable = don_carlist_bonapartist_legitimacy_undermined
+}
+
+don_carlos_exile_country_selector = {
+	hidden_effect = {
+		random_list = {
+			0 = {
+				trigger = {
+					exists = c:FRA
+					NOT = {
+						this ?= c:FRA
+					}
+					c:FRA = {
+						NOT = { has_variable = don_carlos_exile_rejected_var }
+					}
+				}
+				c:FRA = {
+					trigger_event = { id = cr_carlist_events.15 days = 4 }
+				}
+			}
+			0 = {
+				trigger = {
+					exists = c:GBR
+					NOT = {
+						this ?= c:GBR
+					}
+					c:GBR = {
+						NOT = { has_variable = don_carlos_exile_rejected_var }
+					}
+				}
+				c:GBR = {
+					trigger_event = { id = cr_carlist_events.30 days = 4 }
+				}
+			}
+			0 = {
+				trigger = {
+					exists = c:POR
+					NOT = {
+						this ?= c:POR
+					}
+					c:POR = {
+						NOT = { has_variable = don_carlos_exile_rejected_var }
+						#has_law = law_type:law_monarchy
+						#has_law = law_type:law_autocracy
+					}
+				}
+				c:POR = {
+					trigger_event = { id = cr_carlist_events.80 days = 4 }
+				}			
+			}
+			0 = {
+				trigger = {
+					exists = c:SIC
+					NOT = {
+						this ?= c:SIC
+					}
+					c:SIC = {
+						NOT = { has_variable = don_carlos_exile_rejected_var }
+						has_law = law_type:law_monarchy
+					}
+				}
+				c:SIC = {
+					trigger_event = { id = cr_carlist_events.70 days = 4 }
+				}			
+			}
+			0 = {
+				trigger = {
+					exists = c:AUS
+					NOT = {
+						this ?= c:AUS
+					}
+					c:AUS = {
+						NOT = { has_variable = don_carlos_exile_rejected_var }
+						has_law = law_type:law_monarchy
+					}
+				}
+				c:AUS = {
+					if = {
+						limit = {
+							any_scope_character = {
+								has_template = ecchi_aus_metternich_character_template
+							}
+						}
+						trigger_event = { id = cr_carlist_events.60 days = 4 }
+					}
+					else = {
+						trigger_event = { id = cr_carlist_events.61 days = 4 }
+					}
+				}			
+			}
+			100 = {
+				trigger = {
+					exists = c:RUS
+					NOT = {
+						this ?= c:RUS
+					}
+					c:RUS = {
+						NOT = { has_variable = don_carlos_exile_rejected_var }
+						has_law = law_type:law_monarchy
+						has_law = law_type:law_autocracy
+					}
+				}
+				c:RUS = {
+					trigger_event = { id = cr_carlist_events.50 days = 4 }
+				}			
+			}
+			1 = {
+				trigger = {
+					exists = c:USA
+					NOT = {
+						this ?= c:USA
+					}
+					c:USA = {
+						NOT = { has_variable = don_carlos_exile_rejected_var }
+					}
+				}
+				c:USA = {
+					trigger_event = { id = cr_carlist_events.90 days = 14 }
+				}
+			}
+		}
 	}
 }
 
-don_carlos_granted_asylum_effect = {
-	save_scope_as = don_carlos_exile_country
+don_carlos_distant_exile_effect = {
+	set_variable = don_carlos_exile_country_var
 	if = {
 		limit = {
-			c:USA ?= this
-		}
-		c:SPA = {
-			set_variable = don_carlos_usa_exile_var
-			trigger_event = { id =  cr_carlist_events.91 days = 5 }
-		}
-		show_as_tooltip = {
-			scope:carlist_movement = {
-				add_modifier = {
-					name = cr_distant_exile	
-				}
+			OR = {
+				this ?= c:USA
+				this ?= c:RUS
 			}
 		}
-		show_as_tooltip = {
+		save_scope_as = don_carlos_exile_country
+		hidden_effect = {
 			c:SPA = {
-				change_relations = {
-					country = ROOT
-					value = 5
-				}
+				set_variable = don_carlos_distant_exile_var
+				trigger_event = { id =  cr_carlist_events.20 days = 5 }
 			}
+		}
+	}
+	else = {
+		hidden_effect = {
+			c:SPA = {
+				set_variable = don_carlos_distant_exile_var
+				trigger_event = { id = cr_carlist_events.20 days = 5 }
+			}	
+		}
+		add_modifier = {
+			name = cr_royal_exile
+			months = long_modifier_time
+		}
+	}
+	show_as_tooltip = {
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_distant_exile	
+			}
+		}
+	}
+	show_as_tooltip = {
+		c:SPA = {
+			change_relations = {
+				country = ROOT
+				value = 5
+			}
+		}
+	}
+	don_carlos_new_home_effect = yes
+}
+
+don_carlos_normal_exile_effect = {
+	save_scope_as = don_carlos_exile_country
+	set_variable = don_carlos_exile_country_var
+	if = {
+		limit = {
+			this ?= c:FRA
+			any_scope_state = {
+				state_region = s:STATE_ORLEANS
+			}
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.exile_of_bourgos
 		}
 	}
 	else_if = {
 		limit = {
-			c:POR ?= this
+			NOT = { this ?= c:USA }
 		}
 		custom_tooltip = {
-			text = cr_carlist_events.16.b_tt
+			text = cr_carlist_events.exile_place
 		}
-		c:SPA = {
-			set_variable = don_carlos_portugal_exile_var
-			trigger_event = { id =  cr_carlist_events.20 days = 5 }
-		}
-		show_as_tooltip = {
-			scope:carlist_movement = {
-				add_modifier = {
-					name = cr_don_carlos_exiled_but_supported	
-				}
-			}
-		}
-		scope:don_carlos_exile_state = {
-			add_modifier = {
-				name = cr_carlos_exiled_state	
-				months = 360
-			}
-		}
-		if = {
-			limit = {
-				c:SIC = {
-					has_law = law_type:law_monarchy
-				}
-			}
-			c:SIC = {
-				change_relations = {
-					country = ROOT
-					value = -5
-				}
-			}
-		}
-		
 	}
-	else = {
-		if = {
-			limit = {
-				any_scope_state = {
-					state_region = s:STATE_ORLEANS
-				}
-			}
-			custom_tooltip = {
-				text = cr_carlist_events.15.a_tt
-			}
-		}
-		else = {
-			custom_tooltip = {
-				text = cr_carlist_events.16.b_tt
-			}
-		}
-		scope:don_carlos_exile_state = {
-			add_modifier = {
-				name = cr_carlos_exiled_state	
-				months = 360
-			}
-		}
+	hidden_effect = {
 		c:SPA = {
+			set_variable = cr_exile_of_bourges_var
 			trigger_event = { id =  cr_carlist_events.20 days = 5 }
 		}
-		show_as_tooltip = {
-			scope:carlist_movement = {
-				add_modifier = {
-					name = cr_exile_of_bourges	
-				}
+	}
+	custom_tooltip = cr_carlist_events.spain_likely_approves
+	show_as_tooltip = {
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_exile_of_bourges	
 			}
 		}
-		if = {
-			limit = {
-				c:SIC = {
-					has_law = law_type:law_monarchy
-				}
-			}
-			c:SIC = {
-				change_relations = {
-					country = ROOT
-					value = -5
-				}
+	}
+	don_carlos_new_home_effect = yes
+}
+
+don_carlos_tacit_support_effect = {
+	save_scope_as = don_carlos_exile_country
+	set_variable = don_carlos_exile_country_var
+	cr_spain_likely_disapproves = yes
+	hidden_effect = {
+		c:SPA = {
+			set_variable = don_carlos_exiled_but_supported_var
+			trigger_event = { id =  cr_carlist_events.21 days = 5 }
+		}
+	}
+	show_as_tooltip = {
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_don_carlos_exiled_but_supported	
 			}
 		}
 	}
 	if = {
 		limit = {
-			ruler = {
-				has_ideology = ideology:ideology_bonapartist
-			}
-			NOT = {
-				has_law = law_type:law_autocracy
-			}
+			has_law = law_type:law_autocracy
 		}
-		c:SPA = { set_variable = don_carlist_bonapartist_refuge }
-		scope:legitimist_movement = {
+		ig:ig_landowners = {
 			add_modifier = {
-				name = cr_granted_carlos_asylum_france_bonapartist
+				name = cr_carlos_ig_strengthend
 				months = long_modifier_time
-				is_decaying = yes
 			}
 		}
 	}
-
-	every_country = {
-		limit = {
-			has_diplomatic_relevance = c:SPA
-			NOT = {
-				this = ROOT
-				this ?= c:SPA
-			}
-		}
-		post_notification = cr_don_carlos_exile_provided
-	}
+	don_carlos_new_home_effect = yes
 }
 
 don_carlos_support_claim_effect = {
 	save_scope_as = don_carlos_exile_country
+	set_variable = don_carlos_exile_country_var
+	cr_spain_likely_disapproves = yes
 	if = {
 		limit = {
 			this ?= c:POR
 		}
 		set_variable = cr_carlos_supporting_absolutism_in_spain_var
-		c:SPA = {
-			trigger_event = { id =  cr_carlist_events.81 days = 5 }
+		hidden_effect = {
+			c:SPA = {
+				set_variable = don_carlos_supported_by_absolutists_var
+				trigger_event = { id =  cr_carlist_events.21 }
+			}
 		}
-		custom_tooltip = cr_carlist_events.15.spain_likely_disapproves
 		add_modifier = {
 			name = cr_carlos_supporting_absolutism
-			months = 121
 		}
-		change_infamy = 10
+		create_incident = {
+			country = c:SPA  
+			value = 10
+		}
 		show_as_tooltip = {
 			c:SPA = {
 				scope:carlist_movement = {
@@ -182,28 +292,74 @@ don_carlos_support_claim_effect = {
 				}
 			}
 		}
+		every_political_movement = {
+			limit = {
+				OR = {	#Should be replaced with appropriate movements when DLC releases
+					is_political_movement_type = movement_royalist_constitutional
+					is_political_movement_type = movement_liberal
+					is_political_movement_type = movement_positivist
+					is_political_movement_type = movement_modernizer
+				}
+			}
+			add_modifier = {
+				name = cr_don_carlos_absolutist_support_backlash
+				months = 121
+				is_decaying = yes
+			}	
+		}
 		if = {
 			limit = {
-				c:GBR = {
-					has_law = law_type:law_monarchy
-					country_has_voting_franchise = yes
+				this ?= c:POR
+			}
+			ig:ig_intelligentsia = {
+				add_modifier = {
+					name = cr_supporting_absolutism_abroad_2
+					months = 121
+					is_decaying = yes
+				}			
+			}
+		}
+		else = {
+			
+			ig:ig_intelligentsia = {
+				add_modifier = {
+					name = cr_supporting_absolutism_abroad
+					months = 121
+					is_decaying = yes
+				}			
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			this ?= c:FRA
+			OR = {
+				has_law = law_type:law_autocracy
+				ruler = {
+					has_ideology = ideology:ideology_legitimist
 				}
 			}
-			change_relations = {
-				country = c:GBR
-				value = -30
+		}
+		set_variable = cr_carlos_supporting_absolutism_in_spain_var
+		hidden_effect = {
+			c:SPA = {
+				set_variable = don_carlos_supported_by_absolutists_var
+				trigger_event = { id =  cr_carlist_events.21 }
 			}
-			every_country = {
-				limit = {
-					country_is_in_europe = yes
-					has_diplomatic_relevance = c:SPA
-					country_has_voting_franchise = yes
-					country_rank >= rank_value:major_power
-					NOT = { this ?= c:GBR }
-				}
-				change_relations = {
-					country = ROOT
-					value = -15
+		}
+		add_modifier = {
+			name = cr_carlos_supporting_absolutism
+		}
+		create_incident = {
+			country = c:SPA  
+			value = 10
+		}
+		show_as_tooltip = {
+			c:SPA = {
+				scope:carlist_movement = {
+					add_modifier = {
+						name = cr_don_carlos_absolutist_support	
+					}
 				}
 			}
 		}
@@ -231,12 +387,20 @@ don_carlos_support_claim_effect = {
 		}
 	}
 	else_if = {
-		c:SPA = {
-			trigger_event = { id =  cr_carlist_events.20 days = 5 }
+		hidden_effect = {
+			c:SPA = {
+				set_variable = don_carlos_supported_by_absolutists_var
+				trigger_event = { id = cr_carlist_events.21 }
+			}
 		}
 		limit = {
 			has_law = law_type:law_monarchy
 			has_law = law_type:law_autocracy
+		}
+		set_variable = cr_carlos_supporting_absolutism_in_spain_var
+		create_incident = {
+			country = c:SPA  
+			value = 7.5
 		}
 		show_as_tooltip = {
 			c:SPA = {
@@ -247,60 +411,13 @@ don_carlos_support_claim_effect = {
 				}
 			}
 		}
-		change_infamy = 7.5
-		if = {
-			limit = {
-				NOT = {
-					this ?= c:POR
-				}
-			}
-			change_relations = {
-				country = c:GBR
-				value = -15
-			}
-			every_country = {
-				limit = {
-					country_is_in_europe = yes
-					has_diplomatic_relevance = c:SPA
-					country_has_voting_franchise = yes
-					country_rank >= rank_value:major_power
-					NOT = { this ?= c:GBR }
-				}
-				change_relations = {
-					country = ROOT
-					value = -10
-				}
-			}
-		}
-		else = {
-			every_country = {
-				limit = {
-					country_is_in_europe = yes
-					country_has_voting_franchise = yes
-					country_rank >= rank_value:major_power
-				}
-				change_relations = {
-					country = ROOT
-					value = -10
-				}
-			}		
-		}
-		if = {
-			limit = {
-				c:POR = {
-					has_law = law_type:law_monarchy
-					NOT = { has_law = law_type:law_autocracy }
-				}
-			}
-			change_relations = {
-				country = c:POR
-				value = -40
-			}
-		}
 	}
-	else = { 
-		c:SPA = {
-			trigger_event = { id =  cr_carlist_events.20 days = 5 }
+	else = {
+		hidden_effect = {
+			c:SPA = {
+				set_variable = don_carlos_exiled_but_supported_var
+				trigger_event = { id =  cr_carlist_events.21 }
+			}
 		}
 		show_as_tooltip = {
 			c:SPA = {
@@ -311,44 +428,22 @@ don_carlos_support_claim_effect = {
 				}
 			}
 		}
-		change_infamy = 5
-		if = {
-			limit = {
-				c:GBR = {
-					has_law = law_type:law_monarchy
-					NOT = { has_law = law_type:law_autocracy }
-				}
-			}
-			change_relations = {
-				country = c:GBR
-				value = -15
-			}
-		}
-		if = {
-			limit = {
-				c:POR = {
-					has_law = law_type:law_monarchy
-					NOT = { has_law = law_type:law_autocracy }
-				}
-			}
-			change_relations = {
-				country = c:POR
-				value = -20
-			}
+		create_incident = {
+			country = c:SPA  
+			value = 5
 		}
 	}
 	if = {
 		limit = {
-			c:SIC = {
-				has_law = law_type:law_monarchy
+			has_law = law_type:law_autocracy
+		}
+		ig:ig_landowners = {
+			add_modifier = {
+				name = cr_carlos_ig_strengthend
+				months = long_modifier_time
 			}
 		}
-		change_relations = {
-			country = c:SIC
-			value = 10
-		}
 	}
-
 	every_country = {
 		limit = {
 			has_diplomatic_relevance = c:SPA
@@ -359,6 +454,7 @@ don_carlos_support_claim_effect = {
 		}
 		post_notification = cr_don_carlos_exile_supported
 	}
+	don_carlos_new_home_effect = yes
 }
 
 don_carlos_reject_asylum_effect = {
@@ -366,50 +462,8 @@ don_carlos_reject_asylum_effect = {
 	save_scope_as = don_carlos_exile_rejected
 	set_variable = don_carlos_exile_rejected_var
 	custom_tooltip = {
-		text = cr_carlist_events.15.c_tt
-		random_list = {
-			90 = {
-				trigger = {
-					NOT = {
-						this ?= c:GBR
-					}
-					c:GBR = {
-						NOT = { has_variable = don_carlos_exile_rejected_var }
-					}
-				}
-				c:GBR = {
-					trigger_event = { id = cr_carlist_events.16 days = 4 }
-				}
-			}
-			40 = {
-				trigger = {
-					NOT = {
-						this ?= c:POR
-					}
-					c:POR = {
-						NOT = { has_variable = don_carlos_exile_rejected_var }
-						has_law = law_type:law_monarchy
-						has_law = law_type:law_autocracy
-					}
-				}
-				c:POR = {
-					trigger_event = { id = cr_carlist_events.80 days = 4 }
-				}			
-			}
-			10 = {
-				trigger = {
-					NOT = {
-						this ?= c:USA
-					}
-					c:USA = {
-						NOT = { has_variable = don_carlos_exile_rejected_var }
-					}
-				}
-				c:USA = {
-					trigger_event = { id = cr_carlist_events.90 days = 14 }
-				}
-			}
-		}
+		text = cr_carlist_events.reject_refuge
+		don_carlos_exile_country_selector = yes
 		c:SPA = {
 			remove_variable = cr_don_carlos_exiled_bourges
 		}
@@ -417,10 +471,16 @@ don_carlos_reject_asylum_effect = {
 	if = {
 		limit = {
 			has_law = law_type:law_monarchy
-			ruler = {
-				OR = { 
-					has_ideology = ideology:ideology_orleanist
-					has_ideology = ideology:ideology_legitimist
+			OR = {
+				this ?= c:SIC
+				AND = {
+					this ?= c:FRA
+					ruler = {
+						OR = { 
+							has_ideology = ideology:ideology_orleanist
+							has_ideology = ideology:ideology_legitimist
+						}
+					}
 				}
 			}
 		}
@@ -429,9 +489,17 @@ don_carlos_reject_asylum_effect = {
 			months = normal_modifier_time 
 			is_decaying = yes
 		}
+		ig:ig_landowners = {
+			add_modifier = {
+				name = cr_denied_royal_exile_royalist_backlash_ig
+				months = normal_modifier_time 
+				is_decaying = yes
+			}		
+		}
 	}
 	if = {
 		limit = {
+			this ?= c:FRA
 			has_law = law_type:law_monarchy
 			ruler = {
 				has_ideology = ideology:ideology_orleanist
@@ -461,7 +529,7 @@ don_carlos_reject_asylum_effect = {
 				}
 			}
 			add_modifier = {
-				name = cr_denied_carlos_british_royalist
+				name = cr_denied_royal_exile_royalist_backlash
 				months = 61
 				is_decaying = yes
 			}	
@@ -476,37 +544,33 @@ don_carlos_reject_asylum_effect = {
 				}
 			}
 			add_modifier = {
-				name = cr_royal_denied_asylum_royalist_ig
+				name = cr_denied_royal_exile_royalist_backlash_ig
 				months = 61
 				is_decaying = yes
 			}	
 		}
 	}
-	c:SPA = {
-		change_relations = {
-			country = ROOT
-			value = 5
+}
+
+don_carlos_undermine_legitimacy_effect = {
+	save_scope_as = don_carlos_exile_country
+	set_variable = don_carlos_exile_country_var
+#	set_variable = cr_carlos_supporting_absolutism_in_spain_var
+	cr_spain_likely_disapproves = yes
+	hidden_effect = {
+		c:SPA = {
+			set_variable = don_carlos_legitimacy_underminded_var
+			trigger_event = { id =  cr_carlist_events.21 days = 5 }
 		}
 	}
 	if = {
 		limit = {
-			c:SIC = {
-				has_law = law_type:law_monarchy
-			}
+			NOT = { this ?= c:AUS }
 		}
-		change_relations = {
-			country = c:SIC
-			value = -5
+		create_incident = {
+			country = c:SPA  
+			value = 5
 		}
-	}
-}
-
-don_carlos_undermine_legitimacy_effect = {
-	clear_saved_scope = don_carlos_exile_country
-	
-	change_infamy = 3
-	c:SPA = {
-		trigger_event = { id =  cr_carlist_events.20 days = 5 }
 	}
 	show_as_tooltip = {
 		c:SPA = {
@@ -520,37 +584,343 @@ don_carlos_undermine_legitimacy_effect = {
 	}
 	if = {
 		limit = {
-			c:SIC = {
-				has_law = law_type:law_monarchy
+			NOR = {
+				this ?= c:AUS
+				ruler = {
+					has_ideology = ideology:ideology_bonapartist
+				}
 			}
-		}
-		change_relations = {
-			country = c:SIC
-			value = -5
-		}
-	}
-	if = {
-		limit = {
-			c:GBR = {
-				has_law = law_type:law_monarchy
-				NOT = { has_law = law_type:law_autocracy }
-			}
-		}
-		change_relations = {
-			country = c:GBR
-			value = -5
-		}
-	}
-	if = {
-		limit = {
 			c:POR = {
 				has_law = law_type:law_monarchy
 				NOT = { has_law = law_type:law_autocracy }
 			}
 		}
-		change_relations = {
-			country = c:POR
-			value = -15
+		hidden_effect = {
+			change_relations = {
+				country = c:POR
+				value = -25
+			}
+		}
+		show_as_tooltip = {
+			create_diplomatic_catalyst = {  
+				type = catalyst_invited_exile_negative
+				target = c:POR
+			}
 		}
 	}
+	if = {
+		limit = {
+			this ?= c:FRA
+			ruler = {
+				has_ideology = ideology:ideology_bonapartist
+			}
+			#NOT = {
+			#	has_law = law_type:law_autocracy
+			#}
+		}
+		scope:legitimist_movement = {
+			add_modifier = {
+				name = cr_granted_carlos_asylum_france_bonapartist
+				months = long_modifier_time
+				is_decaying = yes
+			}
+		}
+	}
+	don_carlos_new_home_effect = yes
+}
+
+don_carlos_glad_to_be_rid_of_him = {
+	if = {
+		limit = {
+			has_variable = don_carlos_distant_exile_var
+		}
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_distant_exile	
+			}
+			#political_movement_pop_attraction_mult = -0.25
+			#political_movement_radicalism_add = -0.15
+		}
+		change_relations = {
+			country = scope:don_carlos_exile_country
+			value = 5
+		}
+		scope:don_carlos_exile_country = {
+			post_notification = cr_don_carlos_exile_positive_reaction
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = cr_exile_of_bourges_var
+		}
+		scope:carlist_movement = {	
+			add_modifier = {
+				name = cr_exile_of_bourges	
+			}
+			#political_movement_pop_attraction_mult = -0.10
+			#political_movement_radicalism_add = -0.05
+		}
+		change_relations = {
+			country = scope:don_carlos_exile_country
+			value = 5
+		}
+		scope:don_carlos_exile_country = {
+			post_notification = cr_don_carlos_exile_positive_reaction
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = don_carlos_exiled_but_supported_var
+			scope:don_carlos_exile_country = {
+				this = c:POR
+			}
+		}
+		scope:carlist_movement = {	
+			add_modifier = {
+				name = cr_don_carlos_exiled_but_supported	
+			}
+			#political_movement_pop_attraction_mult = 0.05
+		}
+		change_relations = {
+			country = scope:don_carlos_exile_country
+			value = 0
+		}
+		scope:don_carlos_exile_country = {
+			post_notification = cr_don_carlos_exile_positive_reaction
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = don_carlos_exiled_but_supported_var
+		}
+		scope:carlist_movement = {	
+			add_modifier = {
+				name = cr_don_carlos_exiled_but_supported	
+			}
+			#political_movement_pop_attraction_mult = 0.05
+		}
+		change_relations = {
+			country = scope:don_carlos_exile_country
+			value = 5
+		}
+		scope:don_carlos_exile_country = {
+			post_notification = cr_don_carlos_exile_positive_reaction
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = don_carlos_supported_by_absolutists_var
+			scope:don_carlos_exile_country = {
+				this = c:POR
+			}
+		}
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_don_carlos_absolutist_support	
+			}
+			#political_movement_pop_attraction_mult = 0.10
+			#political_movement_radicalism_add = 0.10
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = don_carlos_supported_by_absolutists_var
+		}
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_don_carlos_absolutist_support	
+			}
+			#political_movement_pop_attraction_mult = 0.10
+			#political_movement_radicalism_add = 0.10
+		}
+	}
+	if = {
+		limit = {
+			has_variable = don_carlos_legitimacy_underminded_var
+		}
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_don_carlos_legitimacy_undermined_movement	
+			}
+		}
+		add_modifier = cr_don_carlos_legitimacy_undermined_country
+	}
+	#show_as_tooltip = {
+	#	don_carlos_new_home_effect = yes
+	#}
+}
+
+don_carlos_out_of_our_reach = {
+	if = {
+		limit = {
+			has_variable = don_carlos_legitimacy_underminded_var
+		}
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_don_carlos_legitimacy_undermined_movement	
+			}
+		}
+		add_modifier = cr_don_carlos_legitimacy_undermined_country
+		create_diplomatic_catalyst = {  
+			type = catalyst_invited_exile_negative
+			target = scope:don_carlos_exile_country
+		}
+	}
+	if = {
+		limit = {
+			has_variable = don_carlos_distant_exile_var
+		}
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_distant_exile	
+			}
+			#political_movement_pop_attraction_mult = -0.25
+			#political_movement_radicalism_add = -0.15
+		}
+		change_relations = {
+			country = scope:don_carlos_exile_country
+			value = -5
+		}
+		scope:don_carlos_exile_country = {
+			post_notification = cr_don_carlos_exile_negative_reaction
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = cr_exile_of_bourges_var
+		}
+		scope:carlist_movement = {	
+			add_modifier = {
+				name = cr_exile_of_bourges	
+			}
+			#political_movement_pop_attraction_mult = -0.10
+			#political_movement_radicalism_add = -0.05
+		}
+		change_relations = {
+			country = scope:don_carlos_exile_country
+			value = -10
+		}
+		create_diplomatic_catalyst = {  
+			type = catalyst_invited_exile_negative
+			target = scope:don_carlos_exile_country
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = don_carlos_exiled_but_supported_var
+			scope:don_carlos_exile_country = {
+				this = c:POR
+			}
+		}
+		scope:carlist_movement = {	
+			add_modifier = {
+				name = cr_don_carlos_exiled_but_supported	
+			}
+			#political_movement_pop_attraction_mult = 0.05
+		}
+		change_relations = {
+			country = scope:don_carlos_exile_country
+			value = -30
+		}
+		create_diplomatic_catalyst = {  
+			type = catalyst_invited_exile_negative
+			target = scope:don_carlos_exile_country
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = don_carlos_exiled_but_supported_var
+		}
+		scope:carlist_movement = {	
+			add_modifier = {
+				name = cr_don_carlos_exiled_but_supported	
+			}
+			#political_movement_pop_attraction_mult = 0.05
+		}
+		change_relations = {
+			country = scope:don_carlos_exile_country
+			value = -20
+		}
+		create_diplomatic_catalyst = {  
+			type = catalyst_invited_exile_negative
+			target = scope:don_carlos_exile_country
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = don_carlos_supported_by_absolutists_var
+			scope:don_carlos_exile_country = {
+				this ?= c:POR
+			}
+		}
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_don_carlos_absolutist_support	
+			}
+			#political_movement_pop_attraction_mult = 0.10
+			#political_movement_radicalism_add = 0.10
+		}
+		change_relations = {
+			country = scope:don_carlos_exile_country
+			value = -80
+		}
+		create_diplomatic_catalyst = {  
+			type = catalyst_invited_exile_negative
+			target = scope:don_carlos_exile_country
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = don_carlos_supported_by_absolutists_var
+			scope:don_carlos_exile_country = {
+				NOT = { this ?= c:POR }
+			}
+		}
+		scope:carlist_movement = {
+			add_modifier = {
+				name = cr_don_carlos_absolutist_support	
+			}
+			#political_movement_pop_attraction_mult = 0.10
+			#political_movement_radicalism_add = 0.10
+		}
+		change_relations = {
+			country = scope:don_carlos_exile_country
+			value = -50
+		}
+		create_diplomatic_catalyst = {  
+			type = catalyst_invited_exile_negative
+			target = scope:don_carlos_exile_country
+		}
+	}
+	#show_as_tooltip = {
+	#	don_carlos_new_home_effect = yes
+	#}
+}
+don_carlos_new_home_effect = {
+	scope:don_carlos_char = {
+		
+	}
+	scope:don_carlos_exile_state = {
+		add_modifier = {
+			name = cr_carlos_exiled_state	
+			months = 360
+		}
+	}
+}
+
+don_carlos_exile_location_notification = {
+	every_country = {
+		limit = {
+			has_diplomatic_relevance = c:SPA
+			NOT = {
+				this = ROOT
+				this ?= c:SPA
+			}
+		}
+		post_notification = cr_don_carlos_exile_provided
+	}
+}
+
+cr_spain_likely_disapproves = {
+	custom_tooltip = cr_carlist_events.spain_likely_disapproves
 }

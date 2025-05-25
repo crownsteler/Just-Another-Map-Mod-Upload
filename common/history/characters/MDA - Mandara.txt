@@ -1,8 +1,8 @@
 ﻿CHARACTERS = {
 	c:MDA = {
 		create_character = {
-			first_name = "Hiassae"
-			last_name = "Adjara" 
+			first_name = Hiassae
+			last_name = Adjara 
 			historical = yes
 			ruler = yes
 			age = 46

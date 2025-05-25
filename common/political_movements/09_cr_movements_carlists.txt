@@ -9,8 +9,14 @@
 	}
 	
 	disband_trigger = {
+		has_variable = cr_carlists_question_ended_var
 	}
-	on_disbanded = {}
+	on_disbanded = {
+		create_political_movement = { 
+			type = movement_religious_majority
+			religion = owner.religion 
+		}
+	}
 	
 	creation_trigger = {
 		always = no
@@ -19,6 +25,18 @@
 		value = 100
 	}	
 	on_created = {
+		if = {
+			limit = {
+				c:SPA ?= this
+			}
+			set_suppression = yes
+		}
+		if = {
+			limit = {
+				c:CSP ?= this
+			}
+			set_bolstering = yes
+		}
 	}
 	
 	character_support_trigger = {

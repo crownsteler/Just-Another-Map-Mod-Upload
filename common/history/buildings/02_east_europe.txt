@@ -227,6 +227,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled"  }
 			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:RUS"
+						levels=3
+						region="STATE_STATE_GREATER_POLANDEAST_PRUSSIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
 		}
 	}
 	s:STATE_LESSER_POLAND={
@@ -1090,7 +1103,7 @@
 						type="building_copper_mine"
 						country="c:AUS"
 						levels=1
-						region="STATE_AUSTRIA"
+						region="STATE_BUKOVINA"
 					}
 				}
 				reserves=1

@@ -9,7 +9,7 @@
     mine = "xB0D0C7"
     wood = "x107040"
     arable_land = 25
-    arable_resources = { "bg_maize_farms" "bg_coffee_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
+    arable_resources = { "bg_maize_farms" "bg_coffee_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_logging = 7
         bg_fishing = 4
@@ -32,13 +32,7 @@ STATE_GUATEMALA = {
     mine = "x50B040"
     wood = "xFA4B41"
     arable_land = 40
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #spices
-
-
-
-
-
-
+    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_sugar_plantations" "bg_banana_plantations" "bg_dye_plantations" } #spices
     capped_resources = {
         #bg_minor_metals_mining = 30 #nickel
         bg_logging = 17
@@ -62,12 +56,7 @@ STATE_HONDURAS = {
     mine = "x98E7D7"
     wood = "xC77E76"
     arable_land = 35
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #palm oil
-
-
-
-
-
+    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_banana_plantations" } #palm oil
     capped_resources = {
         #bg_lead_mining = 15 #lead/silver
         bg_logging = 15
@@ -95,12 +84,7 @@ STATE_NICARAGUA = {
     mine = "xC9A998"
     wood = "x9CDB2B"
     arable_land = 50
-    arable_resources = { "bg_maize_farms" "bg_coffee_plantations" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #palm oil
-
-
-
-
-
+    arable_resources = { "bg_maize_farms" "bg_coffee_plantations" "bg_cotton_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #palm oil
     capped_resources = {
         bg_logging = 14
         bg_fishing = 5
@@ -124,12 +108,7 @@ STATE_COSTA_RICA = {
     wood = "x478109"
     arable_land = 15
     arable_resources = { "bg_maize_farms" "bg_coffee_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #palm oil
-
-
-
-
-
-
+	
     capped_resources = {
         #bg_coal_mining = 24
         bg_logging = 8
@@ -150,7 +129,7 @@ STATE_PANAMA = {
     id = 343
     subsistence_building = "building_subsistence_farms"
     provinces = { "x30B080" "x357099" "x47C5F8" "x50C29C" "x717275" "x8537FE" "x8A8A20" "x910E14" "xB0A911" "xB0B080" "xBB820B" "xC650E1" "xD0EF40" "xEE835F" }
-	impassible = { xB0B080 xB0A911 xEE835F } #Darian Gap
+	impassable = { xB0B080 xB0A911 xEE835F } #Darian Gap
     city = "x8A8A20"
     port = "xD0EF40"
     farm = "x30B080"
@@ -158,6 +137,7 @@ STATE_PANAMA = {
     wood = "x717275"
     arable_land = 20
     arable_resources = { "bg_maize_farms" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
+	
     capped_resources = {
         #bg_copper_mining = 18
         bg_logging = 8
@@ -186,10 +166,6 @@ STATE_HAITI = {
     wood = "x4FE008"
     arable_land = 35
     arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_cotton_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #banana = cacao
-
-
-
-
 
     capped_resources = {
         bg_logging = 4
@@ -235,7 +211,7 @@ STATE_PUERTO_RICO = {
     port = "xB07080"
     farm = "xB07080"
     arable_land = 22
-    arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #spices, cacao
+    arable_resources = { "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #spices, cacao, removed bg_rice_farms to reduce resources to 4. Sorry Puerto Rico!
     capped_resources = {
         bg_fishing = 4
     }
@@ -255,14 +231,7 @@ STATE_BAHAMAS = {
     farm = "x4EBC79"
     wood = "x4EBC79"
     arable_land = 5
-    arable_resources = { "bg_rice_farms" "bg_banana_plantations" } #Banana = pineapple
-
-
-
-
-
-
-
+    arable_resources = { "bg_sugar_plantations" "bg_banana_plantations" } #Banana = pineapple
     capped_resources = {
         bg_fishing = 5
     }
@@ -280,7 +249,7 @@ STATE_WEST_INDIES = {
     mine = "x707080"
     wood = "x33895B"
     arable_land = 30
-    arable_resources = { "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
+    arable_resources = { "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_cotton_plantations" }
     capped_resources = {
         bg_fishing = 12
     }
@@ -300,13 +269,7 @@ STATE_JAMAICA = {
     port = "x7070B8"
     farm = "x535B49"
     arable_land = 23
-    arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #potentially spices
-
-
-
-
-
-
+    arable_resources = { "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #potentially spices, removed bg_rice_farms to reduce resources to 4. Sorry Jamaica!
     capped_resources = {
         bg_logging = 4
         bg_fishing = 5

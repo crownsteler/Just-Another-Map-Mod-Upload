@@ -1,0 +1,40 @@
+﻿
+#################
+#	CULTURES	#
+#################
+
+state_frisian_standard_of_living_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+state_minangkabau_standard_of_living_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+#################
+#	RELIGIONS	#
+#################
+
+state_ibadi_standard_of_living_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+state_bahai_standard_of_living_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}

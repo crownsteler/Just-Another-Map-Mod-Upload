@@ -67,24 +67,24 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:BHN"
-						levels=2
+						levels=1
 						region="STATE_HAJAR"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
 			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:BHN"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" }
-			}
+			#create_building={
+			#	building="building_barracks"
+			#	add_ownership={
+			#		country={
+			#			country="c:BHN"
+			#			levels=1
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_no_organization" }
+			#}
 		}
 		region_state:KWT={
 			create_building={
@@ -1610,6 +1610,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				add_ownership={
+					building={
+						type="building_furniture_manufacturies"
+						country="c:TUR"
+						levels=1
+						region="STATE_HUDAVENDIGAR"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture" "pm_luxury_furniture" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_logging_camp"

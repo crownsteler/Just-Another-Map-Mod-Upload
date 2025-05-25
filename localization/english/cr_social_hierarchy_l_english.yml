@@ -2,17 +2,17 @@
 #hierarchy: balinese_caste_system
  balinese_caste_system: "Balinese Caste System"
  balinese_caste_system_desc: "A simplified codification by the British of an ancient Hindu class hierarchy. Initially created to serve and guide the central administration of the Raj. One's position in the hierarchy, and thus one's rights and privileges, are inherited and fixed."
- british_indian_caste_system_trigger_desc: "Has #b $hindu$#! [concept_religion] and belongs to the #b $balinese$#! [concept_culture]"
+ balinese_caste_system_trigger_desc: "Has #b $hindu$#! [concept_religion] and belongs to the #b $balinese$#! [concept_culture]"
 
 #classes: british_indian_caste_system
- brahmins: "Brahmins"
- brahmins_desc: "Traditionally teachers and priests, the Brahmins are the sole people with the right to interpret religious Hindu texts. As such, they dictate the divine rights and privileges afforded to every other caste. Brahmins within the Raj often serve as political representatives and intermediaries."
- kshatriyas: "Kshatriyas"
- kshatriyas_desc: "Traditionally warriors, the Khashtriyas are charged with military and leadership positions. They enjoy most rights and privileges, bar the ability to dictate divine will."
- vaishyas: "Vaishyas"
- vaishyas_desc: "The Vaishya caste consists of merchants, traders, and landowners. As such, they are allowed to accumulate wealth and knowledge in the service of the castes above them."
- shudras: "Shudras"
- shudras_desc: "Shudras are the lowest class within the four recognized castes. They are restricted to servant and labor positions at the mercy of higher castes. They cannot accumulate wealth or knowledge."
- dalit: "Dalit"
- dalit_desc: "A term used to describe those born out of the four castes. Dalits have no way to join the hierarchy. As such, they are and have been, ostracized and marginalized for generations. Dalits are forced to do menial labor and are afforded no rights or privileges."
+ brahmins_bali: "Brahmins"
+ brahmins_bali_desc: "Traditionally teachers and priests, the Brahmins are the sole people with the right to interpret religious Hindu texts. As such, they dictate the divine rights and privileges afforded to every other caste. Brahmins within the Raj often serve as political representatives and intermediaries."
+ kshatriyas_bali: "Kshatriyas"
+ kshatriyas_bali_desc: "Traditionally warriors, the Khashtriyas are charged with military and leadership positions. They enjoy most rights and privileges, bar the ability to dictate divine will."
+ vaishyas_bali: "Vaishyas"
+ vaishyas_bali_desc: "The Vaishya caste consists of merchants, traders, and landowners. As such, they are allowed to accumulate wealth and knowledge in the service of the castes above them."
+ shudras_bali: "Shudras"
+ shudras_bali_desc: "Shudras are the lowest class within the four recognized castes. They are restricted to servant and labor positions at the mercy of higher castes. They cannot accumulate wealth or knowledge."
+ dalit_bali: "Dalit"
+ dalit_bali_desc: "A term used to describe those born out of the four castes. Dalits have no way to join the hierarchy. As such, they are and have been, ostracized and marginalized for generations. Dalits are forced to do menial labor and are afforded no rights or privileges."
 

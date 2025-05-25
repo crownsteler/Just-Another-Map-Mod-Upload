@@ -1,0 +1,41 @@
+﻿# Spain
+
+ecchi_spa_infante_carlos_character_template = {
+    first_name = Carlos
+    last_name = de_Borbon
+	historical = yes
+	ruler = yes
+    culture = cu:spanish
+    female = no
+    religion = rel:catholic
+    ideology = ideology_traditionalist
+    interest_group = ig_rural_folk
+	dna = ecchi_dna_infante_carlos
+    birth_date = 1788.3.29
+    traits = { persistent imperious }
+    #interest_group_leader_usage = {
+    #    country_trigger = {
+    #        OR = {
+    #            AND = {
+    #                exists = c:SPA
+    #                this = c:SPA
+    #                NOT = { exists = c:CAS }
+    #            }
+    #            AND = {
+    #                exists = c:CSP
+    #                this = c:CSP
+    #            }
+    #        }
+    #    }
+    #    interest_group_trigger = {
+    #        is_marginal = no
+    #        OR = {
+    #            is_interest_group_type = ig_rural_folk
+    #            is_interest_group_type = ig_landowners
+    #        }
+    #    }
+    #    earliest_usage_date = 1836.1.1
+    #    latest_usage_date = 1855.3.10
+    #    chance = 90
+    #}
+}

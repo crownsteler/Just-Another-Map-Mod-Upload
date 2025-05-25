@@ -30,7 +30,7 @@ cr_hedjaz_mecca_sharifate = {
 		NOR = {
 			AND = {
 				has_technology_researched = nationalism
-				is_non_customs_union_subject = no
+				is_subject = no
 			}
 			has_technology_researched = pan-nationalism
 		}

@@ -76,8 +76,8 @@
 		#	set_company_state_region = s:STATE_FRIESLAND
 		#}
 
-		add_company = company_type:company_nederlandse_handelsmaatschappij
-		company:company_nederlandse_handelsmaatschappij = {
+		add_company = company_type:company_nederlandse_handelmaatschappij
+		company:company_nederlandse_handelmaatschappij = {
 			set_company_establishment_date = 1824.3.29
 			set_company_state_region = s:STATE_HOLLAND
 		}

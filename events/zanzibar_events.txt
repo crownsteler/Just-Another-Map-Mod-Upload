@@ -69,42 +69,9 @@ zanzibar.1 = {
 		custom_tooltip = zanzibar.1.a.tt
 		default_option = yes
 		
-		# Cede East African holdings to Zanzibar
-		every_scope_state = {
-			limit = {
-				OR = {
-					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
-					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
-					region = sr:region_african_lakes #Great Lakes
-					region = sr:region_zanj
-					region = sr:region_zambezia
-					region = sr:region_madagascar
-					region = sr:region_southern_africa
-					region = sr:region_south_west_africa
-					region = sr:region_congo
-				}
-			}
-			set_state_owner = c:ZAN
-		}
-		every_scope_state = {
-			limit = {
-				OR = {
-					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
-					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
-					region = sr:region_african_lakes #Great Lakes
-					region = sr:region_zanj
-					region = sr:region_zambezia
-					region = sr:region_madagascar
-					region = sr:region_southern_africa
-					region = sr:region_south_west_africa
-					region = sr:region_congo
-				}
-				state_region = {
-					has_claim_by = c:OMA
-				}
-			}
-			add_claim = c:ZAN
-		}
+		oman_cede_east_african_holdings_to_zanzibar = yes
+		oman_cede_east_african_claims_to_zanzibar = yes
+		oman_transfer_east_african_subjects_to_zanzibar = yes
 	}
 	
 	option = {
@@ -116,42 +83,9 @@ zanzibar.1 = {
 		
 		play_as = c:ZAN
 		
-		# Cede East African holdings to Zanzibar
-		every_scope_state = {
-			limit = {
-				OR = {
-					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
-					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
-					region = sr:region_african_lakes #Great Lakes
-					region = sr:region_zanj
-					region = sr:region_zambezia
-					region = sr:region_madagascar
-					region = sr:region_southern_africa
-					region = sr:region_south_west_africa
-					region = sr:region_congo
-				}
-			}
-			set_state_owner = c:ZAN
-		}
-		every_scope_state = {
-			limit = {
-				OR = {
-					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
-					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
-					region = sr:region_african_lakes #Great Lakes
-					region = sr:region_zanj
-					region = sr:region_zambezia
-					region = sr:region_madagascar
-					region = sr:region_southern_africa
-					region = sr:region_south_west_africa
-					region = sr:region_congo
-					state_region = {
-						has_claim_by = c:OMA
-					}
-				}
-			}
-			add_claim = c:ZAN
-		}
+		oman_cede_east_african_holdings_to_zanzibar = yes
+		oman_cede_east_african_claims_to_zanzibar = yes
+		oman_transfer_east_african_subjects_to_zanzibar = yes
 	}
 	
 	option = {
@@ -164,24 +98,7 @@ zanzibar.1 = {
 		s:STATE_ZANZIBAR = {
 			add_claim = c:OMA
 		}
-
-		every_scope_state = {
-			limit = {
-				OR = {
-					state_region = s:STATE_SOMALIA #Oman keeps STATE_SOMALIALAND (control of the Red Sea)
-					state_region = s:STATE_OGADEN #Oman keeps Ethiopia
-					region = sr:region_african_lakes #Great Lakes
-					region = sr:region_zanj
-					region = sr:region_zambezia
-					region = sr:region_madagascar
-					region = sr:region_southern_africa
-					region = sr:region_south_west_africa
-					region = sr:region_congo
-				}
-			}
-			state_region = {
-				add_claim = c:ZAN
-			}
-		}
+		zanzibar_add_claims_to_east_african_oman = yes
+		oman_make_all_subjects_in_east_africa_independent = yes
 	}
 }

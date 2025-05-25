@@ -816,6 +816,7 @@ algeria_events.5 = {
 			country = scope:algerian_raider_scope
 			value = -20
 		}
+		end_truce = scope:algerian_raider_scope
 		scope:algerian_raider_scope = {
 			post_notification = algerian_raid
 		}

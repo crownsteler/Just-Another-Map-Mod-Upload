@@ -84,12 +84,16 @@
  notification_cr_don_carlos_exile_negative_reaction_tooltip: "#header $notification_cr_don_carlos_exile_negative_reaction_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_don_carlos_exile_negative_reaction_desc$"
  
  notification_cr_don_carlos_support_negative_reaction_name: "Spain Reacts Poorly"
- notification_cr_don_carlos_support_negative_reaction_desc: "[SCOPE.sCountry('spain').GetName] has reacted negatively to our decision to provide support to Don Carlos' claim to their throne, decreasing our relations."
+ notification_cr_don_carlos_support_negative_reaction_desc: "[SCOPE.sCountry('spain').GetName] has reacted negatively to our decision to support Don Carlos' claim to their throne, decreasing our relations."
  notification_cr_don_carlos_support_negative_reaction_tooltip: "#header $notification_cr_don_carlos_support_negative_reaction_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_don_carlos_support_negative_reaction_desc$"
  
  notification_cr_don_carlos_exile_support_liberalism_name: "Spain Supporting for Liberalism"
  notification_cr_don_carlos_exile_support_liberalism_desc: "In response to our support of Don Carlos' claim to the [SCOPE.sCountry('spain').GetAdjective] throne, [SCOPE.sCountry('spain').GetNameNoFormatting] has decided to support the [SCOPE.sCountry('don_carlos_exile_country').GetAdjectiveNoFormatting] [SCOPE.sPoliticalMovement('liberal_movement').GetName]."
- notification_cr_don_carlos_exile_support_liberalism_tooltip: "#header $notification_cr_don_carlos_support_negative_reaction_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_don_carlos_support_negative_reaction_desc$"
+ notification_cr_don_carlos_exile_support_liberalism_tooltip: "#header $notification_cr_don_carlos_exile_support_liberalism_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_don_carlos_exile_support_liberalism_desc$"
+ 
+ notification_cr_stop_support_for_movement_name: "[SCOPE.sCountry('stopping_support_country').GetNameNoFormatting] halts support for the [SCOPE.sPoliticalMovement('supported_movement').GetNameNoFormatting]"
+ notification_cr_stop_support_for_movement_desc: "A change in political winds has caused [SCOPE.sCountry('stopping_support_country').GetName] to end their support for the [SCOPE.sPoliticalMovement('supported_movement').GetName]. This has increased our relations."
+ notification_cr_stop_support_for_movement_tooltip: "#header $notification_cr_stop_support_for_movement_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_stop_support_for_movement_desc$"
  
  notification_cr_don_carlos_exile_provided_name: "Spanish Pretender Finds Home"
  notification_cr_don_carlos_exile_provided_desc: "[SCOPE.sCountry('don_carlos_exile_country').GetName] has decided to provide refugee to Don Carlos, the [SCOPE.sCountry('spain').GetName] pretender, after he lost his was for the throne."

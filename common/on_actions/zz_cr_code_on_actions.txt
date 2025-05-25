@@ -96,7 +96,15 @@ cr_on_wargoal_enforced = {
 					has_variable = cr_carlist_war_ongoing
 				}
         	}
+			scope:target = {
+				remove_variable = cr_carlist_war_ongoing
+				ruler = {
+					save_scope_as = don_carlos_char
+					place_character_in_void = 600
+				}
+			}
         	owner = {
+				remove_variable = cr_carlist_war_ongoing
         		trigger_event = { id = cr_carlist_events.10 days = 0 popup = no }
         	}
         }	
@@ -108,8 +116,13 @@ cr_on_wargoal_enforced = {
 					has_variable = cr_carlist_war_ongoing
 				}
         	}
+			scope:target = {
+				remove_variable = cr_carlist_war_ongoing
+				
+			}
         	owner = {
-        		trigger_event = { id = cr_carlist_events.25 days = 0 popup = mo }
+				remove_variable = cr_carlist_war_ongoing
+        		trigger_event = { id = cr_carlist_events.25 days = 0 popup = no }
         	}
         }	
 	}

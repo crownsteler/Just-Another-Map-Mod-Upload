@@ -69,6 +69,9 @@
 	c:SIC = {
 		add_declared_interest = region_occitania
 		add_declared_interest = region_balkans
+		add_declared_interest = region_iberia
+		add_declared_interest = region_bosphorus
+		add_declared_interest = region_north_africa
 	}	
 	c:BEL = {
 		add_declared_interest = region_france

@@ -287,7 +287,7 @@ expedition_events.302 = { #Sucessful expedition - Great Salt Lake
 		name = expedition_events.302.a
 		default_option = yes
 		scope:expedition_leader = {
-			set_character_busy = no
+			set_character_busy_and_immortal = no
 			add_trait = explorer
 		}
 		custom_tooltip = {
@@ -379,7 +379,7 @@ expedition_events.303 = { #Successful expedition - California Trail
 		name = expedition_events.303.a
 		default_option = yes
 		scope:expedition_leader = {
-			set_character_busy = no
+			set_character_busy_and_immortal = no
 			add_trait = explorer
 		}
 		custom_tooltip = { #Surely there is a better way of doing this

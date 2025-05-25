@@ -267,6 +267,12 @@
 			level = 2
 			direction = export
 			target = c:EGY.market
+		}	
+		create_trade_route = {
+			goods = wood
+			level = 4
+			direction = import
+			target = c:PER.market
 		}		
 	}
 	c:ZAI ?= {

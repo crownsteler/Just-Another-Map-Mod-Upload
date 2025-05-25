@@ -5903,6 +5903,19 @@
 				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
 			}
 			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:BRE"
+						levels=2
+						region="STATE_ELBE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_tools"  "pm_potatoes" }
+			}	
+			create_building={
 				building="building_port"
 				add_ownership={
 					country={
@@ -5940,7 +5953,20 @@
 			#	}
 			#	reserves=1
 			#	activate_production_methods={ "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_no_hardwood" }
-			#}			
+			#}	
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:HAM"
+						levels=1
+						region="STATE_ELBE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_tools"  "pm_potatoes" }
+			}		
 			create_building={
 				building="building_port"
 				add_ownership={

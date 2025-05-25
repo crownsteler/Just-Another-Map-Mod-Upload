@@ -437,7 +437,7 @@
 				building="building_coffee_plantation"
 				add_ownership={ # All plantations owned by the colonial government (with some minor exceptions), but the Nederlandse Handelsmaatschappij had a monopoly on marketing the goods. So for gameplay purposes the NHM gets half
 					company={ 
-						type=company_nederlandse_handelsmaatschappij
+						type=company_nederlandse_handelmaatschappij
 						country = "c:NET"
 						levels=5
 					}
@@ -453,7 +453,7 @@
 				building="building_dye_plantation"
 				add_ownership={ # All plantations owned by the colonial government (with some minor exceptions), but the Nederlandse Handelsmaatschappij had a monopoly on marketing the goods. So for gameplay purposes the NHM gets half
 					company={ 
-						type=company_nederlandse_handelsmaatschappij
+						type=company_nederlandse_handelmaatschappij
 						country = "c:NET"
 						levels=3
 					}
@@ -469,7 +469,7 @@
 				building="building_sugar_plantation"
 				add_ownership={ # All plantations owned by the colonial government (with some minor exceptions), but the Nederlandse Handelsmaatschappij had a monopoly on marketing the goods. So for gameplay purposes the NHM gets half
 					company={ 
-						type=company_nederlandse_handelsmaatschappij
+						type=company_nederlandse_handelmaatschappij
 						country = "c:NET"
 						levels=2
 					}
@@ -523,7 +523,7 @@
 						region="STATE_EAST_JAVA"
 					}
 					company={ 
-						type=company_nederlandse_handelsmaatschappij
+						type=company_nederlandse_handelmaatschappij
 						country = "c:NET"
 						levels=2
 					}
@@ -578,7 +578,7 @@
 				building="building_tobacco_plantation"
 				add_ownership={ # All plantations owned by the colonial government (with some minor exceptions), but the Nederlandse Handelsmaatschappij had a monopoly on marketing the goods. So for gameplay purposes the NHM gets half
 					company={ 
-						type=company_nederlandse_handelsmaatschappij
+						type=company_nederlandse_handelmaatschappij
 						country = "c:NET"
 						levels=2
 					}
@@ -594,7 +594,7 @@
 				building="building_tea_plantation"
 				add_ownership={ # All plantations owned by the colonial government (with some minor exceptions), but the Nederlandse Handelsmaatschappij had a monopoly on marketing the goods. So for gameplay purposes the NHM gets half
 					company={ 
-						type=company_nederlandse_handelsmaatschappij
+						type=company_nederlandse_handelmaatschappij
 						country = "c:NET"
 						levels=1
 					}
@@ -610,7 +610,7 @@
 				building="building_dye_plantation"
 				add_ownership={ # All plantations owned by the colonial government (with some minor exceptions), but the Nederlandse Handelsmaatschappij had a monopoly on marketing the goods. So for gameplay purposes the NHM gets half
 					company={ 
-						type=company_nederlandse_handelsmaatschappij
+						type=company_nederlandse_handelmaatschappij
 						country = "c:NET"
 						levels=1
 					}
@@ -626,7 +626,7 @@
 				building="building_sugar_plantation"
 				add_ownership={ # All plantations owned by the colonial government (with some minor exceptions), but the Nederlandse Handelsmaatschappij had a monopoly on marketing the goods. So for gameplay purposes the NHM gets half
 					company={ 
-						type=company_nederlandse_handelsmaatschappij
+						type=company_nederlandse_handelmaatschappij
 						country = "c:NET"
 						levels=1
 					}
@@ -1706,13 +1706,16 @@
 	s:STATE_TONGA={
 		region_state:TNG={ #Tonga
 		}
-		region_state:SAM={ #Samoa
-		}
 		region_state:CKI={ #Cook Islands
 		}
-		region_state:TOK={ #Tokelau
-		}
 		region_state:WFU={ #Wallis
+		}
+	}
+	
+	s:STATE_SAMOA={
+		region_state:SAM={ #Samoa
+		}
+		region_state:TOK={ #Tokelau
 		}
 	}
 }

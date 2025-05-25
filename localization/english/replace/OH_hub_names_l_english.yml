@@ -19,10 +19,10 @@
  HUB_NAME_STATE_EAST_MICRONESIA_wood:0 "Majuro"
 
  HUB_NAME_STATE_TAHITI_city:0 "Papeete"
- HUB_NAME_STATE_TAHITI_port:1 "Papeete"
+ HUB_NAME_STATE_TAHITI_port:0 "Bora Bora"
  HUB_NAME_STATE_TAHITI_mine:0 "Nuku Hiva"
- HUB_NAME_STATE_TAHITI_farm:0 "Rangiroa"
- HUB_NAME_STATE_TAHITI_wood:0 "Vaitape"
+ HUB_NAME_STATE_TAHITI_farm:0 "Raiatea" 
+ HUB_NAME_STATE_TAHITI_wood:0 "Taiarapu"
 
  HUB_NAME_STATE_JAMAICA_city:0 "Kingston"
  HUB_NAME_STATE_JAMAICA_port:1 "Kingston"

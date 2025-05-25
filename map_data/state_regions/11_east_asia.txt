@@ -54,7 +54,7 @@ STATE_KHAM = {
     prime_land = { }
     city = "xC5FA12"
     farm = "x162AC1"
-    mine = "x183BC0"
+    mine = "xC3A077"
     wood = "x2CC651"
     arable_land = 80
     arable_resources = { "bg_rice_farms" "bg_opium_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
@@ -67,10 +67,10 @@ STATE_KHAM = {
         type = "bg_sulfur_mining"
         undiscovered_amount = 44
     }
-    resource = {
-        type = "bg_copper_mining"
-        undiscovered_amount = 34
-    }
+    #resource = { #high altitude porphyry deposit. Unlikely minable in the period.
+    #    type = "bg_copper_mining"
+    #    undiscovered_amount = 56
+    #}
 }
 
 STATE_YUNNAN = {
@@ -108,7 +108,7 @@ STATE_GUIZHOU = {
     mine = "x109000"
     wood = "xE0F060"
     arable_land = 110
-    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_dye_plantations" "bg_opium_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
+    arable_resources = { "bg_rice_farms" "bg_dye_plantations" "bg_opium_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
         #bg_coal_mining = 32 #moved to Hunan as per forum post
         bg_logging = 26
@@ -461,7 +461,7 @@ STATE_SICHUAN = {
     provinces = { x4A9929 xC54CCD xCE5914 x129329 x901080 x97F6FB x5C0A38 x7D0C5B xF9B015 x939CA3 x108674 x92D298 xE88BF8 x6C2938 xFBD426 x690CD4 x192C0F x0CEE46 x901000 xB52752 x66015E x6E1C89 x793905 x2B4D74 x654894 x5B7400 xC943C3 x1C8A07 x787852 xF64FC1 x5C8BAE x509862 x12B742 x28C7CA xCCB937 xC3C67F x60E0D5 xA5D674 x4BEFB9 xDDCBB6 xF6FED1 }
     traits = { "state_trait_yangtze_river" "state_trait_the_red_basin" }
     city = "x60E0D5"
-    farm = "x6CAE25"
+    farm = "xC943C3"
     mine = "xF9B015"
     wood = "xDDCBB6"
     arable_land = 500
@@ -476,10 +476,10 @@ STATE_CHONGQING = {
     subsistence_building = "building_subsistence_rice_paddies"
     provinces = { x5C003D x243438 x283D57 xBE05F5 x7B51C8 xC64D28 x645EEC xC35036 xAF5569 x509000 xBD8F39 xD09000 x6CAE25 xDBB445 xCABB49 xD5B480 x98D5B2 x98EF3E xE0F0E0 xDBFEDF xC8F378 }
     traits = { "state_trait_yangtze_river" "state_trait_the_red_basin" }
-    city = "x6CAE25"
-    farm = "x6CAE25"
-    mine = "xF9B015"
-    wood = "xDDCBB6"
+    city = "x645EEC"
+    farm = "xDBFEDF"
+    mine = "xD09000"
+    wood = "x98D5B2"
     arable_land = 240
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_tea_plantations" }
     capped_resources = {
@@ -500,14 +500,18 @@ STATE_LIANGSHAN = {
     subsistence_building = "building_subsistence_rice_paddies"
     provinces = { x05195F xD57DC5 x0502BE x5304E5 x24A95A x4BBCD9 x7F900E xB391A8 x735688 x41F76A x59CA77 x157E2E xF0F6C5 x0D68E8 }
     traits = { "state_trait_yangtze_river" "state_trait_the_red_basin" }
-    city = "x6CAE25"
-    farm = "x6CAE25"
-    mine = "xF9B015"
-    wood = "xDDCBB6"
+    city = "xF0F6C5"
+    farm = "xD57DC5"
+    mine = "x735688"
+    wood = "x4BBCD9"
     arable_land = 75
     arable_resources = { "bg_rice_farms" "bg_opium_plantations" "bg_tea_plantations" }
     capped_resources = {
         bg_logging = 10
+    }
+    resource = { #Panzhihua
+        type = "bg_iron_mining"
+        undiscovered_amount = 34
     }
 }
 

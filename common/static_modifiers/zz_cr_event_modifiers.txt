@@ -57,7 +57,6 @@ cr_carlos_supporting_liberalism = {
 }
 
 
-
 #Pacific
 cr_farflung_corner_of_empire = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds

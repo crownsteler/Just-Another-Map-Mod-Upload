@@ -348,7 +348,7 @@ STATE_TAZA = {
     mine = "xF05E87"
     wood = "xE521ED"
     arable_land = 30
-    arable_resources = { "bg_livestock_ranches" "bg_date_plantations" }
+    arable_resources = { "bg_date_plantations" }
     capped_resources = {
         bg_lead_mining = 18 #Lead/silver
     #bg_coal_mining = 10
@@ -370,7 +370,7 @@ STATE_INNER_MOROCCO = {
     mine = "x4B50E0"
     wood = "x26277F"
     arable_land = 15
-    arable_resources = { "bg_livestock_ranches" "bg_date_plantations" }
+    arable_resources = { "bg_date_plantations" }
     capped_resources = {
         #bg_copper_mining = 42
         bg_fishing = 4
@@ -431,7 +431,7 @@ STATE_CONSTANTINE = {
     }
     resource = {
         type = "bg_sulfur_mining"
-        undiscovered_amount = 242
+        undiscovered_amount = 24
     }
     resource = { #Tala Hamza seems to be a modern project
         type = "bg_lead_mining"
@@ -642,12 +642,12 @@ STATE_LAGHOUAT = {
     provinces = { x008A0A x089FF7 x0D2515 x1394B1 x13AB12 x1783CF x20EF80 x21FC64 x267471 x2F7181 x324E1C x3DB617 x3ED67E x465605 x4C1AA1 x4CE79E x513113 x576379 x5E233D x608478 x664938 x6F3580 x6FE134 x70B47F x722A5A x7B1E9F x84DB6C x8C4FD5 x90DB5E x95CBD4 xA07040 xA36636 xABE890 xBCA418 xC6BC56 xCD4F3F xCD571A xCEB068 xD52495 xDF4666 xEB7B78 xED2BE3 xEFD8F4 xF91B1F xFEBBD3 x363B86 }
     impassable = {}
     traits = { "state_trait_sahara_desert" }
-    prime_land = { x0D2515 x465605 x008A0A x8C4FD5 xA07040 x1394B1 x3DB617 xBCA418 x70B47F xCEB068 x20EF80 x95CBD4 x4CE79E xEFD8F4 x3ED67E x7B1E9F xEB7B78 x13AB12 x267471 x513113 x363B86 }
+    prime_land = { x0D2515 x465605 x008A0A x8C4FD5 xA07040 x1394B1 x3DB617 xBCA418 x70B47F xCEB068 x20EF80 x95CBD4 x267471 x513113 x363B86 }
     city = "x363B86"
     farm = "x267471"
     mine = "xF91B1F"
     wood = "x465605"
-    arable_land = 21
+    arable_land = 23
     arable_resources = { "bg_livestock_ranches" "bg_date_plantations" }
     capped_resources = {
         #bg_coal_mining = 38
@@ -760,6 +760,7 @@ STATE_WESTERN_MALI = {
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_opium_plantations" }
     capped_resources = {
         #bg_iron_mining = 38 #discoverable
+		bg_gold_mining = 3 #Set to mine because gold fields because people can't eat gold.
     }
     resource = {
         type = "bg_iron_mining"
@@ -768,7 +769,7 @@ STATE_WESTERN_MALI = {
     resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
-        undiscovered_amount = 4
+        undiscovered_amount = 3
     }
 }
 

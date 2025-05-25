@@ -1010,6 +1010,12 @@
 			direction = import
 			target = c:SIC.market
 		}
+		create_trade_route = {
+			goods = wine
+			level = 4
+			direction = import
+			target = c:TUR.market
+		}
 	}
 		
 	
@@ -1042,7 +1048,7 @@
 			goods = wood
 			level = 10
 			direction = import
-			target = c:RUS.market
+			target = c:AUS.market
 		}			
 		create_trade_route = {
 			goods = iron
@@ -1076,15 +1082,9 @@
 		}
 		create_trade_route = {
 			goods = fabric
-			level = 2
+			level = 6
 			direction = import
-			target = c:RUS.market
-		}
-		create_trade_route = {
-			goods = glass
-			level = 1
-			direction = export
-			target = c:RUS.market
+			target = c:TUR.market
 		}
 		create_trade_route = {
 			goods = dye
@@ -1102,6 +1102,12 @@
 			goods = manowars
 			level = 1
 			direction = export
+			target = c:TUR.market
+		}
+		create_trade_route = {
+			goods = copper
+			level = 1
+			direction = import
 			target = c:TUR.market
 		}
 	}
@@ -1180,9 +1186,39 @@
 	c:HAM ?= {	
 		create_trade_route = {
 			goods = wood
-			level = 10
+			level = 2
 			direction = import
 			target = c:RUS.market
+		}		
+		create_trade_route = {
+			goods = fabric
+			level = 2
+			direction = import
+			target = c:HOL.market
+		}	
+		create_trade_route = {
+			goods = meat
+			level = 1
+			direction = import
+			target = c:HOL.market
+		}	
+		create_trade_route = {
+			goods = grain
+			level = 2
+			direction = import
+			target = c:RUS.market
+		}	
+		create_trade_route = {
+			goods = grain
+			level = 1
+			direction = import
+			target = c:NET.market
+		}	
+		create_trade_route = {
+			goods = furniture
+			level = 4
+			direction = import
+			target = c:DEN.market
 		}		
 	}
 	
@@ -1197,8 +1233,20 @@
 		create_trade_route = {
 			goods = grain
 			level = 3
+			direction = import
+			target = c:NET.market
+		}	
+		create_trade_route = {
+			goods = meat
+			level = 1
+			direction = import
+			target = c:NET.market
+		}	
+		create_trade_route = {
+			goods = peper
+			level = 4
 			direction = export
-			target = c:FRA.market
+			target = c:DEN.market
 		}		
 	}
 
@@ -1785,6 +1833,12 @@
 			direction = import
 			target = c:GBR.market
 		}		
+		create_trade_route = {
+			goods = copper
+			level = 2
+			direction = export
+			target = c:SIC.market
+		}
 	}
 
 	# Netherlands
@@ -1926,6 +1980,17 @@
 			direction = import
 			target = c:EGY.market
 		}
+	}
+	
+	# Cuba
+	c:CUB ?= {
+		create_trade_route = {
+			goods = sugar
+			level = 3
+			direction = export
+			target = c:SIC.market
+		}
+	
 	}
 
 }

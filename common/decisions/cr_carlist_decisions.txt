@@ -1,0 +1,158 @@
+cr_carlist_end_support_portugal = {
+	is_shown = {
+		has_variable = cr_carlos_supporting_absolutism_in_spain_var
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = cr_carlist_end_support_portugal_tt
+			OR = {
+				has_variable = cr_carlos_supporting_absolutism_in_spain_var	
+				has_modifier = cr_carlos_supporting_absolutism
+			}
+			c:SPA = {
+				any_political_movement = {
+					has_modifier = cr_don_carlos_absolutist_support
+				}
+			}
+		}
+		NOT = {
+			has_war_with = c:SPA
+		}
+	}
+
+	when_taken = {
+		save_scope_as = stopping_support_country
+		change_infamy = -3
+		remove_modifier = cr_carlos_supporting_absolutism
+		c:SPA = {
+			random_political_movement = {
+				limit = {
+					has_modifier = cr_don_carlos_absolutist_support
+				}
+				save_scope_as = supported_movement
+				remove_modifier = cr_don_carlos_absolutist_support
+			}
+			post_notification = cr_stop_support_for_movement
+			change_relations = {
+				country = ROOT
+				value = 10
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 0	
+		modifier = {
+			trigger = {
+				has_law = law_type:law_autocracy
+			}
+			add = -5
+		}
+		modifier = {
+			trigger = {
+				has_law = law_type:law_state_religion
+			}
+			add = -5
+		}
+		modifier = {
+			trigger = {
+				infamy >= infamy_threshold:infamous
+			}
+			add = 5
+		}
+		modifier = {
+			trigger = {
+				infamy >= infamy_threshold:notorious
+			}
+			add = 15
+		}
+		modifier = {
+			trigger = {
+				authority > 100
+			}
+			add = -5
+		}
+		modifier = {
+			trigger = {
+				authority > 200
+			}
+			add = -5
+		}
+		modifier = {
+			trigger = {
+				authority > 300
+			}
+			add = -5
+		}
+		modifier = {
+			trigger = {
+				authority < -50
+			}
+			add = 1
+		}
+		modifier = {
+			trigger = {
+				authority < -150
+			}
+			add = 10
+		}
+		modifier = {
+			trigger = {
+				authority < -250
+			}
+			add = 10
+		}
+		modifier = {
+			trigger = {
+				c:SPA = { relations:root <= relations_threshold:poor }
+			}
+			add = -1
+		}
+		modifier = {
+			trigger = {
+				c:SPA = { relations:root <= relations_threshold:cold }
+			}
+			add = -5
+		}
+		modifier = {
+			trigger = {
+				c:SPA = { relations:root <= relations_threshold:hostile }
+			}
+			add = -10
+		}
+		modifier = {
+			trigger = {
+				c:SPA = { relations:root > relations_threshold:neutral }
+			}
+			add = 1
+		}
+		modifier = {
+			trigger = {
+				c:SPA = { relations:root >= relations_threshold:amicable }
+			}
+			add = 5
+		}
+		modifier = {
+			trigger = {
+				c:SPA = { relations:root >= relations_threshold:friendly }
+			}
+			add = 10
+		}
+		modifier = {
+			trigger = {
+				c:SPA = {
+					has_variable = cr_carlos_supporting_liberalism_in_portugal_var
+				}
+			}
+			add = -20
+		}
+		modifier = {
+			trigger = {
+				has_modifier = declared_bankruptcy
+			}
+			add = 10
+		}
+	}
+}
+	

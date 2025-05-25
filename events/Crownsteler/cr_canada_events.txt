@@ -1763,7 +1763,7 @@ cr_canadian_indian_treaties.10 = { #The Robinson Treaties
 			}
 		}
 		hidden_effect = {
-			create_truce = {
+			create_unidirectional_truce = {
 				country = scope:native_state
 				months = normal_modifier_time
 			}

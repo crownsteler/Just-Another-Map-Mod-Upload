@@ -18,6 +18,34 @@
 		region_state:AYI={
 		}
 	}
+	s:STATE_KONG={
+		region_state:KNG={
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:KNG"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+			create_building={
+				building="building_rice_farm"
+				add_ownership={
+					building={
+						type="building_rice_farm"
+						country="c:KNG"
+						levels=1
+						region="STATE_SENEGAL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_fig_orchards_building_rice_farm" }
+			}
+		}
+	}
 	s:STATE_WINDWARD_COAST={
 		region_state:KRU={
 		}
@@ -343,12 +371,25 @@
 					building={
 						type="building_millet_farm"
 						country="c:IBD"
-						levels=1
+						levels=2
 						region="STATE_YORUBA_STATES"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_dye_plantation"
+				add_ownership={
+					building={
+						type="building_dye_plantation"
+						country="c:IBD"
+						levels=2
+						region="STATE_YORUBA_STATES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_fishing_wharf"
@@ -390,9 +431,112 @@
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 		}
+		region_state:KTU={
+			create_building={
+				building="building_millet_farm"
+				add_ownership={
+					building={
+						type="building_millet_farm"
+						country="c:KTU"
+						levels=1
+						region="STATE_YORUBA_STATES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:KTU"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+		region_state:IJB={
+			create_building={
+				building="building_millet_farm"
+				add_ownership={
+					building={
+						type="building_millet_farm"
+						country="c:IJB"
+						levels=1
+						region="STATE_YORUBA_STATES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:IJB"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+		region_state:IFE={
+			create_building={
+				building="building_millet_farm"
+				add_ownership={
+					building={
+						type="building_millet_farm"
+						country="c:IFE"
+						levels=1
+						region="STATE_YORUBA_STATES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:IFE"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
 	s:STATE_NIGER_DELTA={
-	#	region_state:IBO={
-	#	}
+		region_state:ARO={
+			create_building={
+				building="building_millet_farm"
+				add_ownership={
+					building={
+						type="building_millet_farm"
+						country="c:ARO"
+						levels=3
+						region="STATE_YORUBA_STATES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:ARO"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+		}
 	}
 	s:STATE_OUTER_HAUSALAND={
 		region_state:HAU={
@@ -719,36 +863,36 @@
 			}		
 		}
 	}
-	s:STATE_TOGO={
-		region_state:GGY={
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:GGY"
-						levels=4
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" }
-			}		
-		}
-		region_state:DGB={
-			#create_building={
-			#	building="building_barracks"
-			#	add_ownership={
-			#		country={
-			#			country="c:DGB"
-			#			levels=3
-			#		}
-			#	}
-			#	reserves=1
-			#	activate_production_methods={ "pm_no_organization" }
-			#}		
-		}
-		region_state:EWE={
-		}
-	}
+	#s:STATE_TOGO={
+	#	region_state:GGY={
+	#		#create_building={
+	#		#	building="building_barracks"
+	#		#	add_ownership={
+	#		#		country={
+	#		#			country="c:GGY"
+	#		#			levels=4
+	#		#		}
+	#		#	}
+	#		#	reserves=1
+	#		#	activate_production_methods={ "pm_no_organization" }
+	#		#}		
+	#	}
+	#	region_state:DGB={
+	#		#create_building={
+	#		#	building="building_barracks"
+	#		#	add_ownership={
+	#		#		country={
+	#		#			country="c:DGB"
+	#		#			levels=3
+	#		#		}
+	#		#	}
+	#		#	reserves=1
+	#		#	activate_production_methods={ "pm_no_organization" }
+	#		#}		
+	#	}
+	#	region_state:EWE={
+	#	}
+	#}
 	s:STATE_DAHOMEY={
 		region_state:DAH={
 			create_building={

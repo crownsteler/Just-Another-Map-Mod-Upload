@@ -2791,12 +2791,14 @@ STATES = {
 			owned_provinces = { 
 				xE0CF6C x946D4E xFBC3B8 xEC0AF9 x15B10C
 				xD14671 #Mo 
+				xD6D784 #Former STATE_TOGO
 			}
 		}
 		create_state = {
 			country = c:DGB
 			owned_provinces = { 
 				x961786 xD845A1 x801552 
+				x162D0C #Former STATE_TOGO
 			}
 		}
 		create_state = {
@@ -2808,48 +2810,56 @@ STATES = {
 		}
 		add_homeland = cu:mossi
 	}
-	s:STATE_TOGO = {
+	#s:STATE_TOGO = {
+	#	create_state = {
+	#		country = c:EWE
+	#		owned_provinces = { 
+	#			x40E9E9 xD4B5FF x778011 x406D9B x8D0A5A x3D9A49 xD10A98 
+	#		}
+	#	}
+	#	create_state = {
+	#		country = c:DGB
+	#		owned_provinces = {
+	#			xAF65D3
+	#		}
+	#	}
+	#	create_state = {
+	#		country = c:GGY
+	#		owned_provinces = { 
+	#			 xD6D784 x51AD34
+	#		}
+	#	}
+	#	
+	#	add_homeland = cu:ewe
+	#	add_homeland = cu:akan
+	#	add_homeland = cu:fon
+	#}
+	s:STATE_DAHOMEY = {
 		create_state = {
-			country = c:EWE
-			owned_provinces = { 
-				x40E9E9 xD4B5FF x778011 x406D9B x8D0A5A x3D9A49 xD10A98 
+			country = c:DAH
+			owned_provinces = { x80A011 x65C6A9 x012190 }
+		}
+		create_state = {
+			country = c:KTU
+			owned_provinces = {
+				x01A011 xB616CF 
 			}
 		}
 		create_state = {
-			country = c:DGB
+			country = c:EWE
 			owned_provinces = {
-				x162D0C xAF65D3 
+				xB48765 xDE6889
+				x40E9E9 xD4B5FF x778011 x406D9B x8D0A5A x3D9A49 xD10A98 #Former STATE_TOGO
 			}
 		}
 		create_state = {
 			country = c:GGY
 			owned_provinces = { 
-				 xD6D784 x51AD34 #Togo
+				 x51AD34 #Former STATE_TOGO
 			}
 		}
 		
 		add_homeland = cu:ewe
-		add_homeland = cu:akan
-		add_homeland = cu:fon
-	}
-	s:STATE_DAHOMEY = {
-		create_state = {
-			country = c:DAH
-			owned_provinces = { x01A011 x80A011 x65C6A9 x012190 }
-		}
-		create_state = {
-			country = c:KTU
-			owned_provinces = {
-				xB616CF 
-			}
-		}
-		create_state = {
-			country = c:EWE
-			owned_provinces = {
-				xB48765 xDE6889 
-			}
-		}
-		
 		add_homeland = cu:fon
 		add_homeland = cu:yoruba
 		add_claim = c:DAH
@@ -2864,9 +2874,14 @@ STATES = {
 		}
 		create_state = {
 			country = c:GRY
-			owned_provinces = { 
-				
+			owned_provinces = {
 				x87D283 x938637 xE35197 xE8CC9C xEDF00C #Togo
+			}
+		}
+		create_state = {	
+			country = c:DGB
+			owned_provinces = {
+				xAF65D3 #Former STATE_TOGO
 			}
 		}
 	

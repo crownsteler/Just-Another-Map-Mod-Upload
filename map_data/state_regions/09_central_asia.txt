@@ -238,7 +238,7 @@ STATE_UZBEKIA = {
     mine = "x156B96"
     wood = "xD767AD"
     arable_land = 80
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_opium_plantations" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_silk_plantations" "bg_opium_plantations" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" } #Removed "bg_livestock_ranches" to reduce resources to 6. Added "bg_livestock_ranches" to Tajikstan as compensation.
     capped_resources = {}
 }
 
@@ -251,7 +251,7 @@ STATE_TAJIKISTAN = {
     mine = "x6C9619"
     wood = "x20B021"
     arable_land = 38
-    arable_resources = { "bg_wheat_farms" "bg_cotton_plantations" "bg_opium_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" }
     capped_resources = {
     #bg_minor_metals_mining = 15 #aluminium, cadmium, wolfram, mercury, antimonium | all in Western Tajikistan
     }
@@ -713,10 +713,10 @@ STATE_LHASA = {
         type = "bg_lead_mining"
         undiscovered_amount = 18
     }
-    resource = {
-        type = "bg_copper_mining"
-        undiscovered_amount = 56
-    }
+    #resource = { #high altitude low quality porphyry deposit. Unlikely minable in the period.
+    #    type = "bg_copper_mining"
+    #    undiscovered_amount = 56
+    #}
 }
 
 STATE_NGARI = {

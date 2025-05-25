@@ -258,7 +258,7 @@ STATE_MONTANA = {
     wood = "xA4DCB6"
     arable_land = 200
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
-    capped_resources = {
+    capped_resources = {#bg_gold_fields (Confederate Gulch and Diamond City), but not included because  already 4 resources
         #bg_coal_mining = 25 #mostly lignite
         #bg_iron_mining = 33
         bg_logging = 17
@@ -276,10 +276,10 @@ STATE_MONTANA = {
         type = "bg_copper_mining"
         undiscovered_amount = 68
     }
-    resource = {
-        type = "bg_oil_extraction"
-        undiscovered_amount = 5
-    }
+    #resource = {	#Bakken formation, but removed because 4 resources and apparent technical difficulties in drilling until advent of fracking
+    #    type = "bg_oil_extraction"
+    #    undiscovered_amount = 5
+    #}
 }
 
 STATE_NORTH_DAKOTA = {
@@ -293,14 +293,14 @@ STATE_NORTH_DAKOTA = {
     wood = "x17235E"
     arable_land = 240
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
-    capped_resources = {
+    capped_resources = { 
     #bg_coal_mining = 48 #Lignite
     #bg_logging = 11 #Turtle Mountain
     }
-    resource = {
-        type = "bg_oil_extraction"
-        undiscovered_amount = 5
-    }
+    #resource = { #Bakken formation, but removed because 4 resources and apparent technical difficulties in drilling until advent of fracking
+    #    type = "bg_oil_extraction"
+    #    undiscovered_amount = 5
+    #}
 }
 
 STATE_SOUTH_DAKOTA = {
@@ -855,7 +855,7 @@ STATE_WEST_VIRGINIA = {
     mine = "x82CE19"
     wood = "xAD371C"
     arable_land = 50
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+    arable_resources = { "bg_maize_farms" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         #bg_coal_mining = 80
         #bg_iron_mining = 24
@@ -884,7 +884,7 @@ STATE_MARYLAND = {
     mine = "x5E6C0F"
     wood = "x708080"
     arable_land = 25
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+    arable_resources = { "bg_maize_farms" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }  #Removed "bg_livestock_ranches" to reduce resources to 4
     capped_resources = {
         bg_logging = 6
         bg_fishing = 9
@@ -1088,7 +1088,7 @@ STATE_MAINE = {
     mine = "x8F9450"
     wood = "x54816B"
     arable_land = 20
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
+    arable_resources = { "bg_wheat_farms" }
     capped_resources = {
         bg_logging = 22
         bg_whaling = 5
@@ -1103,10 +1103,6 @@ STATE_NORTH_CAROLINA = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x007040" "x00F040" "x0F9A00" "x1B47BD" "x228851" "x338BD7" "x3C4F8A" "x3EA432" "x4DC66C" "x58A1C9" "x5961F9" "x5B809B" "x644A75" "x6FBF63" "x711CB6" "x7342E7" "x758494" "x785402" "x7BF507" "x7DE315" "x7F5918" "x807040" "x8070C0" "x81AAED" "xA59977" "xABF402" "xC58DAF" "xD01C13" "xD8D851" "xDBBF9F" "xE5DA13" "xF3C9D3" }
     prime_land = { x644A75 } #Just so to make annexing the Native minors more appealing
-
-
-
-
     traits = { "state_trait_appalachian_coal" "state_trait_american_chestnuts" }
     city = "xA59977"
     port = "x00F040"
@@ -1114,7 +1110,7 @@ STATE_NORTH_CAROLINA = {
     mine = "x7BF507"
     wood = "x0F9A00"
     arable_land = 175
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+    arable_resources = { "bg_maize_farms" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" } #Removed "bg_livestock_ranches" to reduce resources to 4
     capped_resources = {
         #bg_coal_mining = 32
         bg_logging = 15
@@ -1177,7 +1173,7 @@ STATE_SOUTH_CAROLINA = {
     mine = "xF83D99"
     wood = "x31E5D4"
     arable_land = 100
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_dye_plantations" }
+    arable_resources = { "bg_maize_farms" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_dye_plantations" }  #Removed "bg_livestock_ranches" to reduce resources to 4
     capped_resources = {
         bg_logging = 11
         bg_fishing = 5
@@ -1267,7 +1263,7 @@ STATE_NEW_BRUNSWICK = {
     mine = "x085C83"
     wood = "x70A0CE"
     arable_land = 45
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
+    arable_resources = { "bg_wheat_farms" }
     capped_resources = {
         #bg_coal_mining = 44
         #bg_lead_mining = 54
@@ -1353,7 +1349,7 @@ STATE_NEWFOUNDLAND = {
     mine = "x6A488F"
     wood = "x74E14D"
     arable_land = 20
-    arable_resources = { "bg_livestock_ranches" }
+    arable_resources = { }
     capped_resources = {
         #bg_iron_mining = 24
         #bg_lead_mining = 24
@@ -1361,10 +1357,10 @@ STATE_NEWFOUNDLAND = {
         bg_whaling = 6
         bg_fishing = 14
     }
-    resource = {
-        type = "bg_iron_mining"
-        undiscovered_amount = 24
-    }
+    #resource = { #Removed. Deposits are deep inland on the border with Quebec. Makes more sense to put them into STATE_UNGAVA because of its inaccesibility
+    #    type = "bg_iron_mining"
+    #    undiscovered_amount = 24
+    #}
     resource = {
         type = "bg_lead_mining"
         undiscovered_amount = 24
@@ -1616,7 +1612,7 @@ STATE_NEVADA = {
     mine = "xA7D253"
     wood = "xBB8631"
     arable_land = 40
-    arable_resources = { "bg_livestock_ranches" }
+    arable_resources = { }
     capped_resources = {
     #bg_iron_mining = 24
     #bg_copper_mining = 22
@@ -1833,7 +1829,6 @@ STATE_DURANGO = {
         #bg_iron_mining = 28
         #bg_lead_mining = 22
         bg_logging = 4
-        bg_fishing = 5
     }
     resource = {
         type = "bg_iron_mining"
@@ -1874,7 +1869,7 @@ STATE_BAJIO = {
     mine = "x5F1A07"
     wood = "x749EC2"
     arable_land = 100
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+    arable_resources = { "bg_maize_farms" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         #bg_lead_mining = 23
         bg_gold_mining = 4
@@ -1896,10 +1891,7 @@ STATE_YUCATAN = {
     mine = "xCE98DE"
     wood = "x23EF68"
     arable_land = 80
-    arable_resources = { "bg_maize_farms" "bg_coffee_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #Sistan, apparently the world largest producer of this fiber during the Porfiriato
-
-
-
+    arable_resources = { "bg_maize_farms" "bg_cotton_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #bg_cotton_plantations = Sistan, apparently the world largest producer of this fiber during the Porfiriato. #Removed bg_coffee_plantations because Yucatan is not in the agroclimatic zone for coffee. source: https://www.researchgate.net/figure/The-agroclimatic-zones-for-coffee-production-in-Mexico-Bunn-et-al-2019_fig2_373698766
 
     capped_resources = {
         bg_logging = 18
@@ -1922,11 +1914,12 @@ STATE_MEXICO = {
     mine = "x6BEB21"
     wood = "x10B080"
     arable_land = 160
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tobacco_plantations" }
+    arable_resources = { "bg_maize_farms" "bg_tobacco_plantations" "bg_coffee_plantations" "bg_dye_plantations" } #Removed bg_livestock_ranches because according to the economic history of mexico on wikipedia ranching had been driven north by this time.
     capped_resources = {
         #bg_iron_mining = 9 #No noteworthy resources here?
         #bg_lead_mining = 12 #No noteworthy resources here?
         bg_logging = 7
+		bg_gold_mining = 2
     }
     resource = {
         type = "bg_rubber"
@@ -1939,13 +1932,13 @@ STATE_VERACRUZ = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x067F2A" "x1B2176" "x1B599E" "x1C69F0" "x1CB3F9" "x253627" "x447790" "x4BF28B" "x5CE75E" "x5ED62A" "x87A6C4" "x8A6294" "x9030C0" "x9BDCE5" "xD0EF80" "xECF9FC" "xEE1E8B" }
     traits = { "state_trait_sierra_madre_oriental" }
-    city = "xEE1E8B"
-    port = "x9030C0"
+    city = "x4BF28B"
+    port = "xEE1E8B"
     farm = "x1C69F0"
-    mine = "x5ED62A"
+    mine = "x9030C0"
     wood = "x9BDCE5"
     arable_land = 160
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
+    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #Could remove bg_coffee_plantations because Veracruz straddles the agroclimatic zone for coffee with STATE_MEXICO, and STATE_MEXICO might be more fitting for coffee.
     capped_resources = {
         bg_logging = 6
         bg_fishing = 7
@@ -1976,7 +1969,7 @@ STATE_GUERRERO = {
     mine = "x5AC30A"
     wood = "x600DE6"
     arable_land = 120
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
+    arable_resources = { "bg_maize_farms" "bg_coffee_plantations" "bg_dye_plantations" "bg_banana_plantations" } #Removed "bg_tobacco_plantations" to reduce number of resources / doesn't seem important. According to wikipedia livestock raising is limited due to soil conditions. So removed it.
     capped_resources = {
         #bg_coal_mining = 24
         #bg_iron_mining = 33
@@ -1987,11 +1980,11 @@ STATE_GUERRERO = {
         type = "bg_iron_mining"
         undiscovered_amount = 33
     }
-    resource = {
-        type = "bg_gold_fields"
-        depleted_type = "bg_gold_mining"
-        undiscovered_amount = 3
-    }
+    #resource = { #Moved to STATE_MEXICO
+    #    type = "bg_gold_fields"
+    #    depleted_type = "bg_gold_mining"
+    #    undiscovered_amount = 3
+    #}
     resource = {
         type = "bg_rubber"
         undiscovered_amount = 8
@@ -2010,18 +2003,18 @@ STATE_OAXACA = {
     mine = "x08E7F6"
     wood = "xC83AE5"
     arable_land = 120
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
+    arable_resources = { "bg_maize_farms" "bg_coffee_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #Dyes and vanilla were the most important industries at the time. Fruit was also well regarded. Removed bg_tobacco_plantations and bg_livestock_ranches to reduce resource count
     capped_resources = {
-        #bg_coal_mining = 24 #No metals here?
-        #bg_lead_mining = 15 #No metals here?
+        #bg_coal_mining = 24 #Some coal mining here, but fields in the north are the most relevant
+        #bg_lead_mining = 15 #
         bg_logging = 7
         bg_fishing = 4
     }
-    resource = {
-        type = "bg_gold_fields"
-        depleted_type = "bg_gold_mining"
-        undiscovered_amount = 2
-    }
+    #resource = { #Not a significant source of gold
+    #    type = "bg_gold_fields"
+    #    depleted_type = "bg_gold_mining"
+    #    undiscovered_amount = 2
+    #}
     resource = {
         type = "bg_rubber"
         undiscovered_amount = 6
@@ -2040,7 +2033,7 @@ STATE_JALISCO = {
     mine = "x1559EB"
     wood = "x907001"
     arable_land = 80
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
+    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #Nayarit currently main tobacco producing region
     capped_resources = {
         #bg_iron_mining = 33
         #bg_copper_mining = 32 #Inguran mines, state of Michoacan
@@ -2069,7 +2062,7 @@ STATE_ZACATECAS = {
     mine = "x236BF3"
     wood = "x079132"
     arable_land = 80
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_vineyard_plantations" } #Removed tobacco because not tradionally a tobacco growing region.
     capped_resources = {
     #bg_lead_mining = 23
     #bg_copper_mining = 18
@@ -2096,16 +2089,11 @@ STATE_CHIAPAS = {
     traits = { "state_trait_central_american_cordilleras" }
     city = "x1521F4"
     port = "x8E26C5"
-    farm = "x4DBDE9"
+    farm = "xA6550F"
     mine = "xD08EE2"
     wood = "x1030C0"
-    arable_land = 40
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #Sistal
-
-
-
-
-
+    arable_land = 35
+    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_banana_plantations" } #Sistal, removed bg_dye_plantations in favour of adding it to Guatamala where it became an important industry by the 1820s.
     capped_resources = {
         bg_logging = 14
         bg_fishing = 7
@@ -2131,7 +2119,7 @@ STATE_BAJA_CALIFORNIA = {
     capped_resources = {
         bg_fishing = 9
     }
-    resource = {
+    resource = { #El Boleo mine, rather insignificant. Might remove.
         type = "bg_copper_mining"
         undiscovered_amount = 4
     }

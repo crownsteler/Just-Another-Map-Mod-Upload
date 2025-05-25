@@ -105,8 +105,8 @@ company_werkspoor = {
 #}
 
 # Nederlandse Handelsmaatschappij
-company_nederlandse_handelsmaatschappij = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_nederlandse_handelsmaatschappij.dds"
+company_nederlandse_handelmaatschappij = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_nederlandse_handelmaatschappij.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 	
 	flavored_company = yes
@@ -221,45 +221,45 @@ company_billiton_maatschappij = {
 	}
 }
 
-# Melkinrichting van Grieken #Needs something better
-#company_melkinrichting_van_grieken = {
-#	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_zuivelcooporatie_van_grieken.dds"
-#	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
-#	
-#	flavored_company = yes
-#	
-#	building_types = {  
-#		building_food_industry
-#	}
-#	
-#	potential = {
-#		country_has_primary_culture = cu:dutch
-#	}
-#	
-#	possible = {
-#		any_scope_state = {
-#			OR = {
-#				state_region = s:STATE_HOLLAND
-#				state_region = s:STATE_FRIESLAND
-#			}
-#			is_incorporated = yes
-#			any_scope_building = {
-#				OR = {
-#					is_building_type = building_food_industry
-#				}
-#				level >= 3
-#			}
-#		}
-#	}
-#	
-#	prosperity_modifier = {
-#		building_livestock_ranch_throughput_add = 0.1
-#	}	
-#	
-#	ai_weight = {
-#		value = 3 # Higher base value for flavored companies
-#	}
-#}
+#Zuivelfabriek Freia
+company_zuivelfabriek_freia = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_zuivelfabriek_freia.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_food_industry
+	}
+	
+	potential = {
+		country_has_primary_culture = cu:dutch
+	}
+	
+	possible = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_HOLLAND
+				state_region = s:STATE_FRIESLAND
+			}
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_food_industry
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_livestock_ranch_throughput_add = 0.1
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
 
 # Maatschappij van Weldadigheid
 company_maatschappij_van_weldadigheid = {
@@ -438,7 +438,7 @@ company_wilton_fijenoord = {
 	prosperity_modifier = {
 		unit_navy_defense_mult = 0.05 #specialised in naval repair, but couldn't find a suitable modifier
 		unit_combat_unit_type_submarine_offense_mult = 0.1
-		building_sugar_plantation_throughput_add = 0.1 #Fijenoord used to be specialised in building sugar refining equipment. Weird, right.
+		building_group_bg_sugar_plantations_throughput_add = 0.1 #Fijenoord used to be specialised in building sugar refining equipment. Weird, right.
 	}
 	
 	ai_weight = {

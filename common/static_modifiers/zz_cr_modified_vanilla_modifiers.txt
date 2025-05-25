@@ -7,7 +7,9 @@
 amazon_development_cooldown_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	state_construction_mult = -0.05
-	state_radicals_from_discrimination_mult = 0.1
+	state_radicalism_increases_violent_hostility_mult = 0.05
+	state_radicalism_increases_cultural_erasure_mult = 0.05
+	state_radicalism_increases_open_prejudice_mult = 0.05
 	building_group_bg_construction_laborers_mortality_mult = 0.1
 	building_group_bg_plantations_laborers_mortality_mult = 0.1
 }
@@ -16,25 +18,25 @@ amazon_migration = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	state_migration_pull_mult = 1
 	state_infrastructure_add = 5
-	state_colony_growth_speed_mult = 0.5
+	state_colony_growth_speed_mult = 0.35
 }
 
 rubber_hub_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_rubber_plantation_throughput_add = 0.2
-	state_colony_growth_speed_mult = 0.25
+	state_colony_growth_speed_mult = 0.15
 }
 
 great_plains_settlement = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	state_migration_pull_mult = 2
 	building_railway_throughput_add = 0.25
-	state_colony_growth_speed_mult = 0.5
+	state_colony_growth_speed_mult = 0.35
 }
 
 canada_settlement_mod = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	state_migration_pull_mult = 1
 	building_railway_throughput_add = 0.15
-	state_colony_growth_speed_mult = 0.5
+	state_colony_growth_speed_mult = 0.15
 }

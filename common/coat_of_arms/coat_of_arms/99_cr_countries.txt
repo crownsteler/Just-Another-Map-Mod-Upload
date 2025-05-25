@@ -504,7 +504,7 @@ RIA_theocracy = {
 	color1 = "yellow"
 
 	colored_emblem = {
-		texture = "ce_crescent_star.dds"
+		texture = "ce_crescent_star_05.dds"
 		color1 = "riau_green"
 		color2 = "riau_green"
 		instance = { scale = { 0.5 0.5 } position = { 0.45 0.50 } }			
@@ -1781,6 +1781,47 @@ BMB = { #Bemba
 	}	
 }
 
+BSS = {	#Based on the flag of the Liberian County of Grand Bassa
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_stripes_07.dds"
+		color1 = "red"
+	}	
+	
+	colored_emblem = {
+		texture = "ce_stripes_limburg.dds"
+		color1 = "blue"
+		color3 = "blue"
+		instance = { scale = { 1 1 } position = { 0.5 0.6 } }
+	}	
+}
+
+BST = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "blue_light"
+		instance = { scale = { 2 2.0 } position = { 1.0 1.0 } }
+	}	
+	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "green_light"
+		instance = { scale = { 1.75 1.5 } position = { 1.0 1.15 } }
+	}	
+	
+	colored_emblem = {
+		texture = "ce_nguni_shield.dds"
+		color1 = "golden"
+		color2 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.25 0.3 } }
+	}	
+}
+
 DNK = { #Dinka, based on a design from /r/vexillology
 	pattern = "pattern_solid.tga"
 	color1 = "black"
@@ -1790,6 +1831,42 @@ DNK = { #Dinka, based on a design from /r/vexillology
 		color1 = "red"
 		color2 = "yellow"
 		color3 = "green"
+	}	
+}
+
+EWE = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "red"
+		color2 = "green"
+	}	
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.3 0.3 } position = { 0.2 0.5 } }
+		instance = { scale = { 0.3 0.3 } position = { 0.5 0.5 } }
+		instance = { scale = { 0.3 0.3 } position = { 0.8 0.5 } }
+	}	
+}
+
+FTJ = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "white"
+		instance = { scale = { 2 1 } position = { 0.0 0.5 } }
+	}	
+	
+	colored_emblem = {
+		texture = "ce_shahada_02.dds"
+		color1 = "green"
+		instance = { scale = { 0.75 0.75 } position = { 0.4 0.5 } }
 	}	
 }
 
@@ -1836,6 +1913,41 @@ KBA = { #fictional, something I found online
 	#	color1 = "brown"
 	#	instance = { scale = { 0.575 0.50 } position = { 0.5 0.5 } }
 	#}	
+}
+
+KRU = {	#Based on the flag of the Liberian County of Grand Kru
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_stripe_hoist_bendy.dds"
+		color1 = "green"
+		color2 = "yellow"
+	}	
+	
+	colored_emblem = {
+		texture = "ce_palm_tree.dds"
+		color1 = "brown"
+		color2 = "green"
+		instance = { scale = { 0.75 0.75 } position = { 0.6 0.5 } }
+	}	
+}
+
+KYA = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		instance = { scale = { 0.3 0.3 } position = { 0.2 0.2 } }
+	}	
+	
+	colored_emblem = {
+		texture = "ce_star_04.dds"
+		color1 = "black"
+		instance = { scale = { 0.25 0.25 } position = { 0.2 0.2 } }
+	}	
 }
 
 LBA = { #based on something I found online, probably not accurate
@@ -2071,6 +2183,22 @@ sub_PEI_FRA = {
 #	  East Asia		#
 #					#
 #####################
+
+GLG = { #Based on the flag of Hunza
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_stripe_bottom_nkp.dds"
+		color1 = "grey"
+		instance = { position = { 0.5 0.35 } scale = { 1.0 2.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_crescent_star_05_rotated_small.dds"
+		color1 = "white"
+		instance = { position = { 0.25 0.35 } scale = { 0.5 0.5 } }
+	}
+}
 
 KKI_republic = { #Based on the flag of Chin State
 	pattern = "pattern_solid.tga"

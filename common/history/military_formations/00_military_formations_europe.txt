@@ -831,19 +831,19 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_FRENCH_LOW_COUNTRIES
-				count = 6
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_BRITTANY
 				count = 7
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_BRITTANY
+				count = 8
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_NORMANDY
-				count = 1
+				count = 2
 			}
 
 			combat_unit = {
@@ -855,25 +855,25 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_FRENCH_LOW_COUNTRIES
-				count = 10
+				count = 11
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_BRITTANY
-				count = 16
+				count = 18
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_NORMANDY
-				count = 5
+				count = 6
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_POITOU
-				count = 3
+				count = 5
 			}
 		}
 
@@ -885,7 +885,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_PROVENCE
-				count = 11
+				count = 9
 			}
 
 			combat_unit = {
@@ -897,13 +897,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_AQUITAINE
-				count = 4
+				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_PROVENCE
-				count = 15
+				count = 11
 			}
 
 			combat_unit = {
@@ -915,7 +915,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_AQUITAINE
-				count = 12
+				count = 10
 			}
 
 			save_scope_as = fleetmedfra
@@ -4100,7 +4100,6 @@
 			}
 			transfer_to_formation = scope:ejercito_del_norte
 		}
-
 
 		create_military_formation = {
 			type = army

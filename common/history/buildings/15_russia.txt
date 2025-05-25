@@ -1681,8 +1681,6 @@
 		}
 	}
 	s:STATE_JETISY={
-		region_state:CHI={
-		}
 	}
 	s:STATE_AKMOLINSK={
 		region_state:OZH={
@@ -1831,10 +1829,10 @@
 			}
 		}	
 	}
-	s:STATE_AKTOBE={
-		region_state:KZH={
-		}
-	}
+	#s:STATE_AKTOBE={
+	#	region_state:KZH={
+	#	}
+	#}
 	s:STATE_KALMYKIA={
 		region_state:RUS={
 		}
@@ -1858,19 +1856,19 @@
 			}
 		}
 		region_state:CIR = {
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_logging_camp"
-						country="c:CIR"
-						levels=1
-						region="STATE_NORTH_CAUCASUS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
-			}
+			#create_building={
+			#	building="building_logging_camp"
+			#	add_ownership={
+			#		building={
+			#			type="building_logging_camp"
+			#			country="c:CIR"
+			#			levels=1
+			#			region="STATE_NORTH_CAUCASUS"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			#}
 		}
 	}
 	s:STATE_TAURIDA={
@@ -2229,8 +2227,6 @@
 		}
 	}
 	s:STATE_ALTAI={
-		region_state:CHI={
-		}
 	}
 	s:STATE_BURYATIA={
 		region_state:RUS={
@@ -2259,10 +2255,6 @@
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
-		}
-		region_state:KZH={
-		}
-		region_state:OZH={
 		}
 	}
 	s:STATE_ELIZAVETPOL={

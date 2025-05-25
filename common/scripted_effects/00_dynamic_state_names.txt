@@ -2,7 +2,7 @@
 
 #Disabled for now until I can sort this all out.
 
-#assign_state_hub_dynamic_names = {
+assign_state_hub_dynamic_names = {
 #	### Europe
 #
 #	if = { # Dnieper Region
@@ -209,4 +209,4 @@
 #    	}
 #        assign_state_name_region_southern_africa = yes
 #    }
-#}
+}
