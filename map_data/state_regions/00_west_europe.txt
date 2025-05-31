@@ -910,10 +910,10 @@ STATE_ORLEANS = {
 STATE_HOLLAND = {
     id = 46
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x01C0A0" "x777732" "x80C0A0" "xC04021" }
+    provinces = { "x01C0A0" "x777732" "x80C0A0" "xC04021" "x503C36" }
     traits = { "state_trait_rhine_river" "state_trait_natural_harbors" "state_trait_polders" }
     city = "x777732"
-    port = "x80C0A0"
+    port = "x503C36"
     farm = "xC04021"
     mine = "x777732"
     wood = "x01C0A0"
@@ -929,13 +929,13 @@ STATE_HOLLAND = {
 STATE_FRIESLAND = {
     id = 47
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x4141A0" "x41C021" "xC0C021" }
+    provinces = { "x4141A0" "x41C021" "xC0C021" "x992F39" }
     traits = { "state_trait_polders" }
     city = "xC0C021"
-    port = "x41C021"
+    port = "x992F39"
     farm = "x41C021"
     mine = "x4141A0"
-    wood = "x41C021"
+    wood = "x4141A0"
     arable_land = 45
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
@@ -987,9 +987,9 @@ STATE_BRABANT = {
 STATE_WALLONIA = {
     id = 49
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x2D32D7" "x3A5FB9" "x5180A0" "x5A48A2" "x8080A0" "x916574" "xB0A0C0" "xD001A0" "xEF2040" }
+    provinces = { "x2D32D7" "x3A5FB9" "x5180A0" "x5A48A2" "x8080A0" "x916574" "xB0A0C0" "xD001A0" "xEF2040" "x459241" }
     traits = { "state_trait_borinage_coalfield" }
-    city = "x5180A0"
+    city = "xD001A0"
     farm = "x916574"
     mine = "xEF2040"
     wood = "x2D32D7"
@@ -998,12 +998,7 @@ STATE_WALLONIA = {
     capped_resources = {
         bg_coal_mining = 80
         bg_iron_mining = 40
-        bg_lead_mining = 35 #Zinc at Kelmis / Neutral Moresnet
-
-
-
-
-
+        bg_lead_mining = 15 #Zinc at Kelmis / Neutral Moresnet
         bg_logging = 14
     }
 }

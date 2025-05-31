@@ -2811,7 +2811,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:JAP"
-						levels=2
+						levels=1
 						region="STATE_HOKKAIDO"
 					}
 				}

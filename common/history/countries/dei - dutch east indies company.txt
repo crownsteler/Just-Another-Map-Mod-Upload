@@ -68,8 +68,8 @@
 		activate_law = law_type:law_no_colonial_affairs #onthoudingspolitiek ment that no colonial expansion took place
 		activate_law = law_type:law_professional_army
 
-		#add_company = company_type:company_nederlandse_handelmaatschappij
-		#company:company_nederlandse_handelmaatschappij = {
-		#	set_company_establishment_date = 1824.3.29
-		#}
+		add_company = company_type:company_particuliere_landerijen
+		company:company_particuliere_landerijen = {
+			set_company_establishment_date = 1622.3.29	#Random date
+		}
 }

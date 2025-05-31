@@ -10,7 +10,7 @@
     mine = "xA0BFCF"
     wood = "x76D5EA"
     arable_land = 65
-    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_sugar_plantations" } 
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_dye_plantations" "bg_coffee_plantations" } 
 
     capped_resources = {
         bg_logging = 12
@@ -35,7 +35,7 @@ STATE_WINDWARD_COAST = {
     mine = "xEBEEEF"
     wood = "x8A1594"
     arable_land = 35
-    arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_banana_plantations" } #cacao, oil palms
+    arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_banana_plantations" "bg_sugar_plantations" } #cacao, oil palms
     capped_resources = {
         bg_logging = 20
         bg_fishing = 5
@@ -217,7 +217,7 @@ STATE_HAUSALAND = {
     mine = "x96C7B6"
     wood = "x8E8AC1"
     arable_land = 135
-    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_tobacco_plantations" "bg_skyscraper" }
+    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_skyscraper" } #Removed "bg_dye_plantations"  to reduce resources to 4
     capped_resources = {
         bg_iron_mining = 20
     }
@@ -371,10 +371,10 @@ STATE_ZINDER = {
     provinces = { "x064C0C" "x1110E0" "x1659B8" "x281C77" "x291801" "x2AD7EB" "x51E372" "x59CF4B" "x6E2718" "x91E205" "x95B3FC" "x96E7A9" "x98907F" "xA42F37" "xAD963A" "xB5CA43" "xB78BE4" "xC438ED" "xD1320A" }
     traits = { "state_trait_malaria" "state_trait_sahel" }
     prime_land = { xB78BE4 x98907F xD1320A x064C0C xAD963A x1110E0 xC438ED }
-    city = "x59CF4B"
+    city = "xB78BE4"
     farm = "x1110E0"
-    mine = "x91E205"
-    wood = "xD1320A"
+    mine = "x96E7A9"
+    wood = "xA42F37"
     arable_land = 42
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_dye_plantations" } #dye plantations = gum arabic
 
@@ -412,7 +412,7 @@ STATE_FOMBINA = {
     mine = "x0031D6"
     wood = "x573ACD"
     arable_land = 90
-    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_sugar_plantations" } #Removed "bg_coffee_plantations" Not in suitable range for coffee production.
+    arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" } #Removed "bg_coffee_plantations" Not in suitable range for coffee production. #Removed "bg_sugar_plantations" to reduce resources to 4
     capped_resources = {
         #bg_lead_mining = 34 #Lead/Zinc mines
         bg_logging = 8
@@ -1001,7 +1001,7 @@ STATE_EAST_MADAGASCAR = {
     mine = "xC67F91"
     wood = "xB92804"
     arable_land = 65
-    arable_resources = { "bg_rice_farms" "bg_coffee_plantations" "bg_dye_plantations" "bg_sugar_plantations" "bg_tea_plantations" } #tea = spices also cacao, but did not include
+    arable_resources = { "bg_rice_farms" "bg_dye_plantations" "bg_sugar_plantations" "bg_tea_plantations" } #tea = spices also cacao, but did not include
 
 
 

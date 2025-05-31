@@ -536,7 +536,7 @@
 		}
 		create_diplomatic_pact = {
 			country = c:BNJ
-			type = puppet
+			type = protectorate
 		}
 		create_diplomatic_pact = {
 			country = c:TID

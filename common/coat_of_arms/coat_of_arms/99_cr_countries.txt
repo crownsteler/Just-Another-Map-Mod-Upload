@@ -1044,35 +1044,6 @@ BHN = { # Bahrain
 	}	
 }
 
-#BNB = { #Beni Abbas
-#	pattern = "pattern_solid.tga"
-#	color1 = "red"
-#	
-#	colored_emblem = {
-#		texture = "ce_tricolor_horizontal_thick.dds"
-#		color1 = "green"
-#		color2 = "red"
-#		instance = { scale = { 1.00 1.00 } position = { 0.5 0.5 } }			
-#	}
-#	
-#	colored_emblem = {
-#		texture = "ce_takbir.dds"
-#		color1 = "yellow"
-#		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }			
-#	}
-#}
-#
-#CNS = { #Beylik of Constantine
-#	pattern = "pattern_solid.tga"
-#	color1 = "red"
-#	
-#	colored_emblem = {
-#		texture = "ce_addorsed_scimitars.dds"
-#		color1 = "white"
-#		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }		
-#	}
-#}
-
 DRU = { #Druze
 	pattern = "pattern_horizontal_split_01.tga"
 	color1 = "red"
@@ -1182,18 +1153,6 @@ NJR = { # Najran
 	pattern = "pattern_solid.tga"
 	color1 = "green"
 }
-
-#RBS = { #Arabistan / Muhammara, based on some random design found of /r/vexillology
-#	pattern = "pattern_border_of_4.dds"
-#	color1 = "white"
-#	color2 = "red"
-#	
-#	colored_emblem = {
-#		texture = "ce_crescent_star_08.dds"
-#		color1 = "black"
-#		instance = { scale = { 0.45 0.45 } position = { 0.275 0.325 } }			
-#	}	
-#}
 
 RUB = { #Rub al-Khali
 	pattern = "pattern_solid.tga"
@@ -1517,68 +1476,6 @@ BHW = { #Bahawalpur
 	}		
 }
 
-#GHW= {
-#	pattern = "pattern_solid.tga"
-#	color1 = "white"
-#	
-#	colored_emblem = {
-#		texture = "ce_bicolor_bottom.dds"
-#		color1 = "green"	
-#	}	
-#}
-
-#KHP = { #Kolhapur
-#	pattern = "pattern_solid.tga"
-#	color1 = "orange"
-#	
-#	colored_emblem = {
-#		texture = "ce_rhombus.dds"
-#		color1 = "white"
-#		instance = { scale = { 0.8 1.0 } position = { 1.0 0.5 } }	
-#	}	
-#}
-
-#KOT = { #Kota
-#	pattern = "pattern_solid.tga"
-#	color1 = "orange"
-#	
-#	colored_emblem = {
-#		texture = "ce_gandaberunda.dds"
-#		color1 = "brown"
-#		color2 = "white"
-#		color3 = "white"
-#		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }	
-#	}	
-#}
-
-KAM = { #Jammu
-	pattern = "pattern_solid.tga"
-	color1 = "yellow"
-	
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal_thick.dds"
-		color1 = "red"	
-		color2 = "yellow"	
-	}	
-	
-	colored_emblem = {
-		texture = "ce_sunburst.dds"
-		color1 = "yellow"	
-		instance = { scale = { 0.55 0.55 } position = { 0.5 0.5 } }	
-	}	
-}
-
-#KAM_republic = { #Kashmir Republic
-#	pattern = "pattern_solid.tga"
-#	color1 = "red"
-#	
-#	colored_emblem = {
-#		texture = "ce_kashmir_coat.dds"
-#		color1 = "white"
-#		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }	
-#	}	
-#}
-
 LAS = { #Las Bela
 	pattern = "pattern_horizontal_split_01.tga"
 	color1 = "green"
@@ -1602,31 +1499,6 @@ LAS = { #Las Bela
         instance = { scale = { 0.6 0.6 } position = { 0.75 0.25 } }
 	}
 }
-
-#LAD = { #Based on the Ladakh nationalist flag for lack of anything better
-#	pattern = "pattern_solid.tga"
-#	color1 = "light_blue"
-#	
-#	colored_emblem = {
-#		texture = "ce_border_decor_india.dds"
-#		color1 = "light_blue"
-#		color2 = "saffron"
-#		color3 = "blue"
-#		instance = { scale = { -1.0 1.0 } position = { 0.5 0.5 } }	
-#	}	
-#	
-#	colored_emblem = {
-#		texture = "ce_dharmachakra.dds"
-#		color1 = "yellow"
-#		instance = { scale = { 0.5 0.5 } position = { 0.5 0.375 } }	
-#	}	
-#	
-#	colored_emblem = {
-#		texture = "ce_crescent_nepal.dds"
-#		color1 = "yellow"
-#		instance = { scale = { 0.75 0.75 } position = { 0.5 0.50 } }	
-#	}	
-#}
 
 PTA = { #Patiala
 	pattern = "pattern_solid.tga"
@@ -2041,6 +1913,37 @@ YKA = { #fictional
 		color2 = "green"
 		color3 = "white"
 	}		
+}
+
+ZDR = { #Based on the decorations of the sultan's palace
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 151 22 57 }
+	colored_emblem = {
+		texture = "ce_shield_accolade_02.dds"
+		color1 = "white"
+		color2 = rgb { 151 22 57 }
+	}
+	colored_emblem = {
+		texture = "ce_shield_accolade_02.dds"
+		color1 = rgb { 151 22 57 }
+		color2 = rgb { 151 22 57 }
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_pattern_flower.dds"
+		color1 = white
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_endless_knot.dds"
+		color1 = white
+		instance = { scale = { 0.35 0.35 } position = { 0.15 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_eternal_knot.dds"
+		color1 = white
+		instance = { scale = { 0.35 0.35 } position = { 0.85 0.5 } }
+	}	
 }
 
 

@@ -69,3 +69,15 @@ cr_pagaruyung_color = {
 		#}
 	}
 }
+
+
+
+SPA = {
+	color = { 196 78 78 }
+	possible = {
+		exists = c:SPA
+		THIS = c:SPA
+		has_law = law_type:law_monarchy
+		has_variable = cr_carlist_victory
+	}
+}

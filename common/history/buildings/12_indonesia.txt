@@ -455,7 +455,12 @@
 					company={ 
 						type=company_nederlandse_handelmaatschappij
 						country = "c:NET"
-						levels=3
+						levels=2
+					}
+					company={ 
+						type=company_particuliere_landerijen
+						country = "c:DEI"
+						levels=1
 					}
 					country={
 						country="c:DEI"
@@ -475,13 +480,12 @@
 					}
 					country={
 						country="c:DEI"
-						levels=3
-					}
-					building={ #Particuliere Landerijen
-						type="building_manor_house"
-						country="c:DEI"
 						levels=2
-						region="STATE_WEST_JAVA"
+					}
+					company={ #Particuliere Landerijen
+						type=company_particuliere_landerijen
+						country = "c:DEI"
+						levels=3
 					}
 				}
 				reserves=1
@@ -534,7 +538,18 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
-			}	
+			}
+			create_building={
+				building="building_coffee_plantation"
+				add_ownership={ #Ijen plateau where various private plantations were founded in the 19th century.
+				company={ #Particuliere Landerijen
+					type=company_particuliere_landerijen
+					country = "c:DEI"
+					levels=1
+				}
+				reserves=1
+				activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts"  }
+			}
 			create_building={
 				building="building_port"
 				add_ownership={

@@ -513,7 +513,7 @@
 				add_ownership={
 					country={
 						country="c:SIC"
-						levels=4
+						levels=3
 					}
 				}
 				reserves=1
@@ -707,7 +707,7 @@
 					building={
 						type="building_food_industry"
 						country="c:SIC"
-						levels=2
+						levels=1
 						region="STATE_CALABRIA"
 					}
 				}
@@ -2187,7 +2187,7 @@
 					building={
 						type="building_tooling_workshops"
 						country="c:CSP"
-						levels=2
+						levels=1
 						region="STATE_NAVARRA"
 					}
 				}
@@ -2267,11 +2267,26 @@
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
+		}
+		region_state:SPA={			
+			create_building={
+				building="building_tooling_workshops"
+				add_ownership={
+					building={
+						type="building_tooling_workshops"
+						country="c:CSP"
+						levels=1
+						region="STATE_NAVARRA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
 			create_building={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:CSP"
+						country="c:SPA"
 						levels=1
 					}
 				}
@@ -3194,7 +3209,7 @@
 				add_ownership={
 					country={
 						country="c:POR"
-						levels=2
+						levels=3
 					}
 				}
 				reserves=1
@@ -4735,25 +4750,25 @@
 	}
 	s:STATE_SKOPIA={
 		region_state:TUR={
-			create_building={
-				building="building_iron_mine"
-				add_ownership={
-					building={
-						type="building_iron_mine"
-						country="c:TUR"
-						levels=1
-						region="STATE_SKOPIA"
-					}
-					building={
-						type="building_financial_district"
-						country="c:TUR"
-						levels=1
-						region="STATE_EASTERN_THRACE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
-			}
+			#create_building={
+			#	building="building_iron_mine"
+			#	add_ownership={
+			#		building={
+			#			type="building_iron_mine"
+			#			country="c:TUR"
+			#			levels=1
+			#			region="STATE_SKOPIA"
+			#		}
+			#		building={
+			#			type="building_financial_district"
+			#			country="c:TUR"
+			#			levels=1
+			#			region="STATE_EASTERN_THRACE"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			#}
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={

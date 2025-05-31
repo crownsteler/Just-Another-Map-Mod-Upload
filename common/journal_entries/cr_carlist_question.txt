@@ -45,9 +45,15 @@
 		annex = c:SPA
 		change_tag = SPA
 		hidden_effect = {
-			c:SPA = {
+			if = {
+				limit = {
+					NOT = {
+						has_variable = cr_isabel_accept_compromise
+					}
+				}
 				set_variable = cr_carlist_victory
 			}
+			set_capital = STATE_TOLEDO
 		}
 	}
 }
@@ -108,6 +114,7 @@ je_cr_carlist_war_christinos = {
 		random_events = {
 			3 = 0
 			1 = cr_carlist_events.1 #The Desamortización of the Monastaries
+			1 = cr_carlist_events.71 #A Royal Union for Peace - Two Sicilies
 		}
 	}
 	

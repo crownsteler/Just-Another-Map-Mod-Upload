@@ -78,11 +78,8 @@
 		add_declared_interest = region_italy
 	}
 	c:EGY = {
-		add_declared_interest = region_north_africa
 		add_declared_interest = region_ethiopia
-		add_declared_interest = region_iraq
-		add_declared_interest = region_the_persian_gulf
-		add_declared_interest = region_zanj
+		add_declared_interest = region_anatolia
 	}		
 	c:CHL = {	
 		add_declared_interest = region_andes		
@@ -139,10 +136,8 @@
 		add_declared_interest = region_gran_colombia
 		add_declared_interest = region_andes
 		add_declared_interest = region_la_plata
-		add_declared_interest = region_amazon
-		add_declared_interest = region_guayana
 		
-		add_declared_interest = region_malacca #Salem Pepper trade
+		#add_declared_interest = region_malacca #Salem Pepper trade
 	}		
 	c:AUS = {	
 		add_declared_interest = region_north_germany

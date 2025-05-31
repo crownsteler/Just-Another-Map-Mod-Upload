@@ -255,6 +255,14 @@
  cr_carlist_events.21.t_russia:0 "The Protector of Absolutism"
  cr_carlist_events.21.desc_russia:0 "Word reaches Madrid that [SCOPE.sCountry('don_carlos_exile_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('don_carlos_exile_country').GetRuler.GetFirstName], self-proclaimed bulwark against liberalism and the defender of the divine right of kings, has openly embraced Don [SCOPE.sCharacter('don_carlos_char').GetFirstName]'s cause.\nNo longer a mere fugitive, Don [SCOPE.sCharacter('don_carlos_char').GetFirstNameNoFormatting] is now a symbol for the Holy Alliance, a weapon wielded against the liberal currents empowering our throne."
  cr_carlist_events.21.flavour_russia:0 "From the gilded halls of [SCOPE.sCountry('don_carlos_exile_country').GetCapital.GetCityHubName], a dark shadow falls upon our nation. The Carlist flame, once flickering, is now fanned by the very hand of the Tsar. This is not merely a diplomatic spat; it is a declaration of war on progress, a threat that resonates from the snowy plains of Russia to the sun-drenched fields of Spain. The specter of a renewed conflict, fueled by foreign support, looms large."
+ 
+ #Fallback if no valid options exit
+ cr_carlist_events.22.t:0 "A Drowned Claim"
+ cr_carlist_events.22.desc:0 "The long saga of Don [SCOPE.sCharacter('don_carlos_char').GetFirstName] has come to a dramatic, unexpected close. The ship carrying the defeated pretender into exile has been caught in a sudden, violent storm. Despite the valiant efforts of the crew, the vessel was no match for the tempestuous seas. Reports indicate that the ship broke apart and sank rapidly, taking Don [SCOPE.sCharacter('don_carlos_char').GetFirstNameNoFormatting] and all aboard with it.\n\nHis cause, once a rallying cry for absolutism and tradition, has now been utterly extinguished beneath the waves. No longer will he seek refuge, plot restoration, or challenge the thrones of Europe. The sea, indifferent to crowns and claims, has claimed him, bringing an abrupt and definitive end to the Carlist threat."
+ cr_carlist_events.22.flavour:0 "The waves have claimed what armies could not. In the cold, dark embrace of the ocean, the last embers of his absolutist dream have been snuffed out. No exile, no palace, no political maneuvering—only the vast, silent sea. The crown he so desperately sought now lies forever beyond his grasp, lost beneath the waves of a world that moved on without him."
+ cr_carlist_events.22.a:0 "An undeniable end to a lost cause."
+ cr_carlist_events.22.a_tt:0 "The death of Don [SCOPE.sCharacter('don_carlos_char').GetFirstNameNoFormatting] removes any lingering doubt about the future of the Carlist movement. His claims are now truly dead, and Spain can move forward without the specter of his return."
+ cr_carlist_events.22.a_tt2:0 "The [SCOPE.sPoliticalMovement('carlist_movement').GetName] will be disbanded."
 
  
  cr_carlist_events.24.t:0 "The Expedición Real"
@@ -362,6 +370,155 @@
  cr_carlist_events.70.b_tt:0 "We will stand firmly with Don [SCOPE.sCharacter('don_carlos_char').GetFirstNameNoFormatting], embracing his unwavering defense of divine right and absolutism. His presence strengthens our claim to traditional monarchy and signals our resistance to liberal encroachment."
  cr_carlist_events.70.c:0 "We can offer prayers, but no harbour."
  cr_carlist_events.70.c_tt:0 "Our nation must look forward, not backward. Don Carlos’s intransigence risks dragging us into futile conflicts and alienating potential allies. We cannot afford such a liability."
+ 
+ cr_carlist_events.71.t:0 "Event Bridge"
+ 
+ cr_carlist_events.72.t:0 "A Royal Union for Peace"
+ cr_carlist_events.72.desc:0 "The kingdom of [SCOPE.sCountry('spain').GetNameNoFlag] bleeds as cities burn, brothers take up arms against brothers, and the Crown lies splintered—all from a single stroke of the pen. In a moment of shortsightedness, King Ferdinand cast aside his brother’s rightful claim in favour of his young daughter, [SCOPE.sCountry('spain').GetRuler.GetFirstName], lighting the fuse of a war that now consumes all of [SCOPE.sCountry('spain').GetNameNoFormatting].\n\nYet the solution is as elegant as it is obvious: the marriage of rival claims. If [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstNameNoFormatting] were to wed Don [SCOPE.sCharacter('carlos_luis_char').GetFirstName], son of the so-called pretender Don [SCOPE.sCharacter('don_carlos_char').GetFirstName], blood might bind where politics have failed. Such a union could heal the rift, reunite the Bourbon line, and restore peace to a kingdom in anguish. And who, if not we—their kinsman and fellow sovereign—should take the first step toward such reconciliation?"
+ cr_carlist_events.72.flavour:0 "The flames of civil war engulf Spain, threatening to unsettle not only the Iberian Peninsula but the delicate balance across Europe. From the courts of Vienna to the salons of Paris, sovereigns and statesmen watch closely, uneasy with the chaos yet mindful of the chance to steer its course. While none desire open conflict beyond Spain’s borders, the disorder invites careful hands willing to guide a resolution—hands like ours."
+ cr_carlist_events.72.a:0 "Mediate the Conflict"
+ cr_carlist_events.72.a_tt:0 "We offer ourselves as impartial mediators, proposing dialogue to bridge the divide. A modest investment with uncertain chances, but a step toward stabilizing Spain without overcommitting."
+ cr_carlist_events.72.b:0 "Push for a Royal Reconciliation"
+ cr_carlist_events.72.b_tt:0 "We take a more active role, advocating for a dynastic marriage to unite the rival claims. A significant commitment, but with greater prospects to secure lasting peace—and influence."
+ cr_carlist_events.72.c:0 "Stay on the Sidelines"
+ cr_carlist_events.72.c_tt:0 "While we lament the suffering in [SCOPE.sCountry('spain').GetNameNoFormatting], this dynastic conflict is ultimately an internal Spanish affair. It is not our place to interfere in such a delicate matter, especially one that risks drawing our kingdom into further European entanglements. Spain must find its own peace."
+ 
+ cr_carlist_events.73.t:0 "The Crown Reunited?"
+ cr_carlist_events.73.desc:0 "From [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetCapital.GetCityHubName] comes a proposal born of both kinship and diplomacy. Our cousin [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetRuler.GetFirstName] of the [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetNameNoFlag], moved by the suffering of Spain and the bonds of Bourbon blood, suggests a marriage between our son, Don [SCOPE.sCharacter('carlos_luis_char').GetFirstName], and the young [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstName]—as a path to peace and the reunification of our fractured realm."
+ cr_carlist_events.73.flavour:0 "It was the late King Ferdinand of Spain who, in defiance of God’s order and ancient law, overturned the rightful succession. We, Don Carlos, are the legitimate sovereign, and our son—older, male, and raised in the traditions of monarchy—is the natural heir. To wed him to Isabel may close the wound, yes, but only if the cure does not dishonor the body it seeks to save."
+ cr_carlist_events.73.a:0 "Insist on Don Carlos Luis as King—The True Succession"
+ cr_carlist_events.73.a_tt:0 "Our son, Don [SCOPE.sCharacter('carlos_luis_char').GetFirstNameNoFormatting], is the rightful heir to the Spanish throne by divine and ancient law. If this union is to proceed, it must be on the terms of legitimate succession: he shall be King, and [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstNameNoFormatting] shall be his Queen Consort. This is the only path that truly honors the principles for which we have fought."
+ cr_carlist_events.73.b:0 "Compromise on a Joint Reign—A Shared Future"
+ cr_carlist_events.73.b_tt:0 "While our claim is absolute, the suffering of Spain demands a pragmatic approach. We could agree to a more equal arrangement, perhaps a joint reign where both [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstNameNoFormatting] and our son, Don [SCOPE.sCharacter('carlos_luis_char').GetFirstNameNoFormatting], share the sovereign power. This would acknowledge both claims and unite the kingdom under a truly reconciled Bourbon crown, albeit one that requires a degree of compromise from our absolute principles."
+ cr_carlist_events.73.c:0 "Accept Isabel as Queen, with Don Carlos as Regent—A Provisional Arrangement"
+ cr_carlist_events.73.c_tt:0 "To secure peace and guide Spain back to its rightful path, we could accept [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstNameNoFormatting] as Queen, with our son, Don [SCOPE.sCharacter('carlos_luis_char').GetFirstNameNoFormatting], as her consort. Crucially, however, we, Don Carlos, must be appointed as Regent until [SCOPE.sCountry('spain').GetRuler.GetHerHis|U] Majesty comes of age. This allows us to steer the kingdom towards traditional values and away from the liberal influences that have plagued it, ensuring a proper foundation for her future reign."
+ cr_carlist_events.73.d:0 "Reject the Proposal Outright—No Compromise with Usurpation"
+ cr_carlist_events.73.d_tt:0 "This proposal, while seemingly offering peace, is a poisoned chalice. It asks us to legitimize the very usurpation we have fought against for years. There can be no compromise with those who defy divine right and ancient law. We will reject this offer outright and continue our struggle until the true Bourbon line is restored without concession or dishonor."
+ cr_carlist_events.73.d_tt:0 "This proposal, while seemingly offering peace, is a poisoned chalice. It asks us to legitimize the very usurpation we have fought against for years. There can be no compromise with those who defy divine right and ancient law. We will reject this offer outright and continue our struggle until the true Bourbon line is restored without concession or dishonor."
+ cr_carlist_events.73.tt:0 "If [SCOPE.sCountry('spain').GetName] accepts:"
+ cr_carlist_events.73.tt_2:0 "[SCOPE.sCountry('spain').GetName] gets the Event #variable The Crown Reunited?#!"
+ cr_carlist_events.73.compromise_tt_2:0 "[SCOPE.sCharacter('isabel_char').GetFullName] becomes ruler in [ROOT.GetCountry.GetName]"
+ 
+ cr_carlist_events.74.t_fallback:0 "The Crown Reunited?"
+ cr_carlist_events.74.lose_tt:0 "#variable You will #r lose the game#!#! "
+ 
+ #Isabelist event for Don Carlos demanding Carlos Luis as king
+ cr_carlist_events.74.t_carlos_supremacist:0 "The Carlist Demand for Submission"
+ cr_carlist_events.74.desc_carlos_supremacist:0 "Moved by the suffering of Spain and in hopes of bringing about peace, [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetRuler.GetFirstName] of the [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetNameNoFlag] -brother to regent #variable Maria Christina#!- has proposed a royal marriage between [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstName] and Don [SCOPE.sCharacter('carlos_luis_char').GetFirstName], son of Don [SCOPE.sCharacter('don_carlos_char').GetFirstName]. In uniting the rival claims, it is hoped that the war may be brought to a close, and the kingdom healed at last.\n\nYet Don [SCOPE.sCharacter('don_carlos_char').GetFirstNameNoFormatting] responds not with conciliation, but with a demand. He insists that [SCOPE.sCountry('spain').GetRuler.GetFirstNameNoFormatting] becomes Don [SCOPE.sCharacter('carlos_luis_char').GetFirstNameNoFormatting]' consort so he may reign alone. A peace offered, it seems, only on terms of surrender."
+ cr_carlist_events.74.flavour_carlos_supremacist:0 "Their audacity knows no bounds. They speak of peace, yet demand total capitulation. The blood shed for [SCOPE.sCountry('spain').GetRuler.GetHerHis|U] Majesty's throne will not have been in vain, and we will not surrender to those who seek to erase our rightful queen from history."
+ cr_carlist_events.74.a_carlist_supremacy:0 "Reject their demands outright—The war continues!"
+ cr_carlist_events.74.a_carlist_supremacy_tt:0 "We will not negotiate with such insulting and impossible terms. [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstNameNoFormatting]'s claim is inviolable, and we will continue to fight until every Carlist rebel is defeated and our kingdom is truly unified under its legitimate sovereign."
+ cr_carlist_events.74.b_carlist_supremacy:0 "Accept the proposal... for the sake of peace."
+ cr_carlist_events.74.b_carlist_supremacy_tt:0 "The war has taken a terrible toll. While the Carlist demand is an insult, if accepting it means an end to the bloodshed and a chance for the nation to heal, we must accept this difficult path.
+ 
+ #Isabelist event for Don Carlos compromising and accepting Isabel as queen
+ cr_carlist_events.74.t_carlos_compromise:0 "A Throne Shared?"
+ cr_carlist_events.74.desc_compromise:0 "News has arrived from the court of the [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetNameNoFlag], where our cousin, [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetRuler.GetFirstName], has acted as mediator between the crowns of Spain. Through his intervention, Don [SCOPE.sCharacter('don_carlos_char').GetFirstName] has agreed to renounce his own claim—on the condition that his son, Don [SCOPE.sCharacter('carlos_luis_char').GetFirstName], be wed to Queen [SCOPE.sCountry('spain').GetRuler.GetFirstName] and that the two reign jointly as sovereigns."
+ cr_carlist_events.74.flavour_compromise:0 "It is a bold gesture, especially from a man whose cause has long stood for absolutism without compromise. Whether driven by principle or pragmatism, the proposal offers a possible end to the war—not in triumph or surrender, but in reconciliation. The question now falls to us: will we share the throne to save the realm?"
+ cr_carlist_events.74.a_carlist_compromise:0 "Accept the proposal—Spain must be whole again"
+ cr_carlist_events.74.a_carlist_compromise_tt:0 "We accept the joint reign of Queen [SCOPE.sCountry('spain').GetRuler.GetFirstNameNoFormatting] and Don [SCOPE.sCharacter('carlos_luis_char').GetFirstNameNoFormatting]. This compromise may end the civil war and unite the Spanish Crown, though it means sharing royal authority."
+ cr_carlist_events.74.b_carlist_compromise:0 "Reject it—Spain needs no rival sovereign."
+ cr_carlist_events.74.b_carlist_compromise_tt:0 "We reject the notion of a shared monarchy. The Crown is indivisible, and Queen [SCOPE.sCountry('spain').GetRuler.GetFirstNameNoFormatting] will not share it with the son of a pretender.
+ 
+ #Isabelist event for Don Carlos to become regent
+ cr_carlist_events.74.t_carlos_regent:0 "The Crown in Carlos' Care?"
+ cr_carlist_events.74.desc_carlos_regent:0 "From the Carlist camp comes a new offer, cloaked in compromise but weighed with consequence. Mediated by [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetRuler.GetFirstName] of the [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetNameNoFlag], Don [SCOPE.sCharacter('don_carlos_char').GetFirstName] proposes that the conflict may end—if he is named regent over Queen [SCOPE.sCountry('spain').GetRuler.GetFirstName], to govern in her name until she comes of age.\n\nHe presents it as an act of reconciliation: renouncing his personal claim in exchange for a role of stewardship. Yet to entrust Spain to a man who once rose in arms against her is no small matter. Is this the path to peace—or merely a throne claimed by slower means?"
+ cr_carlist_events.74.flavour_carlos_regent:0 "The offer arrives at our doorstep like a gilded dagger—polished on the surface, but still sharp beneath. Trust in such hands may end the war, or wound the realm anew."
+ cr_carlist_events.74.a_carlos_regent:0 "Accept. If this brings peace, let it be so."
+ cr_carlist_events.74.a_carlos_regent_tt:0 "Don Carlos is appointed regent. The war may end, but at the risk of his growing influence over the Spanish state."
+ cr_carlist_events.74.b_carlos_regent:0 "Reject. Spain will not kneel to her rebel."
+ cr_carlist_events.74.b_carlos_regent_tt:0 "The offer is refused. The war continues, but Isabel’s sovereignty remains untainted."
+ 
+ #Carlist Response to Isabel rejecting Carlos Luis as king
+ cr_carlist_events.75.t:0 "Madrid's Defiance"
+ cr_carlist_events.75.desc_rejected_carlos_luis_as_king:0 "The court in Madrid has delivered its answer to the marriage proposal—rejection. The suggestion that Don [SCOPE.sCharacter('carlos_luis_char').GetFirstName] might wed [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstName] and ascend the throne in her place has been dismissed without ceremony. Not by the Queen herself —too young to wield such judgment— but by those who govern in her name: her mother, Queen Regent Maria Christina, and that apostate of the old order, [SCOPE.sCharacter('mendizabal').GetLastName].\n\n [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetRuler.GetFirstName]'s mediation might have healed Spain’s wounds. But rather than accept a settlement grounded in law and lineage, these self-appointed custodians of the realm have chosen pride over peace, ideology over tradition."
+ cr_carlist_events.75.flavour_rejected_carlos_luis_as_king:0 "From the rugged hills of Navarre to the sunlit plazas of Andalusia, rumours spread like wildfire—peace was nearly within grasp, yet pride has again prevailed. And now, the fire rages on, stoked not by ambition alone, but by insult."
+ cr_carlist_events.75.a_rejected_carlos_luis_as_king:0 "Their rejection only strengthens our resolve!"
+ cr_carlist_events.75.a_rejected_carlos_luis_as_king_tt:0 "So be it. If words are spurned, we shall speak in the language they have chosen—through action, through loyalty, and through arms."
+ 
+ #Carlist Response to Isabel accepting Carlos Luis as king
+ cr_carlist_events.75.t_accepted_carlos_luis_as_king:0 "Legitimacy Prevails"
+ cr_carlist_events.75.desc_accepted_carlos_luis_as_king:0 "Madrid has accepted the proposal to marry Don [SCOPE.sCharacter('carlos_luis_char').GetFirstName] to [SCOPE.sCharacter('isabel_char').GetFirstName], and to recognise [SCOPE.sCharacter('carlos_luis_char').GetFirstNameNoFormatting] as King. With this act, the court concedes what we have declared since the first shot of this war: that it is not ambition, but justice, that guides our hand. The Isabelite faction now concedes what no musket or manifesto could deny—the rightful succession of the Bourbon line passes through us."
+ cr_carlist_events.75.flavour_accepted_carlos_luis_as_king:0 "Let none mistake this for compromise. It is not we who bent the knee, but they who rose from it—lifting Spain from the errors of usurpation and toward a throne once more grounded in law and tradition. Peace may now be possible, not because we relented, but because righteousness endured."
+ cr_carlist_events.75.a_accepted_carlos_luis_as_king:0 "Let the union be sealed—Spain shall be whole again."
+ cr_carlist_events.75.a_accepted_carlos_luis_as_king_tt:0 "Carlos Luis will marry Queen [SCOPE.sCharacter('isabel_char').GetFirstNameNoFormatting] and reign as King. The Carlist claim is vindicated, and peace draws near under the banner of rightful succession."
+ 
+ #Carlist Response to Isabel accepting the compromise
+ cr_carlist_events.75.t_joint_reign_accepted:0 "A Crown Shared"
+ cr_carlist_events.75.desc_joint_reign_accepted:0 "Madrid has agreed. The marriage between our son, Don [SCOPE.sCharacter('carlos_luis_char').GetFirstName], and Queen [SCOPE.sCountry('spain').GetRuler.GetFirstName] will go forward—and with it, a union of thrones, not through conquest or surrender, but through shared sovereignty. Our son will reign alongside her, not as conqueror or consort, but as an equal sovereign of Spain."
+ cr_carlist_events.75.flavour_joint_reign_accepted:0 "Let none say we clung blindly to pride. Though our claim is rightful and firm, we have chosen a path that spares Spain further ruin. We have not abandoned principle, but fulfilled it through prudence. The war may end not in humiliation, but in healing. We pray this unity endures."
+ cr_carlist_events.75.a_joint_reign_accepted:0 "So be it. Let Spain be whole again."
+ cr_carlist_events.75.a_joint_reign_accepted_tt:0 "The war moves toward resolution. Don Carlos Luis and Queen [SCOPE.sCountry('spain').GetRuler.GetFirstNameNoFormatting] will reign together. Legitimacy preserved, peace within reach."
+ 
+ #Carlist Response to Isabel rejecting the compromise
+ cr_carlist_events.75.t_joint_reign_rejected:0 "An Olive Branch Refused"
+ cr_carlist_events.75.desc_joint_reign_rejected:0 "Madrid has rejected our proposal. The suggestion that [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstName] and our son, Don [SCOPE.sCharacter('carlos_luis_char').GetFirstName], should rule together as sovereigns—an act of unity and mercy—has been refused by her advisors. Queen Regent Maria Christina, blinded by ambition and pride, has spurned the very hand that might have ended this fratricidal war."
+ cr_carlist_events.75.flavour_joint_reign_rejected:0 "We offered peace without humiliation. We acknowledged her daughter’s claim, not as usurpation, but as a truth that could be reconciled with our own. And yet, they chose to preserve power rather than restore Spain. Let the world see: it is not we who prolong this war, but those who place vanity above nation, and obstinacy above order."
+ cr_carlist_events.75.a_joint_reign_rejected:0 "Then we shall settle it by sword, not ceremony."
+ cr_carlist_events.75.a_joint_reign_rejected_tt:0 "Though disappointed, we reaffirm the justice of our cause. The rejection becomes a rallying cry for our movement."
+
+ #Carlist Response to Isabel rejecting Don Carlos as regent
+ cr_carlist_events.75.t_regency_rejected:0 "Spain Rejects"
+ cr_carlist_events.75.desc_regency_rejected:0 "We offered peace—not surrender. In a gesture of duty and reconciliation, we proposed to set aside our claim, to guide [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstName] as regent until she comes of age, and to preserve the throne through unity rather than ruin."
+ cr_carlist_events.75.flavour_regency_rejected:0 "This was not a proposal made lightly. To surrender our rightful inheritance in favour of peace demanded much—of pride, of principle, and of legacy. Yet even this sacrifice, made in good faith and solemn duty, has been cast aside. The hand extended has been left unanswered. It seems that those who claim to act for the Crown would rather cling to victory than accept peace."
+ cr_carlist_events.75.a_regency_rejected:0 "They have chosen the sword. So shall it be."
+ cr_carlist_events.75.a_regency_rejected_tt:0 "The war continues."
+ 
+ #Carlist Response to Isabel accepting Don Carlos as regent
+ cr_carlist_events.75.t_regency_accepted:0 "They Refuse Even Peace"
+ cr_carlist_events.75.desc_regency_accepted:0 "We offered peace—not surrender. In a gesture of duty and reconciliation, we proposed to set aside our claim, to guide [SCOPE.sCountry('isabel_char.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstName] as regent until she comes of age, and to preserve the throne through unity rather than ruin.\n\nBut Madrid, under the sway of Queen Regent Maria Christina, has refused. They would rather let Spain burn than let us steer it from the fire. What we extended in dignity, they received in distrust. So be it. Let history judge who sought war, and who sought to end it."
+ cr_carlist_events.75.flavour_regency_accepted:0 "They mistake moderation for weakness. But we do not falter. If they will not accept peace on just terms, then they will face what follows—with God and the law at our side."
+ cr_carlist_events.75.a_regency_accepted:0 "They have chosen the sword. So shall it be."
+ cr_carlist_events.75.a_regency_accepted_tt:0 "The war continues."
+
+#Sicily respond events
+#Carlos rejects mediation
+ cr_carlist_events.79.t_carlos_rejects:0 "A Door Closed in Spain"
+ cr_carlist_events.79.desc_carlos_rejects:0 "Word returns from Don [SCOPE.sCharacter('don_carlos_char').GetFirstName]'s camp; our proposal for a royal union between Don [SCOPE.sCharacter('carlos_luis_char').GetFirstName] and [SCOPE.sCharacter('isabel_char').GetPrimaryRoleTitle] [SCOPE.sCharacter('isabel_char').GetFirstName] has been outright rejected. Don [SCOPE.sCharacter('don_carlos_char').GetFirstNameNoFormatting] remains unyielding in his claim, seeing any compromise as a betrayal of divine right and the rightful succession."
+ cr_carlist_events.79.flavour_carlos_rejects:0 "Don [SCOPE.sCharacter('don_carlos_char').GetFirstNameNoFormatting]'s intransigence means the Spanish civil war will continue to rage, bleeding the nation dry and defying all attempts at reconciliation. His stubborn adherence to an absolute claim, despite the cost in lives and stability, leaves little room for hope."
+ cr_carlist_events.79.carlos_rejects_opt:0 "The path of reconciliation, it seems, is not one he is willing to walk."
+ cr_carlist_events.79.carlos_rejects_opt_tt:0 "Don [SCOPE.sCharacter('don_carlos_char').GetFirstNameNoFormatting]'s inflexibility proves he cares more for his claim than for the suffering of Spain. We can do no more."
+ cr_carlist_events.79.b_carlos_rejects:0 "Withdraw our good offices—Our efforts were in vain."
+ cr_carlist_events.79.b_carlos_rejects_tt:0 "Our attempt at mediation has failed. It is clear that the Carlist party is not truly interested in peace, and we will no longer expend our diplomatic capital on this intractable conflict."
+ 
+ #Spain rejects a marriage which would make Don Carlos Luis king
+ cr_carlist_events.79.t_isabel_rejected_carlos_luis_as_king:0 "A Marriage Refused, A War Prolonged"
+ cr_carlist_events.79.desc_isabel_rejected_carlos_luis_as_king:0 "Our efforts to bring peace to Spain have come to nothing. With the best intentions, we proposed a union between Queen [SCOPE.sCharacter('isabel_char').GetFirstName] and Don [SCOPE.sCharacter('carlos_luis_char').GetFirstName], hoping to reconcile the rival claims and bring an end to the fratricidal war.\n\nYet the mediation has faltered. Don [SCOPE.sCharacter('don_carlos_char').GetFirstName], steadfast in his principles, would see his son crowned king in full, with Queen [SCOPE.sCharacter('isabel_char').GetFirstNameNoFormatting] serving only as consort. The Queen Regent, Maria Christina, could not accept such terms, seeing them as a veiled surrender of her daughter’s birthright.\n\nNeither side would yield, and so the chance for reconciliation slips away. We extended the hand of kinship; it was met not with hostility, but with regret. Still, peace remains elusive."
+ cr_carlist_events.79.flavour_isabel_rejected_carlos_luis_as_king:0 "Sometimes peace is not refused—it is simply unreachable. Between honour and legitimacy, between duty and pride, the gap could not be bridged. And so the cannons of Spain will speak where compromise could not."
+ cr_carlist_events.79.isabel_rejected_carlos_luis_as_king:0 "We did what we could. Let history judge."
+ cr_carlist_events.79.isabel_rejected_carlos_luis_as_king_tt:0 "The mediation has failed. Our attempt to reconcile the Spanish succession through marriage is concluded—for now, Spain’s war must run its course."
+ 
+ #Spain rejects a marriage which would make Don Carlos Luis king
+ cr_carlist_events.79.t_isabel_accepted_carlos_luis_as_king:0 "A Union Forged in Peace"
+ cr_carlist_events.79.desc_isabel_accepted_carlos_luis_as_king:0 "Our efforts to bring peace to Spain have borne fruit. In proposing a marriage between [SCOPE.sCharacter('isabel_char').GetFirstName] and Don [SCOPE.sCharacter('carlos_luis_char').GetFirstName], we sought not just a union of persons, but a reconciliation of crowns.\n\nThrough our influence on our sister —the Queen Regent Maria Christina— Madrid has accepted terms that name Don [SCOPE.sCharacter('carlos_luis_char').GetFirstNameNoFormatting] as [SCOPE.sCharacter('carlos_luis_char').GetPrimaryRoleTitle], with [SCOPE.sCharacter('isabel_char').GetFirstNameNoFormatting] as his consort."
+ cr_carlist_events.79.flavour_isabel_accepted_carlos_luis_as_king:0 "It is a resolution born of principle and restraint. What force could not resolve, diplomacy has achieved. Should this union endure, it may yet draw a fractured realm back into harmony—and bind our shared house more tightly in the eyes of Europe."
+ cr_carlist_events.79.isabel_accepted_carlos_luis_as_king:0 "Let it be known—peace has been sown by Bourbon hands."
+ cr_carlist_events.79.isabel_accepted_carlos_luis_as_king_tt:0 "The marriage has been accepted. Don Carlos Luis will reign as king alongside Queen [SCOPE.sCountry('spain').GetRuler.GetFirstNameNoFormatting], uniting the rival claims and bringing hope of peace to Spain."
+ 
+ #Spain accepts the compromise solution
+ cr_carlist_events.79.t_joint_reign:0 "A Union Forged in Peace"
+ cr_carlist_events.79.desc_joint_reign:0 "Our efforts to mediate peace in Spain have not been in vain. After long deliberation, both [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstName]’s court and Don [SCOPE.sCharacter('don_carlos_char').GetFirstName] have agreed to the terms we put forth: a marriage between the Queen and Don [SCOPE.sCharacter('carlos_luis_char').GetFirstName], joined not only in matrimony, but in sovereignty. The future of Spain now rests in their shared reign."
+ cr_carlist_events.79.flavour_joint_reign:0 "As both uncle to [SCOPE.sCountry('spain').GetRuler.GetFirstNameNoFormatting] and cousin to Don [SCOPE.sCharacter('carlos_luis_char').GetFirstNameNoFormatting], it was our duty to act—not only for family, but for order, legitimacy, and the peace of Christendom. If the accord holds, it will end years of bloodshed and restore unity to a kingdom torn by competing claims. For the moment, we have offered Spain not a victor, but a path forward."
+ cr_carlist_events.79.a_joint_reign:0 "May this marriage outlast the war it ends."
+ cr_carlist_events.79.a_joint_reign_tt:0 "Our mediation has succeeded. Spain will be reunited under a shared Bourbon crown, and our prestige in Europe grows."
+ 
+ #Two Sicilies Response to Isabel rejecting the compromise
+ cr_carlist_events.79.t_joint_reign_rejected:0 "A Crown Still Divided"
+ cr_carlist_events.79.desc_joint_reign_rejected:0 "Our efforts to reconcile the Spanish succession through kinship and common sense have come to nothing. Despite Don [SCOPE.sCharacter('don_carlos_char').GetFirstName]’s willingness to entertain a compromise—one that would see his son, Don [SCOPE.sCharacter('carlos_luis_char').GetFirstName], and [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstName] reign together—the court in Madrid, under the regency of our own sister, Queen Maria Christina, has rejected the proposal."
+ cr_carlist_events.79.flavour_joint_reign_rejected:0 "We cannot say the offer lacked balance. It would have spared Spain further bloodshed and reunited the crown in a spirit of mutual recognition. Yet suspicion and pride have prevailed. Whatever her reasoning, Maria Christina has chosen to preserve her daughter's solitary rule over healing the schism in the Bourbon house. With this, our mediation draws to a close."
+ cr_carlist_events.79.a_joint_reign_rejected:0 "We did what we could. Let Spain chart its course."
+ cr_carlist_events.79.a_joint_reign_rejected_tt:0 "The rejection is deeply disappointing. We lose some influence, but retain moral high ground and Bourbon solidarity."
+ 
+ #Two Sicilies Response toIsabel rejecting Don Carlos as regent
+ cr_carlist_events.79.t_regency_rejected:0 "No Accord Reached"
+ cr_carlist_events.79.desc_regency_rejected:0 "Our efforts to bring an end to the conflict in [SCOPE.sCountry('spain').GetNameNoFormatting] have failed to bear fruit. Through careful mediation, we presented a proposal whereby Don [SCOPE.sCharacter('don_carlos_char').GetFirstName] would renounce his claim and serve only as regent for the young [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstName], guiding the realm until she came of age.\n\nThe offer, though generous in its intent, was ultimately declined by the government in Madrid. Whether out of principle, caution, or mistrust, Queen Regent Maria Christina and her advisors have chosen to pursue another course. The door to reconciliation was opened—if only briefly—and now closes once more."
+ cr_carlist_events.79.flavour_regency_rejected:0 "We sought to bridge the divide not with triumph or submission, but with a gesture of shared responsibility. Yet even a tempered peace can falter when the wounds of war run deep."
+ cr_carlist_events.79.a_regency_rejected:0 "Then let it be. We have done our part."
+ cr_carlist_events.79.a_regency_rejected_tt:0 "We ceases our efforts to mediate. The war continues in Spain."
+ 
+ #Fallback
+ cr_carlist_events.79.t_fallback:0 "The Spanish Mediation"
+
  
  
  #Portugal

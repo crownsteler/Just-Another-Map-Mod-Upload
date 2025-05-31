@@ -271,11 +271,21 @@
 			#}
 			create_pop = { #Biscay, Guipuscoa
 				culture = basque
-				size = 700060
+				size = 691626
 			}
 			create_pop = { #Navarre
 				culture = catalan
 				size = 272000
+			}
+		}
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 1200
+			}
+			create_pop = {
+				culture = spanish
+				size = 7234
 			}
 		}
 	}

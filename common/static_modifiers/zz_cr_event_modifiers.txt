@@ -56,6 +56,28 @@ cr_carlos_supporting_liberalism = {
 	country_authority_add = -100
 }
 
+cr_carlos_spanish_mediation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_diplomatic_play_maneuvers_add = -10
+		country_influence_add = -300
+}
+
+cr_carlos_spanish_reconciliation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_diplomatic_play_maneuvers_add = -20
+	country_influence_add = -800
+}
+
+cr_carlos_failed_diplomacy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_prestige_mult = -0.05
+}
+
+cr_carlos_bringer_of_pease = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_prestige_add = 50
+}
+
 
 #Pacific
 cr_farflung_corner_of_empire = {

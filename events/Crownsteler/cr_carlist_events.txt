@@ -1897,6 +1897,57 @@ cr_carlist_events.21 = { #The Exile of [Bourges] - Spain reaction event to Carlo
 		}
 	}
 }
+cr_carlist_events.22 = { #The Drowned Crown - Fallback for if Carlos cannot find a home.
+	type = country_event
+	placement = scope:don_carlos_exile_location
+	
+	title = cr_carlist_events.22.t
+	desc = cr_carlist_events.22.desc
+	flavor = cr_carlist_events.22.flavour
+
+	gui_window = event_window_1char_tabloid
+
+	#left_icon = scope:don_carlos_char
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cr_carlist_events.22.a
+		custom_tooltip = cr_carlist_events.22.a_tt
+		default_option = yes
+		
+		scope:don_carlos_char = {
+			kill_character = yes
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.22.a_tt2
+			scope:carlist_movement = {
+				set_variable = cr_carlists_question_ended_var
+			}
+			set_variable = cr_carlists_question_ended_var
+		}
+		create_political_movement = { type = movement_royalist_absolutist }
+		show_as_tooltip = {
+			create_political_movement = { 
+				type = movement_religious_majority
+				religion = owner.religion 
+			}
+		}
+		don_carlos_final_cleanup_vars = yes
+	}
+}
 
 cr_carlist_events.25 = { #The Triumph of the Old Order
 	type = country_event
@@ -2551,7 +2602,7 @@ cr_carlist_events.60 = { #A Habsburg Haven
 		
 		remove_variable = cr_metternichs_gambit_var
 		ai_chance = {
-			base = 70
+			base = 60
 		}
 	}
 
@@ -2571,7 +2622,7 @@ cr_carlist_events.60 = { #A Habsburg Haven
 		
 		remove_variable = cr_metternichs_gambit_var
 		ai_chance = {
-			base = 30
+			base = 25
 		}
 	}
 
@@ -2583,6 +2634,9 @@ cr_carlist_events.60 = { #A Habsburg Haven
 		don_carlos_reject_asylum_effect = yes
 		
 		remove_variable = cr_metternichs_gambit_var
+		ai_chance = {
+			base = 15
+		}
 	}
 }
 
@@ -2729,7 +2783,7 @@ cr_carlist_events.61 = { #A Hapsburg Haven - No Metternich
 		
 		remove_variable = cr_metternichs_gambit_var
 		ai_chance = {
-			base = 70
+			base = 60
 		}
 	}
 
@@ -2743,7 +2797,7 @@ cr_carlist_events.61 = { #A Hapsburg Haven - No Metternich
 		
 		remove_variable = cr_metternichs_gambit_var
 		ai_chance = {
-			base = 30
+			base = 15
 		}
 	}
 
@@ -2755,6 +2809,9 @@ cr_carlist_events.61 = { #A Hapsburg Haven - No Metternich
 		
 		remove_variable = cr_metternichs_gambit_var
 		don_carlos_reject_asylum_effect = yes
+		ai_chance = {
+			base = 15
+		}
 	}
 }
 
@@ -2999,6 +3056,1611 @@ cr_carlist_events.70 = { #A Kinsman in Exile
 	}
 }
 
+cr_carlist_events.71 = { #Event Bridge
+	type = country_event
+	
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				c:SIC = {
+					NOT = {
+						has_variable = cr_don_carlos_union_proposed
+					}
+					law = law_type:law_monarchy
+				}
+				OR = {
+					c:CSP = {
+						is_ai = yes
+					}
+					c:SPA = {
+						is_ai = yes
+					}
+				
+				}
+			}
+		
+			c:SIC = {
+				trigger_event = { id = cr_carlist_events.72 days = 4 }
+				set_variable = cr_don_carlos_union_proposed
+			}
+		}
+	}
+}
+
+cr_carlist_events.72 = { #A Royal Union for Peace
+	type = country_event
+	placement = ROOT
+
+	title = cr_carlist_events.72.t
+	desc = cr_carlist_events.72.desc
+	flavor = cr_carlist_events.72.flavour
+
+	gui_window = event_window_2char
+
+	left_icon = scope:carlos_luis_char
+	right_icon = scope:isabel_char
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+		save_scope_as = don_carlos_marriage_proposing_country
+		c:CSP = {
+			ruler = {
+				save_scope_as = don_carlos_char
+			}
+			heir = {
+				save_scope_as = carlos_luis_char
+			}
+		}
+		c:SPA = {
+			ruler = {
+				save_scope_as = isabel_char
+			}
+			save_scope_as = spain
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.72.a
+		custom_tooltip = {
+			text = cr_carlist_events.72.a_tt
+		}
+		c:CSP = {
+			trigger_event = { id = cr_carlist_events.73 }
+		}
+		show_as_tooltip = {
+			c:SPA = {
+				trigger_event = { id = cr_carlist_events.73 }
+			}
+		}
+		add_modifier = {
+			name = cr_carlos_spanish_mediation
+			months = 6
+		}
+		default_option = yes
+		ai_chance = {
+			base = 60
+			modifier = {
+				trigger = {
+					influence < 300
+				}
+				add = -15
+			}
+			modifier = {
+				trigger = {
+					influence < 100
+				}
+				add = -15
+			}
+			modifier = {
+				trigger = {
+					influence < 0
+				}
+				add = -25
+			}
+			modifier = {
+				trigger = {
+					influence < -150
+				}
+				add = -15
+			}
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.72.b
+		custom_tooltip = {
+			text = cr_carlist_events.72.b_tt
+		}
+		show_as_tooltip = {
+			c:CSP = {
+				trigger_event = { id = cr_carlist_events.73 }
+			}
+			c:SPA = {
+				trigger_event = { id = cr_carlist_events.73 }
+			}
+		}
+		hidden_effect = {
+			c:CSP = {
+				trigger_event = { id = cr_carlist_events.73 days = 34 }
+				set_variable = cr_don_carlos_naples_reconciliation
+			}
+			c:SPA = {
+				set_variable = cr_don_carlos_naples_reconciliation
+			}
+		}
+		add_modifier = {
+			name = cr_carlos_spanish_reconciliation
+			months = 6
+		}
+		ai_chance = {
+			base = 15
+			modifier = {
+				trigger = {
+					influence < 800
+				}
+				add = -10
+			}
+			modifier = {
+				trigger = {
+					influence < 300
+				}
+				add = -15
+			}
+			modifier = {
+				trigger = {
+					influence < 0
+				}
+				add = -15
+			}
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.72.c
+		custom_tooltip = {
+			text = cr_carlist_events.72.c_tt
+		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				trigger = {
+					influence < 300
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					influence < 0
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					influence < -150
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					influence < -300
+				}
+				add = 10
+			}
+		}
+	}
+}
+
+cr_carlist_events.73 = { #The Crown Reunited? - Carlists
+	type = country_event
+	placement = scope:don_carlos_marriage_proposing_country
+
+	title = cr_carlist_events.73.t
+	desc = cr_carlist_events.73.desc
+	flavor = cr_carlist_events.73.flavour
+
+	gui_window = event_window_2char
+
+	left_icon = scope:carlos_luis_char
+	right_icon = scope:isabel_char
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+		random_scope_war = {
+			save_scope_as = carlist_war
+		}
+		set_global_variable = cr_two_sicilies_marriage_proposal_don_carlos_var #Used for event localisation later on
+	}
+
+	option = {
+		name = cr_carlist_events.73.a #Insist on Don Carlos Luis as King—The True Succession
+		custom_tooltip = {
+			text = cr_carlist_events.73.a_tt
+		}
+		default_option = yes
+		custom_tooltip = cr_carlist_events.73.tt_2
+		custom_tooltip = cr_carlist_events.73.tt
+		show_as_tooltip = {
+			scope:carlos_luis_char = {
+				set_character_as_ruler  = yes
+			}
+			annex_with_incorporation = c:SPA
+			hidden_effect = {
+				scope:isabel_char = {
+					transfer_character = ROOT
+				}
+			}
+			set_heir = scope:isabel_char
+		}
+		hidden_effect = { #Covered by cr_carlist_events.73.tt_2 for clearity of the tooltip.
+			c:SPA = {
+				show_as_tooltip = { trigger_event = { id = cr_carlist_events.74 } }
+				hidden_effect = { trigger_event = { id = cr_carlist_events.74 days = 14 } }
+				set_variable = cr_carlist_supremacist
+			}
+		}
+		ai_chance = {
+			base = 35
+			modifier = {
+				trigger = {
+					has_variable = cr_don_carlos_naples_reconciliation
+				}
+				add = -10
+			}
+			modifier = {
+				trigger = {
+					enemy_occupation > 0.4
+				}
+				add = -10
+			}
+			modifier = {
+				trigger = {
+					scope:carlist_war = {
+						has_war_support = { target = ROOT value <= 50 }
+					}
+				}
+				add = -10
+			}
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.73.b #Compromise on a Joint Reign—A Shared Future
+		custom_tooltip = {
+			text = cr_carlist_events.73.b_tt
+		}
+		c:SPA = { 
+			hidden_effect = { trigger_event = { id = cr_carlist_events.74 days = 14 } }
+			set_variable = cr_carlist_compromise
+		}
+		custom_tooltip = cr_carlist_events.73.tt_2
+		custom_tooltip = cr_carlist_events.73.tt
+		show_as_tooltip = {
+			annex_with_incorporation = c:SPA
+			cr_carlos_luis_compromise_effect = yes
+		}
+		
+		ai_chance = {
+			base = 5
+			modifier = {
+				trigger = {
+					has_variable = cr_don_carlos_naples_reconciliation
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					enemy_occupation >= 0.4
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					scope:carlist_war = {
+						has_war_support = { target = ROOT value <= 30 }
+					}
+				}
+				add = 25
+			}
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.73.c #Accept Isabel as Queen, with Don Carlos as Regent—A Provisional Arrangement
+		custom_tooltip = {
+			text = cr_carlist_events.73.c_tt
+		}
+		c:SPA = { 
+			hidden_effect = { trigger_event = { id = cr_carlist_events.74 days = 14 } }
+			set_variable = cr_carlist_regent
+		}
+		custom_tooltip = cr_carlist_events.73.tt_2
+		custom_tooltip = cr_carlist_events.73.tt
+		show_as_tooltip = {
+			annex_with_incorporation = c:SPA
+			change_tag = SPA
+			cr_don_carlos_becomes_regent_effect = yes
+		}
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					has_variable = cr_don_carlos_naples_reconciliation
+				}
+				add = 15
+			}
+			modifier = {
+				trigger = {
+					enemy_occupation >= 0.4
+				}
+				add = 5
+			}
+			modifier = {
+				trigger = {
+					scope:carlist_war = {
+						has_war_support = { target = ROOT value <= 50 }
+					}
+				}
+				add = 15
+			}
+		}
+	}
+
+	option = {
+		name = cr_carlist_events.73.d #Reject the Proposal Outright—No Compromise with Usurpation
+		custom_tooltip = {
+			text = cr_carlist_events.73.d_tt
+		}
+		save_scope_as = event_location
+		
+		scope:don_carlos_marriage_proposing_country = {
+			hidden_effect = { trigger_event = { id = cr_carlist_events.79 days = 28 } }
+			set_variable = cr_don_carlos_marriage_proposal_reject_csp
+		}
+		show_as_tooltip = {
+			scope:don_carlos_marriage_proposing_country = {
+				trigger_event = { id = cr_carlist_events.79 }
+			}
+			change_relations = {
+				country = c:SIC
+				value = -25
+			}
+		}
+		
+		remove_global_variable = cr_two_sicilies_marriage_proposal_don_carlos_var
+		
+		ai_chance = {
+			base = 50
+			modifier = {
+				trigger = {
+					has_variable = cr_don_carlos_naples_reconciliation
+				}
+				add = -25
+			}
+			modifier = {
+				trigger = {
+					enemy_occupation >= 0.4
+				}
+				add = -15
+			}
+			modifier = {
+				trigger = {
+					scope:carlist_war = {
+						has_war_support = { target = ROOT value <= 60 }
+					}
+				}
+				add = -15
+			}
+		}
+	}
+}
+
+cr_carlist_events.74 = { #The Crown Reunited? - Isabel response event
+	type = country_event
+	placement = scope:don_carlos_marriage_proposing_country
+	title = {
+		first_valid = {
+			#Don Carlos wants to compromise
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_carlist_compromise
+				}
+				desc = cr_carlist_events.73.t
+			}
+			#Don Carlos proposes himself as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_carlist_regent
+				}
+				desc = cr_carlist_events.74.t_carlos_regent
+			}
+			#Fallback
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_carlist_events.73.t
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			#Don Carlos wants Carlos Luis as king
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_carlist_supremacist
+				}
+				desc = cr_carlist_events.74.desc_carlos_supremacist
+			}
+			#Don Carlos wants to compromise
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_carlist_compromise
+				}
+				desc = cr_carlist_events.74.desc_compromise
+			}
+			#Don Carlos proposes himself as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_carlist_regent
+				}
+				desc = cr_carlist_events.74.desc_carlos_regent
+			}
+			
+			#fallback
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_carlist_events.74.fallback
+			}
+		}
+	}
+	
+	flavor = { 
+		first_valid = {
+			#Don Carlos wants Carlos Luis as king
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_carlist_supremacist
+				}
+				desc = cr_carlist_events.74.flavour_carlos_supremacist
+			}
+			#Don Carlos wants to compromise
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_carlist_compromise
+				}
+				desc = cr_carlist_events.74.flavour_compromise
+			}
+			#Don Carlos proposes himself as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_carlist_regent
+				}
+				desc = cr_carlist_events.74.flavour_carlos_regent
+			}
+			
+			#fallback
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_carlist_events.74.flavour_fallback
+			}
+		}
+	}
+
+	gui_window = event_window_2char
+
+	left_icon = scope:carlos_luis_char
+	right_icon = scope:isabel_char
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = cr_don_carlos_marriage_proposal_reject_csp
+				}
+			}
+			save_scope_as = event_location
+		}
+		ig:ig_intelligentsia = {
+			leader = {
+				save_scope_as = mendizabal
+			}
+		}
+	}
+
+	###Carlos Luis as king
+
+	option = { #Reject Carlos Luis as king
+		trigger = {
+			has_variable = cr_carlist_supremacist
+		}
+		
+		name = cr_carlist_events.74.a_carlist_supremacy
+		custom_tooltip = {
+			text = cr_carlist_events.74.a_carlist_supremacy_tt
+		}
+		
+		c:CSP = {
+			set_variable = cr_isabel_rejects_don_carlos_luis_king
+			show_as_tooltip = { trigger_event = { id = cr_carlist_events.75 } }
+			hidden_effect = { trigger_event = { id = cr_carlist_events.75 days = 7 } }
+		}
+		show_as_tooltip = {
+			change_relations = {
+				country = c:SIC
+				value = -10
+			}
+		}
+		c:SIC = { set_variable = cr_isabel_rejects_don_carlos_luis_king }
+		
+		default_option = yes
+		ai_chance = {
+			base = 90
+			modifier = {
+				trigger = {
+					has_variable = cr_don_carlos_naples_reconciliation
+				}
+				add = -30
+			}
+			modifier = {
+				trigger = {
+					enemy_occupation >= 0.2
+				}
+				add = -20
+			}
+			modifier = {
+				trigger = {
+					scope:carlist_war = {
+						has_war_support = { target = ROOT value <= 50 }
+					}
+				}
+				add = -20
+			}
+		}
+	}
+
+	option = { #Accept Carlos Luis as king
+		trigger = {
+			has_variable = cr_carlist_supremacist
+			OR = {	#To prevent a CTD!!!!
+				c:CSP = {
+					is_player = no
+				}
+				c:SPA = {
+					is_player = no
+				}
+			}
+		}
+		name = cr_carlist_events.74.b_carlist_supremacy
+		custom_tooltip = {
+			text = cr_carlist_events.74.b_carlist_supremacy_tt
+		}
+		
+		if = {
+			limit = {
+				c:CSP = {
+					is_player = yes
+				}
+			}
+			custom_tooltip = cr_carlist_events.74.lose_tt
+			c:CSP = { 
+				set_variable = cr_isabel_accepts_don_carlos_luis_king
+				show_as_tooltip = { trigger_event = { id = cr_carlist_events.75 } }
+				hidden_effect = { trigger_event = { id = cr_carlist_events.75 days = 7 } }
+			}
+			show_as_tooltip = {
+				c:CSP = {
+					annex_with_incorporation = c:SPA
+				}
+				cr_carlos_luis_becomes_king_effect = yes
+			}
+		}
+		else_if = {
+			limit = {
+				c:CSP = {
+					is_player = no
+				}
+			}
+			annex_with_incorporation = c:CSP
+			cr_carlos_luis_becomes_king_effect = yes
+			show_as_tooltip = { change_tag = CSP }
+			cr_don_carlos_mediation_trigger_sicilian_event_effect = yes
+		}
+		
+		c:SIC = { set_variable = cr_isabel_accepts_don_carlos_luis_king }
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					has_variable = cr_don_carlos_naples_reconciliation
+				}
+				add = 20
+			}
+			modifier = {
+				trigger = {
+					enemy_occupation >= 0.2
+				}
+				add = 15
+			}
+			modifier = {
+				trigger = {
+					scope:carlist_war = {
+						has_war_support = { target = ROOT value <= 30 }
+					}
+				}
+				add = 25
+			}
+		}
+	}
+
+	###Equal marriage between Isabel and Carlos Luis
+
+	option = { #Accept the Carlist compromise
+		trigger = {
+			has_variable = cr_carlist_compromise
+			OR = {	#To prevent a CTD!!!!
+				c:CSP = {
+					is_player = no
+				}
+				c:SPA = {
+					is_player = no
+				}
+			}
+		}
+		name = cr_carlist_events.74.a_carlist_compromise
+		custom_tooltip = {
+			text = cr_carlist_events.74.a_carlist_compromise_tt
+		}
+		
+		if = {
+			limit = {
+				c:CSP = {
+					is_player = yes
+				}
+			}
+			custom_tooltip = cr_carlist_events.74.lose_tt
+			c:CSP = { 
+				set_variable = cr_isabel_accept_compromise
+				show_as_tooltip = { trigger_event = { id = cr_carlist_events.75 } }
+				hidden_effect = { trigger_event = { id = cr_carlist_events.75 days = 7 } }
+			}
+			show_as_tooltip = {
+				c:CSP = {
+					annex_with_incorporation = c:SPA
+				}
+				cr_carlos_luis_compromise_effect = yes
+				set_heir = scope:carlos_luis_char
+			}
+		}
+		else_if = {
+			limit = {
+				c:CSP = {
+					is_player = no
+				}
+			}
+			cr_carlos_luis_compromise_effect = yes
+			annex_with_incorporation = c:CSP
+			cr_don_carlos_mediation_trigger_sicilian_event_effect = yes
+		}
+		
+		c:SIC = { set_variable = cr_isabel_accept_compromise }
+		
+		ai_chance = {
+			base = 35
+			modifier = {
+				trigger = {
+					has_variable = cr_don_carlos_naples_reconciliation
+				}
+				add = 20
+			}
+			modifier = {
+				trigger = {
+					enemy_occupation >= 0.2
+				}
+				add = 15
+			}
+			modifier = {
+				trigger = {
+					scope:carlist_war = {
+						has_war_support = { target = ROOT value <= 60 }
+					}
+				}
+				add = 15
+			}
+		}
+	}
+	option = { #Reject the Carlist compromise
+		trigger = {
+			has_variable = cr_carlist_compromise
+		}
+		
+		name = cr_carlist_events.74.b_carlist_compromise
+		custom_tooltip = {
+			text = cr_carlist_events.74.b_carlist_compromise_tt
+		}
+		
+		c:CSP = {
+			set_variable = cr_isabel_rejects_compromise
+			show_as_tooltip = { trigger_event = { id = cr_carlist_events.75 } }
+			hidden_effect = { trigger_event = { id = cr_carlist_events.75 days = 7 } }
+		}
+		show_as_tooltip = {
+			change_relations = {
+				country = c:SIC
+				value = -20
+			}
+		}
+		c:SIC = { set_variable = cr_isabel_rejects_compromise }
+		
+		default_option = yes
+		ai_chance = {
+			base = 60
+			modifier = {
+				trigger = {
+					has_variable = cr_don_carlos_naples_reconciliation
+				}
+				add = -25
+			}
+			modifier = {
+				trigger = {
+					enemy_occupation >= 0.2
+				}
+				add = -20
+			}
+			modifier = {
+				trigger = {
+					scope:carlist_war = {
+						has_war_support = { target = ROOT value <= 30 }
+					}
+				}
+				add = -20
+			}
+		}
+	}
+	
+	###Don Carlos as regent
+	
+	#Accept Carlos as regent
+	option = { 
+		trigger = {
+			has_variable = cr_carlist_regent
+			OR = {	#To prevent a CTD!!!!
+				c:CSP = {
+					is_player = no
+				}
+				c:SPA = {
+					is_player = no
+				}
+			}
+		}
+		name = cr_carlist_events.74.a_carlos_regent
+		custom_tooltip = {
+			text = cr_carlist_events.74.a_carlos_regent_tt
+		}
+		
+		if = {
+			limit = {
+				c:CSP = {
+					is_player = yes
+				}
+			}
+			custom_tooltip = cr_carlist_events.74.lose_tt
+			c:CSP = { 
+				set_variable = cr_isabel_accepts_regent
+				show_as_tooltip = { trigger_event = { id = cr_carlist_events.75 } }
+				hidden_effect = { trigger_event = { id = cr_carlist_events.75 days = 7 } }
+			}
+			show_as_tooltip = {
+				c:CSP = {
+					annex_with_incorporation = c:SPA
+				}
+				cr_don_carlos_becomes_regent_effect = yes
+			}
+		}
+		else_if = {
+			limit = {
+				c:CSP = {
+					is_player = no
+				}
+			}
+			cr_don_carlos_becomes_regent_effect = yes
+			annex_with_incorporation = c:CSP
+			cr_don_carlos_mediation_trigger_sicilian_event_effect = yes
+		}
+		
+		c:SIC = { set_variable = cr_isabel_accepts_regent }
+		
+		ai_chance = {
+			base = 65
+			modifier = {
+				trigger = {
+					has_variable = cr_don_carlos_naples_reconciliation
+				}
+				add = -30
+			}
+			modifier = {
+				trigger = {
+					enemy_occupation >= 0.2
+				}
+				add = -15
+			}
+			modifier = {
+				trigger = {
+					scope:carlist_war = {
+						has_war_support = { target = ROOT value <= 30 }
+					}
+				}
+				add = -20
+			}
+		}
+	}
+	
+	#Reject the Carlos as regent
+	option = { 
+		trigger = {
+			has_variable = cr_carlist_regent
+		}
+		
+		name = cr_carlist_events.74.b_carlos_regent
+		custom_tooltip = {
+			text = cr_carlist_events.74.b_carlos_regent_tt
+		}
+		
+		c:CSP = {
+			set_variable = cr_isabel_rejects_regent
+			show_as_tooltip = { trigger_event = { id = cr_carlist_events.75 } }
+			hidden_effect = { trigger_event = { id = cr_carlist_events.75 days = 7 } }
+		}
+		show_as_tooltip = {
+			change_relations = {
+				country = c:SIC
+				value = -10
+			}
+		}
+		c:SIC = { set_variable = cr_isabel_rejects_regent }
+		
+		default_option = yes
+		ai_chance = {
+			base = 70
+			modifier = {
+				trigger = {
+					has_variable = cr_don_carlos_naples_reconciliation
+				}
+				add = -30
+			}
+			modifier = {
+				trigger = {
+					enemy_occupation >= 0.2
+				}
+				add = -20
+			}
+			modifier = {
+				trigger = {
+					scope:carlist_war = {
+						has_war_support = { target = ROOT value <= 40 }
+					}
+				}
+				add = -20
+			}
+		}
+	}
+
+
+
+	#Fallback
+	option = {
+		trigger = {
+			NOT = {
+				has_variable = cr_carlist_supremacist
+				has_variable = cr_carlist_compromise
+				has_variable = cr_carlist_regent
+			}
+		}
+		name = cr_carlist_events.74.c_carlist_supremacy
+		custom_tooltip = {
+			text = cr_carlist_events.74.c_carlist_supremacy_tt
+		}
+		default_option = yes
+	}
+}
+
+cr_carlist_events.75 = { #The Crown Reunited? - Response to Isabel's response
+	type = country_event
+	placement = scope:spain
+	title = {
+		first_valid = {
+			#Isabel accepts Don Carlos Luis as king
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accepts_don_carlos_luis_king
+				}
+				desc = cr_carlist_events.75.t_accepted_carlos_luis_as_king
+			}
+			#Isabel accepts the compromise
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accept_compromise
+				}
+				desc = cr_carlist_events.75.t_accepted_carlos_luis_as_king
+			}
+			#Isabel rejects the compromise
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_compromise
+				}
+				desc = cr_carlist_events.75.t_joint_reign_rejected
+			}
+			#Isabel rejects Carlos as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_regent
+				}
+				desc = cr_carlist_events.75.t_regency_rejected
+			}
+			##Isabel accepts Carlos as regent
+			#triggered_desc = {
+			#	trigger = {
+			#		has_variable = cr_isabel_accepts_regent
+			#	}
+			#	desc = cr_carlist_events.75.t_regency_accepted
+			#}
+			#Fallback
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_carlist_events.73.t
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			#Isabel rejects Don Carlos Luis as king
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_don_carlos_luis_king
+				}
+				desc = cr_carlist_events.75.desc_rejected_carlos_luis_as_king
+			}
+			#Isabel accepts Don Carlos Luis as king
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accepts_don_carlos_luis_king
+				}
+				desc = cr_carlist_events.75.desc_accepted_carlos_luis_as_king
+			}
+			#Isabel accepts the compromise
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accept_compromise
+				}
+				desc = cr_carlist_events.75.desc_joint_reign_accepted
+			}
+			#Isabel rejects the compromise
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_compromise
+				}
+				desc = cr_carlist_events.75.desc_joint_reign_rejected
+			}
+			#Isabel rejects Carlos as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_regent
+				}
+				desc = cr_carlist_events.75.desc_regency_rejected
+			}
+			#Isabel accepts Carlos as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accepts_regent
+				}
+				desc = cr_carlist_events.75.desc_regency_accepted
+			}
+			
+			#fallback
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_carlist_events.75.fallback
+			}
+		}
+	}
+	
+	flavor = { 
+		first_valid = {
+			#Isabel rejects Don Carlos Luis as king
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_don_carlos_luis_king
+				}
+				desc = cr_carlist_events.75.flavour_rejected_carlos_luis_as_king
+			}
+			#Isabel accepts Don Carlos Luis as king
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accepts_don_carlos_luis_king
+				}
+				desc = cr_carlist_events.75.flavour_accepted_carlos_luis_as_king
+			}
+			#Isabel accepts the compromise
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accept_compromise
+				}
+				desc = cr_carlist_events.75.flavour_joint_reign_accepted
+			}
+			#Isabel rejects the compromise
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_compromise
+				}
+				desc = cr_carlist_events.75.flavour_joint_reign_rejected
+			}
+			#Isabel rejects Carlos as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_regent
+				}
+				desc = cr_carlist_events.75.flavour_regency_rejected
+			}
+			#Isabel accepts Carlos as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accepts_regent
+				}
+				desc = cr_carlist_events.75.flavour_regency_accepted
+			}
+			
+			#fallback
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_carlist_events.75.flavour_fallback
+			}
+		}
+	}
+
+	gui_window = event_window_2char
+
+	left_icon = scope:carlos_luis_char
+	right_icon = scope:isabel_char
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = cr_don_carlos_marriage_proposal_reject_csp
+					has_variable = cr_isabel_rejects_don_carlos_luis_king
+				}
+			}
+			save_scope_as = event_location
+		}
+	}
+
+	###Carlos Luis as king
+
+	option = {	#Carlos Luis rejected as king
+		trigger = {
+			has_variable = cr_isabel_rejects_don_carlos_luis_king
+		}
+		
+		name = cr_carlist_events.75.a_rejected_carlos_luis_as_king
+		custom_tooltip = {
+			text = cr_carlist_events.75.a_rejected_carlos_luis_as_king_tt
+		}
+		cr_don_carlos_mediation_trigger_sicilian_event_effect = yes
+		
+		show_as_tooltip = {
+			change_relations = {
+				country = c:SIC
+				value = -10
+			}
+		}
+		
+		default_option = yes
+	}
+
+	option = {	#Carlos Luis accepted as king
+		trigger = {
+			has_variable = cr_isabel_accepts_don_carlos_luis_king
+		}
+		
+		name = cr_carlist_events.75.a_accepted_carlos_luis_as_king
+		custom_tooltip = {
+			text = cr_carlist_events.75.a_accepted_carlos_luis_as_king_tt
+		}
+		annex_with_incorporation = c:SPA
+		cr_carlos_luis_becomes_king_effect = yes
+		cr_don_carlos_mediation_trigger_sicilian_event_effect = yes
+		
+		default_option = yes
+	}
+
+	###Isabel and Carlos Luis compromise
+
+	option = {	#Isabel accepts the compromise
+		trigger = {
+			has_variable = cr_isabel_accept_compromise
+		}
+		
+		name = cr_carlist_events.75.a_joint_reign_accepted
+		custom_tooltip = {
+			text = cr_carlist_events.75.a_joint_reign_accepted_tt
+		}
+		annex_with_incorporation = c:SPA
+		cr_carlos_luis_compromise_effect = yes
+		cr_don_carlos_mediation_trigger_sicilian_event_effect = yes
+		
+		default_option = yes
+	}
+
+	option = {	#Isabel accepts the compromise
+		trigger = {
+			has_variable = cr_isabel_rejects_compromise
+		}
+		
+		name = cr_carlist_events.75.a_joint_reign_rejected
+		custom_tooltip = {
+			text = cr_carlist_events.75.a_joint_reign_rejected_tt
+		}
+		cr_don_carlos_mediation_trigger_sicilian_event_effect = yes
+		
+		default_option = yes
+	}
+	
+	###Don Carlos as regent
+
+	option = {	#Isabel accepts Don Carlos as regent
+		trigger = {
+			has_variable = cr_isabel_accepts_regent
+		}
+		
+		name = cr_carlist_events.75.a_regency_accepted
+		custom_tooltip = {
+			text = cr_carlist_events.75.a_regency_accepted_tt
+		}
+		annex_with_incorporation = c:SPA
+		cr_don_carlos_becomes_regent_effect = yes
+		cr_don_carlos_mediation_trigger_sicilian_event_effect = yes
+		
+		default_option = yes
+	}
+
+	option = {	#Isabel rejects Don Carlos as regent
+		trigger = {
+			has_variable = cr_isabel_rejects_regent
+		}
+		
+		name = cr_carlist_events.75.a_regency_rejected
+		custom_tooltip = {
+			text = cr_carlist_events.75.a_regency_rejected_tt
+		}
+		cr_don_carlos_mediation_trigger_sicilian_event_effect = yes
+		
+		default_option = yes
+	}
+
+
+	#Fallback
+	option = {
+		trigger = {
+			NOT = {
+				has_variable = cr_isabel_rejects_don_carlos_luis_king
+				has_variable = cr_isabel_accepts_don_carlos_luis_king
+				has_variable = cr_isabel_accept_compromise
+				has_variable = cr_isabel_rejects_compromise
+				has_variable = cr_isabel_rejects_regent
+				has_variable = cr_isabel_accepts_regent
+			}
+		}
+		name = cr_carlist_events.74.c_carlist_supremacy
+		custom_tooltip = {
+			text = cr_carlist_events.74.c_carlist_supremacy_tt
+		}
+		default_option = yes
+		
+		
+		remove_variable = cr_don_carlos_union_proposed
+		remove_variable = cr_don_carlos_marriage_proposal_reject_csp
+		remove_variable = cr_don_carlos_naples_reconciliation
+		
+		
+		
+		ai_chance = {
+			base = 30
+		}
+	}
+}
+
+
+cr_carlist_events.79 = { #Two Sicilies Response event
+	type = country_event
+	placement = scope:event_location
+	title = {
+		first_valid = {
+			#Don Carlos outright rejection
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_don_carlos_marriage_proposal_reject_csp
+				}
+				desc = cr_carlist_events.79.t_carlos_rejects
+			}
+			#Carlos Luis rejected as king
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_don_carlos_luis_king
+				}
+				desc = cr_carlist_events.79.t_isabel_rejected_carlos_luis_as_king
+			}
+			#Carlos Luis accepted as king
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accepts_don_carlos_luis_king
+				}
+				desc = cr_carlist_events.79.t_isabel_accepted_carlos_luis_as_king
+			}
+			#Spain accepts the compromise solution
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accept_compromise
+				}
+				desc = cr_carlist_events.79.t_joint_reign
+			}
+			#Spain rejects the compromise solution
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_compromise
+				}
+				desc = cr_carlist_events.79.t_joint_reign_rejected
+			}
+			#Spain rejects Carlos as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_regent
+				}
+				desc = cr_carlist_events.79.t_regency_rejected
+			}
+			#Fallback
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_carlist_events.79.t_fallback
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			#Don Carlos outright rejection
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_don_carlos_marriage_proposal_reject_csp
+				}
+				desc = cr_carlist_events.79.desc_carlos_rejects
+			}
+			#Carlos Luis rejected as king
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_don_carlos_luis_king
+				}
+				desc = cr_carlist_events.79.desc_isabel_rejected_carlos_luis_as_king
+			}
+			#Carlos Luis accepted as king
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accepts_don_carlos_luis_king
+				}
+				desc = cr_carlist_events.79.desc_isabel_accepted_carlos_luis_as_king
+			}
+			#Spain accepts the compromise solution
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accept_compromise
+				}
+				desc = cr_carlist_events.79.desc_joint_reign
+			}
+			#Spain rejects the compromise solution
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_compromise
+				}
+				desc = cr_carlist_events.79.desc_joint_reign_rejected
+			}
+			#Spain rejects Carlos as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_regent
+				}
+				desc = cr_carlist_events.79.desc_regency_rejected
+			}
+			
+			#fallback
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_carlist_events.79.fallback
+			}
+		}
+	}
+	
+	flavor = { 
+		first_valid = {
+			#Don Carlos outright rejection
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_don_carlos_marriage_proposal_reject_csp
+				}
+				desc = cr_carlist_events.79.flavour_carlos_rejects
+			}
+			#Carlos Luis rejected as king
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_don_carlos_luis_king
+				}
+				desc = cr_carlist_events.79.flavour_isabel_rejected_carlos_luis_as_king
+			}
+			#Carlos Luis accepted as king
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accepts_don_carlos_luis_king
+				}
+				desc = cr_carlist_events.79.flavour_isabel_accepted_carlos_luis_as_king
+			}
+			#Spain accepts the compromise solution
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accept_compromise
+				}
+				desc = cr_carlist_events.79.flavour_joint_reign
+			}
+			#Spain rejects the compromise solution
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_compromise
+				}
+				desc = cr_carlist_events.79.flavour_joint_reign_rejected
+			}
+			#Spain rejects Carlos as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_rejects_regent
+				}
+				desc = cr_carlist_events.79.flavour_regency_rejected
+			}
+			
+			#fallback
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_carlist_events.79.flavour_fallback
+			}
+		}
+	}
+
+	gui_window = event_window_2char
+
+	left_icon = scope:carlos_luis_char
+	right_icon = scope:isabel_char
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = cr_don_carlos_marriage_proposal_reject_csp
+					has_variable = cr_isabel_rejects_don_carlos_luis_king
+					has_variable = cr_isabel_accepts_don_carlos_luis_king
+				}
+			}
+			save_scope_as = event_location
+		}
+	}
+
+	option = { #Carlos Luis rejected as king
+		name = cr_carlist_events.79.isabel_rejected_carlos_luis_as_king
+		trigger = {
+			has_variable = cr_isabel_rejects_don_carlos_luis_king
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.79.isabel_rejected_carlos_luis_as_king_tt
+		}
+		default_option = yes
+		cr_don_carlos_sicilian_mediation_failure_effect = yes
+	}
+
+	option = { #Carlos Luis accepted as king
+		name = cr_carlist_events.79.isabel_accepted_carlos_luis_as_king
+		trigger = {
+			has_variable = cr_isabel_accepts_don_carlos_luis_king
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.79.isabel_accepted_carlos_luis_as_king_tt
+		}
+		default_option = yes
+		cr_don_carlos_sicilian_mediation_succesful_effect = yes
+	}
+
+	option = { #Spain accepts the compromise solution
+		name = cr_carlist_events.79.a_joint_reign
+		trigger = {
+			has_variable = cr_isabel_accept_compromise
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.79.a_joint_reign_tt
+		}
+		default_option = yes
+		cr_don_carlos_sicilian_mediation_succesful_effect = yes
+		
+	}
+
+	option = { #Spain rejects the compromise solution
+		name = cr_carlist_events.79.a_joint_reign_rejected
+		trigger = {
+			has_variable = cr_isabel_rejects_compromise
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.79.a_joint_reign_rejected_tt
+		}
+		default_option = yes
+		cr_don_carlos_sicilian_mediation_failure_effect = yes
+	}
+
+	option = { #Carlos rejects mediation
+		name = cr_carlist_events.79.carlos_rejects_opt
+		trigger = {
+			has_variable = cr_don_carlos_marriage_proposal_reject_csp
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.79.carlos_rejects_opt_tt
+		}
+		default_option = yes
+		add_modifier = {
+			name = cr_carlos_failed_diplomacy
+			months = normal_modifier_time
+		}
+		
+		cr_don_carlos_two_sicilies_marriage_proposal_cleanup_effect = yes
+		
+		ai_chance = {
+			base = 70
+		}
+	}
+
+	###Carlos as regent
+
+	option = { #Isabel rejects Carlos as regent
+		name = cr_carlist_events.79.a_regency_rejected
+		trigger = {
+			has_variable = cr_isabel_rejects_regent
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.79.a_regency_rejected_tt
+		}
+		default_option = yes
+		cr_don_carlos_sicilian_mediation_failure_effect = yes
+		
+		cr_don_carlos_two_sicilies_marriage_proposal_cleanup_effect = yes
+		
+		ai_chance = {
+			base = 70
+		}
+	}
+
+	option = { #Spain rejects Carlos as regent
+		name = cr_carlist_events.79.a_regency_rejected
+		trigger = {
+			has_variable = cr_isabel_rejects_compromise
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.79.a_regency_rejected_tt
+		}
+		default_option = yes
+		cr_don_carlos_sicilian_mediation_failure_effect = yes
+	}
+
+	option = { #Spain accepts Carlos as regent
+		name = cr_carlist_events.79.a_regency_accepted
+		trigger = {
+			has_variable = cr_isabel_rejects_compromise
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.79.a_regency_accepted_tt
+		}
+		default_option = yes
+		cr_don_carlos_sicilian_mediation_failure_effect = yes
+	}
+
+	#Fallback
+	option = {
+		trigger = {
+			NOT = {
+				has_variable = cr_don_carlos_marriage_proposal_reject_csp
+				has_variable = cr_isabel_rejects_don_carlos_luis_king
+				has_variable = cr_isabel_accepts_don_carlos_luis_king
+				has_variable = cr_isabel_rejects_compromise
+				has_variable = cr_isabel_accept_compromise
+				has_variable = cr_isabel_rejects_regent
+				has_variable = cr_isabel_accepts_regent
+			}
+		}
+		name = cr_carlist_events.79.b_carlos_rejects
+		custom_tooltip = {
+			text = cr_carlist_events.79.b_carlos_rejects_tt
+		}
+		default_option = yes
+		
+		
+		remove_variable = cr_don_carlos_union_proposed
+		remove_variable = cr_don_carlos_marriage_proposal_reject_csp
+		remove_variable = cr_don_carlos_naples_reconciliation
+		
+		
+		
+		ai_chance = {
+			base = 30
+		}
+	}
+}
+
 #############################
 #							#
 # Carlos to Portugal branch	#
@@ -3076,6 +4738,13 @@ cr_carlist_events.80 = { #The Cause of Absolutism
 			save_scope_as = don_carlos_arrival_location
 			save_scope_as = carlos_arrival_state
 			save_scope_as = don_carlos_exile_state
+		}
+		###Portugese Liberal movement.
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_liberal
+			}
+			save_scope_as = liberal_movement
 		}
 		if = {
 			limit = {

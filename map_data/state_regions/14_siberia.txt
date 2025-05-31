@@ -204,10 +204,10 @@ STATE_OKHOTSK = {
     mine = "x2D1672"
     wood = "xE1F616"
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
+    arable_resources = { }
     capped_resources = {
         #bg_coal_mining = 36 #brown coal/lignite
-        bg_fishing = 10
+        bg_fishing = 6
     }
     naval_exit_id = 3118
 }

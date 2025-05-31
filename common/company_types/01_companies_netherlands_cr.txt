@@ -104,7 +104,7 @@ company_werkspoor = {
 #	}
 #}
 
-# Nederlandse Handelsmaatschappij
+# Nederlandse Handel-Maatschappij
 company_nederlandse_handelmaatschappij = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_nederlandse_handelmaatschappij.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
@@ -516,5 +516,46 @@ company_pander_en_zonen = {
 	
 	ai_weight = {
 		value = 2 # Higher base value for flavored companies, but this one is a bit of an odd one out.
+	}
+}
+
+# Particuliere Landerijen
+company_particuliere_landerijen = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/dutch_particuliere_landerijen.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_tobacco_plantation
+		building_sugar_plantation
+		building_rice_plantation
+		building_dye_plantation
+		building_coffee_plantation
+	}
+	
+	potential = {
+		country_has_primary_culture = cu:dutch
+		country_is_in_asia = yes
+	}
+	
+	possible = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_sugar_plantation
+				}
+				level >= 1
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		interest_group_ig_industrialists_pol_str_mult = 0.10		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.35
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
 	}
 }

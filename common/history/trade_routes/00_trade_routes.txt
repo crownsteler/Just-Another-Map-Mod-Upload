@@ -1243,7 +1243,7 @@
 			target = c:NET.market
 		}	
 		create_trade_route = {
-			goods = peper
+			goods = paper
 			level = 4
 			direction = export
 			target = c:DEN.market

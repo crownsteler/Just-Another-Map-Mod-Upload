@@ -145,32 +145,32 @@
 				reserves=1
 				activate_production_methods={ "pm_atmospheric_engine_pump_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
-			#create_building={
-			#	building="building_lead_mine"
-			#	add_ownership={
-			#		building={
-			#			type="building_lead_mine"
-			#			country="c:PRU"
-			#			levels=4
-			#			region="STATE_SILESIA"
-			#		}
-			#	}
-			#	reserves=1
-			#	activate_production_methods={ "pm_atmospheric_engine_pump_building_lead_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
-			#}
 			create_building={
-				building="building_copper_mine"
+				building="building_lead_mine"
 				add_ownership={
 					building={
-						type="building_copper_mine"
+						type="building_lead_mine"
 						country="c:PRU"
 						levels=2
 						region="STATE_SILESIA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_lead_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
+			#create_building={
+			#	building="building_copper_mine"
+			#	add_ownership={
+			#		building={
+			#			type="building_copper_mine"
+			#			country="c:PRU"
+			#			levels=2
+			#			region="STATE_SILESIA"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			#}
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
@@ -234,7 +234,7 @@
 						type="building_logging_camp"
 						country="c:RUS"
 						levels=3
-						region="STATE_STATE_GREATER_POLANDEAST_PRUSSIA"
+						region="STATE_GREATER_POLAND"
 					}
 				}
 				reserves=1

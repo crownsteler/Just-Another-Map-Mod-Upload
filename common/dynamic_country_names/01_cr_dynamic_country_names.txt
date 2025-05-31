@@ -103,21 +103,21 @@ HRB = {
 	}
 }
 
-SPA = {
-	dynamic_country_name = {
-		name = SPA
-		adjective = dyn_c_christinos_spain_ADJ
-		
-		is_main_tag_only = yes
-		priority = 0
-		
-		trigger = {
-			scope:actor = {
-				has_variable = cr_carlist_war_ongoing
-			}
-		}
-	}
-}
+#SPA = {
+#	dynamic_country_name = {
+#		name = SPA
+#		adjective = dyn_c_christinos_spain_ADJ
+#		
+#		is_main_tag_only = yes
+#		priority = 0
+#		
+#		trigger = {
+#			scope:actor = {
+#				has_variable = cr_carlist_war_ongoing
+#			}
+#		}
+#	}
+#}
 
 NEJ = { # Nejd
 	dynamic_country_name = {

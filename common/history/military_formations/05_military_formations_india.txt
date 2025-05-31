@@ -626,7 +626,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_HILL_PUNJAB
+				state_region = s:STATE_WESTERN_HIMALAYAS
 				count = 3
 			}
 		}

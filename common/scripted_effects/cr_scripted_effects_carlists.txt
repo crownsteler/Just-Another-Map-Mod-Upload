@@ -12,7 +12,9 @@
 			}
 		}
 		remove_variable = don_carlos_exile_rejected_var
+		remove_variable = cr_carlos_supporting_absolutism_in_spain_var
 	}
+	
 	remove_variable = don_carlist_orleanist_refuge
 	remove_variable = don_carlist_orleanist_support
 	remove_variable = don_carlist_legitimist_support
@@ -21,6 +23,82 @@
 	remove_variable = don_carlist_legitimist_legitimacy_undermined
 	remove_variable = don_carlist_bonapartist_refuge
 	remove_variable = don_carlist_bonapartist_legitimacy_undermined
+}
+
+cr_don_carlos_two_sicilies_marriage_proposal_cleanup_effect = {
+	remove_two_sicilies_spanish_mediation_modifier_effect = yes
+	c:SIC = {
+		remove_variable = cr_don_carlos_naples_reconciliation
+		remove_variable = cr_don_carlos_union_proposed
+		remove_variable = cr_don_carlos_marriage_proposal_reject_csp
+		remove_variable = cr_isabel_rejects_don_carlos_luis_king
+		remove_variable = cr_isabel_accepts_don_carlos_luis_king
+		remove_variable = cr_carlist_compromise
+		remove_variable = cr_isabel_accept_compromise
+		remove_variable = cr_carlist_regent
+		remove_variable = cr_isabel_rejects_compromise
+		remove_variable = cr_isabel_accept_regency
+		remove_variable = cr_isabel_rejects_regent
+	}
+	
+	c:CSP = {
+		remove_variable = cr_don_carlos_naples_reconciliation
+		remove_variable = cr_don_carlos_union_proposed
+		remove_variable = cr_don_carlos_marriage_proposal_reject_csp
+		remove_variable = cr_isabel_rejects_don_carlos_luis_king
+		remove_variable = cr_isabel_accepts_don_carlos_luis_king
+		remove_variable = cr_carlist_compromise
+		remove_variable = cr_carlist_regent
+	}
+	
+	c:SPA = {
+		remove_variable = cr_don_carlos_naples_reconciliation
+		remove_variable = cr_carlist_supremacist
+	}
+}
+
+don_carlos_final_cleanup_vars = {
+	every_country ={
+		limit = {
+			OR = {
+				this ?= c:FRA
+				this ?= c:GBR
+				this ?= c:POR
+				this ?= c:USA
+				this ?= c:SIC
+				this ?= c:AUS
+				this ?= c:RUS
+			}
+		}
+		remove_variable = don_carlos_exile_rejected_var
+		remove_variable = don_carlos_exile_country_var
+	}
+	
+	remove_variable = don_carlist_orleanist_refuge
+	remove_variable = don_carlist_orleanist_support
+	remove_variable = don_carlist_legitimist_support
+	remove_variable = don_carlist_legitimist_support
+	remove_variable = don_carlist_legitimist_refuge
+	remove_variable = don_carlist_legitimist_legitimacy_undermined
+	remove_variable = don_carlist_bonapartist_refuge
+	remove_variable = don_carlist_bonapartist_legitimacy_undermined
+	
+	remove_variable = don_carlos_distant_exile_var
+	
+	remove_variable = cr_the_desamortizacions_have_happened
+	remove_variable = cr_desamortizacions_upper
+	remove_variable = cr_desamortizacions_lower
+	remove_variable = cr_desamortizacions_halted
+	remove_variable = cr_don_carlos_exiled_bourges
+	remove_variable = cr_metternichs_gambit_var
+	remove_variable = cr_carlos_supporting_liberalism_in_portugal_var
+	remove_variable = cr_don_carlos_exiled_australia
+	remove_variable = cr_exile_of_bourges_var
+	remove_variable = don_carlos_exiled_but_supported_var
+	remove_variable = don_carlos_supported_by_absolutists_var
+	remove_variable = don_carlos_legitimacy_underminded_var
+	
+	cr_don_carlos_two_sicilies_marriage_proposal_cleanup_effect = yes
 }
 
 don_carlos_exile_country_selector = {
@@ -33,7 +111,10 @@ don_carlos_exile_country_selector = {
 						this ?= c:FRA
 					}
 					c:FRA = {
-						NOT = { has_variable = don_carlos_exile_rejected_var }
+						NOT = { has_variable = don_carlos_exile_rejected_var }		
+						
+						is_diplomatic_play_committed_participant = no
+						is_at_war = no
 					}
 				}
 				c:FRA = {
@@ -48,6 +129,9 @@ don_carlos_exile_country_selector = {
 					}
 					c:GBR = {
 						NOT = { has_variable = don_carlos_exile_rejected_var }
+						
+						is_diplomatic_play_committed_participant = no
+						is_at_war = no
 					}
 				}
 				c:GBR = {
@@ -64,6 +148,9 @@ don_carlos_exile_country_selector = {
 						NOT = { has_variable = don_carlos_exile_rejected_var }
 						#has_law = law_type:law_monarchy
 						#has_law = law_type:law_autocracy
+						
+						is_diplomatic_play_committed_participant = no
+						is_at_war = no
 					}
 				}
 				c:POR = {
@@ -79,6 +166,9 @@ don_carlos_exile_country_selector = {
 					c:SIC = {
 						NOT = { has_variable = don_carlos_exile_rejected_var }
 						has_law = law_type:law_monarchy
+						
+						is_diplomatic_play_committed_participant = no
+						is_at_war = no
 					}
 				}
 				c:SIC = {
@@ -94,6 +184,9 @@ don_carlos_exile_country_selector = {
 					c:AUS = {
 						NOT = { has_variable = don_carlos_exile_rejected_var }
 						has_law = law_type:law_monarchy
+						
+						is_diplomatic_play_committed_participant = no
+						is_at_war = no
 					}
 				}
 				c:AUS = {
@@ -110,7 +203,7 @@ don_carlos_exile_country_selector = {
 					}
 				}			
 			}
-			100 = {
+			0 = {
 				trigger = {
 					exists = c:RUS
 					NOT = {
@@ -120,13 +213,16 @@ don_carlos_exile_country_selector = {
 						NOT = { has_variable = don_carlos_exile_rejected_var }
 						has_law = law_type:law_monarchy
 						has_law = law_type:law_autocracy
+						
+						is_diplomatic_play_committed_participant = no
+						is_at_war = no
 					}
 				}
 				c:RUS = {
 					trigger_event = { id = cr_carlist_events.50 days = 4 }
 				}			
 			}
-			1 = {
+			0 = {
 				trigger = {
 					exists = c:USA
 					NOT = {
@@ -134,10 +230,26 @@ don_carlos_exile_country_selector = {
 					}
 					c:USA = {
 						NOT = { has_variable = don_carlos_exile_rejected_var }
+						
+						is_diplomatic_play_committed_participant = no
+						is_at_war = no
 					}
 				}
 				c:USA = {
 					trigger_event = { id = cr_carlist_events.90 days = 14 }
+				}
+				#modifier = {
+				#	if = {
+				#		limit = {
+				#			c:USA = { is_player = yes }
+				#		}
+				#		add = 10
+				#	}
+				#}
+			}
+			1 = {
+				c:SPA = {
+					trigger_event = { id = cr_carlist_events.22 days = 1 }
 				}
 			}
 		}
@@ -923,4 +1035,341 @@ don_carlos_exile_location_notification = {
 
 cr_spain_likely_disapproves = {
 	custom_tooltip = cr_carlist_events.spain_likely_disapproves
+}
+
+cr_carlos_luis_becomes_king_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_monarchy
+			}
+		}
+		activate_law = law_type:law_monarchy
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_autocracy
+			}
+		}
+		activate_law = law_type:law_autocracy
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_state_religion
+			}
+		}
+		activate_law = law_type:law_state_religion
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_secret_police
+			}
+		}
+		activate_law = law_type:law_secret_police
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_national_supremacy
+			}
+		}
+		activate_law = law_type:law_national_supremacy
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_no_womens_rights
+			}
+		}
+		activate_law = law_type:law_no_womens_rights
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_religious_schools
+			}
+		}
+		activate_law = law_type:law_religious_schools
+	}
+	hidden_effect = {
+		scope:isabel_char = {
+			remove_character_role = ruler
+		}
+	}
+	if = {
+		limit = {
+			this ?= c:CSP
+		}
+		scope:isabel_char = {
+			transfer_character = ROOT
+		}
+		c:CSP = { 
+			set_heir = scope:isabel_char
+		}
+		scope:carlos_luis_char = {
+			set_character_as_ruler = yes
+		}
+	}
+	else_if = {
+		limit = {
+			this ?= c:SPA
+		}
+		c:SPA = { 
+			set_heir = scope:isabel_char
+		}
+		scope:carlos_luis_char = {
+			transfer_character = ROOT
+			set_character_as_ruler = yes
+		}
+	}
+	set_variable = cr_carlist_victory
+	show_as_tooltip = {
+		change_relations = {
+			country = c:SIC
+			value = 10
+		}
+	}
+}
+
+cr_carlos_luis_compromise_effect = {
+	if = {
+		limit = {
+			this ?= c:CSP
+		}
+		show_as_tooltip = {
+			change_tag = SPA
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_monarchy
+			}
+		}
+		activate_law = law_type:law_monarchy
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_oligarchy
+			}
+		}
+		activate_law = law_type:law_oligarchy
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_state_religion
+			}
+		}
+		activate_law = law_type:law_state_religion
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_national_supremacy
+			}
+		}
+		activate_law = law_type:law_national_supremacy
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_religious_schools
+			}
+		}
+		activate_law = law_type:law_religious_schools
+	}
+	if = {
+		limit = {
+			this ?= c:CSP
+		}
+		custom_tooltip = {
+			text = cr_carlist_events.73.compromise_tt_2
+			scope:isabel_char = {
+				transfer_character = ROOT
+				set_character_as_ruler = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			this ?= c:SPA
+		}
+		hidden_effect = {
+			scope:carlos_luis_char = {
+				transfer_character = ROOT
+			}
+		}
+		set_heir = scope:carlos_luis_char
+	}
+	
+	show_as_tooltip = {
+		change_relations = {
+			country = c:SIC
+			value = 10
+		}
+	}
+}
+
+cr_don_carlos_becomes_regent_effect = {
+	if = {
+		limit = {
+			this ?= c:CSP
+		}
+		scope:isabel_char = {
+			hidden_effect = { transfer_character = ROOT }
+		}
+		set_heir = scope:isabel_char
+	}
+	if = {
+		limit = {
+			this ?= c:SPA
+		}
+		scope:don_carlos_char = {
+			transfer_character = ROOT
+			set_character_as_ruler = yes
+		}
+		set_heir = scope:isabel_char
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_oligarchy
+			}
+		}
+		activate_law = law_type:law_oligarchy
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_freedom_of_conscience
+			}
+		}
+		activate_law = law_type:law_freedom_of_conscience
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_law = law_type:law_national_supremacy
+			}
+		}
+		activate_law = law_type:law_national_supremacy
+	}
+	
+	show_as_tooltip = {
+		change_relations = {
+			country = c:SIC
+			value = 10
+		}
+	}
+}
+
+cr_don_carlos_mediation_trigger_sicilian_event_effect = {
+	c:SIC = {
+		show_as_tooltip = { trigger_event = { id = cr_carlist_events.79 } }
+		hidden_effect = { trigger_event = { id = cr_carlist_events.79 } }#Deliberately direct trigger due to visible effects 
+	}
+}
+
+cr_don_carlos_sicilian_mediation_failure_effect = {
+	#add_modifier = {
+	#	name = cr_carlos_failed_diplomacy
+	#	months = normal_modifier_time
+	#	is_decaying = yes
+	#}
+	if = {
+		limit = {
+			exists ?= c:CSP
+			c:CSP = { 
+				has_variable = cr_isabel_rejects_compromise
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists ?= c:CSP
+			c:CSP = { 
+				has_variable = cr_don_carlos_marriage_proposal_reject_csp
+			}
+		}
+		change_relations = {
+			country = c:CSP
+			value = -25
+		}
+	}
+	else_if = {
+		limit = {
+			exists ?= c:CSP
+		}
+		change_relations = {
+			country = c:CSP
+			value = -10
+		}
+	}
+	if = {
+		limit = {
+			exists ?= c:SPA
+			has_variable = cr_isabel_rejects_compromise
+		}
+		change_relations = {
+			country = c:SPA
+			value = -20
+		}
+	}
+	else_if = {
+		limit = {
+			exists ?= c:SPA
+		}
+		change_relations = {
+			country = c:SPA
+			value = -10
+		}
+	}
+	cr_don_carlos_two_sicilies_marriage_proposal_cleanup_effect = yes
+}
+
+cr_don_carlos_sicilian_mediation_succesful_effect = {
+	add_modifier = {
+		name = cr_carlos_bringer_of_pease
+		months = long_modifier_time
+		is_decaying = yes
+	}
+	if = {
+		limit = {
+			exists ?= c:CSP
+		}
+		change_relations = {
+			country = c:CSP
+			value = 10
+		}
+	}
+	if = {
+		limit = {
+			exists ?= c:SPA
+		}
+		change_relations = {
+			country = c:SPA
+			value = 10
+		}
+	}
+	cr_don_carlos_two_sicilies_marriage_proposal_cleanup_effect = yes
+}
+
+remove_two_sicilies_spanish_mediation_modifier_effect = {
+	if = {
+		limit = {
+			has_modifier = cr_carlos_spanish_mediation
+		}
+		remove_modifier = cr_carlos_spanish_mediation
+	}
+	if = {
+		limit = {
+			has_modifier = cr_carlos_spanish_reconciliation
+		}
+		remove_modifier = cr_carlos_spanish_reconciliation
+	}
 }

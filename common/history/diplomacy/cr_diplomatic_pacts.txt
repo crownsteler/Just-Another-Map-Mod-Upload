@@ -20,6 +20,13 @@
 		}	
 	}
 	
+	c:USA = {
+		create_diplomatic_pact = {	#Only lifted 1862
+			country = c:HAI
+			type = embargo
+		}
+	}
+	
 	if = { #Major investment patterns, British Portfolio Investment Overseas before 1870: Some Doubts BY D. C. M. PLATT
 		limit = {
 			has_dlc_feature = foreign_investment

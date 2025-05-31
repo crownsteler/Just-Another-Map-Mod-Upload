@@ -515,7 +515,7 @@
 	c:ARB = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_persian_gulf
+			hq_region = sr:region_the_persian_gulf
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry

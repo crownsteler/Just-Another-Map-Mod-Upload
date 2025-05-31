@@ -135,7 +135,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_arabic
+			hq_region = sr:region_levant
 			name = Bahriat_alKhidywyat_alMisria
 
 		

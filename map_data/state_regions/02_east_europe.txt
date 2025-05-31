@@ -27,7 +27,8 @@ STATE_SILESIA = {
     capped_resources = {
         #bg_coal_mining = 145
         bg_iron_mining = 34
-        bg_copper_mining = 48
+        #bg_copper_mining = 48	#removed in favour of lead for better resource distribution
+		bg_lead_mining = 24
         bg_logging = 10
     #bg_minor_metals_mining = 15 #Zinc
     }

@@ -439,19 +439,19 @@
 				reserves=1
 				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
-			create_building={
-				building="building_sugar_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:CLM"
-						levels=1
-						region="STATE_CUNDINAMARCA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts"  }
-			}
+			#create_building={
+			#	building="building_sugar_plantation"
+			#	add_ownership={
+			#		building={
+			#			type="building_manor_house"
+			#			country="c:CLM"
+			#			levels=1
+			#			region="STATE_CUNDINAMARCA"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts"  }
+			#}
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
@@ -1464,19 +1464,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
-			create_building={
-				building="building_vineyard_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:ARG"
-						levels=1
-						region="STATE_BUENOS_AIRES"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
-			}
+			#create_building={
+			#	building="building_vineyard_plantation"
+			#	add_ownership={
+			#		building={
+			#			type="building_manor_house"
+			#			country="c:ARG"
+			#			levels=1
+			#			region="STATE_BUENOS_AIRES"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
+			#}
 			create_building={
 				building="building_port"
 				add_ownership={
@@ -1800,7 +1800,7 @@
 				add_ownership={
 					country={
 						country="c:CHL"
-						levels=3
+						levels=1
 					}
 				}
 				reserves=1

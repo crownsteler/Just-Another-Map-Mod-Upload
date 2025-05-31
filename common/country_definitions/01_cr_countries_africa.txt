@@ -395,7 +395,7 @@ ZDR = {
 	
 	cultures = { hausa }
 	religion = animist
-	capital = STATE_OUTER_HAUSALAND
+	capital = STATE_ZINDER
 }
 
 GRY = {
