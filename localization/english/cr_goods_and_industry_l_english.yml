@@ -141,9 +141,14 @@
  goods_output_fish_mult_desc:0 "A bonus or penalty to the amount of @fish! Fish produced by buildings"
  goods_output_sulfur_mult:0 "Building @sulfur! Sulfur output"
  goods_output_sulfur_mult_desc:0 "A bonus or penalty to the amount of @sulfur! Sulfur produced by buildings"
+ goods_output_sugar_mult:0 "Building @sugar! Sugar output"
+ goods_output_sugar_mult_desc:0 "A bonus or penalty to the amount of @sugar! Sugar produced by buildings"
  
  goods_output_iron_mult:0 "Building @iron! Iron output"
  goods_output_iron_mult_desc:0 "A bonus or penalty to the amount of @iron! Iron produced by buildings"
+ goods_output_oil_mult:0 "Building @oil! Oil output"
+ goods_output_oil_mult_desc:0 "A bonus or penalty to the amount of @oil! Oil produced by buildings"
+ 
  
  #Buildings Output Modifiers
  building_group_bg_agriculture_output_add:0 "$bg_agriculture$ output"
@@ -157,6 +162,32 @@
  building_livestock_ranch_output_add:0 "$building_livestock_ranch$ output"
  building_livestock_ranch_output_add_desc:0 "A bonus or penalty to the output of $building_livestock_ranch$"
  
+ building_rye_farm_output_add:0 "$building_rye_farm$ output"
+ building_rye_farm_output_add_desc:0 "A bonus or penalty to the output of $building_rye_farm$"
+ 
+ building_rice_farm_output_add:0 "$building_rice_farm$ output"
+ building_rice_farm_output_add_desc:0 "A bonus or penalty to the output of $building_rice_farm$"
+ 
  building_sulfur_mine_output_add:0 "$building_sulfur_mine$ output"
  building_sulfur_mine_output_add_desc:0 "A bonus or penalty to the output of $building_sulfur_mine$"
  
+ building_iron_mine_output_add:0 "$building_iron_mine$ output"
+ building_iron_mine_output_add_desc:0 "A bonus or penalty to the output of $building_iron_mine$"
+ 
+ building_lead_mine_output_add:0 "$building_lead_mine$ output"
+ building_lead_mine_output_add_desc:0 "A bonus or penalty to the output of $building_lead_mine$"
+ 
+ building_coal_mine_output_add:0 "$building_coal_mine$ output"
+ building_coal_mine_output_add_desc:0 "A bonus or penalty to the output of $building_coal_mine$"
+ 
+ building_oil_rig_output_add:0 "$building_oil_rig$ output"
+ building_oil_rig_output_add_desc:0 "A bonus or penalty to the output of $building_oil_rig$"
+ 
+ building_logging_camp_output_add:0 "$building_logging_camp$ output"
+ building_logging_camp_output_add_desc:0 "A bonus or penalty to the output of $building_logging_camp$"
+ 
+ building_fishing_wharf_output_add:0 "$building_fishing_wharf$ output"
+ building_fishing_wharf_output_add_desc:0 "A bonus or penalty to the output of $building_fishing_wharf$"
+ 
+ building_dye_plantation_output_add:0 "$building_dye_plantation$ output"
+ building_dye_plantation_output_add_desc:0 "A bonus or penalty to the output of $building_dye_plantation$"

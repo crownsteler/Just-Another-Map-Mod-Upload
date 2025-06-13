@@ -1,0 +1,128 @@
+﻿cr_minette_ores_progress_bar = {
+ 	name = "cr_minette_ores_progress_bar_name"
+ 	desc = "cr_minette_ores_progress_bar_desc"
+ 	monthly_progress = {
+		#if = {
+		#	limit = {
+		#		has_technology_researched = bessemer_process
+		#	}
+		#	add = {
+		#	   desc = "cr_minette_ores_bessemer_process_researched"
+		#	   value = 1
+		#    }
+		#}
+		add = {
+			desc = "cr_minette_ores_innovation"
+			value = country_innovation
+			divide = 40
+			max = 10
+		}
+		if = {
+			limit = {
+				has_technology_researched = open_hearth_process
+			}
+			add = {
+			   desc = "cr_minette_ores_open_hearth_process_researched"
+			   value = 8
+		    }
+		}
+		if = {
+			limit = {
+				has_technology_researched = electric_arc_process
+			}
+			add = {
+			   desc = "cr_minette_ores_electric_arc_process_researched"
+			   value = 25
+		    }
+		}
+		if = {
+			limit = {
+				owner = {
+					any_scope_state = {
+						state_region = s:STATE_ALSACE_LORRAINE
+						has_decree = decree_encourage_resource_industry
+					}
+				}
+			}
+			add = {
+				desc = "cr_minette_ores_encouraging_resource_industry"
+				value = 8
+			}
+		}
+		if = {
+			limit = {
+				market_capital.market = {
+					mg:iron = { 
+						market_goods_pricier > 0.4 
+					}
+				}
+			}
+			add = {
+				desc = "cr_minette_ores_ore_expensive"
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				market_capital.market = {
+					mg:iron = { 
+						market_goods_cheaper > 0.2
+					}
+				}
+			}
+			add = {
+				desc = "cr_minette_ores_ore_cheap"
+				value = -4
+			}
+		}
+		if = {
+			limit = {
+				"goods_production_rank(g:iron)" <= 3
+			}
+			add = {
+				desc = "cr_minette_ores_ore_production_rank"
+				value = -5
+			}
+		}
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			add = {
+				desc = "cr_minette_ores_is_ai"
+				value = 3
+			}
+		}
+		#add = {
+		#	desc = "cr_minette_ores_ore_production_rank"
+		#	value = "goods_production_rank(g:iron)"
+		#	subtract = 6
+		#	max = 0
+		#}
+		##}
+		##if = {
+		##	limit = {
+		##		scope:minette_ore_state = {
+		##			has_building = building_steel_mills
+		##		}
+		##	}
+		#add = {
+		#	desc = "cr_minette_ores_steel_mill_level"
+		#	value = scope:minette_ore_state.b:building_steel_mills.level
+		#	max = 10
+		#}
+		##}
+		#add = {
+		#	desc = "cr_minette_ores_market_price"
+		#	value = mg:iron_ore.market_good_pricier
+		#	multiply = 10
+		#	divide = 2
+		#}
+ 	}
+	
+	default = yes
+
+ 	start_value = 0
+ 	min_value = 0
+ 	max_value = 500
+}

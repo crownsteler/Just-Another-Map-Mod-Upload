@@ -311,7 +311,7 @@ is_jungle_hills = {
 		region = sr:region_moluccas
 		region = sr:region_philippines
 		region = sr:region_south_china
-		this = s:STATE_RYUKYU_ISLANDS
+		region = sr:region_formosa
 	}
 }
 

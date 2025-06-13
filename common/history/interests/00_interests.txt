@@ -108,6 +108,8 @@
 		add_declared_interest = region_england
 		add_declared_interest = region_low_countries
 		add_declared_interest = region_iberia
+		add_declared_interest = region_russia
+		add_declared_interest = region_new_england
 		add_declared_interest = region_dixie
 		add_declared_interest = region_mexico
 		add_declared_interest = region_egypt
@@ -118,6 +120,7 @@
 		add_declared_interest = region_bosphorus
 		add_declared_interest = region_indochina
 		add_declared_interest = region_guinea
+		add_declared_interest = region_guayana
 	}
 	c:BRZ = {
 		add_declared_interest = region_andes

@@ -1,0 +1,215 @@
+﻿namespace = cr_minette_ores_events
+
+cr_minette_ores_events.2 = { #Buried Riches, Unmet Promise
+	type = country_event
+	placement = scope:minette_ore_location
+
+	dlc = dlc_anno1836
+
+	title = cr_minette_ores_events.2.t
+	desc = cr_minette_ores_events.2.desc
+	flavor = cr_minette_ores_events.2.flavour
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	immediate = {
+		if = {
+			any_scope_state = {
+				state_region = s:STATE_LORRAINE
+			}
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_LORRAINE
+				}
+				save_scope_as = minette_ore_state
+			}
+			p:xC5F13A = {
+				save_scope_as = minette_ore_location
+			}
+		}
+		else = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_ALSACE_LORRAINE
+				}
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_ALSACE_LORRAINE
+					}
+					save_scope_as = minette_ore_state
+				}
+				p:xB000E0 = {
+					save_scope_as = minette_ore_location
+				}
+			}
+		}
+	}
+
+	option = {
+		name = cr_minette_ores_events.2.a
+		default_option = yes
+		if = {
+			limit = {
+				NOT = {
+					has_journal_entry = je_cr_minette_ores 
+				}
+			}
+			add_journal_entry = { type = je_cr_minette_ores }
+		}
+		
+		else = {
+			show_as_tooltip = {
+				add_journal_entry = { type = je_cr_minette_ores }
+			}
+		}
+		custom_tooltip = cr_minette_ores_events.2.a_tt
+		clear_saved_scope = minette_ore_location
+		clear_saved_scope = minette_ore_state
+
+	}
+}
+
+cr_minette_ores_events.3 = { #Buried Riches, Unmet Promise
+	type = country_event
+	placement = scope:minette_ore_location
+
+	dlc = dlc_anno1836
+
+	title = cr_minette_ores_events.3.t
+	desc = cr_minette_ores_events.3.desc
+	flavor = cr_minette_ores_events.3.flavour
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	immediate = {
+		if = {
+			any_scope_state = {
+				state_region = s:STATE_LORRAINE
+			}
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_LORRAINE
+				}
+				save_scope_as = minette_ore_state
+			}
+			p:xC5F13A = {
+				save_scope_as = minette_ore_location
+			}
+		}
+		else = {
+			any_scope_state = {
+				limit = {
+					state_region = s:STATE_ALSACE_LORRAINE
+				}
+				random_scope_state = {
+					limit = {
+						state_region = s:STATE_ALSACE_LORRAINE
+					}
+					save_scope_as = minette_ore_state
+				}
+				p:xB000E0 = {
+					save_scope_as = minette_ore_location
+				}
+			}
+		}
+	}
+
+	cancellation_trigger = {
+		OR = {
+			has_technology_researched =	bessemer_process
+			NOT = {
+				any_scope_state = {
+					state_region = s:STATE_ALSACE_LORRAINE
+				}
+			}
+		}
+	}
+
+	option = {
+		name = cr_minette_ores_events.3.a
+		default_option = yes
+		if = {
+			limit = {
+				NOT = {
+					has_journal_entry = je_cr_minette_ores 
+				}
+			}
+			add_journal_entry = { type = je_cr_minette_ores }
+		}
+		
+		else = {
+			show_as_tooltip = {
+				add_journal_entry = { type = je_cr_minette_ores }
+			}
+		}
+		custom_tooltip = cr_minette_ores_events.3.a_tt
+
+	}
+}
+
+cr_minette_ores_events.10 = { #Buried Riches, Unmet Promise
+	type = country_event
+	placement = p:xB000E0
+
+	dlc = dlc_anno1836
+
+	title = cr_minette_ores_events.1.t
+	desc = cr_minette_ores_events.1.desc
+	flavor = cr_minette_ores_events.1.flavour
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			save_scope_as = minette_ore_state
+		}
+	}
+
+	option = {
+		name = cr_minette_ores_events.1.a
+		default_option = yes
+		if = {
+			limit = {
+				NOT = {
+					has_journal_entry = je_cr_minette_ores 
+				}
+			}
+			add_journal_entry = { type = je_cr_minette_ores }
+		}
+		
+		else = {
+			show_as_tooltip = {
+				add_journal_entry = { type = je_cr_minette_ores }
+			}
+		}
+		custom_tooltip = cr_minette_ores_events.1.a_tt
+
+	}
+}

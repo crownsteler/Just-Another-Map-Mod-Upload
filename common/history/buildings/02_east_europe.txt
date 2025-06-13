@@ -178,7 +178,7 @@
 						type="building_iron_mine"
 						country="c:PRU"
 						levels=2
-						region="STATE_BRANDENBURG"
+						region="STATE_SILESIA"
 					}
 				}
 				reserves=1

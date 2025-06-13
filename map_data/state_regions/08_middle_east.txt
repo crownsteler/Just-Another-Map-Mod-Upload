@@ -551,7 +551,7 @@ STATE_KHORASAN = {
     }
     resource = {
         type = "bg_coal_mining"
-        undiscovered_amount = 20
+        undiscovered_amount = 18
     }
     resource = {
         type = "bg_iron_mining"
@@ -620,7 +620,7 @@ STATE_MAZANDARAN = {
     }
     resource = {
         type = "bg_coal_mining"
-        undiscovered_amount = 48
+        undiscovered_amount = 38
     }
 }
 
@@ -640,7 +640,7 @@ STATE_IRAKAJEMI = {
     }
     resource = {
         type = "bg_coal_mining"
-        undiscovered_amount = 12
+        undiscovered_amount = 8
     }
     resource = {
         type = "bg_lead_mining"
@@ -801,7 +801,7 @@ STATE_KONYA = {
     farm = "x669397"
     mine = "xFA1AEF"
     wood = "x1D4A61"
-    arable_land = 40
+    arable_land = 60
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" } #wine sufficiently covered by Aydin, silk removed because to many resources otherwise
 
 
@@ -848,7 +848,7 @@ STATE_DIYARBAKIR = {
     mine = "x510E91"
     wood = "x55EC85"
     arable_land = 40
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" } #Switched Vineyards for Cotton
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" } #Switched Opium for Cotton
     capped_resources = {
         #bg_coal_mining = 32 #Lignite
         bg_copper_mining = 42 #Diyarbakir means land of copper and copper mining dates back millennia
@@ -866,7 +866,7 @@ STATE_ADANA = {
     farm = "xE8DCC5"
     mine = "xA4523A"
     wood = "xF657D8"
-    arable_land = 35
+    arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_dye_plantations" }
     capped_resources = {
         #also pyrite

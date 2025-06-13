@@ -706,7 +706,7 @@ STATE_ALSACE_LORRAINE = {
     traits = { state_trait_saar_coalfield state_trait_minette_ore state_trait_rhine_river }
     city = "x6E4891"
     farm = "x4899A2"
-    mine = "xB000E0"
+    mine = "xB000E0"	#Do not forget to update cr_minette_ores_events.1
     wood = "xCC3250"
     arable_land = 67
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
@@ -717,8 +717,7 @@ STATE_ALSACE_LORRAINE = {
     }
     resource = {
         type = "bg_iron_mining"
-        discovered_amount = 50
-        undiscovered_amount = 65
+        undiscovered_amount = 115
     }
 }
 
@@ -830,17 +829,18 @@ STATE_LORRAINE = {
 
     city = "xB080E0"
     farm = "x7FC1E6"
-    mine = "xC5F13A"
+    mine = "xC5F13A" #Do not forget to update cr_minette_ores_events.1
     wood = "x70BFA0"
     arable_land = 55
     arable_resources = { bg_wheat_farms bg_livestock_ranches }
     capped_resources = {
-        #bg_iron_mining = 70 #Only explored once Alsace was lost
+        #bg_iron_mining = 70 #Only explored once Alsace was lost, but borders of Lorraine were redrawn back then to put as much ore in German occupied Alsace-Lorraine
         bg_logging = 11
     }
     resource = {
         type = "bg_iron_mining"
-        undiscovered_amount = 70
+		discovered_amount = 40
+        undiscovered_amount = 30
     }
 }
 
@@ -1319,6 +1319,7 @@ STATE_ANHALT = {
         #bg_iron_mining = 15 #Elbingrode & Huttenrode
         #bg_sulfur_mining = 22 #Kalisalz
         bg_logging = 17
+		bg_copper_mining = 54 #Mansfeld Basin in Sachen-Anhalt
     }
     resource = {
         type = "bg_sulfur_mining"
@@ -1549,7 +1550,7 @@ STATE_SAXONY = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" "bg_dye_plantations" }
     capped_resources = {
         bg_coal_mining = 90
-        bg_copper_mining = 33
+        #bg_copper_mining = 33 #Moved to Mansfeld Basin in Sachen-Anhalt
         bg_sulfur_mining = 50
         bg_logging = 8
     #bg_minor_metals_mining = 5
@@ -1571,27 +1572,9 @@ STATE_HESSE = {
         #could add lead
         #bg_coal_mining = 60 Lignite
         bg_iron_mining = 25 #Spessart, Lahn-Dill
-
-
-
-
-
-
         bg_sulfur_mining = 35 #Goldgrube/Lahn-Dill
-
-
-
-
-
-
         bg_logging = 10
         bg_copper_mining = 30 #Lahn-Dill 
-
-
-
-
-
-
     #bg_minor_metals_mining = 15 #Manganese
     }
 }

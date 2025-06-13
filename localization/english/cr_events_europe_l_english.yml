@@ -465,11 +465,11 @@
  cr_carlist_events.75.a_regency_rejected_tt:0 "The war continues."
  
  #Carlist Response to Isabel accepting Don Carlos as regent
- cr_carlist_events.75.t_regency_accepted:0 "They Refuse Even Peace"
- cr_carlist_events.75.desc_regency_accepted:0 "We offered peace—not surrender. In a gesture of duty and reconciliation, we proposed to set aside our claim, to guide [SCOPE.sCountry('isabel_char.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstName] as regent until she comes of age, and to preserve the throne through unity rather than ruin.\n\nBut Madrid, under the sway of Queen Regent Maria Christina, has refused. They would rather let Spain burn than let us steer it from the fire. What we extended in dignity, they received in distrust. So be it. Let history judge who sought war, and who sought to end it."
- cr_carlist_events.75.flavour_regency_accepted:0 "They mistake moderation for weakness. But we do not falter. If they will not accept peace on just terms, then they will face what follows—with God and the law at our side."
- cr_carlist_events.75.a_regency_accepted:0 "They have chosen the sword. So shall it be."
- cr_carlist_events.75.a_regency_accepted_tt:0 "The war continues."
+ cr_carlist_events.75.t_regency_accepted:0 "The Crown, in Trust"
+ cr_carlist_events.75.desc_regency_accepted:0 "Madrid has accepted what we offered—not for ambition, but for order. Through the wise mediation of [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('don_carlos_marriage_proposing_country').GetRuler.GetFirstName], Queen Regent Maria Christina has agreed that peace may be won not through the blade, but through stewardship. We shall govern as regent in the name of the child Queen [SCOPE.sCountry('spain').GetRuler.GetFirstName], until such time as she is of age to rule."
+ cr_carlist_events.75.flavour_regency_accepted:0 "Let no man mistake this for weakness. It is strength tempered by wisdom. The throne may yet be healed, and Spain preserved. Though our claim remains just, it is in safeguarding the realm—not grasping at the crown—that we prove our right to it."
+ cr_carlist_events.75.a_regency_accepted:0 "Then let us govern as guardians, not conquerors."
+ cr_carlist_events.75.a_regency_accepted_tt:0 "Don Carlos is appointed regent. The war may end, and Carlist influence enters the heart of the Spanish state."
 
 #Sicily respond events
 #Carlos rejects mediation
@@ -509,12 +509,19 @@
  cr_carlist_events.79.a_joint_reign_rejected:0 "We did what we could. Let Spain chart its course."
  cr_carlist_events.79.a_joint_reign_rejected_tt:0 "The rejection is deeply disappointing. We lose some influence, but retain moral high ground and Bourbon solidarity."
  
- #Two Sicilies Response toIsabel rejecting Don Carlos as regent
+ #Two Sicilies Response to Isabel rejecting Don Carlos as regent
  cr_carlist_events.79.t_regency_rejected:0 "No Accord Reached"
  cr_carlist_events.79.desc_regency_rejected:0 "Our efforts to bring an end to the conflict in [SCOPE.sCountry('spain').GetNameNoFormatting] have failed to bear fruit. Through careful mediation, we presented a proposal whereby Don [SCOPE.sCharacter('don_carlos_char').GetFirstName] would renounce his claim and serve only as regent for the young [SCOPE.sCountry('spain').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('spain').GetRuler.GetFirstName], guiding the realm until she came of age.\n\nThe offer, though generous in its intent, was ultimately declined by the government in Madrid. Whether out of principle, caution, or mistrust, Queen Regent Maria Christina and her advisors have chosen to pursue another course. The door to reconciliation was opened—if only briefly—and now closes once more."
  cr_carlist_events.79.flavour_regency_rejected:0 "We sought to bridge the divide not with triumph or submission, but with a gesture of shared responsibility. Yet even a tempered peace can falter when the wounds of war run deep."
- cr_carlist_events.79.a_regency_rejected:0 "Then let it be. We have done our part."
- cr_carlist_events.79.a_regency_rejected_tt:0 "We ceases our efforts to mediate. The war continues in Spain."
+ cr_carlist_events.79.a_regency_rejected:0 "Let Spain choose its own fate."
+ cr_carlist_events.79.a_regency_rejected_tt:0 "We proposal has been rejected. The Kingdom of the Two Sicilies withdraws from further mediation efforts—for now."
+ 
+ #Two Sicilies Response to Isabel accepting Don Carlos as regent
+ cr_carlist_events.79.t_regency_accepted:0 "Stewardship for Peace"
+ cr_carlist_events.79.desc_regency_accepted:0 "Our efforts to bring reconciliation to Spain have borne fruit. With war dragging on and no decisive end in sight, Don [SCOPE.sCharacter('don_carlos_char').GetFirstName]—at our urging—offered to govern as regent for Queen [SCOPE.sCountry('spain').GetRuler.GetFirstName], not in defiance of her claim, but in protection of it.\n\nTo our satisfaction, Queen Regent Maria Christina—our sister—has accepted this offer. Don Carlos will not wear the crown, but he will bear its burden. The conflict may now give way to stability, and the House of Bourbon, divided by bloodshed, might yet find common cause in stewardship and duty."
+ cr_carlist_events.79.flavour_regency_accepted:0 "This is not the triumph of one side over another, but the triumph of peace over pride. We acted as kinsmen, as Catholics, and as sovereigns—and Spain, perhaps, may be made whole again."
+ cr_carlist_events.79.a_regency_accepted:0 "Let this regency restore what war has broken."
+ cr_carlist_events.79.a_regency_accepted_tt:0 "We proposal has been rejected. The Kingdom of the Two Sicilies withdraws from further mediation efforts—for now."
  
  #Fallback
  cr_carlist_events.79.t_fallback:0 "The Spanish Mediation"

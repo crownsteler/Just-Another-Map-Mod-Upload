@@ -45,15 +45,7 @@ state_trait_cr_billiton = {
     icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
 	
 	modifier = {
-		building_lead_mine_throughput_add = 0.15
-	}
-}
-
-state_trait_copper_coast = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
-	
-	modifier = {
-		building_copper_mine_throughput_add = 0.10
+		building_lead_mine_output_add = 0.15
 	}
 }
 
@@ -61,6 +53,6 @@ state_trait_true_indigo = {
 	icon = "gfx/interface/icons/state_trait_icons/unused/resources_exotic.dds"
 	
 	modifier = {
-		building_dye_plantation_throughput_add = 0.1
+		building_dye_plantation_output_add = 0.1
 	}
 }

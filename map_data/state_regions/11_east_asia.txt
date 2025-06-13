@@ -296,7 +296,7 @@ STATE_OUTER_MANCHURIA = {
     #    type = "bg_oil_extraction"
     #    undiscovered_amount = 10
     #}
-    naval_exit_id = 3059
+    naval_exit_id = 7059
 }
 
 STATE_SOUTHERN_MANCHURIA = {
@@ -813,17 +813,17 @@ STATE_FORMOSA = {
     mine = "xAEA2D8"
     wood = "x6645CF"
     arable_land = 80
-    arable_resources = { "bg_rice_farms" "bg_dye_plantations" "bg_tea_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
+    arable_resources = { "bg_rice_farms" "bg_tea_plantations" "bg_sugar_plantations" "bg_banana_plantations" } #Removed "bg_dye_plantations"  to reduce resource to 4
     capped_resources = {
         #also copper but by 1880 only coal and sulfur were know to exist in economic quantities 
         bg_logging = 9
         bg_fishing = 13
         #bg_coal_mining = 24
-        bg_sulfur_mining = 20
+        #bg_sulfur_mining = 6	#Sulfur mining was very minor in the game period.
     }
     resource = {
         type = "bg_coal_mining"
-        undiscovered_amount = 24
+        undiscovered_amount = 16
     }
     naval_exit_id = 3056
 }
@@ -1242,7 +1242,7 @@ STATE_HOKKAIDO = {
     #    depleted_type = "bg_gold_mining"
     #    undiscovered_amount = 4
     #}
-    #naval_exit_id = 3059
+    #naval_exit_id = 7059
 }
 
 STATE_TOHOKU = {
@@ -1313,7 +1313,7 @@ STATE_CHUBU = {
         type = "bg_oil_extraction"
         undiscovered_amount = 30
     }
-    naval_exit_id = 3059
+    naval_exit_id = 7059
 }
 
 STATE_KANSAI = {
@@ -1527,7 +1527,7 @@ STATE_SARIWON = {
         type = "bg_lead_mining"
         undiscovered_amount = 39
     }
-    naval_exit_id = 3059
+    naval_exit_id = 7059
 }
 
 STATE_PYONGYANG = {

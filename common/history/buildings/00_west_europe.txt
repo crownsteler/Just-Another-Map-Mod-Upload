@@ -6408,6 +6408,19 @@
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
+			create_building={	#Mansfeld Basin
+				building="building_copper_mine"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:PRU"
+						levels=2
+						region="STATE_ANHALT"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
@@ -7619,19 +7632,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_copper_mine"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:SAX"
-						levels=2
-						region="STATE_SAXONY"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_copper_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 			create_building={
 				building="building_sulfur_mine"

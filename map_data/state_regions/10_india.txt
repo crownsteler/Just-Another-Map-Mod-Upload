@@ -11,8 +11,12 @@
     arable_resources = { bg_rice_farms bg_livestock_ranches bg_dye_plantations bg_opium_plantations bg_tobacco_plantations bg_sugar_plantations }
 
     capped_resources = {
-        #bg_coal_mining = 80 #apparently as of 2024 there is no coal mining in Bihar
+        #bg_coal_mining = 62
         bg_logging = 14
+    }
+    resource = {	#Jharia coalfield
+        type = bg_coal_mining
+        undiscovered_amount = 76
     }
 }
 
@@ -56,7 +60,7 @@ STATE_WEST_BENGAL = {
     resource = {
         type = bg_coal_mining
         discovered_amount = 10
-        undiscovered_amount = 38
+        undiscovered_amount = 48
     }
     resource = {
         type = bg_oil_extraction
@@ -85,7 +89,7 @@ STATE_ASSAM = {
     resource = {
         type = bg_coal_mining
         discovered_amount = 16
-        undiscovered_amount = 28
+        undiscovered_amount = 38
     }
     resource = {
         type = bg_oil_extraction

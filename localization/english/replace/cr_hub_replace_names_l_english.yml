@@ -297,7 +297,7 @@
  HUB_NAME_STATE_CASTILE_mine:0 "Guardo"
  HUB_NAME_STATE_CASTILE_wood:0 "Soria"
  HUB_NAME_STATE_VALENCIA_city:0 "Valencia"
- HUB_NAME_STATE_VALENCIA_farm:0 "Castellón de la Plana
+ HUB_NAME_STATE_VALENCIA_farm:0 "Castellón de la Plana"
  HUB_NAME_STATE_VALENCIA_mine:0 "Torrevieja"
  HUB_NAME_STATE_VALENCIA_wood:0 "Chelva"
  HUB_NAME_STATE_VALENCIA_port:0 "Alicante"
@@ -306,6 +306,7 @@
  HUB_NAME_STATE_ALENTEJO_port:0 "Lagos"
  HUB_NAME_STATE_ALENTEJO_mine:0 "Aljustrel"
  HUB_NAME_STATE_ALENTEJO_wood:0 "S.Teotónio"
+ HUB_NAME_STATE_NAVARRA_mine:0 "San Sebastian"
  
  #Benelux
  HUB_NAME_STATE_HOLLAND_mine:0 "Den Helder"

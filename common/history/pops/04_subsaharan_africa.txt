@@ -1566,16 +1566,6 @@
 				size = 28000
 			}
 		}
-		region_state:GGY = { #Former STATE_TOGO
-			create_pop = {
-				culture = ewe
-				size = 5000
-			}
-			create_pop = {
-				culture = mossi
-				size = 15000
-			}
-		}
 	}
 	s:STATE_BORGU = {
 		region_state:BRG = {
@@ -1630,7 +1620,16 @@
 				size = 15000
 			}
 		}
-	
+		region_state:GGY = { #Former STATE_TOGO
+			create_pop = {
+				culture = ewe
+				size = 5000
+			}
+			create_pop = {
+				culture = mossi
+				size = 15000
+			}
+		}	
 	}
 	s:STATE_LINDI = {
 		region_state:HHE = {

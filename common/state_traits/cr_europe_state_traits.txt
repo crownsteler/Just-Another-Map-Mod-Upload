@@ -3,7 +3,7 @@
 	
 	modifier = {
 		building_sulfur_mine_output_add = 0.075
-		building_copper_mine_throughput_add = 0.05
+		building_copper_mine_output_add = 0.05
 	}
 }
 
@@ -58,7 +58,7 @@ state_trait_siderite_ore = {
 }
 
 state_trait_porphyry_copper = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+    icon = "gfx/interface/icons/state_trait_icons/poor_natural_resources.dds"
 	
 	modifier = {
 		#disable copper construction till proper technology is researched
@@ -67,10 +67,10 @@ state_trait_porphyry_copper = {
 }
 
 state_trait_minette_ore = {
-    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+    icon = "gfx/interface/icons/state_trait_icons/poor_natural_resources.dds"
 	
 	modifier = {
-		good_output_iron_mult = -0.75
+		goods_output_iron_mult = -0.5
 	}
 }
 
@@ -78,7 +78,8 @@ state_trait_minette_ore_2 = {
     icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
 	
 	modifier = {
-		good_output_iron_mult = 0.15
+		goods_output_iron_mult = 0.15
+		building_chemical_plants_throughput_add = 0.10
 	}
 }
 
@@ -86,7 +87,7 @@ state_trait_erzberg = {
     icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
 	
 	modifier = {
-		building_iron_mine_throughput_add = 0.10
+		building_iron_mine_output_add = 0.05
 		state_construction_mult = -0.05
 		state_infrastructure_mult = -0.10
 	}
@@ -96,7 +97,7 @@ state_trait_slovak_ore_mountains = {
     icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
 	
 	modifier = {
-		building_iron_mine_throughput_add = 0.10
+		building_iron_mine_output_add = 0.05
 		state_construction_mult = -0.05
 		state_infrastructure_mult = -0.10
 	}
@@ -107,16 +108,8 @@ state_trait_polders = {
 	
 	modifier = {
 		state_construction_mult = -0.05
-		building_group_bg_ranching_output_add = 0.10
-		building_rye_farm_output_add = 0.05
-	}
-}
-
-state_trait_pannonian_plain = {
-	icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
-	
-	modifier = {
-		building_group_bg_agriculture_output_add = 0.05
+		building_group_bg_ranching_throughput_add = 0.10
+		building_group_bg_agriculture_throughput_add = 0.10
 	}
 }
 
@@ -124,6 +117,6 @@ state_trait_skouriotissa_copper = {
     icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
 	
 	modifier = {
-		building_copper_mine_output_add = 0.10
+		building_copper_mine_output_add = 0.05
 	}
 }

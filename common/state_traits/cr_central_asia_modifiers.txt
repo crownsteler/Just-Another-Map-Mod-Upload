@@ -27,14 +27,6 @@ state_trait_cr_lapis_lazuli_deposits = {
 	icon = "gfx/interface/icons/state_trait_icons/turquoise.dds"
 
 	modifier = {
-		building_dye_plantation_throughput_add = 0.15
-	}
-}
-
-state_trait_kashmir_wool = {
-	icon = "gfx/interface/icons/state_trait_icons/resources_grazing.dds" #needs a better one
-
-	modifier = {
-		goods_fabric_throughput_add = 0.15
+		building_dye_plantation_output_add = 0.15
 	}
 }

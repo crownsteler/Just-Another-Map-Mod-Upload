@@ -9,7 +9,7 @@
 state_trait_cr_clay_belt = {
 	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
 	modifier = {
-		goods_output_grain_mult = 0.025
+		building_group_bg_agriculture_throughput_add = 0.1
 	}
 }
 
@@ -28,7 +28,7 @@ state_trait_cr_humboldt_current = {
     icon = "gfx/interface/icons/state_trait_icons/resources_fish.dds"
 	
 	modifier = {
-		goods_output_fish_mult = 0.10
+		building_fishing_wharf_output_add = 0.10
 	}
 }
 
@@ -45,7 +45,7 @@ state_trait_cr_cerrado = {
 	icon = "gfx/interface/icons/state_trait_icons/poor_soils.dds"
 	
 	modifier = {
-		goods_output_grain_mult = -0.075
+		#goods_output_grain_mult = -0.075
 		goods_output_hardwood_mult = -0.50
 	}
 }

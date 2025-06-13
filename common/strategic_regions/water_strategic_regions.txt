@@ -146,6 +146,10 @@ region_west_african_coast = {
 	states = { STATE_WEST_AFRICAN_COAST }
 }
 
+region_coast_of_guinea = {
+	states = { STATE_COAST_OF_GUINEA }
+}
+
 region_easter_island = {
 	states = { STATE_EASTER_ISLAND }
 }
@@ -316,6 +320,10 @@ region_east_china_sea = {
 
 region_sea_of_japan = {
 	states = { STATE_SEA_OF_JAPAN }
+}
+
+region_east_sea_japan = {
+	states = { STATE_EAST_SEA_JAPAN }
 }
 	
 region_gulf_of_mexico = {

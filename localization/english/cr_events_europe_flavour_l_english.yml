@@ -51,3 +51,21 @@
  # National Modifiers #
  cr_sound_of_science_prestige_modifier:0 "The Sound of Science"
  cr_sound_of_science_tech_spread_modifier:0 "The Sound of Science"
+ 
+ 
+ #The Little Veins of Lorraine
+ cr_minette_ores_events.2.t:0 "Buried Riches, Unmet Promise"
+ cr_minette_ores_events.2.desc:0 "Geologists and industrialists in [SCOPE.sState('minette_ore_state').GetName] have long been aware of the vast beds of iron ore hidden beneath the region's hills—immense in scale, yet tainted by their high phosphorus content. Until now, this impurity has rendered the ore all but useless for the production of quality steel.\n\nBut recent advances in metallurgy—culminating in the development of the #BOLD Bessemer Process#!—have sparked fresh debate in scientific and industrial circles. If phosphorus can be removed or neutralized in the furnace, then these #italic minette ores#!, once dismissed as second-rate, might become a cornerstone of national industry."
+ cr_minette_ores_events.2.flavour:0 "With ingenuity, investment, and coordination between science and industry, a new era of steel production could rise from the iron beneath Lorraine."
+ cr_minette_ores_events.2.a:0 "This could change everything."
+ cr_minette_ores_events.2.a_tt:0 "Completing the #variable The Little Veins of Lorraine#! journal entry will remove the #variable Minette Ores#! state trait from [SCOPE.sState('minette_ore_state').GetNameNoFormatting], unlocking its iron mining potential."
+ cr_minette_ores_events.3.t:0 "Buried Riches, Unmet Promise"
+ cr_minette_ores_events.3.desc:0 "Our recent conquest of [SCOPE.sState('minette_ore_state').GetName] has brought with it more than political control—it has brought us the vast minette ore beds that lie beneath its hills.\n\nOn paper, the find is extraordinary: iron ore in immense quantities, enough to supply steel mills for generations. But the ore is tainted. Rich in phosphorus, it cannot be processed using our current techniques. Local officials speak of its promise, but engineers shake their heads.\n\nFor now, the ore lies useless—an empire’s treasure locked behind a chemical barrier."
+ cr_minette_ores_events.3.flavour:0 "With ingenuity, investment, and coordination between science and industry, a new era of steel production could rise from the iron beneath Lorraine."
+ cr_minette_ores_events.3.a:0 "A prize in waiting."
+ cr_minette_ores_events.3.a_tt:0 "Completing the #variable The Little Veins of Lorraine#! journal entry will remove the #variable Minette Ores#! state trait from [SCOPE.sState('minette_ore_state').GetNameNoFormatting], unlocking its iron mining potential."
+ cr_minette_ores_events.10.t:0 "Forged in Fire"
+ cr_minette_ores_events.10.desc:0 "Years of experimentation, investment, and innovation have borne fruit. Metallurgists working in [SCOPE.sState('minette_ore_state').GetCityHubName] have succeeded in developing a process capable of removing phosphorus from minette ore—unlocking its full value for modern steelmaking."
+ cr_minette_ores_events.10.flavour:0 "What was once dismissed as a geological curiosity, unfit for industry, can now be fed into furnaces across the region. Blast furnaces can roar, smokestacks rise, and steel flow where once only raw promise lay."
+ cr_minette_ores_events.10.a:0 "Let the little veins of Lorraine feed the arteries of a growing industrial power."
+ cr_minette_ores_events.10.a_tt:0 "Let the fires never die."

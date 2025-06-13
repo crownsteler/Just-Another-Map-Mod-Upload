@@ -98,6 +98,19 @@
  STATE_SEMNAN:0 "Hamadan"
  STATE_PERSIAN_KURDISTAN:0 "Ardalan"
  
+ #Oceans and lakes
+ STATE_SEA_OF_JAPAN:0 "Sea of Japan"
+ region_sea_of_japan:0 "Sea of Japan"
+ STATE_EAST_SEA_JAPAN:0 "East Sea"
+ region_east_sea_japan:0 "East Sea"
+ STATE_COAST_OF_GUINEA:0 "Coast of Guinea"
+ region_coast_of_guinea:0 "Coast of Guinea"
+ STATE_ARAFURA_SEA:0 "Torres Strait"
+ region_arafura_sea:0 "Torres Strait"
+ STATE_GULF_OF_GUINEA:0 "Gulf of Biafra"
+ region_gulf_of_guinea:0 "Gulf of Biafra"
+
+ 
  #Strategic Regions
  region_bosphorus:0 "the Bosphorus"
  region_rhine:0 "the Rhineland"

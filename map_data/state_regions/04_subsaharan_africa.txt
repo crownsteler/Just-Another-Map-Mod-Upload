@@ -80,15 +80,11 @@ STATE_SENEGAL = {
     mine = "x70B0C0"
     wood = "x12B16A"
     arable_land = 60
-    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_sugar_plantations" "bg_dye_plantations" } #dye plantations = gum arabic
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_sugar_plantations" } #dye plantations = gum arabic, but removed to reduce resources to 4
     capped_resources = {
-        #bg_iron_mining = 30
+        #bg_iron_mining = 30	#Falémé mine, switched to Gambia 
         #bg_sulfur_mining = 40
         bg_fishing = 6
-    }
-    resource = {
-        type = "bg_iron_mining"
-        undiscovered_amount = 30
     }
     resource = {
         type = "bg_sulfur_mining"
@@ -98,7 +94,7 @@ STATE_SENEGAL = {
     #    type = "bg_rubber"
     #    undiscovered_amount = 18
     #}
-    naval_exit_id = 3088
+    naval_exit_id = 7088
 }
 
 STATE_GAMBIA = {
@@ -118,11 +114,15 @@ STATE_GAMBIA = {
         bg_fishing = 6
         bg_logging = 8
     }
+    resource = {	#Falémé mine
+        type = "bg_iron_mining"
+        undiscovered_amount = 25
+    }
     #resource = { #doesn't seem like a suitable place to grow rubber
     #    type = "bg_rubber"
     #    undiscovered_amount = 16
     #}
-    naval_exit_id = 3088
+    naval_exit_id = 7088
 }
 
 STATE_SIERRA_LEONE = {
@@ -470,7 +470,7 @@ STATE_GUINEA = {
         type = "bg_rubber"
         undiscovered_amount = 22
     }
-    naval_exit_id = 3088
+    naval_exit_id = 7088
 }
 
 STATE_MANDINKA = {
@@ -530,7 +530,7 @@ STATE_GHANA = {
         undiscovered_amount = 2
         discovered_amount = 3
     }
-    naval_exit_id = 3091
+    naval_exit_id = 3088
 }
 
 STATE_LOWER_VOLTA = {
@@ -587,7 +587,7 @@ STATE_LOWER_VOLTA = {
 STATE_DAHOMEY = {
     id = 222
     subsistence_building = "building_subsistence_farms"
-    provinces = { x01A011 x80A011 x65C6A9 x012190 xB616CF xB48765 xDE6889 x40E9E9 xD4B5FF x778011 x406D9B x8D0A5A x3D9A49 xD10A98 x51AD34 }
+    provinces = { x01A011 x80A011 x65C6A9 x012190 xB616CF xB48765 xDE6889 x40E9E9 xD4B5FF x778011 x406D9B x8D0A5A x3D9A49 xD10A98 }
     traits = { "state_trait_malaria" }
     prime_land = { "x01A011" "x80A011" "x65C6A9" }
     city = "x80A011"
@@ -616,7 +616,7 @@ STATE_DAHOMEY = {
 STATE_BORGU = {
     id = 3453
     subsistence_building = "building_subsistence_farms"
-    provinces = { x149CF1 x818487 xC233AC x716503 xEE2352 x64DB85 x672168 x2E9399 x02DAF6 xC8C8A6 x823A0A x9DB091 x20958D x4D0477 x483654 x222F93 x131955 x87D283 x938637 xE35197 xE8CC9C xEDF00C xAF65D3 }
+    provinces = { x149CF1 x818487 xC233AC x716503 xEE2352 x64DB85 x672168 x2E9399 x02DAF6 xC8C8A6 x823A0A x9DB091 x20958D x4D0477 x483654 x222F93 x131955 x87D283 x938637 xE35197 xE8CC9C xEDF00C xAF65D3 x51AD34 }
     traits = { "state_trait_malaria" }
     city = "xEE2352"
     farm = "xC233AC"

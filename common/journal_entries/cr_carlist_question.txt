@@ -197,6 +197,85 @@ je_cr_carlist_question_christinos = {
 	}
 }
 
+je_cr_carlist_regency = {
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	group = je_group_historical_content
+	
+
+	complete = {
+		
+	}
+	immediate = {
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_carlists
+			}
+			save_scope_as = carlist_movement
+		}
+		#random_country = {
+		#	limit = {
+		#		has_variable = don_carlos_exile_country_var
+		#	}
+		#	save_scope_as = don_carlos_exile_country
+		#	random_political_movement = {
+		#		limit = {
+		#			has_modifier = cr_don_carlos_liberal_support
+		#		}
+		#		save_scope_as = supported_movement
+		#	}
+		#}
+		
+		c:SPA = {
+			ig:ig_intelligentsia = {
+				save_scope_as = cr_spanish_liberals
+			}
+			ig:ig_devout = {
+				save_scope_as = cr_spanish_catholic_church
+			}
+			ig:ig_landowners = {
+				save_scope_as = cr_spanish_landowners
+			}
+			
+			ig:ig_rural_folk = {
+				save_scope_as = cr_spanish_peasants
+			}
+			
+			ig:ig_petty_bourgeoisie = {
+			}
+		}
+	}
+	
+	should_be_pinned_by_default = yes
+	
+	on_monthly_pulse = {
+		#random_events = {
+		#	3 = 0
+		#	1 = cr_carlist_events.1 #The Desamortización of the Monastaries
+		#}
+		
+		#Carlos support calculator
+		if = {
+			limit = {
+				ig:ig_landowners = {
+				
+				}
+			}
+		
+		}
+	}
+	
+	scripted_button = je_cr_don_carlos_stop_supporting_portugese_liberals_button
+	
+	on_complete = {
+		custom_tooltip = {
+			text = je_cr_carlist_question_christinos_completion_tt
+			set_variable = cr_carlists_question_ended_var
+		}
+	}
+}
+
 #je_cr_ferdinando_po = {
 #
 #	icon = "gfx/interface/icons/event_icons/event_map.dds"

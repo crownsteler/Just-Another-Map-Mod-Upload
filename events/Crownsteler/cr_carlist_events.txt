@@ -1,17 +1,5 @@
 ﻿namespace = cr_carlist_events
 
-cr_carlist_events.99 = { #cleanup event
-	type = country_event
-	
-	hidden = yes
-	
-	immediate = {
-		c:SPA = {
-			remove_variable = cr_carlist_war_ongoing
-			remove_variable = cr_the_desamortizacions_have_happened
-		}
-	}
-}
 cr_carlist_events.98 = { #France ideology selector for testing purposes
 	type = country_event
 
@@ -255,53 +243,20 @@ cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
 			save_scope_as = christinos_movement
 		}
         remove_variable = cr_carlist_war_ongoing
-		create_country = {
-			origin = this
-			tag = NAV
-			state = s:STATE_NAVARRA.region_state:SPA
-			on_created = {
-				c:SPA = {
-					create_diplomatic_pact = {
-						country = c:NAV
-						type = personal_union
-					}
-				}
-				activate_law = law_type:law_monarchy
-				activate_law = law_type:law_oligarchy
-				activate_law = law_type:law_ethnostate
-				activate_law = law_type:law_state_religion
-				activate_law = law_type:law_hereditary_bureaucrats
-				activate_law = law_type:law_national_militia
-				activate_law = law_type:law_free_trade
-				activate_law = law_type:law_traditionalism
-				activate_law = law_type:law_homesteading
-			}
-		}
+		
+		#Setting up the fueros
+		establish_the_basque_fueros_effect = yes
 		c:NAV = {
 			save_scope_as = cr_kingdom_of_navarra
 		}
-		create_country = {
-			origin = this
-			tag = CAT
-			state = s:STATE_CATALONIA.region_state:SPA
-			#state = s:STATE_ARAGON.region_state:SPA
-			#state = s:STATE_VALENCIA.region_state:SPA
-			#state = s:STATE_BALEARES.region_state:SPA
-			on_created = {
-				c:SPA = {
-					create_diplomatic_pact = {
-						country = c:CAT
-						type = personal_union
-					}
-				}
-			}
-		}
+		establish_the_catalan_fueros_effect = yes
 		c:CAT = {
 			save_scope_as = cr_kingdom_of_aragon
 		}
 		s:STATE_NAVARRA.region_state:NAV = {
 			save_scope_as = cr_state_navarra
 		}
+		
 		c:SPA = {
 			save_scope_as = cr_christinos
 			ig:ig_intelligentsia = {
@@ -340,11 +295,11 @@ cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
 		name = cr_carlist_events.10.a
 		custom_tooltip = {
 			text = cr_carlist_events.10.a_tt
-			annex_with_incorporation = c:NAV
+			abolish_the_basque_fueros_effect = yes
 		}
 		custom_tooltip = {
 			text = cr_carlist_events.10.a_tt2
-			annex_with_incorporation = c:CAT
+			abolish_the_catalan_fueros_effect = yes
 		}
 		#custom_tooltip = {
 		#	text = cr_carlist_events.10.a_tt2
@@ -360,18 +315,7 @@ cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
 		}
 		add_loyalists = {
 			value = 0.1
-			culture = cu:catalan
-		}
-		add_loyalists = {
-			value = 0.1
 			culture = cu:galician
-		}
-		add_radicals = {
-			value = 0.3
-			culture = cu:basque
-		}
-		hidden_effect = {
-			trigger_event = { id = cr_carlist_events.99 days = 0 }
 		}
 		
 		ai_chance = {
@@ -387,7 +331,7 @@ cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
 		}
 		custom_tooltip = {
 			text = cr_carlist_events.10.a_tt2
-			annex_with_incorporation = c:CAT
+			abolish_the_catalan_fueros_effect = yes
 		}
 		custom_tooltip = {
 			text = cr_carlist_events.10.b_tt2
@@ -400,10 +344,6 @@ cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
 		add_loyalists = {
 			value = 0.05
 			culture = cu:spanish
-		}
-		add_loyalists = {
-			value = 0.05
-			culture = cu:catalan
 		}
 		add_loyalists = {
 			value = 0.05
@@ -460,7 +400,6 @@ cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
 			culture = cu:basque
 		}
 		hidden_effect = {
-			trigger_event = { id = cr_carlist_events.99 days = 0 }
 			c:NAV = {
 				add_loyalists = {
 					value = 0.5
@@ -482,7 +421,6 @@ cr_carlist_events.10 = { #The Embrace of Vergara (Christino Victory)
 				}
 			}
 		}
-		don_carlos_exile_country_selector = yes
 		ai_chance = {
 			base = 5
 		}
@@ -4308,7 +4246,6 @@ cr_carlist_events.75 = { #The Crown Reunited? - Response to Isabel's response
 		default_option = yes
 		
 		
-		remove_variable = cr_don_carlos_union_proposed
 		remove_variable = cr_don_carlos_marriage_proposal_reject_csp
 		remove_variable = cr_don_carlos_naples_reconciliation
 		
@@ -4368,6 +4305,13 @@ cr_carlist_events.79 = { #Two Sicilies Response event
 				}
 				desc = cr_carlist_events.79.t_regency_rejected
 			}
+			#Spain accepts Carlos as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accepts_regent
+				}
+				desc = cr_carlist_events.79.t_regency_accepted
+			}
 			#Fallback
 			triggered_desc = {
 				trigger = {
@@ -4420,6 +4364,13 @@ cr_carlist_events.79 = { #Two Sicilies Response event
 					has_variable = cr_isabel_rejects_regent
 				}
 				desc = cr_carlist_events.79.desc_regency_rejected
+			}
+			#Spain accepts Carlos as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accepts_regent
+				}
+				desc = cr_carlist_events.79.desc_regency_accepted
 			}
 			
 			#fallback
@@ -4476,6 +4427,13 @@ cr_carlist_events.79 = { #Two Sicilies Response event
 				}
 				desc = cr_carlist_events.79.flavour_regency_rejected
 			}
+			#Spain accepts Carlos as regent
+			triggered_desc = {
+				trigger = {
+					has_variable = cr_isabel_accepts_regent
+				}
+				desc = cr_carlist_events.79.flavour_regency_accepted
+			}
 			
 			#fallback
 			triggered_desc = {
@@ -4501,6 +4459,10 @@ cr_carlist_events.79 = { #Two Sicilies Response event
 	
 	trigger = {
 	}
+	
+	cancellation_trigger = {
+		has_variable = cr_sicilian_mediation_has_ended
+	}
 
 	immediate = {
 		if = {
@@ -4512,6 +4474,24 @@ cr_carlist_events.79 = { #Two Sicilies Response event
 				}
 			}
 			save_scope_as = event_location
+		}
+		if = {
+			limit = {
+				exists = c:SPA 
+				NOT = { exists = c:CSP }
+			}
+			c:SPA = {
+				save_scope_as = carlist_war_winner
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:SPA  }
+				exists = c:CSP
+			}
+			c:SPA = {
+				save_scope_as = carlist_war_winner
+			}
 		}
 	}
 
@@ -4549,7 +4529,6 @@ cr_carlist_events.79 = { #Two Sicilies Response event
 		}
 		default_option = yes
 		cr_don_carlos_sicilian_mediation_succesful_effect = yes
-		
 	}
 
 	option = { #Spain rejects the compromise solution
@@ -4605,28 +4584,16 @@ cr_carlist_events.79 = { #Two Sicilies Response event
 		}
 	}
 
-	option = { #Spain rejects Carlos as regent
-		name = cr_carlist_events.79.a_regency_rejected
-		trigger = {
-			has_variable = cr_isabel_rejects_compromise
-		}
-		custom_tooltip = {
-			text = cr_carlist_events.79.a_regency_rejected_tt
-		}
-		default_option = yes
-		cr_don_carlos_sicilian_mediation_failure_effect = yes
-	}
-
 	option = { #Spain accepts Carlos as regent
 		name = cr_carlist_events.79.a_regency_accepted
 		trigger = {
-			has_variable = cr_isabel_rejects_compromise
+			has_variable = cr_isabel_accepts_regent
 		}
 		custom_tooltip = {
 			text = cr_carlist_events.79.a_regency_accepted_tt
 		}
 		default_option = yes
-		cr_don_carlos_sicilian_mediation_failure_effect = yes
+		cr_don_carlos_sicilian_mediation_succesful_effect = yes
 	}
 
 	#Fallback
@@ -4649,7 +4616,6 @@ cr_carlist_events.79 = { #Two Sicilies Response event
 		default_option = yes
 		
 		
-		remove_variable = cr_don_carlos_union_proposed
 		remove_variable = cr_don_carlos_marriage_proposal_reject_csp
 		remove_variable = cr_don_carlos_naples_reconciliation
 		

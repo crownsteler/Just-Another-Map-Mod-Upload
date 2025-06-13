@@ -1,0 +1,6 @@
+﻿dlc_anno1836 = {
+	name = "Anno 1836"
+	steam_id = "529340"
+	type = minor
+	priority = 0
+}

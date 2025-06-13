@@ -23,13 +23,19 @@
 	remove_variable = don_carlist_legitimist_legitimacy_undermined
 	remove_variable = don_carlist_bonapartist_refuge
 	remove_variable = don_carlist_bonapartist_legitimacy_undermined
+	
+	c:SPA = {
+		remove_variable = cr_carlist_war_ongoing
+	}
+	c:CSP = {
+		remove_variable = cr_carlist_war_ongoing
+	}
 }
 
 cr_don_carlos_two_sicilies_marriage_proposal_cleanup_effect = {
 	remove_two_sicilies_spanish_mediation_modifier_effect = yes
 	c:SIC = {
 		remove_variable = cr_don_carlos_naples_reconciliation
-		remove_variable = cr_don_carlos_union_proposed
 		remove_variable = cr_don_carlos_marriage_proposal_reject_csp
 		remove_variable = cr_isabel_rejects_don_carlos_luis_king
 		remove_variable = cr_isabel_accepts_don_carlos_luis_king
@@ -74,6 +80,10 @@ don_carlos_final_cleanup_vars = {
 		remove_variable = don_carlos_exile_country_var
 	}
 	
+	s:SIC = {
+		remove_variable = cr_don_carlos_union_proposed
+	}
+	
 	remove_variable = don_carlist_orleanist_refuge
 	remove_variable = don_carlist_orleanist_support
 	remove_variable = don_carlist_legitimist_support
@@ -112,14 +122,19 @@ don_carlos_exile_country_selector = {
 					}
 					c:FRA = {
 						NOT = { has_variable = don_carlos_exile_rejected_var }		
-						
-						is_diplomatic_play_committed_participant = no
-						is_at_war = no
 					}
 				}
 				c:FRA = {
 					trigger_event = { id = cr_carlist_events.15 days = 4 }
 				}
+				#modifier = {
+				#	if = {
+				#		limit = {
+				#			c:FRA = { is_player = yes }
+				#		}
+				#		add = 10
+				#	}
+				#}	
 			}
 			0 = {
 				trigger = {
@@ -129,14 +144,19 @@ don_carlos_exile_country_selector = {
 					}
 					c:GBR = {
 						NOT = { has_variable = don_carlos_exile_rejected_var }
-						
-						is_diplomatic_play_committed_participant = no
-						is_at_war = no
 					}
 				}
 				c:GBR = {
 					trigger_event = { id = cr_carlist_events.30 days = 4 }
 				}
+				#modifier = {
+				#	if = {
+				#		limit = {
+				#			c:GBR = { is_player = yes }
+				#		}
+				#		add = 10
+				#	}
+				#}	
 			}
 			0 = {
 				trigger = {
@@ -155,7 +175,15 @@ don_carlos_exile_country_selector = {
 				}
 				c:POR = {
 					trigger_event = { id = cr_carlist_events.80 days = 4 }
-				}			
+				}	
+				#modifier = {
+				#	if = {
+				#		limit = {
+				#			c:POR = { is_player = yes }
+				#		}
+				#		add = 10
+				#	}
+				#}			
 			}
 			0 = {
 				trigger = {
@@ -173,7 +201,15 @@ don_carlos_exile_country_selector = {
 				}
 				c:SIC = {
 					trigger_event = { id = cr_carlist_events.70 days = 4 }
-				}			
+				}		
+				#modifier = {
+				#	if = {
+				#		limit = {
+				#			c:SIC = { is_player = yes }
+				#		}
+				#		add = 10
+				#	}
+				#}		
 			}
 			0 = {
 				trigger = {
@@ -184,9 +220,6 @@ don_carlos_exile_country_selector = {
 					c:AUS = {
 						NOT = { has_variable = don_carlos_exile_rejected_var }
 						has_law = law_type:law_monarchy
-						
-						is_diplomatic_play_committed_participant = no
-						is_at_war = no
 					}
 				}
 				c:AUS = {
@@ -201,7 +234,15 @@ don_carlos_exile_country_selector = {
 					else = {
 						trigger_event = { id = cr_carlist_events.61 days = 4 }
 					}
-				}			
+				}
+				#modifier = {
+				#	if = {
+				#		limit = {
+				#			c:AUS = { is_player = yes }
+				#		}
+				#		add = 10
+				#	}
+				#}			
 			}
 			0 = {
 				trigger = {
@@ -213,14 +254,19 @@ don_carlos_exile_country_selector = {
 						NOT = { has_variable = don_carlos_exile_rejected_var }
 						has_law = law_type:law_monarchy
 						has_law = law_type:law_autocracy
-						
-						is_diplomatic_play_committed_participant = no
-						is_at_war = no
 					}
 				}
 				c:RUS = {
 					trigger_event = { id = cr_carlist_events.50 days = 4 }
-				}			
+				}
+				#modifier = {
+				#	if = {
+				#		limit = {
+				#			c:RUS = { is_player = yes }
+				#		}
+				#		add = 5
+				#	}
+				#}			
 			}
 			0 = {
 				trigger = {
@@ -230,9 +276,6 @@ don_carlos_exile_country_selector = {
 					}
 					c:USA = {
 						NOT = { has_variable = don_carlos_exile_rejected_var }
-						
-						is_diplomatic_play_committed_participant = no
-						is_at_war = no
 					}
 				}
 				c:USA = {
@@ -243,7 +286,7 @@ don_carlos_exile_country_selector = {
 				#		limit = {
 				#			c:USA = { is_player = yes }
 				#		}
-				#		add = 10
+				#		add = 5
 				#	}
 				#}
 			}
@@ -1329,6 +1372,11 @@ cr_don_carlos_sicilian_mediation_failure_effect = {
 			value = -10
 		}
 	}
+	
+	set_variable = {
+		name = cr_sicilian_mediation_has_ended
+		months = 12
+	}
 	cr_don_carlos_two_sicilies_marriage_proposal_cleanup_effect = yes
 }
 
@@ -1356,6 +1404,10 @@ cr_don_carlos_sicilian_mediation_succesful_effect = {
 			value = 10
 		}
 	}
+	set_variable = {
+		name = cr_sicilian_mediation_has_ended
+		months = 12
+	}
 	cr_don_carlos_two_sicilies_marriage_proposal_cleanup_effect = yes
 }
 
@@ -1372,4 +1424,152 @@ remove_two_sicilies_spanish_mediation_modifier_effect = {
 		}
 		remove_modifier = cr_carlos_spanish_reconciliation
 	}
+}
+
+establish_the_basque_fueros_effect = {
+	if = {
+		limit = {
+			NOT = { exists = c:NAV }
+			c:SPA ?= this
+		}
+		create_country = {
+			origin = this
+			tag = NAV
+			state = s:STATE_NAVARRA.region_state:SPA
+			on_created = {
+				c:SPA = {
+					create_diplomatic_pact = {
+						country = c:NAV
+						type = personal_union
+					}
+				}
+			}
+		}
+		set_variable = cr_basque_fueros_restored
+		set_basque_fueros_laws_effect = yes
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = c:NAV }
+			c:CSP ?= this
+		}
+		create_country = {
+			origin = this
+			tag = NAV
+			state = s:STATE_NAVARRA.region_state:CSP
+			on_created = {
+				c:CSP = {
+					create_diplomatic_pact = {
+						country = c:NAV
+						type = personal_union
+					}
+				}
+			}
+		}
+		set_variable = cr_basque_fueros_restored
+		set_basque_fueros_laws_effect = yes
+	}
+}
+
+set_basque_fueros_laws_effect = {
+	c:NAV = {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_ethnostate
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_homesteading
+	}
+}
+
+establish_the_catalan_fueros_effect = {
+	if = {
+		limit = {
+			NOT = { exists = c:CAT }
+			c:SPA ?= this
+		}
+		create_country = {
+			origin = this
+			tag = CAT
+			state = s:STATE_CATALONIA.region_state:SPA
+			on_created = {
+				c:SPA = {
+					create_diplomatic_pact = {
+						country = c:CAT
+						type = personal_union
+					}
+				}
+			}
+		}
+		set_variable = cr_catalan_fueros_restored
+		set_catalan_fueros_laws_effect = yes
+	}
+	else_if = {
+		limit = {
+			NOT = { exists = c:CAT }
+			c:CSP ?= this
+		}
+		create_country = {
+			origin = this
+			tag = CAT
+			state = s:STATE_CATALONIA.region_state:CSP
+			on_created = {
+				c:CSP = {
+					create_diplomatic_pact = {
+						country = c:CAT
+						type = personal_union
+					}
+				}
+			}
+		}
+		set_variable = cr_catalan_fueros_restored
+		set_catalan_fueros_laws_effect = yes
+	}
+}
+
+set_catalan_fueros_laws_effect = {
+	c:CAT = {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_ethnostate
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_hereditary_bureaucrats
+	}
+}
+
+abolish_the_basque_fueros_effect = {
+	if = {
+		limit = {
+			exists = c:NAV
+			c:NAV = {
+				has_subject_relation_with = ROOT
+			}
+		}
+		annex_with_incorporation = c:NAV
+		add_radicals = {
+			value = 0.4
+			culture = cu:basque
+		}
+	}
+	remove_variable = cr_basque_fueros_restored
+}
+
+abolish_the_catalan_fueros_effect = {
+	if = {
+		limit = {
+			exists = c:CAT
+			c:CAT = {
+				has_subject_relation_with = ROOT
+			}
+		}
+		annex_with_incorporation = c:CAT
+		add_radicals = {
+			value = 0.2
+			culture = cu:catalan
+		}
+	}
+	remove_variable = cr_catalan_fueros_restored
 }

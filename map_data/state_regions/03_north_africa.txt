@@ -309,7 +309,7 @@ STATE_FEZ = {
 STATE_AL_RIF = {
     id = 188
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x20B0C0" "xA0B0C0" "xCA9F75" "xDFB040" "xE6D43C" "xFA1C92" }
+    provinces = { "x20B0C0" "xA0B0C0" "xCA9F75" "xDFB040" "xE6D43C" "xFA1C92" xF05E87 }
     traits = { "state_trait_cr_the_rif" }
     city = "x20B0C0"
     port = "xCA9F75"
@@ -338,23 +338,23 @@ STATE_AL_RIF = {
 STATE_TAZA = {
     id = 3442
     subsistence_building = "building_subsistence_pastures"
-    provinces = { x0277E9 x031705 x2853A6 x2D7AF0 x360984 x6030C0 x66D4E9 x75DC50 x75EBCA x7671DB x7D32B3 x8FBBB6 x95A1C3 x96EF9B x977DCA xA0EFC0 xAC4646 xB14383 xD89587 xDF30C0 xE2981F xE3D0F0 xE521ED xE92045 xF05E87 xFAE302 }
-    impassable = {}
+    provinces = { x0277E9 x031705 x2853A6 x2D7AF0 x360984 x6030C0 x66D4E9 x75DC50 x75EBCA x7671DB x7D32B3 x8FBBB6 x95A1C3 x96EF9B x977DCA xA0EFC0 xAC4646 xB14383 xD89587 xDF30C0 xE2981F xE3D0F0 xE521ED xE92045 xFAE302 x4B25AA }
+    impassable = { }
     traits = { "state_trait_atlas_mountains" }
-    prime_land = { xF05E87 x75DC50 x8FBBB6 x2D7AF0 }
+    prime_land = { x4B25AA x75DC50 x8FBBB6 x2D7AF0 }
     city = "x8FBBB6"
-    port = "xF05E87"
+    #port = "xF05E87"
     farm = "xE92045"
-    mine = "xF05E87"
+    mine = "x4B25AA"
     wood = "xE521ED"
     arable_land = 30
     arable_resources = { "bg_date_plantations" }
     capped_resources = {
         bg_lead_mining = 18 #Lead/silver
-    #bg_coal_mining = 10
-    #bg_minor_metals_mining = 5 #zinc, cobalt
+		#bg_coal_mining = 10
+		#bg_minor_metals_mining = 5 #zinc, cobalt
     }
-    naval_exit_id = 3032
+    #naval_exit_id = 3032
 }
 
 STATE_INNER_MOROCCO = {
@@ -374,7 +374,7 @@ STATE_INNER_MOROCCO = {
     capped_resources = {
         #bg_copper_mining = 42
         bg_fishing = 4
-    #bg_minor_metals_mining = 5 #zinc, cobalt
+		#bg_minor_metals_mining = 5 #zinc, cobalt
     }
     resource = {
         type = "bg_copper_mining"
@@ -699,7 +699,7 @@ STATE_MAURITANIA = {
         #bg_copper_mining = 15
         bg_fishing = 8
     }
-    naval_exit_id = 3088
+    naval_exit_id = 7088
 }
 
 STATE_INNER_MAURITANIA = {

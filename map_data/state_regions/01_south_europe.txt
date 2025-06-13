@@ -736,11 +736,6 @@ STATE_ALENTEJO = {
     capped_resources = {
         #bg_copper_mining = 40 #Aljustrel/Neves-Corvo: Copper/Lead/Zinc mine
         bg_sulfur_mining = 35 #Pyrite
-
-
-
-
-
         bg_fishing = 4
     }
     resource = {
@@ -765,7 +760,7 @@ STATE_CAPE_VERDE = {
     capped_resources = {
         bg_fishing = 5
     }
-    naval_exit_id = 3088
+    naval_exit_id = 7088
 }
 
 STATE_CANARY_ISLANDS = {
@@ -949,7 +944,7 @@ STATE_NORTHERN_THRACE = {
     farm = "xF021A0"
     mine = "x95BCE8"
     wood = "x6E7192"
-    arable_land = 30
+    arable_land = 45
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_cotton_plantations" } #Plenty of wine here, but removed "bg_vineyard_plantations" to reduce resources to 4.
     capped_resources = {
         bg_logging = 17
@@ -976,7 +971,7 @@ STATE_BULGARIA = {
     farm = "x64275F"
     mine = "x71A0A0"
     wood = "x6768DB"
-    arable_land = 35
+    arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_logging = 14
@@ -1326,12 +1321,6 @@ STATE_WESTERN_THRACE = {
     wood = "xBE51B7"
     arable_land = 25
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_tobacco_plantations" } #Silk = Soufli. Removed cotton due to the number of resources and cotton potential in the region. Moved bg_vineyard_plantations to Macedonia to reduce number of resources to 4
-
-
-
-
-
-
     capped_resources = {
         bg_logging = 5
         bg_fishing = 10
