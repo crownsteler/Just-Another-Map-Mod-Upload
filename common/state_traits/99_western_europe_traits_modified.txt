@@ -118,7 +118,7 @@ state_trait_black_forest = {
     icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
 	
 	modifier = {
-		building_logging_camp_output_add = 0.05
+		building_logging_camp_output_add = 0.075
 	}
 }
 
@@ -135,7 +135,7 @@ state_trait_basque_iron_ore = {
 	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
 	
 	modifier = {
-		building_iron_mine_output_add = 0.125
+		building_iron_mine_output_add = 0.15
 	}
 }
 

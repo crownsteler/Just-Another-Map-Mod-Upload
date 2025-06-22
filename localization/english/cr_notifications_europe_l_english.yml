@@ -45,11 +45,11 @@
  
  
  notification_cr_fort_ross_accepted_name: "Succesful Negotiations"
- notification_cr_fort_ross_accepted_desc: "The [SCOPE.sCountry('buying_country').GetAdjective]s have agreed acquire our possessions along the coast of California."
+ notification_cr_fort_ross_accepted_desc: "[SCOPE.sCountry('buying_country').GetName] has agreed acquire our possessions along the coast of California."
  notification_cr_fort_ross_accepted_tooltip: "#header $notification_cr_fort_ross_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_fort_ross_accepted_desc$"
  
  notification_cr_fort_ross_rejected_name: "Failed Negotiations"
- notification_cr_fort_ross_rejected_desc: "The [SCOPE.sCountry('buying_country').GetAdjective]s have declined to acquire our possessions along the coast of California."
+ notification_cr_fort_ross_rejected_desc: "[SCOPE.sCountry('buying_country').GetName] has declined to acquire our possessions along the coast of California."
  notification_cr_fort_ross_rejected_tooltip: "#header $notification_cr_fort_ross_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_cr_fort_ross_accepted_desc$"
  
  notification_cr_alaska_colonisation_encouraged_name: "Expanding the Frontier"

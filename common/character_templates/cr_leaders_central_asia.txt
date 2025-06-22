@@ -1,0 +1,51 @@
+﻿##################################
+#								 #
+# 			Bukey Horde			 #
+#								 #
+##################################
+BKH_zhangir_kerei = {
+	first_name = "Zhangir"
+	last_name = "Kerei" 
+	historical = yes
+	ruler = yes
+	age = 35
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	traits = {
+		innovative basic_political_operator inept
+	}
+}
+
+BKH_isatai_taymanuly = { # Isatay Taymanuly
+	first_name = Isatai
+	last_name = Taymanuly
+	historical = yes
+	birth_date = 1791.4.16 #random date
+	ig_leader = yes
+	#dna = dna_alfred_krupp
+	culture = cu:kazak
+	interest_group = ig_rural_folk
+	ideology = ideology_radical
+
+	traits = {
+		bandit
+		wrathful
+		basic_political_operator
+	}
+}
+BKH_mahambet_utemisov = { # Mahambet Utemisov
+	first_name = Mahambet
+	last_name = Utemisov
+	historical = yes
+	birth_date = 1803.3.21	#random date
+	is_agitator = yes
+	#dna = dna_alfred_krupp
+	culture = cu:kazak
+	interest_group = ig_rural_folk
+	ideology = ideology_moderate
+	traits = {
+		romantic
+		literary
+		inspirational_orator
+	}
+}

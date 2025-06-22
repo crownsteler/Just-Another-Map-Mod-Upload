@@ -2,43 +2,72 @@
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	
 	group = je_group_technology
-
+	
+	is_shown_when_inactive = {
+		any_scope_state = {
+			state_region = s:STATE_ALSACE_LORRAINE
+			has_state_trait = state_trait_minette_ore
+		}
+	}
+	
+	possible = {
+		has_technology_researched =	bessemer_process
+	}
+	
 	immediate = {
 		ROOT = {
 			save_scope_as = minette_country_scope
 		}
-		if = {
-			any_scope_state = {
-				state_region = s:STATE_LORRAINE
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ALSACE_LORRAINE
 			}
-			random_scope_state = {
-				limit = {
-					state_region = s:STATE_LORRAINE
-				}
-				save_scope_as = minette_ore_state
-			}
-			p:xC5F13A = {
+			save_scope_as = minette_ore_state
+			p:xB000E0 = {
 				save_scope_as = minette_ore_location
-			}
-		}
-		else = {
-			random_scope_state = {
-				limit = {
-					state_region = s:STATE_ALSACE_LORRAINE
-				}
-				save_scope_as = minette_ore_state
-				p:xB000E0 = {
-					save_scope_as = minette_ore_location
-				}
 			}
 		}
 		if = {
 			limit = {
-				c:FRA ?= this
+				this ?= c:FRA
+				NOT = { 
+					has_variable = cr_lorraine_lost
+				}
 			}
-			trigger_event = {
-				id = cr_minette_ores_events.2
+			trigger_event = { id = cr_minette_ores_events.2 days = 7 }
+		}
+		if = {
+			limit = {
+				c:FRA = {
+					has_variable = cr_lorraine_lost
+					any_scope_state = {
+						state_region = s:STATE_ALSACE_LORRAINE
+					}
+					has_technology_researched = bessemer_process
+				}
 			}
+			trigger_event = { id = cr_minette_ores_events.3 days = 7 }
+		}
+		else_if = {
+			limit = {
+				NOT = { this ?= c:FRA }
+				has_variable = cr_conqueror_of_lorraine
+				has_technology_researched = bessemer_process
+			}
+			trigger_event = { id = cr_minette_ores_events.5 days = 7 }
+		}
+		else_if = {
+			limit = {
+				NOT = { this ?= c:FRA }
+				has_technology_researched = bessemer_process
+			}
+			trigger_event = { id = cr_minette_ores_events.6 days = 7 }
+		}
+		else_if = {
+			limit = {
+				NOT = { this ?= c:FRA }
+			}
+			trigger_event = { id = cr_minette_ores_events.7 days = 7 }
 		}
 	}
 	
@@ -54,15 +83,44 @@
 	}
 
 	on_complete = {
-		#trigger_event = { id = silkworm_diseases.9 }
-		s:STATE_ALSACE_LORRAINE = {
-			remove_state_trait = state_trait_minette_ore
-			add_state_trait = state_trait_minette_ore_2
+		trigger_event = { id = cr_minette_ores_events.10 }
+		show_as_tooltip = {
+			s:STATE_ALSACE_LORRAINE = {
+				remove_state_trait = state_trait_minette_ore
+			}
+			if = {
+				limit = {
+					s:STATE_LORRAINE = { has_state_trait = state_trait_minette_ore }
+				}
+				s:STATE_LORRAINE = {
+					remove_state_trait = state_trait_minette_ore
+				}
+			}		
 		}
-		s:STATE_LORRAINE = {
-			remove_state_trait = state_trait_minette_ore
-			add_state_trait = state_trait_minette_ore_2
+		hidden_effect = {
+			s:STATE_ALSACE_LORRAINE = {
+				remove_state_trait = state_trait_minette_ore
+				add_state_trait = state_trait_minette_ore_2
+			}
+			if = {
+				limit = {
+					s:STATE_LORRAINE = { has_state_trait = state_trait_minette_ore }
+				}
+				s:STATE_LORRAINE = {
+					remove_state_trait = state_trait_minette_ore
+				}
+			}		
+			s:STATE_LORRAINE = {
+				add_state_trait = state_trait_minette_ore_2
+			}
+			c:FRA = {
+				remove_variable = cr_lorraine_lost
+				remove_variable = cr_conqueror_of_lorraine
+				remove_variable = cr_prospecting_in_lorraine
+			}
+			remove_variable = cr_conqueror_of_lorraine
 		}
+		
 	}
 
 	fail = {
@@ -80,6 +138,19 @@
 		hidden_effect = {
 			random_country = {
 				limit = {
+					this ?= c:FRA
+					any_scope_state = {
+						state_region = s:STATE_ALSACE_LORRAINE
+					}
+					has_technology_researched = bessemer_process
+				}
+				trigger_event = { id = cr_minette_ores_events.3 days = 7 }
+			}
+			random_country = {
+				limit = {
+					NOT = {
+						this ?= c:FRA
+					}
 					any_scope_state = {
 						state_region = s:STATE_ALSACE_LORRAINE
 					}
@@ -87,25 +158,16 @@
 						has_technology_researched = bessemer_process
 					}
 				}
-				trigger_event = { id = cr_minette_ores_events.3 days = 7 }
+				trigger_event = { id = cr_minette_ores_events.4 days = 7 }
 			}
-			random_country = {
-				limit = {
-					any_scope_state = {
-						state_region = s:STATE_ALSACE_LORRAINE
-					}
-					NOT = {
-						has_journal_entry = je_cr_minette_ores 
-					}
-				}
-				add_journal_entry = { type = je_cr_minette_ores }
-			}
+			set_variable = cr_lorraine_lost
 		}
 	}
 
 	on_monthly_pulse = {
 		random_events = {
-			#150 = 0
+			17 = 0
+			1 = 
 		}
 	}
 

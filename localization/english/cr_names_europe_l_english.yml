@@ -1,12 +1,24 @@
 ﻿l_english:
 #Dutch male first names
+ Anton:0 "Anton"
+ Anton_frederik:0 "Anton Frederik"
+ Cornelis_johannes_karel:0 "Cornelis Johannes Karel"
  Cornelius_Ludovicus:0 "Cornelius Ludovicus"
- Gideon_Jan:0 "Gideon Jan"
- Jacob_Dirk_Carel:0 "Jacob Dirk Carel"
- Lodewijk_Casper:0 "Lodewijk Casper"
- hubert_joseph_jean_lambert:0 "Hubert Joseph Jean Lambert"
+ Engel_pieter:0 "Engel Pieter"
  frans_david:0 "Frans David"
  francois_vincent_henri_antoine:0 "François Vincent Henri Antoine"
+ Frits:0 "Frits"
+ Gerrit_jan:0 "Gerrit Jan"
+ Gideon_Jan:0 "Gideon Jan"
+ Helmich:0 "Helmich"
+ hendrik_christiaan:0 "Hendrik Christiaan"
+ Hendrik_jan:0 "Hendrik Jan"
+ hubert_joseph_jean_lambert:0 "Hubert Joseph Jean Lambert"
+ Jacob_Dirk_Carel:0 "Jacob Dirk Carel"
+ Jacob_theodoor:0 "Jacob Theodoor"
+ Lodewijk_Casper:0 "Lodewijk Casper"
+ Nicolaas:0 "Nicolaas"
+ 
  
  #Dutch female first names
 
@@ -35,14 +47,27 @@
  #Dutch common last names
  Borski:0 "Borski"
  Capadose:0 "Capadose"
+ Cremer:0 "Cremer"
+ crena_de_iongh:0 "Crena de Iongh"
+ de_monchy:0 "de Monchy"
+ Heldring:0 "Heldring"
  Huydecoper:0 "Huydecoper"
  Luzac:0 "Luzac"
+ Mees:0 "Mees"
+ Otten:0 "Otten"
+ Philips:0 "Philips"
+ Trakranen:0 "Trakranen"
+ van_aalst:0 "van Aalst"
+ van_der_Houven:0 "van der Houven"
+ van_der_oudermeulen:0 "van der Oudermeulen"
+ van_Heek:0 "van Heek"
  Verdam:0 "Verdam"
  
  #Flemish first names
  charles_pierre:0 "Charles-Pierre"
  
  #Flemish last names
+ Regout:0 "Regout"
  schimpf:0 "Schimpf"
  
  #Flemish noble last names
@@ -51,6 +76,12 @@
  du_Monceau:0 "du Moncea"
  de_Ficquelmont_de_Vyle:0 "de Ficquelmont de Vyle"
  de_Marchant_et_d_Ansembourg:0 "de Marchant et d'Ansembourg"
+ 
+ #Wallonian first names
+ Ernest:0 "Ernest"
+ 
+ #Wallonian last names
+ Solvay:0 "Solvay"
  
  #Frisian noble last names
  Aebinga_van_Humalda:0 "Aebinga van Humalda"
@@ -93,6 +124,8 @@
  Fedde:0 "Fedde"
  Feike:0 "Feike"
  Fokke:0 "Fokke"
+ Fokko:0 "Fokko"
+ Fokko_alting:0 "Fokko Alting"
  Foppe:0 "Foppe"
  Henno:0 "Henno"
  Hidde:0 "Hidde"

@@ -1,12 +1,10 @@
 ﻿african_wood = {
 	graphical_culture = "african"
 	city_type = wood
-	center_building_mesh = "african_forestry_centerpiece_01_mesh"
 	
 	min_residential_buildings = 2
 	max_residential_buildings = 50
 	max_residence_points = 100
-	center_building_size = { 2 2 }
 
 
 

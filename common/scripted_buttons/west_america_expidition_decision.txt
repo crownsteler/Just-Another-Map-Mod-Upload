@@ -56,7 +56,7 @@
 	}
 
 	ai_chance = {
-		base = 0
+		value = 0
 		#modifier = { #Moved the AI logic to the on action
 		#	trigger = { 
 		#		weekly_net_fixed_income > money_amount_multiplier_medium

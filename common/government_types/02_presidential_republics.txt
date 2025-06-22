@@ -383,13 +383,14 @@ gov_banana_republic = {
 	possible = {
 		has_law = law_type:law_presidential_republic
 		country_has_voting_franchise = no
+		gdp < 2000000
 		any_state = {
 			has_building = building_banana_plantation
 		}
-		any_trade_route = {
-			actor_market.owner = root
-			exporter = root.market
-			goods = g:fruit
+		market = {
+			mg:fruit = {
+				market_goods_exports >= 200
+			}
 		}
 	}
 
@@ -600,10 +601,8 @@ gov_chartered_company = {
 	}
 
 	on_government_type_change = {
-		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-		post_change_to_dictatorial = yes
 	}
 }
 

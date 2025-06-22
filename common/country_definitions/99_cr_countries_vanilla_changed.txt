@@ -44,7 +44,7 @@ BLE = {
 	tier = principality
 	
 	cultures = { akan }
-	capital = STATE_WINDWARD_COAST
+	capital = STATE_IVORY_COAST
 }
 
 BJA = { # Beja
@@ -1008,7 +1008,7 @@ YOG = {
 }
 # Siak
 SAK = {
-	color = { 21  196  68 }
+	color = { 218 237 89 }
 	
 	country_type = unrecognized
 

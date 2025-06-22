@@ -71,7 +71,7 @@ TRH = {
 		STATE_JETISY
 		
 		STATE_SYRDARYA
-		STATE_KARAGANDA
+		STATE_AKTOBE #STATE_KARAGANDA
 		STATE_TASHKENT
 		STATE_FERGANA
 		STATE_ALAY
@@ -88,7 +88,6 @@ TRH = {
 		has_technology_researched = pan-nationalism
 	}
 }
-
 
 IDN = {
 	states = {
@@ -144,7 +143,7 @@ KAZ = {
 		STATE_JETISY
 		STATE_URALSK
 		STATE_SYRDARYA
-		STATE_KARAGANDA
+		STATE_AKTOBE #STATE_KARAGANDA
 	}
 
 	required_states_fraction = 0.80

@@ -7,8 +7,9 @@ on_monthly_pulse_country = {
 
 cr_on_monthly_pulse_country = {
 	random_events = {
-		48 = 0
+		30 = 0
 		1 = cr_europe_events.5
+		10 = cr_minette_ores_events.4
 		10 = cr_canadian_indian_treaties.50	
 		1 = cr_american_events.1
 	}
@@ -138,5 +139,6 @@ on_resource_discovered = {
 cr_on_resource_discovered = {
 	events = {
 		cr_canadian_indian_treaties.98
+		cr_minette_ores_events.20
 	}
 }

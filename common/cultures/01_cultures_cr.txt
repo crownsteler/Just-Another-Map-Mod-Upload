@@ -23,6 +23,7 @@ frisian={
 		Fedde
 		Feike
 		Fokke
+		Fokko
 		Foppe
 		Gerben
 		Henno

@@ -189,5 +189,33 @@
 	#		}
 	#
 	#	}
+
+	### Executives
+
+		NET_hendrik_christiaan_van_der_houven = { # Hendrik Christiaan van der Houven, NHM
+			first_name = hendrik_christiaan
+			last_name = van_der_Houven
+			historical = yes
+			birth_date = 1773.11.26
+			#dna = dna_alfred_krupp
+			culture = cu:dutch
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = {
+				compliant
+				political_appointee
+			}
+			executive_usage = {
+				country_trigger = {
+					has_dlc_feature = mp1_content
+				}
+				company_trigger = {
+					is_company_type = company_type:company_nederlandse_handelmaatschappij
+				}
+				earliest_usage_date = 1836.1.1
+				latest_usage_date = 1844.1.1
+				chance = 100
+			}
+		}
 	}
 }

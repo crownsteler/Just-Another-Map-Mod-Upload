@@ -483,7 +483,7 @@ has_heavy_industry_building = {
 		has_building = building_synthetics_plants
 		has_building = building_steel_mills
 		has_building = building_motor_industry
-		has_building = building_war_machine_industry
+		has_building = building_automotive_industry
 		has_building = building_electrics_industry
 		has_building = building_munition_plants
 		has_building = building_power_plant
@@ -496,7 +496,7 @@ is_heavy_industry_building = {
 		is_building_type = building_synthetics_plants
 		is_building_type = building_steel_mills
 		is_building_type = building_motor_industry
-		is_building_type = building_war_machine_industry
+		is_building_type = building_automotive_industry
 		is_building_type = building_electrics_industry
 		is_building_type = building_munition_plants
 		is_building_type = building_power_plant
@@ -551,7 +551,7 @@ owned_central_asia_region_states = {
 	owns_entire_state_region = STATE_UZBEKIA
 	owns_entire_state_region = STATE_TURKMENIA
 	owns_entire_state_region = STATE_KHIVA
-	owns_entire_state_region = STATE_KARAGANDA
+	owns_entire_state_region = STATE_AKTOBE #STATE_KARAGANDA
 	owns_entire_state_region = STATE_ALAY
 	owns_entire_state_region = STATE_FERGANA
 	owns_entire_state_region = STATE_BADAKHSHAN
@@ -910,7 +910,7 @@ is_production_building = {
 		is_building_type = building_motor_industry
 		is_building_type = building_shipyards
 		is_building_type = building_electrics_industry
-		is_building_type = building_war_machine_industry
+		is_building_type = building_automotive_industry
 		is_building_type = building_arms_industry
 		is_building_type = building_artillery_foundries
 		is_building_type = building_munition_plants
@@ -1087,6 +1087,7 @@ is_in_civil_war = {
 has_paternalist_ideology = {
 	OR = {
 		has_ideology = ideology:ideology_paternalistic
+		has_ideology = ideology:ideology_magnatial
 		has_ideology = ideology:ideology_scholar_paternalistic
 		has_ideology = ideology:ideology_junker_paternalistic
 		has_ideology = ideology:ideology_papal_paternalistic
@@ -1144,6 +1145,12 @@ has_radical_leftist_economy = {
 	OR = {
 		has_law = law_type:law_command_economy	
 		has_law = law_type:law_cooperative_ownership
+	}
+}
+
+any_secession_ongoing = {
+	any_political_movement = {
+		is_secessionist = yes
 	}
 }
 
@@ -1213,7 +1220,7 @@ ig_is_socialist = {
 			has_ideology = ideology:ideology_vanguardist
 		}
 		leader = {
-			has_ideology = ideology:ideology_atheist
+			has_ideology = ideology:ideology_nihilist
 		}
 		leader = {
 			has_ideology = ideology:ideology_anarchist
@@ -1311,6 +1318,33 @@ revolution_progress_high = {
 	}
 }
 
+secession_progress_low = {
+	any_civil_war = {
+		civil_war_progress >= 0
+		NOT = {
+			civil_war_progress >= 0.34
+		}
+		is_civil_war_type = secession
+	}
+}
+
+secession_progress_medium = {
+	any_civil_war = {
+		civil_war_progress >= 0.34
+		NOT = {
+			civil_war_progress >= 0.67
+		}
+		is_civil_war_type = secession
+	}
+}
+
+secession_progress_high = {
+	any_civil_war = {
+		civil_war_progress >= 0.67
+		is_civil_war_type = secession
+	}
+}
+
 government_ig_supports_enaction = {
 	exists = currently_enacting_law
 	any_interest_group = {
@@ -1398,7 +1432,7 @@ ig_is_dreyfusard = {
 			has_ideology = ideology:ideology_vanguardist
 		}
 		leader = {
-			has_ideology = ideology:ideology_atheist
+			has_ideology = ideology:ideology_nihilist
 		}
 		leader = {
 			has_ideology = ideology:ideology_anarchist
@@ -1584,7 +1618,7 @@ has_liberal_ideology = {
 
 has_progressive_ideology = {
 	OR = {
-		has_ideology = ideology:ideology_atheist
+		has_ideology = ideology:ideology_nihilist
 		has_ideology = ideology:ideology_radical
 		has_ideology = ideology:ideology_feminist
 		has_ideology = ideology:ideology_social_democrat
@@ -1702,9 +1736,17 @@ wants_to_solve_schleswig_holstein = {
 }
 
 is_oppressor_of_schleswig_holstein = {
-	NOR = {
-		country_has_primary_culture = cu:north_german
-		country_has_primary_culture = cu:south_german						
+	OR = {
+		top_overlord ?= {
+			NOR = {
+				country_has_primary_culture = cu:north_german
+				country_has_primary_culture = cu:south_german
+			}
+		}
+		NOR = {
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:south_german
+		}
 	}
 	OR = {
 		any_scope_state = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }
@@ -1820,7 +1862,8 @@ anti_foreign_imposition_country = {
 # Princely States
 
 is_princely_state = {
-	OR  ={
+	country_is_in_india = yes
+	OR = {
 		has_government_type = gov_princely_state_rawalate
 		has_government_type = gov_princely_state_maharaja
 		has_government_type = gov_princely_state_diwanate
@@ -1830,6 +1873,98 @@ is_princely_state = {
 		has_government_type = gov_princely_state_maratha_raja
 		has_government_type = gov_princely_state_raja
 		has_government_type = gov_princely_state_sultan
+		AND = { # Covers for republican Princely States
+			OR = {
+				country_has_state_religion = rel:hindu
+				country_has_state_religion = rel:sunni
+				country_has_state_religion = rel:shiite
+			}
+			NOR = {
+				c:BHT ?= this
+				c:BIC ?= this
+				has_variable = indian_federation_member
+			}
+			OR = {
+				AND = { exists = c:GBR is_subject_of = c:GBR }
+				AND = { exists = c:BIC is_subject_of = c:BIC }
+				AND = { exists = c:BHT is_subject_of = c:BHT }
+			}
+		}
+	}
+}
 
+has_indian_primary_culture = { # Necessary to define princely states without resorting to any loops in government type definitions
+	OR = {
+		country_has_primary_culture = cu:kho
+		country_has_primary_culture = cu:assamese
+		country_has_primary_culture = cu:bengali
+		country_has_primary_culture = cu:bihari
+		country_has_primary_culture = cu:manipuri
+		country_has_primary_culture = cu:oriya
+		country_has_primary_culture = cu:sinhala
+		country_has_primary_culture = cu:avadhi
+		country_has_primary_culture = cu:panjabi
+		country_has_primary_culture = cu:kashmiri
+		country_has_primary_culture = cu:gujarati
+		country_has_primary_culture = cu:marathi
+		country_has_primary_culture = cu:sindi
+		country_has_primary_culture = cu:rajput
+		country_has_primary_culture = cu:kannada
+		country_has_primary_culture = cu:malayalam
+		country_has_primary_culture = cu:tamil
+		country_has_primary_culture = cu:telegu
+		country_has_primary_culture = cu:hindustani
+		country_has_primary_culture = cu:lushai
+		country_has_primary_culture = cu:bundeli
+		country_has_primary_culture = cu:pahari
+		country_has_primary_culture = cu:gondi
+		country_has_primary_culture = cu:bageli
+		country_has_primary_culture = cu:chhattisgarhi
+		country_has_primary_culture = cu:naga
+		country_has_primary_culture = cu:deccani
+		country_has_primary_culture = cu:pathan
+	}
+}
+
+movement_is_socialist = {
+	OR = {
+		is_political_movement_type = movement_socialist
+		is_political_movement_type = movement_communist
+		is_political_movement_type = movement_anarchist
+		is_political_movement_type = movement_nihilist
+	}
+}
+
+movement_is_liberal = {
+	OR = {
+		is_political_movement_type = movement_liberal
+		is_political_movement_type = movement_radical
+		is_political_movement_type = movement_labor
+		is_political_movement_type = movement_positivist
+		is_political_movement_type = movement_anti_slavery
+	}
+}
+
+movement_is_nationalist = {
+	OR = {
+		is_political_movement_type = movement_cultural_majority
+		is_political_movement_type = movement_fascist
+		is_political_movement_type = movement_modernizer
+	}
+}
+
+movement_is_conservative = {
+	OR = {
+		is_political_movement_type = movement_royalist_constitutional
+		is_political_movement_type = movement_royalist_absolutist
+		is_political_movement_type = movement_orleanist
+		is_political_movement_type = movement_legitimist
+		is_political_movement_type = movement_bonapartist
+		is_political_movement_type = movement_reactionary
+		is_political_movement_type = movement_corporatist
+		is_political_movement_type = movement_fascist
+		is_political_movement_type = movement_pro_slavery
+		is_political_movement_type = movement_religious_majority
+		is_political_movement_type = movement_cultural_majority
 	}
 }

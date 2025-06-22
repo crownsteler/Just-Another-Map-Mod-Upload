@@ -2,15 +2,15 @@
  	name = "cr_minette_ores_progress_bar_name"
  	desc = "cr_minette_ores_progress_bar_desc"
  	monthly_progress = {
-		#if = {
-		#	limit = {
-		#		has_technology_researched = bessemer_process
-		#	}
-		#	add = {
-		#	   desc = "cr_minette_ores_bessemer_process_researched"
-		#	   value = 1
-		#    }
-		#}
+		if = {
+			limit = {
+				NOT = { has_technology_researched = bessemer_process }
+			}
+			add = {
+			   desc = "cr_minette_ores_bessemer_process_researched"
+			   value = -10
+		    }
+		}
 		add = {
 			desc = "cr_minette_ores_innovation"
 			value = country_innovation

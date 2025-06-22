@@ -97,6 +97,8 @@
  STATE_MANDALAY:0 "Burma"
  STATE_SEMNAN:0 "Hamadan"
  STATE_PERSIAN_KURDISTAN:0 "Ardalan"
+ STATE_BADAKHSHAN:0 "Badakhshan"
+ STATE_AKTOBE:0 "Karaganda"
  
  #Oceans and lakes
  STATE_SEA_OF_JAPAN:0 "Sea of Japan"

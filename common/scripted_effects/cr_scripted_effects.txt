@@ -799,3 +799,414 @@ cr_canadian_treaty_annuities_effect = {
 		}	
 	}
 }
+
+cr_opening_the_route_to_acre_BRZ = {
+	s:STATE_AMAZONAS = {
+		if = {
+			limit = {
+				p:x328b67.owner = ROOT
+				p:x329800.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x329800
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x328b67.owner = ROOT
+				p:xf83090.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xf83090
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xf83090.owner = ROOT
+				p:x9778e0.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x9778e0
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xf83090.owner = ROOT
+				p:x2811a6.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x2811a6
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x9778e0.owner = ROOT
+				p:xcc99c2.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xcc99c2
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x2811a6.owner = ROOT
+				p:x8a52d2.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x8a52d2
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x9778e0.owner = ROOT
+				p:x34c294.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x34c294
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x34c294.owner = ROOT
+				p:x645927.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x645927
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x645927.owner = ROOT
+				p:x6c2ed1.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x6c2ed1
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x6c2ed1.owner = ROOT
+				p:xf7fd32.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xf7fd32
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:x6c2ed1.owner = ROOT
+				p:xec140b.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xec140b
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xf7fd32.owner = ROOT
+				p:xf3946e.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xf3946e
+				}
+			}
+		}
+		if = {
+			limit = {
+				p:xf3946e.owner = ROOT
+				p:x8bd00a.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x8bd00a
+				}
+			}
+		}
+	}
+}
+
+cr_opening_the_route_to_acre_in_stages_BRZ = {
+	s:STATE_AMAZONAS = {
+		if = {
+			limit = {
+				p:xf3946e.owner = ROOT
+				p:x8bd00a.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x8bd00a
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:xf7fd32.owner = ROOT
+				p:xf3946e.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xf3946e
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x6c2ed1.owner = ROOT
+				p:xec140b.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xec140b
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x6c2ed1.owner = ROOT
+				p:xf7fd32.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xf7fd32
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x8a52d2.owner = ROOT
+				p:x83b1ba.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x83b1ba
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x83b1ba.owner = ROOT
+				p:x6c2ed1.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x6c2ed1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x328b67.owner = ROOT
+				p:x329800.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x329800
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x34c294.owner = ROOT
+				p:x645927.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x645927
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x9778e0.owner = ROOT
+				p:x34c294.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x34c294
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x2811a6.owner = ROOT
+				p:x8a52d2.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x8a52d2
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x9778e0.owner = ROOT
+				p:xcc99c2.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xcc99c2
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x9778e0.owner = ROOT
+				p:x2811a6.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x2811a6
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:xf83090.owner = ROOT
+				p:x9778e0.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x9778e0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x328b67.owner = ROOT
+				p:xf83090.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xf83090
+				}
+			}
+		}
+	}
+}
+
+cr_opening_the_route_to_acre_via_mato_grosso_BRZ = {
+	s:STATE_MATO_GROSSO = {
+		if = {
+			limit = {
+				p:xb29291.owner = ROOT
+				p:xf605cb.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xf605cb
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x8f231d.owner = ROOT
+				p:xb29291.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xb29291
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x5ac0b3.owner = ROOT
+				p:x8f231d.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x8f231d
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:x4eb3aa.owner = ROOT
+				p:x5ac0b3.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x5ac0b3
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:xe70fb1.owner = ROOT
+				p:x4eb3aa.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					x4eb3aa
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				p:xa30d13.owner = ROOT
+				p:xe70fb1.owner = { is_country_type = decentralized }
+			}
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = {
+					xe70fb1
+				}
+			}
+		}
+	}
+}

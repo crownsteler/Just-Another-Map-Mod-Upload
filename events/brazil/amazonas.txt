@@ -17,7 +17,7 @@ amazonas.1 = {
 
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 
 	trigger = {
 		is_at_war = no
@@ -113,7 +113,7 @@ amazonas.2 = {
 
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 
 	trigger = {
 		# triggered by amazon_border_treaty_button_1
@@ -153,7 +153,7 @@ amazonas.2 = {
 		default_option = yes
 		add_modifier = {
 			name = amazonic_indemnities_brazil_1
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		scope:bolivia_border_treaty_country_scope = {
 			random_scope_state = {
@@ -188,7 +188,23 @@ amazonas.2 = {
 			}
 			add_modifier = {
 				name = amazonic_indemnities_recipient_1
-				months = normal_modifier_time
+				days = normal_modifier_time
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_ACRE
+				}
+			}
+			set_state_owner = scope:bolivia_border_treaty_country_scope
+		}
+		if = {
+			limit = {
+				has_claim = s:STATE_ACRE
+			}
+			s:STATE_ACRE = {
+				remove_claim = root
 			}
 		}
 		
@@ -221,7 +237,7 @@ amazonas.3 = {
 
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 
 	trigger = {
 		# triggered by amazon_border_treaty_button_2
@@ -260,7 +276,7 @@ amazonas.3 = {
 		default_option = yes
 		add_modifier = {
 			name = amazonic_indemnities_brazil_2
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		scope:colombia_border_treaty_country_scope = {
 			random_scope_state = {
@@ -271,7 +287,7 @@ amazonas.3 = {
 			}
 			add_modifier = {
 				name = amazonic_indemnities_recipient_2
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		s:STATE_AMAZONAS = {
@@ -306,7 +322,7 @@ amazonas.4 = {
 
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 
 	trigger = {
 		# triggered by upgrade_amazon_button_1
@@ -330,11 +346,11 @@ amazonas.4 = {
 		scope:amazonas_state_scope = {
 			add_modifier = {
 				name = amazon_development_cooldown_modifier
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 			add_modifier = {
 				name = rubber_hub_modifier
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 			add_modifier = {
 				name = rubber_baron_palaces_modifier
@@ -352,11 +368,11 @@ amazonas.4 = {
 		scope:amazonas_state_scope = {
 			add_modifier = {
 				name = amazon_development_cooldown_modifier
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 			add_modifier = {
 				name = amazon_migration
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 			add_modifier = {
 				name = mercado_adolpho_lisboa_modifier
@@ -387,7 +403,7 @@ amazonas.5 = {
 
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 
 	trigger = {
 		# triggered by upgrade_amazon_button_2
@@ -411,7 +427,7 @@ amazonas.5 = {
 		scope:amazonas_state_scope = {
 			add_modifier = {
 				name = amazon_development_cooldown_modifier
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 			if = {
 				limit = {
@@ -427,7 +443,7 @@ amazonas.5 = {
 				}
 				add_modifier = {
 					name = amazon_theatre
-					months = long_modifier_time
+					days = long_modifier_time
 				}
 			}
 			else = {
@@ -439,7 +455,7 @@ amazonas.5 = {
 			}
 			add_modifier = {
 				name = amazon_migration
-				months = normal_modifier_time
+				days = normal_modifier_time
 				multiplier = 0.5
 			}
 		}
@@ -462,11 +478,11 @@ amazonas.5 = {
 		scope:amazonas_state_scope = {
 			add_modifier = {
 				name = amazon_development_cooldown_modifier
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 			add_modifier = {
 				name = amazon_migration
-				months = normal_modifier_time
+				days = normal_modifier_time
 				multiplier = 0.5
 			}
 		}
@@ -527,11 +543,11 @@ amazonas.6 = {
 		scope:amazon_development_level_one_state_scope = {
 			add_modifier = {
 				name = amazon_development_cooldown_modifier
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 			add_modifier = {
 				name = amazon_migration
-				months = normal_modifier_time
+				days = normal_modifier_time
 				multiplier = 0.5
 			}
 		}
@@ -542,7 +558,7 @@ amazonas.6 = {
 		ig:ig_landowners = {
 			add_modifier = {
 				name = rubber_barons_modifier
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -552,11 +568,11 @@ amazonas.6 = {
 		scope:amazon_development_level_one_state_scope = {
 			add_modifier = {
 				name = amazon_development_cooldown_modifier
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 			add_modifier = {
 				name = rubber_entrepot_modifier
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		scope:amazon_development_level_one_state_scope.state_region = {
@@ -566,7 +582,7 @@ amazonas.6 = {
 		ig:ig_landowners = {
 			add_modifier = {
 				name = rubber_barons_modifier
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -625,15 +641,15 @@ amazonas.7 = {
 		scope:amazon_development_level_two_state_scope = {
 			add_modifier = {
 				name = amazon_development_cooldown_modifier
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 			add_modifier = {
 				name = amazon_migration
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 			add_modifier = {
 				name = harbingers_of_order_modifier
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		scope:amazon_development_level_two_state_scope.state_region = {
@@ -648,16 +664,16 @@ amazonas.7 = {
 		scope:amazon_development_level_two_state_scope = {
 			add_modifier = {
 				name = amazon_development_cooldown_modifier
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 			add_modifier = {
 				name = amazon_migration
-				months = normal_modifier_time
+				days = normal_modifier_time
 				multiplier = 0.5
 			}
 			add_modifier = {
 				name = heralds_of_progress_modifier
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		scope:amazon_development_level_two_state_scope.state_region = {
@@ -684,7 +700,7 @@ amazonas.8 = {
 
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 
 	trigger = {
 		any_scope_state = {
@@ -728,13 +744,13 @@ amazonas.8 = {
 		scope:amazon_indian_exploitation_state = {
 			add_modifier = {
 				name = indians_exploitation_modifier
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		ig:ig_devout = {
 			add_modifier = {
 				name = amazon_exploitation_devout_upset
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -745,14 +761,14 @@ amazonas.8 = {
 		scope:amazon_indian_exploitation_state = {
 			add_modifier = {
 				name = indians_assimilation_modifier
-				months = normal_modifier_time
+				days = normal_modifier_time
 				multiplier = 0.5
 			}
 		}
 		ig:ig_landowners = {
 			add_modifier = {
 				name = amazon_exploitation_landowners_upset
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}

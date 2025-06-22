@@ -35,7 +35,7 @@ mexican_american.1 = {
 	option = {
 		name = mexican_american.1.a
 		ai_chance = {
-			base = 1
+			value = 1
 		}
 		custom_tooltip = mexican_american.1.tt1 # 3 million over a year
 		c:MEX = {
@@ -50,7 +50,7 @@ mexican_american.1 = {
 		name = mexican_american.1.c
 		default_option = yes
 		ai_chance = {
-			base = 0
+			value = 0
 		}
 		remove_variable = usa_western_purchase_var
 	}
@@ -125,35 +125,35 @@ mexican_american.2 = {
 		
 		custom_tooltip = mexican_american.2.a_tt_cr
 		ai_chance = {
-		base = 0	
-			modifier = {
-				trigger = { owns_entire_state_region = STATE_TEXAS }
+		value = 0	
+			if = {
+				limit = { owns_entire_state_region = STATE_TEXAS }
 				add = -1000
 			}	
-		modifier = {
-			trigger = { gold_reserves > 0 }
+		if = {
+			limit = { gold_reserves > 0 }
 			add = -10
 		}		
-		modifier = {
-			trigger = { 
+		if = {
+			limit = { 
 				gold_reserves < 0
 			}
 			add = 10
 		}
-		modifier = {
-			trigger = { 
+		if = {
+			limit = { 
 				ruler = {has_ideology = ideology_jingoist_leader}
 			}
 			add = -1000
 		}
-		modifier = {
-			trigger = { 
+		if = {
+			limit = { 
 				ruler = {has_ideology = ideology_pacifist}
 			}
 			add = 20
 		}
-		modifier = {
-			trigger = { 
+		if = {
+			limit = { 
 				c:USA= {relations:root >= relations_threshold:amicable}
 			}
 			add = 10
@@ -174,9 +174,9 @@ mexican_american.2 = {
 			}
 		}
 		ai_chance = {
-			base = 20
-			modifier = {
-				trigger = { 
+			value = 20
+			if = {
+				limit = { 
 					c:USA= {relations:root <= relations_threshold:neutral}
 				}
 			add = 100
@@ -989,7 +989,7 @@ mexican_american.6 = { #Treaty of G H
 			trigger_event = { id = mexican_american.5 days = 0 popup = no }
 		}
 		ai_chance = {
-    			base = 20
+    			value = 20
    		}
 	}
 
@@ -1097,15 +1097,17 @@ mexican_american.6 = { #Treaty of G H
 				remove_claim = scope:mexico_scope
 			}
 		}
-		if = { limit = { 
-    		c:RIO = {
-    		is_player = no
-    		OR = {
-    			is_subject = no
-    			is_subject_of = c:USA
-    		}}
-    		exists = c:RIO
-    	}
+		if = { 
+			limit = { 
+				c:RIO = {
+					is_player = no
+					OR = {
+						is_subject = no
+						is_subject_of = c:USA
+					}
+				}
+				exists = c:RIO
+			}
     		annex = c:RIO
     	}
 		change_infamy = 40
@@ -1115,11 +1117,11 @@ mexican_american.6 = { #Treaty of G H
 		c:USA = {
 		remove_diplomatic_pact = {
   				country = c:MEX
-   					type = dominion
+   				type = dominion
    			}
    		}
    		ai_chance = {
-    			base = 5
+    		value = 5
    		}
    		set_variable = gasden_purchase_var
 	}
@@ -1232,7 +1234,7 @@ mexican_american.6 = { #Treaty of G H
 			trigger_event = { id = mexican_american.7 days = 0 popup = yes }
 		}
 		ai_chance = {
-    			base = 1
+    		value = 1
    		}
    		set_variable = gasden_purchase_var
 	}
@@ -1274,7 +1276,7 @@ mexican_american.7 = { #Mexican Settlement
 			}
 		}
 		ai_chance = {
-			base = 1
+			value = 1
 		}
 	}
 
@@ -1282,7 +1284,7 @@ mexican_american.7 = { #Mexican Settlement
 		name = mexican_american.7.b
 		default_option = yes
 		ai_chance = {
-			base = 10
+			value = 10
 		}
 		c:USA = {
 			change_relations = { 
@@ -1324,7 +1326,7 @@ mexican_american.7 = { #Mexican Settlement
 			}
 		}
 		ai_chance = {
-			base = 5
+			value = 5
 		}
 		
 	}
@@ -1366,7 +1368,7 @@ mexican_american.9 = {
 		name = mexican_american.9.a
 		add_modifier = {
 			name = dred_scott_for_scot_mod
-	}
+		}
 		c:USA = {add_radicals = {
 			value = 0.05
 			culture = cu:dixie

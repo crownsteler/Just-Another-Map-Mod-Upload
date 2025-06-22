@@ -356,7 +356,7 @@ can_aus.5 = {
 		name = can_aus.5.a
 		add_modifier = {
 			name = can_unified_canada
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		if = {
 			limit = {
@@ -423,7 +423,7 @@ can_aus.6 = {
 		name = can_aus.5.a
 		add_modifier = {
 			name = gbr_unified_canada
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }
@@ -463,7 +463,7 @@ can_aus.7 = {
 		name = can_aus.7.a
 		add_modifier = {
 			name = aus_unified_australia
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		if = {
 			limit = {
@@ -529,7 +529,7 @@ can_aus.8 = {
 		name = can_aus.7.a
 		add_modifier = {
 			name = gbr_unified_australia
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 }

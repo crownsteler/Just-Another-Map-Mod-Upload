@@ -9,6 +9,7 @@
 				owner = ROOT
 			}
 		}
+		has_claim = s:STATE_ACRE
 		NOR = {
 			country_or_subject_owns_entire_state_region = STATE_ACRE
 			has_global_variable = acre_dispute_button_global_var
@@ -16,14 +17,19 @@
 	}
 
 	possible = {
-		any_scope_state = {
-			state_region = s:STATE_AMAZONAS
-			any_neighbouring_state = {
+		OR = {
+			custom_tooltip = {
+				text = acre_dispute_button_tt
+				s:STATE_ACRE = {
+					any_scope_state = {
+						owner ?= { NOT = { is_country_type = decentralized } }
+					}
+				}
+			}
+			any_neighbouring_state = { 
 				state_region = s:STATE_ACRE
 			}
-		}
-		any_country = {
-			has_claim = s:STATE_ACRE
+			
 		}
 	}
 
@@ -33,7 +39,7 @@
 			s:STATE_AMAZONAS = {
 				add_claim = ROOT
 			}
-			random_country = {
+			every_country = {
 				limit = {
 					OR = {
 						AND = {
@@ -56,12 +62,13 @@
 			add_journal_entry = { type = je_acre_dispute }
 		}
 		set_global_variable = acre_dispute_button_global_var
+		cr_opening_the_route_to_acre_BRZ = yes
 	}
 
 	ai_chance = {
-		base = 20
-		modifier = {
-			trigger = {
+		value = 20
+		if = {
+			limit = {
 				OR = {
 					is_at_war = yes
 					in_default = yes

@@ -508,7 +508,17 @@
 			}
 			create_pop = {
 				culture = yue
-				size = 36523
+				size = 250
+				pop_type = capitalists
+			}
+			create_pop = {
+				culture = yue
+				size = 500
+				pop_type = shopkeepers
+			}
+			create_pop = {
+				culture = yue
+				size = 35873
 			}
 			create_pop = {
 				culture = sundanese

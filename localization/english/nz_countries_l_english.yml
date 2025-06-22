@@ -8,13 +8,8 @@
  NKU:0 "Ngāti Kahungunu"
  NKU_ADJ:0 "Ngāti Kahungunu"
 
- TAR:0 "Taranaki"
- TAR_ADJ:0 "Taranaki"
-
  KGI:0 "Tainui"
  KGI_ADJ:0 "Tainui"
-
- UNT_ADJ:0 "United Tribes"
 
  #TUH:0 "Tūhoe"
  #TUH_ADJ:0 "Tūhoe"
@@ -33,5 +28,3 @@
  
  nms_releasable_tt:0 "South Island separatism has been proposed"
  
- # Country Descriptions
- UNT_FLAVOR_TEXT:0 "The United Tribes of New Zealand have declared their sovereign independence, though in truth they are at the mercy of the British Empire. Can the British be trusted to respect their treaties with the Māori?"

@@ -90,7 +90,7 @@
 		}
 		set_variable = {
 			name = completed_peoples_stringtime_recent
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		trigger_event = { id = peoples_springtime.7 }
 	}
@@ -135,7 +135,7 @@
 		}
 		set_variable = {
 			name = completed_peoples_stringtime_recent
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		trigger_event = { id = peoples_springtime.8 }
 			}

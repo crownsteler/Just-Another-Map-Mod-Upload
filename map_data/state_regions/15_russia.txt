@@ -143,7 +143,7 @@ STATE_UUSIMAA = {
     arable_land = 32
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 5 #Jussaro
+        bg_iron_mining = 5 #Jussaro, Ojamo Manor
         #bg_copper_mining = 5 #intermittent copper mining at Orijarvi
         bg_logging = 36
         bg_fishing = 8
@@ -255,7 +255,8 @@ STATE_EAST_KARELIA = {
     }
     resource = {
         type = "bg_iron_mining"
-        undiscovered_amount = 25
+		discovered_amount = 6
+        undiscovered_amount = 12
     }
     naval_exit_id = 3039
 }
@@ -391,7 +392,7 @@ STATE_ORYOL = {
     mine = "xC7194D"
     wood = "x3EAD17"
     arable_land = 180
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
+    arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
     #bg_iron_mining = 25
     }
@@ -689,7 +690,7 @@ STATE_MERZ = {
     id = 807
     subsistence_building = "building_subsistence_farms"
     provinces = { x0111C0 x29133A x132704 x182A2C xAC0120 x582102 xB9040B x6D1768 x780AED x2E361B x2E3A04 x5F1CE5 x622B3C xBB10AF x184E72 xB1243B x7B3A19 xDC167D xD72954 x156A20 x087318 x1B7D15 x7B5777 x8851E8 x8955C1 x3A816D x1B9E03 x39988A x1DA83C xEE6836 xBE7494 xF76F3D xE16FA1 x79947D x6598F7 xDCACAB x35E93F xECBE1C xF9C1AD x6CF557 x80FDCA xC9EFBF xC07060 xCB0EBB x070194 xBB15CC x9B9047 xA1DDFA xD8C311 xFAAE74 x4D1581 xB402D5 x9B1898 x1046AA xC62005 xA63721 x4253A8 x9834F7 x7751AF x2D73A6 x109507 xDA5251 x3982B1 x9868A3 x6E71E4 xEA5990 x08AD1A xC57238 x8E76F9 x818A90 xA89A25 xE5817B x42BBE7 x3FC76E x43C9E9 xE0A7FF xB0CFEC xFFCBC4 xB9F803 xB9F093 }
-	impassable = { x4D1581 xB402D5 x9B1898 x1046AA xC62005 xA63721 x4253A8 x9834F7 x7751AF x2D73A6 x109507 xDA5251 x3982B1 x9868A3 x6E71E4 xEA5990 x08AD1A xC57238 x8E76F9 x818A90 xA89A25 xE5817B x42BBE7 x3FC76E x43C9E9 xE0A7FF xB0CFEC xFFCBC4 xB9F803 xB9F093 }
+	impassable = { x4D1581 xB402D5 x9B1898 x1046AA xC62005 xA63721 x4253A8 x9834F7 x7751AF x2D73A6 x109507 xDA5251 x9868A3 x6E71E4 xEA5990 x08AD1A xC57238 x818A90 xA89A25 xE5817B x42BBE7 x3FC76E x43C9E9 xE0A7FF xB0CFEC xFFCBC4 xB9F803 xB9F093 }
     city = "x6D1768"
     farm = "xFAAE74"
     mine = "x070194"
@@ -845,7 +846,7 @@ STATE_YAROSLAVL = {
 	traits = { "state_trait_volga_river" "state_trait_russian_forest" }
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 67
+        bg_logging = 37
         #bg_iron_mining = 6
     }
 }

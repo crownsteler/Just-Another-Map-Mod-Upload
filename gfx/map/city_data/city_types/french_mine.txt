@@ -1,8 +1,6 @@
 ﻿french_mine = {
 #	graphical_culture = "french"
 	city_type = mine
-	center_building_entity = "french_mining_centerpiece_01_entity"
-	center_building_size = { 3 3 }
 	
 	trigger = {
 		any_scope_state = {
@@ -20,6 +18,7 @@
 				region = sr:region_france
 				region = sr:region_occitania
 				region = sr:region_rhine
+				region = sr:region_low_countries
 				state_region = s:STATE_SAVOY
 				state_region = s:STATE_CORSICA
 				state_region = s:STATE_WEST_SWITZERLAND

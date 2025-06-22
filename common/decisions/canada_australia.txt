@@ -54,14 +54,16 @@
 		}
 		add_modifier = {
 			name = canada_test_modifier
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 	}
 
 	ai_chance = {
-		base = 0
-		modifier = {
+		value = 0
+		if = {
+			limit = {
 			has_technology_researched = pan-nationalism
+			}
 			add = 100
 		}		
 	}
@@ -102,14 +104,16 @@ canada_unite_gbr = {
 		}
 		add_modifier = {
 			name = canada_test_modifier
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 	}
 
 	ai_chance = {
-		base = 0
-		modifier = {
+		value = 0
+		if = {
+			limit = {
 			has_technology_researched = pan-nationalism
+			}
 			add = 100
 		}		
 	}
@@ -175,14 +179,16 @@ australia_unite_aus = {
 		}
 		add_modifier = {
 			name = australia_test_modifier
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 	}
 
 	ai_chance = {
-		base = 0
-		modifier = {
+		value = 0
+		if = {
+			limit = {
 			has_technology_researched = pan-nationalism
+			}
 			add = 100
 		}		
 	}
@@ -225,14 +231,16 @@ australia_unite_gbr = {
 		}
 		add_modifier = {
 			name = australia_test_modifier
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 	}
 
 	ai_chance = {
-		base = 0
-		modifier = {
+		value = 0
+		if = {
+			limit = {
 			has_technology_researched = pan-nationalism
+			}
 			add = 100
 		}		
 	}

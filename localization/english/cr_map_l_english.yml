@@ -71,7 +71,6 @@
  STATE_RED_SEA_COAST:0 "Red Sea Coast"
  STATE_ALAY:0 "Alay"
  STATE_TASHKENT:0 "Tashkent"
- STATE_BADAKHSHAN:0 "Badakhshan"
  STATE_FEZZAN:0 "Fezzan"
  STATE_AZAWAD:0 "Azawagh"
  STATE_EL_DJOUF:0 "El Djouf"
@@ -91,7 +90,6 @@
  STATE_OGADEN:0 "Ogaden"
  STATE_SOMALIA:0 "Somalia"
  STATE_BADIYA:0 "Badiya"
- STATE_KARAGANDA:0 "Karaganda"
  STATE_SURINAME:0 "Suriname"
  STATE_CAYENNE:0 "Cayenne"
  STATE_AMAPA:0 "Amapá"
@@ -605,6 +603,16 @@
  cr_first_carlist_war:0 "First Carlist War"
  cr_second_creek_war:0 "Second Creek War"
  cr_copper_country_insurgency:0 "Copper Country Insurgency"
+ 
+ #Diplomatic Treaties
+ treaty_name_london_1824:0 "Anglo-Dutch Treaty"
+ treaty_name_1776_first_salute:0 "The First Salute"
+ treaty_name_1820_loan:0 "1820 Sovereign Debt Issue"
+ treaty_name_rothshields_austria:0 "The Rothshields of Vienna"
+ treaty_name_rothshields_paris:0 "The Rothshields of Paris"
+ treaty_name_rothshields_london:0 "The Rothshields of London"
+ treaty_name_rothshields_naples:0 "The Rothshields of Naples"
+ treaty_name_ottoman_aceh_relations:0 "Firman of 1556"
  
  #Army Names:
  Ejercito_del_Catalunya:0 "Ejercito del Catalunya"

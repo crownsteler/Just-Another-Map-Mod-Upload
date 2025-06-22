@@ -34,9 +34,11 @@
 				culture = persian
 				size = 4454
 			}
+		}
+		region_state:CHC = {
 			create_pop = {
 				culture = north_caucasian
-				size = 198000
+				size = 19800
 			}
 			create_pop = {
 				culture = chechen
@@ -1057,7 +1059,7 @@
 			}
 		}
 	}
-	s:STATE_KARAGANDA = {
+	s:STATE_AKTOBE = { #STATE_KARAGANDA
 		region_state:OZH = {
 			create_pop = {
 				culture = kazak
@@ -1105,7 +1107,7 @@
 			create_pop = {
 				culture = panjabi # Hazarewal
 				religion = sunni
-				size = 181076
+				size = 131076
 			}
 			create_pop = {
 				culture = panjabi # Hazarewal
@@ -1124,42 +1126,42 @@
 			# Peshawar (majority)
 			create_pop = {
 				culture = pashtun
-				size = 184523
+				size = 154523
 			}
 			create_pop = {
 				culture = panjabi # Hazarewal
 				religion = sunni
-				size = 38108
+				size = 32108
 			}
 			create_pop = {
 				culture = panjabi # Hazarewal
 				religion = hindu
-				size = 15004
+				size = 14004
 			}
 			create_pop = {
 				culture = panjabi
 				religion = sunni
-				size = 5243
+				size = 4243
 			}
 			create_pop = {
 				culture = panjabi
 				religion = sikh
-				size = 5003
+				size = 4003
 			}
 			# Bannu
 			create_pop = {
 				culture = pashtun
-				size = 68528
+				size = 48528
 			}
 			create_pop = {
 				culture = panjabi # Saraiki
 				religion = sunni
-				size = 2578
+				size = 2178
 			}
 			create_pop = {
 				culture = panjabi # Saraiki
 				religion = hindu
-				size = 7728
+				size = 5728
 			}
 			# Kohat
 			create_pop = {
@@ -1343,6 +1345,12 @@
 	}
 
 	s:STATE_NORTHERN_BALUCHISTAN = {
+		region_state:KAN = {
+			create_pop = {
+				culture = baluchi
+				size = 5123
+			}
+		}
 		region_state:SST = {
 			create_pop = {
 				culture = uzbek
@@ -1361,12 +1369,6 @@
 			create_pop = {
 				culture = baluchi
 				size = 4650
-			}
-		}
-		region_state:KAN = {
-			create_pop = {
-				culture = baluchi
-				size = 5123
 			}
 		}
 	}

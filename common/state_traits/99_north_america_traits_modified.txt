@@ -120,7 +120,7 @@ state_trait_the_great_plains = {
 	
 	modifier = {
 		building_group_bg_agriculture_throughput_add = 0.2
-		building_livestock_ranch_output_add = 0.125
+		building_livestock_ranch_output_add = 0.15
 		state_infrastructure_mult = -0.1
 	}
 }

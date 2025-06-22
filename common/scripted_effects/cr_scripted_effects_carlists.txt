@@ -114,7 +114,7 @@ don_carlos_final_cleanup_vars = {
 don_carlos_exile_country_selector = {
 	hidden_effect = {
 		random_list = {
-			0 = {
+			50 = {
 				trigger = {
 					exists = c:FRA
 					NOT = {
@@ -127,16 +127,16 @@ don_carlos_exile_country_selector = {
 				c:FRA = {
 					trigger_event = { id = cr_carlist_events.15 days = 4 }
 				}
-				#modifier = {
-				#	if = {
-				#		limit = {
-				#			c:FRA = { is_player = yes }
-				#		}
-				#		add = 10
-				#	}
-				#}	
+				modifier = {
+					if = {
+						limit = {
+							c:FRA = { is_player = yes }
+						}
+						add = 10
+					}
+				}	
 			}
-			0 = {
+			10 = {
 				trigger = {
 					exists = c:GBR
 					NOT = {
@@ -149,16 +149,16 @@ don_carlos_exile_country_selector = {
 				c:GBR = {
 					trigger_event = { id = cr_carlist_events.30 days = 4 }
 				}
-				#modifier = {
-				#	if = {
-				#		limit = {
-				#			c:GBR = { is_player = yes }
-				#		}
-				#		add = 10
-				#	}
-				#}	
+				modifier = {
+					if = {
+						limit = {
+							c:GBR = { is_player = yes }
+						}
+						add = 10
+					}
+				}	
 			}
-			0 = {
+			50 = {
 				trigger = {
 					exists = c:POR
 					NOT = {
@@ -176,16 +176,16 @@ don_carlos_exile_country_selector = {
 				c:POR = {
 					trigger_event = { id = cr_carlist_events.80 days = 4 }
 				}	
-				#modifier = {
-				#	if = {
-				#		limit = {
-				#			c:POR = { is_player = yes }
-				#		}
-				#		add = 10
-				#	}
-				#}			
+				modifier = {
+					if = {
+						limit = {
+							c:POR = { is_player = yes }
+						}
+						add = 10
+					}
+				}			
 			}
-			0 = {
+			20 = {
 				trigger = {
 					exists = c:SIC
 					NOT = {
@@ -202,16 +202,16 @@ don_carlos_exile_country_selector = {
 				c:SIC = {
 					trigger_event = { id = cr_carlist_events.70 days = 4 }
 				}		
-				#modifier = {
-				#	if = {
-				#		limit = {
-				#			c:SIC = { is_player = yes }
-				#		}
-				#		add = 10
-				#	}
-				#}		
+				modifier = {
+					if = {
+						limit = {
+							c:SIC = { is_player = yes }
+						}
+						add = 10
+					}
+				}		
 			}
-			0 = {
+			15 = {
 				trigger = {
 					exists = c:AUS
 					NOT = {
@@ -235,16 +235,16 @@ don_carlos_exile_country_selector = {
 						trigger_event = { id = cr_carlist_events.61 days = 4 }
 					}
 				}
-				#modifier = {
-				#	if = {
-				#		limit = {
-				#			c:AUS = { is_player = yes }
-				#		}
-				#		add = 10
-				#	}
-				#}			
+				modifier = {
+					if = {
+						limit = {
+							c:AUS = { is_player = yes }
+						}
+						add = 10
+					}
+				}			
 			}
-			0 = {
+			10 = {
 				trigger = {
 					exists = c:RUS
 					NOT = {
@@ -259,16 +259,16 @@ don_carlos_exile_country_selector = {
 				c:RUS = {
 					trigger_event = { id = cr_carlist_events.50 days = 4 }
 				}
-				#modifier = {
-				#	if = {
-				#		limit = {
-				#			c:RUS = { is_player = yes }
-				#		}
-				#		add = 5
-				#	}
-				#}			
+				modifier = {
+					if = {
+						limit = {
+							c:RUS = { is_player = yes }
+						}
+						add = 5
+					}
+				}			
 			}
-			0 = {
+			5 = {
 				trigger = {
 					exists = c:USA
 					NOT = {
@@ -281,14 +281,14 @@ don_carlos_exile_country_selector = {
 				c:USA = {
 					trigger_event = { id = cr_carlist_events.90 days = 14 }
 				}
-				#modifier = {
-				#	if = {
-				#		limit = {
-				#			c:USA = { is_player = yes }
-				#		}
-				#		add = 5
-				#	}
-				#}
+				modifier = {
+					if = {
+						limit = {
+							c:USA = { is_player = yes }
+						}
+						add = 5
+					}
+				}
 			}
 			1 = {
 				c:SPA = {
@@ -325,7 +325,7 @@ don_carlos_distant_exile_effect = {
 		}
 		add_modifier = {
 			name = cr_royal_exile
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 	}
 	show_as_tooltip = {
@@ -409,7 +409,7 @@ don_carlos_tacit_support_effect = {
 		ig:ig_landowners = {
 			add_modifier = {
 				name = cr_carlos_ig_strengthend
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 		}
 	}
@@ -595,7 +595,7 @@ don_carlos_support_claim_effect = {
 		ig:ig_landowners = {
 			add_modifier = {
 				name = cr_carlos_ig_strengthend
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 		}
 	}
@@ -641,13 +641,13 @@ don_carlos_reject_asylum_effect = {
 		}
 		add_modifier = {
 			name = cr_denied_dynasty_member_asylum
-			months = normal_modifier_time 
+			days = normal_modifier_time 
 			is_decaying = yes
 		}
 		ig:ig_landowners = {
 			add_modifier = {
 				name = cr_denied_royal_exile_royalist_backlash_ig
-				months = normal_modifier_time 
+				days = normal_modifier_time 
 				is_decaying = yes
 			}		
 		}
@@ -664,7 +664,7 @@ don_carlos_reject_asylum_effect = {
 		scope:legitimist_movement = {
 			add_modifier = {
 				name = cr_denied_carlos_france_legitimists	
-				months = long_modifier_time
+				days = long_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -776,7 +776,7 @@ don_carlos_undermine_legitimacy_effect = {
 		scope:legitimist_movement = {
 			add_modifier = {
 				name = cr_granted_carlos_asylum_france_bonapartist
-				months = long_modifier_time
+				days = long_modifier_time
 				is_decaying = yes
 			}
 		}
@@ -1319,14 +1319,9 @@ cr_don_carlos_mediation_trigger_sicilian_event_effect = {
 }
 
 cr_don_carlos_sicilian_mediation_failure_effect = {
-	#add_modifier = {
-	#	name = cr_carlos_failed_diplomacy
-	#	months = normal_modifier_time
-	#	is_decaying = yes
-	#}
 	if = {
 		limit = {
-			exists ?= c:CSP
+			exists = c:CSP
 			c:CSP = { 
 				has_variable = cr_isabel_rejects_compromise
 			}
@@ -1334,7 +1329,7 @@ cr_don_carlos_sicilian_mediation_failure_effect = {
 	}
 	else_if = {
 		limit = {
-			exists ?= c:CSP
+			exists = c:CSP
 			c:CSP = { 
 				has_variable = cr_don_carlos_marriage_proposal_reject_csp
 			}
@@ -1346,7 +1341,7 @@ cr_don_carlos_sicilian_mediation_failure_effect = {
 	}
 	else_if = {
 		limit = {
-			exists ?= c:CSP
+			exists = c:CSP
 		}
 		change_relations = {
 			country = c:CSP
@@ -1355,7 +1350,7 @@ cr_don_carlos_sicilian_mediation_failure_effect = {
 	}
 	if = {
 		limit = {
-			exists ?= c:SPA
+			exists = c:SPA
 			has_variable = cr_isabel_rejects_compromise
 		}
 		change_relations = {
@@ -1365,7 +1360,7 @@ cr_don_carlos_sicilian_mediation_failure_effect = {
 	}
 	else_if = {
 		limit = {
-			exists ?= c:SPA
+			exists = c:SPA
 		}
 		change_relations = {
 			country = c:SPA
@@ -1383,12 +1378,12 @@ cr_don_carlos_sicilian_mediation_failure_effect = {
 cr_don_carlos_sicilian_mediation_succesful_effect = {
 	add_modifier = {
 		name = cr_carlos_bringer_of_pease
-		months = long_modifier_time
+		days = long_modifier_time
 		is_decaying = yes
 	}
 	if = {
 		limit = {
-			exists ?= c:CSP
+			exists = c:CSP
 		}
 		change_relations = {
 			country = c:CSP
@@ -1397,7 +1392,7 @@ cr_don_carlos_sicilian_mediation_succesful_effect = {
 	}
 	if = {
 		limit = {
-			exists ?= c:SPA
+			exists = c:SPA
 		}
 		change_relations = {
 			country = c:SPA

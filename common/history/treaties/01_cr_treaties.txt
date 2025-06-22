@@ -1,0 +1,503 @@
+﻿TREATIES = {
+	# Treaty of London 1824 which divided Malaysia and Indonesia into spheres of influence
+	create_treaty = {
+		name = treaty_name_london_1824
+		first_country = c:GBR
+		second_country = c:DEI
+
+		is_draft = no
+		entered_into_force_on = 1824.3.17
+		binding_period = { years = 99 } # Indefinite
+
+		articles_to_create = {
+			{ 
+				article = trade_privilege
+				source_country = c:GBR
+				target_country = c:DEI
+			}
+			{ 
+				article = trade_privilege
+				source_country = c:DEI
+				target_country = c:GBR
+			}
+			{ # British Guarantee of Aceh Independence
+				article = guarantee_independence
+				source_country = c:GBR
+				target_country = c:DEI
+			}
+			#{ 
+			#	article = non_colonization_agreement
+			#	source_country = c:DEI
+			#	target_country = c:GBR
+			#	inputs = {
+			#		{ region = sr:region_java }
+			#		{ region = sr:region_makasser }
+			#		{ region = sr:region_moluccas }
+			#		{ region = sr:region_malacca }
+			#	}
+			#}
+		}
+	}
+	
+	# Britain Guaranteed Aceh's independence. Would lead to the treaty of 1872.
+	create_treaty = {
+		name = treaty_name_london_1824
+		first_country = c:GBR
+		second_country = c:ACE
+
+		is_draft = no
+		entered_into_force_on = 1824.3.17
+		binding_period = { years = 99 } # Indefinite
+
+		articles_to_create = {
+			{ # Britain Guarantee of Aceh Independence
+				article = guarantee_independence
+				source_country = c:GBR
+				target_country = c:ACE
+			}
+		}
+	}
+	# Aceh claimed to be an informal protectorate of the Ottomans
+	create_treaty = {
+		name = treaty_name_ottoman_aceh_relations
+		first_country = c:TUR
+		second_country = c:ACE
+
+		is_draft = no
+		entered_into_force_on = 1566.1.1
+		binding_period = { years = 30 } # Not a formal treaty
+
+		articles_to_create = {
+			{ # Ottoman Guarantee of Aceh Independence
+				article = guarantee_independence
+				source_country = c:TUR
+				target_country = c:ACE
+			}
+		}
+	}
+	
+	
+	###### Setting investment right to fit Major investment patterns, British Portfolio Investment Overseas before 1870: Some Doubts BY D. C. M. PLATT
+	
+	if = {
+		limit = {
+			OR = {
+				has_dlc_feature = foreign_investment
+				has_dlc_feature = mp1_treaties
+			}
+		}
+		# British economic interests in USA
+		create_treaty = {
+			#name = treaty_name_london_1824
+			first_country = c:GBR
+			second_country = c:USA
+
+			is_draft = no
+			entered_into_force_on = 1815.2.17
+			binding_period = { years = 22 }
+
+			articles_to_create = {
+				{ # British economic interests in USA
+					article = foreign_investment_rights
+					source_country = c:USA 
+					target_country = c:GBR
+				}
+			}
+		}
+		# British economic interests in Spain
+		create_treaty = {
+			#name = treaty_name_london_1824
+			first_country = c:GBR
+			second_country = c:SPA
+
+			is_draft = no
+			entered_into_force_on = 1815.2.17
+			binding_period = { years = 60 } #Just so Carlos has a point
+
+			articles_to_create = {
+				{ # British economic interests in Spain
+					article = foreign_investment_rights
+					source_country = c:SPA
+					target_country = c:GBR 
+				}
+			}
+		}
+		# French economic interests in Spain
+		create_treaty = {
+			#name = treaty_name_london_1824
+			first_country = c:FRA
+			second_country = c:SPA
+
+			is_draft = no
+			entered_into_force_on = 1815.2.17
+			binding_period = { years = 60 }	#Just so Carlos has a point
+
+			articles_to_create = {
+				{ # French economic interests in Spain
+					article = foreign_investment_rights
+					source_country = c:SPA
+					target_country = c:FRA
+				}
+			}
+		}
+		# Dutch economic interests in USA
+		create_treaty = {
+			name = treaty_name_1776_first_salute
+			first_country = c:NET
+			second_country = c:USA
+
+			is_draft = no
+			entered_into_force_on = 1776.11.16
+			binding_period = { years = 30 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Dutch economic interests in USA
+					article = foreign_investment_rights
+					source_country = c:USA 
+					target_country = c:NET
+				}
+				{ # Debt issue of, often
+					article = take_on_debt
+					source_country = c:NET
+					target_country = c:USA
+				}
+			}
+		}
+		# Dutch economic interests in Russia
+		create_treaty = {
+			name = treaty_name_1820_loan
+			first_country = c:NET
+			second_country = c:RUS
+
+			is_draft = no
+			entered_into_force_on = 1820.6.10
+			binding_period = { years = 30 }	#Debt probably already repaid, but meh
+
+			articles_to_create = {
+				{ # Dutch economic interests in Russia
+					article = foreign_investment_rights
+					source_country = c:RUS
+					target_country = c:NET
+				}
+				{ # Debt issue of 1820
+					article = take_on_debt
+					source_country = c:NET
+					target_country = c:RUS
+				}
+			}
+		}
+		# Dutch economic interests in Austria
+		create_treaty = {
+			#name = treaty_name_1820_loan
+			first_country = c:NET
+			second_country = c:AUS
+
+			is_draft = no
+			entered_into_force_on = 1815.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Dutch economic interests in Austria
+					article = foreign_investment_rights
+					source_country = c:AUS
+					target_country = c:NET 
+				}
+				{ # Debt issue of, often
+					article = take_on_debt
+					source_country = c:NET
+					target_country = c:AUS
+				}
+			}
+		}
+		# Dutch economic interests in Denmark
+		create_treaty = {
+			#name = treaty_name_1820_loan
+			first_country = c:NET
+			second_country = c:DEN
+
+			is_draft = no
+			entered_into_force_on = 1815.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Dutch economic interests in Denmark
+					article = foreign_investment_rights
+					source_country = c:DEN
+					target_country = c:NET
+				}
+			}
+		}
+		# Hamburg economic interests in Denmark
+		create_treaty = {
+			#name = treaty_name_1820_loan
+			first_country = c:HAM
+			second_country = c:DEN
+
+			is_draft = no
+			entered_into_force_on = 1815.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Hamburg economic interests in Denmark
+					article = foreign_investment_rights
+					source_country = c:DEN
+					target_country = c:HAM
+				}
+			}
+		}
+		# Hamburg economic interests in Sweden
+		create_treaty = {
+			#name = treaty_name_1820_loan
+			first_country = c:HAM
+			second_country = c:SWE
+
+			is_draft = no
+			entered_into_force_on = 1815.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Hamburg economic interests in Sweden
+					article = foreign_investment_rights
+					source_country = c:SWE
+					target_country = c:HAM
+				}
+			}
+		}
+		# Hamburg economic interests in Oldenburg
+		create_treaty = {
+			#name = treaty_name_1820_loan
+			first_country = c:HAM
+			second_country = c:OLD
+
+			is_draft = no
+			entered_into_force_on = 1815.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Hamburg economic interests in Oldenburg
+					article = foreign_investment_rights
+					source_country = c:OLD
+					target_country = c:HAM
+				}
+			}
+		}
+		# Hamburg economic interests in Mecklenburg
+		create_treaty = {
+			#name = treaty_name_1820_loan
+			first_country = c:HAM
+			second_country = c:MEC
+
+			is_draft = no
+			entered_into_force_on = 1815.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Hamburg economic interests in Mecklenburg
+					article = foreign_investment_rights
+					source_country = c:MEC
+					target_country = c:HAM
+				}
+			}
+		}
+		# Rothshields of Austria
+		create_treaty = {
+			name = treaty_name_rothshields_austria
+			first_country = c:FRM
+			second_country = c:AUS
+
+			is_draft = no
+			entered_into_force_on = 1820.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Frankfurt/Rothshield economic interests in Austria
+					article = foreign_investment_rights
+					source_country = c:AUS
+					target_country = c:FRM
+				}
+			}
+		}
+		# Rothshields of Paris
+		create_treaty = {
+			name = treaty_name_rothshields_paris
+			first_country = c:FRM
+			second_country = c:FRA
+
+			is_draft = no
+			entered_into_force_on = 1817.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Frankfurt/Rothshield economic interests in France
+					article = foreign_investment_rights
+					source_country = c:FRA
+					target_country = c:FRM
+				}
+			}
+		}
+		# Rothshields of London
+		create_treaty = {
+			name = treaty_name_rothshields_london
+			first_country = c:FRM
+			second_country = c:GBR
+
+			is_draft = no
+			entered_into_force_on = 1811.1.1
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Frankfurt/Rothshield economic interests in Great Britain
+					article = foreign_investment_rights
+					source_country = c:GBR
+					target_country = c:FRM
+				}
+			}
+		}
+		# Rothshields of Naples
+		create_treaty = {
+			name = treaty_name_rothshields_naples
+			first_country = c:FRM
+			second_country = c:SIC
+
+			is_draft = no
+			entered_into_force_on = 1821.3.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Frankfurt/Rothshield economic interests in the Two Sicilies
+					article = foreign_investment_rights
+					source_country = c:SIC
+					target_country = c:FRM
+				}
+			}
+		}
+		# Frankfurt/Rothshield economic interests in Bavaria
+		create_treaty = {
+			#name = treaty_name_rothshields_austria
+			first_country = c:FRM
+			second_country = c:BAV
+
+			is_draft = no
+			entered_into_force_on = 1815.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Frankfurt/Rothshield economic interests in Bavaria
+					article = foreign_investment_rights
+					source_country = c:BAV
+					target_country = c:FRM
+				}
+			}
+		}
+		# Frankfurt/Rothshield economic interests in Wurtemburg
+		create_treaty = {
+			#name = treaty_name_rothshields_austria
+			first_country = c:FRM
+			second_country = c:WUR
+
+			is_draft = no
+			entered_into_force_on = 1815.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Frankfurt/Rothshield economic interests in Wurtemburg
+					article = foreign_investment_rights
+					source_country = c:WUR
+					target_country = c:FRM
+				}
+			}
+		}
+		# Frankfurt/Rothshield economic interests in Baden
+		create_treaty = {
+			#name = treaty_name_rothshields_austria
+			first_country = c:FRM
+			second_country = c:BAD
+
+			is_draft = no
+			entered_into_force_on = 1815.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Frankfurt/Rothshield economic interests in Baden
+					article = foreign_investment_rights
+					source_country = c:BAD
+					target_country = c:FRM
+				}
+			}
+		}
+		# Frankfurt/Rothshield economic interests in Hessen
+		create_treaty = {
+			#name = treaty_name_rothshields_austria
+			first_country = c:FRM
+			second_country = c:HES
+
+			is_draft = no
+			entered_into_force_on = 1815.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Frankfurt/Rothshield economic interests in Hessen
+					article = foreign_investment_rights
+					source_country = c:HES
+					target_country = c:FRM
+				}
+			}
+		}
+		# Frankfurt/Rothshield economic interests in Nassau
+		create_treaty = {
+			#name = treaty_name_rothshields_austria
+			first_country = c:FRM
+			second_country = c:NAS
+
+			is_draft = no
+			entered_into_force_on = 1815.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Frankfurt/Rothshield economic interests in Nassau
+					article = foreign_investment_rights
+					source_country = c:NAS
+					target_country = c:FRM
+				}
+			}
+		}
+		# Frankfurt/Rothshield economic interests in Hesse-Kassel
+		create_treaty = {
+			#name = treaty_name_rothshields_austria
+			first_country = c:FRM
+			second_country = c:HEK
+
+			is_draft = no
+			entered_into_force_on = 1815.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Frankfurt/Rothshield economic interests in Hesse-Kassel
+					article = foreign_investment_rights
+					source_country = c:HEK
+					target_country = c:FRM
+				}
+			}
+		}
+		# Frankfurt/Rothshield economic interests in Hesse-Kassel
+		create_treaty = {
+			#name = treaty_name_rothshields_austria
+			first_country = c:FRM
+			second_country = c:WLD
+
+			is_draft = no
+			entered_into_force_on = 1815.6.9
+			binding_period = { years = 5 }	#Not a formal treaty, so can be broken
+
+			articles_to_create = {
+				{ # Frankfurt/Rothshield economic interests in Hesse-Kassel
+					article = foreign_investment_rights
+					source_country = c:WLD
+					target_country = c:FRM
+				}
+			}
+		}
+		
+		
+	}	
+}

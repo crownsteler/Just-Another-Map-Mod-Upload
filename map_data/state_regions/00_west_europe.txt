@@ -711,13 +711,9 @@ STATE_ALSACE_LORRAINE = {
     arable_land = 67
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        #bg_iron_mining = 115
+        bg_iron_mining = 115
         bg_coal_mining = 60
         bg_logging = 18
-    }
-    resource = {
-        type = "bg_iron_mining"
-        undiscovered_amount = 115
     }
 }
 
@@ -825,22 +821,21 @@ STATE_LORRAINE = {
     id = 3401
     subsistence_building = "building_subsistence_farms"
     provinces = { x282DCC x3080E0 x4B7684 x70BFA0 x7FC1E6 xB080E0 xC5F13A }
-    traits = { state_trait_minette_ore }
+    traits = { } #state_trait_minette_ore added via event
 
     city = "xB080E0"
     farm = "x7FC1E6"
-    mine = "xC5F13A" #Do not forget to update cr_minette_ores_events.1
+    mine = "xC5F13A" #Do not forget to update cr_minette_ores_events.1 and cr_minette_ores_events.20
     wood = "x70BFA0"
     arable_land = 55
     arable_resources = { bg_wheat_farms bg_livestock_ranches }
     capped_resources = {
-        #bg_iron_mining = 70 #Only explored once Alsace was lost, but borders of Lorraine were redrawn back then to put as much ore in German occupied Alsace-Lorraine
+        #bg_iron_mining = 70 #Only explored once Alsace was lost
         bg_logging = 11
     }
-    resource = {
+    resource = {	#Do not forget to update cr_minette_ores_events.20
         type = "bg_iron_mining"
-		discovered_amount = 40
-        undiscovered_amount = 30
+        undiscovered_amount = 70
     }
 }
 

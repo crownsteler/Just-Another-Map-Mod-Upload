@@ -9,6 +9,18 @@ cr_sound_of_science_tech_spread_modifier = {
 	country_tech_spread_mult = 0.15
 }
 
+####Minette ores cr_minette_ores_events.20
+cr_prospecting_for_minette_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_authority_add = -125
+}
+
+####Minette ores cr_kazakh_events.1
+cr_taming_the_steppes = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = -300
+}
+
 ####The English Sitt/Queen of the Desert cr_europe_events.5
 
 #State modifier for Lebanon because moneylenders lost money and are admonished for charging such high interests

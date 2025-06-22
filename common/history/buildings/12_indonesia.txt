@@ -54,6 +54,19 @@
 		}
 		region_state:GBR={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_trade_center"
+						country="c:BIC"
+						levels=2
+						region="STATE_MALAYA"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_port"
 				add_ownership={
 					country={
@@ -409,6 +422,18 @@
 				activate_production_methods={ "pm_secular_bureaucrats" "pm_professional_bureaucrats" "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					company={ 
+						type=company_nederlandse_handelmaatschappij
+						country = "c:NET"
+						levels=6
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					country={
@@ -511,7 +536,7 @@
 				add_ownership={
 					country={
 						country="c:DEI"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -892,6 +917,19 @@
 	}
 	s:STATE_ACEH={
 		region_state:ACE={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_trade_center"
+						country="c:ACE"
+						levels=1
+						region="STATE_ACEH"
+					}
+				}
+				reserves=1
+			}
 			create_building={ #should be spices
 				building="building_sugar_plantation"
 				add_ownership={
@@ -1044,7 +1082,7 @@
 	}
 	s:STATE_MOLUCCAS={
 		region_state:DEI={
-			create_building={ #Don't forget to update trade routes
+			create_building={
 				building="building_tea_plantation"
 				add_ownership={
 					building={	#Owned by the Dutch Planters living in the area
@@ -1097,7 +1135,7 @@
 		}
 		region_state:TRT={
 			create_building={
-				building="building_tea_plantation" #Don't forget to update trade routes
+				building="building_tea_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
@@ -1471,11 +1509,24 @@
 				add_ownership={
 					country={
 						country="c:PHI"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_trade_center"
+						country="c:SPA"
+						levels=1
+						region="STATE_ANDALUSIA"
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_rice_farm"

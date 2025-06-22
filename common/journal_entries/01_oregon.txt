@@ -2,11 +2,9 @@
 je_oregon = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
-	group = je_group_historical_content
+	group = je_group_usa_manifest_destiny
 	
 	scripted_button = west_america_expedition
-
-
 
 	is_shown_when_inactive = {
 		#exists = c:USA
@@ -75,7 +73,7 @@ je_oregon = {
 				add_modifier = {
 					name = modifier_large_expedition_cost
 					multiplier = money_amount_multiplier_medium
-					months = 12
+					days = normal_modifier_time
 				}
 				random_list = {
 					2 = {
@@ -87,7 +85,7 @@ je_oregon = {
 						set_variable = west_america_expedition_success_var
 						add_modifier = {
 							name = modifier_buenaventura_river_disproven
-							months = normal_modifier_time
+							days = normal_modifier_time
 						}
 					}
 					1 = {
@@ -97,7 +95,7 @@ je_oregon = {
 						set_variable = west_america_expedition_success_var
 						add_modifier = {
 							name = modifier_oregon_trail_mapped
-							months = normal_modifier_time
+							days = normal_modifier_time
 						}
 					}
 					1 = {
@@ -107,7 +105,7 @@ je_oregon = {
 						cr_map_the_salt_lake = yes
 						add_modifier = {
 							name = modifier_great_salt_lake_mapped
-							months = normal_modifier_time
+							days = normal_modifier_time
 						}
 						set_variable = west_america_expedition_success_var
 					}

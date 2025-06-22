@@ -303,7 +303,20 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
-			}		
+			}
+			#create_building={	#Wasn't a whole lot of trading going on.
+			#	building="building_trade_center"
+			#	activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+			#	add_ownership={
+			#		building={
+			#			type="building_trade_center"
+			#			country="c:HAI"
+			#			levels=1
+			#			region="STATE_HAITI"
+			#		}
+			#	}
+			#	reserves=1
+			#}		
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
@@ -360,7 +373,7 @@
 				building="building_dye_plantation"
 				add_ownership={
 					building={
-						type="building_manor_house"
+						type="building_dye_plantation"
 						country="c:HAI"
 						levels=1
 						region="STATE_HAITI"
@@ -462,6 +475,19 @@
 	}
 	s:STATE_PUERTO_RICO={
 		region_state:SPA={
+			#create_building={
+			#	building="building_trade_center"
+			#	activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+			#	add_ownership={
+			#		building={
+			#			type="building_trade_center"
+			#			country="c:SPA"
+			#			levels=1
+			#			region="STATE_ANDALUSIA"
+			#		}
+			#	}
+			#	reserves=1
+			#}
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
@@ -555,6 +581,19 @@
 	}
 	s:STATE_WEST_INDIES={
 		region_state:FRA={
+			#create_building={
+			#	building="building_trade_center"
+			#	activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+			#	add_ownership={
+			#		building={
+			#			type="building_trade_center"
+			#			country="c:FRA"
+			#			levels=1
+			#			region="STATE_ILE_DE_FRANCE"
+			#		}
+			#	}
+			#	reserves=1
+			#}
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
@@ -732,6 +771,25 @@
 	}
 	s:STATE_JAMAICA={
 		region_state:GBR={
+			#create_building={
+			#	building="building_trade_center"
+			#	activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+			#	add_ownership={
+			#		building={
+			#			type="building_financial_district"
+			#			country="c:GBR"
+			#			levels=2
+			#			region="STATE_JAMAICA"
+			#		}
+			#		building={
+			#			type="building_financial_district"
+			#			country="c:GBR"
+			#			levels=1
+			#			region="STATE_HOME_COUNTIES"
+			#		}
+			#	}
+			#	reserves=1
+			#}
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
@@ -773,6 +831,31 @@
 	}
 	s:STATE_CUBA={
 		region_state:CUB={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_trade_center"
+						country="c:CUB"
+						levels=2
+						region="STATE_CUBA"
+					}
+					building={
+						type="building_trade_center"
+						country="c:SPA"
+						levels=1
+						region="STATE_ANDALUSIA"
+					}
+					building={	#Barings Brothers involvement in the Cuban sugar trade. Should really be a trade centre, but that is not in the game yet. :) It is now :D
+						type="building_manor_house"
+						country="c:GBR"
+						levels=1
+						region="STATE_LANCASHIRE"
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_rice_farm"
 				add_ownership={
@@ -830,12 +913,6 @@
 						country="c:SPA"
 						levels=3
 						region="STATE_TOLEDO"
-					}
-					building={	#Barings Brothers involvement in the Cuban sugar trade. Should really be a trade centre, but that is not in the game yet. :)
-						type="building_manor_house"
-						country="c:GBR"
-						levels=1
-						region="STATE_LANCASHIRE"
 					}
 				}
 				reserves=1

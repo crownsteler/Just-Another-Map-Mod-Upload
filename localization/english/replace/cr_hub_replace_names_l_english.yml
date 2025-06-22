@@ -68,9 +68,9 @@
  HUB_NAME_STATE_ALSACE_LORRAINE_farm:0 "Metz"
  HUB_NAME_STATE_ALSACE_LORRAINE_wood:0 "Mulhouse"
  HUB_NAME_STATE_LORRAINE_city:0 "Nancy"
- HUB_NAME_STATE_LORRAINE_mine:0 "Neufchateau"
+ HUB_NAME_STATE_LORRAINE_mine:0 "Longwy"
  HUB_NAME_STATE_LORRAINE_farm:0 "Épinal"
- HUB_NAME_STATE_LORRAINE_wood:0 "Longwy"
+ HUB_NAME_STATE_LORRAINE_wood:0 "Neufchateau"
  HUB_NAME_STATE_RHONE_city:0 "Lyon"
  HUB_NAME_STATE_RHONE_mine:0 "Saint Etienne" 
  HUB_NAME_STATE_RHONE_farm:0 "Valence"
@@ -962,6 +962,9 @@
  HUB_NAME_STATE_KAZEMBE_farm:0 "Kasama"
  HUB_NAME_STATE_KAZEMBE_wood:0 "Fort Rosebery"
  HUB_NAME_STATE_KAZEMBE_mine:0 "Mbala" #Don't have a clue
+ 
+ #USA
+ HUB_NAME_STATE_PENNSYLVANIA_port:0 "Camden" #Wrong side of the river, I know.
  
  #Canada
  HUB_NAME_STATE_MANITOBA_wood:0 "York Factory"

@@ -54,18 +54,76 @@
  
  
  #The Little Veins of Lorraine
- cr_minette_ores_events.2.t:0 "Buried Riches, Unmet Promise"
- cr_minette_ores_events.2.desc:0 "Geologists and industrialists in [SCOPE.sState('minette_ore_state').GetName] have long been aware of the vast beds of iron ore hidden beneath the region's hills—immense in scale, yet tainted by their high phosphorus content. Until now, this impurity has rendered the ore all but useless for the production of quality steel.\n\nBut recent advances in metallurgy—culminating in the development of the #BOLD Bessemer Process#!—have sparked fresh debate in scientific and industrial circles. If phosphorus can be removed or neutralized in the furnace, then these #italic minette ores#!, once dismissed as second-rate, might become a cornerstone of national industry."
- cr_minette_ores_events.2.flavour:0 "With ingenuity, investment, and coordination between science and industry, a new era of steel production could rise from the iron beneath Lorraine."
+ cr_minette_ores_events.1.t:0 "The Little Veins of Lorraine"
+ cr_minette_ores_events.1.desc:0 "In the hills of [SCOPE.sState('minette_ore_state').GetName], immense reserves of iron-rich #italic minette#! ore lie beneath the soil. For decades, their abundance has tantalized French industrialists and geologists alike. Yet the region’s promise remains locked away.\n\nThe phosphorus content of the ore makes it unusable in steelmaking with current methods. Without a means to refine it, the vast deposits of Lorraine serve more as a geological curiosity than an economic engine."
+ cr_minette_ores_events.1.flavour:0 "For now, the furnaces of France must burn fuel from elsewhere. But should future metallurgical breakthroughs allow the purification of minette, it could transform the region into a pillar of French steel production."
+ cr_minette_ores_events.1.a:0 "Its time will come."
+ cr_minette_ores_events.1.a_tt:0 "When the #variable Bessemer Process#! is researched, a journal entry will become available to develop a method for purifying #italic minette#! ore and removing the #variable Minette Ores#! trait from [SCOPE.sState('minette_ore_state').GetNameNoFormatting]."
+ 
+ cr_minette_ores_events.2.t:0 "Buried Riches, Stirring Promise"
+ cr_minette_ores_events.2.desc:0 "For years, the vast beds of #italic minette#! ore beneath [SCOPE.sState('minette_ore_state').GetName] have remained an untapped asset—abundant, yet tainted by their high phosphorus content.\n\nNow, with the recent development of the #BOLD Bessemer Process#!, industrial and scientific minds alike see a path forward. Though the new process alone cannot solve the phosphorus problem, it opens the door to metallurgical refinements that may finally make the ore viable for steel production."
+ cr_minette_ores_events.2.flavour:0 "What was once dismissed as unworkable may soon become a strategic pillar of national industry. All it will take is innovation, investment, and the will to turn theory into fire."
+
+ cr_minette_ores_events.2.desc_old:0 "Geologists and industrialists in [SCOPE.sState('minette_ore_state').GetName] have long been aware of the vast beds of iron ore hidden beneath the region's hills—immense in scale, yet tainted by their high phosphorus content. Until now, this impurity has rendered the ore all but useless for the production of quality steel.\n\nBut recent advances in metallurgy—culminating in the development of the #BOLD Bessemer Process#!—have sparked fresh debate in scientific and industrial circles. If phosphorus can be removed or neutralized in the furnace, then these #italic minette ores#!, once dismissed as second-rate, might become a cornerstone of national industry."
+ cr_minette_ores_events.2.flavour_old:0 "With ingenuity, investment, and coordination between science and industry, a new era of steel production could rise from the iron beneath Lorraine."
  cr_minette_ores_events.2.a:0 "This could change everything."
- cr_minette_ores_events.2.a_tt:0 "Completing the #variable The Little Veins of Lorraine#! journal entry will remove the #variable Minette Ores#! state trait from [SCOPE.sState('minette_ore_state').GetNameNoFormatting], unlocking its iron mining potential."
- cr_minette_ores_events.3.t:0 "Buried Riches, Unmet Promise"
- cr_minette_ores_events.3.desc:0 "Our recent conquest of [SCOPE.sState('minette_ore_state').GetName] has brought with it more than political control—it has brought us the vast minette ore beds that lie beneath its hills.\n\nOn paper, the find is extraordinary: iron ore in immense quantities, enough to supply steel mills for generations. But the ore is tainted. Rich in phosphorus, it cannot be processed using our current techniques. Local officials speak of its promise, but engineers shake their heads.\n\nFor now, the ore lies useless—an empire’s treasure locked behind a chemical barrier."
- cr_minette_ores_events.3.flavour:0 "With ingenuity, investment, and coordination between science and industry, a new era of steel production could rise from the iron beneath Lorraine."
- cr_minette_ores_events.3.a:0 "A prize in waiting."
- cr_minette_ores_events.3.a_tt:0 "Completing the #variable The Little Veins of Lorraine#! journal entry will remove the #variable Minette Ores#! state trait from [SCOPE.sState('minette_ore_state').GetNameNoFormatting], unlocking its iron mining potential."
- cr_minette_ores_events.10.t:0 "Forged in Fire"
+ cr_minette_ores_events.2.a_tt:0 "Unlocks the #variable The Little Veins of Lorraine#! journal entry.\nCompleting the journal entry will remove the #variable Minette Ores#! state trait from [SCOPE.sState('minette_ore_state').GetNameNoFormatting], unlocking its iron mining potential."
+ 
+ cr_minette_ores_events.3.t:0 "The Iron Returns to France"
+ cr_minette_ores_events.3.desc:0 "With the return of [SCOPE.sState('minette_ore_state').GetName] to French hands, we reclaim more than territory—we reclaim opportunity long denied. Beneath the hills lie the famed beds of #italic minette#! ore: rich, vast, and once dismissed due to their phosphorus content.\n\nBut the times have changed. Our industry has advanced. What was once an unusable resource is now a national asset waiting to be awakened. Engineers and metallurgists propose a full-scale effort to harness these long-slumbering deposits."
+ cr_minette_ores_events.3.flavour:0 "We could not mine it when we owned it. They could not mine it when they took it. Now we shall show them both what it means to forge the future."
+ cr_minette_ores_events.3.a:0 "We’ll finish what we never could."
+ cr_minette_ores_events.3.a_tt:0 "Unlocks the #variable The Little Veins of Lorraine#! journal entry.\nCompleting the journal entry will allow France to remove the #variable Minette Ores#! state trait from [SCOPE.sState('minette_ore_state').GetNameNoFormatting], unlocking its full iron mining potential."
+ 
+ cr_minette_ores_events.4.t:0 "The Little Veins of Lorraine"
+ cr_minette_ores_events.4.desc:0 "Our recent acquisition of [SCOPE.sState('minette_ore_state').GetName] has brought with it one of the largest known reserves of iron ore in Europe. The region is rich in #italic minette#! —a sedimentary ore long known for its volume, and long dismissed for its impurity.\n\nThe problem lies in the phosphorus: while the ore is abundant, current techniques cannot refine it into steel-grade material. Engineers suggest the ore may hold future value, if advancements in metallurgy can one day neutralize its chemical flaws."
+ cr_minette_ores_events.4.flavour:0 "A treasure too heavy to lift; an empire's promise waiting on science to catch up."
+ cr_minette_ores_events.4.a:0 "We’ll keep a close eye on scientific progress."
+ cr_minette_ores_events.4.a_tt:0 "Once the #variable Bessemer Process#! is researched, a journal entry will become available to develop a method for purifying #italic minette#! ore in [SCOPE.sState('minette_ore_state').GetNameNoFormatting]."
+ 
+ cr_minette_ores_events.5.t:0 "Cracking the Minette"
+ cr_minette_ores_events.5.desc:0 "Advancements in metallurgy have sparked renewed interest in the vast iron ore beds beneath [SCOPE.sState('minette_ore_state').GetName]. Though long considered unusable due to their high phosphorus content, new refining techniques may now make it possible to overcome this chemical barrier.\n\nIndustrialists and scientists alike propose a concentrated effort to develop a reliable method of purification—one that could finally unlock the region’s immense economic potential."
+ cr_minette_ores_events.5.flavour:0 "Sometimes it is not the ore that changes, but the tools we use to shape it."
+ cr_minette_ores_events.5.a:0 "Let the work begin."
+ cr_minette_ores_events.5.a_tt:0 "Unlocks the #variable The Little Veins of Lorraine#! journal entry allowing you to pursue a method for purifying minette ore."
+ 
+ cr_minette_ores_events.6.t:0 "A Region of Sleeping Steel"
+ cr_minette_ores_events.6.desc:0 "With [SCOPE.sState('minette_ore_state').GetName] newly under our control, the region’s vast iron ore fields lie open before us. For decades, the high phosphorus content in this ore has stymied its use in steelmaking, but recent breakthroughs in industrial technique may finally allow us to overcome this limitation.\n\nEngineers now urge the government to act—before another generation of iron lies buried in vain."
+ cr_minette_ores_events.6.flavour:0 "Some conquests yield land, others yield the future."
+ cr_minette_ores_events.6.a:0 "Begin the effort."
+ cr_minette_ores_events.6.a_tt:0 "Unlocks the #variable The Little Veins of Lorraine#! journal entry enabling you  to develop a method for purifying minette ore and removing the #variable Minette Ores#! state trait."
+ 
+ cr_minette_ores_events.7.t:0 "Unreachable Riches"
+ cr_minette_ores_events.7.desc:0 "Our recent conquest of [SCOPE.sState('minette_ore_state').GetName] has brought with it more than political control—it has brought us the vast minette ore beds that lie beneath its hills.\n\nOn paper, the find is extraordinary: iron ore in immense quantities, enough to supply steel mills for generations. But the ore is tainted. Rich in phosphorus, it cannot be processed using our current techniques, and will requiring technological advancement before it can be put to us."
+ cr_minette_ores_events.7.flavour:0 "Local officials speak of its immense promise, yet our engineers shake their heads. For now, this vast treasure lies effectively useless—an empire’s prize locked behind a stubborn chemical barrier, awaiting a metallurgical breakthrough we have yet to achieve."
+ cr_minette_ores_events.7.a:0 "A prize in waiting."
+ cr_minette_ores_events.7.a_tt:0 "When the #variable Bessemer Process#! is researched, a journal entry will become available to develop a method for purifying #italic minette#! ore and removing the #variable Minette Ores#! trait from [SCOPE.sState('minette_ore_state').GetNameNoFormatting]."
+ 
+ cr_minette_ores_events.10.desc:0 "Forged in Fire" 
  cr_minette_ores_events.10.desc:0 "Years of experimentation, investment, and innovation have borne fruit. Metallurgists working in [SCOPE.sState('minette_ore_state').GetCityHubName] have succeeded in developing a process capable of removing phosphorus from minette ore—unlocking its full value for modern steelmaking."
  cr_minette_ores_events.10.flavour:0 "What was once dismissed as a geological curiosity, unfit for industry, can now be fed into furnaces across the region. Blast furnaces can roar, smokestacks rise, and steel flow where once only raw promise lay."
  cr_minette_ores_events.10.a:0 "Let the little veins of Lorraine feed the arteries of a growing industrial power."
  cr_minette_ores_events.10.a_tt:0 "Let the fires never die."
+ 
+ cr_minette_ores_events.11.t:0 "A Fire Not Our Own"
+ cr_minette_ores_events.11.desc:0 "News arrives from [SCOPE.sState('minette_ore_state').GetCityHubName], where the authorities of [SCOPE.sCountry('occupier_of_lorraine').GetNameNoFlag] have reportedly developed a method to purify minette ore—removing its high phosphorus content and unlocking its full potential for steelmaking.\n\nFor decades, French scientists and engineers struggled with this very challenge, their efforts cut short by war and the loss of Lorraine. Now, the furnaces roar—but under another flag."
+ cr_minette_ores_events.11.f:0 "The hills remember who first dreamed of what lay beneath them. But they do not choose who gets to dig."
+ cr_minette_ores_events.11.a:0 "We will not forget."
+
+ 
+ cr_minette_ores_events.20.t:0 "Ore Bed Extension"
+ cr_minette_ores_events.20.desc_no_tech:0 "Recent geological surveys in the Longwy region have uncovered a startling extension of the minette ore belt. Previously believed to be confined to the Thionville basin, the formation now appears to stretch further west than anyone expected.\n\nThe newly identified deposits are vast—possibly rivaling those already known in the east. But enthusiasm is tempered by a familiar obstacle: the ore remains high in phosphorus, and thus still unsuitable for steel production with current techniques."
+ cr_minette_ores_events.20.desc_tech_discovered:0 "New geological surveys near Longwy have upended long-held assumptions about the extent of the minette iron fields. Once thought to taper off near Thionville, the ore beds have now been traced significantly further west.\n\nThis time, the news comes with more than just academic interest. With modern smelting methods capable of handling phosphorus-rich ore, these newly mapped deposits represent a valuable and immediately viable industrial asset."
+ cr_minette_ores_events.20.flavour_no_tech:0 "Until science catches up with geology, these western beds remain a promise unfulfilled."
+ cr_minette_ores_events.20.flavour_tech_discovered:0 "Industrialists are already mobilizing. New mines, new rails, and new fortunes seem only a signature away."
+ cr_minette_ores_events.20.a:0 "Mark the sites. The future may dig here."
+ cr_minette_ores_events.20.b:0 "Begin preparations to exploit the new deposits."
+ cr_minette_ores_events.20.b_tt:0 "This option is available because a method to make use of the #italic Minette Ores#! has been discovered."
+
+ 
+ cr_minette_ores_events.26.t:0 "Iron Beneath Our Feet"
+ cr_minette_ores_events.26.desc_no_known_deposits:0 "When the borders of [SCOPE.sState('minette_ore_state').GetName] were redrawn after the war, great care was taken by [SCOPE.sCharacter('border_treaty_drawer').GetPrimaryRoleTitle] [SCOPE.sCharacter('border_treaty_drawer').GetLastName] to ensure that the vast minette ore beds near Thionville fell squarely under [SCOPE.sCountry('minette_ore_state_owner').GetAdjectiveNoFlag] control. The line was not accidental—it was geological.\n\nBut recent murmurs among geologists suggest that the iron-rich strata may not end so neatly at the new frontier. Preliminary surveys hint that the same ore formations could extend further west, beneath [ROOT.GetCountry.GetAdjectiveNoFormatting] soil. It is a possibility that demands closer investigation."
+ cr_minette_ores_events.26.desc_known_deposits:0 "In the aftermath of the war, [SCOPE.sCharacter('border_treaty_drawer').GetPrimaryRoleTitle] [SCOPE.sCharacter('border_treaty_drawer').GetName] made no secret of [SCOPE.sCharacter('border_treaty_drawer').GetHerHis] intent when redrawing the borders: the line was not drawn for culture or history, but for geology. By shifting the frontier west of Thionville, [SCOPE.sCharacter('border_treaty_drawer').GetHerHis] secured for the [SCOPE.sCountry('minette_ore_state_owner').GetNameNoFlag] the richest known deposits of minette ore.\n\nYet [SCOPE.sCharacter('border_treaty_drawer').GetHerHis] could not seize everything. Ore formations are known to exist on our side of the new border—less explored, but promising. Their depth, quality, and extent remain uncertain, but the potential is real. A thorough geological survey may reveal deposits equal to those lost."
+ cr_minette_ores_events.26.flavour:0 "[SCOPE.sCharacter('border_treaty_drawer').GetHerHis|U] took all [SCOPE.sCharacter('border_treaty_drawer').GetHerHis] thought [SCOPE.sCharacter('border_treaty_drawer').GetHerHis] could. Let us prove [SCOPE.sCharacter('border_treaty_drawer').GetHerHis] left behind more than [SCOPE.sCharacter('border_treaty_drawer').GetHerHis] imagined."
+ cr_minette_ores_events.26.a:0 "Launch exploratory surveys immediately."
+ cr_minette_ores_events.26.b:0 "What is lost is lost, better not to dwell on it."

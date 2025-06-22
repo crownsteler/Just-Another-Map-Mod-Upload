@@ -802,6 +802,7 @@ STATE_EAST_MICRONESIA = {
     capped_resources = {
         bg_whaling = 4
         bg_fishing = 10
+		bg_sulfur_mining = 2
     }
     naval_exit_id = 3002
 }
@@ -942,7 +943,7 @@ STATE_TAHITI = {
     mine = "x98C69C"
     wood = "x786bb1"
     arable_land = 8
-    arable_resources = { "bg_banana_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_banana_plantations" }
     capped_resources = {
         bg_whaling = 3
         bg_fishing = 8
@@ -966,7 +967,7 @@ STATE_TUAMOTES = {
     capped_resources = {	#Also Pearl Diving
         bg_whaling = 6
         bg_fishing = 12
-        bg_sulfur_mining = 1
+        bg_sulfur_mining = 2
     }
     naval_exit_id = 3150
 }

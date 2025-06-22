@@ -1,0 +1,205 @@
+﻿
+
+je_pacify_the_steppes = {
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+    group = je_group_russia_expansion
+
+    possible = {
+        #triggered by event
+    }
+
+    immediate = {
+        c:RUS = {
+            save_scope_as = russia_scope
+        }
+        #random_character_in_void = {
+        #    limit = {
+        #        has_variable = kenesary_variable
+        #    }
+        #    save_scope_as = kenesary_scope
+        #}
+        #set_global_variable = kazakhstan_revolt_happened
+		this = {
+			add_modifier = { name = cr_taming_the_steppes }
+		}
+		if = {
+			limit = {
+				exists = c:BKH
+			}
+			c:BKH = {
+				trigger_event = { id = cr_kazakh_events.3 days = 5 }
+			}
+		}
+    }
+
+    complete = {
+        any_subject_or_below = {
+            filter = {
+                country_has_primary_culture = cu:kazak
+            }
+            is_subject_type = subject_type_puppet
+            liberty_desire <= 25
+            percent = 1
+        }
+    }
+
+    on_complete = {
+        trigger_event = { id = kazakhstan_events.3 }
+        set_global_variable = kazakhstan_victory_var
+    }
+
+    event_outcome_completed_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = event_effects_kazakhstan_events.3_tt
+            }
+        }
+    }
+
+    fail = {
+        OR = {
+            any_civil_war = {
+                civil_war_progress >= 0.75
+            }
+            country_rank < rank_value:great_power
+            OR = {
+                trigger_if = {
+                    limit = {
+                        exists = c:KZH
+                    }
+                    c:KZH ?= {
+                        liberty_desire >= 80
+                    }
+                }
+                trigger_if = {
+                    limit = {
+                        exists = c:UZH
+                    }
+                    c:UZH ?= {
+                        liberty_desire >= 80
+                    }
+                }
+                trigger_if = {
+                    limit = {
+                        exists = c:OZH
+                    }
+                    c:OZH ?= {
+                        liberty_desire >= 80
+                    }
+                }
+            }
+        }
+    }
+
+    on_fail = {
+        trigger_event = { id = kazakhstan_events.1 }
+        hidden_effect = {
+            random_character_in_void = {
+                limit = {
+                    has_variable = kenesary_variable
+                }
+                kill_character = {
+                    hidden = yes
+                }
+            }
+        }
+    }
+
+    event_outcome_failed_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = event_effects_kazakhstan_events.1_tt
+            }
+        }
+    }
+
+    invalid = {
+        c:KZH ?= {
+            NOT = {
+                is_subject_of = ROOT
+            }
+        }
+        c:UZH ?= {
+            NOT = {
+                is_subject_of = ROOT
+            }
+        }
+        c:OZH ?= {
+            NOT = {
+                is_subject_of = ROOT
+            }
+        }
+    }
+
+    timeout = 3650
+
+    on_timeout = {
+        trigger_event = { id = kazakhstan_events.1 }
+        hidden_effect = {
+            random_character_in_void = {
+                limit = {
+                    has_variable = kenesary_variable
+                }
+                kill_character = {
+                    hidden = yes
+                }
+            }
+        }
+    }
+
+    event_outcome_timeout_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = event_effects_kazakhstan_events.1_tt
+            }
+        }
+    }
+
+    on_monthly_pulse = {
+        effect = {
+            random_list = {
+                200 = {
+
+                }
+                10 = {
+                    random_country = {
+                        limit = {
+                            country_has_primary_culture = cu:kazak
+                            is_subject_of = root
+                        }
+                        trigger_event = { id = kazakhstan_events.6 }
+                    }
+                }
+                10 = {
+                    random_country = {
+                        limit = {
+                            OR = {
+                                country_has_primary_culture = cu:kirgiz
+                                country_has_primary_culture = cu:uzbek
+                                country_has_primary_culture = cu:turkmen
+                                country_has_primary_culture = cu:uighur
+                            }
+                            has_interest_marker_in_region = region_central_asia
+                            c:RUS.relations:root <= 0
+                            NOT = {
+                                has_variable = kenesary_recognizer_var
+                            }
+                        }
+                        trigger_event = { id = kazakhstan_events.7 }
+                    }
+                }
+            }
+        }
+        random_events = {
+            200 = 0
+            10 = kazakhstan_events.4
+            10 = kazakhstan_events.5
+            10 = kazakhstan_events.8
+        }
+    }
+
+    weight = 100
+
+    should_be_pinned_by_default = yes
+}

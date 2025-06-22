@@ -61,9 +61,11 @@
 #	}
 #
 #	ai_chance = {
-#		base = 0
-#		modifier = {
-#			has_technology_researched = pan-nationalism
+#		value = 0
+#		if = {
+#			limit = {
+#				has_technology_researched = pan-nationalism
+#			}
 #			add = 100
 #		}		
 #	}
@@ -132,18 +134,22 @@ cr_canada_numbered_treaties_start = {
 		}
 	}
 	ai_chance = {
-		base = 15
-		modifier = {
-			factor = 0
-			influence < 150
+		value = 15
+		if = {
+			limit = {
+				influence < 150			
+			}
+			add = -15
 		}
 		#modifier = { #How does this one work?
 		#	factor = 0
 		#	scaled_debt > 0.3
 		#}
-		modifier = {
-			factor = 2
-			influence > 300
+		if = {
+			limit = {
+				influence > 300
+			}
+			add = 15
 		}
 	}
 }
@@ -177,7 +183,7 @@ cr_canada_numbered_treaties_start = {
 #		}
 #	}
 #	ai_chance = {
-#		base = 0
+#		value = 0
 #		modifier = {
 #			add = 15
 #			influence < 125
@@ -314,20 +320,24 @@ cr_canada_numbered_treaties_start = {
 #		}
 #	}
 #	ai_chance = {
-#		base = 0 
-#		modifier = {
-#			add = 15
-#			scaled_debt > 0.7
-#		}
-#		modifier = {
-#			add = 15
-#			ruler = {
-#				OR = {
-#					has_trait = bandit
-#					has_trait = bigoted
-#					has_trait = cruel					
-#				}			
+#		value = 0 
+#		if = {
+#			limit = {
+#				scaled_debt < 0.7
 #			}
+#			add = 15
+#		}
+#		if = {
+#			limit = {
+#				ruler = {
+#					OR = {
+#						has_trait = bandit
+#						has_trait = bigoted
+#						has_trait = cruel					
+#					}			
+#				}
+#			}
+#			add = 15
 #		}
 #	}
 #}

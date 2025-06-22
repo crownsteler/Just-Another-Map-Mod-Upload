@@ -1,0 +1,17 @@
+﻿l_english:
+ STATE_IS_IN_INDONESIA_DESC: "[STATE.GetName] is in [concept_georegion_indonesia]"
+ STATE_IS_IN_INDONESIA_DESC_NOT: "[STATE.GetName] is #b not#! in [concept_georegion_indonesia]"
+ COUNTRY_IS_IN_INDONESIA_DESC: "[COUNTRY.GetName] is in [concept_georegion_indonesia"
+ COUNTRY_IS_IN_INDONESIA_DESC_NOT: "[COUNTRY.GetName] is #b not#! in [concept_georegion_indonesia]"
+ concept_georegion_indonesia: "Indonesia"
+ concept_georegion_indonesia_desc: "Indonesia is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_java').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_malacca').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_makasser').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_moluccas').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_philippines').GetName]"
+ 
+ STATE_IS_IN_OCEANIA_DESC: "[STATE.GetName] is in [concept_georegion_oceania]"
+ STATE_IS_IN_OCEANIA_DESC_NOT: "[STATE.GetName] is #b not#! in [concept_georegion_oceania]"
+ COUNTRY_IS_IN_OCEANIA_DESC: "[COUNTRY.GetName] is in [concept_georegion_oceania]"
+ COUNTRY_IS_IN_OCEANIA_DESC_NOT: "[COUNTRY.GetName] is #b not#! in [concept_georegion_oceania]"
+ concept_georegion_indonesia: "Indonesia"
+ concept_georegion_indonesia_desc: "Oceania is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_oceania').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion(region_melanesia).GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_micronesia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_polynesia').GetName]"
+ 
+ concept_georegion_southeast_asia: "Southeast Asia"
+ concept_georegion_southeast_asia_desc: "Southeast Asia is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_java').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_malacca').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_makasser').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_moluccas').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_philippines').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_indochina').GetName]"

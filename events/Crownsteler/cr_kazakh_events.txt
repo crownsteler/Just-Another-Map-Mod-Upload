@@ -1,0 +1,151 @@
+﻿namespace = cr_kazakh_events
+
+cr_kazakh_events.1 = { #The Road to Central Asia
+	type = country_event
+	placement = scope:orenburg
+
+	title = cr_kazakh_events.1.t
+	desc = cr_kazakh_events.1.d
+
+	flavor = cr_kazakh_events.1.f
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	dlc = dlc_anno1836
+
+	event_image = {
+		video = "ep1_central_asian_city"
+	}
+	
+	duration = 3
+
+	trigger = {
+		has_dlc_feature = ep1_content
+	}
+
+	immediate = {
+		c:BUK = {
+			save_scope_as = bukhara
+		}
+		c:KOK = {
+			save_scope_as = kokand
+		}
+		c:KHI = {
+			save_scope_as = khiva
+		}
+		sr:region_central_asia = {
+			save_scope_as = central_asia
+		}
+		p:x28AD29 = {
+			save_scope_as = orenburg
+		}
+	}
+
+	option = {
+		name = cr_kazakh_events.1.a
+		add_journal_entry = { type = je_pacify_the_steppes }
+		#custom_tooltip = kazakhstan_events.1.a_tt
+		show_as_tooltip = {
+			add_modifier = { name = cr_taming_the_steppes }
+		}
+		
+		default_option = yes
+		ai_chance = {
+			value = 1
+			if = {
+				limit = {
+					authority < 0
+				}
+			}
+			add = -1
+		}
+	}
+
+	option = {
+		name = cr_kazakh_events.1.b
+		#custom_tooltip = kazakhstan_events.1.b_tt
+		ai_chance = {
+			value = 0
+			if = {
+				limit = {
+					authority < 0
+				}
+			}
+			add = 1
+		}
+	}
+}
+
+
+
+cr_kazakh_events.3 = { #Songs of the Steppes
+	type = country_event
+	placement = capital
+	
+	title = cr_kazakh_events.3.t
+	desc = cr_kazakh_events.3.desc
+	flavor = cr_kazakh_events.3.flavour
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	dlc = dlc_anno1836
+
+	event_image = {
+		video = "gfx/event_pictures/ep1_cossacks.bk2"
+	}
+	
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = cr_mahambet_utemisov_has_appeared
+		}
+	}
+	
+	immediate = {
+		set_variable = cr_mahambet_utemisov_has_appeared
+		create_character = {
+			template = BKH_makhambet_utemisov
+			on_created = {
+				set_variable = i_am_makhambet
+			}
+		}
+		random_scope_character = {
+			limit = {
+				has_template = BKH_makhambet_utemisov
+			}
+			save_scope_as = mahambet_utemisov
+		}
+		ig:ig_rural_folk = {
+			leader = {
+				save_scope_as = isatai_taymanuly
+			}
+		}
+		random_scope_character = {
+			limit = {
+				has_template = BKH_isatai_taymanuly
+			}
+			save_scope_as = isatai_taymanuly_2
+		}
+	}
+	
+	option = {
+		name = cr_kazakh_events.3.a
+		default_option = yes
+		custom_tooltip = cr_kazakh_events.3.a_tt
+		add_radicals = {
+			value = small_radicals
+			culture = cu:kazak
+			interest_group = ig:ig_rural_folk
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+}

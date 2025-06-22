@@ -71,7 +71,7 @@ russo_chinese.1 = {
 			set_state_owner = c:RUS
  			add_modifier = {
  				name = modifier_ruler_of_the_east
- 				months = long_modifier_time
+ 				days = long_modifier_time
  			}
 		}
 	}
@@ -99,7 +99,7 @@ russo_chinese.1 = {
 			set_state_owner = c:RUS
  			add_modifier = {
  				name = modifier_ruler_of_the_east_navy
- 				months = long_modifier_time
+ 				days = long_modifier_time
  			}
 		}
 	}
@@ -389,7 +389,7 @@ russo_chinese.3 = {
 		}
 		add_modifier = {
 			name = modifier_vladivostok_navy_country
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 	}
 
@@ -410,7 +410,7 @@ russo_chinese.3 = {
 			}		
  			add_modifier = modifier_vladivostok_civilian
  			add_loyalists = {
- 				value = small_radicals
+ 				value = large_radicals
  				strata = upper
  			}
 		}

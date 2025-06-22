@@ -14,7 +14,7 @@
 #	}
 #
 #	ai_chance = {
-#		base = 50
+#		value = 50
 #	}
 #	
 #	possible = {
@@ -52,7 +52,7 @@ je_cr_indian_removal_button_b_chickasaw = {
 	}
 
 	ai_chance = {
-		base = 50
+		value = 50
 	}
 	
 	possible = {
@@ -131,9 +131,11 @@ je_cr_indian_removal_button_c_creek = {
 	}
 	
 	ai_chance = {
-		base = 0
-		modifier = {
-			game_date > 1837.8.1
+		value = 0
+		if = {
+			limit = {
+				game_date > 1837.8.1
+			}
 			add = 50
 		}
 	}
@@ -221,7 +223,7 @@ je_cr_indian_removal_button_d_cherokee_treaty = {
 	}
 
 	ai_chance = {
-		base = 50
+		value = 50
 	}
 	
 	possible = {
@@ -290,7 +292,7 @@ je_cr_indian_removal_button_d_cherokee = {
 	}
 
 	ai_chance = {
-		base = 50
+		value = 50
 	}
 	
 	possible = {
@@ -375,7 +377,7 @@ je_cr_indian_removal_button_e_seminole = {
 	}
 
 	ai_chance = {
-		base = 50
+		value = 50
 	}
 	
 	possible = {

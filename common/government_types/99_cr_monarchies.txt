@@ -120,7 +120,7 @@ gov_sultanate = {
 	
 	possible = {
 		has_law = law_type:law_monarchy
-		OR = {
+		or = {
 			AND = { exists = c:TUR c:TUR = ROOT }
 			AND = { exists = c:MOR c:MOR = ROOT }
 			AND = { exists = c:OMA c:OMA = ROOT }

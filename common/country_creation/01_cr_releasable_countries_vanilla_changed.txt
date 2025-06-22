@@ -6,7 +6,7 @@
 
 
 LAO = {
-	states = { STATE_LAOS }
+	states = { STATE_LAOS STATE_VIENTIANE }
 	
 	required_num_states = 1
 
@@ -110,7 +110,7 @@ ALD = {
 KUR = {
 	states = {
 		STATE_ERBIL
-		STATE_MOSUL
+		#STATE_MOSUL
 		STATE_DEIR_EZ_ZOR
 		STATE_DIYARBAKIR
 		STATE_ERZURUM

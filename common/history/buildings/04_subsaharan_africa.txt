@@ -640,8 +640,6 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
-
-
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
@@ -660,53 +658,6 @@
 				add_ownership={
 					country={
 						country="c:BOR"
-						levels=15
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" }
-			}
-		}
-	}
-	s:STATE_FOMBINA={
-		region_state:SOK={
-			create_building={
-				building="building_millet_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:SOK"
-						levels=1
-						region="STATE_FOMBINA"
-					}
-					building={
-						type="building_millet_farm"
-						country="c:SOK"
-						levels=1
-						region="STATE_FOMBINA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
-			}
-			#create_building={	#removed coffee
-			#	building="building_coffee_plantation"
-			#	add_ownership={
-			#		building={
-			#			type="building_manor_house"
-			#			country="c:SOK"
-			#			levels=2
-			#			region="STATE_FOMBINA"
-			#		}
-			#	}
-			#	reserves=1
-			#	activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts"  }
-			#}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:SOK"
 						levels=15
 					}
 				}
@@ -787,6 +738,53 @@
 					country={
 						country="c:SOK"
 						levels=20
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_FOMBINA={
+		region_state:SOK={
+			create_building={
+				building="building_millet_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:SOK"
+						levels=1
+						region="STATE_FOMBINA"
+					}
+					building={
+						type="building_millet_farm"
+						country="c:SOK"
+						levels=1
+						region="STATE_FOMBINA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			#create_building={	#removed coffee
+			#	building="building_coffee_plantation"
+			#	add_ownership={
+			#		building={
+			#			type="building_manor_house"
+			#			country="c:SOK"
+			#			levels=2
+			#			region="STATE_FOMBINA"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "default_building_coffee_plantation" "pm_road_carts"  }
+			#}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:SOK"
+						levels=15
 					}
 				}
 				reserves=1
@@ -1013,6 +1011,19 @@
 	}
 	s:STATE_ZANZIBAR={
 		region_state:OMA={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_trade_center"
+						country="c:GBR"
+						levels=1
+						region="STATE_ZANZIBAR"
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_ivory_trading_post"
 				add_ownership={
@@ -3084,7 +3095,6 @@
 				activate_production_methods={ "pm_no_organization" }
 			}
 		}
-
 	}
 	s:STATE_EASTERN_CAPE={
 		region_state:SAF={

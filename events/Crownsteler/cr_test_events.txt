@@ -589,3 +589,36 @@ cr_test_events.5 = { #East Asia Treaty Ports
 		}
 	}
 }
+
+
+
+cr_test_events.6 = { #East Asia Treaty Ports
+	type = country_event
+	placement = root
+
+	title = cr_test_events.4.t
+	desc = cr_test_events.4.d
+
+	flavor = cr_test_events.4.f
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/construction_colony"
+
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+
+	event_image = {
+		video = "africa_construction_colony"
+	}
+	
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		
+	}
+	option = {
+		name = cr_test_events.2.c
+		add_technology_researched = civilizing_mission
+	}
+}

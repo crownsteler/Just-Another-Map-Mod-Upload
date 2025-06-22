@@ -18,7 +18,7 @@ state_trait_lake_maracaibo = {
     icon = "gfx/interface/icons/state_trait_icons/resources_fish.dds"
 	
 	modifier = {
-		building_oil_rig_output_add = 0.125
+		building_oil_rig_output_add = 0.15
 		state_infrastructure_add = 15
 	}
 }
@@ -209,7 +209,7 @@ state_trait_mata_atlantica = {
 	icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
 	
 	modifier = {
-		goods_output_sugar_mult = 0.075
+		goods_output_sugar_mult = 0.1
 	}
 }
 

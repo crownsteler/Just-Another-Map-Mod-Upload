@@ -10,10 +10,12 @@
 	}
 
 	ai_chance = {
-		base = 0
-		modifier = {
+		value = 0
+		if = {
+			limit = {
+				authority >= 450
+			}
 			add = 10
-			authority >= 450
 		}
 	}
 	
@@ -41,7 +43,7 @@
 				}
 				add_modifier = {
 					name = cr_colonising_alaska_modifier
-					months = short_modifier_time
+					days = short_modifier_time
 				}
 			}
 			if = {
@@ -68,10 +70,12 @@ je_cr_russian_america_colonise_alaska_stop_button = {
 	}
 
 	ai_chance = {
-		base = 5
-		modifier = {
+		value = 5
+		if = {
+			limit = {
+				authority <= 150
+			}
 			add = 100
-			authority <= 150
 		}
 	}
 	
@@ -117,10 +121,12 @@ je_cr_russian_america_colonise_california_button = {
 	}
 
 	ai_chance = {
-		base = 0
-		modifier = {
+		value = 0
+		if = {
+			limit = {
+				authority >= 550			
+			}
 			add = 10
-			authority >= 550
 		}
 	}
 	
@@ -195,10 +201,12 @@ je_cr_russian_america_colonise_california_stop_button = {
 	}
 
 	ai_chance = {
-		base = 5
-		modifier = {
+		value = 5
+		if = {
+			limit = {
+				authority <= 250
+			}
 			add = 100
-			authority <= 250
 		}
 	}
 	
@@ -237,15 +245,12 @@ je_cr_russian_america_annex_it = {
 	visible = {   
 		c:ALK = { 
 			is_subject_of = ROOT 
+			is_ai = yes
 		}
 	}
 
 	ai_chance = {
-		base = 0
-		modifier = {
-			add = 10
-			c:ALK = { is_ai = yes } 
-		}
+		value = 10
 	}
 	
 	possible = {  

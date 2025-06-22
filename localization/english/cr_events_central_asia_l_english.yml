@@ -23,3 +23,28 @@
  cr_central_asia_events.5.c_tt_2:0 "This option is available due to having positive @aut![Nbsp][concept_authority]"
  cr_central_asia_events.5.e:0 "All hail [SCOPE.sCountry('cr_kyrgyzia').GetRuler.GetFullName]"
  #need to look into Shabdan Batyr/Batir for more events
+ 
+ #Kazakh content
+ cr_kazakh_events.1.t:0 "The Road to Central Asia"
+ cr_kazakh_events.1.d:0 "Just beyond our southern border lie the storied cities of Central Asia—[SCOPE.sCountry('khiva').GetName], [SCOPE.sCountry('kokand').GetName], [SCOPE.sCountry('bukhara').GetName]— ancient centers of wealth, faith, and influence. Their bazaars humming with the legacy of the Silk Road, their rulers command powerful khanates, and their capture would mark the triumph of Russian ambition in the heart of Asia.\n\nBut they remain out of reach, separated from us by the vast steppe—a lawless expanse of open grasslands, home to nomads, raiders, and scattered clans. To reach the cities, the steppe must first be brought to heel. No flag will fly over Bukhara until it flies first over the grasslands that guard it."
+ cr_kazakh_events.1.f:0 "There are no roads, no central authority, no firm lines to draw on maps. Only the wind, the horse, and the rifle."
+ cr_kazakh_events.1.a:0 "Begin the campaign into the steppe."
+ cr_kazakh_events.1.a_tt:0 "Expand Russian influence into Central Asia by establishing lasting control over the Kazakh territories."
+ cr_kazakh_events.1.b:0 "Our attention lies elsewhere—for now."
+ cr_kazakh_events.1.b_tt:0 "Colonization of Central Asia will proceed more slowly."
+ cr_kazakh_events.1.t_2:0 "The Untamed Steppe"
+ cr_kazakh_events.1.d_2:0 "Beyond the orderly provinces of European Russia lies a vast, windswept frontier—open grasslands stretching endlessly toward the sun-scorched mountains of Central Asia.\n\nThese Kazakh steppes remain, for now, loosely controlled—inhabited by nomads and fractured tribes, far from the civilizing hand of the Tsar. But within the halls of government and the ranks of the army, voices grow louder calling for the extension of Russian order, Russian law, and Russian influence deep into the heart of Asia."
+ cr_kazakh_events.1.f_2:0 "We must bring the frontier under the cross, the crown, and the census roll."
+ cr_kazakh_events.1.a_2:0 "The steppe must be brought to heel."
+ cr_kazakh_events.1.a_tt_2:0 "Expand Russian influence into Central Asia and establish lasting control over the Kazakh territories."
+ 
+ cr_kazakh_events.3.t:0 "The Poet’s Reproach"
+ cr_kazakh_events.3.desc:0 "The steppe is uneasy. What began as scattered murmurs among the herders has grown into a dangerous chorus—complaints of seized pastureland, rising taxes, and favoritism at court. Our modernization efforts, meant to strengthen the Horde, have instead deepened inequality and alienated much of the nomadic population.\n\nNow, resistance is coalescing around [SCOPE.sCharacter('isatai_taymanuly_2').GetFullName] and [SCOPE.sCharacter('mahambet_utemisov_2').GetFullName] —one a dispossessed clan leader, the other a poet turned agitator. Their calls for justice have struck a chord, and what began as a plea for reform is quickly turning into a revolt that threatens the Khan’s rule."
+ cr_kazakh_events.3.flavour:0 "To those who trample our pastures with foreign boots,\nTo those who trade freedom for favor—\nYou may sit in your mansions, but we have the steppe."
+ cr_kazakh_events.3.a:0 "Suppress them before the fire spreads."
+ 
+ cr_kazakh_events.5.t:0 "The Poet’s Reproach"
+ cr_kazakh_events.5.desc:0 "The Inner—or Bukey—Horde has long been a powder keg. Fertile lands were promised, but the Kazakh clans who once roamed freely now find themselves hemmed in by Cossack lines, Russian settlers, and the taxes of a distant Empire.\n\nThe young and educated Makhambet Otemisuly, a poet and orator of growing renown, has joined hands with the respected batyr Isatay Taimanuly. What began as a petition for justice—equal access to grazing lands, an end to rent extraction, and fair representation—has now become an open revolt.\n\nZhangir Khan, long seen as a loyal client of the Empire, has lost the trust of his own people. His court, bloated with cronies and protected by imperial arms, dismissed every plea. The final straw came when Isatay’s ancestral pastures near the Kigash River were seized. Now his banner rises not just in defiance of the Khan, but of the Tsar himself."
+ cr_kazakh_events.5.flavour:0 "I did not raise my sword to take the Khan’s place, I raised it so no Kazakh need kneel again."
+ cr_kazakh_events.5.a:0 "Suppress them before the fire spreads."
+ 

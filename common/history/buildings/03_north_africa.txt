@@ -13,6 +13,23 @@
 				activate_production_methods={ "pm_religious_bureaucrats" "pm_hereditary_bureaucrats" "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_trade_center"
+						country="c:EGY"
+						levels=3
+						region="STATE_LOWER_EGYPT"
+					}
+					country={
+						country="c:EGY"
+						levels=5
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					country={
@@ -468,6 +485,19 @@
 			#	activate_production_methods={ "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			#}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_trade_center"
+						country="c:MOR"
+						levels=1
+						region="STATE_MARRAKECH"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_glassworks"
 				add_ownership={
 					building={
@@ -732,6 +762,32 @@
 	s:STATE_ALGIERS={
 		region_state:MAS={
 			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					building={
+						type="building_fishing_wharf"
+						country="c:MAS"
+						levels=1
+						region="STATE_ALGIERS"
+					}
+				}
+				reserves=1
+				activate_production_methods={  "pm_unrefrigerated" "pm_fishing_trawlers" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_limited" }
+				add_ownership={
+					building={
+						type="building_trade_center"
+						country="c:MAS"
+						levels=1
+						region="STATE_ALGIERS"
+					}
+				}
+				reserves=1
+			}	
+			create_building={
 				building="building_port"
 				add_ownership={
 					country={
@@ -814,7 +870,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -881,12 +937,25 @@
 				activate_production_methods={ "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_limited" }
+				add_ownership={
+					building={
+						type="building_trade_center"
+						country="c:CON"
+						levels=1
+						region="STATE_CONSTANTINE"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
 						country="c:CON"
-						levels=3
+						levels=2
 						region="STATE_CONSTANTINE"
 					}
 				}
@@ -941,7 +1010,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_anchorage" }
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -1097,7 +1166,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_anchorage" }
 			}
 			create_building={
 				building="building_fishing_wharf"
@@ -1129,6 +1198,19 @@
 	}
 	s:STATE_TOUGGOURT = {
 		region_state:TUG={
+			#create_building={
+			#	building="building_trade_center"
+			#	activate_production_methods={ "pm_trade_center_trade_quantity_limited" }
+			#	add_ownership={
+			#		building={
+			#			type="building_trade_center"
+			#			country="c:TUG"
+			#			levels=1
+			#			region="STATE_TOUGGOURT"
+			#		}
+			#	}
+			#	reserves=1
+			#}
 			create_building={
 				building="building_date_plantation"
 				add_ownership={
@@ -1193,6 +1275,19 @@
 	}
 	s:STATE_TUNISIA={
 		region_state:TUN={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_limited" }
+				add_ownership={
+					building={
+						type="building_trade_center"
+						country="c:TUN"
+						levels=1
+						region="STATE_TUNISIA"
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
@@ -1303,7 +1398,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TRI"
-						levels=5
+						levels=4
 						region="STATE_TRIPOLI"
 					}
 				}

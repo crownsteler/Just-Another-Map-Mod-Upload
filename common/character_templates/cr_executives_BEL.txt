@@ -1,0 +1,80 @@
+﻿##################################
+#								 #
+# 			  Solvay			 #
+#								 #
+##################################
+BEL_ernest_solvay = { # Ernest Solvay
+	first_name = Ernest
+	last_name = Solvay
+	historical = yes
+	birth_date = 1838.4.16
+	#dna = dna_alfred_krupp
+	culture = cu:wallonian
+	interest_group = ig_industrialists
+	ideology = ideology_social_democrat
+	traits = {
+		innovative
+		erudite
+		basic_entrepreneur
+	}
+	executive_usage = {
+		country_trigger = {
+			has_dlc_feature = mp1_content
+		}
+		company_trigger = {
+			is_company_type = company_type:company_solvay
+		}
+		earliest_usage_date = 1860.7.1
+		latest_usage_date = 1918.1.23
+		chance = 100
+	}
+}
+BEL_francois_hoebeke = { # Francois Hoebeke
+	first_name = Francois
+	last_name = Hoebeke
+	historical = yes
+	birth_date = 1832.3.21	#random date
+	#dna = dna_alfred_krupp
+	culture = cu:flemish
+	interest_group = ig_industrialists
+	ideology = ideology_moderate
+	traits = {
+		experienced_entrepreneur
+	}
+	executive_usage = {
+		country_trigger = {
+			has_dlc_feature = mp1_content
+		}
+		company_trigger = {
+			is_company_type = company_type:company_solvay
+		}
+		earliest_usage_date = 1860.1.1
+		latest_usage_date = 1894.1.22 #unknown
+		chance = 100
+	}
+}
+BEL_alfred_solvay = { # Alfred Solvay
+	first_name = Alfred
+	last_name = Solvay
+	historical = yes
+	birth_date = 1840.7.1
+	#dna = dna_alfred_krupp
+	culture = cu:wallonian
+	interest_group = ig_industrialists
+	ideology = ideology_moderate
+	traits = {
+		surveyor
+		basic_entrepreneur
+	}
+	executive_usage = {
+		country_trigger = {
+			has_dlc_feature = mp1_content
+		}
+		company_trigger = {
+			is_company_type = company_type:company_solvay
+		}
+		earliest_usage_date = 1861.7.1
+		latest_usage_date = 1894.1.23
+		chance = 100
+	}
+}

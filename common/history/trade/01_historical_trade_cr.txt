@@ -1,0 +1,40 @@
+﻿TRADE = {
+	### Exports
+	s:STATE_SVEALAND={
+		region_state:SWE={
+			sg:copper = {
+				add_exports = 25
+			}
+		}
+	}
+	s:STATE_VERACRUZ={
+		region_state:MEX={
+			sg:dyes = {
+				add_exports = 10
+			}
+		}
+	}
+	s:STATE_GUATEMALA={
+		region_state:UCA={
+			sg:dyes = {
+				add_exports = 10
+			}
+		}
+	}
+	s:STATE_WEST_JAVA={
+		region_state:DEI={
+			sg:coffee = {
+				add_exports = 25
+			}
+		}
+	}
+
+	### Imports	
+	#s:STATE_GUANGDONG={
+	#	region_state:CHI={
+	#		sg:opium = {
+	#			add_imports = 100
+	#		}
+	#	}
+	#}
+}

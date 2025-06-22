@@ -5,6 +5,12 @@
 	scripted_progress_bar = expedition_progress_bar
 	scripted_progress_bar = expedition_peril_progress_bar
 
+	on_weekly_pulse = {
+		effect = {
+			west_america_expedition_location = yes
+		}
+	}
+
 	on_monthly_pulse = {
 		random_events = {
 			80 = 0
@@ -46,27 +52,31 @@
 	status_desc = {
 		first_valid = {
 			triggered_desc = {
-				desc = expedition_low_peril_loc
+				desc = expedition_status_loc_blank
 				trigger = {
-					scope:journal_entry = {
-						"scripted_bar_progress(expedition_peril_progress_bar)" <= 3
-					}
+					NOT = { exists = var:current_expedition_location_var }
+					NOT = { exists = var:expedition_leader_storage_var }
 				}
 			}
 			triggered_desc = {
-				desc = expedition_medium_peril_loc
+				desc = expedition_status_loc_leader
 				trigger = {
-					scope:journal_entry = {
-						"scripted_bar_progress(expedition_peril_progress_bar)" <= 5
-					}
+					NOT = { exists = var:current_expedition_location_var }
+					exists = var:expedition_leader_storage_var
 				}
 			}
 			triggered_desc = {
-				desc = expedition_high_peril_loc
+				desc = expedition_status_loc_leader_and_location
 				trigger = {
-					scope:journal_entry = {
-						"scripted_bar_progress(expedition_peril_progress_bar)" > 5
+					exists = var:current_expedition_location_var
+					exists = var:expedition_leader_storage_var
 					}
+				}
+			triggered_desc = {
+				desc = expedition_status_loc_location
+				trigger = {
+					exists = var:current_expedition_location_var
+					NOT = { exists = var:expedition_leader_storage_var }
 				}
 			}
 		}

@@ -225,7 +225,7 @@ acre_dispute.3 = {
 		scope:acre_state = {
 			add_modifier = {
 				name = acre_migration
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 		}
 		every_country = {
@@ -343,7 +343,7 @@ acre_dispute.4 = {
 		}
 		add_modifier = {
 			name = acre_dispute_failed
-			months = very_long_modifier_time
+			days = very_long_modifier_time
 		}
 		every_country = {
 			limit = {

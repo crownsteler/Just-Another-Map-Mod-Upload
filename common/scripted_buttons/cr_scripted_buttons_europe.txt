@@ -5,9 +5,9 @@
 	visible = { always = yes }
 
 	ai_chance = {
-		base = 25
-		modifier = {
-			trigger = {
+		value = 25
+		if = {
+			limit = {
 				var:je_fernando_po_ai_count_var >5 #The AI should ask no more than 5 times
 			}
 			add = -1000
@@ -80,7 +80,7 @@ je_cr_ferdinando_po_button_b = {
 	visible = { always = yes }
 
 	ai_chance = {
-		base = 50
+		value = 50
 	}
 	
 	possible = {
@@ -165,33 +165,33 @@ je_cr_ferdinando_po_button_c = {
 	visible = { always = yes }
 
 	ai_chance = {
-		base = 0
-		modifier = {
-			trigger = {
+		value = 0
+		if = {
+			limit = {
 				year > 1855
 			}
 			add = 1
 		}
-		modifier = {
-			trigger = {
+		if = {
+			limit = {
 				year > 1857
 			}
 			add = 4
 		}
-		modifier = {
-			trigger = {
+		if = {
+			limit = {
 				year > 1860
 			}
 			add = 15
 		}
-		modifier = {
-			trigger = {
+		if = {
+			limit = {
 				year > 1865
 			}
 			add = 10
 		}
-		modifier = {
-			trigger = {
+		if = {
+			limit = {
 				year > 1870
 			}
 			add = 20

@@ -11,6 +11,19 @@
 		}
 	}
 
+	on_monthly_pulse = {
+		effect = {	#Creating a route via Mato Grosso
+			random_list = {
+				10 = {
+					cr_opening_the_route_to_acre_via_mato_grosso_BRZ = yes
+				}
+				90 = {
+				
+				}			
+			}
+		}
+	}
+
 	complete = {
 		country_or_subject_owns_entire_state_region = STATE_ACRE
 	}

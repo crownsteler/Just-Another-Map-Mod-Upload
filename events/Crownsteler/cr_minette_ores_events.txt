@@ -1,5 +1,65 @@
 ﻿namespace = cr_minette_ores_events
 
+cr_minette_ores_events.1 = { #The Little Veins of Lorraine
+	type = country_event
+	placement = scope:minette_ore_location
+
+	dlc = dlc_anno1836
+
+	title = cr_minette_ores_events.1.t
+	desc = cr_minette_ores_events.1.desc
+	flavor = cr_minette_ores_events.1.flavour
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			save_scope_as = minette_ore_state
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LORRAINE
+			}
+			save_scope_as = also_minette_ore_state
+		}
+		p:xB000E0 = {
+			save_scope_as = minette_ore_location
+		}
+	}
+
+	cancellation_trigger = {
+		OR = {
+			has_technology_researched =	bessemer_process
+			NOR = {
+				any_scope_state = {
+					state_region = s:STATE_ALSACE_LORRAINE
+				}
+				any_scope_state = {
+					has_state_trait = state_trait_minette_ore
+				}
+			}
+		}
+	}
+
+	option = {
+		name = cr_minette_ores_events.1.a
+		default_option = yes
+		custom_tooltip = cr_minette_ores_events.1.a_tt
+
+	}
+}
+
 cr_minette_ores_events.2 = { #Buried Riches, Unmet Promise
 	type = country_event
 	placement = scope:minette_ore_location
@@ -16,39 +76,50 @@ cr_minette_ores_events.2 = { #Buried Riches, Unmet Promise
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	duration = 3
 
 	immediate = {
-		if = {
+		#if = {
+		#	any_scope_state = {
+		#		state_region = s:STATE_LORRAINE
+		#	}
+		#	random_scope_state = {
+		#		limit = {
+		#			state_region = s:STATE_LORRAINE
+		#		}
+		#		save_scope_as = minette_ore_state
+		#	}
+		#	p:xC5F13A = {
+		#		save_scope_as = minette_ore_location
+		#	}
+		#}
+		#else = {
+		#	random_scope_state = {
+		#		limit = {
+		#			state_region = s:STATE_ALSACE_LORRAINE
+		#		}
+		#		random_scope_state = {
+		#			limit = {
+		#				state_region = s:STATE_ALSACE_LORRAINE
+		#			}
+		#			save_scope_as = minette_ore_state
+		#		}
+		#		p:xB000E0 = {
+		#			save_scope_as = minette_ore_location
+		#		}
+		#	}
+		#}
+	}
+
+	cancellation_trigger = {
+		NOR = {
 			any_scope_state = {
-				state_region = s:STATE_LORRAINE
+				state_region = s:STATE_ALSACE_LORRAINE
 			}
-			random_scope_state = {
-				limit = {
-					state_region = s:STATE_LORRAINE
-				}
-				save_scope_as = minette_ore_state
-			}
-			p:xC5F13A = {
-				save_scope_as = minette_ore_location
-			}
-		}
-		else = {
-			random_scope_state = {
-				limit = {
-					state_region = s:STATE_ALSACE_LORRAINE
-				}
-				random_scope_state = {
-					limit = {
-						state_region = s:STATE_ALSACE_LORRAINE
-					}
-					save_scope_as = minette_ore_state
-				}
-				p:xB000E0 = {
-					save_scope_as = minette_ore_location
-				}
+			any_scope_state = {
+				has_state_trait = state_trait_minette_ore
 			}
 		}
 	}
@@ -56,28 +127,12 @@ cr_minette_ores_events.2 = { #Buried Riches, Unmet Promise
 	option = {
 		name = cr_minette_ores_events.2.a
 		default_option = yes
-		if = {
-			limit = {
-				NOT = {
-					has_journal_entry = je_cr_minette_ores 
-				}
-			}
-			add_journal_entry = { type = je_cr_minette_ores }
-		}
-		
-		else = {
-			show_as_tooltip = {
-				add_journal_entry = { type = je_cr_minette_ores }
-			}
-		}
 		custom_tooltip = cr_minette_ores_events.2.a_tt
-		clear_saved_scope = minette_ore_location
-		clear_saved_scope = minette_ore_state
 
 	}
 }
 
-cr_minette_ores_events.3 = { #Buried Riches, Unmet Promise
+cr_minette_ores_events.3 = { #The Iron Returns to France
 	type = country_event
 	placement = scope:minette_ore_location
 
@@ -93,93 +148,7 @@ cr_minette_ores_events.3 = { #Buried Riches, Unmet Promise
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
-
-	duration = 3
-
-	immediate = {
-		if = {
-			any_scope_state = {
-				state_region = s:STATE_LORRAINE
-			}
-			random_scope_state = {
-				limit = {
-					state_region = s:STATE_LORRAINE
-				}
-				save_scope_as = minette_ore_state
-			}
-			p:xC5F13A = {
-				save_scope_as = minette_ore_location
-			}
-		}
-		else = {
-			any_scope_state = {
-				limit = {
-					state_region = s:STATE_ALSACE_LORRAINE
-				}
-				random_scope_state = {
-					limit = {
-						state_region = s:STATE_ALSACE_LORRAINE
-					}
-					save_scope_as = minette_ore_state
-				}
-				p:xB000E0 = {
-					save_scope_as = minette_ore_location
-				}
-			}
-		}
-	}
-
-	cancellation_trigger = {
-		OR = {
-			has_technology_researched =	bessemer_process
-			NOT = {
-				any_scope_state = {
-					state_region = s:STATE_ALSACE_LORRAINE
-				}
-			}
-		}
-	}
-
-	option = {
-		name = cr_minette_ores_events.3.a
-		default_option = yes
-		if = {
-			limit = {
-				NOT = {
-					has_journal_entry = je_cr_minette_ores 
-				}
-			}
-			add_journal_entry = { type = je_cr_minette_ores }
-		}
-		
-		else = {
-			show_as_tooltip = {
-				add_journal_entry = { type = je_cr_minette_ores }
-			}
-		}
-		custom_tooltip = cr_minette_ores_events.3.a_tt
-
-	}
-}
-
-cr_minette_ores_events.10 = { #Buried Riches, Unmet Promise
-	type = country_event
-	placement = p:xB000E0
-
-	dlc = dlc_anno1836
-
-	title = cr_minette_ores_events.1.t
-	desc = cr_minette_ores_events.1.desc
-	flavor = cr_minette_ores_events.1.flavour
-
-	event_image = {
-		video = "unspecific_gears_pistons"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	duration = 3
 
@@ -190,26 +159,712 @@ cr_minette_ores_events.10 = { #Buried Riches, Unmet Promise
 			}
 			save_scope_as = minette_ore_state
 		}
+		p:xB000E0 = {
+			save_scope_as = minette_ore_location
+		}
+	}
+
+	cancellation_trigger = {
+		NOR = {
+			any_scope_state = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			any_scope_state = {
+				has_state_trait = state_trait_minette_ore
+			}
+		}
 	}
 
 	option = {
-		name = cr_minette_ores_events.1.a
+		name = cr_minette_ores_events.3.a
+		default_option = yes
+		custom_tooltip = cr_minette_ores_events.3.a_tt
+
+	}
+}
+
+cr_minette_ores_events.4 = { #The Little Veins of Lorraine
+	type = country_event
+	placement = scope:minette_ore_location
+
+	dlc = dlc_anno1836
+
+	title = cr_minette_ores_events.4.t
+	desc = cr_minette_ores_events.4.desc
+	flavor = cr_minette_ores_events.4.flavour
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	trigger = {
+		any_scope_state = {
+			state_region = s:STATE_ALSACE_LORRAINE
+			has_state_trait = state_trait_minette_ore
+		}
+		NOR = {
+			this ?= c:FRA
+			has_technology_researched =	bessemer_process
+			has_variable = cr_conqueror_of_lorraine
+			has_variable = cr_lorraine_lost
+		}
+		
+		
+	}
+
+	duration = 3
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			save_scope_as = minette_ore_state
+		}
+		p:xB000E0 = {
+			save_scope_as = minette_ore_location
+		}
+		set_variable = cr_conqueror_of_lorraine
+	}
+
+	cancellation_trigger = {
+		OR = {
+			has_technology_researched =	bessemer_process
+			NOR = {
+				any_scope_state = {
+					state_region = s:STATE_ALSACE_LORRAINE
+				}
+				any_scope_state = {
+					has_state_trait = state_trait_minette_ore
+				}
+			}
+		}
+	}
+
+	option = {
+		name = cr_minette_ores_events.4.a
+		default_option = yes
+		custom_tooltip = cr_minette_ores_events.4.a_tt
+	}
+}
+
+cr_minette_ores_events.5 = { #The Iron Returns to France
+	type = country_event
+	placement = scope:minette_ore_location
+
+	dlc = dlc_anno1836
+
+	title = cr_minette_ores_events.5.t
+	desc = cr_minette_ores_events.5.desc
+	flavor = cr_minette_ores_events.5.flavour
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			save_scope_as = minette_ore_state
+		}
+		p:xB000E0 = {
+			save_scope_as = minette_ore_location
+		}
+	}
+
+	cancellation_trigger = {
+		NOR = {
+			any_scope_state = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			any_scope_state = {
+				has_state_trait = state_trait_minette_ore
+			}
+		}
+	}
+
+	option = {
+		name = cr_minette_ores_events.5.a
+		default_option = yes
+		custom_tooltip = cr_minette_ores_events.5.a_tt
+
+	}
+}
+
+cr_minette_ores_events.6 = { #The Iron Returns to France
+	type = country_event
+	placement = scope:minette_ore_location
+
+	dlc = dlc_anno1836
+
+	title = cr_minette_ores_events.6.t
+	desc = cr_minette_ores_events.6.desc
+	flavor = cr_minette_ores_events.6.flavour
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			save_scope_as = minette_ore_state
+		}
+		p:xB000E0 = {
+			save_scope_as = minette_ore_location
+		}
+	}
+
+	cancellation_trigger = {
+		NOR = {
+			any_scope_state = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			any_scope_state = {
+				has_state_trait = state_trait_minette_ore
+			}
+		}
+	}
+
+	option = {
+		name = cr_minette_ores_events.6.a
+		default_option = yes
+		custom_tooltip = cr_minette_ores_events.6.a_tt
+
+	}
+}
+
+cr_minette_ores_events.7 = { #The Iron Returns to France
+	type = country_event
+	placement = scope:minette_ore_location
+
+	dlc = dlc_anno1836
+
+	title = cr_minette_ores_events.7.t
+	desc = cr_minette_ores_events.7.desc
+	flavor = cr_minette_ores_events.7.flavour
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			save_scope_as = minette_ore_state
+		}
+		p:xB000E0 = {
+			save_scope_as = minette_ore_location
+		}
+	}
+
+	cancellation_trigger = {
+		has_technology_researched = bessemer_process
+		NOR = {
+			any_scope_state = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			any_scope_state = {
+				has_state_trait = state_trait_minette_ore
+			}
+		}
+	}
+
+	option = {
+		name = cr_minette_ores_events.7.a
+		default_option = yes
+		custom_tooltip = cr_minette_ores_events.7.a_tt
+
+	}
+}
+
+cr_minette_ores_events.10 = { #Buried Riches, Unmet Promise
+	type = country_event
+	placement = p:xB000E0
+
+	dlc = dlc_anno1836
+
+	title = cr_minette_ores_events.10.t
+	desc = cr_minette_ores_events.10.desc
+	flavor = cr_minette_ores_events.10.flavour
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			save_scope_as = minette_ore_state
+		}
+		save_scope_as = occupier_of_lorraine
+	}
+
+	option = {
+		name = cr_minette_ores_events.10.a
+		custom_tooltip = cr_minette_ores_events.10.a_tt
+		default_option = yes
+
+		if = {
+			limit = {
+				NOT = { c:FRA ?= this }
+				c:FRA = {
+					any_scope_state = {
+						state_region = s:STATE_LORRAINE
+					}
+				}
+			}
+			c:FRA = {
+				trigger_event = { id = cr_minette_ores_events.11 }
+			}
+		}
+		show_as_tooltip = {
+			if = {
+				limit = {
+					NOT = { c:FRA ?= this }
+					c:FRA ?= {
+						any_scope_state = {
+							state_region = s:STATE_LORRAINE
+						}
+					}
+				}
+				c:FRA ?= {
+					change_relations = {
+						country = ROOT
+						value = -10
+					}
+				}
+			}
+			s:STATE_ALSACE_LORRAINE = {
+				remove_state_trait = state_trait_minette_ore
+				add_state_trait = state_trait_minette_ore_2
+			}
+			if = {
+				s:STATE_LORRAINE = {
+					remove_state_trait = state_trait_minette_ore
+				}
+			}		
+			s:STATE_LORRAINE = {
+				add_state_trait = state_trait_minette_ore_2
+			}			
+		}
+	}
+}
+
+cr_minette_ores_events.11 = { #A Fire Not Our Own
+	type = country_event
+	placement = p:xB000E0
+
+	dlc = dlc_anno1836
+
+	title = cr_minette_ores_events.11.t
+	desc = cr_minette_ores_events.11.desc
+	flavor = cr_minette_ores_events.11.flavour
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			save_scope_as = minette_ore_state
+		}
+		save_scope_as = occupier_of_lorraine
+		
+		p:xC5F13A = {
+			save_scope_as = lorraine_state_mining_district
+		}
+	}
+
+	option = {
+		name = cr_minette_ores_events.11.a
+		custom_tooltip = cr_minette_ores_events.11.a_tt
+		default_option = yes
+		change_relations = {
+			country = scope:occupier_of_lorraine
+			value = -10
+		}
+		show_as_tooltip = {
+			s:STATE_ALSACE_LORRAINE = {
+				remove_state_trait = state_trait_minette_ore
+				add_state_trait = state_trait_minette_ore_2
+			}
+			if = {
+				s:STATE_LORRAINE = {
+					remove_state_trait = state_trait_minette_ore
+				}
+			}		
+			s:STATE_LORRAINE = {
+				add_state_trait = state_trait_minette_ore_2
+			}			
+		}
+	}
+}
+
+###Prospecting events
+
+
+cr_minette_ores_events.96 = { #Force Copper discovery in Detroit/Ontario
+	type = country_event
+	hidden = yes
+	orphan = yes
+	immediate = {
+		s:STATE_LORRAINE = {
+			random_scope_state = {
+				force_resource_discovery = bg_iron_mining
+			}
+		}	
+	}
+}
+
+cr_minette_ores_events.20 = { #Ore Bed Extension
+	type = state_event
+	placement = scope:lorraine_state_mining_district
+
+	dlc = dlc_anno1836
+
+	title = cr_minette_ores_events.20.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						s:STATE_ALSACE_LORRAINE = {
+							has_state_trait = state_trait_minette_ore
+						}
+					}
+				}
+				desc = cr_minette_ores_events.20.desc_tech_discovered
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_minette_ores_events.20.desc_no_tech
+			}
+		}
+	}
+	flavor = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						s:STATE_ALSACE_LORRAINE = {
+							has_state_trait = state_trait_minette_ore
+						}
+					}
+				}
+				desc = cr_minette_ores_events.20.flavour_tech_discovered
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_minette_ores_events.20.flavour_no_tech
+			}
+		}
+	}
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	trigger = {
+		state_region = s:STATE_LORRAINE
+		NOT = {
+			has_variable = cr_lorraine_ore_fields_discovered
+		}
+	}
+
+	immediate = {
+		set_variable = cr_lorraine_ore_fields_discovered
+		p:xC5F13A = {
+			save_scope_as = lorraine_state_mining_district
+		}
+	}
+
+	cancellation_trigger = {
+	}
+
+	option = {
+		name = cr_minette_ores_events.20.a
 		default_option = yes
 		if = {
 			limit = {
-				NOT = {
-					has_journal_entry = je_cr_minette_ores 
+				s:STATE_ALSACE_LORRAINE = {
+					has_state_trait = state_trait_minette_ore
 				}
 			}
-			add_journal_entry = { type = je_cr_minette_ores }
-		}
-		
-		else = {
-			show_as_tooltip = {
-				add_journal_entry = { type = je_cr_minette_ores }
+			s:STATE_LORRAINE = {
+				add_state_trait = state_trait_minette_ore
 			}
 		}
-		custom_tooltip = cr_minette_ores_events.1.a_tt
+		else = {
+			s:STATE_LORRAINE = {
+				add_state_trait = state_trait_minette_ore_2
+			}		
+		}
+		ai_chance = {
+			value = 1
+		}
+	}
 
+	option = {
+		name = cr_minette_ores_events.20.b
+		custom_tooltip = cr_minette_ores_events.20.b_tt
+		trigger = {
+			NOT = {
+				s:STATE_ALSACE_LORRAINE = {
+					has_state_trait = state_trait_minette_ore
+				}
+			}
+		}
+		owner = {
+			add_modifier = {
+				name = cr_prospecting_for_minette_modifier
+				days = short_modifier_time
+			}
+		}
+		s:STATE_LORRAINE = {
+			add_state_trait = state_trait_minette_ore_2
+		}
+		force_resource_discovery = bg_iron_mining
+		default_option = yes
+		ai_chance = {
+			value = 0
+			if = {
+				limit = {
+					owner = {
+						authority > 200
+					}
+				}
+				add = 3
+			}
+		}
+		
+	}
+}
+
+
+cr_minette_ores_events.25 = { #Event bridge to start prospecting
+	type = country_event
+	
+	hidden = yes
+	
+	trigger = {
+		NOT = {
+			country_has_primary_culture = cu:french
+			s:STATE_LORRAINE = {
+				has_variable = cr_lorraine_ore_fields_discovered
+			}
+		}
+		s:STATE_LORRAINE = {
+			any_scope_state = {
+				owner = {
+					NOT = { this = ROOT }
+					country_has_primary_culture = cu:french
+					is_diplomatic_play_committed_participant = no
+					is_at_war = no
+				}
+			}
+			#has_state_trait = state_trait_minette_ore
+			remaining_undepleted = {
+				type = bg_iron_mining
+				amount >= 50
+			}
+		}
+	}
+
+	immediate = {
+		save_scope_as = minette_ore_state_owner
+		if = {
+			limit = {
+				any_interest_group = {
+					is_in_government = yes
+					leader = {
+						has_template = PRU_otto_von_bismarck					
+					}
+				}
+			}
+			random_scope_character = {
+				limit = {
+					has_template = PRU_otto_von_bismarck
+				}
+				save_scope_as = border_treaty_drawer
+			}
+		}
+		else = {
+			ruler = {
+				save_scope_as = border_treaty_drawer
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ALSACE_LORRAINE
+			}
+			save_scope_as = minette_ore_state
+		}
+		p:xB000E0 = {
+			save_scope_as = minette_ore_location
+		}
+		p:xC5F13A = {
+			save_scope_as = lorraine_state_mining_district
+		}
+		s:STATE_LORRAINE = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						country_has_primary_culture = cu:french
+					}
+				}
+				save_scope_as = lorraine_state
+			}
+		}
+		scope:lorraine_state.owner = {
+			save_scope_as = lorraine_state_owner
+			trigger_event = { id = cr_minette_ores_events.26 days = 6 }
+		}		
+	}
+}
+
+
+cr_minette_ores_events.26 = { #Iron Beneath Our Feet
+	type = country_event
+	placement = scope:lorraine_state_mining_district
+
+	dlc = dlc_anno1836
+
+	title = cr_minette_ores_events.26.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						s:STATE_LORRAINE = {
+							remaining_undepleted = {
+								type = bg_iron_mining
+								amount >= 70
+							}
+						}
+					}
+				}
+				desc = cr_minette_ores_events.26.desc_known_deposits
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = cr_minette_ores_events.26.desc_no_known_deposits
+			}
+		}
+	}
+	flavor = cr_minette_ores_events.26.flavour
+
+	event_image = {
+		video = "unspecific_gears_pistons"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		set_variable = cr_prospecting_in_lorraine
+		s:STATE_LORRAINE = {
+			set_variable = cr_lorraine_ore_fields_discovered
+		}
+	}
+
+	cancellation_trigger = {
+	}
+
+	option = {
+		name = cr_minette_ores_events.26.a
+		default_option = yes
+		add_modifier = {
+			name = cr_prospecting_for_minette_modifier
+			days = short_modifier_time
+		}
+		scope:lorraine_state = { force_resource_discovery = bg_iron_mining }
+		ai_chance = {
+			value = 1
+			if = {
+				limit = {
+					authority < 150
+				}
+				add = -1
+			}
+		}
+	}
+
+	option = {
+		name = cr_minette_ores_events.26.b
+		custom_tooltip = cr_minette_ores_events.20.b_tt
+		ai_chance = {
+			value = 0
+			if = {
+				limit = {
+					authority < 150
+				}
+				add = 3
+			}
+		}
+		
 	}
 }

@@ -119,7 +119,7 @@ mexican_nfm.1 = {
 		name = mexican_nfm.1.a
 		default_option = yes
 		ai_chance = {
-			base = 1
+			value = 1
 		}
 		
 	}
@@ -417,7 +417,7 @@ mexican_nfm.2 = {
 		name = mexican_nfm.2.a
 		default_option = yes
 		ai_chance = {
-			base = 0
+			value = 0
 		}
 	}
 }

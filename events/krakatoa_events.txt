@@ -16,6 +16,7 @@ krakatoa.1 = { #krakatoa erupts and you're the owner
 	desc = krakatoa.1.d
 	flavor = krakatoa.1.f
 
+	#Cooldown handled by variable
 	trigger = {
 		game_date >= 1850.1.1
 		NOT = { has_variable = mega_eruption }
@@ -85,7 +86,7 @@ krakatoa.1 = { #krakatoa erupts and you're the owner
 		scope:krakatoa_state = {
 			add_modifier = {
 				name = krakatoa_eruption_help_modifier
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 		scope:krakatoa_state.state_region = {
@@ -93,7 +94,7 @@ krakatoa.1 = { #krakatoa erupts and you're the owner
 		}
 		add_modifier = {
 			name = krakatoa_cost_modifier
-			months = short_modifier_time
+			days = short_modifier_time
 			multiplier = money_amount_multiplier_small
 		}
 		add_journal_entry = {	
@@ -106,7 +107,7 @@ krakatoa.1 = { #krakatoa erupts and you're the owner
 		scope:krakatoa_state = {
 			add_modifier = {
 				name = krakatoa_eruption_no_help_modifier
-				months = short_modifier_time
+				days = short_modifier_time
 			}
 		}
 		scope:krakatoa_state.state_region = {
@@ -149,7 +150,7 @@ krakatoa.5 = { #krakatoa erupts but youre not the owner
 		}
 		add_modifier = {
 			name = krakatoa_cost_modifier
-			months = short_modifier_time
+			days = short_modifier_time
 			multiplier = money_amount_multiplier_small
 		}
 		add_journal_entry = {	
@@ -288,7 +289,7 @@ krakatoa.3 = { #crop failure
 					limit = { is_player = no }
 					add_modifier = {
 						name = crop_failure_big_modifier
-						months = normal_modifier_time
+						days = normal_modifier_time
 					}
 				}
 			}
@@ -300,7 +301,7 @@ krakatoa.3 = { #crop failure
 					limit = { is_player = no }
 					add_modifier = {
 						name = crop_failure_medium_modifier
-						months = normal_modifier_time
+						days = normal_modifier_time
 					}
 				}
 			}
@@ -312,7 +313,7 @@ krakatoa.3 = { #crop failure
 					limit = { is_player = no }
 					add_modifier = {
 						name = crop_failure_small_modifier
-						months = normal_modifier_time
+						days = normal_modifier_time
 					}
 				}
 			}
@@ -327,7 +328,7 @@ krakatoa.3 = { #crop failure
 		custom_tooltip = krakatoa_crop_failure_tt
 		add_modifier = {
 			name = krakatoa_crop_cost_modifier
-			months = normal_modifier_time
+			days = normal_modifier_time
 			multiplier = money_amount_multiplier_medium
 		}
 		if = {
@@ -338,7 +339,7 @@ krakatoa.3 = { #crop failure
 				every_scope_state = {
 					add_modifier = {
 						name = crop_failure_big_modifier
-						months = normal_modifier_time
+						days = normal_modifier_time
 						multiplier = 0.75
 					}
 				}
@@ -353,7 +354,7 @@ krakatoa.3 = { #crop failure
 				every_scope_state = {
 					add_modifier = {
 						name = crop_failure_medium_modifier
-						months = normal_modifier_time
+						days = normal_modifier_time
 						multiplier = 0.75
 					}
 				}
@@ -368,7 +369,7 @@ krakatoa.3 = { #crop failure
 				every_scope_state = {
 					add_modifier = {
 						name = crop_failure_small_modifier
-						months = normal_modifier_time
+						days = normal_modifier_time
 						multiplier = 0.75
 					}
 				}
@@ -389,7 +390,7 @@ krakatoa.3 = { #crop failure
 				every_scope_state = {
 					add_modifier = {
 						name = crop_failure_big_modifier
-						months = normal_modifier_time
+						days = normal_modifier_time
 					}
 				}
 			}
@@ -403,7 +404,7 @@ krakatoa.3 = { #crop failure
 				every_scope_state = {
 					add_modifier = {
 						name = crop_failure_medium_modifier
-						months = normal_modifier_time
+						days = normal_modifier_time
 					}
 				}
 			}
@@ -417,7 +418,7 @@ krakatoa.3 = { #crop failure
 				every_scope_state = {
 					add_modifier = {
 						name = crop_failure_small_modifier
-						months = normal_modifier_time
+						days = normal_modifier_time
 					}
 				}
 			}
@@ -442,7 +443,7 @@ krakatoa.3 = { #crop failure
 				every_scope_state = {
 					add_modifier = {
 						name = crop_failure_big_modifier
-						months = normal_modifier_time
+						days = normal_modifier_time
 						multiplier = 0.75
 					}
 				}
@@ -457,7 +458,7 @@ krakatoa.3 = { #crop failure
 				every_scope_state = {
 					add_modifier = {
 						name = crop_failure_medium_modifier
-						months = normal_modifier_time
+						days = normal_modifier_time
 						multiplier = 0.75
 					}
 				}
@@ -472,7 +473,7 @@ krakatoa.3 = { #crop failure
 				every_scope_state = {
 					add_modifier = {
 						name = crop_failure_small_modifier
-						months = normal_modifier_time
+						days = normal_modifier_time
 						multiplier = 0.75
 					}
 				}
@@ -552,7 +553,7 @@ krakatoa.4 = { #art goes crazy
 			scope:art_state = {
 				add_modifier = {
 					name = krakatoa_art_modifier
-					months = normal_modifier_time
+					days = normal_modifier_time
 					multiplier = 2
 				}
 			}
@@ -561,7 +562,7 @@ krakatoa.4 = { #art goes crazy
 			scope:art_state = {
 				add_modifier = {
 					name = krakatoa_art_modifier
-					months = normal_modifier_time
+					days = normal_modifier_time
 				}
 			}
 		}	
@@ -578,7 +579,7 @@ krakatoa.4 = { #art goes crazy
 			scope:university_state = {
 				add_modifier = {
 					name = krakatoa_uni_modifier
-					months = normal_modifier_time
+					days = normal_modifier_time
 					multiplier = 2
 				}
 			}
@@ -587,7 +588,7 @@ krakatoa.4 = { #art goes crazy
 			scope:university_state = {
 				add_modifier = {
 					name = krakatoa_uni_modifier
-					months = normal_modifier_time
+					days = normal_modifier_time
 				}
 			}
 		}	

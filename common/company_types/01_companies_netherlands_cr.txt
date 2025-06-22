@@ -5,8 +5,15 @@ company_werkspoor = {
 	
 	flavored_company = yes
 	
+	preferred_headquarters = { STATE_HOLLAND }
+	
 	building_types = {  
 		building_motor_industry
+	}
+
+	extension_building_types = {
+		building_tooling_workshops
+		building_automotive_industry
 	}
 	
 	potential = {
@@ -14,12 +21,13 @@ company_werkspoor = {
 	}
 	
 	possible = {
+		has_technology_researched = railways
 		any_scope_state = {
 			state_region = s:STATE_HOLLAND
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_motor_industry
-				level >= 3
+				level >= 5
 			}
 		}
 	}
@@ -27,9 +35,35 @@ company_werkspoor = {
 	prosperity_modifier = {
 		building_railway_throughput_add = 0.1
 	}	
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_HOLLAND
+			is_incorporated = yes
+		}
+		market_capital.market = {
+			OR = {
+				mg:engines = {
+					market_goods_expensive > 0.25
+				}
+				sg:transportation = {
+					market_goods_expensive > 0.25
+				}
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_motor_industry = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_HOLLAND
+			}
+		}
+	}
 	
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 2 # Higher base value for flavored companies
 	}
 }
 
@@ -111,11 +145,23 @@ company_nederlandse_handelmaatschappij = {
 	
 	flavored_company = yes
 	
+	preferred_headquarters = { STATE_HOLLAND STATE_WEST_JAVA }
+	
 	building_types = {  
+		building_trade_center		#Historic
+		building_sugar_plantation	#For gameplay reasons
+		building_tea_plantation		#For gameplay reasons
+		building_coffee_plantation	#For gameplay reasons
+		building_dye_plantation		#For gameplay reasons
+	}
+
+	extension_building_types = {
 		building_tobacco_plantation
-		building_tea_plantation
-		building_coffee_plantation
-		building_dye_plantation
+		building_banana_plantation
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_coffee	# prestige_good_java_coffee
 	}
 	
 	potential = {
@@ -130,15 +176,82 @@ company_nederlandse_handelmaatschappij = {
 				OR = {
 					is_building_type = building_trade_center
 				}
-				level >= 1
+				level >= 5
 			}
 		}
 	}
 	
 	prosperity_modifier = {
-		country_convoys_capacity_mult = 0.1		
-		country_trade_route_cost_mult = -0.1
+		country_convoys_capacity_mult = 0.2
 	}	
+
+	ai_will_do = {
+		c:NET ?= this
+		OR = {
+			has_law = law_type:law_mercantilism
+			has_law = law_type:law_protectionism
+		}
+		any_scope_state = {
+			OR = {
+				region = sr:region_malacca
+				region = sr:region_java
+				region = sr:region_makasser
+				region = sr:region_moluccas
+				region = sr:region_philippines
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_tea_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					region = sr:region_malacca
+					region = sr:region_java
+					region = sr:region_makasser
+					region = sr:region_moluccas
+					region = sr:region_philippines
+				}
+			}
+		}
+		building_coffee_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					region = sr:region_malacca
+					region = sr:region_java
+					region = sr:region_makasser
+					region = sr:region_moluccas
+					region = sr:region_philippines
+				}
+			}
+		}
+		building_dye_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					region = sr:region_malacca
+					region = sr:region_java
+					region = sr:region_makasser
+					region = sr:region_moluccas
+					region = sr:region_philippines
+				}
+			}
+		}
+		building_sugar_plantation = {
+			level = 5
+			state_trigger = {
+				OR = {
+					region = sr:region_malacca
+					region = sr:region_java
+					region = sr:region_makasser
+					region = sr:region_moluccas
+					region = sr:region_philippines
+				}
+			}
+		}
+	}
 	
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
@@ -152,8 +265,14 @@ company_enka = {
 	
 	flavored_company = yes
 	
+	preferred_headquarters = { STATE_GELRE }
+	
 	building_types = {  
 		building_synthetics_plants		
+	}
+
+	extension_building_types = {
+		building_chemical_plants
 	}
 	
 	potential = {
@@ -161,6 +280,7 @@ company_enka = {
 	}
 	
 	possible = {
+		has_technology_researched = aniline
 		any_scope_state = {
 			OR = {
 				state_region = s:STATE_HOLLAND
@@ -169,7 +289,7 @@ company_enka = {
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_synthetics_plants
-				level >= 3
+				level >= 5
 			}
 		}
 	}
@@ -177,9 +297,35 @@ company_enka = {
 	prosperity_modifier = {		
 		building_textile_mills_throughput_add = 0.10
 	}	
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_HOLLAND
+			is_incorporated = yes
+		}
+		market_capital.market = {
+			OR = {
+				mg:silk = {
+					market_goods_expensive > 0.25
+				}
+				mg:dyes = {
+					market_goods_expensive > 0.25
+				}
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_synthetics_plants = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_GELRE
+			}
+		}
+	}
 	
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 2 # Higher base value for flavored companies
 	}
 }
 
@@ -190,8 +336,17 @@ company_billiton_maatschappij = {
 	
 	flavored_company = yes
 	
+	preferred_headquarters = { STATE_HOLLAND STATE_WEST_JAVA }
+	
 	building_types = {  
 		building_lead_mine #building_minor/speciality_metals_mine
+	}
+
+	extension_building_types = {
+		building_chemical_plants
+	}
+
+	extension_building_types = {
 		building_iron_mine
 		building_copper_mine
 	}
@@ -201,20 +356,36 @@ company_billiton_maatschappij = {
 	}
 	
 	possible = {
+		has_technology_researched = steelworking
 		any_scope_state = {
 			state_region = s:STATE_BILLITON
 			any_scope_building = {
 				is_building_type = building_lead_mine
-				level >= 3
+				level >= 2
 			}
 		}
-		has_technology_researched = steelworking
 	}
 	
 	prosperity_modifier = {
 		building_food_industry_throughput_add = 0.05 #Tin for canning!
 		building_steel_mills_throughput_add = 0.075
 	}	
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_BILLITON
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_lead_mine = {
+			level = 3
+			state_trigger = {
+				state_region = s:STATE_BILLITON
+			}
+		}
+	}
 	
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
@@ -228,8 +399,18 @@ company_zuivelfabriek_freia = {
 	
 	flavored_company = yes
 	
+	preferred_headquarters = { STATE_FRIESLAND }
+	
 	building_types = {  
 		building_food_industry
+	}
+
+	extension_building_types = {
+		building_livestock_ranch
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_groceries #	prestige_good_gouda
 	}
 	
 	potential = {
@@ -247,7 +428,7 @@ company_zuivelfabriek_freia = {
 				OR = {
 					is_building_type = building_food_industry
 				}
-				level >= 3
+				level >= 5
 			}
 		}
 	}
@@ -255,9 +436,31 @@ company_zuivelfabriek_freia = {
 	prosperity_modifier = {
 		building_livestock_ranch_throughput_add = 0.1
 	}	
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_FRIESLAND
+			is_incorporated = yes
+		}
+		has_technology_researched = pasteurization
+		market_capital.market = {
+			mg:groceries = {
+				market_goods_expensive > 0.25
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_food_industry = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_FRIESLAND
+			}
+		}
+	}
 	
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 2 # Higher base value for flavored companies
 	}
 }
 
@@ -267,10 +470,16 @@ company_maatschappij_van_weldadigheid = {
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
 	flavored_company = yes
 	
+	preferred_headquarters = { STATE_FRIESLAND }
+	
 	building_types = {  
 		building_wheat_farm
 		building_rye_farm
 		building_livestock_ranch
+	}
+
+	extension_building_types = {
+		building_textile_mills
 	}
 	
 	potential = {
@@ -286,13 +495,33 @@ company_maatschappij_van_weldadigheid = {
 					is_building_type = building_rye_farm
 					is_building_type = building_livestock_ranch
 				}
-				level >= 3
+				level >= 2
 			}
 		}
 	}
 	
 	prosperity_modifier = {
 		state_radicals_from_political_movements_mult = -0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_FRIESLAND
+				state_region = s:STATE_HOLLAND
+			}
+			is_incorporated = yes
+			state_unemployment_rate > 0.15
+		}
+	}
+
+	ai_construction_targets = {
+		building_rye_farm = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_FRIESLAND
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -307,12 +536,23 @@ company_regout_de_sphinx = {
 	
 	flavored_company = yes
 	
+	preferred_headquarters = { STATE_BRABANT }
+	
 	building_types = {
 		building_glassworks
 	}
+
+	extension_building_types = {
+		building_tooling_workshops
+		building_arms_industry
+		building_paper_mills
+	}
 	
 	potential = {
-		country_has_primary_culture = cu:dutch
+		OR = {
+			country_has_primary_culture = cu:flemish
+			country_has_primary_culture = cu:dutch
+		}
 	}
 	
 	possible = {
@@ -321,13 +561,36 @@ company_regout_de_sphinx = {
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_glassworks
-				level >= 3
+				level >= 5
 			}
 		}
 	}
 	
 	prosperity_modifier = {
 		building_construction_sector_throughput_add = 0.1 #Exploited a wide variety of industrial enterprises, including a nails and screws factory, and would later focus on sanitation products
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_BRABANT
+			is_incorporated = yes
+			is_split_state = no
+			state_unemployment_rate > 0.15
+		}
+		market_capital.market = {
+			mg:glass = {
+				market_goods_expensive > 0.25
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_glassworks = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_FRIESLAND
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -342,9 +605,19 @@ company_van_heek_en_co = {
 	
 	flavored_company = yes
 	
+	preferred_headquarters = { STATE_GELRE }
+	
 	building_types = {
 		building_textile_mills
+	}
+
+	extension_building_types = {
 		building_cotton_plantation
+		building_silk_plantation
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_clothes
 	}
 	
 	potential = {
@@ -357,13 +630,43 @@ company_van_heek_en_co = {
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_textile_mills
-				level >= 3
+				level >= 5
+			}
+		}
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_GELRE
+			is_incorporated = yes
+		}
+		any_scope_state = {	#Dutch textile industry relied heavily on the Dutch East Indies
+			OR = {
+				region = sr:region_malacca
+				region = sr:region_java
+				region = sr:region_makasser
+				region = sr:region_moluccas
+				region = sr:region_philippines
+			}
+		}
+		market_capital.market = {
+			mg:clothes = {
+				market_goods_expensive > 0.25
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_textile_mills = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_GELRE
 			}
 		}
 	}
 	
 	prosperity_modifier = {
-		building_textile_mills_throughput_add = 0.10 #Lead to establishment of the Twentsche Bank, precursos to the ABN AMRO Bank.
+		building_trade_center_throughput_add = 0.10 #Lead to establishment of the Twentsche Bank, precursos to the ABN AMRO Bank.
 	}
 	
 	ai_weight = {
@@ -378,8 +681,20 @@ company_gebr_stork_en_co = {
 	
 	flavored_company = yes
 	
+	preferred_headquarters = { STATE_GELRE }
+	
 	building_types = {
 		building_tooling_workshops
+	}
+
+	extension_building_types = {
+		building_shipyards
+		building_steel_mills
+		building_power_plant
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_tools
 	}
 	
 	potential = {
@@ -392,13 +707,35 @@ company_gebr_stork_en_co = {
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_tooling_workshops
-				level >= 3
+				level >= 5
 			}
 		}
 	}
 	
 	prosperity_modifier = {
 		building_textile_mills_throughput_add = 0.10 #Build spinning machines amongst others.
+		building_food_industry_throughput_add = 0.10 #Build food processing machines amongst others.
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_GELRE
+			is_incorporated = yes
+		}
+		market_capital.market = {
+			mg:tools = {
+				market_goods_expensive > 0.25
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_tooling_workshops = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_GELRE
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -413,10 +750,16 @@ company_wilton_fijenoord = {
 	
 	flavored_company = yes
 	
+	preferred_headquarters = { STATE_HOLLAND }
+	
 	building_types = {
 		building_shipyards
 		building_military_shipyards
+	}
+
+	extension_building_types = {
 		building_motor_industry
+		building_tooling_workshops
 	}
 	
 	potential = {
@@ -440,9 +783,26 @@ company_wilton_fijenoord = {
 		unit_combat_unit_type_submarine_offense_mult = 0.1
 		building_group_bg_sugar_plantations_throughput_add = 0.1 #Fijenoord used to be specialised in building sugar refining equipment. Weird, right.
 	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_HOLLAND
+			is_incorporated = yes
+		}
+		country_rank = rank_value:great_power
+	}
+
+	ai_construction_targets = {
+		building_shipyards = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_HOLLAND
+			}
+		}
+	}
 	
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 2 # Higher base value for flavored companies
 	}
 }
 
@@ -453,8 +813,14 @@ company_fokker = {
 	
 	flavored_company = yes
 	
+	preferred_headquarters = { STATE_HOLLAND }
+
+	#possible_prestige_goods = {
+	#	prestige_good_fokker_drei
+	#}
+	
 	building_types = {
-		building_war_machine_industry
+		building_automotive_industry
 	}
 	
 	potential = {
@@ -467,8 +833,8 @@ company_fokker = {
 			region = sr:region_low_countries
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_war_machine_industry
-				level >= 3
+				is_building_type = building_automotive_industry
+				level >= 5
 			}
 		}
 	}
@@ -477,9 +843,26 @@ company_fokker = {
 		unit_army_offense_mult = 0.05 #Should be something more aviation related
 		country_weekly_innovation_mult = 0.05
 	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_HOLLAND
+			is_incorporated = yes
+		}
+		country_rank = rank_value:great_power
+	}
+
+	ai_construction_targets = {
+		building_automotive_industry = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_HOLLAND
+			}
+		}
+	}
 	
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 2 # Higher base value for flavored companies
 	}
 }
 
@@ -490,8 +873,14 @@ company_pander_en_zonen = {
 	
 	flavored_company = yes
 	
+	preferred_headquarters = { STATE_GELRE }
+	
 	building_types = {
 		building_furniture_manufacturies
+	}
+
+	extension_building_types = {
+		building_motor_industry
 	}
 	
 	potential = {
@@ -504,14 +893,31 @@ company_pander_en_zonen = {
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_furniture_manufacturies
-				level >= 3
+				level >= 5
 			}
 		}
 	}
 	
 	prosperity_modifier = {
 		building_arts_academy_throughput_add = 0.05 #provided furnishing for, amongst others, the Peace Palace in The Hague, i.e. prestigious projects
-		building_war_machine_industry_throughput_add = 0.05 #build aircrafts. Odd combo right? It makes sense though as early aircraft were build of wood using similar techniques as furniture making
+		building_automotive_industry_throughput_add = 0.05 #build aircrafts. Odd combo right? It makes sense though as early aircraft were build of wood using similar techniques as furniture making
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_GELRE
+			is_incorporated = yes
+		}
+		country_rank = rank_value:great_power
+	}
+
+	ai_construction_targets = {
+		building_furniture_manufacturies = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_GELRE
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -525,6 +931,8 @@ company_particuliere_landerijen = {
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 	
 	flavored_company = yes
+	
+	preferred_headquarters = { STATE_WEST_JAVA }
 	
 	building_types = {  
 		building_tobacco_plantation
@@ -554,8 +962,68 @@ company_particuliere_landerijen = {
 	prosperity_modifier = {
 		interest_group_ig_industrialists_pol_str_mult = 0.10		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.35
 	}	
+
+	ai_will_do = {
+		always = no
+		#any_scope_state = {
+		#	state_region = s:STATE_WEST_JAVA
+		#	is_incorporated = yes
+		#}
+		#country_rank = rank_value:great_power
+	}
+
+	ai_construction_targets = {
+		#building_tea_plantation = {
+		#	level = 5
+		#	state_trigger = {
+		#		OR = {
+		#			region = sr:region_malacca
+		#			region = sr:region_java
+		#			region = sr:region_makasser
+		#			region = sr:region_moluccas
+		#			region = sr:region_philippines
+		#		}
+		#	}
+		#}
+		#building_coffee_plantation = {
+		#	level = 5
+		#	state_trigger = {
+		#		OR = {
+		#			region = sr:region_malacca
+		#			region = sr:region_java
+		#			region = sr:region_makasser
+		#			region = sr:region_moluccas
+		#			region = sr:region_philippines
+		#		}
+		#	}
+		#}
+		#building_dye_plantation = {
+		#	level = 5
+		#	state_trigger = {
+		#		OR = {
+		#			region = sr:region_malacca
+		#			region = sr:region_java
+		#			region = sr:region_makasser
+		#			region = sr:region_moluccas
+		#			region = sr:region_philippines
+		#		}
+		#	}
+		#}
+		#building_sugar_plantation = {
+		#	level = 5
+		#	state_trigger = {
+		#		OR = {
+		#			region = sr:region_malacca
+		#			region = sr:region_java
+		#			region = sr:region_makasser
+		#			region = sr:region_moluccas
+		#			region = sr:region_philippines
+		#		}
+		#	}
+		#}
+	}
 	
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 1 # Higher base value for flavored companies
 	}
 }

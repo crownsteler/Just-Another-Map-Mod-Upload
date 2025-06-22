@@ -1,7 +1,5 @@
 ﻿wild_west_farm = {
 	city_type = farm
-	center_building_mesh = "wild_west_town_mesh"
-	center_building_size = { 2 2 }
 
 	trigger = {
 		has_american_buildings_dlc_trigger = yes
@@ -101,7 +99,7 @@
 	building_sugar_plantation = {"southern_plantation_mesh"}
 	building_banana_plantation = {"southern_plantation_mesh"}
 	building_vineyard_plantation = {"southern_plantation_mesh"}
-	building_vineyard_plantation = {"southern_plantation_mesh"}
+	building_date_plantation = {"southern_plantation_mesh"}
 
 	building_manor_house = {"european_rural_manorhouse_01_mesh"}
 }

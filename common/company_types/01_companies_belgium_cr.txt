@@ -5,10 +5,15 @@ company_solvay = {
 	
 	flavored_company = yes
 	
+	preferred_headquarters = { STATE_WALLONIA STATE_FLANDERS }
+	
 	building_types = {  
+		building_chemical_plants
+	}
+
+	extension_building_types = {
 		building_explosives_factory
 		building_synthetics_plants
-		building_chemical_plants
 	}
 	
 	potential = {
@@ -39,7 +44,7 @@ company_solvay = {
 					is_building_type = building_explosives_factory
 					is_building_type = building_chemical_plants				
 				}
-				level >= 3
+				level >= 5
 			}
 		}
 	}
@@ -48,6 +53,29 @@ company_solvay = {
 		building_paper_mills_throughput_add = 0.1
 		building_glassworks_throughput_add = 0.1
 	}	
+
+	ai_will_do = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_WALLONIA
+				state_region = s:STATE_FLANDERS			
+			}
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_chemical_plants = {
+			level = 5
+			state_trigger = {
+				OR = {
+					state_region = s:STATE_SUZHOU
+					state_region = s:STATE_ZHEJIANG
+					state_region = s:STATE_NANJING
+				}
+			}
+		}
+	}
 	
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies

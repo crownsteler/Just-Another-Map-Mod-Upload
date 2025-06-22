@@ -22,6 +22,16 @@
 			10 = amazon.2 # hell on earth
 			10 = amazonas.8
 		}
+		effect = {	#Creating a route via the Purus River
+			random_list = {
+				25 = {
+					cr_opening_the_route_to_acre_in_stages_BRZ = yes
+				}
+				75 = {
+				
+				}			
+			}
+		}
 	}
 
 	complete = {
